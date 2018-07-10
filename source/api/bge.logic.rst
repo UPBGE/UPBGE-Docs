@@ -18,7 +18,7 @@ Module to access logic functions, imported automatically into the python control
    # To get the game object this controller is on:
    obj = cont.owner
 
-:class:`~bge.types.KX_GameObject` and :class:`~bge.types.KX_Camera` or :class:`~bge.types.KX_LightObject` methods are available depending on the type of object
+:class:`KX_GameObject` and :class:`KX_Camera` or :class:`KX_LightObject` methods are available depending on the type of object
 
 .. code-block:: python
 
@@ -37,18 +37,18 @@ See the sensor's reference for available methods:
 .. hlist::
    :columns: 3
 
-   * :class:`~bge.types.KX_MouseFocusSensor`
-   * :class:`~bge.types.KX_NearSensor`
-   * :class:`~bge.types.KX_NetworkMessageSensor`
-   * :class:`~bge.types.KX_RadarSensor`
-   * :class:`~bge.types.KX_RaySensor`
-   * :class:`~bge.types.KX_CollisionSensor`
-   * :class:`~bge.types.SCA_DelaySensor`
-   * :class:`~bge.types.SCA_JoystickSensor`
-   * :class:`~bge.types.SCA_KeyboardSensor`
-   * :class:`~bge.types.SCA_MouseSensor`
-   * :class:`~bge.types.SCA_PropertySensor`
-   * :class:`~bge.types.SCA_RandomSensor`
+   * :class:`KX_MouseFocusSensor`
+   * :class:`KX_NearSensor`
+   * :class:`KX_NetworkMessageSensor`
+   * :class:`KX_RadarSensor`
+   * :class:`KX_RaySensor`
+   * :class:`KX_CollisionSensor`
+   * :class:`SCA_DelaySensor`
+   * :class:`SCA_JoystickSensor`
+   * :class:`SCA_KeyboardSensor`
+   * :class:`SCA_MouseSensor`
+   * :class:`SCA_PropertySensor`
+   * :class:`SCA_RandomSensor`
 
 You can also access actuators linked to the controller
 
@@ -68,31 +68,31 @@ See the actuator's reference for available methods
 .. hlist::
    :columns: 3
    
-   * :class:`~bge.types.BL_ActionActuator`
-   * :class:`~bge.types.KX_CameraActuator`
-   * :class:`~bge.types.KX_ConstraintActuator`
-   * :class:`~bge.types.KX_GameActuator`
-   * :class:`~bge.types.KX_MouseActuator`
-   * :class:`~bge.types.KX_NetworkMessageActuator`
-   * :class:`~bge.types.KX_ObjectActuator`
-   * :class:`~bge.types.KX_ParentActuator`
-   * :class:`~bge.types.KX_SCA_AddObjectActuator`
-   * :class:`~bge.types.KX_SCA_DynamicActuator`
-   * :class:`~bge.types.KX_SCA_EndObjectActuator`
-   * :class:`~bge.types.KX_SCA_ReplaceMeshActuator`
-   * :class:`~bge.types.KX_SceneActuator`
-   * :class:`~bge.types.KX_SoundActuator`
-   * :class:`~bge.types.KX_StateActuator`
-   * :class:`~bge.types.KX_TrackToActuator`
-   * :class:`~bge.types.KX_VisibilityActuator`
-   * :class:`~bge.types.SCA_2DFilterActuator`
-   * :class:`~bge.types.SCA_PropertyActuator`
-   * :class:`~bge.types.SCA_RandomActuator`
+   * :class:`BL_ActionActuator`
+   * :class:`KX_CameraActuator`
+   * :class:`KX_ConstraintActuator`
+   * :class:`KX_GameActuator`
+   * :class:`KX_MouseActuator`
+   * :class:`KX_NetworkMessageActuator`
+   * :class:`KX_ObjectActuator`
+   * :class:`KX_ParentActuator`
+   * :class:`KX_SCA_AddObjectActuator`
+   * :class:`KX_SCA_DynamicActuator`
+   * :class:`KX_SCA_EndObjectActuator`
+   * :class:`KX_SCA_ReplaceMeshActuator`
+   * :class:`KX_SceneActuator`
+   * :class:`KX_SoundActuator`
+   * :class:`KX_StateActuator`
+   * :class:`KX_TrackToActuator`
+   * :class:`KX_VisibilityActuator`
+   * :class:`SCA_2DFilterActuator`
+   * :class:`SCA_PropertyActuator`
+   * :class:`SCA_RandomActuator`
 
 Most logic brick's methods are accessors for the properties available in the logic buttons.
 Consult the logic bricks documentation for more information on how each logic brick works.
 
-There are also methods to access the current :class:`bge.types.KX_Scene`
+There are also methods to access the current :class:`KX_Scene`
 
 .. code-block:: python
 
@@ -105,7 +105,7 @@ There are also methods to access the current :class:`bge.types.KX_Scene`
 Matricies as used by the game engine are **row major**
 ``matrix[row][col] = float``
 
-:class:`bge.types.KX_Camera` has some examples using matrices.
+:class:`KX_Camera` has some examples using matrices.
 
 *********
 Variables
@@ -120,15 +120,15 @@ Variables
 
 .. data:: keyboard
 
-   The current keyboard wrapped in an :class:`~bge.types.SCA_PythonKeyboard` object.
+   The current keyboard wrapped in an :class:`SCA_PythonKeyboard` object.
 
 .. data:: mouse
 
-   The current mouse wrapped in an :class:`~bge.types.SCA_PythonMouse` object.
+   The current mouse wrapped in an :class:`SCA_PythonMouse` object.
 
 .. data:: joysticks
 
-   A list of attached :class:`~bge.types.SCA_PythonJoystick`.
+   A list of attached :class:`SCA_PythonJoystick`.
    The list size is the maximum number of supported joysticks.
    If no joystick is available for a given slot, the slot is set to None.
 
@@ -140,19 +140,19 @@ General functions
 
    Gets the Python controller associated with this Python script.
    
-   :rtype: :class:`bge.types.SCA_PythonController`
+   :rtype: :class:`SCA_PythonController`
 
 .. function:: getCurrentScene()
 
    Gets the current Scene.
    
-   :rtype: :class:`bge.types.KX_Scene`
+   :rtype: :class:`KX_Scene`
 
 .. function:: getSceneList()
 
    Gets a list of the current scenes loaded in the game engine.
    
-   :rtype: list of :class:`bge.types.KX_Scene`
+   :rtype: list of :class:`KX_Scene`
    
    .. note:: Scenes in your blend file that have not been converted wont be in this list. This list will only contain scenes such as overlays scenes.
 
@@ -204,9 +204,9 @@ General functions
    :arg async: Whether or not to do the loading asynchronously (in another thread). Only the "Scene" type is currently supported for this feature.
    :type async: bool
    :arg scene: Scene to merge loaded data to, if `None` use the current scene.
-   :type scene: :class:`bge.types.KX_Scene` or string
+   :type scene: :class:`KX_Scene` or string
    
-   :rtype: :class:`bge.types.KX_LibLoadStatus`
+   :rtype: :class:`KX_LibLoadStatus`
 
    .. note:: Asynchronously loaded libraries will not be available immediately after LibLoad() returns. Use the returned KX_LibLoadStatus to figure out when the libraries are ready.
    
@@ -540,7 +540,7 @@ Armature Sensor
 
 .. _armaturesensor-type:
 
-See :class:`bge.types.KX_ArmatureSensor.type`
+See :class:`KX_ArmatureSensor.type`
 
 .. data:: KX_ARMSENSOR_STATE_CHANGED
 
@@ -625,7 +625,7 @@ Property Sensor
 Radar Sensor
 ------------
 
-See :class:`bge.types.KX_RadarSensor`
+See :class:`KX_RadarSensor`
 
 .. data:: KX_RADAR_AXIS_POS_X
 .. data:: KX_RADAR_AXIS_POS_Y
@@ -638,7 +638,7 @@ See :class:`bge.types.KX_RadarSensor`
 Ray Sensor
 ----------
 
-See :class:`bge.types.KX_RaySensor`
+See :class:`KX_RaySensor`
 
 .. data:: KX_RAY_AXIS_POS_X
 .. data:: KX_RAY_AXIS_POS_Y
@@ -658,7 +658,7 @@ Actuators
 Action Actuator
 ---------------
 
-See :class:`bge.types.BL_ActionActuator`
+See :class:`BL_ActionActuator`
 
 .. data:: KX_ACTIONACT_PLAY
 .. data:: KX_ACTIONACT_PINGPONG
@@ -673,7 +673,7 @@ Armature Actuator
 
  .. _armatureactuator-constants-type:
    
-See :class:`bge.types.BL_ArmatureActuator.type`
+See :class:`BL_ArmatureActuator.type`
 
 .. data:: KX_ACT_ARMATURE_RUN
 
@@ -719,7 +719,7 @@ Constraint Actuator
 
 .. _constraint-actuator-option:
 
-See :class:`bge.types.KX_ConstraintActuator.option`
+See :class:`KX_ConstraintActuator.option`
 
 * Applicable to Distance constraint:
 
@@ -753,7 +753,7 @@ See :class:`bge.types.KX_ConstraintActuator.option`
 
 .. _constraint-actuator-limit:
 
-See :class:`bge.types.KX_ConstraintActuator.limit`
+See :class:`KX_ConstraintActuator.limit`
 
 .. data:: KX_CONSTRAINTACT_LOCX
 
@@ -843,7 +843,7 @@ See :class:`bge.types.KX_ConstraintActuator.limit`
 Dynamic Actuator
 ----------------
 
-See :class:`bge.types.KX_SCA_DynamicActuator`
+See :class:`KX_SCA_DynamicActuator`
 
 .. data:: KX_DYN_RESTORE_DYNAMICS
 .. data:: KX_DYN_DISABLE_DYNAMICS
@@ -857,7 +857,7 @@ See :class:`bge.types.KX_SCA_DynamicActuator`
 Game Actuator
 -------------
 
-See :class:`bge.types.KX_GameActuator`
+See :class:`KX_GameActuator`
 
 .. data:: KX_GAME_LOAD
 .. data:: KX_GAME_START
@@ -889,7 +889,7 @@ Parent Actuator
 Random Distributions
 --------------------
 
-See :class:`bge.types.SCA_RandomActuator`
+See :class:`SCA_RandomActuator`
 
 .. data:: KX_RANDOMACT_BOOL_CONST
 .. data:: KX_RANDOMACT_BOOL_UNIFORM
@@ -906,7 +906,7 @@ See :class:`bge.types.SCA_RandomActuator`
 Scene Actuator
 --------------
 
-See :class:`bge.types.KX_SceneActuator`
+See :class:`KX_SceneActuator`
 
 .. data:: KX_SCENE_RESTART
 .. data:: KX_SCENE_SET_SCENE
@@ -923,7 +923,7 @@ See :class:`bge.types.KX_SceneActuator`
 Sound Actuator
 --------------
       
-See :class:`bge.types.KX_SoundActuator`
+See :class:`KX_SoundActuator`
 
 .. data:: KX_SOUNDACT_PLAYSTOP
 
@@ -955,7 +955,7 @@ Steering Actuator
 
 .. _logic-steering-actuator:
 
-See :class:`bge.types.KX_SteeringActuator.behavior`
+See :class:`KX_SteeringActuator.behavior`
 
 .. data:: KX_STEERING_SEEK
 
@@ -975,7 +975,7 @@ See :class:`bge.types.KX_SteeringActuator.behavior`
 TrackTo Actuator
 -----------------
 
-See :class:`bge.types.KX_TrackToActuator`
+See :class:`KX_TrackToActuator`
 
 .. data:: KX_TRACK_UPAXIS_POS_X
 .. data:: KX_TRACK_UPAXIS_POS_Y
@@ -1072,7 +1072,7 @@ Armature Channel
 ----------------
 .. _armaturechannel-constants-rotation-mode:
 
-See :class:`bge.types.BL_ArmatureChannel.rotation_mode`
+See :class:`BL_ArmatureChannel.rotation_mode`
 
 .. note:
   euler mode are named as in Blender UI but the actual axis order is reversed
@@ -1125,7 +1125,7 @@ Armature Constraint
 -------------------
 .. _armatureconstraint-constants-type:
 
-See :class:`bge.types.BL_ArmatureConstraint.type`
+See :class:`BL_ArmatureConstraint.type`
 
 .. data:: CONSTRAINT_TYPE_TRACKTO
 .. data:: CONSTRAINT_TYPE_KINEMATIC
@@ -1141,7 +1141,7 @@ See :class:`bge.types.BL_ArmatureConstraint.type`
 
 .. _armatureconstraint-constants-ik-type:
 
-See :class:`bge.types.BL_ArmatureConstraint.ik_type`
+See :class:`BL_ArmatureConstraint.ik_type`
   
 .. data:: CONSTRAINT_IK_COPYPOSE
 
@@ -1157,7 +1157,7 @@ See :class:`bge.types.BL_ArmatureConstraint.ik_type`
 
 .. _armatureconstraint-constants-ik-flag:
 
-See :class:`bge.types.BL_ArmatureConstraint.ik_flag`
+See :class:`BL_ArmatureConstraint.ik_flag`
 
 .. data:: CONSTRAINT_IK_FLAG_TIP
 
@@ -1185,7 +1185,7 @@ See :class:`bge.types.BL_ArmatureConstraint.ik_flag`
 
 .. _armatureconstraint-constants-ik-mode:
 
-See :class:`bge.types.BL_ArmatureConstraint.ik_mode`
+See :class:`BL_ArmatureConstraint.ik_mode`
 
 .. data:: CONSTRAINT_IK_MODE_INSIDE
 
@@ -1227,7 +1227,7 @@ Blender Material
 Input Status
 ------------
 
-See :class:`bge.types.SCA_PythonKeyboard`, :class:`bge.types.SCA_PythonMouse`, :class:`bge.types.SCA_MouseSensor`, :class:`bge.types.SCA_KeyboardSensor`
+See :class:`SCA_PythonKeyboard`, :class:`SCA_PythonMouse`, :class:`SCA_MouseSensor`, :class:`SCA_KeyboardSensor`
 
 .. data:: KX_INPUT_NONE
 .. data:: KX_INPUT_JUST_ACTIVATED
@@ -1239,7 +1239,7 @@ KX_GameObject
 -------------
 .. _gameobject-playaction-mode:
 
-See :class:`bge.types.KX_GameObject.playAction`
+See :class:`KX_GameObject.playAction`
 
 .. data:: KX_ACTION_MODE_PLAY
 
@@ -1277,7 +1277,7 @@ See :class:`bge.types.KX_GameObject.playAction`
 Mouse Buttons
 -------------
 
-See :class:`bge.types.SCA_MouseSensor`
+See :class:`SCA_MouseSensor`
 
 .. data:: KX_MOUSE_BUT_LEFT
 .. data:: KX_MOUSE_BUT_MIDDLE
@@ -1335,7 +1335,7 @@ Shader
 States
 ------
 
-See :class:`bge.types.KX_StateActuator`
+See :class:`KX_StateActuator`
 
 .. data:: KX_STATE1
 .. data:: KX_STATE2
@@ -1370,7 +1370,7 @@ See :class:`bge.types.KX_StateActuator`
 
 .. _state-actuator-operation:
 
-See :class:`bge.types.KX_StateActuator.operation`
+See :class:`KX_StateActuator.operation`
 
 .. data:: KX_STATE_OP_CLR
 

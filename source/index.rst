@@ -7,25 +7,22 @@
 UPBGE Manual
 ============
 
-Welcome to `UPBGE <https://upbge.org/>`__'s manual! Here you will find definitions of the available tools 
-and features in UPBGE, step-by-step tutorials to certain tasks and the Python API 
-reference.
+Welcome to UPBGE's Documentation! Here you will 
+find definitions of the available tools and features in UPBGE, step-by-step 
+tutorials to certain tasks and the Python API for game logic programming 
+with detailed information (and examples in some cases).
+
+`Visit the UPBGE's website <https://upbge.org/>`__ or `contribute to this manual <https://github.com/UPBGE/blender>`__.
 
 .. toctree::
    :maxdepth: 2
    :caption: Manual
-    
-   game_engine/index
+
+   manual/index
 
 .. toctree::
    :maxdepth: 2
-   :caption: Python API reference
+   :caption: API reference
    
-   api/index
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   api/index_upbge
+   api/index_standalone

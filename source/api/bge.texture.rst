@@ -6,14 +6,14 @@ Video Texture (bge.texture)
 Introduction
 ************
 
-The ``bge.texture`` module allows you to manipulate textures during the game.
+The :mod:`bge.texture` module allows you to manipulate textures during the game.
 Several sources for texture are possible: video files, image files, video capture,
 memory buffer, camera render or a mix of that.
 The video and image files can be loaded from the Internet using a URL instead of a file name.
 In addition, you can apply filters on the images before sending them to the GPU,
 allowing video effect: blue screen, color band, gray, normal map.
-``bge.texture`` uses FFmpeg to load images and videos.
-All the formats and codecs that FFmpeg supports are supported by ``bge.texture``,
+:mod:`bge.texture` uses FFmpeg to load images and videos.
+All the formats and codecs that FFmpeg supports are supported by :mod:`bge.texture`,
 including but not limited to:
 
 * AVI
@@ -30,7 +30,7 @@ How it works
 ------------
 
 The principle is simple: first you identify a texture on an existing object using the
-:class:`~bge.texture.materialID` function, then you create a new texture with dynamic content
+:class:`bge.texture.materialID` function, then you create a new texture with dynamic content
 and swap the two textures in the GPU.
 
 The game engine is not aware of the substitution and continues to display the object as always,
@@ -52,12 +52,12 @@ probably you want to make it dark gray to simulate power-off state.
 When the television must be turned on, you create a dynamic texture from a video capture card
 and use it instead of ``tv.png``: the TV screen will come to life.
 
-You have two ways to define textures that ``bge.texture`` can grab:
+You have two ways to define textures that :mod:`bge.texture` can grab:
 
 - Simple UV texture.
 - Blender material with image texture channel.
 
-Because ``bge.texture`` works at texture level, it is compatible with all
+Because :mod:`bge.texture` works at texture level, it is compatible with all
 the Blender Game Engine's fancy texturing features: GLSL, multi-texture, custom shaders, etc.
 
 
@@ -65,27 +65,52 @@ the Blender Game Engine's fancy texturing features: GLSL, multi-texture, custom 
 Examples
 ********
 
-.. include:: __/examples/bge.texture.py
-   :start-line: 1
-   :end-line: 5
+Basic Video Playback
+--------------------
+
+Example of how to replace a texture in game with a video. It needs to run everyframe.
 
 .. literalinclude:: __/examples/bge.texture.py
-   :lines: 7-
 
-.. include:: __/examples/bge.texture.1.py
-   :start-line: 1
-   :end-line: 6
+Texture Replacement
+-------------------
+
+Example of how to replace a texture in game with an external image.
+``createTexture()`` and ``removeTexture()`` are to be called from a
+module Python Controller.
 
 .. literalinclude:: __/examples/bge.texture.1.py
-   :lines: 8-
 
-.. include:: __/examples/bge.texture.2.py
-   :start-line: 1
-   :end-line: 6
+Video Capture with DeckLink
+---------------------------
+
+Video frames captured with DeckLink cards have pixel formats that are generally not directly
+usable by OpenGL, they must be processed by a shader. The three shaders presented here should
+cover all common video capture cases.
+
+This file reflects the current video transfer method implemented in the Decklink module:
+whenever possible the video images are transferred as float texture because this is more
+compatible with GPUs. Of course, only the pixel formats that have a correspondant GL format
+can be transferred as float. Look for fg_shaders in this file for an exhaustive list.
+
+Other pixel formats will be transferred as 32 bits integer red-channel texture but this
+won't work with certain GPU (Intel GMA); the corresponding shaders are not shown here.
+However, it should not be necessary to use any of them as the list below covers all practical
+cases of video capture with all types of Decklink product.
+
+In other words, only use one of the pixel format below and you will be fine. Note that depending
+on the video stream, only certain pixel formats will be allowed (others will throw an exception).
+For example, to capture a PAL video stream, you must use one of the YUV formats.
+
+To find which pixel format is suitable for a particular video stream, use the 'Media Express'
+utility that comes with the Decklink software : if you see the video in the 'Log and Capture'
+Window, you have selected the right pixel format and you can use the same in Blender.
+
+.. note:: These shaders only decode the RGB channel and set the alpha channel to a fixed value. 
+   It's up to you to add postprocessing to the color.
+.. note:: These shaders are compatible with 2D and 3D video stream.
 
 .. literalinclude:: __/examples/bge.texture.2.py
-   :lines: 8-
-
 
 .. module:: bge.texture
 
@@ -144,7 +169,7 @@ Video classes
 
       Image data. (readonly)
 
-      :type: :class:`~bgl.Buffer` or None
+      :type: :class:`bgl.Buffer` or None
 
    .. attribute:: size
 
@@ -157,7 +182,7 @@ Video classes
       Set to True to activate fast nearest neighbor scaling algorithm.
       Texture width and height must be a power of 2.
       If the video picture size is not a power of 2, rescaling is required.
-      By default ``bge.texture`` uses the precise but slow ``gluScaleImage()`` function.
+      By default :mod:`bge.texture` uses the precise but slow ``gluScaleImage()`` function.
       Best is to rescale the video offline so that no scaling is necessary at runtime!
 
       :type: bool
@@ -412,12 +437,12 @@ Image classes
    Image source from mirror.
 
    :arg scene: Scene in which the image has to be taken.
-   :type scene: :class:`~bge.types.KX_Scene`
+   :type scene: :class:`KX_Scene`
    :arg observer: Reference object for the mirror
       (the object from which the mirror has to be looked at, for example a camera).
-   :type observer: :class:`~bge.types.KX_GameObject`
+   :type observer: :class:`KX_GameObject`
    :arg mirror: Object holding the mirror.
-   :type mirror: :class:`~bge.types.KX_GameObject`
+   :type mirror: :class:`KX_GameObject`
    :arg material: ID of the mirror's material to be used for mirroring. (optional)
    :type material: int
    :arg width: Off-screen render buffer width (optional).
@@ -451,7 +476,7 @@ Image classes
 
       :type: float list [r, g, b, a] in [0.0, 1.0]
 
-      Deprecated use :py:meth:`bge.texture.ImageMirror.horizon` or :py:meth:`bge.texture.ImageMirror.zenith` instead.
+      Deprecated use :class:`bge.texture.ImageMirror.horizon` or :class:`bge.texture.ImageMirror.zenith` instead.
 
    .. attribute:: updateShadow
 
@@ -663,9 +688,9 @@ Image classes
    otherwise on the default framebuffer.
 
    :arg scene: Scene in which the image has to be taken.
-   :type scene: :class:`~bge.types.KX_Scene`
+   :type scene: :class:`KX_Scene`
    :arg camera: Camera from which the image has to be taken.
-   :type camera: :class:`~bge.types.KX_Camera`
+   :type camera: :class:`KX_Camera`
    :arg width: Off-screen render buffer width (optional).
    :type width: integer
    :arg height: Off-screen render buffer height (optional).
@@ -805,7 +830,7 @@ Image classes
       in which case this function simply waits for the render operations to complete.
       When called without argument, the pixels are not extracted but the render is guaranteed
       to be completed when the function returns.
-      This only makes sense with offscreen render on texture target (see :func:`~bge.render.offScreenCreate`).
+      This only makes sense with offscreen render on texture target (see :func:`bge.render.offScreenCreate`).
 
       :arg buffer: An object that implements the buffer protocol.
          If specified, the image is copied to the buffer, which must be big enough or an exception is thrown.
@@ -1106,7 +1131,7 @@ Texture classes
    Class that creates the ``Texture`` object that loads the dynamic texture on the GPU.
 
    :arg gameObj: Game object to be created a video texture on.
-   :type gameObj: :class:`~bge.types.KX_GameObject`
+   :type gameObj: :class:`KX_GameObject`
    :arg materialID: Material ID default, 0 is the first material. (optional)
    :type materialID: int
    :arg textureID: Texture index in case of multi-texture channel, 0 = first channel by default.
@@ -1143,7 +1168,7 @@ Texture classes
       :type refresh_source: bool
       :arg timestamp: If the texture controls a VideoFFmpeg object:
          timestamp (in seconds from the start of the movie) of the frame to be loaded; this can be
-         used for video-sound synchonization by passing :attr:`~bge.types.KX_SoundActuator.time` to it. (optional)
+         used for video-sound synchonization by passing :attr:`KX_SoundActuator.time` to it. (optional)
       :type timestamp: float
 
    .. attribute:: source
@@ -1522,7 +1547,7 @@ Functions
    Ex: ``bge.texture.materialID(obj, 'IMvideo.png')``
 
    :arg object: The game object that uses the texture you want to make dynamic.
-   :type object: :class:`~bge.types.KX_GameObject`
+   :type object: :class:`KX_GameObject`
    :arg name: Name of the texture/material you want to make dynamic.
    :type name: str
 

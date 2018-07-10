@@ -1,32 +1,3 @@
-"""
-Video Capture with DeckLink
-+++++++++++++++++++++++++++
-Video frames captured with DeckLink cards have pixel formats that are generally not directly
-usable by OpenGL, they must be processed by a shader. The three shaders presented here should
-cover all common video capture cases.
-
-This file reflects the current video transfer method implemented in the Decklink module:
-whenever possible the video images are transferred as float texture because this is more
-compatible with GPUs. Of course, only the pixel formats that have a correspondant GL format
-can be transferred as float. Look for fg_shaders in this file for an exhaustive list.
-
-Other pixel formats will be transferred as 32 bits integer red-channel texture but this
-won't work with certain GPU (Intel GMA); the corresponding shaders are not shown here.
-However, it should not be necessary to use any of them as the list below covers all practical
-cases of video capture with all types of Decklink product.
-
-In other words, only use one of the pixel format below and you will be fine. Note that depending
-on the video stream, only certain pixel formats will be allowed (others will throw an exception).
-For example, to capture a PAL video stream, you must use one of the YUV formats.
-
-To find which pixel format is suitable for a particular video stream, use the 'Media Express'
-utility that comes with the Decklink software : if you see the video in the 'Log and Capture'
-Window, you have selected the right pixel format and you can use the same in Blender.
-
-Notes: * these shaders only decode the RGB channel and set the alpha channel to a fixed
-value (look for color.a = ). It's up to you to add postprocessing to the color.
-       * these shaders are compatible with 2D and 3D video stream
-"""
 import bge
 from bge import logic
 from bge import texture as vt

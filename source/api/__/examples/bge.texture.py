@@ -1,9 +1,3 @@
-"""
-Basic Video Playback
-++++++++++++++++++++
-Example of how to replace a texture in game with a video. It needs to run
-everyframe.
-"""
 import bge
 from bge import texture
 from bge import logic
