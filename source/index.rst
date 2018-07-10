@@ -15,14 +15,28 @@ with detailed information (and examples in some cases).
 `Visit the UPBGE's website <https://upbge.org/>`__ or `contribute to this manual <https://github.com/UPBGE/blender>`__.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Manual
 
-   manual/index
+   manual/introduction
+   manual/screen_layout
+   manual/settings/index
+   manual/materials
+   manual/world
+   manual/logic/index
+   manual/camera/index
+   manual/physics/index
+   manual/performance
+   manual/python_api/index
+   manual/blender_player
+   manual/licensing
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: API reference
    
-   api/index_upbge
-   api/index_standalone
+   api/bge
+   api/aud
+   api/bgl
+   api/blf
+   api/mathutils

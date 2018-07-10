@@ -1,9 +1,9 @@
-UPBGE Modules
+UPBGE Modules (bge)
 ====================
 
 .. toctree::
    :maxdepth: 1
-   :caption: UPBGE Modules
+   :caption: UPBGE Modules (bge)
    
    bge.types
    bge.logic
