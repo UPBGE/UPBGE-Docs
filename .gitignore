@@ -1,1 +1,8 @@
 build
+
+# QTCreator
+*.config
+*.files
+*.includes
+*.creator
+*.user
