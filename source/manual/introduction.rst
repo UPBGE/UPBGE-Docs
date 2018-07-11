@@ -12,8 +12,11 @@ new Interactive Engine. With this independency, the UPBGE's developers have free
 to change and add features that could not be changed before (because the possibility 
 of an official Blender merge, now discarded).
 
-UPBGE have lots of new features, improvements and bugs fixed that BGE haven't. Some 
-features that UPBGE supports are:
+Features
+========
+
+UPBGE have lots of `new features <https://doc.upbge.org/releases.php>`__, improvements 
+and bugs fixed that BGE haven't. Some features that UPBGE supports are:
 
 - Realtime advanced physics, including rigid bodies, soft bodies, obstacle simulation and path finding.
 - Fully integrated audio engine, with support to 3D sound and simple sound effects (fades, hi/low pass, etc).
