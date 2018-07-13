@@ -1,7 +1,7 @@
 
-***************
-Render Settings
-***************
+******
+Render
+******
 
 The camera (or cameras) used in a Blender game have a wide-ranging effect on the way in which
 the game is rendered and displayed.
@@ -30,7 +30,6 @@ Embedded Player
 ===============
 
 .. figure:: /images/game-engine_settings_render_camera-properties-embedded.png
-   :width: 300px
 
    Embedded Player panel.
 
@@ -53,12 +52,11 @@ Standalone Player
 =================
 
 .. figure:: /images/game-engine_settings_render_camera-properties-standalone.png
-   :width: 300px
 
    Standalone Player panel.
 
 This panel provides information for the Standalone Game Player which allows games to be run without Blender.
-See :doc:`Standalone Player </manual/blender_player>` for further details.
+See :doc:`Standalone Player </manual/release/blender_player>` for further details.
 
 The semantics of the Standalone Player *Resolution* controls differ for Windowed and Fullscreen modes.
 In Windowed mode (*Fullscreen* checkbox unchecked),
@@ -109,7 +107,6 @@ Stereo
 ======
 
 .. figure:: /images/game-engine_settings_render_camera-properties-stereo.png
-   :width: 300px
 
    Stereo panel.
 
@@ -120,30 +117,37 @@ None
    Render single images with no stereo.
 Stereo
    Render dual images for stereo viewing using appropriate equipment.
-   See :doc:`Stereo Camera </manual/camera/stereo>` for full details of available options.
-Dome
-   Provides facilities for an immersive dome environment in which to view the game.
-   See :doc:`Dome Camera </manual/camera/dome>` for full details of available options.
-
-
+   See :doc:`Stereo Camera </manual/editors/properties/render_stereo>` for full details of available options.
+   
 Shading
 =======
 
 .. figure:: /images/game-engine_settings_render_camera-properties-shading.png
-   :width: 300px
 
    Shading panel.
 
-Specifies the shading mode to be used in rendering the game.
-The shading facilities available in Blender for use in
-Materials and Textures are essentially the same in the Blender Game Engine.
-However, the constraints of real-time display mean that only some of the facilities are available.
+Specifies each singe visual components that will be rendered in the game.
 
-Multitexture
-   Use Multi-texture shading.
-GLSL
-   Use GLSL shading whenever possible for real-time image rendering.
+Lights
+   TODO
 
+Shaders
+   TODO
+
+Shadows
+   TODO
+
+Environment Lighting
+   TODO
+
+Ramps
+   TODO
+
+Nodes
+   TODO
+
+Extra Textures
+   TODO
 
 .. _game-engine-settings-render-system:
 
@@ -152,11 +156,9 @@ System
 
 The *System* panel at the Render tab of the Properties editor lets the game
 developer specify options about the system performance regarding to frame discard and
-restrictions about frame rendering, the key to stop the Blender Game Engine,
-and whether to maintain geometry in the internal memory of the Graphic card.
+restrictions about frame rendering, the key to stop UPBGE, etc.
 
 .. figure:: /images/game-engine_settings_render_system.png
-   :width: 300px
 
    System panel in the Render tab.
 
@@ -166,11 +168,31 @@ Use Frame Rate
    The frame rate is specified at the *Display* panel in the *Render* tab of the Properties editor.
    For more information about frame rates,
    see the :ref:`Display panel <game-engine-settings-render-display>` page.
-Display Lists
-   Use display lists to speed up rendering by keeping geometry on the GPU.
-   When checked, this will tell Blender to maintain the lists of the meshes geometry allocated at the GPU memory.
-   This can help to speed up viewport rendering during the game if
-   you have enough GPU memory to allocate geometry and textures.
+Deprecation Warnings
+   Every time when the game developer uses a deprecated functionality
+   (which in some cases are outdated or crippled OpenGL Graphic cards functions),
+   the system will emit warnings about the deprecated function.
+Vsync
+   Change Vsync settings.
+AA Samples
+   Set how many samples use in anti-aliasing.
+HDR
+   TODO
+Exit Key
+   This button specifies which key-press will exit the game.
+
+Animations
+==========
+
+Specifies animations settings of game, like frame rate.
+
+.. figure:: /images/game-engine_settings_render_animations.png
+
+   Animations panel in the Render tab.
+
+Animation Frame Rate
+   This number button/slider specify the maximum frame rate at which the game will run.
+   Minimum is 1, maximum is 120.
 Restrict Animation Updates
    Restrict number of animation updates to the animation FPS
    (this is better for performance but can cause issues with smooth playback).
@@ -178,48 +200,21 @@ Restrict Animation Updates
    (even at the middle of redrawing, sometimes causing *tearing* artifacts)
    if the rate of frames rendered by the GPU is greater than
    the specified in the :ref:`Display panel <game-engine-settings-render-display>`.
-Use Material Caching
-   Cache materials in the converter.
-   This is faster but can cause problems with older single-texture and multi-texture games.
-Vsync
-   Change Vsync settings.
-Storage
-   Set the storage node used by the rasterizer.
-Exit Key
-   This button specifies which key-press will exit the game.
-
-
+   
 .. _game-engine-settings-render-display:
 
 Display
 =======
 
 The *Display* panel in the *Render* tab of the *Properties* editor
-lets the game developer specify the maximum frame rate of the animations shown during
-the game execution, whether to see informations like framerate and profile, debug properties,
-physics geometry visualization, warnings,
-whether the mouse cursor is shown during the game execution, and options to specify the framing
-style of the game to fit the window with the specified resolution.
+lets the game developer specify whether the mouse cursor is shown during the game 
+execution, and options to specify the framing style of the game to fit the window 
+with the specified resolution.
 
 .. figure:: /images/game-engine_settings_render_display.png
 
    Display panel at the Render tab.
-
-Animation Frame Rate
-   This number button/slider specify the maximum frame rate at which the game will run.
-   Minimum is 1, maximum is 120.
-Debug Properties
-   When checked, the values of any properties which are selected to be debugged in the *Game Properties* panel
-   will be shown with the *Framerate and Profile* contents.
-Framerate and Profile
-   When checked, this will show values for each of the calculations Blender is doing while the game is running,
-   plus the properties marked to be debugged if *Debug Properties* above is also checked.
-Physics visualization
-   Shows a visualization of physics bounds and interactions (like hulls and collision shapes), and their interaction.
-Deprecation Warnings
-   Every time when the game developer uses a deprecated functionality
-   (which in some cases are outdated or crippled OpenGL Graphic cards functions),
-   the system will emit warnings about the deprecated function.
+   
 Mouse Cursor
    Whether to show or not the mouse cursor when the game is running.
 Framing
@@ -246,7 +241,35 @@ Framing
 Color Bar
    This will let the game developer choose the bar colors when using the *Letterbox* Framing mode.
 
+Debug
+=====
 
+TODO
+
+.. figure:: /images/game-engine_settings_render_debug.png
+
+   Debug panel at the Render tab.
+   
+Framerate and Profile
+   When checked, this will show values for each of the calculations Blender is doing 
+   while the game is running, plus the properties marked to be debugged if 
+   *Debug Properties* above is also checked.
+Render Queries
+   TODO
+Properties
+   When checked, the values of any properties which are selected to be debugged in the *Game Properties* panel
+   will be shown with the *Framerate and Profile* contents.
+Physics Visualization
+   Shows a visualization of physics bounds and interactions (like hulls and collision shapes), and their interaction.
+Bounding Box
+   TODO
+Armatures
+   TODO
+Camera Frustum
+   TODO
+Shadow Frustum
+   TODO
+   
 Bake
 ====
 
@@ -337,3 +360,9 @@ Split
       Split quads to give the least distortion while baking.
 User Scale
    Apply a custom scale to the derivative map instead of normalizing to the default (0.1).
+
+.. toctree::
+   :maxdepth: 1
+   :caption: More Info
+   
+   render_stereo

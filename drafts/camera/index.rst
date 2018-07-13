@@ -8,5 +8,3 @@
    :maxdepth: 2
 
    introduction.rst
-   stereo.rst
-   dome.rst

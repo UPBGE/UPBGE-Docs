@@ -18,22 +18,15 @@ with detailed information (and examples in some cases).
    :maxdepth: 1
    :caption: Manual
 
-   manual/introduction
-   manual/screen_layout
-   manual/settings/index
-   manual/materials
-   manual/world
+   manual/introduction/index
+   manual/tutorials/index
+   manual/editors/index
    manual/logic/index
-   manual/camera/index
-   manual/physics/index
-   manual/performance
-   manual/python_api/index
-   manual/blender_player
-   manual/licensing
+   manual/release/index
 
 .. toctree::
    :maxdepth: 1
-   :caption: API reference
+   :caption: API Reference
    
    api/bge
    api/aud

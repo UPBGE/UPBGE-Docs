@@ -6,7 +6,7 @@ Python Controller
 
 The Python controller runs a Python script when a sensor triggers the controller.
 This Python script can interact with the scene or logic bricks through
-:doc:`Blender's API </manual/python_api/index>`.
+:doc:`Blender's API </api/bge>`.
 
 A Python script can either run as an entire file or a single module.
 A file must be added in the Text editor, and is identified simply by its name, not its path.
@@ -43,4 +43,4 @@ See :ref:`standard controller parts <standard-controller-parts>` for description
 .. seealso:: For more information on the Python API, see:
 
    - `The API docs <https://www.blender.org/api/blender_python_api_current/>`__.
-   - :doc:`This chapter for more Game Engine related API </manual/python_api/index>`.
+   - :doc:`This chapter for more Game Engine related API </api/bge>`.

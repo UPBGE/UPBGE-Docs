@@ -1,6 +1,6 @@
 
 ***************
-Object Settings
+Object
 ***************
 
 .. _bpy.types.LodLevel:

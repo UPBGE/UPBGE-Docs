@@ -1,29 +1,7 @@
 
-************
-Introduction
-************
-
-The **Uchronia Project Blender Game Engine** (UPBGE) is a `Blender <https://www.blender.org/>`__'s builtin tool for 
-real-time projects, from architectural visualizations and simulations to games.
-
-Originally a fork from the Blender Foundation's `Blender Game Engine <https://en.wikipedia.org/wiki/Blender_Game_Engine>`__, became indepent 
-with the Blender Foundation's announcement of BGE's removal and replacement with a 
-new Interactive Engine. With this independency, the UPBGE's developers have freedom 
-to change and add features that could not be changed before (because the possibility 
-of an official Blender merge, now discarded).
-
-Features
-========
-
-UPBGE have lots of `new features <https://doc.upbge.org/releases.php>`__, improvements 
-and bugs fixed that BGE haven't. Some features that UPBGE supports are:
-
-- Realtime advanced physics, including rigid bodies, soft bodies, obstacle simulation and path finding.
-- Fully integrated audio engine, with support to 3D sound and simple sound effects (fades, hi/low pass, etc).
-- Easy and straightforward visual logic system and powerful `Python <https://www.python.org/>`__ language bindings.
-- Development process entirely inside Blender, without needing to import/export models and textures.
-- Game can be executed in Blender viewport or on an standalone executable.
-- Supports Blender's `Linked Libraries <https://docs.blender.org/manual/en/dev/data_system/linked_libraries.html>`__ feature, allowing to organize projects in multiple blend files.
+*************
+A Deeper Look
+*************
 
 Use Cases
 =========
@@ -66,7 +44,7 @@ Logic Editor provides deep interaction with the simulation, and its functionalit
 be extended through Python scripting. It is designed to abstract the complex engine 
 features into a simple user interface, which does not require experience with Programming.
 An overview of the Logic Editor can be found in the 
-:doc:`Game Logic Screen Layout </manual/screen_layout>`.
+:doc:`Game Logic Screen Layout <screen_layout>`.
 
 UPBGE is closely integrated with the existing code base of Blender, which permits quick 
 transitions between the traditional modeling feature set and game-specific functionality
