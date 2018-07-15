@@ -3,27 +3,20 @@
 Render
 ******
 
-The camera (or cameras) used in a Blender game have a wide-ranging effect on the way in which
-the game is rendered and displayed.
-Mostly this is controlled using the Properties panel of the camera(s) used in the game.
+The **Render** tab in :doc:`Properties Editor </manual/editors/properties/index>` exposes 
+options related to game screen rendering.
 
-There are two separate game "players" for previewing the game during development.
-The Embedded Player renders onto the 3D scene pane in the Blender GUI using the current perspective
-and zoom level of the 3D preview.
-The Standalone Player renders the scene from the perspective of the active scene camera
-and either creates a new desktop window or switches into fullscreen rendering mode.
-Note that while the Game Engine is running in either player,
-the computer's mouse and keyboard are captured by the game and by default,
-the mouse cursor is not visible. To exit the game, press the :kbd:`Esc` key.
+Some of the options showed here may behave differently according to the conditions, as 
+there are two separate game "players" for previewing the game during development. Note 
+that while UPBGE is running in either player, the computer's mouse and keyboard 
+are captured by the game and by default, the mouse cursor is not visible (this can be 
+changed in the **Display** panel of this tab). To exit the game, press the :kbd:`Esc` key.
 
-.. tip:: Render Engine
+.. note:: Make sure that the render engine is set to :doc:`Blender Game </manual/introduction/screen_layout>` when attempting to set these controls, otherwise this description will not apply to what you see!
 
-   Make sure that the render engine is set to Blender Game when attempting to set these controls,
-   otherwise this description will not tally with what you see!
-
-In the Camera Properties area, there are seven panels available, as shown.
-Each can be expanded or contracted using the usual triangle button.
-The features in each panel will be described in detail below.
+In **Render** tab, there are several panels available, as shown. Each one can be expanded 
+or contracted using the usual triangle button. The features in each panel will be described 
+in details below.
 
 
 Embedded Player
@@ -33,20 +26,20 @@ Embedded Player
 
    Embedded Player panel.
 
-This panel provides information for the Embedded Game Player which allows games to be run
-inside a Blender render pane.
+This panel provides information for the **Embedded Player** which allows games to be run
+inside the Blender **3D View**. The **Embedded Player** renders onto the **3D View** editor 
+in the Blender GUI using the current perspective and zoom level of the **3D View**.
 
 Note that the *Resolution* settings are independent of the size of the viewport preview pane.
-In fact, the *Resolution* controls seem to have no effect at all.
-The resolution and aspect ratio of the embedded preview are always fixed to the 3D preview pane,
-which behaves much like the *Extend* framing mode for the standalone player as described below.
-The *Framing* selection under the *Display* heading has no effect on the embedded preview.
+In fact, the *Resolution* controls seem to have no effect at all. The resolution and aspect 
+ratio of the embedded preview are always fixed to the **3D View** editor, which behaves 
+much like the *Extend* framing mode for the **Standalone Player**, as described below.
 
 Start
-   Starts the Game Engine inside the blender viewport preview pane. Shortcut :kbd:`P`.
+   Starts UPBGE inside the current Blender **3D View**. Shortcut :kbd:`P`, while mouse hovers 
+   the desired **3D View**.
 Resolution X/Y
    Sets the internal X/Y rendering resolution.
-
 
 Standalone Player
 =================
@@ -55,40 +48,46 @@ Standalone Player
 
    Standalone Player panel.
 
-This panel provides information for the Standalone Game Player which allows games to be run without Blender.
-See :doc:`Standalone Player </manual/release/blender_player>` for further details.
+This panel provides information for the **Standalone Player** which allows games to be 
+run without Blender. See :doc:`Standalone Player </manual/release/blender_player>` for 
+further details.
 
-The semantics of the Standalone Player *Resolution* controls differ for Windowed and Fullscreen modes.
-In Windowed mode (*Fullscreen* checkbox unchecked),
+The **Standalone Player** renders the scene from the perspective of the active scene 
+camera and either creates a new desktop window or switches into fullscreen rendering mode. 
+
+The semantics of the **Standalone Player**'s *Resolution* controls differ for Windowed and 
+Fullscreen modes. In Windowed mode (*Fullscreen* checkbox unchecked),
 the *Resolution* controls set the initial dimensions of the desktop window.
-The user may resize the window at any time, causing the rendering resolution to change accordingly.
-In Fullscreen mode (*Fullscreen* checkbox checked), the *Resolution* controls set the internal rendering resolution.
-The actual display resolution will be a best fit depending on the user's hardware.
-In either mode, the aspect ratio/cropping/scaling are determined
-by the *Framing* selection under the *Display* heading.
+The user may resize the window at any time, causing the rendering resolution to change 
+accordingly. In Fullscreen mode (*Fullscreen* checkbox checked), the *Resolution* controls 
+set the internal rendering resolution. The actual display resolution will be a best fit 
+depending on the user's hardware. In either mode, the aspect ratio/cropping/scaling are 
+determined by the *Framing* selection under the **Display** panel.
 
-Regarding *Fullscreen* mode, it is important to remember that the *Resolution* settings in *Fullscreen* mode
-are only hints to the operating system. Each display and monitor combination will have a different set of
-resolutions that they are capable of displaying; so there can be little confidence that all end-users will actually
-get the resolution you suggest; unless you choose one of the most standard resolutions (e.g. 800x600 or 1024x768).
-If you insist on using higher resolutions, then you may want to state clearly in your documentation that
-only certain resolutions are supported. In most other cases, the user's machine may select a resolution that is
-close to the one suggested; but the results can be unpredictable, especially in *Letterbox* mode.
+Regarding *Fullscreen* mode, it is important to remember that the *Resolution* settings 
+in *Fullscreen* mode are only hints to the operating system. Each display and monitor 
+combination will have a different set of resolutions that they are capable of displaying; 
+so there can be little confidence that all end-users will actually get the resolution you 
+suggest; unless you choose one of the most standard resolutions (e.g. 800x600 or 1024x768).
+If you insist on using higher resolutions, then you may want to state clearly in your 
+documentation that only certain resolutions are supported. In most other cases, the user's 
+machine may select a resolution that is close to the one suggested; but the results can 
+be unpredictable, especially in *Letterbox* framing mode.
 
 Note that the *Desktop* checkbox has no effect in Windowed mode.
 
 Start
-   Launches the current blend-file with the Standalone Player.
+   Launches the current blend file with the **Standalone Player**.
 Resolution
    X
-      Sets the X window size or full-screen display resolution.
+      Sets the X window size or fullscreen display resolution.
    Y
-      Sets the Y window size or full-screen display resolution.
+      Sets the Y window size or fullscreen display resolution.
 Fullscreen
    Off
       Opens standalone game as a new window.
    On
-      Opens standalone game in full-screen.
+      Opens standalone game in fullscreen.
 Desktop
    Off
       Attempts to obey the *Resolution* specified above when in *Fullscreen* mode.
@@ -98,9 +97,9 @@ Quality
    AA Samples
       The number of AA samples to use for MSAA.
    Bit Depth
-      Number of bits used to represent color of each pixel in full-screen display.
+      Number of bits used to represent color of each pixel in fullscreen display.
    Refresh Rate
-      Number of frames per second of full-screen display.
+      Number of frames per second of fullscreen display.
 
 
 Stereo
@@ -110,8 +109,9 @@ Stereo
 
    Stereo panel.
 
-Select a stereo mode that will be used to capture stereo images of the game (and also,
-by implication, that stereo displays will use to render images in the standalone player).
+Toggle if use an stereo mode and, if use, select a stereo mode that will be used to capture 
+stereo images of the game (and also, by implication, that stereo displays will use to 
+render images in the **Standalone Player**).
 
 None
    Render single images with no stereo.
@@ -129,49 +129,49 @@ Shading
 Specifies each singe visual components that will be rendered in the game.
 
 Lights
-   TODO
+   Toggles lights rendering.
 
 Shaders
-   TODO
+   Toggles GLSL shaders.
 
 Shadows
-   TODO
+   Toggles realtime shadows from lamps.
 
 Environment Lighting
-   TODO
+   Toggles environment lighting from :doc:`World tab </manual/editors/properties/world>`.
 
 Ramps
-   TODO
+   Toggles material ramps.
 
 Nodes
-   TODO
+   Toggles material nodes.
 
 Extra Textures
-   TODO
+   Toggles extra textures, like normal or specular maps.
 
 .. _game-engine-settings-render-system:
 
 System
 ======
 
-The *System* panel at the Render tab of the Properties editor lets the game
-developer specify options about the system performance regarding to frame discard and
-restrictions about frame rendering, the key to stop UPBGE, etc.
-
 .. figure:: /images/game-engine_settings_render_system.png
 
    System panel in the Render tab.
 
+The **System** panel at the Render tab lets the game developer specify options about 
+the system performance regarding to frame discard and restrictions about frame rendering, 
+the key to stop UPBGE, etc.
+
 Use Frame Rate
    Respect the frame rate rather than rendering as many frames as possible.
    When unchecked, this will inform Blender to run freely without frame rate restrictions.
-   The frame rate is specified at the *Display* panel in the *Render* tab of the Properties editor.
+   The frame rate is specified at the **Display** panel, also in the **Render** tab.
    For more information about frame rates,
    see the :ref:`Display panel <game-engine-settings-render-display>` page.
 Deprecation Warnings
    Every time when the game developer uses a deprecated functionality
    (which in some cases are outdated or crippled OpenGL Graphic cards functions),
-   the system will emit warnings about the deprecated function.
+   the system will emit warnings about the deprecated function on the console.
 Vsync
    Change Vsync settings.
 AA Samples
@@ -184,11 +184,11 @@ Exit Key
 Animations
 ==========
 
-Specifies animations settings of game, like frame rate.
-
 .. figure:: /images/game-engine_settings_render_animations.png
 
    Animations panel in the Render tab.
+
+Specifies animations settings of game, like frame rate.
 
 Animation Frame Rate
    This number button/slider specify the maximum frame rate at which the game will run.
@@ -196,7 +196,7 @@ Animation Frame Rate
 Restrict Animation Updates
    Restrict number of animation updates to the animation FPS
    (this is better for performance but can cause issues with smooth playback).
-   When checked, this will force the Game Engine to discard frames
+   When checked, this will force UPBGE to discard frames
    (even at the middle of redrawing, sometimes causing *tearing* artifacts)
    if the rate of frames rendered by the GPU is greater than
    the specified in the :ref:`Display panel <game-engine-settings-render-display>`.
@@ -206,15 +206,14 @@ Restrict Animation Updates
 Display
 =======
 
-The *Display* panel in the *Render* tab of the *Properties* editor
-lets the game developer specify whether the mouse cursor is shown during the game 
-execution, and options to specify the framing style of the game to fit the window 
-with the specified resolution.
-
 .. figure:: /images/game-engine_settings_render_display.png
 
    Display panel at the Render tab.
-   
+
+The **Display** panel in the **Render** lets the game developer specify whether the mouse 
+cursor is shown during the game execution, and options to specify the framing style of 
+the game to fit the window with the specified resolution.
+
 Mouse Cursor
    Whether to show or not the mouse cursor when the game is running.
 Framing
@@ -223,18 +222,20 @@ Framing
 
    Letterbox
       In Windowed mode:
-         Maintains a 4:3 aspect ratio by scaling to fit the current window dimensions without cropping,
-         covering any portions of the display that lie outside of the aspect ratio with color bars.
+         Maintains a 4:3 aspect ratio by scaling to fit the current window dimensions 
+         without cropping, covering any portions of the display that lie outside of the 
+         aspect ratio with color bars.
       In Fullscreen mode:
          The behavior of this combination seems to be heavily dependent on the user's hardware.
          The result can be quite unpredictable, especially when the resolution and aspect ratio
          differ too much from the machine's capabilities. For this reason, *Extend* mode
          should be preferred for *Fullscreen* applications.
    Extend
-      This mode behaves much like *Letterbox* mode, maintaining a 4:3 aspect ratio by scaling whenever possible;
-      except that the camera frustum is expanded or contracted wherever necessary to fill
-      any portions of the display that lie outside of the aspect ratio, instead of covering those portions
-      of the scene with color bars, as with *Letterbox* mode, or distorting then scene, as with *Scale* mode.
+      This mode behaves much like *Letterbox* mode, maintaining a 4:3 aspect ratio by 
+      scaling whenever possible; except that the camera frustum is expanded or contracted 
+      wherever necessary to fill any portions of the display that lie outside of the aspect 
+      ratio, instead of covering those portions of the scene with color bars, as with 
+      *Letterbox* mode, or distorting then scene, as with *Scale* mode.
    Scale
       In this mode, no attempt is made to maintain a particular aspect ratio.
       The scene and objects within will be stretched or squashed to fit the display exactly.
@@ -244,38 +245,47 @@ Color Bar
 Debug
 =====
 
-TODO
-
 .. figure:: /images/game-engine_settings_render_debug.png
 
    Debug panel at the Render tab.
-   
+
+The **Debug** panel at the **Render** tab toggles various specific debug helpers on UPBGE, 
+from frame rate being showed on the screen to detailed physics visualization of specific 
+elements, like armatures and camera frustum.
+
 Framerate and Profile
    When checked, this will show values for each of the calculations Blender is doing 
-   while the game is running, plus the properties marked to be debugged if 
-   *Debug Properties* above is also checked.
+   while the game is running on the top left of the screen.
 Render Queries
-   TODO
+   Shows render queries information while the game runs.
 Properties
-   When checked, the values of any properties which are selected to be debugged in the *Game Properties* panel
-   will be shown with the *Framerate and Profile* contents.
+   When checked, the values of any properties which are selected to be debugged in the 
+   objects are shown on the top left side of the screen.
 Physics Visualization
-   Shows a visualization of physics bounds and interactions (like hulls and collision shapes), and their interaction.
+   Shows a visualization of physics bounds and interactions (like hulls and collision shapes), 
+   and their interaction.
+   
+The following remaining options are dropdown menus which allows the following options:
+- Disable: Disables the debug of the current option.
+- Allow: Allow debugging from individual settings of the current option.
+- Force: Allow debugging of the current option.
+
 Bounding Box
-   TODO
+  Shows bounding volume boxes of objects while the game is running.
 Armatures
-   TODO
+  Shows armatures while the game is running.
 Camera Frustum
-   TODO
+  Shows camera limits visualization according to the current viewport dimensions while the game is running.
 Shadow Frustum
-   TODO
+  Shows lamp's shadows bounds while the game is running.
    
 Bake
 ====
 
-The *Bake* panel in the *Render* tab of the *Properties* editor is very similar to its
-Blender Render counterpart and serves much the same purpose.
-See Render Baking for further details.
+The **Bake** panel in the **Render** tab is very similar to its **Blender Render** counterpart 
+and serves much the same purpose. See 
+`Render Baking <https://docs.blender.org/manual/en/dev/render/blender_render/bake.html>`__ 
+for further details.
 
 .. figure:: /images/game-engine_settings_render_bake.png
 

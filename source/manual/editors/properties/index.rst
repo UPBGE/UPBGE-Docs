@@ -21,7 +21,7 @@ change almost all properties of the selected object, scene, camera, etc, like:
 
 In this section you have a detailed description about each tab of the Properties editor.
 
-.. note:: The **Render layers** and **Particles** tabs don't apply UPBGE, so they won't
+.. note:: The **Render layers** and **Particles** tabs don't apply to UPBGE, so they won't
    be explained here.
    
 .. note:: This section will explain properties belonging to UPBGE only (Blender Game renderer) or, at most, relevant properties for game development. For other Blender properties, see the `official Blender manual <https://docs.blender.org/manual/en/dev/editors/properties_editor.html>`__.
