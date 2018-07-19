@@ -15,11 +15,11 @@ Submodules:
 .. toctree::
    :maxdepth: 1
 
-   mathutils.geometry.rst
-   mathutils.bvhtree.rst
-   mathutils.kdtree.rst
-   mathutils.interpolate.rst
-   mathutils.noise.rst
+   mathutils.geometry
+   mathutils.bvhtree
+   mathutils.kdtree
+   mathutils.interpolate
+   mathutils.noise
 
 The :mod:`mathutils` module provides the following classes:
 
@@ -29,9 +29,10 @@ The :mod:`mathutils` module provides the following classes:
 - :class:`Quaternion`,
 - :class:`Vector`,
 
-
-
 .. literalinclude:: __/examples/mathutils.py
+
+Color
+-----
 
 .. class:: Color(rgb)
 
@@ -131,8 +132,8 @@ The :mod:`mathutils` module provides the following classes:
       
       :type: float
 
-
-
+Euler
+-----
 
 .. class:: Euler(angles, order='XYZ')
 
@@ -261,8 +262,8 @@ The :mod:`mathutils` module provides the following classes:
       
       :type: float
 
-
-
+Matrix
+------
 
 .. class:: Matrix([rows])
 
@@ -648,8 +649,8 @@ The :mod:`mathutils` module provides the following classes:
       
       :type: Vector
 
-
-
+Quaternion
+----------
 
 .. class:: Quaternion([seq, [angle]])
 
@@ -912,8 +913,8 @@ The :mod:`mathutils` module provides the following classes:
       
       :type: float
 
-
-
+Vector
+------
 
 .. class:: Vector(seq)
 

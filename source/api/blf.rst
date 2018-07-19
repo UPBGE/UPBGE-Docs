@@ -5,14 +5,17 @@ Font Drawing (blf)
 
 This module provides access to blenders text drawing functions.
 
-Hello World Text Example
-++++++++++++++++++++++++
+Text Example
+------------
 
 Blender Game Engine example of using the blf module. For this module to work we
 need to use the OpenGL wrapper :class:`~bgl` as well.
 
 .. literalinclude:: __/examples/blf.py
    :lines: 8-
+
+Functions
+---------
 
 .. function:: aspect(fontid, aspect)
 
@@ -185,6 +188,8 @@ need to use the OpenGL wrapper :class:`~bgl` as well.
    :arg wrap_width: The width (in pixels) to wrap words at.
    :type wrap_width: int
 
+Constants
+---------
 
 .. data:: CLIPPING
 

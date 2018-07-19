@@ -6,7 +6,7 @@ Audio System (aud)
 This module provides access to the audaspace audio library.
 
 Basic Sound Playback
-++++++++++++++++++++
+--------------------
 
 This script shows how to use the classes: :class:`Device`, :class:`Factory` and
 :class:`Handle`.
@@ -14,107 +14,21 @@ This script shows how to use the classes: :class:`Device`, :class:`Factory` and
 .. literalinclude:: __/examples/aud.py
    :lines: 8-
 
-device()
+.. function:: device()
 
 Returns the application's :class:`Device`.
 
 :return: The application's :class:`Device`.
 :rtype: :class:`Device`
 
-
-.. data:: AUD_DEVICE_JACK
-
-   constant value 3
-
-.. data:: AUD_DEVICE_NULL
-
-   constant value 0
-
-.. data:: AUD_DEVICE_OPENAL
-
-   constant value 1
-
-.. data:: AUD_DEVICE_SDL
-
-   constant value 2
-
-.. data:: AUD_DISTANCE_MODEL_EXPONENT
-
-   constant value 5
-
-.. data:: AUD_DISTANCE_MODEL_EXPONENT_CLAMPED
-
-   constant value 6
-
-.. data:: AUD_DISTANCE_MODEL_INVALID
-
-   constant value 0
-
-.. data:: AUD_DISTANCE_MODEL_INVERSE
-
-   constant value 1
-
-.. data:: AUD_DISTANCE_MODEL_INVERSE_CLAMPED
-
-   constant value 2
-
-.. data:: AUD_DISTANCE_MODEL_LINEAR
-
-   constant value 3
-
-.. data:: AUD_DISTANCE_MODEL_LINEAR_CLAMPED
-
-   constant value 4
-
-.. data:: AUD_FORMAT_FLOAT32
-
-   constant value 36
-
-.. data:: AUD_FORMAT_FLOAT64
-
-   constant value 40
-
-.. data:: AUD_FORMAT_INVALID
-
-   constant value 0
-
-.. data:: AUD_FORMAT_S16
-
-   constant value 18
-
-.. data:: AUD_FORMAT_S24
-
-   constant value 19
-
-.. data:: AUD_FORMAT_S32
-
-   constant value 20
-
-.. data:: AUD_FORMAT_U8
-
-   constant value 1
-
-.. data:: AUD_STATUS_INVALID
-
-   constant value 0
-
-.. data:: AUD_STATUS_PAUSED
-
-   constant value 2
-
-.. data:: AUD_STATUS_PLAYING
-
-   constant value 1
-
-.. data:: AUD_STATUS_STOPPED
-
-   constant value 3
+Device
+------
 
 .. class:: Device
 
    Device objects represent an audio output backend like OpenAL or SDL, but might also represent a file output or RAM buffer output.
 
-   lock()
+   .. function:: lock()
    
    Locks the device so that it's guaranteed, that no samples are read from the streams until :meth:`unlock` is called.
    This is useful if you want to do start/stop/pause/resume some sounds at the same time.
@@ -124,7 +38,7 @@ Returns the application's :class:`Device`.
    .. warning:: Make sure the time between locking and unlocking is as short as possible to avoid clicks.
 
 
-   play(factory, keep=False)
+   .. function:: play(factory, keep=False)
    
    Plays a factory.
    
@@ -136,12 +50,12 @@ Returns the application's :class:`Device`.
    :rtype: :class:`Handle`
 
 
-   stopAll()
+   .. function:: stopAll()
    
    Stops all playing and paused sounds.
 
 
-   unlock()
+   .. function:: unlock()
    
    Unlocks the device after a lock call, see :meth:`lock` for details.
 
@@ -200,13 +114,14 @@ Returns the application's :class:`Device`.
       The overall volume of the device.
 
 
-
+Factory
+-------
 
 .. class:: Factory
 
    Factory objects are immutable and represent a sound that can be played simultaneously multiple times. They are called factories because they create reader objects internally that are used for playback.
 
-   file(filename)
+   .. function:: file(filename)
    
    Creates a factory object of a sound file.
    
@@ -218,7 +133,7 @@ Returns the application's :class:`Device`.
    .. warning:: If the file doesn't exist or can't be read you will not get an exception immediately, but when you try to start playback of that factory.
 
 
-   sine(frequency, rate=48000)
+   .. function:: sine(frequency, rate=48000)
    
    Creates a sine factory which plays a sine wave.
    
@@ -230,7 +145,7 @@ Returns the application's :class:`Device`.
    :rtype: :class:`Factory`
 
 
-   buffer()
+   .. function:: buffer()
    
    Buffers a factory into RAM.
    This saves CPU usage needed for decoding and file access if the underlying factory reads from a file on the harddisk, but it consumes a lot of memory.
@@ -243,7 +158,7 @@ Returns the application's :class:`Device`.
    .. warning:: Raw PCM data needs a lot of space, only buffer short factories.
 
 
-   delay(time)
+   .. function:: delay(time)
    
    Delays by playing adding silence in front of the other factory's data.
    
@@ -253,7 +168,7 @@ Returns the application's :class:`Device`.
    :rtype: :class:`Factory`
 
 
-   fadein(start, length)
+   .. function:: fadein(start, length)
    
    Fades a factory in by raising the volume linearly in the given time interval.
    
@@ -267,7 +182,7 @@ Returns the application's :class:`Device`.
    .. note:: Before the fade starts it plays silence.
 
 
-   fadeout(start, length)
+   .. function:: fadeout(start, length)
    
    Fades a factory in by lowering the volume linearly in the given time interval.
    
@@ -281,7 +196,7 @@ Returns the application's :class:`Device`.
    .. note:: After the fade this factory plays silence, so that the length of the factory is not altered.
 
 
-   filter(b, a = (1))
+   .. function:: filter(b, a = (1))
    
    Filters a factory with the supplied IIR filter coefficients.
    Without the second parameter you'll get a FIR filter.
@@ -296,7 +211,7 @@ Returns the application's :class:`Device`.
    :rtype: :class:`Factory`
 
 
-   highpass(frequency, Q=0.5)
+   .. function:: highpass(frequency, Q=0.5)
    
    Creates a second order highpass filter based on the transfer function H(s) = s^2 / (s^2 + s/Q + 1)
    
@@ -308,7 +223,7 @@ Returns the application's :class:`Device`.
    :rtype: :class:`Factory`
 
 
-   join(factory)
+   .. function:: join(factory)
    
    Plays two factories in sequence.
    
@@ -320,7 +235,7 @@ Returns the application's :class:`Device`.
    .. note:: The two factories have to have the same specifications (channels and samplerate).
 
 
-   limit(start, end)
+   .. function:: limit(start, end)
    
    Limits a factory within a specific start and end time.
    
@@ -332,7 +247,7 @@ Returns the application's :class:`Device`.
    :rtype: :class:`Factory`
 
 
-   loop(count)
+   .. function:: loop(count)
    
    Loops a factory.
    
@@ -344,7 +259,7 @@ Returns the application's :class:`Device`.
    .. note:: This is a filter function, you might consider using :attr:`Handle.loop_count` instead.
 
 
-   lowpass(frequency, Q=0.5)
+   .. function:: lowpass(frequency, Q=0.5)
    
    Creates a second order lowpass filter based on the transfer function H(s) = 1 / (s^2 + s/Q + 1)
    
@@ -356,7 +271,7 @@ Returns the application's :class:`Device`.
    :rtype: :class:`Factory`
 
 
-   mix(factory)
+   .. function:: mix(factory)
    
    Mixes two factories.
    
@@ -368,7 +283,7 @@ Returns the application's :class:`Device`.
    .. note:: The two factories have to have the same specifications (channels and samplerate).
 
 
-   pingpong()
+   .. function:: pingpong()
    
    Plays a factory forward and then backward.
    This is like joining a factory with its reverse.
@@ -377,7 +292,7 @@ Returns the application's :class:`Device`.
    :rtype: :class:`Factory`
 
 
-   pitch(factor)
+   .. function:: pitch(factor)
    
    Changes the pitch of a factory with a specific factor.
    
@@ -391,7 +306,7 @@ Returns the application's :class:`Device`.
    .. note:: This is a filter function, you might consider using :attr:`Handle.pitch` instead.
 
 
-   reverse()
+   .. function:: reverse()
    
    Plays a factory reversed.
    
@@ -403,7 +318,7 @@ Returns the application's :class:`Device`.
    .. warning:: If seeking is not accurate in the underlying factory you'll likely hear skips/jumps/cracks.
 
 
-   square(threshold = 0)
+   .. function:: square(threshold = 0)
    
    Makes a square wave out of an audio wave by setting all samples with a amplitude >= threshold to 1, all <= -threshold to -1 and all between to 0.
    
@@ -413,7 +328,7 @@ Returns the application's :class:`Device`.
    :rtype: :class:`Factory`
 
 
-   volume(volume)
+   .. function:: volume(volume)
    
    Changes the volume of a factory.
    
@@ -427,13 +342,14 @@ Returns the application's :class:`Device`.
    .. note:: This is a filter function, you might consider using :attr:`Handle.volume` instead.
 
 
-
+Handle
+------
 
 .. class:: Handle
 
    Handle objects are playback handles that can be used to control playback of a sound. If a sound is played back multiple times then there are as many handles.
 
-   pause()
+   .. function:: pause()
    
    Pauses playback.
    
@@ -441,7 +357,7 @@ Returns the application's :class:`Device`.
    :rtype: bool
 
 
-   resume()
+   .. function:: resume()
    
    Resumes playback.
    
@@ -449,7 +365,7 @@ Returns the application's :class:`Device`.
    :rtype: bool
 
 
-   stop()
+   .. function:: stop()
    
    Stops playback.
    
@@ -568,11 +484,95 @@ Returns the application's :class:`Device`.
       
       .. seealso:: :attr:`Device.distance_model`
 
-
-
-
 .. class:: error
 
+Constants
+---------
 
+.. data:: AUD_DEVICE_JACK
 
+   constant value 3
 
+.. data:: AUD_DEVICE_NULL
+
+   constant value 0
+
+.. data:: AUD_DEVICE_OPENAL
+
+   constant value 1
+
+.. data:: AUD_DEVICE_SDL
+
+   constant value 2
+
+.. data:: AUD_DISTANCE_MODEL_EXPONENT
+
+   constant value 5
+
+.. data:: AUD_DISTANCE_MODEL_EXPONENT_CLAMPED
+
+   constant value 6
+
+.. data:: AUD_DISTANCE_MODEL_INVALID
+
+   constant value 0
+
+.. data:: AUD_DISTANCE_MODEL_INVERSE
+
+   constant value 1
+
+.. data:: AUD_DISTANCE_MODEL_INVERSE_CLAMPED
+
+   constant value 2
+
+.. data:: AUD_DISTANCE_MODEL_LINEAR
+
+   constant value 3
+
+.. data:: AUD_DISTANCE_MODEL_LINEAR_CLAMPED
+
+   constant value 4
+
+.. data:: AUD_FORMAT_FLOAT32
+
+   constant value 36
+
+.. data:: AUD_FORMAT_FLOAT64
+
+   constant value 40
+
+.. data:: AUD_FORMAT_INVALID
+
+   constant value 0
+
+.. data:: AUD_FORMAT_S16
+
+   constant value 18
+
+.. data:: AUD_FORMAT_S24
+
+   constant value 19
+
+.. data:: AUD_FORMAT_S32
+
+   constant value 20
+
+.. data:: AUD_FORMAT_U8
+
+   constant value 1
+
+.. data:: AUD_STATUS_INVALID
+
+   constant value 0
+
+.. data:: AUD_STATUS_PAUSED
+
+   constant value 2
+
+.. data:: AUD_STATUS_PLAYING
+
+   constant value 1
+
+.. data:: AUD_STATUS_STOPPED
+
+   constant value 3
