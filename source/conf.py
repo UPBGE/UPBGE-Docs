@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'UPBGE Manual'
-copyright = '2018, UPBGE Community'
+copyright = 'This page is licensed under a CC-BY-SA 4.0 Int. License.'
 author = 'UPBGE Community'
 
 # The short X.Y version
