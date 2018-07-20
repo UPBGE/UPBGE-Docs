@@ -32,7 +32,7 @@ Here are some examples of games made with BGE/UPBGE.
 
    Screenshot from `"Yo Frankie" <https://apricot.blender.org/>`__, produced with Blender Game Engine.
 
-Under the hood
+Under The Hood
 ==============
 
 UPBGE oversees a game loop, which processes logic, sound, physics and rendering 
@@ -61,7 +61,7 @@ There are a number of powerful libraries the UPBGE takes advantage of:
 - **Detour:** A pathfinding and spatial reasoning toolkit.
 - **Recast:** A state of the art navigation mesh construction tool set for games.
 
-Project development process
+Project Development Process
 ===========================
 
 When creating a game or simulation in UPBGE, there are four essential steps:

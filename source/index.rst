@@ -12,7 +12,7 @@ find definitions of the available tools and features in UPBGE, step-by-step
 tutorials to certain tasks and the Python API for game logic programming 
 with detailed information (and examples in some cases).
 
-`Visit the UPBGE's website <https://upbge.org/>`__ or `contribute to this manual <https://github.com/UPBGE/blender>`__.
+`Visit the UPBGE's website <https://upbge.org/>`__ or `contribute to this manual <https://github.com/UPBGE/UPBGE-Docs>`__.
 
 .. toctree::
    :maxdepth: 1
