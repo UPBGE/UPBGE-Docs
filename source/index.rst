@@ -23,6 +23,7 @@ with detailed information (and examples in some cases).
    manual/editors/index
    manual/logic/index
    manual/release/index
+   manual/about/index
 
 .. toctree::
    :maxdepth: 1
