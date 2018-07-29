@@ -3,7 +3,7 @@
 Properties Editor
 #################
 
-.. figure:: /images/game-engine_props_editor_tabs.png
+.. figure:: /images/editors-properties-tabs.png
    
    The Properties editor header.
 

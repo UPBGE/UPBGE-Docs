@@ -6,7 +6,7 @@ Armature Sensor
 
 The *Armature Sensor* is used to detect changes in values of an IK solver.
 
-.. figure:: /images/game-engine_logic_sensors_types_armature_node.png
+.. figure:: /images/logic-sensors-types-armature-node.png
 
    Armature Sensor.
 

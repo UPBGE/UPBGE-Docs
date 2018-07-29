@@ -12,10 +12,10 @@ If you do not need the rotational response the Dynamic type can save the extra c
 Note that these objects can still be rotated with :doc:`Logic Bricks </manual/logic/index>` or Python code.
 Their physics meshes will update when you do these rotations -- so collisions will be based on the new orientations.
 
-For more documentation, see the general :doc:`physics page </manual/physics/index>`.
+For more documentation, see the general :doc:`physics page <./physics>`.
 
 
 Options
 =======
 
-See :doc:`/manual/physics/types/rigid_body`.
+See :doc:`./physics_rigid_body`.

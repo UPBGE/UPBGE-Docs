@@ -7,7 +7,7 @@ Scene Actuator
 The *Scene Actuator* manages the scenes in the user's blend-file,
 these can be used as levels or for UI and background.
 
-.. figure:: /images/game-engine_logic_actuators_types_scene_node.png
+.. figure:: /images/logic-actuators-types-scene-node.png
    :width: 257px
 
    Scene actuator.

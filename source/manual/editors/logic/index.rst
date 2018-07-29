@@ -3,7 +3,7 @@
 Logic Editor
 ############
 
-.. figure:: /images/game-engine_logic_editor_header.png
+.. figure:: /images/editors-logic-logic_editor-header.png
    
    The Logic editor header.
 

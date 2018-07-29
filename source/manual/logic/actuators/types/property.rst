@@ -7,7 +7,7 @@ Property Actuator
 The *Property Actuator* changes the value of a given property (like assigning, adding, or copying)
 once the actuator itself is activated.
 
-.. figure:: /images/game-engine_logic_actuators_types_property_node.jpg
+.. figure:: /images/logic-actuators-types-property-node.jpg
    :width: 271px
 
    Property Actuator.

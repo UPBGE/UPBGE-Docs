@@ -10,7 +10,7 @@ depth effects (mist), etc.
 World
 =====
 
-.. figure:: /images/game-engine_settings_world_world_panel.png
+.. figure:: /images/editors-properties-world-world.png
 
    World tab's World panel.
 
@@ -45,7 +45,7 @@ Range
 Environment Lighting
 ======================
 
-.. figure:: /images/game-engine_settings_world_env_lighting_panel.png
+.. figure:: /images/editors-properties-world-env_lighting.png
 
    World tab's Environment Lighting panel.
 
@@ -72,7 +72,7 @@ mimicking the sky in outdoor lighting.
 Mist
 ====
 
-.. figure:: /images/game-engine_settings_world_mist_panel.png
+.. figure:: /images/editors-properties-world-mist.png
 
    World tab's Mist panel.
 

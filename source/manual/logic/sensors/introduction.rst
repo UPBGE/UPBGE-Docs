@@ -1,6 +1,6 @@
-.. |true-button| image:: /images/game-engine_logic_sensors_common-options_icons-true.png
+.. |true-button| image:: /images/logic-sensors-common_options-icons_true.png
    :width: 1.1em
-.. |false-button| image:: /images/game-engine_logic_sensors_common-options_icons-false.png
+.. |false-button| image:: /images/logic-sensors-common_options-icons_false.png
    :width: 1.1em
 
 ************
@@ -23,8 +23,7 @@ in the :doc:`Sensor Editing </manual/logic/sensors/editing>` page.
 Common Options
 ==============
 
-.. figure:: /images/game-engine_logic_sensors_common-options_column3.jpg
-   :width: 292px
+.. figure:: /images/logic-sensors-common_options-column3.jpg
 
    Common Sensor options.
 

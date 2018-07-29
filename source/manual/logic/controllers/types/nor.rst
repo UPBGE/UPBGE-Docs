@@ -12,7 +12,7 @@ For all other conditions the controller gives a negative (``FALSE``) output.
 Options
 =======
 
-.. figure:: /images/game-engine_logic_controllers_types_nor_node.png
+.. figure:: /images/logic-controllers-types-nor-node.png
    :width: 292px
 
    NOR Controller.

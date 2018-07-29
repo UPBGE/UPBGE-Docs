@@ -19,7 +19,7 @@ This controller *deactivates* all connected actuators if:
 Options
 =======
 
-.. figure:: /images/game-engine_logic_controllers_types_nand_node.png
+.. figure:: /images/logic-controllers-types-nand-node.png
    :width: 292px
 
    NAND Controller.

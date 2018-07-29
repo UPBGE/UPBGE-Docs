@@ -4,11 +4,10 @@
 Ray Sensor
 **********
 
-The *Ray Sensor* shoots a ray in the direction of an axis and sends a positive pulse once it hits something.
-It can be filtered to only detect objects with a given material or property.
+The *Ray Sensor* shoots a ray in the direction of an axis and sends a positive pulse once 
+it hits something. It can be filtered to only detect objects with a given material or property.
 
-.. figure:: /images/game-engine_logic_sensors_types_ray_node.png
-   :width: 300px
+.. figure:: /images/logic-sensors-types-ray-node.png
 
    Ray sensor.
 

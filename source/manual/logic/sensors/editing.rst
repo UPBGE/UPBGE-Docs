@@ -3,7 +3,7 @@
 Sensor Editing
 **************
 
-.. figure:: /images/game-engine_logic_sensors_editing_column.jpg
+.. figure:: /images/logic-sensors-editing-column.jpg
    :width: 292px
 
    Sensor Column with a typical sensor.
@@ -20,7 +20,7 @@ all the sensors in the current Game Logic are displayed.
 Column Heading
 ==============
 
-.. figure:: /images/game-engine_logic_sensors_editing_column1.png
+.. figure:: /images/logic-sensors-editing-column1.png
    :width: 292px
 
    Sensor Column heading.
@@ -57,7 +57,7 @@ State
 Object Heading
 ==============
 
-.. figure:: /images/game-engine_logic_sensors_editing_column2.png
+.. figure:: /images/logic-sensors-editing-column2.png
    :width: 292px
 
    Sensor Object Heading.

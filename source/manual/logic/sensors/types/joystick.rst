@@ -9,8 +9,7 @@ It also detects events on a range of ancillary controls on the joystick device (
 More than one joystick may be used (see "Index").
 The exact layout of the joystick controls will depend on the make and model of joystick used.
 
-.. figure:: /images/game-engine_logic_sensors_types_joystick_button.jpg
-   :width: 200px
+.. figure:: /images/logic-sensors-types-joystick-button.jpg
 
    Joystick sensor.
 
@@ -33,8 +32,7 @@ Single Axis
 
 Detect movement in a single joystick Axis.
 
-.. figure:: /images/game-engine_logic_sensors_types_joystick_single-axis.png
-   :width: 200px
+.. figure:: /images/logic-sensors-types-joystick-single_axis.png
 
    Joystick Single Axis.
 
@@ -54,8 +52,7 @@ Hat
 
 Detects movement of a specific hat control on the joystick.
 
-.. figure:: /images/game-engine_logic_sensors_types_joystick_hat.png
-   :width: 200px
+.. figure:: /images/logic-sensors-types-joystick-hat.png
 
    Joystick Hat.
 
@@ -68,8 +65,7 @@ Hat Direction
 Axis
 ----
 
-.. figure:: /images/game-engine_logic_sensors_types_joystick_axis.jpg
-   :width: 200px
+.. figure:: /images/logic-sensors-types-joystick-axis.jpg
 
    Joystick Axis.
 
@@ -88,8 +84,7 @@ Axis Direction
 Button
 ------
 
-.. figure:: /images/game-engine_logic_sensors_types_joystick_button.jpg
-   :width: 200px
+.. figure:: /images/logic-sensors-types-joystick-button.jpg
 
    Joystick Button.
 

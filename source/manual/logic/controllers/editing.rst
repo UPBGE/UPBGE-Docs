@@ -3,7 +3,7 @@
 Controller Editing
 ******************
 
-.. figure:: /images/game-engine_logic_controllers_editing_column.jpg
+.. figure:: /images/logic-controllers-editing-column.jpg
    :width: 292px
 
    Controller Column with a typical sensor.
@@ -21,8 +21,7 @@ and buttons to control which of all the controllers in the current Game Logic ar
 Column Heading
 ==============
 
-.. figure:: /images/game-engine_logic_controllers_editing_column1.png
-   :width: 292px
+.. figure:: /images/logic-controllers-editing-column1.png
 
    Controller Column headings.
 
@@ -37,10 +36,13 @@ Controllers
 
 Show Objects
    Expands all objects.
+   
 Hide Objects
    Collapses all objects to just a bar with their name.
+   
 Show Controllers
    Expands all Controllers.
+   
 Hide Controllers
    Collapses all Controllers to bars with their names.
 
@@ -48,8 +50,10 @@ It is also possible to filter which controllers are viewed using the three headi
 
 Sel
    Shows all controllers for selected objects.
+   
 Act
    Shows only controllers belonging to the active object.
+   
 Link
    Shows controllers which have a link to actuators/sensors.
 
@@ -57,26 +61,25 @@ Link
 Object Heading
 ==============
 
-.. figure:: /images/game-engine_logic_controllers_editing_column2.png
-   :width: 292px
+.. figure:: /images/logic-controllers-editing-column2.png
 
-.. figure:: /images/game-engine_logic_controllers_editing_column4.png
-   :width: 292px
+.. figure:: /images/logic-controllers-editing-column4.png
 
-In the column list, controllers are grouped by object. By default,
-controllers for every selected object appear in the list,
-but this may be modified by the column heading filters.
+In the column list, controllers are grouped by object. By default, controllers for every 
+selected object appear in the list, but this may be modified by the column heading filters.
 
 At the head of each displayed object controller list, three entries appear:
    *Used States Button* Shows which states are in use for the object.
    Detailed description of the marked panel is given in :doc:`States </manual/logic/states>`.
+   
 Name
    The name of the object.
+   
 Add Controller
-   When clicked, a menu appears with the available controller types.
-   Selecting an entry adds a new controller to the object.
-   See :doc:`Controllers </manual/logic/controllers/index>` for a list of available controller types.
-
+   When clicked, a menu appears with the available controller types. Selecting an entry 
+   adds a new controller to the object. See 
+   :doc:`Controllers </manual/logic/controllers/index>` 
+   for a list of available controller types.
 
 Standard Controller Parts
 =========================
@@ -85,18 +88,25 @@ Standard Controller Parts
 
 The controller heading is standard to every controller.
 
-.. figure:: /images/game-engine_logic_controllers_editing_controller-parts.png
+.. figure:: /images/logic-controllers-editing-controller_parts.png
 
 Controller Type menu
    Specifies the type of the controller.
+   
 Controller Name
-   The name of the controller. This can be selected by the user.
-   It is used to access controllers with Python; it needs to be unique among the selected objects.
+   The name of the controller. This can be selected by the user. It is used to access 
+   controllers with Python; it needs to be unique among the selected objects.
+   
 State Index
    Sets the designated state for which this controller will operate.
+   
 Preference Button
-   If on, this controller will operate before all other non-preference controllers (useful for start-up scripts).
+   If on, this controller will operate before all other non-preference controllers 
+   (useful for start-up scripts).
+   
 Active Checkbox
-   When unchecked the controller is deactivated, no pulses will be sent to the connect actuators.
+   When unchecked the controller is deactivated, no pulses will be sent to the connect 
+   actuators.
+   
 ``X`` Button
    Deletes the sensor.

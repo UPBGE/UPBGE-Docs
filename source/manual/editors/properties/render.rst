@@ -26,7 +26,7 @@ described in details below.
 Embedded Player
 ===============
 
-.. figure:: /images/game-engine_settings_render_camera-properties-embedded.png
+.. figure:: /images/editors-properties-render-embedded_player.png
 
    Embedded Player panel.
 
@@ -52,7 +52,7 @@ Resolution X/Y
 Standalone Player
 =================
 
-.. figure:: /images/game-engine_settings_render_camera-properties-standalone.png
+.. figure:: /images/editors-properties-render-standalone_player.png
 
    Standalone Player panel.
 
@@ -127,7 +127,7 @@ Quality
 Stereo
 ======
 
-.. figure:: /images/game-engine_settings_render_camera-properties-stereo.png
+.. figure:: /images/editors-properties-render-stereo.png
 
    Stereo panel.
 
@@ -149,7 +149,7 @@ Stereo
 Shading
 =======
 
-.. figure:: /images/game-engine_settings_render_camera-properties-shading.png
+.. figure:: /images/editors-properties-render-shading.png
 
    Shading panel.
 
@@ -182,7 +182,7 @@ Extra Textures
 System
 ======
 
-.. figure:: /images/game-engine_settings_render_system.png
+.. figure:: /images/editors-properties-render-system.png
 
    System panel in the Render tab.
 
@@ -219,7 +219,7 @@ Exit Key
 Animations
 ==========
 
-.. figure:: /images/game-engine_settings_render_animations.png
+.. figure:: /images/editors-properties-render-animations.png
 
    Animations panel in the Render tab.
 
@@ -241,7 +241,7 @@ Restrict Animation Updates
 Display
 =======
 
-.. figure:: /images/game-engine_settings_render_display.png
+.. figure:: /images/editors-properties-render-display.png
 
    Display panel at the Render tab.
 
@@ -289,7 +289,7 @@ Color Bar
 Debug
 =====
 
-.. figure:: /images/game-engine_settings_render_debug.png
+.. figure:: /images/editors-properties-render-debug.png
 
    Debug panel at the Render tab.
 
@@ -340,7 +340,7 @@ counterpart and serves much the same purpose. See
 `Render Baking <https://docs.blender.org/manual/en/dev/render/blender_render/bake.html>`__ 
 for further details.
 
-.. figure:: /images/game-engine_settings_render_bake.png
+.. figure:: /images/editors-properties-render-bake.png
 
    Bake panel at the Render tab (showing different bake modes).
 

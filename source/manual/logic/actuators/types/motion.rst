@@ -34,8 +34,7 @@ The `Servo Control`_ actuator does not suffer from this,
 since it produces physically correct velocities,
 and leaves updating the position to the physics simulation.
 
-.. figure:: /images/game-engine_logic_actuators_types_motion_simple.png
-   :width: 271px
+.. figure:: /images/logic-actuators-types-motion-simple.png
 
    Motion actuator for Simple Motion.
 
@@ -72,8 +71,7 @@ actuator setting a different target velocity.
    and to mark the object as "Actor" in the same panel.
    This actuator does not work with the Character physics type.
 
-.. figure:: /images/game-engine_logic_actuators_types_motion_servo.png
-   :width: 271px
+.. figure:: /images/logic-actuators-types-motion-servo.png
 
    Servo Control.
 

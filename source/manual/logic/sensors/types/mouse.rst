@@ -6,8 +6,7 @@ Mouse Sensor
 
 The *Mouse Sensor* detects mouse events.
 
-.. figure:: /images/game-engine_logic_sensors_types_mouse_node.jpg
-   :width: 300px
+.. figure:: /images/logic-sensors-types-mouse-node.jpg
 
    Mouse sensor.
 

@@ -20,7 +20,7 @@ Force Field Constraint
 
 Create a force field buffer zone along one axis of the object.
 
-.. figure:: /images/game-engine_logic_actuators_types_constraint_forcefield.png
+.. figure:: /images/logic-actuators-types-constraint-forcefield.png
    :width: 271px
 
    Force Field Constraint.
@@ -56,7 +56,7 @@ Orientation Constraint
 
 Constrain the specified axis in the Game to a specified direction in the World axis.
 
-.. figure:: /images/game-engine_logic_actuators_types_constraint_orientation.png
+.. figure:: /images/logic-actuators-types-constraint-orientation.png
    :width: 271px
 
    Orientation Constraint.
@@ -80,7 +80,7 @@ Distance Constraint
 
 Maintain the distance the Game Object has to be from a surface.
 
-.. figure:: /images/game-engine_logic_actuators_types_constraint_distance.jpg
+.. figure:: /images/logic-actuators-types-constraint-distance.jpg
    :width: 271px
 
    Distance Constraint.
@@ -117,7 +117,7 @@ Location Constraint
 Limit the position of the Game Object within one World Axis direction.
 To limit movement within an area or volume, use two or three constraints.
 
-.. figure:: /images/game-engine_logic_actuators_types_constraint_location.png
+.. figure:: /images/logic-actuators-types-constraint-location.png
    :width: 271px
 
    Location Constraint.

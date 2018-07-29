@@ -12,7 +12,7 @@ The diagram below shows this default *Game Logic* screen layout, together with t
 appropriate options for game setup/debug/running (these should be set up in the 
 order shown).
 
-.. figure:: /images/game-engine_screen-layout_overview.jpg
+.. figure:: /images/introduction-screen_layout-overview.jpg
 
    Game Logic Screen Layout.
 
@@ -31,7 +31,7 @@ This includes many already-familiar panels (**Info**, **3D View**,
 
 .. rubric:: 3. Game
 
-.. figure:: /images/game-engine_physics_introduction_visualization.png
+.. figure:: /images/introduction-screen_layout-game.png
 
    Game options.
 

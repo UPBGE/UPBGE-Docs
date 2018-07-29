@@ -3,7 +3,7 @@
 Object
 *******
 
-.. figure:: /images/game-engine_settings_object_tab.png
+.. figure:: /images/editors-properties-object.png
    
    Object tab in Properties Editor.
 
@@ -19,7 +19,7 @@ in Blender Manual.
 Name
 ====
 
-.. figure:: /images/game-engine_settings_object_name.png
+.. figure:: /images/editors-properties-object-name.png
 
    Object's name field in Object tab.
    
@@ -64,7 +64,7 @@ Logic
 Levels of Detail
 ================
 
-.. figure:: /images/game-engine_settings_object_level-of-detail.png
+.. figure:: /images/editors-properties-object-levels_of_detail.png
 
 When creating visual assets it is often desirable to have a high amount of detail in the 
 asset for up close viewing. However, this high amount of detail is wasted if the object 
@@ -83,7 +83,7 @@ Add
 Tools
 -----
 
-.. figure:: /images/game-engine_settings_object_level-of-detail-tools.png
+.. figure:: /images/editors-properties-object-levels_of_detail-tools.png
    
    Tools dropdown menu in Levels of Detail panel.
 
@@ -111,7 +111,7 @@ Generate
    named based on the level they are generated for. Below are some settings for the 
    operator.
    
-   .. figure:: /images/game-engine_settings_object_level-of-detail-generation.png
+   .. figure:: /images/editors-properties-object-levels_of_detail-generation.png
 
    Count
       The number of levels desired after generation. This operator creates Count-1 new 
@@ -136,7 +136,7 @@ Clear All
 Settings
 --------
 
-.. figure:: /images/game-engine_settings_object_level-of-detail-panel.png
+.. figure:: /images/editors-properties-object-levels_of_detail-settings.png
 
 Level of detail settings can be found in the Object settings when the renderer is set to
 Blender Game. In the Levels of Detail panel is a button to add a new level of detail to 
@@ -164,7 +164,7 @@ Use Material
 Transform and Delta Transform
 =============================
 
-.. figure:: /images/game-engine_settings_object_transforms.png
+.. figure:: /images/editors-properties-object-transforms.png
 
    Object's transform panels in Object tab.
    
@@ -196,7 +196,7 @@ Technically, with the given information, the **Transform** panel works the same 
 Relations
 =========
 
-.. figure:: /images/game-engine_settings_object_relations.png
+.. figure:: /images/editors-properties-object-relations.png
 
 Exposes values of relations of current object to other objects, scene, etc. For detailed 
 info about object relations, see 
@@ -222,7 +222,7 @@ Parent
 Relations Extras
 ================
 
-.. figure:: /images/game-engine_settings_object_relations_extras.png
+.. figure:: /images/editors-properties-object-relations_extras.png
 
 Exposes some extra settings about object's relationship. Detailed info about relations 
 extras can be found at 
@@ -240,7 +240,7 @@ Slow Parent
 Groups
 ======
 
-.. figure:: /images/game-engine_settings_object_groups.png
+.. figure:: /images/editors-properties-object-groups.png
 
 Groups have multiple uses in Blender, but in UPBGE its main use is to allow creating 
 maintainable libraries for games through the use of 
@@ -255,7 +255,7 @@ Blender. Detailed info about groups can be found at
 Display
 =======
 
-.. figure:: /images/game-engine_settings_object_display.png
+.. figure:: /images/editors-properties-object-display.png
 
 These settings (except for *Object Color*) don't affect the current object in UPBGE, only 
 does in **3D Viewport**. The exception, *Object Color*, can be used in game as value in 
@@ -268,7 +268,7 @@ material nodes, Python and material's *Object Color* option. Detailed info about
 Duplication
 ===========
 
-.. figure:: /images/game-engine_settings_object_duplication.png
+.. figure:: /images/editors-properties-object-duplication.png
 
 Exposes several duplication modes, but the useful one in UPBGE is *Group*. When a group 
 is selected in the dropdown menu, a group is instanced in the current object. By default, 

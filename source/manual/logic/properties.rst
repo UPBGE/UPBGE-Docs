@@ -39,7 +39,7 @@ the :doc:`Property Actuator </manual/logic/actuators/types/property>`.
 Logic Properties are created and edited using the panel on the left of the Logic Editor panel.
 The top menu provides a list of the available property types.
 
-.. figure:: /images/game-engine_logic_properties_panel.png
+.. figure:: /images/editors-logic-logic_properties-panel.png
 
    Properties Panel of the Logic Editor.
 

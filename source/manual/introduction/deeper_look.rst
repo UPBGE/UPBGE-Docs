@@ -16,19 +16,19 @@ Sample Games
 
 Here are some examples of games made with BGE/UPBGE.
 
-.. figure:: /images/game-engine_introduction_screenshot3.jpg
+.. figure:: /images/introduction-deeper_look-screenshot_3.jpg
 
    Screenshot from `"Engine Roar" <http://engineroargame.blogspot.com/>`__, produced with UPBGE.
 
-.. figure:: /images/game-engine_introduction_screenshot4.jpg
+.. figure:: /images/introduction-deeper_look-screenshot_4.jpg
 
    Screenshot from `"Cave Miner" <https://blenderartists.org/t/bgmc22-cave-miner/679472>`__, produced with UPBGE.
 
-.. figure:: /images/game-engine_introduction_screenshot2.jpg
+.. figure:: /images/introduction-deeper_look-screenshot_2.jpg
 
    Screenshot from `"Dead Cyborg" <http://www.deadcyborg.com/>`__, produced with Blender Game Engine.
 
-.. figure:: /images/game-engine_introduction_screenshot.jpg
+.. figure:: /images/introduction-deeper_look-screenshot_1.jpg
 
    Screenshot from `"Yo Frankie" <https://apricot.blender.org/>`__, produced with Blender Game Engine.
 

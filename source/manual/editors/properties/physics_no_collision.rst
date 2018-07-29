@@ -8,7 +8,7 @@ do not affects other objects.
 They are useful as pure display objects, such as the child of a *Custom Collision Hull*
 (:ref:`game-engine-physics-object-collision-bounds`).
 
-For more documentation, see the general :doc:`physics page </manual/physics/index>`.
+For more documentation, see the general :doc:`physics page <./physics>`.
 
 
 Options

@@ -6,8 +6,7 @@ Random Sensor
 
 The *Random Sensor* generates random pulses.
 
-.. figure:: /images/game-engine_logic_sensors_types_random_node.jpg
-   :width: 300px
+.. figure:: /images/logic-sensors-types-random-node.jpg
 
    Random sensor.
 

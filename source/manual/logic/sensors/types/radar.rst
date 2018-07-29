@@ -19,8 +19,7 @@ This sensor is useful for giving bots sight only in front of them, for example.
    #. The Radar sensor can detect objects "through" other objects (walls, etc.).
    #. Objects must have "Actor" enabled to be detected.
 
-.. figure:: /images/game-engine_logic_sensors_types_radar_node.png
-   :width: 300px
+.. figure:: /images/logic-sensors-types-radar-node.png
 
    Radar sensor.
 

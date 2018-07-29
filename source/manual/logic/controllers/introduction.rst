@@ -13,7 +13,7 @@ The controllers' job is to check and combine these pulses to trigger the proper 
 
 The logic blocks for all types of controller may be constructed and changed using
 the Logic Editor; details of this process are given
-in the :doc:`Controller Editing </manual/logic/controllers/editing>` page.
+in the :doc:`Controller Editing <./editing>` page.
 
 
 Controller Types
@@ -46,12 +46,12 @@ the individual controller pages for a more detailed description of each controll
      - ..
      - ..
    * - ..
-     - :doc:`AND </manual/logic/controllers/types/and>`
-     - :doc:`OR </manual/logic/controllers/types/or>`
-     - :doc:`XOR </manual/logic/controllers/types/xor>`
-     - :doc:`NAND </manual/logic/controllers/types/nand>`
-     - :doc:`NOR </manual/logic/controllers/types/nor>`
-     - :doc:`XNOR </manual/logic/controllers/types/xnor>`
+     - :doc:`AND <./types/and>`
+     - :doc:`OR <./types/or>`
+     - :doc:`XOR <./types/xor>`
+     - :doc:`NAND <./types/nand>`
+     - :doc:`NOR <./types/nor>`
+     - :doc:`XNOR <./types/xnor>`
    * - None
      - False
      - False

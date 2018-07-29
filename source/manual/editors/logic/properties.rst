@@ -3,7 +3,7 @@
 Properties Panel
 ################
 
-.. figure:: /images/game-engine_logic_properties_panel.png
+.. figure:: /images/editors-logic-logic_properties-panel.png
    
    The Properties panel.
 

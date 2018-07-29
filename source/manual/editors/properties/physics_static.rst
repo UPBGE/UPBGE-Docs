@@ -20,7 +20,7 @@ Another important note is that the default
 is a Triangle Mesh, meaning it is higher in computational requirements but also in detail.
 This in turn means the "Radius" option has no effect by default.
 
-For more documentation, see the general :doc:`physics page </manual/physics/index>`.
+For more documentation, see the general :doc:`physics page <./physics>`.
 
 
 Options

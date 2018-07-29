@@ -8,8 +8,7 @@ The *Actuator Sensor* detects when a particular actuator receives an activation 
 It sends a ``TRUE`` pulse when the specified actuator is activated.
 The sensor also sends a ``FALSE`` pulse when the specified actuator is deactivated.
 
-.. figure:: /images/game-engine_logic_sensors_types_actuator_node.png
-   :width: 300px
+.. figure:: /images/logic-sensors-types-actuator-node.png
 
    Actuator sensor.
 

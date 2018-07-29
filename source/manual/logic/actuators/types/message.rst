@@ -7,7 +7,7 @@ Message Actuator
 The *Message Actuator* allows the user to send data across a scene,
 and between scenes themselves, which can be received by other objects to activate them.
 
-.. figure:: /images/game-engine_logic_actuators_types_message_node.png
+.. figure:: /images/logic-actuators-types-message-node.png
    :width: 271px
 
    Message actuator.

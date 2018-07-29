@@ -3,7 +3,7 @@
 Components Panel
 ################
 
-.. figure:: /images/game-engine_logic_components_panel.png
+.. figure:: /images/editors-logic-components-panel.png
    
    The Components panel.
 

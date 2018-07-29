@@ -9,7 +9,7 @@ options related to the current scene.
 Physics
 =======
 
-.. figure:: /images/game-engine_scene_physics_panel.png
+.. figure:: /images/editors-properties-scene-physics.png
 
    Scene tab's Physics panel.
 
@@ -106,7 +106,7 @@ Object Activity
 Obstacle Simulation
 ===================
 
-.. figure:: /images/game-engine_scene_obstacle_simulation_panel.png
+.. figure:: /images/editors-properties-scene-obstacle_simulation.png
 
    Scene tab's Obstacle Simulation panel.
 
@@ -136,7 +136,7 @@ Visualization
 Navigation Mesh
 ===============
 
-.. figure:: /images/game-engine_scene_navigation_mesh_panel.png
+.. figure:: /images/editors-properties-scene-navigation_mesh.png
 
    Scene tab's Navigation Mesh panel.
 
@@ -197,7 +197,7 @@ Detail Mesh
 Level of Detail
 ===============
 
-.. figure:: /images/game-engine_scene_level_of_detail_panel.png
+.. figure:: /images/editors-properties-scene-level_of_detail.png
 
    Scene tab's Level of Detail panel.
 
@@ -210,7 +210,7 @@ Hysteresis
 Python Console
 ==============
 
-.. figure:: /images/game-engine_scene_python_console_panel.png
+.. figure:: /images/editors-properties-scene-python_console.png
 
    Scene tab's Python Console panel.
 
@@ -223,7 +223,7 @@ Keys
 Scene
 ======
 
-.. figure:: /images/game-engine_scene_scene_panel.png
+.. figure:: /images/editors-properties-scene-scene.png
 
    Scene tab's Scene panel.
 
@@ -259,7 +259,7 @@ Background
 Units
 ======
 
-.. figure:: /images/game-engine_scene_units_panel.png
+.. figure:: /images/editors-properties-scene-units.png
 
    Scene tab's Units panel.
 

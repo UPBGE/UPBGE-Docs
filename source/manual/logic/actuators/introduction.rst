@@ -9,7 +9,7 @@ of their controllers.
 
 The logic blocks for all types of actuator may be constructed and changed using
 the Logic Editor; details of this process are given
-in the :doc:`Actuator Editing </manual/logic/actuators/editing>` page.
+in the :doc:`Actuator Editing <./editing>` page.
 
 
 .. _game-engine-logic-actuators-common-options:
@@ -17,8 +17,7 @@ in the :doc:`Actuator Editing </manual/logic/actuators/editing>` page.
 Common Options
 ==============
 
-.. figure:: /images/game-engine_logic_actuators_common-options_column3.png
-   :width: 292px
+.. figure:: /images/logic-actuators-common_options-column3.png
 
    Common Actuator options.
 

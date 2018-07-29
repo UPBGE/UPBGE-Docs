@@ -12,7 +12,7 @@ The *Visibility Actuator* allows the user to change the visibility of objects du
    and so is limited in terms of Level of Detail (LOD). For LOD look at replace mesh,
    but be aware that the logic required can negate the effect of the LOD.
 
-.. figure:: /images/game-engine_logic_actuators_types_visibility_node.jpg
+.. figure:: /images/logic-actuators-types-visibility-node.jpg
    :width: 271px
 
    Visibility actuator.

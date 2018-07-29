@@ -1,4 +1,4 @@
-.. |info-button| image:: /images/game-engine_logic_states_icon-info.png
+.. |info-button| image:: /images/logic-states-icon_info.png
    :width: 1.1em
 
 ******
@@ -41,8 +41,7 @@ and some of these actuators may switch the actor's state under appropriate condi
 Editing States
 ==============
 
-.. figure:: /images/game-engine_logic_states_panel.png
-   :width: 292px
+.. figure:: /images/logic-states-panel.png
 
    State Panel button.
 
@@ -57,8 +56,7 @@ is carried out using the State Panel for the object,
 which is switched on and off using the button shown. The panel is divided into two halves,
 Visible and Initial.
 
-.. figure:: /images/game-engine_logic_states_panel1.png
-   :width: 292px
+.. figure:: /images/logic-states-panel1.png
 
    State Panel visible.
 
@@ -79,8 +77,7 @@ and squares are dark gray if these controllers are shown in the Game Logic displ
 The display of their connected sensors and actuators can also be controlled
 if the State buttons at the head of their columns are ticked.
 
-.. figure:: /images/game-engine_logic_states_panel2.png
-   :width: 292px
+.. figure:: /images/logic-states-panel2.png
 
    State Panel initial.
 

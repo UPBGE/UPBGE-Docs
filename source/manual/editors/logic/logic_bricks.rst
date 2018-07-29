@@ -3,7 +3,7 @@
 Logic Bricks Area
 #################
 
-.. figure:: /images/game-engine_logic_bricks_area.png
+.. figure:: /images/editors-logic-logic_bricks_area.png
    
    The Logic Bricks area.
 

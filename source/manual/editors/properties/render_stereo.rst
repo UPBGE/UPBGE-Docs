@@ -17,7 +17,7 @@ for more information on different stereoscopic viewing methods.
 Stereo Settings
 ===============
 
-.. figure:: /images/game-engine_settings_render_camera-properties-stereo.png
+.. figure:: /images/editors-properties-render-stereo.png
 
    Stereo settings.
 

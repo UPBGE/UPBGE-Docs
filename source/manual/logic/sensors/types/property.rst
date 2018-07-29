@@ -6,8 +6,7 @@ Property Sensor
 
 The *Property Sensor* detects changes in the properties of its owner object.
 
-.. figure:: /images/game-engine_logic_sensors_types_property_node.png
-   :width: 300px
+.. figure:: /images/logic-sensors-types-property-node.png
 
    Property sensor.
 

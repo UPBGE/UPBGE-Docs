@@ -3,8 +3,7 @@
 Actuator Editing
 ****************
 
-.. figure:: /images/game-engine_logic_actuators_editing_column.png
-   :width: 292px
+.. figure:: /images/logic-actuators-editing-column.png
 
    Actuator Column with a typical actuator.
 
@@ -20,8 +19,7 @@ all the actuators in the current Game Logic are displayed.
 Column Heading
 ==============
 
-.. figure:: /images/game-engine_logic_actuators_editing_column1.png
-   :width: 292px
+.. figure:: /images/logic-actuators-editing-column1.png
 
    Actuator Column heading.
 
@@ -58,8 +56,7 @@ State
 Object Heading
 ==============
 
-.. figure:: /images/game-engine_logic_actuators_editing_column2.png
-   :width: 292px
+.. figure:: /images/logic-actuators-editing-column2.png
 
    Actuator Object heading.
 
@@ -74,4 +71,4 @@ Name
 Add
    When clicked, a menu appears with the available actuator types.
    Selecting an entry adds a new actuator to the object.
-   See :doc:`Actuators </manual/logic/actuators/index>` for list of available actuator types.
+   See :doc:`Actuators <./index>` for list of available actuator types.

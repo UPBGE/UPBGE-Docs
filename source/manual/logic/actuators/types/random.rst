@@ -6,8 +6,7 @@ Random Actuator
 
 The *Random Actuator* creates a random value which can be stored in a property of the object.
 
-.. figure:: /images/game-engine_logic_actuators_types_random_bool-constant.jpg
-   :width: 271px
+.. figure:: /images/logic-actuators-types-random-bool_constant.jpg
 
    Random Actuator.
 

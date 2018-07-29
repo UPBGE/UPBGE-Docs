@@ -7,8 +7,7 @@ Action Actuator
 The *Action Actuator* controls animation actions, and sets the playback method.
 It is only visible when an armature is selected, because the actions are stored in the armature.
 
-.. figure:: /images/game-engine_logic_actuators_types_action_node.png
-   :width: 292px
+.. figure:: /images/logic-actuators-types-action-node.png
 
    Action Actuator.
 

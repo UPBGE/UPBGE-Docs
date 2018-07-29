@@ -77,7 +77,7 @@ Hints
 =====
 
 - A very important configurable in the case of soft body interactions is
-  :doc:`World Properties </manual/physics/world>`
+  :doc:`World Properties <./world>`
   :menuselection:`--> Physics --> Physics Steps --> Substeps`.
 - Surprisingly, the more vertices you have in your hit object, the less likely the soft body is to react with it.
   If you try letting it hit a Plane, it might stop, but a subdivided Grid might fail.

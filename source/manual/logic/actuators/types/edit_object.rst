@@ -21,8 +21,7 @@ Dynamics
 
 Provides a menu of *Dynamic Operations* to set up dynamics options for object.
 
-.. figure:: /images/game-engine_logic_actuators_types_edit-object_dynamics.png
-   :width: 271px
+.. figure:: /images/logic-actuators-types-edit_object-dynamics.png
 
    Edit Object: Dynamics.
 
@@ -44,8 +43,7 @@ Track To
 Makes the object "look at" another object, in 2D or 3D.
 The Y axis is considered the front of the object.
 
-.. figure:: /images/game-engine_logic_actuators_types_edit-object_track-to.jpg
-   :width: 271px
+.. figure:: /images/logic-actuators-types-edit_object-track_to.jpg
 
    Edit Object: Track To.
 
@@ -63,8 +61,7 @@ Replace Mesh
 Replace mesh with another. Both the mesh and/or its physics can be replaced,
 together or independently.
 
-.. figure:: /images/game-engine_logic_actuators_types_edit-object_replace-mesh.jpg
-   :width: 271px
+.. figure:: /images/logic-actuators-types-edit_object-replace_mesh.jpg
 
    Edit Object: Replace Mesh.
 
@@ -81,8 +78,7 @@ End Object
 
 Destroy the current object (note, debug properties will display error Zombie Object in console).
 
-.. figure:: /images/game-engine_logic_actuators_types_edit-object_end-object.png
-   :width: 271px
+.. figure:: /images/logic-actuators-types-edit_object-end_object.png
 
    Edit Object: End Object.
 
@@ -93,8 +89,7 @@ Add Object
 Adds an object at the center of the current object.
 The object that is added needs to be on another, hidden, layer.
 
-.. figure:: /images/game-engine_logic_actuators_types_edit-object_add-object.png
-   :width: 271px
+.. figure:: /images/logic-actuators-types-edit_object-add_object.png
 
    Edit Object: Add Object.
 

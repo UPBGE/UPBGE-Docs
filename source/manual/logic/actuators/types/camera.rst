@@ -6,7 +6,7 @@ Camera Actuator
 
 The *Camera Actuator* makes the camera follow or track an object.
 
-.. figure:: /images/game-engine_logic_actuators_types_camera_node.png
+.. figure:: /images/logic-actuators-types-camera-node.png
    :width: 271px
 
    Camera Actuator.

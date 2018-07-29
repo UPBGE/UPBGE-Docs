@@ -27,7 +27,7 @@ The entire file can be run by setting the type to *Script* and setting the name 
 Parts of the Python Controller
 ==============================
 
-.. figure:: /images/game-engine_logic_controllers_types_python_controller.jpg
+.. figure:: /images/logic-controllers-types-python-node.jpg
 
    Python Controller.
 
