@@ -51,69 +51,7 @@ and two :class:`KX_ObjectActuator` to implement MouseLook:
 
    # Centre the mouse
    bge.render.setMousePosition(int(bge.render.getWindowWidth() / 2), int(bge.render.getWindowHeight() / 2))
-
-*********
-Constants
-*********
-
-.. data:: KX_TEXFACE_MATERIAL
-
-   Deprecated.
-
-   Materials as defined by the texture face settings.
-
-.. data:: KX_BLENDER_MULTITEX_MATERIAL
-
-   Deprecated.
-
-   Materials approximating blender materials with multitexturing.
-
-.. data:: KX_BLENDER_GLSL_MATERIAL
-
-   Deprecated.
-
-   Materials approximating blender materials with GLSL.
-
-.. DATA:: VSYNC_OFF
-
-   Disables vsync
-
-.. DATA:: VSYNC_ON
-
-   Enables vsync
-
-.. DATA:: VSYNC_ADAPTIVE
-
-   Enables adaptive vsync if supported.
-   Adaptive vsync enables vsync if the framerate is above the monitors refresh rate.
-   Otherwise, vsync is diabled if the framerate is too low.
-
-.. data:: LEFT_EYE
-
-   Left eye being used during stereoscopic rendering.
-
-.. data:: RIGHT_EYE
-
-   Right eye being used during stereoscopic rendering.
-
-.. _render-hdr:
-
----
-HDR
----
-
-.. data:: HDR_NONE
-
-   Use 8 bit per channel image format.
-
-.. data:: HDR_HALF_FLOAT
-
-   Use 16 bit float per channel image format.
-
-.. data:: HDR_FULL_FLOAT
-
-   Use 32 bit float per channel image format.
-
+   
 *********
 Functions
 *********
@@ -389,3 +327,107 @@ Functions
    Get the current vsync value
 
    :rtype: One of VSYNC_OFF, VSYNC_ON, VSYNC_ADAPTIVE
+
+*********
+Constants
+*********
+
+-------
+General
+-------
+
+.. data:: KX_BLENDER_MULTITEX_MATERIAL
+
+   Deprecated.
+
+   Materials approximating blender materials with multitexturing.
+   
+   :value: 1
+
+.. data:: KX_BLENDER_GLSL_MATERIAL
+
+   Deprecated.
+
+   Materials approximating blender materials with GLSL.
+   
+   :value: 2
+
+.. DATA:: VSYNC_OFF
+
+   Disables vsync.
+   
+   :value: 1
+
+.. DATA:: VSYNC_ON
+
+   Enables vsync.
+   
+   :value: 0
+
+.. DATA:: VSYNC_ADAPTIVE
+
+   Enables adaptive vsync, if supported.
+   Adaptive vsync enables vsync if the framerate is above the monitors refresh rate.
+   Otherwise, vsync is diabled if the framerate is too low.
+   
+   :value: 2
+
+.. data:: LEFT_EYE
+
+   Left eye being used during stereoscopic rendering.
+   
+   :value: 0
+
+.. data:: RIGHT_EYE
+
+   Right eye being used during stereoscopic rendering.
+   
+   :value: 1
+
+.. _render-hdr:
+
+---
+HDR
+---
+
+.. data:: HDR_NONE
+
+   Use 8 bit per channel image format.
+   
+   :value: 0
+
+.. data:: HDR_HALF_FLOAT
+
+   Use 16 bit float per channel image format.
+   
+   :value: 1
+
+.. data:: HDR_FULL_FLOAT
+
+   Use 32 bit float per channel image format.
+   
+   :value: 2
+
+.. _render-mipmap:
+
+------
+Mipmap
+------
+
+.. data:: RAS_MIPMAP_NONE
+
+   Disables mipmaps.
+   
+   :value: 0
+
+.. data:: RAS_MIPMAP_NEAREST
+
+   Nearest mipmaps.
+   
+   :value: 1
+
+.. data:: RAS_MIPMAP_LINEAR
+
+   Linear mipmaps.
+   
+   :value: 2

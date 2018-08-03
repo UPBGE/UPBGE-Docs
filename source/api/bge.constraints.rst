@@ -281,58 +281,86 @@ Debug mode to be used with :func:`setDebugMode`.
 .. data:: DBG_NODEBUG
 
    No debug.
+   
+   :value: 0
 
 .. data:: DBG_DRAWWIREFRAME
 
    Draw wireframe in debug.
+   
+   :value: 1
 
 .. data:: DBG_DRAWAABB
 
    Draw Axis Aligned Bounding Box in debug.
+   
+   :value: 2
 
 .. data:: DBG_DRAWFREATURESTEXT
 
    Draw features text in debug.
+   
+   :value: 4
 
 .. data:: DBG_DRAWCONTACTPOINTS
 
    Draw contact points in debug.
+   
+   :value: 8
 
 .. data:: DBG_NOHELPTEXT
 
    Debug without help text.
+   
+   :value: 32
 
 .. data:: DBG_DRAWTEXT
 
    Draw text in debug.
+   
+   :value: 64
 
 .. data:: DBG_PROFILETIMINGS
 
    Draw profile timings in debug.
+   
+   :value: 128
 
 .. data:: DBG_ENABLESATCOMPARISION
 
    Enable sat comparision in debug.
+   
+   :value: 256
 
 .. data:: DBG_DISABLEBULLETLCP
 
    Disable Bullet LCP.
+   
+   :value: 512
 
 .. data:: DBG_ENABLECCD
 
    Enable Continous Collision Detection in debug.
+   
+   :value: 1024
 
 .. data:: DBG_DRAWCONSTRAINTS
 
    Draw constraints in debug.
+   
+   :value: 2048
 
 .. data:: DBG_DRAWCONSTRAINTLIMITS
 
    Draw constraint limits in debug.
+   
+   :value: 4096
 
 .. data:: DBG_FASTWIREFRAME
 
    Draw a fast wireframe in debug.
+   
+   :value: 8192
 
 
 Create Constraint Constants
@@ -343,24 +371,24 @@ Constraint type to be used with :func:`createConstraint`.
 
 .. data:: POINTTOPOINT_CONSTRAINT
 
-   .. to do
+   :value: 1
 
 .. data:: LINEHINGE_CONSTRAINT
 
-   .. to do
+   :value: 2
 
 .. data:: ANGULAR_CONSTRAINT
 
-   .. to do
+   :value: 3
 
 .. data:: CONETWIST_CONSTRAINT
 
-   .. to do
+   :value: 4
 
 .. data:: VEHICLE_CONSTRAINT
 
-   .. to do
+   :value: 11
 
 .. data:: GENERIC_6DOF_CONSTRAINT
 
-   .. to do
+   :value: 12

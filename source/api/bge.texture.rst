@@ -1577,14 +1577,24 @@ FFmpeg Video and Image Status
 
 
 .. data:: SOURCE_ERROR
+   
+   :value: -1
 
 .. data:: SOURCE_EMPTY
+   
+   :value: 0
 
 .. data:: SOURCE_READY
+   
+   :value: 1
 
 .. data:: SOURCE_PLAYING
+   
+   :value: 2
 
 .. data:: SOURCE_STOPPED
+   
+   :value: 3
 
 
 Image Blending Modes
@@ -1593,55 +1603,109 @@ Image Blending Modes
 See Wikipedia's `Blend Modes <https://en.wikipedia.org/wiki/Blend_modes>`_ for reference.
 
 .. data:: IMB_BLEND_MIX
+   
+   :value: 0
 
 .. data:: IMB_BLEND_ADD
+   
+   :value: 1
 
 .. data:: IMB_BLEND_SUB
+   
+   :value: 2
 
 .. data:: IMB_BLEND_MUL
+   
+   :value: 3
 
 .. data:: IMB_BLEND_LIGHTEN
+   
+   :value: 4
 
 .. data:: IMB_BLEND_DARKEN
+   
+   :value: 5
 
 .. data:: IMB_BLEND_ERASE_ALPHA
+   
+   :value: 6
 
 .. data:: IMB_BLEND_ADD_ALPHA
+   
+   :value: 7
 
 .. data:: IMB_BLEND_OVERLAY
+   
+   :value: 8
 
 .. data:: IMB_BLEND_HARDLIGHT
+   
+   :value: 9
 
 .. data:: IMB_BLEND_COLORBURN
+   
+   :value: 10
 
 .. data:: IMB_BLEND_LINEARBURN
+   
+   :value: 11
 
 .. data:: IMB_BLEND_COLORDODGE
+   
+   :value: 12
 
 .. data:: IMB_BLEND_SCREEN
+   
+   :value: 13
 
 .. data:: IMB_BLEND_SOFTLIGHT
+   
+   :value: 14
 
 .. data:: IMB_BLEND_PINLIGHT
+   
+   :value: 15
 
 .. data:: IMB_BLEND_VIVIDLIGHT
+   
+   :value: 16
 
 .. data:: IMB_BLEND_LINEARLIGHT
+   
+   :value: 17
 
 .. data:: IMB_BLEND_DIFFERENCE
+   
+   :value: 18
 
 .. data:: IMB_BLEND_EXCLUSION
+   
+   :value: 19
 
 .. data:: IMB_BLEND_HUE
+   
+   :value: 20
 
 .. data:: IMB_BLEND_SATURATION
+   
+   :value: 21
 
 .. data:: IMB_BLEND_LUMINOSITY
+   
+   :value: 22
 
 .. data:: IMB_BLEND_COLOR
+   
+   :value: 23
 
 .. data:: IMB_BLEND_COPY
+   
+   :value: 1000
 
 .. data:: IMB_BLEND_COPY_RGB
+   
+   :value: 1001
 
 .. data:: IMB_BLEND_COPY_ALPHA
+   
+   :value: 1002

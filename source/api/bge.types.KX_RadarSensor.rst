@@ -33,9 +33,6 @@ base class --- :class:`KX_NearSensor`
 
    .. attribute:: axis
 
-      The axis on which the radar cone is cast.
+      The axis on which the radar cone is cast. Can be one of :ref:`these <logic-radar-sensor>` constants.
 
       :type: integer from 0 to 5
-
-      KX_RADAR_AXIS_POS_X, KX_RADAR_AXIS_POS_Y, KX_RADAR_AXIS_POS_Z, 
-      KX_RADAR_AXIS_NEG_X, KX_RADAR_AXIS_NEG_Y, KX_RADAR_AXIS_NEG_Z

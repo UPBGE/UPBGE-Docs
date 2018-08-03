@@ -1,3 +1,5 @@
+.. _bge.types.SCA_AlwaysSensor:
+
 SCA_AlwaysSensor(SCA_ISensor)
 =============================
 

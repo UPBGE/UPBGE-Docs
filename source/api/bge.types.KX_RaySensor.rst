@@ -70,13 +70,6 @@ base class --- :class:`SCA_ISensor`
 
    .. attribute:: axis
 
-      The axis the ray is pointing on.
+      The axis the ray is pointing on. Can be one of :ref:`these <logic-ray-sensor>` constants.
 
       :type: integer from 0 to 5
-
-      * KX_RAY_AXIS_POS_X
-      * KX_RAY_AXIS_POS_Y
-      * KX_RAY_AXIS_POS_Z
-      * KX_RAY_AXIS_NEG_X
-      * KX_RAY_AXIS_NEG_Y
-      * KX_RAY_AXIS_NEG_Z
