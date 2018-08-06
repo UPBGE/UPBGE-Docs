@@ -44,7 +44,7 @@ Logic Editor provides deep interaction with the simulation, and its functionalit
 be extended through Python scripting. It is designed to abstract the complex engine 
 features into a simple user interface, which does not require experience with Programming.
 An overview of the Logic Editor can be found in the 
-:doc:`Game Logic Screen Layout <screen_layout>`.
+:doc:`Game Logic Screen Layout <./screen_layout>`.
 
 UPBGE is closely integrated with the existing code base of Blender, which permits quick 
 transitions between the traditional modeling feature set and game-specific functionality
@@ -56,10 +56,10 @@ export a binary run-time to Linux, macOS, and MS-Windows.
 
 There are a number of powerful libraries the UPBGE takes advantage of:
 
-- **Audaspace:** A sound library for control of audio. Uses OpenAL or SDL.
-- **Bullet:** A physics engine featuring 3D collision detection, soft body dynamics, and rigid body dynamics.
-- **Detour:** A pathfinding and spatial reasoning toolkit.
-- **Recast:** A state of the art navigation mesh construction tool set for games.
+- `Audaspace <https://audaspace.github.io/>`__: A sound library for control of audio. Uses OpenAL or SDL.
+- `Bullet <http://bulletphysics.org/wordpress/>`__: A physics engine featuring 3D collision detection, soft body dynamics, and rigid body dynamics.
+- `Detour <http://masagroup.github.io/recastdetour/>`__: A pathfinding and spatial reasoning toolkit.
+- `Recast <http://masagroup.github.io/recastdetour/>`__: A state of the art navigation mesh construction tool set for games.
 
 Project Development Process
 ===========================
