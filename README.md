@@ -17,3 +17,10 @@ Once every dependency is instaled, simply open the console on the top level dire
 `make html`
 
 The documentation will be built in the directory **build**.
+
+## Credits:
+- Joel Gomes da Silva (joelgomes1994)
+- Tristan Porteries (panzergame)
+- Youle31
+- Jorge Bernal (lordloki)
+- You!
