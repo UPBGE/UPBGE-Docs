@@ -10,6 +10,8 @@ UPBGE is fully integrated into Blender environment, but it doesn't mean it suppo
 all the features that Blender provides. Here's some compatibility info about various 
 features present in Blender relative to UPBGE.
 
+.. _compatibility-supported-objects:
+
 .. rubric:: Object types supported
 
 - Mesh
@@ -20,6 +22,8 @@ features present in Blender relative to UPBGE.
 - Lamp
 
 .. note:: Any other object type (like Curve, Speaker, Force Field, etc) will not be rendered into game. Curves may be converted to Meshes though.
+
+.. _compatibility-supported-datablocks:
 
 .. rubric:: Data-blocks supported
 
