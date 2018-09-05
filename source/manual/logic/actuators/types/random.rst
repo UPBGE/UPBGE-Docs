@@ -4,6 +4,9 @@
 Random Actuator
 ***************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`SCA_RandomActuator`.
+
 The *Random Actuator* creates a random value which can be stored in a property of the object.
 
 .. figure:: /images/logic-actuators-types-random-bool_constant.jpg

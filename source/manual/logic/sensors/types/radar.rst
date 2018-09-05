@@ -4,6 +4,9 @@
 Radar Sensor
 ************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`KX_RadarSensor`.
+
 The *Radar Sensor* works much like the :doc:`Near sensor </manual/logic/sensors/types/near>`,
 but only within an angle from an axis, forming an invisible cone with the top in the objects'
 center and base at a distance on an axis.

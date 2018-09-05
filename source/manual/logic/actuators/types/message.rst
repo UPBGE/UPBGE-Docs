@@ -4,6 +4,9 @@
 Message Actuator
 ****************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`KX_NetworkMessageActuator`.
+
 The *Message Actuator* allows the user to send data across a scene,
 and between scenes themselves, which can be received by other objects to activate them.
 

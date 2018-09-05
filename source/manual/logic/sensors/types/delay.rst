@@ -4,6 +4,9 @@
 Delay Sensor
 ************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`SCA_DelaySensor`.
+
 The *Delay Sensor* is designed for delaying reactions a number of logic ticks.
 This is useful if an other action has to be done first or to time events.
 

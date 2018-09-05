@@ -4,6 +4,9 @@
 Property Actuator
 *****************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`SCA_PropertyActuator`.
+
 The *Property Actuator* changes the value of a given property (like assigning, adding, or copying)
 once the actuator itself is activated.
 

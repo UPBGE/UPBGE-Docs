@@ -4,6 +4,9 @@
 Scene Actuator
 **************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`KX_SceneActuator`.
+
 The *Scene Actuator* manages the scenes in the user's blend-file,
 these can be used as levels or for UI and background.
 

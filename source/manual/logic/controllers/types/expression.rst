@@ -4,6 +4,9 @@
 Expression Controller
 *********************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`SCA_IController`.
+
 This controller evaluates a user written expression, and gives a positive (``TRUE``) output when
 The result of the expression is ``TRUE``, and
 The object is in the designated State.

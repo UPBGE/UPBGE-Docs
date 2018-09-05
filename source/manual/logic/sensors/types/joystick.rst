@@ -4,6 +4,9 @@
 Joystick Sensor
 ***************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`SCA_JoystickSensor`.
+
 The *Joystick Sensor* triggers whenever the joystick moves.
 It also detects events on a range of ancillary controls on the joystick device (hat, buttons, etc.).
 More than one joystick may be used (see "Index").

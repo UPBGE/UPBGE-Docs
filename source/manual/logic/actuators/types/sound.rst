@@ -4,6 +4,9 @@
 Sound Actuator
 **************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`KX_SoundActuator`.
+
 The *Sound Actuator* allows the user to play sound files in the game engine.
 
 .. figure:: /images/logic-actuators-types-sound-node.png

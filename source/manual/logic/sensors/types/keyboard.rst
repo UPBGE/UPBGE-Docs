@@ -4,6 +4,9 @@
 Keyboard Sensor
 ***************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`SCA_KeyboardSensor`.
+
 The *Keyboard* sensor is for detecting keyboard input.
 It can also save keyboard input to a :ref:`String property <game-engine-property-types>`.
 

@@ -4,6 +4,9 @@
 Ray Sensor
 **********
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`KX_RaySensor`.
+
 The *Ray Sensor* shoots a ray in the direction of an axis and sends a positive pulse once 
 it hits something. It can be filtered to only detect objects with a given material or property.
 

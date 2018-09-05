@@ -4,6 +4,9 @@
 Parent Actuator
 ***************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`KX_ParentActuator`.
+
 The *Parent Actuator* enables the user to change the parent relationships of the current object.
 
 .. figure:: /images/logic-actuators-types-parent-node.jpg

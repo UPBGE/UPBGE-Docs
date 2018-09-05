@@ -4,6 +4,9 @@
 Game Actuator
 *************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`KX_GameActuator`.
+
 The *Game Actuator* handles the entire game and this way allows the user to perform
 game-specific functions, such as restart, quit, and load.
 

@@ -4,6 +4,9 @@
 Near Sensor
 ***********
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`KX_NearSensor`.
+
 A *Near Sensor* detects objects that move to within a specific distance of themselves.
 It can filter objects with properties,
 like the :doc:`Collision sensor </manual/logic/sensors/types/collision>`.

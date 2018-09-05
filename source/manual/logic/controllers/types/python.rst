@@ -4,6 +4,9 @@
 Python Controller
 *****************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`SCA_PythonController`.
+
 The Python controller runs a Python script when a sensor triggers the controller.
 This Python script can interact with the scene or logic bricks through
 :doc:`Blender's API </api/bge>`.

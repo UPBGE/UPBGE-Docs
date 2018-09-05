@@ -4,6 +4,9 @@
 Filter 2D Actuator
 ******************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`SCA_2DFilterActuator`.
+
 The *Filter 2D Actuator* adds image filters, that apply on final render of objects.
 There are several 2D filters each listed below. Most are self-explanatory, however,
 some are special and will be described in detail later.

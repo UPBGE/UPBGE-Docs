@@ -4,6 +4,9 @@
 Property Sensor
 ***************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`SCA_PropertySensor`.
+
 The *Property Sensor* detects changes in the properties of its owner object.
 
 .. figure:: /images/logic-sensors-types-property-node.png

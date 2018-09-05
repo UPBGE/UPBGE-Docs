@@ -4,6 +4,9 @@
 Random Sensor
 *************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`SCA_RandomSensor`.
+
 The *Random Sensor* generates random pulses.
 
 .. figure:: /images/logic-sensors-types-random-node.jpg

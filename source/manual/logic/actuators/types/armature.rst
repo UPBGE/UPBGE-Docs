@@ -4,6 +4,9 @@
 Armature Actuator
 *****************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`BL_ArmatureActuator`.
+
 The *Armature Actuator* is used to modify bone constraints.
 
 .. figure:: /images/logic-actuators-types-armature-node.png

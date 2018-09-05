@@ -4,6 +4,9 @@
 State Actuator
 **************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`KX_StateActuator`.
+
 The *State Actuator* allows the user to create complex logic,
 while retaining a clear user interface. It does this by having different states,
 and performing operations upon them.

@@ -4,6 +4,9 @@
 Action Actuator
 ***************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`BL_ActionActuator`.
+
 The *Action Actuator* controls animation actions, and sets the playback method.
 It is only visible when an armature is selected, because the actions are stored in the armature.
 

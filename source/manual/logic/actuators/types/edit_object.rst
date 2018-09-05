@@ -4,6 +4,9 @@
 Edit Object Actuator
 ********************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`KX_SCA_AddObjectActuator`, :class:`KX_SCA_DynamicActuator`, :class:`KX_SCA_EndObjectActuator` and :class:`KX_SCA_ReplaceMeshActuator`.
+
 The *Edit Object Actuator* allows the user to edit settings of objects in-game.
 In example edits the object's mesh, adds objects, or destroys them.
 It can also change the mesh of an object (and soon also recreate the collision mesh).

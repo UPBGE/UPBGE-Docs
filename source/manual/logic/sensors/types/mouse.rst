@@ -4,6 +4,9 @@
 Mouse Sensor
 ************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`SCA_MouseSensor`.
+
 The *Mouse Sensor* detects mouse events.
 
 .. figure:: /images/logic-sensors-types-mouse-node.jpg

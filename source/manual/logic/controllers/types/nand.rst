@@ -3,6 +3,9 @@
 NAND Controller
 ***************
 
+.. seealso::
+   See the Python reference of this logic brick in :class:`SCA_NANDController`.
+
 This controller *activates* all connected actuators if:
 
 - The game object is in the designated state.
