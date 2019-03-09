@@ -1,7 +1,8 @@
+.. _logic-properties:
 
-**********
+==========
 Properties
-**********
+==========
 
 Properties are the game logic equivalent to variables. They are stored with the object,
 and can be used to represent things about them such as ammo, health, name, and so on.
@@ -9,8 +10,11 @@ and can be used to represent things about them such as ammo, health, name, and s
 
 .. _game-engine-property-types:
 
+.. _logic-properties-types:
+
+--------------
 Property Types
-==============
+--------------
 
 There are five types of properties:
 
@@ -28,9 +32,9 @@ Boolean
    Boolean variable, has two values: true or false.
    This is useful for things that have only two modes, like a light switch.
 
-
+----------------
 Using Properties
-================
+----------------
 
 When a game is running, values of properties are set, manipulated, and evaluated using
 the :doc:`Property Sensor </manual/logic/sensors/types/property>` and

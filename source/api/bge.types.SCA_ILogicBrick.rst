@@ -5,13 +5,13 @@ base class --- :class:`EXP_Value`
 
 .. class:: SCA_ILogicBrick(EXP_Value)
 
-   Base class for all logic bricks.
+   Base class of all :doc:`/manual/logic/sensors/index`, :doc:`/manual/logic/controllers/index` and :doc:`/manual/logic/actuators/index`.
 
    .. attribute:: executePriority
 
       This determines the order controllers are evaluated, and actuators are activated (lower priority is executed first).
 
-      :type: executePriority: int
+      :type: int
 
    .. attribute:: owner
 
@@ -23,4 +23,4 @@ base class --- :class:`EXP_Value`
 
       The name of this logic brick (read-only).
       
-      :type: string
+      :type: str

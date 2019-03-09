@@ -11,5 +11,4 @@ differences between it and BGE, but not directly comparing UPBGE to BGE.
 
    briefing
    deeper_look
-   screen_layout
    compatibility_notes

@@ -29,13 +29,46 @@ Examples
    For more examples of Bullet physics and how to use them
    see the `pybullet forum <https://pybullet.org/Bullet/phpBB3/viewforum.php?f=17>`__.
 
-.. include:: __/examples/bge.constraints.py
-   :start-line: 1
-   :end-line: 4
+Example of how to create a hinge Physics Constraint between two objects.
 
-.. literalinclude:: __/examples/bge.constraints.py
-   :lines: 6-
+.. hidden-code-block:: python
+    :linenos:
+    :label: Show/Hide Example Code
+    
+    from bge import logic
+    from bge import constraints
 
+    # Get object list
+    objects = logic.getCurrentScene().objects
+
+    # Get object named Object1 and Object 2
+    object_1 = objects["Object1"]
+    object_2 = objects["Object2"]
+
+    # Want to use Edge constraint type
+    constraint_type = 2
+
+    # Get Object1 and Object2 physics IDs
+    physics_id_1 = object_1.getPhysicsId()
+    physics_id_2 = object_2.getPhysicsId()
+
+    # Use bottom right edge of Object1 for hinge position
+    edge_position_x = 1.0
+    edge_position_y = 0.0
+    edge_position_z = -1.0
+
+    # Rotate the pivot z axis about 90 degrees
+    edge_angle_x = 0.0
+    edge_angle_y = 0.0
+    edge_angle_z = 90.0
+
+    # Create an edge constraint
+    constraints.createConstraint(physics_id_1, physics_id_2,
+                                 constraint_type,
+                                 edge_position_x, edge_position_y, edge_position_z,
+                                 edge_angle_x, edge_angle_y, edge_angle_z)
+
+|
 
 Functions
 ---------

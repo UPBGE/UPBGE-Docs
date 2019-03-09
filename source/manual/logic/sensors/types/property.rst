@@ -1,5 +1,7 @@
 .. _bpy.types.PropertySensor:
 
+.. _sensor-property:
+
 ***************
 Property Sensor
 ***************

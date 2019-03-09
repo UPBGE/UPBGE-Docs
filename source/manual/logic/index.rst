@@ -1,9 +1,8 @@
 .. _logic-index:
-.. _bpy.ops.logic:
 
-#########
-  Logic
-#########
+=====
+Logic
+=====
 
 .. toctree::
    :maxdepth: 2

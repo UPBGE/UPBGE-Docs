@@ -14,12 +14,13 @@ Submodules:
 
 .. toctree::
    :maxdepth: 1
+   :glob:
 
-   mathutils.geometry
-   mathutils.bvhtree
-   mathutils.kdtree
-   mathutils.interpolate
-   mathutils.noise
+   mathutils.bvhtree.rst
+   mathutils.geometry.rst
+   mathutils.interpolate.rst
+   mathutils.kdtree.rst
+   mathutils.noise.rst
 
 The :mod:`mathutils` module provides the following classes:
 

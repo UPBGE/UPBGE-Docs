@@ -14,50 +14,51 @@ features present in Blender relative to UPBGE.
 
 .. rubric:: Object types supported
 
-- Mesh
-- Text
-- Armature
-- Empty
-- Camera
-- Lamp
+- :ref:`datablock-armature`
+- :ref:`datablock-camera`
+- :ref:`datablock-empty`
+- :ref:`datablock-lamp`
+- :ref:`datablock-mesh`
+- :ref:`datablock-text`
 
-.. note:: Any other object type (like Curve, Speaker, Force Field, etc) will not be rendered into game. Curves may be converted to Meshes though.
+.. note:: Any other object type (like Curve, Speaker, Force Field, etc) will not be rendered into game. A Curve Object can be converted to :ref:`datablock-mesh` though.
 
 .. _compatibility-supported-datablocks:
 
 .. rubric:: Data-blocks supported
 
-- Cameras
-- Scenes
-- Objects
-- Materials
-- Meshes
-- Lamps
-- Libraries
-- Images
-- Textures (only Images, procedural Textures not supported)
-- Worlds
-- Groups
-- Shape Keys (along with Actions, otherwise unused)
-- Texts (partially)
-- Sounds
-- Armatures
-- Actions
+- :ref:`datablock-action`
+- :ref:`datablock-armature`
+- :ref:`datablock-camera`
+- :ref:`datablock-group`
+- :ref:`datablock-image`
+- :ref:`datablock-lamp`
+- :ref:`datablock-library`
+- :ref:`datablock-material`
+- :ref:`datablock-mesh`
+- :ref:`datablock-object`
+- :ref:`datablock-scene`
+- Shapekey (along with :ref:`datablock-action`, otherwise unused)
+- :ref:`datablock-sound`
+- :ref:`datablock-text` (partially)
+- :ref:`datablock-texture` (only :ref:`datablock-image` based, procedural not supported)
+- :ref:`datablock-world`
 
 .. note:: Any other data-block type (like Line Styles, Particles, Brushes, etc) have no use or will not be rendered into game.
 
-.. note:: Text objects only work partially, with advanced formatting features currently not being supported.
+.. note:: :ref:`datablock-text` only work partially, with advanced formatting features currently not supported.
 
 UPBGE VS BGE
 ================
 
-BGE also have some incompatibilities with UPBGE. UPBGE can load and execute games made 
+BGE also have some incompatibilities with UPBGE. UPBGE can partially load and execute games made 
 in BGE, but a game made in UPBGE can't be executed in BGE, resulting in several 
 issues like:
 
 - Logic can't run most of the times.
 - Materials get messed up.
-- Sometimes physics properties get messed up.
+- UPBGE do not support Multitexture material mode anymore. Set to GLSL when in vanilla BGE.
+- Sometimes physics simulation get messed up.
 
 Along with this compatibility with BGE, UPBGE comes with features not supported by 
 BGE, like Modifiers applied automatically at game start (instead of discarded, as in BGE).

@@ -1,8 +1,8 @@
 .. _about-index:
 
-#####################
-  About this Manual
-#####################
++++++
+About
++++++
 
 .. toctree::
    :maxdepth: 2

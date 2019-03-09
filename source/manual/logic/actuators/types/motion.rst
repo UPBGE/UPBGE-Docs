@@ -1,5 +1,7 @@
 .. _bpy.types.ObjectActuator:
 
+.. _actuator-motion:
+
 ***************
 Motion Actuator
 ***************

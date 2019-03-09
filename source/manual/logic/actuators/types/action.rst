@@ -1,5 +1,7 @@
 .. _bpy.types.ActionActuator:
 
+.. _actuator-action:
+
 ***************
 Action Actuator
 ***************

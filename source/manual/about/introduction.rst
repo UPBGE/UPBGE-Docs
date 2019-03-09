@@ -1,21 +1,24 @@
-**********************************
+.. _about-introduction:
+
+++++++++++++++++++++++++++++++++
 Introduction to the UPBGE Manual
-**********************************
+++++++++++++++++++++++++++++++++
 
 Our aim to provide a complete and concise reference manual.
 
-The manual has as a goal to provide
-   - Insight in Blender/UPBGE's way of working, its internal (technical) design -- in order to understand options and tools.
+The manual has as a goal to provide:
+
+   - Insight in Blender/UPBGE's way of working, its internal (technical) design - in order to understand options and tools.
    - Detailed functional description of all features, tools and options in UPBGE.
 
-
+===========
 Conventions
 ===========
 
-.. note: these conventions are for people reading the manual.
-   we have more detailed list of conventions for authors under the writing style section.
+.. note: These conventions are for people reading the manual. We have a more detailed 
+   list of conventions for authors under the writing style section.
 
-
+---------
 Keyboards
 ---------
 
@@ -30,13 +33,12 @@ Hotkey letters are shown in this manual like they appear on a keyboard; for exam
 :kbd:`Numpad0` to :kbd:`Numpad9`, :kbd:`NumpadPlus`
    refer to the keys on the separate numeric keypad.
 
-Other keys are referred to by their names,
-such as :kbd:`Esc`, :kbd:`Tab`, :kbd:`F1` to :kbd:`F12`.
-Of special note are the arrow keys, :kbd:`Left`, :kbd:`Right` and so on.
+Other keys are referred to by their names, such as :kbd:`Esc`, :kbd:`Tab`, :kbd:`F1` to 
+:kbd:`F12`. Of special note are the arrow keys, :kbd:`Left`, :kbd:`Right` and so on.
 
-
-Mice
-----
+-----
+Mouse
+-----
 
 This manual refers to mouse buttons as:
 
@@ -49,9 +51,9 @@ This manual refers to mouse buttons as:
 :kbd:`Wheel`
    Scrolling the wheel.
 
-
 .. _about-user-contribute:
 
+==========
 Contribute
 ==========
 

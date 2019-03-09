@@ -5,42 +5,45 @@ base class --- :class:`SCA_ILogicBrick`
 
 .. class:: SCA_ISensor(SCA_ILogicBrick)
 
-   Base class for all sensor logic bricks.
+   Base class of all :doc:`/manual/logic/sensors/index`.
 
    .. attribute:: usePosPulseMode
 
       Flag to turn positive pulse mode on and off.
       
-      :type: boolean
+      :type: bool
 
    .. attribute:: useNegPulseMode
 
       Flag to turn negative pulse mode on and off.
       
-      :type: boolean
+      :type: bool
 
    .. attribute:: frequency
 
-      The frequency for pulse mode sensors. (Deprecated: use SCA_ISensor.skippedTicks)
+      The frequency for pulse mode sensors.
+      
+      .. warning::
+         Deprecated, use :class:`SCA_ISensor.skippedTicks` instead.
 
-      :type: integer
+      :type: int
 
    .. attribute:: skippedTicks
 
-      Number of logic ticks skipped between 2 active pulses
+      Number of logic ticks skipped between 2 active pulses.
 
-      :type: integer
+      :type: int
 
    .. attribute:: level
 
-      level Option whether to detect level or edge transition when entering a state.
+      Level Option whether to detect level or edge transition when entering a state.
       It makes a difference only in case of logic state transition (state actuator).
       A level detector will immediately generate a pulse, negative or positive
       depending on the sensor condition, as soon as the state is activated.
       A edge detector will wait for a state change before generating a pulse.
       note: mutually exclusive with :data:`tap`, enabling will disable :data:`tap`.
 
-      :type: boolean
+      :type: bool
 
    .. attribute:: tap
 

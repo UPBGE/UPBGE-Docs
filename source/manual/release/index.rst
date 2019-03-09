@@ -1,7 +1,8 @@
+.. _release-index:
 
-############
-Release Game
-############
++++++++
+Release
++++++++
 
 .. toctree::
    :maxdepth: 2

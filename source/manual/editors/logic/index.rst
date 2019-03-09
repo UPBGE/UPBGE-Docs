@@ -1,3 +1,4 @@
+.. _editor-logic-index:
 
 ############
 Logic Editor

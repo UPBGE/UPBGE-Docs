@@ -1,19 +1,19 @@
-*******
+.. _about-license:
+
++++++++
 License
-*******
++++++++
 
-UPBGE itself is released under
-the `GNU General Public License <http://www.gnu.org/copyleft/gpl.html>`__.
+UPBGE itself is released under the 
+`GNU General Public License <http://www.gnu.org/copyleft/gpl.html>`__.
 
-Except where otherwise noted,
-the content of the UPBGE Manual is available under a
-`Creative Commons Attribution-ShareAlike 4.0 International License
-<https://creativecommons.org/licenses/by-sa/4.0/>`__
-or any later version. Excluded from the CC-BY-SA are also the used logos,
-trademarks, icons, source code and Python scripts.
+Except where otherwise noted, the content of the UPBGE Manual is available under a
+`Creative Commons Attribution-ShareAlike 4.0 International License <https://creativecommons.org/licenses/by-sa/4.0/>`__
+or any later version. Excluded from the CC-BY-SA are also the used logos, trademarks, 
+icons, source code and Python scripts.
 
-This UPBGE manual contains own information from UPBGE Documentation Team but it is also a derivated work from others
-manuals who authors are exposed to continuation:
+This UPBGE manual contains exclusive information from UPBGE Documentation Team but it is 
+also base on others manuals and articles whose authors are exposed below:
 
 .. parsed-literal::
 
@@ -48,9 +48,10 @@ manuals who authors are exposed to continuation:
 .. |UPBGE_LICENSE| replace:: CC-BY-SA v4.0
 .. _UPBGE_LICENSE: https://creativecommons.org/licenses/by-sa/4.0/
 
-It means, that when contributing to the manual you do not hold exclusive copyright to your text.
-You are, of course, acknowledged and appreciated for your contribution.
-However, others can change and improve your text in order to keep the manual consistent and up to date.
+It means that when contributing to the manual you do not hold exclusive copyright to your 
+text. You are, of course, acknowledged and appreciated for your contribution. However, others 
+can change and improve your text in order to keep the manual consistent and up to date.
 
-If you want to use the UPBGE manual in other sites or other formats, please attribute the different authors and
-include hyperlinks (online) or URLs (in print) to the different manuals as pointed above out.
+If you want to use the UPBGE manual in other sites or other formats, please attribute the 
+different authors and include hyperlinks (online) or URLs (in print) to the different 
+manuals as pointed above out.

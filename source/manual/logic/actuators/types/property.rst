@@ -1,5 +1,7 @@
 .. _bpy.types.PropertyActuator:
 
+.. _actuator-property:
+
 *****************
 Property Actuator
 *****************

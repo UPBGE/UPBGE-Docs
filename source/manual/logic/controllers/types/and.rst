@@ -1,3 +1,4 @@
+.. _controller-and:
 
 **************
 AND Controller

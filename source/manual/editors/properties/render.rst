@@ -13,8 +13,7 @@ are captured by the game and by default, the mouse cursor is not visible (this c
 changed in the :ref:`Display panel <editors-properties-render-display>` of this tab). 
 To exit the game, press the :kbd:`Esc` key.
 
-.. note:: Make sure that the render engine is set to 
-   :doc:`Blender Game </manual/introduction/screen_layout>` when attempting to set these 
+.. note:: Make sure that the render engine is set to **UPBGE** when attempting to set these 
    controls, otherwise this description will not apply to what you see!
 
 In **Render** tab, there are several panels available, as shown. Each one can be expanded 

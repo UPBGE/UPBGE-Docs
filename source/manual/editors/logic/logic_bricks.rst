@@ -1,3 +1,4 @@
+.. _editor-logic-bricks:
 
 #################
 Logic Bricks Area

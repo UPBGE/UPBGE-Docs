@@ -1,16 +1,17 @@
+.. _logic-introduction:
 
-************
+============
 Introduction
-************
+============
 
 *Game Logic* is the default scripting layer in the Game Engine.
 Each *Game Object* in the game may store a collection of logical components (Logic Bricks)
 which control its behavior within the scene. Logic bricks can be combined to perform
 user-defined actions that determine the progression of the simulation.
 
-
+------------
 Logic Bricks
-============
+------------
 
 The main part of game logic can be set up through a graphical interface
 the Logic Editor, and therefore does not require detailed programming knowledge.
@@ -25,9 +26,9 @@ and trigger connected actuators when their operating conditions are met.
 Actuators interact with the simulation directly, and are the only components in the game which
 are able to do so (other than the Python controller, and other simulation components such as Physics).
 
-
+----------
 Properties
-==========
+----------
 
 :doc:`Properties </manual/logic/properties>` are like variables in other programming languages.
 They are used to save and access data values either for the whole game (e.g. scores),
@@ -36,9 +37,9 @@ However, in the Blender Game Engine, a property is associated with an object.
 Properties can be of different types,
 and are set up in a special area of the Logic Editor.
 
-
+------
 States
-======
+------
 
 Another useful feature is object :doc:`States </manual/logic/states>`.
 At any time while the simulation is running,

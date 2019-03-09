@@ -15,23 +15,22 @@ with detailed information (and examples in some cases).
 `Visit the UPBGE's website <https://upbge.org/>`__ or `contribute to this manual <https://github.com/UPBGE/UPBGE-Docs>`__.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Manual
 
    manual/introduction/index
    manual/tutorials/index
    manual/editors/index
-   manual/objects/index
+   manual/datablocks/index
    manual/logic/index
    manual/release/index
    manual/about/index
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: API Reference
-   
-   api/bge
-   api/aud
-   api/bgl
-   api/blf
-   api/mathutils
+
+   api/index_overview
+   api/index_modules_ge
+   api/index_modules_standalone
+   api/index_modules_app

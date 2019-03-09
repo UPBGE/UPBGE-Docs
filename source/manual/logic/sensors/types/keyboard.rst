@@ -1,5 +1,7 @@
 .. _bpy.types.KeyboardSensor:
 
+.. _sensor-keyboard:
+
 ***************
 Keyboard Sensor
 ***************
