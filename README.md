@@ -1,6 +1,6 @@
 # UPBGE Documentation
 
-## [View the latest build of this documentation](https://upbge-docs.readthedocs.io/en/latest/index.html)
+## [View the latest build of this documentation](https://upbge-docs.readthedocs.io/en/latest/)
 
 Welcome to the official repository of UPBGE's Manual and Python API. UPBGE's source code repository can be found [here](https://github.com/UPBGE/blender).
 
