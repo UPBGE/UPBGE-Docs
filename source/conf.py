@@ -15,7 +15,6 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
-import hidden_code_block
 
 
 # -- Project information -----------------------------------------------------
@@ -40,7 +39,6 @@ release = 'latest'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-'hidden_code_block'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
