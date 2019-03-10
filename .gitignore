@@ -6,3 +6,4 @@ build
 *.includes
 *.creator
 *.user
+/source/__pycache__

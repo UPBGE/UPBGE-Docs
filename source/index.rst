@@ -2,7 +2,7 @@
    sphinx-quickstart on Sun Jul  8 18:28:15 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
-
+   
 ============
 UPBGE Manual
 ============
@@ -29,8 +29,10 @@ with detailed information (and examples in some cases).
 .. toctree::
    :maxdepth: 2
    :caption: API Reference
-
-   api/index_overview
-   api/index_modules_ge
-   api/index_modules_standalone
-   api/index_modules_app
+   
+   api/bge
+   api/aud
+   api/mathutils
+   api/bgl
+   api/blf
+   api/gpu
