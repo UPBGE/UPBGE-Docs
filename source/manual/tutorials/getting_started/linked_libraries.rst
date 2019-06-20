@@ -52,6 +52,10 @@ If everything went right, you should see in the *3D Viewport* the group instance
 They are not editable as they are only :ref:`datablock-empty` objects referencing groups 
 from the original files.
 
+.. figure:: /images/tutorials-linked_libraries-linking_2.png
+   
+   Groups instanced on game.blend scene.
+
 With the instances added, all you have to do is place them with the desired 
 transformations, and if you need to edit all the placed instances, just edit the original 
 file to update all the references. Pretty handy, isn't it?
@@ -64,3 +68,43 @@ If you rename or move any of your libraries to another folder, you will face a c
 problem: broken links. There are several ways to deal with this problem, and this section 
 will present you the use of the *Outliner* to manage links (and :ref:`datablock-index`).
 
+I have renamed the library files to `LibCharacter` and `LibScenery`, which are different 
+names from the previous ones (with underlines and only lower case characters). When opening 
+`game.blend`, the editor will complain about the non existing libraries, and our instances 
+will be shown only as :ref:`datablock-empty` objects.
+
+.. figure:: /images/tutorials-linked_libraries-managing_1.png
+   
+   Main file after libraries be renamed.
+
+To fix this, we must go to the *Outliner* and select the *Blend File* mode. On this mode 
+we'll see all :ref:`datablock-index`s on our blend file.
+
+.. figure:: /images/tutorials-linked_libraries-managing_2.png
+   
+   *Blend File* mode on the *Outliner*.
+
+The important elements here are the references to our libraries at the bottom: they are 
+being shown as cracked icons and their previous names. We have two choices to fix this issue:
+
+Renaming the references
+   You only need to double click the references and provide the new names. If they are in another folder, you must provide the relative path.
+   
+Relocating the references
+   You only need to right click the references, select *Relocate* and select the corresponding file.
+   
+.. figure:: /images/tutorials-linked_libraries-managing_3.png
+   
+   Broken references fix modes on the *Outliner*.
+
+After fixing the broken references, their icons will change back to normal and the objects 
+will be automatically updated in the *3D Viewport*.
+   
+.. figure:: /images/tutorials-linked_libraries-managing_4.png
+   
+   Fixed references and objects updated on the *3D Viewport*.
+
+Understanding how to use and manage linked libraries is important to maintain a complex and 
+healthy project environment. Much more can be achieved through the use of :class:`bge.logic.LibLoad`, 
+loading and unloading libraries dynamically using Python, but for simpler projects, linked 
+libraries should do the job.
