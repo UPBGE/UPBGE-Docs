@@ -1,7 +1,8 @@
+.. _getting_started-index:
 
-####################
++++++++++++++++
 Getting Started
-####################
++++++++++++++++
 
 This tutorial aims to show the basic concepts of UPBGE, from the game loop behavior to 
 the most common operations used in game development. This will give you important notions 

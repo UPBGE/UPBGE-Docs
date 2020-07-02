@@ -1,7 +1,8 @@
+.. _introducing_python-index:
 
-####################
+++++++++++++++++++
 Introducing Python
-####################
+++++++++++++++++++
 
 .. toctree::
    :maxdepth: 2

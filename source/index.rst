@@ -21,8 +21,11 @@ with detailed information (and examples in some cases).
    manual/introduction/index
    manual/tutorials/index
    manual/editors/index
-   manual/datablocks/index
    manual/logic/index
+   manual/logic_nodes/index
+   manual/python/index
+   manual/physics/index
+   manual/datablocks/index
    manual/release/index
    manual/about/index
 

@@ -1,8 +1,8 @@
 .. _release-index:
 
-+++++++
-Release
-+++++++
+++++++++++
+Deployment
+++++++++++
 
 .. toctree::
    :maxdepth: 2

@@ -1,8 +1,8 @@
 .. _logic-index:
 
-=====
-Logic
-=====
+++++++++++++
+Logic Bricks
+++++++++++++
 
 .. toctree::
    :maxdepth: 2
