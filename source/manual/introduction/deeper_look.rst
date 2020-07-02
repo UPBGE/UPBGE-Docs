@@ -61,7 +61,7 @@ provided by the program. In this sense, the UPBGE can be efficiently used in all
 game design, from prototyping to final release.
 
 UPBGE can simulate content within Blender, however it also includes the ability to export 
-a binary run-time to Linux, macOS, and MS-Windows.
+a binary run-time to Linux, MacOS, and MS-Windows.
 
 There are a number of powerful libraries the UPBGE takes advantage of:
 

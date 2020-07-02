@@ -7,14 +7,16 @@ This tutorial aims to show the basic concepts of UPBGE, from the game loop behav
 the most common operations used in game development. This will give you important notions 
 on how UPBGE works and how are its procedures.
 
-Keep in mind that the focus of this tutorial are UPBGE and its game engine behavior, so it 
-will not explain basic Blender navigation (like selection, shortcuts, etc). This tutorial 
-assumes you already know how Blender works, and it focuses only on GE capabilities.
+Keep in mind that the focus of this tutorial are UPBGE and its game engine behavior, although 
+basic Blender navigation (like selection, shortcuts, etc) and panels will be explained. 
 
 .. toctree::
    :maxdepth: 2
 
-   basic_concepts
+   3D_basic_concepts
+   game_basic_concepts
+   blender_basic
    move_object
+   first_person_camera
    play_animation
    linked_libraries

@@ -1,7 +1,37 @@
-==============
-Basic Concepts
-==============
+===================
+Game Basic Concepts
+===================
 
+----
+Game
+----
+
+So far, we have talked about 3D at length. But how does the game engine fit into? Well, a game engine simply takes the existing 3D assets and attaches a "brain" 
+to them so the objects know how to respond to events. The "brain" can be in the form of logic bricks (which can perform different actions depending on the 
+user input), scripts (which can extend the functionality of logic bricks), or other physical properties of an object (such as rigid body settings to make 
+an object tumble and fall realistically).
+
+.. figure:: /images/Chapter1/Fig01-19.jpg
+   
+   Game = Object + Logic.
+
+A game engine is made up of many distinct components:
+
+* **Rendering Engine** : Turns the 3D scene you've built (including models, lights, and camera) into an image to be displayed onscreen.
+* **Physics** : Handles collisions and physical simulations of objects.
+* **Logic/Scripting** : The brain behind a game, it reacts to the user input, makes decisions, and keeps track of what's going on in the game.
+* **Sound** : Produces the audio events.
+
+The above list is not meant to be exhaustive, but it should give you an idea of what a game engine does. The Blender game engine gives you a lot of control over each of these components, which you will learn one by one in later chapters.
+
+.. topic:: **Quality vs. Performance**
+
+   Making a video game is a constant balancing act between quality and performance. As artists, you want to make the virtual world as rich and detailed 
+   as possible; on the other hand, you need to make sure the game can run smoothly for people who might not have top-of-the-line computers. Throughout the 
+   process of game-making, you will run into cases where you have to make a decision whether to prioritize the visual quality or the performance of the game. 
+   You will also learn tricks to achieve high-quality visual without compromising the performance, as well as how to optimize the game by identifying what 
+   is slowing it down.
+   
 ---------
 Game Loop
 ---------
