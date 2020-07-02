@@ -25,7 +25,7 @@ free (called Blender Publisher) that had a few additional features. Being the on
 package available for free at a time when computer graphics was still in its infancy, Blender started gaining popularity, 
 and many online communities developed that allowed artists to share knowledge and their work.
 
-.. image:: images/Chapter1/Fig01-01.jpg
+.. image:: /images/Chapter1/Fig01-01.jpg
    :align: center
 
 The Dark Nights
@@ -50,7 +50,7 @@ using Blender. The Institute produced the movies **Elephants Dream**, **Big Buck
 game **Yo, Frankie!**. These projects serve two main goals: The production process is an opportunity to improve Blender in a real studio environment, 
 and the end result also serves as an advertisement for the software itself.
 
-.. image:: images/Chapter1/Fig01-02.jpg
+.. image:: /images/Chapter1/Fig01-02.jpg
    :align: center
    
 Then came Blender 2.5, which changed much of how Blender looked and behaved. This refactoring, as it was called, took years of planning and coding. 
@@ -62,7 +62,7 @@ Blender uses the Python programming language for scripting. With Python, you can
 more importantly, control the game engine. Knowing how to program is not a requirement for using Blender, but knowing Python will make 
 you a far more capable game-maker.
 
-.. image:: images/Chapter1/Fig01-03.jpg
+.. image:: /images/Chapter1/Fig01-03.png
    :width: 50%
    :align: left
 
@@ -82,7 +82,7 @@ can make changes to the Blender code without approval. Blender is licensed under
 copied, modified, and if re-shared, the changes in the source code have to be available and licensed in an equivalent license.
 
 The **Uchronia Project Blender Game Engine** (UPBGE) is a `Blender <https://www.blender.org/>`__'s builtin tool derived from Blender Foundation's 
-`Blender Game Engine <https://en.wikipedia.org/wiki/Blender_Game_Engine>`__for real-time projects, from architectural visualizations and simulations to games.
+`Blender Game Engine <https://en.wikipedia.org/wiki/Blender_Game_Engine/>`__ for real-time projects, from architectural visualizations and simulations to games.
 
 Originally created by Tristan Porteries as a fork from the Blender Game Engine with the purpose to develop the Blender Game Engine in a faster way, 
 became indepent with the Blender Foundation's announcement of BGE's removal and replacement with a new Interactive Engine. With this independency, 

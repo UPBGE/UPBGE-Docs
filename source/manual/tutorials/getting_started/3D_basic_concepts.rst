@@ -18,7 +18,7 @@ Coordinate System
 -----------------
 
 .. image:: /images/Chapter1/Fig01-05.png
-   :width: 33%
+   :width: 33 %
    :align: right
 
 We live in a three-dimensional world that has width, height, and depth. So to represent anything that resembles real life as a virtual world inside a 
@@ -39,7 +39,7 @@ with lines and fill in the middle. Suddenly, something far more interesting is c
 together, you can create any shape, the result of which is called a "mesh" or "model." Figure below shows how a mesh can be broken down into faces, then edges, 
 and ultimately, as vertices.
 
-.. figure:: /images/Chapter1/Fig01-06.png
+.. figure:: /images/Chapter1/Fig01-06.jpg
 
    Teapot, cube, face, edge and vertex.
 
@@ -47,8 +47,8 @@ Why is the triangle so important? Turns out, modern computer graphics use the tr
 A rectangular plane (also known as a _quadrangle_, or more commonly a _quad_) is simply two triangles arranged side by side. A cube is simply six 
 squares put together. Even a sphere is just made of tiny facelets arranged into a ball shape.
 
-.. image:: /images/Chapter1/Fig01-07.png
-   :width: 50%
+.. image:: /images/Chapter1/Fig01-07.jpg
+   :width: 50 %
    :alt: The same cylinder cap can be made up of triangles, quads, or an n-gon.
    :align: right
 
@@ -61,8 +61,8 @@ The process of creating a mesh by rearranging vertices, edges, and faces is call
 It is worth noting that unlike the real world, polygonal models do not have volumes. They are just a shell made of interconnected faces that take 
 the shape of the object, but the inside of the object is always "hollow."
 
-.. image:: /images/Chapter1/Fig01-08.png
-   :width: 50%
+.. image:: /images/Chapter1/Fig01-08.jpg
+   :width: 50 %
    :alt: Surface normals are displayed as cyan lines protruding from the faces.
    :align: right
 
@@ -88,7 +88,7 @@ The three basic transforms that you should be familiar with are:
 
 These three are the most common manipulations you will encounter. They are illustrated below.
 
-.. figure:: /images/Chapter1/Fig01-09.png
+.. figure:: /images/Chapter1/Fig01-09.jpg
 
    Translation, scaling, and rotation.
 
@@ -105,15 +105,15 @@ plastic ball and lay it out flat on the table, that map would be the texture, an
 3D mesh is called **texture mapping**. Texture mapping can be an automatic process, using one of the predefined projections, or a manual process, which uses 
 a UV layout to map the 2D image onto the 3D mesh. Figure 1.10 illustrates how an image is mapped onto a model.
 
-.. figure:: /images/Chapter1/Fig01-10.png
+.. figure:: /images/Chapter1/Fig01-10.jpg
 
    Meshes with texture applied.
 
 Traditionally, a texture changes the color of a surface. But that's not all it can do: textures can also be used to alter other properties of the 
 surface such as its transparency, reflectivity, and even bumpiness to create the illusion of a much more detailed surface.
 
-.. image:: /images/Chapter1/Fig01-11.png
-   :width: 50%
+.. image:: /images/Chapter1/Fig01-11.jpg
+   :width: 50 %
    :alt: From left to right: diffuse map, normal map, and specular map.
    :align: right
    
@@ -133,7 +133,7 @@ important in a virtual world. With light comes shadow as well. Shadow might not 
 and light makes a huge difference in how the scene is presented.
 
 .. image:: /images/Chapter1/Fig01-12.png
-   :width: 50%
+   :width: 50 %
    :alt: From left: Lamp, Sun, Spot lamp, Hemi lamp, and Area lamp.
    :align: right
 
@@ -150,7 +150,7 @@ Camera
 ------
 
 .. image:: /images/Chapter1/Fig01-13.png
-   :width: 50%
+   :width: 50 %
    :alt: Camera objects
    :align: right
 
@@ -182,7 +182,7 @@ various properties, such as location or rotation that are keyframed.
    Dopesheet Editor: each diamond shape is a keyframe.
    
 .. image:: /images/Chapter1/Fig01-15.png
-   :width: 50%
+   :width: 50 %
    :alt: LocRotScale animation
    :align: right
 
@@ -191,7 +191,7 @@ you can realistically animate the movement of a bouncing ball. Keep in mind that
 of the ball, not the actual motion path of the ball itself.
 
 .. image:: /images/Chapter1/Fig01-16.png
-   :width: 33%
+   :width: 33 %
    :alt: Armature animation
    :align: left
    
@@ -199,16 +199,16 @@ To animate something more complicated, such as a human, it's not enough to just 
 This is where armatures come in. Armatures are skeletons that can be "inserted" into a model to control the model's deformation. Using this system, 
 you can create complex yet organic-looking animations.
 
-.. image:: /images/Chapter1/Fig01-17.png
-   :width: 50%
+.. image:: /images/Chapter1/Fig01-17.jpg
+   :width: 50 %
    :alt: Shape keys animation.
    :align: right
 
 A third way to animate is using shape keys. Shape keys are snapshots of the mesh in different shapes. They are often used to animate nuanced changes 
 that cannot be otherwise easily animated with armatures.
 
-.. image:: /images/Chapter1/Fig01-18.png
-   :width: 33%
+.. figure:: /images/Chapter1/Fig01-18.jpg
+   :width: 33 %
    :alt: Procedural physics-based motion.
    :align: left
 
