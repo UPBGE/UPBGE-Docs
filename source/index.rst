@@ -27,6 +27,7 @@ with detailed information (and examples in some cases).
    manual/physics/index
    manual/datablocks/index
    manual/release/index
+   manual/tools/index
    manual/about/index
 
 .. toctree::
