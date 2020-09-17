@@ -1,4 +1,4 @@
-.. _python-introduction:
+.. _python-game-engine:
 
 ==========================
 Python and the Game Engine

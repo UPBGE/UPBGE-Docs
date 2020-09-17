@@ -10,7 +10,7 @@ The Blender game engine was once famous for letting you create a full game witho
 it also leads to a very limited game-making experience. Logic bricks, as presented in Chapter 3, are very handy for quick prototyping. However, once you need 
 to access advanced resources, external libraries and devices, or simply optimize your application, a programming language becomes your new best friend.
 
-Through the use of a scripting language called **Python_, the game engine (as Blender itself) is fully extensible. This programming language is easy to learn, 
+Through the use of a scripting language called **Python**, the game engine (as Blender itself) is fully extensible. This programming language is easy to learn, 
 although extremely powerful. Be aware, though, that you will not find a complete guide to learning Python here. There are plenty of resources online and offline 
 that will serve you better. However, even if you are not inclined to study Python deeply now, sooner or later you will find yourself struggling with script files. 
 So, it's important to know what you are dealing with.
@@ -68,36 +68,6 @@ Another important aspect while working is to document your project. It's easy to
 Script files, on the other hand, are naturally structured to be self-documented. To document logic bricks, you need to rely on text files inside or outside 
 your Blender files (and neat image diagrams). It's definitively not as handy as inline comments along your code. (Code diagrams can still be useful, but 
 that's a different topic.)
-
-.. topic:: **For the Artist Behind the Programmer Façade**
-
-   Please resist to the temptation to create ASCII art while documenting your scripts.
-
-```
-   \_\_\_\_\_.-.\_\_\_\_\_
-
-  '-------------'
-
-  |             |    /
-
-  |             | \_\_/
-
-  \             /
-
-   |           |
-
-    \         /
-
-     |  >|<  |
-
-     \\_\_\_\_\_\_\_/
-
-  .'==========='.
-
- / o o o o o o o \
-
-'-----------------'
-```
 
 ===================================
 Better Handling of Multiple Objects
@@ -218,7 +188,7 @@ found in the same folder.
 
     speed = 0.025
 
-.. figures:: /images/Chapter7/Fig07-04.png
+.. figure:: /images/Chapter7/Fig07-04.png
 
    Python Module controllers
 
@@ -279,14 +249,12 @@ variables named after them. The following code snip assigns the scene objects (r
 Although we have flexible data types, we must respect variable types while manipulating and passing/returning them to functions. Here you can see a list 
 of the data types you will find in the Blender game engine API:
 
-- **Integer:** This is the most common of the numerical types. It can store any number that fits in your computer memory. You can perform any regular math 
-operations on it, such as sum, subtraction, division, modulus, and potency.
+- **Integer:** This is the most common of the numerical types. It can store any number that fits in your computer memory. You can perform any regular math operations on it, such as sum, subtraction, division, modulus, and potency.
 
 ::
     my_integer  = 112358132134
 
-- **Float:** This type is very similar to integers, but has a range of numbers that includes fractions. If you divide an even number by its half, 
-Python will automatically convert your integer to a float number.
+- **Float:** This type is very similar to integers, but has a range of numbers that includes fractions. If you divide an even number by its half, Python will automatically convert your integer to a float number.
 
 ::
     simple_float = 0.5
@@ -300,32 +268,27 @@ Python will automatically convert your integer to a float number.
 
     i_am_understanding_the_book = i_am_enjoying_the_book - 1
 
-- **List:** A list contains a conjunct of elements ordered by ascending indexes. Although the size of a list can change on the fly, you can't access a 
-list index that wasn't created yet (this will crash Python). List can have mixed elements such as integers, strings, and objects.
+- **List:** A list contains a conjunct of elements ordered by ascending indexes. Although the size of a list can change on the fly, you can't access a list index that wasn't created yet (this will crash Python). List can have mixed elements such as integers, strings, and objects.
 
 ::
     my_list = [3.14159265359, "PI", True]
 
-- **Tuple:** This is another kind of list where elements can't be overwritten. As with lists, you can read them using indexes. But it's more common to 
-access all the values at once, assigning them to different variables.
+- **Tuple:** This is another kind of list where elements can't be overwritten. As with lists, you can read them using indexes. But it's more common to access all the values at once, assigning them to different variables.
 
 ::
     t,u,p,l,e = (1,2,3,4,5) # works as: t = 1, u = 2, p = 3, ...
 
-- **String:** Whenever you need to store a text, you will use strings. As words are a combination of individual letters, a string consists of individual characters. 
-Indeed, strings can be understood as a list of characters because you can access them using their location index, though you can't overwrite them (like in a tuple).
+- **String:** Whenever you need to store a text, you will use strings. As words are a combination of individual letters, a string consists of individual characters. Indeed, strings can be understood as a list of characters because you can access them using their location index, though you can't overwrite them (like in a tuple).
 
 ::
     python = "rulez"
 
-- **Dictionary:** Like a list, a dictionary can store multiple values. Unlike a list, a dictionary is not based on numerical index access. 
-Therefore, we have strings working as "keys" to store and retrieve the individual variables. In fact, anything can be a key to a dictionary, a number, an object, a class …
+- **Dictionary:** Like a list, a dictionary can store multiple values. Unlike a list, a dictionary is not based on numerical index access. Therefore, we have strings working as "keys" to store and retrieve the individual variables. In fact, anything can be a key to a dictionary, a number, an object, a class …
 
 ::
     _3d_software = {"name ": "Blender", "version": 2.6}
 
-- **Custom Types:** These are things such as vectors and matrixes. The game engine combines some of the basic data types to create more complex ones. 
-They are mainly used for vectors and matrixes. That way you can interact mathematically with them in a way that basic types won't do.
+- **Custom Types:** These are things such as vectors and matrixes. The game engine combines some of the basic data types to create more complex ones. They are mainly used for vectors and matrixes. That way you can interact mathematically with them in a way that basic types won't do.
 
 ::
     mathutils.Vector(1,0,0) * object.orientation # the result is a Matrix
@@ -402,73 +365,75 @@ The first script that runs in this file is the init\_world.py. Here we are creat
 In order to sort the objects between the groups, we go over the entire scene object list and check for objects with a property "cube" or "sphere" and append 
 them to their respective lists.
 
-::
-    # ############### #
-    
-    #  init\_world.py  #
-    
-    # ############### #
-    
-    import bge
-    from bge import logic as G
-    from bge import render as R
-    
-    # showing the mouse cursor
-    R.showMouse(True)
-    
-    # storing the current scene in a variable
-    scene = G.getCurrentScene()
-    
-    # define a class to store all group elements and the click object
-    class Group():
-        def __init__(self, name):
-            self.name = name
-            self.click = None
-            self.objects = []
-    
-    # create new element groups
-    cube_group   = Group("cubes")
-    sphere_group = Group("sphere")
-    
-    # add all objects with an "ui" property to the created element
-    for obj in scene.objects:
-        if "cube" in obj:
-            cube_group.objects.append(obj)
-        elif "sphere" in obj:
-            sphere_group.objects.append(obj)
-        elif "click" in obj:
-            exec("%s\_group.click = obj" % (obj["click"]))
-    
-    G.groups = {"cube":cube_group, "sphere":sphere_group}
+.. code-block:: python
+
+   # ############### #
+   
+   #  init\_world.py  #
+   
+   # ############### #
+   
+   import bge
+   from bge import logic as G
+   from bge import render as R
+   
+   # showing the mouse cursor
+   R.showMouse(True)
+   
+   # storing the current scene in a variable
+   scene = G.getCurrentScene()
+   
+   # define a class to store all group elements and the click object
+   class Group():
+       def __init__(self, name):
+           self.name = name
+           self.click = None
+           self.objects = []
+   
+   # create new element groups
+   cube_group   = Group("cubes")
+   sphere_group = Group("sphere")
+   
+   # add all objects with an "ui" property to the created element
+   for obj in scene.objects:
+       if "cube" in obj:
+           cube_group.objects.append(obj)
+       elif "sphere" in obj:
+           sphere_group.objects.append(obj)
+       elif "click" in obj:
+           exec("%s\_group.click = obj" % (obj["click"]))
+   
+   G.groups = {"cube":cube_group, "sphere":sphere_group}
 
 After storing them in the global module `bge.logic`, we wait for the user to click in the cube or sphere in the middle of the scene. When that happens, it 
 will toggle the value of the on/off property of the cube or sphere. The following script (which runs every frame) will then hide/unhide the group's objects accordingly.
 
-::
-    ## ################## #
-    
-    # visibility\_check.py #
-    
-    # ################### #
-    
-    from bge import logic
-    
-    # defines a function to hide/turn visible all the objects passed as argument
-    def change_visibility(objects, on_off):
-        for obj in objects:
-            obj.visible = on_off
-    
-    # retrieve the stored groups to local variables
-    cube_group   = logic.groups["cube"]
-    sphere_group = logic.groups["sphere"]
-    
-    # read the current value of the "on\_off" property in the cube/sphere
-    cube_visible   = cube_group.click["on\_off"]
-    sphere_visible = sphere_group.click["on\_off"]
-    
-    # calls the function into the group object with the visibility flag
-    change_visibility(cube_group.objects, cube_visible)
-    change_visibility(sphere_group.objects, sphere_visible)
+.. code-block:: python
+
+   ## ################## #
+   
+   # visibility\_check.py #
+   
+   # ################### #
+   
+   from bge import logic
+   
+   # defines a function to hide/turn visible all the objects passed as argument
+   def change_visibility(objects, on_off):
+       for obj in objects:
+           obj.visible = on_off
+   
+   # retrieve the stored groups to local variables
+   cube_group   = logic.groups["cube"]
+   sphere_group = logic.groups["sphere"]
+   
+   # read the current value of the "on\_off" property in the cube/sphere
+   cube_visible   = cube_group.click["on\_off"]
+   sphere_visible = sphere_group.click["on\_off"]
+   
+   # calls the function into the group object with the visibility flag
+   change_visibility(cube_group.objects, cube_visible)
+   change_visibility(sphere_group.objects, sphere_visible)
 
 And we are done with this interaction. Play with the file by adding new elements (tubes, planes, monkeys) and make them interact as we have here. 
 A few copies and pastes should be enough to adapt this code to your new situation. Remember to note the current indentation used.

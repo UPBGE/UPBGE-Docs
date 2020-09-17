@@ -77,8 +77,7 @@ will be shown only as :ref:`datablock-empty` objects.
    
    Main file after libraries be renamed.
 
-To fix this, we must go to the *Outliner* and select the *Blend File* mode. On this mode 
-we'll see all :ref:`datablock-index`s on our blend file.
+To fix this, we must go to the *Outliner* and select the *Blend File* mode. On this mode we'll see all :ref:`datablock-index` on our blend file.
 
 .. figure:: /images/tutorials-linked_libraries-managing_2.png
    
