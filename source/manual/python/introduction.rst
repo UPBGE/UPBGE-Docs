@@ -1,8 +1,8 @@
 .. _python-introduction:
 
-============
-Introduction
-============
+*************************
+Introduction to Scripting
+*************************
 
 Congratulations, you finally arrived at one of the most technical parts of the book. Keep that in mind in case you get lost.
 
@@ -23,9 +23,8 @@ So, it's important to know what you are dealing with.
 After the brief overview in the Python basics, we will explain how to apply your knowledge of Python inside the game engine. You'll also learn 
 how to access the Python methods, properties, and objects you'll be using.
 
-=======================================
 Why Script When You Can Logic Brick It?
-=======================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We can compare logic bricks with real bricks. On the one hand, we have strong elements on which to build our system, but, on the other hand, we have a 
 system as flexible as a blind wall.
@@ -46,9 +45,8 @@ good Python book and start learning more about it:
    You can't ever get away from logic bricks. Even when using Python exclusively for your game, you will need to invoke the scripts from a Python controller. 
    The ideal is to find the balance that fits your project.
 
-======================================================
 Sane Replacement for Large-Scale Logic-Bricked Objects
-======================================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 It's always good to have an excuse to show an image in a programming chapter, and here it is. In Figure 7.1 you see the logic bricks for Frankie, 
 the main character of the open game **Yo Frankie!**
@@ -69,9 +67,8 @@ Script files, on the other hand, are naturally structured to be self-documented.
 your Blender files (and neat image diagrams). It's definitively not as handy as inline comments along your code. (Code diagrams can still be useful, but 
 that's a different topic.)
 
-===================================
 Better Handling of Multiple Objects
-===================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Big projects lead to multiple files, this is an inevitable truth. Even when you use external linking and libraries, it's crucial to optimize 
 the time spent in changing multiple sets at once. This is one of the weaknesses of logic bricks, they make it hard to automatically change 
@@ -92,9 +89,8 @@ connected to it. As you recall, you can restrict the visible logics through the 
 
 Once you start to work with scripts, you will see how easy it is to assume control over all your scene elements in a global way. It will give you lots of benefits in the long run.
 
-=====================================
 Access to Blender's Advanced Features
-=====================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You will be happy to know that the game engine has a powerful set of features beyond those found in the logic brick's interface. Also, almost all 
 the functionality found in the logic bricks can be accomplished through an equivalent method of the game engine API (which will be covered in the 
@@ -122,9 +118,8 @@ would hardly fit in the current Blender game engine interface. They would probab
 things you will find in the game engine built-in methods are: make screenshots; change world settings (gravity, logic tic rates); access the returned data from sensors 
 (pressed keys, mouse position); change object properties (camera lens, light colors, object mass); and many others we will cover in the course of this chapter.
 
-=========================================
 Use Features That Are Not Part of Blender
-=========================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 No man is an island. No game is an island either (except **Monkey Island**). And the easiest way to integrate your Blender game with the exterior 
 world is with Python. If you want to use external devices to control the game input or to tie external applications to your game, you may find Python suitable for that task.
@@ -143,9 +138,8 @@ be used with modules written in other languages (properly wrapped), you can virt
    To use external libraries, you must know the Python version they were built against. The Python library you are using must be compatible with the 
    Python version that comes with your Blender. It's also valuable to check how often the library is updated and if it will be maintained in the future.
 
-========================================================
 Keep Track of Your Changes with a Version Control System
-========================================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you take a Blender file in two different moments of your production, you will have a hard time finding what has changed between them. This is because Blender's 
 native file format is a binary type. Binary files are written in a way that you can't get to them directly, they are designed to be accessed by programs and not by human beings.
@@ -168,9 +162,8 @@ the software "meld" work just as well.
 
    TortoiseSVN merging
 
-=============================
 Debug Your Game While It Runs
-=============================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Interpreted languages (also known as scripting languages) are slower than compiled code. Therefore, to speed up their performance they are 
 precompiled and cached the first time they run (when you launch your game). This is not mandatory, though, and if you are using external Python scripts 
@@ -199,9 +192,8 @@ You will see the speed changing immediately. Your game is literally being update
 
    Remember to turn debugging off when you are done with this script. Reloading the script every frame can drastically reduce your performance.
 
-==========================
 So What Exactly Is Python?
-==========================
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Now that you are aware of all the benefits of using Python, it's time to understand what Python is. Once again, we can't go over all the aspects of the language here. Nevertheless, 
 a general overview is still desirable to help you understand the examples presented in this book.
@@ -212,9 +204,8 @@ To study your scripts, you must be aware of the following aspects:
 * Indentation
 * OOP, Object-Oriented Programming
 
-===================
 Flexible Data Types
-===================
+^^^^^^^^^^^^^^^^^^^
 
 Whenever you write a program, you have to use variables to store changing values at runtime. Unlike languages such as C and Java, Python variables are 
 very flexible: they can be declared on the fly when you first use them; you can assign different data types for the same variable; and you can even name them dynamically:
@@ -293,9 +284,8 @@ of the data types you will find in the Blender game engine API:
 ::
     mathutils.Vector(1,0,0) * object.orientation # the result is a Matrix
 
-===========
 Indentation
-===========
+^^^^^^^^^^^
 
 Indentation, the amount of white spaces or tabs you leave before a new line.
 
@@ -346,9 +336,8 @@ Whether to use spaces or tabs in your scripts is a matter of personal preference
    In Python, any text to the right of a pound sign is ignored by the interpreter. Therefore, the pound sign is used to add commentaries to your code 
    or to temporarily deactivate part of it.
 
-=================================
 OOP - Object-Oriented Programming
-=================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Since games deal with 3D world objects, it makes sense to use a language that is oriented to them. The game engine itself is written in C++, a very strong and 
 object-oriented language, and Python OOP capabilities let you handle the game data in a Python-native way. It reflects in the game engine objects having their 
@@ -438,9 +427,8 @@ will toggle the value of the on/off property of the cube or sphere. The followin
 And we are done with this interaction. Play with the file by adding new elements (tubes, planes, monkeys) and make them interact as we have here. 
 A few copies and pastes should be enough to adapt this code to your new situation. Remember to note the current indentation used.
 
-=====================
 Where to Learn Python
-=====================
+^^^^^^^^^^^^^^^^^^^^^
 
 If you have previous experience with another programming language, you will learn Python in no time. If you go over some basic Python tutorials, 
 look at some script examples, and check the Blender game engine API, that might be enough. But if learning Python is your first step into coding experience, 
@@ -450,9 +438,8 @@ Usually, a good way to start is tweaking ready-to-use scripts, which doesn't req
 experiments. Also, it gives you a good motivational boost by producing quick results for your efforts. We recommend you first learn Python and then focus on 
 its application in the game engine. But you may be more comfortable messing with game engine files first and then later learning Python more deeply.
 
-===============
 Online Material
-===============
+^^^^^^^^^^^^^^^
 
 Below are some websites where you can learn more about Python.
 
@@ -472,9 +459,8 @@ Blender Artists forum, you can find good script examples in the Python section (
 
 Dive Into Python 3 covers Python 3 and its differences from Python 2. A complete book available online.
 
-================
 Offline Material
-================
+^^^^^^^^^^^^^^^^
 
 Here are some other resources to help you learn Python.
 
@@ -493,9 +479,8 @@ Different Python series (2.x, 3.x) have certain particularities you don't want t
 An open game made with the game engine by the Blender Foundation. You can download all the files of this project for free and go over their scripts. 
 Although this can be confusing for someone in the first phases of learning Python, it's good reference material for later on.
 
-====================
 Python Built-in Help
-====================
+^^^^^^^^^^^^^^^^^^^^
 
 You can also access help directly in Python.
 
