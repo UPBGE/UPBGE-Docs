@@ -124,17 +124,12 @@ Blender Text Editor
 
 As you probably know, Blender has its own internal text editor (see Figure 7.7). Although it may not be as powerful as software designed exclusively for this particular task, it can be very convenient. It's useful for quick tests, small scripts, or when you want to keep everything bundled inside the Blender file. Here are its main features:
 
-- Syntax highlighting
-
-- Dynamic font sizes
-
-- Indentation conversion (spaces to tabs and vice versa)
-
-- Line counting and navigation
-
-- Search over multiple internal files
-
-- Sync with external files
+* Syntax highlighting
+* Dynamic font sizes
+* Indentation conversion (spaces to tabs and vice versa)
+* Line counting and navigation
+* Search over multiple internal files
+* Sync with external files
 
 ![Blender internal text editor](../figures/Chapter7/Fig07-07.png)
 
@@ -203,17 +198,12 @@ Open up the file \Book\Chapter7\4\_navigation\_system\camera\_navigation.blend.
 
 You will find two cameras and different empty objects in the first layer:
 
-- scripts - an empty to calls all the scripts.
-
-- CAM_Move - the camera for the walk and fly mode.
-
-- CAM_Orbit - the camera for the orbit mode.
-
-- CAM_back, CAM_front, CAM_side, CAM_top - empties to store the position and orientation for the game cameras.
-
-- MOVE_PIVOT - the pivot for the walk and fly camera.
-
-- ORB_PIVOT - the pivot for the orbit camera.
+* scripts - an empty to calls all the scripts.
+* CAM_Move - the camera for the walk and fly mode.
+* CAM_Orbit - the camera for the orbit mode.
+* CAM_back, CAM_front, CAM_side, CAM_top - empties to store the position and orientation for the game cameras.
+* MOVE_PIVOT - the pivot for the walk and fly camera.
+* ORB_PIVOT - the pivot for the orbit camera.
 
 In the second layer, you will find the collision meshes[md]the ground and the vertical elements. Everything is very simple here, since we only need to test the system, and for that a few low poly obstacles work fine.
 
@@ -223,11 +213,11 @@ Understanding the Code
 /Book/Chapter7/4_navigation_system/camera_navigation.py
 
 This program is divided into five different parts:
-1. Global Initialization,
-2. Event Management,
-3. Internal Functions,
-4. Game Interaction,
-5. More Python.
+#. Global Initialization,
+#. Event Management,
+#. Internal Functions,
+#. Game Interaction,
+#. More Python.
 
 The diagram in Figure 7.10 illustrates how they relate to one another. Now let's take an inside look at each of them.
 
@@ -240,11 +230,10 @@ Global Initialization
 
 There is one function that is loaded once at the beginning of the game; we call it "init world"[md]init\_world inside scripts.py. We are going to check the priority option in the Python controller to make sure this script runs on top of all the others. In this function, you will first find the global initialization. We are going to store in the global module logic all the elements we are going to reuse over the scripts. That way we don't need to get the object list every time we need a particular object. A common technique is to store the scene object as well. Therefore, for every scene, you can run a script at the beginning of the game that stores a reference to the current scene globally:
 
-```python
-33 G.scenes = {"main":G.getCurrentScene()}
+.. code-block:: python
 
-34 objects = G.scenes["main"].objects
-```
+   33 G.scenes = {"main":G.getCurrentScene()}
+   34 objects = G.scenes["main"].objects
 
 >**Save and Load a game with GlobalDict**
 >
@@ -252,25 +241,17 @@ There is one function that is loaded once at the beginning of the game; we call 
 
 To store the camera information, we are first going to create a global dictionary named cameras. We will use it to store the camera objects, their pivot, and the original orientation of the orbit pivot:
 
-```python
-43     G.cameras = {}
+.. code-block:: python
 
-44     # orbit camera
-
-45     camera = objects["CAM\_Orbit"]
-
-46     pivot = objects["ORB\_PIVOT"]
-
-47     G.cameras["ORB"] = [camera, {"orientation":pivot.worldOrientation}, pivot]
-
-48     # fly/walk camera
-
-49     camera = objects["CAM\_Move"]
-
-50     pivot = objects["MOVE\_PIVOT"]
-
-52     G.cameras["MOVE"] = [camera, {"orientation":pivot.worldOrientation, "position":pivot.worldPosition}, pivot]
-```
+   43     G.cameras = {}
+   44     # orbit camera
+   45     camera = objects["CAM\_Orbit"]
+   46     pivot = objects["ORB\_PIVOT"]
+   47     G.cameras["ORB"] = [camera, {"orientation":pivot.worldOrientation}, pivot]
+   48     # fly/walk camera
+   49     camera = objects["CAM\_Move"]
+   50     pivot = objects["MOVE\_PIVOT"]
+   52     G.cameras["MOVE"] = [camera, {"orientation":pivot.worldOrientation, "position":pivot.worldPosition}, pivot]
 
 Now that we have our objects instanced, we can set the initial values for our functions, such as the camera rotation restrictions. We don't want the cameras to look under the ground; thus, we need to manually set our limits. Although we could set those limits directly in the orbit and look functions, having all the parameters in the same part of code is easier to tweak (and slightly faster since they don't need to be reassigned every frame).
 
@@ -278,54 +259,38 @@ Now that we have our objects instanced, we can set the initial values for our fu
 >
 >Another common workflow is to have a separate python file (for example, settings.py) with all the variables set. Then in your working script, you simply have to do: import settings.py and use e.g. settings.left.
 
-```python
-       # Camera Orbit settings:
+.. code-block:: python
 
-58     # angle restriction in degrees
-
-59     left = -220.0
-
-60     right = 220.0
-
-61     top = 70.0
-
-62     bottom = 10.0
-
-63
-
-64     # convert all of them to radians
-
-65     left = m.radians(left)
-
-       (. . .)
-
-70     # store them globally
-
-71     G.orb_limits = {"left":left, "right":right, "top":top, "bottom":bottom}
-
-72
-
-       # Camera Walk/Fly settings:
-
-       (. . .)
-```
+          # Camera Orbit settings:
+   58     # angle restriction in degrees
+   59     left = -220.0
+   60     right = 220.0
+   61     top = 70.0
+   62     bottom = 10.0
+   63
+   64     # convert all of them to radians
+   65     left = m.radians(left)
+   (...)
+   70     # store them globally
+   71     G.orb_limits = {"left":left, "right":right, "top":top, "bottom":bottom}
+   72
+          # Camera Walk/Fly settings:
+   (...)
        
 Last, but not least, we need to create the variables we are going to read and write between the functions. Initializing them here allows us to read them since the first frame of the game. This is especially important for variables that are going to be used in the event management functions - for different values of nav_mode and walk_fly, we are going to run different functions for the camera movement.
 
-```python
-103 G.walk_fly = "walk"
+.. code-block:: python
 
-104 G.nav_mode = "orbit"
-```
+   103 G.walk_fly = "walk"
+   104 G.nav_mode = "orbit"
 
 Event Management
 ****************
 
-```python
-camera_navigation.mouse_move
+.. code-block:: python
 
-camera_navigation.keyboard
-```
+   camera_navigation.mouse_move
+   camera_navigation.keyboard
 
 Apart from the Always sensor needed for the `camera_navigation.init_world()` function, there are two other sensors we need - a keyboard and a mouse sensor. All the interaction you will have with this navigation system will run through those functions.
 
@@ -334,101 +299,63 @@ scripts.mouse\_move
 
 Let's first take a look at the mouse sensor controlling system:
 
-```python
-210 def mouse_move(cont):
+.. code-block:: python
 
-211     owner = cont.owner
-
-212     sensor = cont.sensors["s\_movement"]
-
-213
-
-214     if sensor.positive:
-
-215         if G.cameras["CAM"] == "ORB":
-
-216             orbit_camera(sensor)
-
-217         else:
-
-218             look_camera(sensor)
-```
+   210 def mouse_move(cont):
+   211     owner = cont.owner
+   212     sensor = cont.sensors["s\_movement"]
+   213
+   214     if sensor.positive:
+   215         if G.cameras["CAM"] == "ORB":
+   216             orbit_camera(sensor)
+   217         else:
+   218             look_camera(sensor)
 
 It looks quite similar to the script template we saw recently. A difference is that instead of activating an actuator, we are calling a function to rotate the view. Actually, according to the current camera (orbit or fly/walk), we will have to call different functions (`orbit_camera` and `look_camera` respectively). Also, you can see that the function gets the controller passed as an argument. The game engine passes the controller by default for the module when using the Python Module controller. The argument declaration in the function is actually optional. So you could replace line 210 of the code with the following two lines, and it would work just as well:
 
-```python
-def mouse_move():
-    cont = G.getCurrentController()
-```
+.. code-block:: python
+
+   def mouse_move():
+       cont = G.getCurrentController()
 
 scripts.keyboard
 ~~~~~~~~~~~~~~~~
 
 The second event management function handles keyboard inputs. This function takes the sensor input and calls internal functions according to the pressed key. If the pressed key is W, A, S, or D, we move the camera. If the key is 1, 2, or 3, we switch it.
 
-```python
-110 def keyboard(cont):
+.. code-block:: python
 
-111     owner = cont.owner
-
-112     sensor = cont.sensors["s\_keyboard"]
-
-113
-
-114     if sensor.positive:
-
-115         keylist = sensor.events
-
-117         for key in keylist:
-
-118             value = key[0]
-
-119
-
-120             if G.cameras["CAM"] == "MOVE":
-
-121                 if value == GK.WKEY:
-
-122                     # Move Forward
-
-123                     move_camera(0)
-
-124                elif value == GK.SKEY:
-
-125                    # Move Backward
-
-126                     move_camera(1)
-
-127                 elif value == GK.AKEY:
-
-128                     # Move Left
-
-129                     move_camera(2)
-
-130                 elif value == GK.DKEY:
-
-131                     # Move Right
-
-132                     move_camera(3)
-
-133
-
-134            # CAMERA SWITCHING
-
-135            if value == GK.ONEKEY:
-
-136                change_view("orbit", "orbit")
-
-137            elif value == GK.TWOKEY:
-
-138                change_view("front")
-
-139            elif value == GK.THREEKEY:
-
-140                change_view("top", "fly")
-
-    (...)
-```
+   110 def keyboard(cont):
+   111     owner = cont.owner
+   112     sensor = cont.sensors["s\_keyboard"]
+   113
+   114     if sensor.positive:
+   115         keylist = sensor.events
+   117         for key in keylist:
+   118             value = key[0]
+   119
+   120             if G.cameras["CAM"] == "MOVE":
+   121                 if value == GK.WKEY:
+   122                     # Move Forward
+   123                     move_camera(0)
+   124                elif value == GK.SKEY:
+   125                    # Move Backward
+   126                     move_camera(1)
+   127                 elif value == GK.AKEY:
+   128                     # Move Left
+   129                     move_camera(2)
+   130                 elif value == GK.DKEY:
+   131                     # Move Right
+   132                     move_camera(3)
+   133
+   134            # CAMERA SWITCHING
+   135            if value == GK.ONEKEY:
+   136                change_view("orbit", "orbit")
+   137            elif value == GK.TWOKEY:
+   138                change_view("front")
+   139            elif value == GK.THREEKEY:
+   140                change_view("top", "fly")
+   (...)
 
 >**For a World with Fewer Logic Bricks**
 >
@@ -437,13 +364,11 @@ The second event management function handles keyboard inputs. This function take
 Internal Functions
 ******************
 
-```python
-scripts.move_camera
+.. code-block:: python
 
-scripts.orbit_camera
-
-scripts.look_camera
-```
+   scripts.move_camera
+   scripts.orbit_camera
+   scripts.look_camera
 
 These three functions are called from the event management functions. In their lines, you can find the math responsible for the camera movement. We're calling them "internal functions" because they are the bridge between the sensors' inputs and the outputs in the game engine world.
 
@@ -452,37 +377,23 @@ scripts.move\_camera
 
 The function responsible for the camera movement is very simple. In the walk and fly mode, we are going to move the pivot in the desired direction (which is passed as argument). Therefore, we first need to create a vector to this course. If you are unfamiliar with vectorial math, think of vector as the direction between the origin [0, 0, 0] and the vector coordinates [X, Y, Z].
 
-```python
-336 def move_camera(direction):
+.. code-block:: python
 
-338     if not G.cameras["CAM"] == "MOVE": return
-
-339     MOVE = 0.25 # speed
-
-340
-
-341     if direction == 0: # Forward
-
-342         vector = M.Vector([0, 0, -MOVE])
-
-344     elif direction == 1: # Backward
-
-345         vector = M.Vector([0, 0, MOVE])
-
-347     elif direction == 2: # Left
-
-348         vector = M.Vector([-MOVE,0,0])
-
-350     elif direction == 3: # Right
-
-351         vector = M.Vector([MOVE, 0, 0])
-
+   336 def move_camera(direction):
+   338     if not G.cameras["CAM"] == "MOVE": return
+   339     MOVE = 0.25 # speed
+   340
+   341     if direction == 0: # Forward
+   342         vector = M.Vector([0, 0, -MOVE])
+   344     elif direction == 1: # Backward
+   345         vector = M.Vector([0, 0, MOVE])
+   347     elif direction == 2: # Left
+   348         vector = M.Vector([-MOVE,0,0])
+   350     elif direction == 3: # Right
+   351         vector = M.Vector([MOVE, 0, 0])
    (...)
-
-356     # now that we calculated the vector we can move the pivot
-
-357     # to be continued in the Game Interaction section
-```
+   356     # now that we calculated the vector we can move the pivot
+   357     # to be continued in the Game Interaction section
 
 Here the vector is the movement we need to apply to the pivot in order to get it moving. The size of the vector (MOVE) will act as intensity or speed of the movement.
 
@@ -493,85 +404,50 @@ We decided to use different methods for the walk/fly camera and the orbit one. I
 
 If you want to study this part of the script in particular, you can turn on the Mouse Cursor in the Render Panel. That way, you can see that the same cursor position will (or should) always generate the same view.
 
-```python
-224 def orbit_camera(sensor):
+.. code-block:: python
 
-228     # Get screen size, attributes from the sensor and global variables
-
-229     screen_width = R.getWindowWidth()
-
-230     screen_height= R.getWindowHeight()
-
-231
-
-232     win_x, win_y = sensor.position
-
-233
-
-234     # G.orb_clamp is in radians
-
-235     orb_limits   = G.orb_limits
-
-236     left_limit   = orb_limits["left"]
-
-237     right_limit  = orb_limits["right"]
-
-238     bottom_limit = orb_limits["bottom"]
-
-239     top_limit    = orb_limits["top"]
-
-240
-
-241     # Normalizing x to run from left to right limits
-
-242     x = win_x / screen_width
-
-243     x = left_limit + (x * (right_limit - left_limit))
-
-244
-
-245     # Normalize y to run from top to bottom limits
-
-246     y = win_y / screen_height
-
-247     y = top_limit + (y * (bottom_limit - top_limit))
-
-248
-
-249     # Flip the vertical movement
-
-250     y = m.pi/2 - y
-
-251
-
-254     # Calculate the new orientation matrix
-
-255     mat_ori = G.cameras["ORB"][1]["orientation"]
-
-256
-
-257     mat_x = M.Matrix.Rotation(x, 3, 'Z')
-
-258     mat_y = M.Matrix.Rotation(y, 3, 'X')
-
-259
-
-260     ori = mat_x * mat_y
-
-261
-
-262     # now we can use ori as our new orientation matrix
-
-264     # to be continued in the Game Interaction section
-
-        (...)
-```
+   224 def orbit_camera(sensor):
+   228     # Get screen size, attributes from the sensor and global variables
+   229     screen_width = R.getWindowWidth()
+   230     screen_height= R.getWindowHeight()
+   231
+   232     win_x, win_y = sensor.position
+   233
+   234     # G.orb_clamp is in radians
+   235     orb_limits   = G.orb_limits
+   236     left_limit   = orb_limits["left"]
+   237     right_limit  = orb_limits["right"]
+   238     bottom_limit = orb_limits["bottom"]
+   239     top_limit    = orb_limits["top"]
+   240
+   241     # Normalizing x to run from left to right limits
+   242     x = win_x / screen_width
+   243     x = left_limit + (x * (right_limit - left_limit))
+   244
+   245     # Normalize y to run from top to bottom limits
+   246     y = win_y / screen_height
+   247     y = top_limit + (y * (bottom_limit - top_limit))
+   248
+   249     # Flip the vertical movement
+   250     y = m.pi/2 - y
+   251
+   254     # Calculate the new orientation matrix
+   255     mat_ori = G.cameras["ORB"][1]["orientation"]
+   256
+   257     mat_x = M.Matrix.Rotation(x, 3, 'Z')
+   258     mat_y = M.Matrix.Rotation(y, 3, 'X')
+   259
+   260     ori = mat_x * mat_y
+   261
+   262     # now we can use ori as our new orientation matrix
+   264     # to be continued in the Game Interaction section
+   (...)
         
 The first lines that deserve our attention here are the normalizing operation. To normalize a value means to convert it to a range from 0.0 to 1.0.  In our case, it can be understood as the mouse pointer coordinates relative to the screen dimensions (width and height):
 
-```python
-242     x = win_x / screen_width
-```
+.. code-block:: python
+
+   242     x = win_x / screen_width
 
 >**Even Fewer Logic Bricks and Normalized Mouse Coordinates**
 >
@@ -582,17 +458,17 @@ The first lines that deserve our attention here are the normalizing operation. T
 
 Now a simple operation to convert the normalized value into a value inside our horizontal angle range (-220º to 220º):
 
-```python
-243     x = left_limit + (x * (right_limit - left_limit))
-```
+.. code-block:: python
+
+   243     x = left_limit + (x * (right_limit - left_limit))
 
 We run the same operation for the vertical coordinate of the mouse. Though you must be aware that the canvas height runs from the top (0) to the bottom (height), this is different from what we could expect (or from OpenGL coordinates, for example). In order to better understand the flipping operation (line 257), you can first comment/uncomment the code to see the difference.
 
 Next find in the .blend file the pivot empty (ORB\_PIVOT) and play with its rotation in the X axis. The rotation is demonstrated in Figure 7.11. Therefore, if we subtract our angle from 90º (__PI__/2 in radians), we get the proper angle to rotate the pivot vertically.
 
-```python
-250     y = m.pi/2 – y
-```
+.. code-block:: python
+
+   250     y = m.pi/2 – y
 
 ![Orbit pivot rotation](../figures/Chapter7/Fig07-11.png)
 
@@ -603,33 +479,25 @@ The function to rotate the walk/fly camera is quite different from the orbit one
 
 In order to get the relative position of the cursor, the normalizing function needs to be different. This time we want the center of the screen to be 0.0 and the extreme edges of the canvas (border of the game window) to be -0.5 and 0.5.
 
-```python
-291     x = (win_x / screen_width)  - 0.5
+.. code-block:: python
 
-292     y = (win_y / screen_height) - 0.5
-```
+   291     x = (win_x / screen_width)  - 0.5
+   292     y = (win_y / screen_height) - 0.5
 
 The values of x and y can be used directly as radians angles to rotate the camera. However, when we are walking, we want to restrict the view vertically. This design decision means that we need to limit the view angle to a maximum and minimum range. Sure, this turns tying your shoes into a circus challenge. Though it may seem like overkill, this limitation helps add a better sense of reality to our navigation system.
 
 The solution is to get the current camera vertical angle and see if by adding the new angle  (i.e., vertical mouse move) we would end up over the limit of 45º. If so, we clamp the new angle to respect this value. To get the vertical angle, remember that the camera pivot (an empty object) is always parallel to the ground. Therefore, the vertical angle can be extracted from the camera's local orientation matrix. If that still doesn't make sense to you, try to find some 3D math tutorials online).
 
-```python
-302     # limit top - bottom angles
+.. code-block:: python
 
-303     if G.walk_fly == "walk":
-
-304         angle = camera.localOrientation[2][1]
-
-305         angle = m.asin(angle)
-
-306
-
-307     # if it's too high go down. if it's too low go high
-
-308         if (angle + y) > top_limit: y = top_limit - angle
-
-309         elif (angle + y) < bottom_limit: y = bottom_limit - angle
-```
+   302     # limit top - bottom angles
+   303     if G.walk_fly == "walk":
+   304         angle = camera.localOrientation[2][1]
+   305         angle = m.asin(angle)
+   306
+   307     # if it's too high go down. if it's too low go high
+   308         if (angle + y) > top_limit: y = top_limit - angle
+   309         elif (angle + y) < bottom_limit: y = bottom_limit - angle
 
 For the actual project this was originally designed for, we ended up moving the orbit camera code to be a subset of the walk/fly. Having the mouse always centered comes in handy when you have a user interface on top of that, and it needs to alternate between mouse clicking and camera rotating. Although the methods are different, the results are the same.
 
