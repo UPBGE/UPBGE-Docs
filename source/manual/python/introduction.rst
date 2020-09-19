@@ -174,12 +174,13 @@ variables, and functions without having to restart the game. Try it yourself: co
 and launch debug\_python.blend. Play your game, and you will see a spinning cube. The speed of the cube is controlled by the 14th line of the file script.py, 
 found in the same folder.
 
-::
-    # edit the speed value and you will see the rotation changing
+.. code-block:: python
 
-    # (try with values from 0.01 to 0.05)
+   # edit the speed value and you will see the rotation changing
 
-    speed = 0.025
+   # (try with values from 0.01 to 0.05)
+
+   speed = 0.025
 
 .. figure:: /images/Chapter7/Fig07-04.png
 
@@ -210,79 +211,87 @@ Flexible Data Types
 Whenever you write a program, you have to use variables to store changing values at runtime. Unlike languages such as C and Java, Python variables are 
 very flexible: they can be declared on the fly when you first use them; you can assign different data types for the same variable; and you can even name them dynamically:
 
-::
+.. code-block:: python
 
-    for i in range(10): exec("var\_%d = %d" % (i,i))
+   for i in range(10): exec("var\_%d = %d" % (i,i))
 
 This snip of code is the equivalent to the following:
 
-::
+.. code-block:: python
 
-    var_1 = 1
+   var_1 = 1
 
-    var_2 = 3
+   var_2 = 3
 
-    var_3 = 3
+   var_3 = 3
 
    (...)
 
 As you can see, the variable names are created at runtime. Therefore, if you name your objects correctly in the Blender file, you can store them in 
 variables named after them. The following code snip assigns the scene objects (retrieved from the game engine) to variables named after their names.
 
-::
+.. code-block:: python
 
-    (...)
+   (...)
 
-    for object in scene.objects:
+   for object in scene.objects:
 
-        exec("%s = \"object\" " % (object.name))
+      exec("%s = \"object\" " % (object.name))
 
 Although we have flexible data types, we must respect variable types while manipulating and passing/returning them to functions. Here you can see a list 
 of the data types you will find in the Blender game engine API:
 
 - **Integer:** This is the most common of the numerical types. It can store any number that fits in your computer memory. You can perform any regular math operations on it, such as sum, subtraction, division, modulus, and potency.
 
-::
-    my_integer  = 112358132134
+.. code-block:: python
+
+   my_integer  = 112358132134
 
 - **Float:** This type is very similar to integers, but has a range of numbers that includes fractions. If you divide an even number by its half, Python will automatically convert your integer to a float number.
 
-::
-    simple_float = 0.5
+.. code-block:: python
 
-    phi = (1 + math.sqrt(5)) / 2 # ~1.618
+   simple_float = 0.5
+
+   phi = (1 + math.sqrt(5)) / 2 # ~1.618
 
 - **Boolean:** As simple as it sounds, this data type stores a true or a false value. It can also be understood as an integer with the value of 1 or 0.
 
-::
-    i_am_enjoying_the_book = True
+.. code-block:: python
 
-    i_am_understanding_the_book = i_am_enjoying_the_book - 1
+   i_am_enjoying_the_book = True
+
+   i_am_understanding_the_book = i_am_enjoying_the_book - 1
 
 - **List:** A list contains a conjunct of elements ordered by ascending indexes. Although the size of a list can change on the fly, you can't access a list index that wasn't created yet (this will crash Python). List can have mixed elements such as integers, strings, and objects.
 
-::
-    my_list = [3.14159265359, "PI", True]
+.. code-block:: python
+
+   my_list = [3.14159265359, "PI", True]
 
 - **Tuple:** This is another kind of list where elements can't be overwritten. As with lists, you can read them using indexes. But it's more common to access all the values at once, assigning them to different variables.
 
-::
-    t,u,p,l,e = (1,2,3,4,5) # works as: t = 1, u = 2, p = 3, ...
+.. code-block:: python
+
+   t,u,p,l,e = (1,2,3,4,5) # works as: t = 1, u = 2, p = 3, ...
 
 - **String:** Whenever you need to store a text, you will use strings. As words are a combination of individual letters, a string consists of individual characters. Indeed, strings can be understood as a list of characters because you can access them using their location index, though you can't overwrite them (like in a tuple).
 
-::
-    python = "rulez"
+.. code-block:: python
+
+   python = "rulez"
 
 - **Dictionary:** Like a list, a dictionary can store multiple values. Unlike a list, a dictionary is not based on numerical index access. Therefore, we have strings working as "keys" to store and retrieve the individual variables. In fact, anything can be a key to a dictionary, a number, an object, a class …
 
-::
-    _3d_software = {"name ": "Blender", "version": 2.6}
+.. code-block:: python
+
+   _3d_software = {"name ": "Blender", "version": 2.6}
 
 - **Custom Types:** These are things such as vectors and matrixes. The game engine combines some of the basic data types to create more complex ones. They are mainly used for vectors and matrixes. That way you can interact mathematically with them in a way that basic types won't do.
 
-::
-    mathutils.Vector(1,0,0) * object.orientation # the result is a Matrix
+.. code-block:: python
+
+   mathutils.Vector(1,0,0) * object.orientation # the result is a Matrix
 
 Indentation
 ^^^^^^^^^^^
@@ -299,20 +308,21 @@ And ambiguity in the context of code making is fatal.
 Indentation is the most important aspect of Python syntax. Python code uses the indentation level to define where loops, functions, and general nesting start/end. 
 Take a look at this example:
 
-::
-    1 def here_i_am(): # definition of the first function
-    
-    2     print("I'm inside the first function.")
+.. code-block:: python
 
-    3 print("I'm outside the function.")
-    
-    4 def but_I'm_not_here(): # definition of the second function
-    
-    5     print("For you can't see me!")
+   1 def here_i_am(): # definition of the first function
 
-    6 print("I'm still outside the function.")
+   2     print("I'm inside the first function.")
+
+   3 print("I'm outside the function.")
     
-    7 here_i_am() # calling the first function
+   4 def but_I'm_not_here(): # definition of the second function
+
+   5     print("For you can't see me!")
+
+   6 print("I'm still outside the function.")
+
+   7 here_i_am() # calling the first function
 
 Here we are defining a function (1–2), calling a built-in print function (3), defining another function (4–5), calling another built-in print function (6), 
 and finally calling the first function we declared (7).
@@ -484,10 +494,12 @@ Python Built-in Help
 
 You can also access help directly in Python.
 
-::
-    dir(python_object)
+.. code-block:: python
+
+   dir(python_object)
 
 The Python function "dir" creates a list with all the functions/modules/attributes available to be accessed from this object.
 
-::
-    help(python_function)
+.. code-block:: python
+
+   help(python_function)
