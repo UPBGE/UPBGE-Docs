@@ -113,11 +113,10 @@ Text Editors
 
 It's important to find a script editor that you find pleasant to work with. The most important features you will be looking for are: syntax coloring and highlighting, auto indentation, and auto completion. You can find editors with even more features than these, so experiment with different alternatives and decide what's best for you.
 
->**Notepad? Notepad++**
->
->Most of the scripts presented in this chapter were coded using Notepad++. This Windows-based open source text editor is not Python specific, but handles Python syntax highlighting well. You can download Notepad++ from their website:
-> http://notepad-plus.sourceforge.net
->If you are using Linux or OSX, there are plenty of native alternatives that may serve you even better.
+.. topic:: **Notepad? Notepad++**
+
+   Most of the scripts presented in this chapter were coded using Notepad++. This Windows-based open source text editor is not Python specific, but handles Python syntax highlighting well. You can download Notepad++ from their website: http://notepad-plus.sourceforge.net
+   If you are using Linux or OSX, there are plenty of native alternatives that may serve you even better.
 
 Blender Text Editor
 *******************
@@ -166,10 +165,10 @@ Unlike gaming cameras, a virtual walkthrough can use a very simple navigation sy
 
 All of those aspects must be considered from the first phases of the coding process. With a well-defined design, you can plan the most efficient system in the short and long run.
 
->**Pencil and Paper, Valuable Coding Assets**
->
->One of the most remarkable moments during my coding studies was at Blender Conference 2008. I was still in my first steps of learning C++ and OpenGL coding, and I got the chance to explain a game engine bug to Brecht van Lommel[md]a really experienced and acknowledged Blender coder and a very inspiring person. The bug itself was hard to explain through the Internet; it's the one behind the implementation of canvas coordinates for 2D filters presented in Chapter 5. I was pleased enough to have his input on this, but even more impressive was seeing him code a partial solution right in front of me.
->At this point, I learned an important lesson. It doesn't matter how advanced and technical the coding is that you are working on; you can always have a great time sketching your ideas and plans with old-fashioned pencil and paper. This is how he solved the problem, clearly laying down the ideas and organizing them logically. I never forgot that[md]thanks, Brecht!
+.. topic:: **Pencil and Paper, Valuable Coding Assets**
+
+   One of the most remarkable moments during my coding studies was at Blender Conference 2008. I was still in my first steps of learning C++ and OpenGL coding, and I got the chance to explain a game engine bug to Brecht van Lommel[md]a really experienced and acknowledged Blender coder and a very inspiring person. The bug itself was hard to explain through the Internet; it's the one behind the implementation of canvas coordinates for 2D filters presented in Chapter 5. I was pleased enough to have his input on this, but even more impressive was seeing him code a partial solution right in front of me.
+   At this point, I learned an important lesson. It doesn't matter how advanced and technical the coding is that you are working on; you can always have a great time sketching your ideas and plans with old-fashioned pencil and paper. This is how he solved the problem, clearly laying down the ideas and organizing them logically. I never forgot that[md]thanks, Brecht!
 
 The system will consist of one camera for the orbit mode, and one to be used for both the fly and walk mode. Each mode works as described in Table 7.1.
 
@@ -186,10 +185,10 @@ _Table 7.1 Comparison of Different Navigation Cameras_
 - **Empty:** is an empty object the camera is parented to.
 
 
->**Try It Out**
->
->In order to illustrate it better, you can see the working system demonstrated in the book file: \Book\Chapter7\4\_navigation\_system\camera\_navigation.blend.
->To switch modes press 1, 2, or 3. This will change the mode to orbit, walk, and fly, respectively. To navigate, you can use the mouse and the keys WASD.
+.. topic:: **Try It Out**
+
+   In order to illustrate it better, you can see the working system demonstrated in the book file: \Book\Chapter7\4\_navigation\_system\camera\_navigation.blend.
+   To switch modes press 1, 2, or 3. This will change the mode to orbit, walk, and fly, respectively. To navigate, you can use the mouse and the keys WASD.
 
 3D World Elements
 +++++++++++++++++
@@ -235,9 +234,9 @@ There is one function that is loaded once at the beginning of the game; we call 
    33 G.scenes = {"main":G.getCurrentScene()}
    34 objects = G.scenes["main"].objects
 
->**Save and Load a game with GlobalDict**
->
->Since the module logic is accessible from all the functions and all the scenes, it can be used to store "global" objects. If you need to preserve those objects and variables between game sessions (i.e., after you close your game), you can store them inside the dictionary logic.globalDict and use logic.saveGlobalDict() and logic.loadGlobalDict() to save and load it.
+.. topic:: **Save and Load a game with GlobalDict**
+
+   Since the module logic is accessible from all the functions and all the scenes, it can be used to store "global" objects. If you need to preserve those objects and variables between game sessions (i.e., after you close your game), you can store them inside the dictionary logic.globalDict and use logic.saveGlobalDict() and logic.loadGlobalDict() to save and load it.
 
 To store the camera information, we are first going to create a global dictionary named cameras. We will use it to store the camera objects, their pivot, and the original orientation of the orbit pivot:
 
@@ -255,9 +254,9 @@ To store the camera information, we are first going to create a global dictionar
 
 Now that we have our objects instanced, we can set the initial values for our functions, such as the camera rotation restrictions. We don't want the cameras to look under the ground; thus, we need to manually set our limits. Although we could set those limits directly in the orbit and look functions, having all the parameters in the same part of code is easier to tweak (and slightly faster since they don't need to be reassigned every frame).
 
->**External Settings File**
->
->Another common workflow is to have a separate python file (for example, settings.py) with all the variables set. Then in your working script, you simply have to do: import settings.py and use e.g. settings.left.
+.. topic:: **External Settings File**
+
+   Another common workflow is to have a separate python file (for example, settings.py) with all the variables set. Then in your working script, you simply have to do: import settings.py and use e.g. settings.left.
 
 .. code-block:: python
 
@@ -357,9 +356,9 @@ The second event management function handles keyboard inputs. This function take
    140                change_view("top", "fly")
    (...)
 
->**For a World with Fewer Logic Bricks**
->
->If you don't want to use a keyboard sensor, you can use an internal instance of the keyboard module. You can read about this in the "bge.logic API" section later in this chapter, or on the online API page: _http://www.blender.org/documentation/blender\_python\_api\_2\_66\_release/bge.logic.html#bge.logic.keyboard._
+.. topic:: **For a World with Fewer Logic Bricks**
+
+   If you don't want to use a keyboard sensor, you can use an internal instance of the keyboard module. You can read about this in the "bge.logic API" section later in this chapter, or on the online API page: _http://www.blender.org/documentation/blender\_python\_api\_2\_66\_release/bge.logic.html#bge.logic.keyboard._
 
 Internal Functions
 ******************
@@ -449,12 +448,12 @@ The first lines that deserve our attention here are the normalizing operation. T
 
    242     x = win_x / screen_width
 
->**Even Fewer Logic Bricks and Normalized Mouse Coordinates**
->
->It's important to always use normalized coordinates for your screen operations. Otherwise, different desktop resolutions will produce different results in a game. As a counter edge case, you may need the absolute coordinates for mouse events if you want to assure minimum clickable areas for your events.
->You don't always need to normalize the mouse coordinates manually. Like the keyboard sensor, you can replace the mouse sensor by an internal instance of the mouse module.
->The coordinates from bge.logic.mouse run from 0.0 to 1.0 and can be read anytime. (You can even link your script to an Always sensor, leaving the Mouse sensor for the times where you are using more logic bricks.)
->You can read about this in the "bge.logic API" section in this chapter or on the online API page: _http://www.blender.org/documentation/blender_python_api_2_66_release/bge.logic.html#bge.logic.keyboard_
+.. topic:: **Even Fewer Logic Bricks and Normalized Mouse Coordinates**
+
+   It's important to always use normalized coordinates for your screen operations. Otherwise, different desktop resolutions will produce different results in a game. As a counter edge case, you may need the absolute coordinates for mouse events if you want to assure minimum clickable areas for your events.
+   You don't always need to normalize the mouse coordinates manually. Like the keyboard sensor, you can replace the mouse sensor by an internal instance of the mouse module.
+   The coordinates from bge.logic.mouse run from 0.0 to 1.0 and can be read anytime. (You can even link your script to an Always sensor, leaving the Mouse sensor for the times where you are using more logic bricks.)
+   You can read about this in the "bge.logic API" section in this chapter or on the online API page: _http://www.blender.org/documentation/blender_python_api_2_66_release/bge.logic.html#bge.logic.keyboard_
 
 Now a simple operation to convert the normalized value into a value inside our horizontal angle range (-220º to 220º):
 
@@ -596,9 +595,9 @@ scripts.change\_view
 
 After the user presses a key (1, 2, or 3) to change the view, we call the change\_view() function to switch to the new camera (with a parameter specifying which camera to use). This function consists of two parts: first, we set the correct position and orientation for the camera and pivot; secondly, we change the current camera to the new one.
 
->**Decomposing the View Orientation**
->
->Keep in mind that the desired orientation (stored in the empty and accessed through the G.views dictionary) represents the new view orientation. In our system, this view orientation is the combination of the parent object (pivot) orientation with the child one (camera).
+.. topic:: **Decomposing the View Orientation**
+
+   Keep in mind that the desired orientation (stored in the empty and accessed through the G.views dictionary) represents the new view orientation. In our system, this view orientation is the combination of the parent object (pivot) orientation with the child one (camera).
 
 Let's start simple and build up as we go. First the orbit camera: in the orbit mode the camera is stationary[md]its position never changes. All we need to do is reset the pivot orientation to its initial values. Its orientation was globally stored back in the init\_world() function. So now we can retrieve and apply it to the pivot:
 
@@ -646,9 +645,9 @@ For that, we need to rotate it a few degrees to align with the horizon. The came
 199     camera.applyRotation([angle,0,0],1)
 ```
 
->**Reasoning Behind the Design**
->
->There is another reason for keeping this as a separate function. Originally, I was planning to switch modes (walk/fly) while keeping the same camera position and view. Although I dropped the idea, I decided to keep the system flexible in case of any turn of events (clients[md]who understands their minds?).
+.. topic:: **Reasoning Behind the Design**
+
+   There is another reason for keeping this as a separate function. Originally, I was planning to switch modes (walk/fly) while keeping the same camera position and view. Although I dropped the idea, I decided to keep the system flexible in case of any turn of events (clients[md]who understands their minds?).
 
 Now that the new camera and pivot have the correct position and orientation, we can effectively switch cameras. For that, we first set the new camera in the Scene Set Camera actuator. Next, we activate the actuator and the camera will change:
 
@@ -752,17 +751,17 @@ Move them 2000 in X and 350 in Y.
 
 **Empties** :
 
-- CAM_front and CAM_back - Those empties will hold the position for walk cameras. Make sure their position from the ground is at the human eyes (~1.68).
+* CAM_front and CAM_back - Those empties will hold the position for walk cameras. Make sure their position from the ground is at the human eyes (~1.68).
 
-- CAM_top and CAM_side - Those empties will be used in Fly Mode. Here, we should also make sure their initial orientation looks good. The easiest way to do that is by using the Fly Mode (select the object, set it as current camera, and use Shift+F).
+* CAM_top and CAM_side - Those empties will be used in Fly Mode. Here, we should also make sure their initial orientation looks good. The easiest way to do that is by using the Fly Mode (select the object, set it as current camera, and use Shift+F).
 
 The one thing missing for the camera is to increase the clipping distance. That way, we can see all the skydome around the camera (see before and after in Figure 7.14).
 
 **Cameras** :
 
-- CAM_Orbit - Adjust initial Z, change clip ending to 1000.
+* CAM_Orbit - Adjust initial Z, change clip ending to 1000.
 
-- CAM_Move - change clip ending to 1000.
+* CAM_Move - change clip ending to 1000.
 
 A snapshot with those changes can be found at:
 
@@ -772,9 +771,9 @@ A snapshot with those changes can be found at:
 |:-------------------------:|:-------------------------:|
 ![Camera clipping of 400](../figures/Chapter7/Fig07-14a.png)  |  ![Camera clipping of 1000](../figures/Chapter7/Fig07-14b.png)
 
->**Make Sure That Collision Is Set Properly**
->
->All the houses, the ground, and the other 3D objects already have collision enabled in this file. In other situations, however, you may need to change the collision objects, enabling or disabling their collisions accordingly. The Python raycast uses the internal Bullet Physics engine under the hood. In order to prevent the camera from going through the walls and the ground, set enough collision surfaces (but not too much, so that you don't compromise the performance of your game).
+.. topic:: **Make Sure That Collision Is Set Properly**
+
+   All the houses, the ground, and the other 3D objects already have collision enabled in this file. In other situations, however, you may need to change the collision objects, enabling or disabling their collisions accordingly. The Python raycast uses the internal Bullet Physics engine under the hood. In order to prevent the camera from going through the walls and the ground, set enough collision surfaces (but not too much, so that you don't compromise the performance of your game).
 
 Script Tweaks
 ~~~~~~~~~~~~~
@@ -820,30 +819,30 @@ We will now walk through the highlights of the modules. After you are familiar w
 
 **Game Engine Internal Modules**
 
-- Game Logic (bge.logic)
+* Game Logic (bge.logic)
 
-- Game Types (bge.types)
+* Game Types (bge.types)
 
-- Rasterizer (bge.render)
+* Rasterizer (bge.render)
 
-- Game Keys (bge.events)
+* Game Keys (bge.events)
 
-- Video Texture (bge.texture)
+* Video Texture (bge.texture)
 
-- Physics Constraints (bge.constraints)
+* Physics Constraints (bge.constraints)
 
-- Application Data (bge.app)  //TODO
+* Application Data (bge.app)  //TODO
 
 
 **Stand-Alone Modules**
 
-- Audio System (aud)
+* Audio System (aud)
 
-- Math Types and Utilities (mathutils)
+* Math Types and Utilities (mathutils)
 
-- OpenGL Wrapper (bgl)
+* OpenGL Wrapper (bgl)
 
-- Font Drawing (blf)
+* Font Drawing (blf)
 
 bge.logic
 +++++++++
@@ -903,9 +902,9 @@ There are cases when you need to load the content of an external Blender file at
 bge.logic.LibLoad("//entities.blend", "Scene")
 ```
 
->**Beware of Lamps**
->
->New Lamp objects can be dynamically loaded from external files. However, in GLSL mode, they will not work as a light source for the material shaders, since the shaders would need to be recompiled for that.
+.. topic:: **Beware of Lamps**
+
+   New Lamp objects can be dynamically loaded from external files. However, in GLSL mode, they will not work as a light source for the material shaders, since the shaders would need to be recompiled for that.
 
 globalDict, loadGlobalDict(), saveGlobalDict()
 **********************************************
@@ -956,11 +955,11 @@ mouse
 
 Similar to the keyboard, this Python object can work as a replacement for the Mouse sensor. There are a few differences that make it even more appealing for scripting[md]in particular, the fact that the mouse coordinates are already normalized. As we explained in the tutorial, this helps you get consistent results, regardless of the desktop resolution. The available attributes are:
 
-- **events:** A dictionary with all the events of the mouse (left-click, wheel up, and so on) and their status (for example, bge.logic.KX_INPUT_JUST_ACTIVED).
+* **events:** A dictionary with all the events of the mouse (left-click, wheel up, and so on) and their status (for example, bge.logic.KX_INPUT_JUST_ACTIVED).
 
-- **position** : Normalized position of the mouse cursor in the screen (from [0,0] to [1,1]).
+* **position** : Normalized position of the mouse cursor in the screen (from [0,0] to [1,1]).
 
-- **visible** : Dhow/hide the mouse cursor (can also be set in the Render panel for the initial state).
+* **visible** : Dhow/hide the mouse cursor (can also be set in the Render panel for the initial state).
 
 joysticks
 *********
@@ -1000,9 +999,9 @@ Class KX\_GameObject
 
 If you run a print(dir (object)) inside your script, you will get a very confusing list. It includes Python internal methods, instance methods, and instance variables. Most of them are common to all objects, so we are going to talk about them first. However, lamps and cameras not only inherit all the game object methods but also extend them with specific ones.
 
->**The Truth Is Out There**
->
->In order to see all available methods, please refer to the documentation. We are only covering a few of them here.
+.. topic:: **The Truth Is Out There**
+
+   In order to see all available methods, please refer to the documentation. We are only covering a few of them here.
 
 Python Internal Methods
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -1018,21 +1017,21 @@ Instance Methods
 
 If it looks like a function, it should be one. Every game engine object provides you with a set of functions to interact with them or from them to the others. Here are some methods you should know about:
 
-- **rayCast (objto, objfrom, dist, prop, face, xray, poly)**
+* **rayCast (objto, objfrom, dist, prop, face, xray, poly)**
 
 _ "Look from a point/object to another point/object and find first object hit within dist that matches prop."_
 
 This method is a more complete version of the rayCastTo(). It has so many applications that it becomes hard to delimitate its usage. For instance, this was the method used to calculate the collision in the navigation system script we studied previously.
 
-- **getPropertyNames()**
+* **getPropertyNames()**
 
 _"Get a list of all property names."_
 
 Once you retrieve the list of property names, you can use it to see if the object has a specific property before using it. To get individual properties, you can use _if "prop" in object_: or _object.get("prop", default=None)_.
 
->**A Use for Properties**
->
->Properties have multiple uses in the game engine. One of those uses is to mark an object to be identified by the Python script. Why not use their names instead? While names work fine to retrieve individual objects, properties allow you to easily mark and access multiple objects at once. Frankly, it's easier to create an organized, named, and tagged MP3 collection than it is to find time to properly name all your Blender data blocks[ms]objects, meshes, materials, textures, images, and so on.
+.. topic:: **A Use for Properties**
+
+   Properties have multiple uses in the game engine. One of those uses is to mark an object to be identified by the Python script. Why not use their names instead? While names work fine to retrieve individual objects, properties allow you to easily mark and access multiple objects at once. Frankly, it's easier to create an organized, named, and tagged MP3 collection than it is to find time to properly name all your Blender data blocks[ms]objects, meshes, materials, textures, images, and so on.
 
 - **endObject()**
 
@@ -1067,19 +1066,19 @@ obj.worldOrientation.transpose()
 print(obj.worldTransform)
 ```
 
-- **position, localPosition, worldPosition**
+* **position, localPosition, worldPosition**
 
 Position is a vector [x, y, z] with the location of the object in the scene. We can get the absolute position (worldPosition) or the position relative to the parent of the object (localPosition). And what about accessing the position variable directly? This is deprecated, but you may run into it in old files you find online. If you access the position variable directly, you get the world position on reading and set the local position on writing. Confusing? That is why this is deprecated ;)
 
-- **orientation, localOrientation, worldOrientation**
+* **orientation, localOrientation, worldOrientation**
 
 This variable gives you access to a matrix 3x3 with the orientation of the object. The orientation matrix is the result of the rotation transformation of an object and the influence of its parent object. As with position, the orientation variable will give you the world orientation on reading and set the local orientation on writing. As with position, you should always specify whether you want the local or world orientation.
 
-- **visible**
+* **visible**
 
 We have different ways to set the visibility of an object. If your material is not set to invisible in the game panel, you can use this method. To change the visibility recursively (to the children of the object), you must use the method setVisibility.
 
-- **sensors, controllers, actuators**
+* **sensors, controllers, actuators**
 
 All the logic bricks of an object can be accessed through those dictionaries. The name of the sensor/controller/actuator will be used as the dictionary key, for it's important to name them correctly.
 
@@ -1224,9 +1223,9 @@ And, voilà, now we only need to visualize the pressed key:
     owner["Text"] = text
 ```
 
->**Key Status**
->
->The status of a key is what informs you whether the key has just been pressed or if it was pressed already. The Keyboard sensor is always positive as long as any key is held, and you may need to trigger different functions when some keys are pressed and released. The status values are actually stored in bge.logic:
+.. topic:: **Key Status**
+
+   The status of a key is what informs you whether the key has just been pressed or if it was pressed already. The Keyboard sensor is always positive as long as any key is held, and you may need to trigger different functions when some keys are pressed and released. The status values are actually stored in bge.logic:
 
 ```python
 0 = bge.logic.KX_INPUT_NONE
@@ -1405,16 +1404,16 @@ Euler and Quaternion
 
 Euler and quaternion are different rotation systems. The same rotation can be represented using Euler, quaternion, or an orientation matrix.
 
->**Guerrilla CG**
->
->You can find two great video tutorials on the Guerrilla CG vimeo channel that explain and compare the two rotation system:
->Euler Rotations Explained: http://vimeo.com/2824431
->The Rotation Problem: http://vimeo.com/2649637
+.. topic:: **Guerrilla CG**
 
->When you convert an orientation matrix to Euler (`Matrix.to_euler()`), you get a list with three angles. They represent the rotation in the x, y, z axis of the object. In the navigation system script example, we are using this exact method to determine the horizontal camera angle. You can find this usage in the function `fly_to_walk()` (lines 190 to 199 of navigation\_system.py or in the early pages of this chapter).
->
->Conversion Between Different Rotation Forms
->You can convert an orientation matrix to Euler, an Euler to a quaternion, a quaternion to an orientation matrix, and on and on and on:
+   You can find two great video tutorials on the Guerrilla CG vimeo channel that explain and compare the two rotation system:
+   Euler Rotations Explained: http://vimeo.com/2824431
+   The Rotation Problem: http://vimeo.com/2649637
+
+   When you convert an orientation matrix to Euler (`Matrix.to_euler()`), you get a list with three angles. They represent the rotation in the x, y, z axis of the object. In the navigation system script example, we are using this exact method to determine the horizontal camera angle. You can find this usage in the function `fly_to_walk()` (lines 190 to 199 of navigation\_system.py or in the early pages of this chapter).
+
+   Conversion Between Different Rotation Forms
+   You can convert an orientation matrix to Euler, an Euler to a quaternion, a quaternion to an orientation matrix, and on and on and on:
 
 ```python
 original_matrix=mathutils.Matrix.Rotation(math.pi, 3, "X")
@@ -1466,10 +1465,10 @@ handle_buffered.stop()
 
 We start by creating an audio device. This is simply a Python object you will use to play your sounds. Next, we create a Factory object. A factory is a container for a sound file. When we pass the Factory object into the device play function, it will start playing the sound and return a handle. Handles are used to control pause/resume and to stop an audio.
 
->**When Will This Music Stop?**
->
->After you initialize a sound, you can get its current position in seconds with the handle.position Python property. This is especially useful to keep videos and audio in sync. If you need to check whether or not the audio is ended, you shouldn't rely on the position, though. Instead, you can get the status of the sound by the property handle.status. If you are using the sound position to control a video playback, the sound status will also tell you if the video is over (handle.status = aud.AUD\_STATUS\_INVALID).
->The possible statuses are:
+.. topic:: **When Will This Music Stop?**
+
+   After you initialize a sound, you can get its current position in seconds with the handle.position Python property. This is especially useful to keep videos and audio in sync. If you need to check whether or not the audio is ended, you shouldn't rely on the position, though. Instead, you can get the status of the sound by the property handle.status. If you are using the sound position to control a video playback, the sound status will also tell you if the video is over (handle.status = aud.AUD\_STATUS\_INVALID).
+   The possible statuses are:
 
 ```python
 0 = aud.AUD_STATUS_INVALID
@@ -1486,9 +1485,9 @@ This module is a wrapping of OpenGL constants and functions. It allows you to ac
 
 Sometimes, you will need to run your OpenGL code specifically before or after the game engine drawing routine, so you can store your Python function as a list element either in the scene attributes pre_draw and/or in the post_draw. This will be demonstrated in our first example.
 
->**To Learn OpenGL**
->
->You can find good OpenGL learning material on the Internet or in a bookstore. _The Official Guide to Learning OpenGL_ (also known as _The Red Book_) is highly recommended, and some older versions of it can be found online for download.
+.. topic:: **To Learn OpenGL**
+
+   You can find good OpenGL learning material on the Internet or in a bookstore. _The Official Guide to Learning OpenGL_ (also known as _The Red Book_) is highly recommended, and some older versions of it can be found online for download.
 
 Example 01: Line Width Changing
 *******************************
@@ -1636,4 +1635,4 @@ def write():
     blf.draw(font_id, "Hello World")
 ```
 
-On the book files, in the same folder, you can find two other examples following the same framework_: hello_world_2.blend_ and _object_names.blend_.
+On the book files, in the same folder, you can find two other examples following the same framework_: hello_world_2.blend_ and _object_na
