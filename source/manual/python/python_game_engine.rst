@@ -1635,4 +1635,4 @@ def write():
     blf.draw(font_id, "Hello World")
 ```
 
-On the book files, in the same folder, you can find two other examples following the same framework_: hello_world_2.blend_ and _object_na
+On the book files, in the same folder, you can find two other examples following the same framework_: hello_world_2.blend_ and _object_names.blend_.
