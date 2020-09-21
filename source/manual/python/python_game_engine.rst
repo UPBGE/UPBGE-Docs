@@ -503,19 +503,17 @@ For the actual project this was originally designed for, we ended up moving the 
 Game Interaction
 ****************
 
-```python
-camera_navigation.change_view
-```
+.. code-block:: python
+
+   camera_navigation.change_view
 
 And the outcome of the functions:
 
-```python
-camera_navigation.move_camera
+.. code-block:: python
 
-camera_navigation.look_camera
-
-camera_navigation.orbit_camera
-```
+   camera_navigation.move_camera
+   camera_navigation.look_camera
+   camera_navigation.orbit_camera
 
 In the previous section, we saw how the angles and directions were calculated with Python. However, we deliberately skipped the most important part: applying it to the game engine elements. It includes activating actuators (as we do in the change\_view() function) or directly interfering in our game elements (cameras and pivots).
 
@@ -526,69 +524,49 @@ Let's put the pieces together now. We already know the camera future orientation
 
 In move_camera(), we are going to use an instance method of the pivot object called applyMovement (vector, local). This is part of the game engine methods (another one is applyRotation you will see next) we explain later in this chapter in the "Using the Game Engine API" section. This built-in function translates the object using the vector passed as a parameter. It can either be relative to the local or world coordinates:
 
-```python
-336 def move_camera(direction):
+.. code-block:: python
 
-    (. . .)
-
-356     # now that we calculated the vector we can move the pivot
-
-357     pivot = G.cameras["MOVE"][2]
-
-358     pivot.applyMovement(vector, True)
-```
+   336 def move_camera(direction):
+   (...)
+   356     # now that we calculated the vector we can move the pivot
+   357     pivot = G.cameras["MOVE"][2]
+   358     pivot.applyMovement(vector, True)
 
 In a similar way in the look_camera() function, we will apply the rotation in the camera object. This has the advantage of sparing the hassles of 3D math, matrixes, and orientations. Also, instead of manually computing the new orientation matrix in Python, we can rely on the game engine C++ native (i.e., fast) implementation for that task.
 
-```python
-269 def look_camera(sensor):
+.. code-block:: python
 
-    (. . .)
-
-314     if G.walk_fly == "walk":
-
-315         # Look Up rotation
-
-316         camera.applyRotation([y,0,0], 1)
-
-317
-
-318         # Look Side rotation
-
-319         pivot.applyRotation([0, -x, 0], 1)
-```
+   269 def look_camera(sensor):
+   (...)
+   314     if G.walk_fly == "walk":
+   315         # Look Up rotation
+   316         camera.applyRotation([y,0,0], 1)
+   317
+   318         # Look Side rotation
+   319         pivot.applyRotation([0, -x, 0], 1)
 
 Although we are leaving the math calculation to the game engine, we should still be aware of how it works. The applyRotation() routine works with Euler angles (as a gimbal machine). The effects for the walk and the fly modes are very similar. The only difference is whether the rotation is local or global and the axis to rotate around:
 
-```python
-322     else: # G.walk_fly == "fly"
+.. code-block:: python
 
-323         # Look Side rotation
-
-324         pivot.applyRotation([0, 0, -x], 0)
-
-325
-
-326         # Look Up rotation
-
-327         pivot.applyRotation([y, 0, 0], 1)
-```
+   322     else: # G.walk_fly == "fly"
+   323         # Look Side rotation
+   324         pivot.applyRotation([0, 0, -x], 0)
+   325
+   326         # Look Up rotation
+   327         pivot.applyRotation([y, 0, 0], 1)
 
 In the orbit_camera() function, we calculated the orientation matrix of the pivot. This matrix is no more than a fancy mathematical way of describing a rotation. Since we already have the matrix, all we need to do is to set it to our pivot orientation.
 
 The orientation is a Python built-in variable that can be read and written directly by our script. We will talk more about this in the "Using the Game Engine API - Application Programming Interface" part of this chapter.
 
-```python
-223 def orbit_camera(sensor):
+.. code-block:: python
 
-    (...)
-
-261     # now we can use ori as our new orientation matrix
-
-262     pivot = G.cameras["ORB"][2]
-
-263     pivot.orientation = ori
-```
+   223 def orbit_camera(sensor):
+   (...)
+   261     # now we can use ori as our new orientation matrix
+   262     pivot = G.cameras["ORB"][2]
+   263     pivot.orientation = ori
 
 scripts.change\_view
 ~~~~~~~~~~~~~~~~~~~~
@@ -601,49 +579,37 @@ After the user presses a key (1, 2, or 3) to change the view, we call the change
 
 Let's start simple and build up as we go. First the orbit camera: in the orbit mode the camera is stationary[md]its position never changes. All we need to do is reset the pivot orientation to its initial values. Its orientation was globally stored back in the init\_world() function. So now we can retrieve and apply it to the pivot:
 
-```python
-155         dict = G.cameras["ORB"]
+.. code-block:: python
 
-157         pivot = dict[2]
-
-158         pivot.orientation = dict[1]["orientation"]
-```
+   155         dict = G.cameras["ORB"]
+   157         pivot = dict[2]
+   158         pivot.orientation = dict[1]["orientation"]
 
 The fly camera is slightly different. In this case, the camera orientation contains no rotation (i.e., an identity matrix). Therefore, it's up to the pivot orientation to match the view orientation. In other words, the pivot orientation matrix is exactly the same as the view orientation matrix:
 
-```python
-169         pivot.position = G.views[view].position
+.. code-block:: python
 
-170         pivot.orientation = G.views[view].orientation
-
-171         camera.orientation = [[1,0,0],[0,1,0],[0,0,1]]
-
-177         if G.walk_fly == "walk":
-
-178             fly_to_walk()
-```
+   169         pivot.position = G.views[view].position
+   170         pivot.orientation = G.views[view].orientation
+   171         camera.orientation = [[1,0,0],[0,1,0],[0,0,1]]
+   
+   177         if G.walk_fly == "walk":
+   178             fly_to_walk()
 
 For the walk camera, we have yet another situation. The mode we are coming from (fly) has the camera pivot orientation (same as camera.worldOrientation) as the current view orientation.  However, for the walk mode, the pivot needs to be parallel to the ground.
 
 For that, we need to rotate it a few degrees to align with the horizon. The camera now will be looking to a different point (above/below the original direction). In order to realign the camera with the view orientation, we need to rotate the camera in the opposite direction. This way, the pivot and camera rotations void each other (with the benefit of having the pivot now properly aligned with the ground).
 
-```python
-190 def fly_to_walk():
+.. code-block:: python
 
-    (...)
-
-194     view_orientation = camera.worldOrientation
-
-195     euler = view_orientation.to_euler()
-
-196     angle = euler[0] - (m.pi/2)
-
-197
-
-198     pivot.applyRotation([-angle,0,0],1)
-
-199     camera.applyRotation([angle,0,0],1)
-```
+   190 def fly_to_walk():
+   (...)
+   194     view_orientation = camera.worldOrientation
+   195     euler = view_orientation.to_euler()
+   196     angle = euler[0] - (m.pi/2)
+   197
+   198     pivot.applyRotation([-angle,0,0],1)
+   199     camera.applyRotation([angle,0,0],1)
 
 .. topic:: **Reasoning Behind the Design**
 
@@ -651,38 +617,34 @@ For that, we need to rotate it a few degrees to align with the horizon. The came
 
 Now that the new camera and pivot have the correct position and orientation, we can effectively switch cameras. For that, we first set the new camera in the Scene Set Camera actuator. Next, we activate the actuator and the camera will change:
 
-```python
-181     act_camera.camera = dict[0]
+.. code-block:: python
 
-182     cont.activate(act_camera)
-```
+   181     act_camera.camera = dict[0]
+   182     cont.activate(act_camera)
 
 More Python
 ***********
 
-```python
-scripts.collision_check
+.. code-block:: python
 
-scripts.stick_to_ground
-```
+   scripts.collision_check
+   scripts.stick_to_ground
 
 The script system shown so far handles all the interaction from the game engine sensors to the 3D world elements. Even though this covers most parts of a typical script architecture, I'd be lying if I said this is all you will be doing in your projects. Very often, you will need a script called once in a while that deals directly with the game engine data. In our case, we will have two "PySensors" to control the collision and to stick our camera to the ground while walking.
 
 We could have them both working attached to an Always sensor. However, this would not be too efficient. Since we only need them while walking and flying, they can be integrated with the Keyboard sensor pipeline. The stick\_to\_ground() function will be called after any key is pressed if the current mode is "walk":
 
-```python
-142         if G.nav_mode == "walk" and G.walk_fly == "walk":
+.. code-block:: python
 
-143             stick_to_ground()
-```
+   142         if G.nav_mode == "walk" and G.walk_fly == "walk":
+   143             stick_to_ground()
 
 The collision system can be used even more specifically. Inside the move\_camera() function, we will use the collision test to validate or discard our moving vector:
 
-```python
-353         # if there is any obstacle reset the vector
+.. code-block:: python
 
-354         vector = collision_check(vector, direction)
-```
+   353         # if there is any obstacle reset the vector
+   354         vector = collision_check(vector, direction)
 
 If the collision\_check() test finds any obstacle in front of the camera, it returns a null vector ([0, 0, 0]). Otherwise, it leaves the vector as it was set, which will then move the camera.
 
@@ -722,15 +684,11 @@ To see a snapshot of the file at this moment, you can find it in the book files 
 
 Now open the walkthrough file again and append the NAVIGATIONSYSTEMwe created. It's important not to link the group but to append it. Linked elements can only be moved in their original files; thus, you should avoid them in this case.
 
-1. Open the Append Objects Dialog (Shift+F1).
-
-2. Find the NAVIGATIONSYSTEM group inside the camera_navigation file.
-
-3. Make sure the option "Instance Groups" is not checked. (This would insert the group, not the individual elements.)
-
-4. Click on the "Link/Append from Library." (This will add the group.)
-
-5. Set CAM_Orbit as the default camera. (Tip: Use the Outliner to find the object; it's inside the ORB\_PIVOT.)
+#. Open the Append Objects Dialog (Shift+F1).
+#. Find the NAVIGATIONSYSTEM group inside the camera_navigation file.
+#. Make sure the option "Instance Groups" is not checked. (This would insert the group, not the individual elements.)
+#. Click on the "Link/Append from Library." (This will add the group.)
+#. Set CAM_Orbit as the default camera. (Tip: Use the Outliner to find the object; it's inside the ORB\_PIVOT.)
 
 A snapshot with those changes can be found at:
 
@@ -780,25 +738,20 @@ Script Tweaks
 
 Finally, it's good to fiddle a bit with the script. Due to the particularities of this project (mainly its scale), you may feel that everything happens a bit too fast. It's up to you to change the settings in the `init_world` function. Also, it would be interesting to explore multiple viewpoints for this presentation. We have already positioned the side and back empties. Although we were not using them previously, their names are present in the script as part of the available cameras list:
 
-```python
-93     available_cameras = ["front", "back", "side", "top"]
-```
+.. code-block:: python
+
+   93     available_cameras = ["front", "back", "side", "top"]
 
 The difference now is that we will make the camera actually change to the side and back views when you press the keys four and five respectively. As you can see here, it's really easy to expand a system like this. Try to create a fifth camera (add a new empty) and see how it goes. To enable the "side" and "back" cameras, the only code we have to add is:
 
-```python
-110 def keyboard(cont):
+.. code-block:: python
 
-    (. . .)
-
-new             elif value == GK.FOURKEY:
-
-new                 change_view("side")
-
-new             elif value == GK.FIVEKEY:
-
-new                 change_view("back", "fly")
-```
+   110 def keyboard(cont):
+   (...)
+   new             elif value == GK.FOURKEY:
+   new                 change_view("side")
+   new             elif value == GK.FIVEKEY:
+   new                 change_view("back", "fly")
 
 There is not much more to be done here. This is a simple script, but its structure and the workflow we presented are not much different from what you will find in more complex systems you may have to implement or work with. There are different ways to implement a navigation system. This one was designed focusing on a didactic structure (clean code as opposed to a highly optimized system that is hard to read) and robustness (easy to expand). Try to find other examples or, better yet, build one yourself.
 
@@ -820,28 +773,18 @@ We will now walk through the highlights of the modules. After you are familiar w
 **Game Engine Internal Modules**
 
 * Game Logic (bge.logic)
-
 * Game Types (bge.types)
-
 * Rasterizer (bge.render)
-
 * Game Keys (bge.events)
-
 * Video Texture (bge.texture)
-
 * Physics Constraints (bge.constraints)
-
 * Application Data (bge.app)  //TODO
-
 
 **Stand-Alone Modules**
 
 * Audio System (aud)
-
 * Math Types and Utilities (mathutils)
-
 * OpenGL Wrapper (bgl)
-
 * Font Drawing (blf)
 
 bge.logic
@@ -854,39 +797,37 @@ getCurrentController()
 
 Returns the current controller. This is used to get a list of sensors and actuators (to check status and deactivate respectively), and the object the controller belongs to:
 
-```python
-controller  = bge.logic.getCurrentController()
+.. code-block:: python
 
-object = controller.owner
-
-sensor = controller.sensors['mysensor']
-```
+   controller  = bge.logic.getCurrentController()
+   object = controller.owner
+   sensor = controller.sensors['mysensor']
 
 If you are using Python modules instead of Python scripts directly (see Python Controller), the controller is passed as an argument for the function:
 
-```python
-def moduleFunction(cont):
-    object = cont.owner
-    sensor = cont.sensors['mysensor']
-```
+.. code-block:: python
+
+   def moduleFunction(cont):
+      object = cont.owner
+      sensor = cont.sensors['mysensor']
     
 getCurrentScene()
 *****************
 
 This function returns the current scene the script was called from. The most common usage is to give you a list of all the game objects:
 
-```python
-for object in bge.logic.getCurrentScene().objects: print(object)
-```
+.. code-block:: python
+
+   for object in bge.logic.getCurrentScene().objects: print(object)
 
 expandPath()
 ************
 
 If you need to access an external file (image, video, Blender, etc.), you need to first get its absolute path in the computer. Use single backslash (/) to separate folders and double backslash (//) if you need to refer to the current folder:
 
-```python
-video_absolute_path  = bge.logic.expandPath('//videos/video01.ogg')
-```
+.. code-block:: python
+
+   video_absolute_path  = bge.logic.expandPath('//videos/video01.ogg')
 
 sendMessage(), addScene(), start/restart/endGame()
 **************************************************
@@ -898,9 +839,9 @@ LibLoad(), LibNew(), LibFree(), LibList() (TODO to be replaced with new ones)
 
 There are cases when you need to load the content of an external Blender file at runtime. This is known as _dynamic loading._ The game engine supports dynamic loading of actions, meshes, or complete scenes. The new data blocks are merged into the current scene and behave just like internal objects:
 
-```python
-bge.logic.LibLoad("//entities.blend", "Scene")
-```
+.. code-block:: python
+
+   bge.logic.LibLoad("//entities.blend", "Scene")
 
 .. topic:: **Beware of Lamps**
 
@@ -911,13 +852,11 @@ globalDict, loadGlobalDict(), saveGlobalDict()
 
 The bge.logic.globalDict is a Python dictionary that is alive during the whole game. It's a game place to store data if you need to restart the game or load a new file (level) and need to save some properties. In fact, you can even save the globalDict with the Blender file during the game and reload later.
 
-```python
-bge.logic.globalDict["password"] = "kidding, kids never save your passwords in files!"
+.. code-block:: python
 
-bge.logic.saveGlobalDict() # save globalDict externally
-
-bge.logic.loadGlobalDict() # replace the current globalDict with the saved one
-```
+   bge.logic.globalDict["password"] = "kidding, kids never save your passwords in files!"
+   bge.logic.saveGlobalDict() # save globalDict externally
+   bge.logic.loadGlobalDict() # replace the current globalDict with the saved one
 
 keyboard
 ********
@@ -926,27 +865,18 @@ You can handle all the keyboard inputs directly from a script. The usage and syn
 
 The keys for both event dictionaries are the same you use with the Keyboard sensor (see the bge.events module). The status of each key (whether it was pressed, released, kept pressed, or nothing) is the value stored in the dictionary. The keys values are defined in the bge.logic module itself:
 
-```python
-keyboard = bge.logic.keyboard
-
-space_status = keyboard.events [bge.events.SPACEKEY]
-
-if space_status == bge.logic.KX_INPUT_JUST_ACTIVATED:
-
-    print("space key was just pressed.")
-
-elif space_status == bge.logic.KX_INPUT_ACTIVE:
-
-    print("space key is still pressed.")
-
-elif space_status == bge.logic.KX_INPUT_JUST_RELEASED:
-
-    print("space key was just released.")
-
-else: # bge.logic.KX_INPUT_NONE
-
-    pass
-```
+.. code-block:: python
+   
+   keyboard = bge.logic.keyboard
+   space_status = keyboard.events [bge.events.SPACEKEY]
+   if space_status == bge.logic.KX_INPUT_JUST_ACTIVATED:
+      print("space key was just pressed.")
+   elif space_status == bge.logic.KX_INPUT_ACTIVE:
+      print("space key is still pressed.")
+   elif space_status == bge.logic.KX_INPUT_JUST_RELEASED:
+      print("space key was just released.")
+   else: # bge.logic.KX_INPUT_NONE
+      pass
     
 A sample file can be seen at \Book\Chapter7\5\_game\_keys\key\_detector\_python.blend . This shows the more Python-centric way of handling keyboard. For the classic method of using a Keyboard sensor, look further in this chapter into the "bge.events" section.
 
@@ -956,9 +886,7 @@ mouse
 Similar to the keyboard, this Python object can work as a replacement for the Mouse sensor. There are a few differences that make it even more appealing for scripting[md]in particular, the fact that the mouse coordinates are already normalized. As we explained in the tutorial, this helps you get consistent results, regardless of the desktop resolution. The available attributes are:
 
 * **events:** A dictionary with all the events of the mouse (left-click, wheel up, and so on) and their status (for example, bge.logic.KX_INPUT_JUST_ACTIVED).
-
 * **position** : Normalized position of the mouse cursor in the screen (from [0,0] to [1,1]).
-
 * **visible** : Dhow/hide the mouse cursor (can also be set in the Render panel for the initial state).
 
 joysticks
@@ -966,15 +894,12 @@ joysticks
 
 This is a list of all the joysticks your computer supports. That means the list is mainly populated by None objects, and a few, if any, joystick Python objects. To print the index, name, number of axis, and active buttons of the connected joysticks, you can do:
 
-```python
-for i in bge.logic.joysticks:
+.. code-block:: python
 
-    joystick = bge.logic.joysticks[i]
-
-    if joystick and joystick.connected:
-
-        print(i, joystick.name, joystick.numAxis, joystick.activeButtons)
-```
+   for i in bge.logic.joysticks:
+      joystick = bge.logic.joysticks[i]
+      if joystick and joystick.connected:
+         print(i, joystick.name, joystick.numAxis, joystick.activeButtons)
         
 For the complete list of all the parameters supported by the Joystick python object, visit the official API: _http://www.blender.org/documentation/blender\_python\_api\_2\_66\_release/bge.types.SCA\_JoystickSensor.html_
 
@@ -1054,17 +979,13 @@ Instance Variables
 
 Last but definitively not least, we have the built-in variables. They work as internal parameters of the object (for example, name, position, orientation) or class objects linked to it (for example, parent, sensors, actuators). In Blender versions prior to 2.49, those variables were only accessible through a conjunct of get and set statements (setPosition(), getOrientation(), and so on). In Blender 2.5, 2.6 and on, they not only can be accessed directly, but also manipulated as any other variable, list, dictionary, vector, or matrix you may have:
 
-```python
-obj.mass = 5.0
+.. code-block:: python
 
-obj.worldScale *= 2
-
-obj.localPosition [2] += 3.0
-
-obj.worldOrientation.transpose()
-
-print(obj.worldTransform)
-```
+   obj.mass = 5.0
+   obj.worldScale *= 2
+   obj.localPosition [2] += 3.0
+   obj.worldOrientation.transpose()
+   print(obj.worldTransform)
 
 * **position, localPosition, worldPosition**
 
@@ -1179,25 +1100,25 @@ In this case, every key pressed into a Keyboard sensor, will be registered as a 
 
 This file is similar to the key\_detector\_python.blend we used to demonstrate bge.logic.keyboard. However, this file is using the Keyboard sensor directly, instead of its wrapper.
 
-```python
-from bge import logic
-from bge import events
-cont = logic.getCurrentController()
-owner = cont.owner
-sensor = cont.sensors["s\_keyboard"]
+.. code-block:: python
 
-if sensor.positive:
-    # get the first pressed key
-    pressed_key = sensor.events[0][0]
-    text = "the key number is: %d\n" % pressed_key
-    text += "the key value is: %s\n" % events.EventToString(pressed_key)
-    text += "the character is: %s" % events.EventToCharacter(pressed_key, 0)
+   from bge import logic
+   from bge import events
+   cont = logic.getCurrentController()
+   owner = cont.owner
+   sensor = cont.sensors["s\_keyboard"]
+
+   if sensor.positive:
+      # get the first pressed key
+      pressed_key = sensor.events[0][0]
+      text = "the key number is: %d\n" % pressed_key
+      text += "the key value is: %s\n" % events.EventToString(pressed_key)
+      text += "the character is: %s" % events.EventToCharacter(pressed_key, 0)
     
-    # press space to reset the initial text
-    if pressed_key == events.SPACEKEY:
-        text = "Please, press any key."
-    owner["Text"] = text
-```
+      # press space to reset the initial text
+      if pressed_key == events.SPACEKEY:
+         text = "Please, press any key."
+      owner["Text"] = text
 
 This script is called every time someone presses a key. The key (or keys) are registers as a list of events, each one being a list with the pressed key and its status. In this case, we are reading only the first pressed key:
 
@@ -1205,37 +1126,34 @@ This script is called every time someone presses a key. The key (or keys) are re
 
 This line stores the integer that identifies the pressed key. However, we usually would need to know the actual pressed key, not its internal integer value. Therefore, we are using the only two functions available in this module to convert our key to an understandable value:
 
-```python
-    text += "the key value is: %s\n" % events.EventToString(pressed_key)
+.. code-block:: python
 
-    text += "the character is: %s" % events.EventToCharacter(pressed_key, 0)
-```
+      text += "the key value is: %s\n" % events.EventToString(pressed_key)
+      text += "the character is: %s" % events.EventToCharacter(pressed_key, 0)
+
     
 After that, we are checking for a specific key (spacebar). bge.events.SPACEKEY is actually an integer (to find the other keys' names, visit the API page):
 
-```python
-    if pressed_key == events.SPACEKEY: text = "Please, press any key."
-```
+.. code-block:: python
+
+      if pressed_key == events.SPACEKEY: text = "Please, press any key."
 
 And, voilà, now we only need to visualize the pressed key:
 
-```python
-    owner["Text"] = text
-```
+.. code-block:: python
+
+      owner["Text"] = text
 
 .. topic:: **Key Status**
 
    The status of a key is what informs you whether the key has just been pressed or if it was pressed already. The Keyboard sensor is always positive as long as any key is held, and you may need to trigger different functions when some keys are pressed and released. The status values are actually stored in bge.logic:
 
-```python
-0 = bge.logic.KX_INPUT_NONE
+.. code-block:: python
 
-1 = bge.logic.KX_INPUT_JUST_ACTIVATED
-
-2 = bge.logic.KX_INPUT_ACTIVE
-
-3 = bge.logic.KX_INPUT_JUST_RELEASED
-```
+   0 = bge.logic.KX_INPUT_NONE
+   1 = bge.logic.KX_INPUT_JUST_ACTIVATED
+   2 = bge.logic.KX_INPUT_ACTIVE
+   3 = bge.logic.KX_INPUT_JUST_RELEASED
 
 bge.texture
 +++++++++++
@@ -1246,60 +1164,59 @@ Let's look at a basic example. Please open the file: Book\Chapter7\6\_ texture\b
 
 This file has a single plane with a texture we will replace with an external image. Press the spacebar to change the image and Enter to return to the original one. The script responsible for the texture switching is:
 
-```python
-from bge import logic
-from bge import texture
-def createTexture(cont):
-    """Create a new dynamic texture"""
-    object = cont.owner
+.. code-block:: python
 
-    # get the reference pointer (ID) of the texture
-    ID = texture.materialID(obj, 'IMoriginal.png')
+   from bge import logic
+   from bge import texture
+   def createTexture(cont):
+      """Create a new dynamic texture"""
+      object = cont.owner
 
-    # create a texture object
-    dynamic_texture = texture.Texture(object, ID)
+      # get the reference pointer (ID) of the texture
+      ID = texture.materialID(obj, 'IMoriginal.png')
 
-    # create a new source
-    url = logic.expandPath("//media/newtexture.jpg")
-    new_source = texture.ImageFFmpeg(url)
+      # create a texture object
+      dynamic_texture = texture.Texture(object, ID)
 
-    # the texture has to be stored in a permanent Python object
-    logic.dynamic_texture = dynamic_texture
+      # create a new source
+      url = logic.expandPath("//media/newtexture.jpg")
+      new_source = texture.ImageFFmpeg(url)
 
-    # update/replace the texture
-    dynamic_texture.source = new_source
-    dynamic_texture.refresh(False)
+      # the texture has to be stored in a permanent Python object
+      logic.dynamic_texture = dynamic_texture
 
-def removeTexture(cont):
-    """Delete the dynamic texture, reversing it back to the original one."""
-    try: del logic.dynamic_texture
-    except: pass
-```
+      # update/replace the texture
+      dynamic_texture.source = new_source
+      dynamic_texture.refresh(False)
+
+   def removeTexture(cont):
+      """Delete the dynamic texture, reversing it back to the original one."""
+      try: del logic.dynamic_texture
+      except: pass
 
 It's a simple script, but let's look at the individual steps. We start by getting the material ID (that can be retrieved for an image used by an object, hence the prefix IM) or a material that uses a texture (with the prefix MA).
 
-```python
-    ID = texture.materialID(object, 'IMoriginal.png')
-```
+.. code-block:: python
+
+      ID = texture.materialID(object, 'IMoriginal.png')
 
 With this ID, we can create a Texture object that controls the texture to be used by this object (and the other objects sharing the same image/material).
 
-```python
-    dynamic_texture = texture.Texture(object, ID)
-```
+.. code-block:: python
+
+      dynamic_texture = texture.Texture(object, ID)
 
 The next step is to create the source to replace the texture with. The bge.texture module supports the following sources: ImageFFmpeg (images), VideoFFmpeg (videos), ImageBuff (data buffer), ImageMirror (mirror), ImageRender (game camera), ImageViewport (current viewport), and ImageMix (a mix of sources).
 
-```python
+.. code-block:: python
+
     new_source = texture.ImageFFmpeg(url)
-```
 
 Now we only need to assign the new source to be used by the object texture and to refresh the latter. The refresh function has a Boolean argument for advanced settings. A rule of thumb is: for videos, use refresh (True); for everything else, try refresh (False) first.
 
-```python
-    dynamic_texture.source = new_source
-    dynamic_texture.refresh(False)
-```
+.. code-block:: python
+     dynamic_texture.source = new_source
+     dynamic_texture.refresh(False)
 
 For the image to be permanent, we have to make sure the new dynamic_texture is not destructed after we leave our Python function. Therefore, we store it in the global module bge.logic. If you need to reset the texture to its original source, simply delete the stored object (for example, _del logic.dynamic_texture_).
 
@@ -1381,19 +1298,14 @@ While in Python, a list of a list is always the same:
 
 In a mathutils.Matrix, the data can be stored differently, accordingly to the matrix orientation (row/column). Following you can see how the order of the elements in a matrix changes, according to its orientation (note, this is not actual Python code):
 
-```python
-matrix_row_major    =  [[1 2 3]
+.. code-block:: python
+   matrix_row_major    =  [[1 2 3]
+                          [4 5 6]
+                          [7 8 9] ]
 
-                       [4 5 6]
-
-                       [7 8 9] ]
-
-                       [1][4][7]
-
-matrix_column_major = [|2||5||8|]
-
-                      [3][6][9]
-```
+                         [1][4][7]
+   matrix_column_major = [|2||5||8|]
+                         [3][6][9]
 
 It's important to be aware of the ordering of your matrices; otherwise, you end up using a transposed matrix for your calculations. Since all the game engine internal matrices (orientation, camera to world, and so on) are column-major oriented, you will be safer sticking to this standard.
 
@@ -1415,11 +1327,12 @@ Euler and quaternion are different rotation systems. The same rotation can be re
    Conversion Between Different Rotation Forms
    You can convert an orientation matrix to Euler, an Euler to a quaternion, a quaternion to an orientation matrix, and on and on and on:
 
-```python
-original_matrix=mathutils.Matrix.Rotation(math.pi, 3, "X")
+.. code-block:: python
 
-converted_matrix=original_matrix.to_euler().to_quaternion().to_matrix().to_euler().to_matrix().to_quaternion().to_euler().to_matrix().to_quaternion().to_euler().to_quaternion().to_matrix()
-```
+   original_matrix=mathutils.Matrix.Rotation(math.pi, 3, "X")
+
+   converted_matrix=original_matrix.to_euler().to_quaternion().to_matrix().to_euler().to_matrix().to_quaternion().to_euler().to_matrix().to_quaternion().to_euler().to_quaternion().to_matrix()
+   
 >In this example, converted_matrix ends up as the same matrix as original_matrix.
 
 aud - Audio System
@@ -1432,36 +1345,35 @@ The audaspace module in a nutshell: you need to create one audio Device per game
 Example: Basic Audio Playback (TODO to be adapted to new API)
 *****************************
 
-```python
-import aud
-device = aud.device()
-```
+.. code-block:: python
+
+   import aud
+   device = aud.device()
 
 ## load sound file (it can be a video file with audio)
 
-```python
-factory = aud.Factory('music.ogg')
-```
+.. code-block:: python
+
+   factory = aud.Factory('music.ogg')
 
 ## play the audio, this return a handle to control play/pause
 
-```python
-handle = device.play(factory)
-```
+.. code-block:: python
+
+   handle = device.play(factory)
 
 ## if the audio is not too big and will be used often you can buffer it
 
-```python
-factory_buffered = aud.Factory.buffer(factory)
-handle_buffered = device.play(buffered)
-```
+.. code-block:: python
+
+   factory_buffered = aud.Factory.buffer(factory)
+   handle_buffered = device.play(buffered)
 
 ## stop the sounds (otherwise they play until their ends)
 
-```python
-handle.stop()
-handle_buffered.stop()
-```
+.. code-block:: python
+   handle.stop()
+   handle_buffered.stop()
 
 We start by creating an audio device. This is simply a Python object you will use to play your sounds. Next, we create a Factory object. A factory is a container for a sound file. When we pass the Factory object into the device play function, it will start playing the sound and return a handle. Handles are used to control pause/resume and to stop an audio.
 
@@ -1470,13 +1382,11 @@ We start by creating an audio device. This is simply a Python object you will us
    After you initialize a sound, you can get its current position in seconds with the handle.position Python property. This is especially useful to keep videos and audio in sync. If you need to check whether or not the audio is ended, you shouldn't rely on the position, though. Instead, you can get the status of the sound by the property handle.status. If you are using the sound position to control a video playback, the sound status will also tell you if the video is over (handle.status = aud.AUD\_STATUS\_INVALID).
    The possible statuses are:
 
-```python
-0 = aud.AUD_STATUS_INVALID
+.. code-block:: python
 
-1 = aud.AUD_STATUS_PLAYING
-
-2 = aud.AUD_STATUS_PAUSED
-```
+   0 = aud.AUD_STATUS_INVALID
+   1 = aud.AUD_STATUS_PLAYING
+   2 = aud.AUD_STATUS_PAUSED
 
 bgl - OpenGL Wrapper
 ++++++++++++++++++++
@@ -1496,17 +1406,16 @@ Open the file /Book/Chapter7/7_bgl/line_width.blend.
 
 (run it in wireframe mode)
 
-```python
-from bge import logic
-import bgl
-def line_width():
-    bgl.glLineWidth(100.0)
+.. code-block:: python
 
-scene = logic.getCurrentScene()
-if line_width not in scene.pre_draw:
+   from bge import logic
+   import bgl
+   def line_width():
+      bgl.glLineWidth(100.0)
 
-    scene.pre_draw.append(line_width)
-```
+   scene = logic.getCurrentScene()
+   if line_width not in scene.pre_draw:
+      scene.pre_draw.append(line_width)
 
 This code needs to run only once per frame and will change the line width of the objects. Be aware that the line is only drawn in the wireframe mode.
 
@@ -1519,64 +1428,62 @@ Open the file /Book/Chapter7/7_bgl/color_pickup.blend.
 
 In this file, you can change the light color according to where you click.
 
-```python
-from bge import logic
-from bge import render
-import bgl
+.. code-block:: python
 
-cont = logic.getCurrentController()
-lamp   = cont.owner
-sensor = cont.sensors["s\_mouse\_click"]
+   from bge import logic
+   from bge import render
+   import bgl
 
-if sensor.positive:
-    width = render.getWindowWidth()
-    height = render.getWindowHeight()
-    viewport = bgl.Buffer(bgl.GL_INT, 4)
-    bgl.glGetIntegerv(bgl.GL_VIEWPORT, viewport);
-    x = viewport[0] + sensor.position[0]
-    y = viewport[1] + (height - sensor.position[1])
-    pixels = bgl.Buffer(bgl.GL_FLOAT, [4])
+   cont = logic.getCurrentController()
+   lamp   = cont.owner
+   sensor = cont.sensors["s\_mouse\_click"]
 
-    # Reads one pixel from the screen, using the mouse position
-    bgl.glReadPixels(x, y, 1, 1, bgl.GL_RGBA, bgl.GL_FLOAT, pixels)
+   if sensor.positive:
+      width = render.getWindowWidth()
+      height = render.getWindowHeight()
+      viewport = bgl.Buffer(bgl.GL_INT, 4)
+      bgl.glGetIntegerv(bgl.GL_VIEWPORT, viewport);
+      x = viewport[0] + sensor.position[0]
+      y = viewport[1] + (height - sensor.position[1])
+      pixels = bgl.Buffer(bgl.GL_FLOAT, [4])
 
-    # Change the Light colour
-    lamp.color = [pixels[0], pixels[1], pixels[2]]
-```
+      # Reads one pixel from the screen, using the mouse position
+      bgl.glReadPixels(x, y, 1, 1, bgl.GL_RGBA, bgl.GL_FLOAT, pixels)
+
+      # Change the Light colour
+      lamp.color = [pixels[0], pixels[1], pixels[2]]
 
 There are three important bgl methods been used here. The first one is bgl.Buffer. It creates space in the memory to be filled in with information taken from the graphics driver:
 
-```python
-viewport = bgl.Buffer(bgl.GL_INT, 4)
+.. code-block:: python
 
-pixels = bgl.Buffer(bgl.GL_FLOAT, [4])
-```
+   viewport = bgl.Buffer(bgl.GL_INT, 4)
+   pixels = bgl.Buffer(bgl.GL_FLOAT, [4])
 
 The second one is the `bgl.glGetIntegerv`. We use it to get the current Viewport position and dimension to the buffer object previously created:
 
-```python
-glGetIntegerv(bgl.GL_VIEWPORT, viewport);
-```
+.. code-block:: python
+
+   glGetIntegerv(bgl.GL_VIEWPORT, viewport);
 
 The buffer coordinates run from the left bottom [0.0, 0.0] to the right top [1.0, 1.0]. The mouse coordinates, on the other hand, run from left top [0, 0] to the right bottom [width, height]. We need to convert the mouse coordinate position to the correspondent one in the Buffer.
 
-```python
-x = viewport[0] + sensor.position[0]
+.. code-block:: python
 
-y = viewport[1] + (height - sensor.position[1])
-```
+   x = viewport[0] + sensor.position[0]
+   y = viewport[1] + (height - sensor.position[1])
 
 The third one is bgl.glReadPixels. This is the method that's actually reading the pixel color and storing it in the other buffer object:
 
-```python
-bgl.glReadPixels(x, y, 1, 1, bgl.GL_RGBA, bgl.GL_FLOAT, pixels)
-```
+.. code-block:: python
+
+   bgl.glReadPixels(x, y, 1, 1, bgl.GL_RGBA, bgl.GL_FLOAT, pixels)
 
 And, finally, let's apply the pixel color to the lamp:
 
-```python
-lamp.color = [pixels[0], pixels[1], pixels[2]]
-```
+.. code-block:: python
+
+   lamp.color = [pixels[0], pixels[1], pixels[2]]
 
 blf - Font Drawing
 ++++++++++++++++++
@@ -1585,11 +1492,9 @@ If you need to control text drawing directly from your scripts, you may need to 
 
 The blf module works in three stages:
 
-1. Create a new font object.
-
-2. Set the parameters for the text (size, position, and so on).
-
-3. Draw the text on the screen.
+#. Create a new font object.
+#. Set the parameters for the text (size, position, and so on).
+#. Draw the text on the screen.
 
 Example: Writing Hello World
 ****************************
@@ -1598,41 +1503,40 @@ Open the file /Book/Chapter7/8_blf/hello_world.blend.
 
 In the init function, we load a new font in memory and store the generated font ID to use later.
 
-```python
-def init():
+.. code-block:: python
 
-    """init function - runs once"""
+   def init():
 
-    # create a new font object
-    font_path = bge.logic.expandPath('//fonts/Zeyada.ttf')
-    bge.logic.font_id = blf.load(font_path)
+      """init function - runs once"""
 
-    # set the font drawing routine to run
-    scene = bge.logic.getCurrentScene()
-    scene.post_draw=[write]
-```
+      # create a new font object
+      font_path = bge.logic.expandPath('//fonts/Zeyada.ttf')
+      bge.logic.font_id = blf.load(font_path)
+
+      # set the font drawing routine to run
+      scene = bge.logic.getCurrentScene()
+      scene.post_draw=[write]
 
 The actual function responsible for writing the text is stored in the scene post\_draw routine. Apart from the OpenGL calls, the setup for using the text is quite simple.
 
-```python
-def write():
-    """write on screen – runs every frame"""
-    width = bge.render.getWindowWidth()
-    height = bge.render.getWindowHeight()
+.. code-block:: python
+   def write():
+      """write on screen – runs every frame"""
+      width = bge.render.getWindowWidth()
+      height = bge.render.getWindowHeight()
 
-    # OpenGL calls to re-set drawing position
-    bgl.glMatrixMode(bgl.GL_PROJECTION)
-    bgl.glLoadIdentity()
-    bgl.gluOrtho2D(0, width, 0, height)
-    bgl.glMatrixMode(bgl.GL_MODELVIEW)
-    bgl.glLoadIdentity()
+      # OpenGL calls to re-set drawing position
+      bgl.glMatrixMode(bgl.GL_PROJECTION)
+      bgl.glLoadIdentity()
+      bgl.gluOrtho2D(0, width, 0, height)
+      bgl.glMatrixMode(bgl.GL_MODELVIEW)
+      bgl.glLoadIdentity()
 
-    # blf settings + draw
+      # blf settings + draw
 
-    font_id = bge.logic.font_id
-    blf.position(font_id, (width*0.2), (height*0.3), 0)
-    blf.size(font_id, 50, 72)
-    blf.draw(font_id, "Hello World")
-```
+      font_id = bge.logic.font_id
+      blf.position(font_id, (width*0.2), (height*0.3), 0)
+      blf.size(font_id, 50, 72)
+      blf.draw(font_id, "Hello World")
 
 On the book files, in the same folder, you can find two other examples following the same framework_: hello_world_2.blend_ and _object_names.blend_.
