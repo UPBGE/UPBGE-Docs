@@ -130,7 +130,9 @@ As you probably know, Blender has its own internal text editor (see Figure 7.7).
 * Search over multiple internal files
 * Sync with external files
 
-![Blender internal text editor](../figures/Chapter7/Fig07-07.png)
+.. figure:: /images/Chapter7/Fig07-07.png
+
+   Blender internal text editor
 
 Reference Material and Documentation
 ++++++++++++++++++++++++++++++++++++
@@ -146,11 +148,15 @@ It doesn't matter how easy Python is, you will spend evenings testing and retest
 
 In those cases, you can use an interactive interpreter to help you. If you have Python installed on your system, you have it already. If you are using Windows, this will be the python.exe application in your Python installation directory (C:\Python31\ by default, considering the installation of Python 3.1), as seen in Figure 7.8. In Linux or OSX, you have to type "python" in any console and you are good to go.
 
-![Python IDE](../figures/Chapter7/Fig07-08.png)
+.. figure:: /images/Chapter7/Fig07-08.png
+
+   Python IDE
 
 You can also use the Blender Python console. Change one of your current windows into the console, and you should see the screen shown in Figure 7.9.
 
-![Blender Python console](../figures/Chapter7/Fig07-09.png)
+.. figure:: /images/Chapter7/Fig07-09.png
+
+   Blender Python console
 
 Now you can use it to type simple codes, or to run a help or a dir into any of the Python modules. Unfortunately, only Blender modules have the auto-complete working from there.
 
@@ -170,20 +176,25 @@ All of those aspects must be considered from the first phases of the coding proc
    One of the most remarkable moments during my coding studies was at Blender Conference 2008. I was still in my first steps of learning C++ and OpenGL coding, and I got the chance to explain a game engine bug to Brecht van Lommel[md]a really experienced and acknowledged Blender coder and a very inspiring person. The bug itself was hard to explain through the Internet; it's the one behind the implementation of canvas coordinates for 2D filters presented in Chapter 5. I was pleased enough to have his input on this, but even more impressive was seeing him code a partial solution right in front of me.
    At this point, I learned an important lesson. It doesn't matter how advanced and technical the coding is that you are working on; you can always have a great time sketching your ideas and plans with old-fashioned pencil and paper. This is how he solved the problem, clearly laying down the ideas and organizing them logically. I never forgot that[md]thanks, Brecht!
 
-The system will consist of one camera for the orbit mode, and one to be used for both the fly and walk mode. Each mode works as described in Table 7.1.
+The system will consist of one camera for the orbit mode, and one to be used for both the fly and walk mode. Each mode works as described in the following table:
 
-_Table 7.1 Comparison of Different Navigation Cameras_
+.. table:: Comparison of Different Navigation Cameras
 
-|                               | Orbit         | Walk             | Fly    |
-|:-----------------------------:|:-------------:|:----------------:|:------:|
++-------------------------------+---------------+------------------+--------+
+| Mode                          | Orbit         | Walk             | Fly    |
++===============================+===============+==================+========+
 | Vertical Rotation Angle (Z)   | -200º to 200º | Free             | Free   |
++-------------------------------+---------------+------------------+--------+
 | Horizontal Rotation Angle (X) | 10º to 70º    | -15º to 45º      | Free   |
++-------------------------------+---------------+------------------+--------+
 | Moving Pivot                  | None          | Empty            | Empty  |
++-------------------------------+---------------+------------------+--------+
 | Horizontal Rotation Pivot     | Empty         | Empty and Camera | Camera |
++-------------------------------+---------------+------------------+--------+
 | Vertical Rotation Pivot       | Empty         | Empty            | Empty  |
++-------------------------------+---------------+------------------+--------+
 
 - **Empty:** is an empty object the camera is parented to.
-
 
 .. topic:: **Try It Out**
 
@@ -220,7 +231,9 @@ This program is divided into five different parts:
 
 The diagram in Figure 7.10 illustrates how they relate to one another. Now let's take an inside look at each of them.
 
-![Script architecture](../figures/Chapter7/Fig07-10.png)
+.. figure:: /images/Chapter7/Fig07-10.png
+
+   Script architecture
 
 Global Initialization
 *********************
@@ -469,7 +482,9 @@ Next find in the .blend file the pivot empty (ORB\_PIVOT) and play with its rota
 
    250     y = m.pi/2 – y
 
-![Orbit pivot rotation](../figures/Chapter7/Fig07-11.png)
+.. figure:: /images/Chapter7/Fig07-11.png
+
+   Orbit pivot rotation
 
 scripts.look\_camera
 ~~~~~~~~~~~~~~~~~~~~
@@ -671,7 +686,9 @@ Open the file /Book/Chapter7/4_navigation_system/walkthrough_1_base/walkthrough.
 
 This small file is part of the presentation of an architectural walkthrough of an urban project (see Figure 7.12) that I (Dalai) did. It's an academic project and only my second project using the game engine. As you can see, there are absolutely no scripts in it[md]all the interaction is done with logic bricks. I didn't use Python for this project mainly because I had absolutely no knowledge of Python at all back then (and the project was done in six days).
 
-![Architectural walkthrough example file](../figures/Chapter7/Fig07-12.png)
+.. figure:: /images/Chapter7/Fig07-12.png
+
+   Architectural walkthrough example file
 
 It's time for redemption. Let's replace its navigation system with the Python system we just studied. For convenience, this file was already organized to receive the navigation elements (cameras, empties, and so on.).
 
@@ -696,7 +713,9 @@ A snapshot with those changes can be found at:
 
 Now if you run the application, the navigation system should work - kind of (see Figure 7.13).
 
-![Still not there](../figures/Chapter7/Fig07-13.png)
+.. figure:: /images/Chapter7/Fig07-13.png
+
+   Still not there
 
 Adjustments in Loco
 ~~~~~~~~~~~~~~~~~~~
@@ -710,7 +729,6 @@ Move them 2000 in X and 350 in Y.
 **Empties** :
 
 * CAM_front and CAM_back - Those empties will hold the position for walk cameras. Make sure their position from the ground is at the human eyes (~1.68).
-
 * CAM_top and CAM_side - Those empties will be used in Fly Mode. Here, we should also make sure their initial orientation looks good. The easiest way to do that is by using the Fly Mode (select the object, set it as current camera, and use Shift+F).
 
 The one thing missing for the camera is to increase the clipping distance. That way, we can see all the skydome around the camera (see before and after in Figure 7.14).
@@ -718,16 +736,19 @@ The one thing missing for the camera is to increase the clipping distance. That 
 **Cameras** :
 
 * CAM_Orbit - Adjust initial Z, change clip ending to 1000.
-
 * CAM_Move - change clip ending to 1000.
 
 A snapshot with those changes can be found at:
 
 /Book/Chapter7/4_navigation_system/walkthrough_3_partial/walkthrough.blend
 
-| Camera clipping of 400    | Camera clipping of 1000   |
-|:-------------------------:|:-------------------------:|
-![Camera clipping of 400](../figures/Chapter7/Fig07-14a.png)  |  ![Camera clipping of 1000](../figures/Chapter7/Fig07-14b.png)
+.. list-table::
+   :header-rows: 1
+   
+   * - Camera clipping of 400
+     - Camera clipping of 1000
+   * - .. figure:: /images/Chapter7/Fig07-14a.png
+     - .. figure:: /images/Chapter7/Fig07-14b.png
 
 .. topic:: **Make Sure That Collision Is Set Properly**
 
@@ -1230,7 +1251,7 @@ _/Book/Chapter7/6_texture/basic_texture_replacement.blend_
 
 Basic video playback with Sound actuator:
 
-_/Book/Chapter7/6_texture\basic_video_sound.blend_
+_/Book/Chapter7/6_texture/basic_video_sound.blend_
 
 Video player with interface controllers:
 
@@ -1520,6 +1541,7 @@ In the init function, we load a new font in memory and store the generated font 
 The actual function responsible for writing the text is stored in the scene post\_draw routine. Apart from the OpenGL calls, the setup for using the text is quite simple.
 
 .. code-block:: python
+
    def write():
       """write on screen – runs every frame"""
       width = bge.render.getWindowWidth()
