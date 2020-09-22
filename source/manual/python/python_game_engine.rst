@@ -180,19 +180,19 @@ The system will consist of one camera for the orbit mode, and one to be used for
 
 .. table:: Comparison of Different Navigation Cameras
 
-+-------------------------------+---------------+------------------+--------+
-| Mode                          | Orbit         | Walk             | Fly    |
-+===============================+===============+==================+========+
-| Vertical Rotation Angle (Z)   | -200º to 200º | Free             | Free   |
-+-------------------------------+---------------+------------------+--------+
-| Horizontal Rotation Angle (X) | 10º to 70º    | -15º to 45º      | Free   |
-+-------------------------------+---------------+------------------+--------+
-| Moving Pivot                  | None          | Empty            | Empty  |
-+-------------------------------+---------------+------------------+--------+
-| Horizontal Rotation Pivot     | Empty         | Empty and Camera | Camera |
-+-------------------------------+---------------+------------------+--------+
-| Vertical Rotation Pivot       | Empty         | Empty            | Empty  |
-+-------------------------------+---------------+------------------+--------+
+   +-------------------------------+---------------+------------------+--------+
+   | Mode                          | Orbit         | Walk             | Fly    |
+   +===============================+===============+==================+========+
+   | Vertical Rotation Angle (Z)   | -200º to 200º | Free             | Free   |
+   +-------------------------------+---------------+------------------+--------+
+   | Horizontal Rotation Angle (X) | 10º to 70º    | -15º to 45º      | Free   |
+   +-------------------------------+---------------+------------------+--------+
+   | Moving Pivot                  | None          | Empty            | Empty  |
+   +-------------------------------+---------------+------------------+--------+
+   | Horizontal Rotation Pivot     | Empty         | Empty and Camera | Camera |
+   +-------------------------------+---------------+------------------+--------+
+   | Vertical Rotation Pivot       | Empty         | Empty            | Empty  |
+   +-------------------------------+---------------+------------------+--------+
 
 - **Empty:** is an empty object the camera is parented to.
 
@@ -480,7 +480,7 @@ Next find in the .blend file the pivot empty (ORB\_PIVOT) and play with its rota
 
 .. code-block:: python
 
-   250     y = m.pi/2 – y
+   250     y = m.pi / 2 – y
 
 .. figure:: /images/Chapter7/Fig07-11.png
 
@@ -787,7 +787,7 @@ The game engine API is a bridge connecting your Python scripts with your game da
 
 The official documentation can be found online in the Blender Foundation website (TODO to be changed):
 
-_http://www.blender.org/documentation/blender_python_api_2_66_release_
+http://www.blender.org/documentation/blender_python_api_2_66_release
 
 We will now walk through the highlights of the modules. After you are familiar with their main functionality, you should feel comfortable to navigate the documentation and find other resources.
 
@@ -965,15 +965,15 @@ If it looks like a function, it should be one. Every game engine object provides
 
 * **rayCast (objto, objfrom, dist, prop, face, xray, poly)**
 
-_ "Look from a point/object to another point/object and find first object hit within dist that matches prop."_
+*"Look from a point/object to another point/object and find first object hit within dist that matches prop."*
 
 This method is a more complete version of the rayCastTo(). It has so many applications that it becomes hard to delimitate its usage. For instance, this was the method used to calculate the collision in the navigation system script we studied previously.
 
 * **getPropertyNames()**
 
-_"Get a list of all property names."_
+*"Get a list of all property names."*
 
-Once you retrieve the list of property names, you can use it to see if the object has a specific property before using it. To get individual properties, you can use _if "prop" in object_: or _object.get("prop", default=None)_.
+Once you retrieve the list of property names, you can use it to see if the object has a specific property before using it. To get individual properties, you can use *if "prop" in object*: or *object.get("prop", default=None)*.
 
 .. topic:: **A Use for Properties**
 
@@ -981,13 +981,13 @@ Once you retrieve the list of property names, you can use it to see if the objec
 
 - **endObject()**
 
-_"Delete this object can be used in place of the EndObject Actuator."_
+*"Delete this object can be used in place of the EndObject Actuator."*
 
 This method is one of the functions that mimic existent actuators. You will also find this design in methods such as sendMessage(), setParent(), and replaceMesh().
 
 - **applyRotation()**
 
-_"Set the game object's movement/rotation."_
+*"Set the game object's movement/rotation."*
 
 There are a few methods that will free you from doing 3D math manually. This particular one is a replacement for multiplying the object orientation matrix by a rotation matrix. (If you are "old school," you can still set the orientation matrix directly though.)
 
@@ -1236,10 +1236,11 @@ The next step is to create the source to replace the texture with. The bge.textu
 Now we only need to assign the new source to be used by the object texture and to refresh the latter. The refresh function has a Boolean argument for advanced settings. A rule of thumb is: for videos, use refresh (True); for everything else, try refresh (False) first.
 
 .. code-block:: python
+
      dynamic_texture.source = new_source
      dynamic_texture.refresh(False)
 
-For the image to be permanent, we have to make sure the new dynamic_texture is not destructed after we leave our Python function. Therefore, we store it in the global module bge.logic. If you need to reset the texture to its original source, simply delete the stored object (for example, _del logic.dynamic_texture_).
+For the image to be permanent, we have to make sure the new dynamic_texture is not destructed after we leave our Python function. Therefore, we store it in the global module bge.logic. If you need to reset the texture to its original source, simply delete the stored object (for example, *del logic.dynamic_texture*).
 
 Since this is a simple image, you don't need to do anything after that. If you are using a video as source, you need to keep refreshing the texture every frame. Videos also support an audio-video syncing system. To make them play harmoniously together, you first play the audio and then query its current position to pass as a parameter when updating the video frame (for example,  _logic.video.refresh(True, logic.sound.time)_). The audio can come from an Audaspace object or even a Sound actuator.
 
@@ -1247,36 +1248,36 @@ In the book files, you can find other examples using different sorts of source o
 
 Basic replacement of texture:
 
-_/Book/Chapter7/6_texture/basic_texture_replacement.blend_
+/Book/Chapter7/6_texture/basic_texture_replacement.blend
 
 Basic video playback with Sound actuator:
 
-_/Book/Chapter7/6_texture/basic_video_sound.blend_
+/Book/Chapter7/6_texture/basic_video_sound.blend
 
 Video player with interface controllers:
 
-_/Book/Chapter7/6_texture/player_video_audio.blend_
+/Book/Chapter7/6_texture/player_video_audio.blend
 
 Basic video playback with Audaspace:
 
-_/Book/Chapter7/6_texture/video_audaspace.blend_
+/Book/Chapter7/6_texture/video_audaspace.blend
 
 Mirror effect:
 
-_/Book/Chapter7/6_texture/mirror.blend_
+/Book/Chapter7/6_texture/mirror.blend
 
 Render to texture:
 
-_/Book/Chapter7/6_texture/render_to_texture.blend_
+/Book/Chapter7/6_texture/render_to_texture.blend
 
 Webcam sample:
 
-_/Book/Chapter7/6_texture/webcam.blend_
+/Book/Chapter7/6_texture/webcam.blend
 
 bge.constraints
 +++++++++++++++
 
-The Bullet Physics engine allows for advanced control over the physics simulation in your game. Using Bullet as a backend, this module (formerly known as _Physics Constraints_) allows you to create and set up rigid joints, dynamic constraints, and even a vehicle wrapper. The constraints' functionalities make sense only when you understand the context in which they are to be used (with physic dynamic objects). Therefore, this module is covered in the previous chapter on game physics.
+The Bullet Physics engine allows for advanced control over the physics simulation in your game. Using Bullet as a backend, this module (formerly known as *Physics Constraints*) allows you to create and set up rigid joints, dynamic constraints, and even a vehicle wrapper. The constraints' functionalities make sense only when you understand the context in which they are to be used (with physic dynamic objects). Therefore, this module is covered in the previous chapter on game physics.
 
 Mathutils - Math Types and Utilities
 ++++++++++++++++++++++++++++++++++++
@@ -1320,6 +1321,7 @@ While in Python, a list of a list is always the same:
 In a mathutils.Matrix, the data can be stored differently, accordingly to the matrix orientation (row/column). Following you can see how the order of the elements in a matrix changes, according to its orientation (note, this is not actual Python code):
 
 .. code-block:: python
+
    matrix_row_major    =  [[1 2 3]
                           [4 5 6]
                           [7 8 9] ]
@@ -1364,7 +1366,7 @@ This module allows you to play sounds directly from your scripts. There are thre
 The audaspace module in a nutshell: you need to create one audio Device per game. You need one Factory per audio file (which can also be any video file containing a sound track). And every time you need to play a sound, a new Handle object will be generated from the Factory (this is where its name comes from).
 
 Example: Basic Audio Playback (TODO to be adapted to new API)
-*****************************
+*************************************************************
 
 .. code-block:: python
 
@@ -1393,6 +1395,7 @@ Example: Basic Audio Playback (TODO to be adapted to new API)
 ## stop the sounds (otherwise they play until their ends)
 
 .. code-block:: python
+
    handle.stop()
    handle_buffered.stop()
 
@@ -1418,7 +1421,7 @@ Sometimes, you will need to run your OpenGL code specifically before or after th
 
 .. topic:: **To Learn OpenGL**
 
-   You can find good OpenGL learning material on the Internet or in a bookstore. _The Official Guide to Learning OpenGL_ (also known as _The Red Book_) is highly recommended, and some older versions of it can be found online for download.
+   You can find good OpenGL learning material on the Internet or in a bookstore. *The Official Guide to Learning OpenGL* (also known as *The Red Book*) is highly recommended, and some older versions of it can be found online for download.
 
 Example 01: Line Width Changing
 *******************************
@@ -1561,4 +1564,4 @@ The actual function responsible for writing the text is stored in the scene post
       blf.size(font_id, 50, 72)
       blf.draw(font_id, "Hello World")
 
-On the book files, in the same folder, you can find two other examples following the same framework_: hello_world_2.blend_ and _object_names.blend_.
+On the book files, in the same folder, you can find two other examples following the same framework: hello_world_2.blend and object_names.blend.
