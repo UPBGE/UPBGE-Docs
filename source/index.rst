@@ -9,8 +9,8 @@ UPBGE Manual
 
 Welcome to UPBGE's Documentation! Here you will 
 find definitions of the available tools and features in UPBGE, step-by-step 
-tutorials to certain tasks and the Python API for game logic programming 
-with detailed information (and examples in some cases).
+tutorials to certain tasks and a lot examples for game logic programming 
+with detailed information.
 
 `Visit the UPBGE's website <https://upbge.org/>`__ or `contribute to this manual <https://github.com/UPBGE/UPBGE-Docs>`__.
 
@@ -29,14 +29,3 @@ with detailed information (and examples in some cases).
    manual/release/index
    manual/tools/index
    manual/about/index
-
-.. toctree::
-   :maxdepth: 2
-   :caption: API Reference
-   
-   api/bge
-   api/aud
-   api/mathutils
-   api/bgl
-   api/blf
-   api/gpu
