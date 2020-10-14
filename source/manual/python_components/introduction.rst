@@ -7,15 +7,15 @@ Introduction
 What Is A Python Component?
 ---------------------------
 
-.. figure:: /images/Python_Components/Fig-01.png
-
-   Python Component
-
 The idea of a component is a simple one. They are modules that can be attached to game objects. You can attach as many as you want, 
 and each one serves a specific purpose such as third person character movement with WASD. After a component has been attached to an object, 
 it can have various exposed settings that you can edit. In the case of a third person movement component, this could be things such as 
 movement speed and turn speed.
 
+.. figure:: /images/Python_Components/Fig-01.png
+
+   Python Component (Vehicle Wheeled template)
+   
 Python component can be compared to python logic bricks with parameters. The python component is a script loaded in the UI, this script defined 
 a component class by inheriting from KX_PythonComponent. 
 This class must contain a dictionary of properties: **args** and two default functions: **start()** and **update()**.
@@ -101,3 +101,47 @@ The following example show all of these property types:
 The optional **dispose()** function is called when the component is destroyed. It is only necessary in very specific cases.
 
 Inside of UPBGE there are several python component templates that can help us with common tasks. We will analyze them in the next subchapters.
+
+
+Python Component Creation
+-------------------------
+
+The Python Component panel is placed in the Logic Brick editor.
+
+.. figure:: /images/Python_Components/Fig-02.png
+
+   Python Component panel
+   
+You will find there the 2 ways to create a Python Component in UPBGE, **Create Component** and **Register Component**. 
+
+.. figure:: /images/Python_Components/Fig-03.png
+
+   The 2 ways to create Python Component
+   
+Create Component
+++++++++++++++++
+
+When you push over the **Create Component** button a detachable panel will appear. In that panel you can introduce the component module name and the class name, both separate by a dot.
+After entering the name and clicking on the **Create Component** button, a new python script with the name of the component's module will be created in the script editor. 
+That python script will contain an empty class which name will be the one entered previously. 
+
+.. figure:: /images/Python_Components/Fig-04.png
+
+   Create Component process
+
+As the component script is developed you can click on the component reload button to see the updated component.
+
+.. figure:: /images/Python_Components/Fig-05.png
+
+   Python Component reload button
+
+Register Component
+++++++++++++++++++
+
+This process is the opposite of the previous one. First of all, we already have a python script previously formatted as a component that can be placed either in the script editor or at the same level as the .blend file.
+
+When we click on the **Register Component** button we will have to enter the name of the python script (without the .py) followed by a dot and the class name. After accept the Python Component will be created.
+
+.. figure:: /images/Python_Components/Fig-06.png
+
+   Register Component process
