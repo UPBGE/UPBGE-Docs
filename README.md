@@ -23,4 +23,6 @@ The documentation will be built in the directory **build**.
 - Tristan Porteries (panzergame)
 - Youle31
 - Jorge Bernal (lordloki)
+- mysticfall
+- Guilherme Teres Nunes (UnidayStudio)
 - You!
