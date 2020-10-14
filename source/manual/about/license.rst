@@ -40,11 +40,11 @@ also based on others manuals and articles whose authors are exposed below:
 .. parsed-literal::
 
    The |UPBGE_VER_MANUAL|_
-   by the `UPBGE Documentation Team <https://github.com/UPBGE/UPBGE-Docs#credits>`__
+   by the `UPBGE Documentation Team <https://github.com/UPBGE/UPBGE-Docs##upbge-documentation-team>`__
    is licensed under a |UPBGE_LICENSE|_.
 
 .. |UPBGE_VER_MANUAL| replace:: UPBGE Manual
-.. _UPBGE_VER_MANUAL: https://upbge-docs.readthedocs.io/en/latest/index.html
+.. _UPBGE_VER_MANUAL: https://upbge.org/manual/index.html
 .. |UPBGE_LICENSE| replace:: CC-BY-SA v4.0
 .. _UPBGE_LICENSE: https://creativecommons.org/licenses/by-sa/4.0/
 
