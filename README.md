@@ -18,7 +18,7 @@ Once every dependency is instaled, simply open the console on the top level dire
 
 The documentation will be built in the directory **build**.
 
-## Credits:
+## UPBGE Documentation Team:
 - Joel Gomes da Silva (joelgomes1994)
 - Tristan Porteries (panzergame)
 - Youle31
