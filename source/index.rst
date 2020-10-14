@@ -24,6 +24,7 @@ with detailed information.
    manual/logic/index
    manual/logic_nodes/index
    manual/python/index
+   manual/python_components/index
    manual/physics/index
    manual/datablocks/index
    manual/release/index
