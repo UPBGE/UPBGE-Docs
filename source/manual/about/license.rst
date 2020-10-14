@@ -13,7 +13,7 @@ or any later version. Excluded from the CC-BY-SA are also the used logos, tradem
 icons, source code and Python scripts.
 
 This UPBGE manual contains exclusive information from UPBGE Documentation Team but it is 
-also base on others manuals and articles whose authors are exposed below:
+also based on others manuals and articles whose authors are exposed below:
 
 .. parsed-literal::
 
