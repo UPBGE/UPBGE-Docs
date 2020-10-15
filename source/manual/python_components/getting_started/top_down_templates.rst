@@ -11,8 +11,8 @@ This template was created to help UPBGE users to create games or any kind of int
 
 To use, just select it from template label at script editor and you're done! You can use this template in your projects, even for commercial projects. You only need to give credits to Guilherme Teres Nunes (UnidayStudio) for this. It's very easy to use: Just load this script into your .blend file through template label (or paste it in the same folder that your .blend is), select the object that you want, and attach the script into the object's components using **Register Component** button.
 
-Camera Drag Component
----------------------
+Mouse Camera Drag Component
+---------------------------
 
 This component will allow the player to move the camera (or other objects) by simple holding a mouse button (you decide what button) and dragging the mouse around. Very useful for top down games. It will also allow the player to move the camera (or other objects) by pressing W, A, S, D keys. There is some configuration to help you adapting this logic to better fit in your project. If you want to drag the camera in a vertial way, to create a side scroller game, for example, you can easly change the "Up Axis" to allow this. You can attach this component into your camera or into other objects. 
 It's very simple to configure:
@@ -20,7 +20,7 @@ It's very simple to configure:
 .. figure:: /images/Python_Components/Fig-14.png
    :align: left
 
-   Camera Drag component
+   Mouse Camera Drag component
 
 * **Show Mouse**: Enable if you want to show the mouse
 * **Mouse Movement**: Enable if you want to activate the mouse drag logic
@@ -32,8 +32,8 @@ It's very simple to configure:
 * **Keyboard Speed**: If you enabled the Keyboard Movement, control the speed here!
 * **Limit Area**: You can limit the area that the object can stay by playing around with this values. If you don't want, just set to 0.
 
-Mouse Click Component
----------------------
+Mouse Point And Click Component
+-------------------------------
 
 This component will allow you to teleport an object right into the point that the player clicks. You can limit the scope of the clicks by adding a property. This feature is very useful for top down/point and click games, because you need a pivot to point where the player wants the character to go. 
 It's very simple to configure:
