@@ -19,5 +19,5 @@ The Python Component's templates are included under the template option in the s
 
    character_controller_templates.rst
    top_down_templates.rst
-   vehicle_templates.rst
    util_templates.rst
+   vehicle_templates.rst

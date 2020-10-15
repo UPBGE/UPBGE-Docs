@@ -15,12 +15,12 @@ Camera Drag Component
 ---------------------
 
 This component will allow the player to move the camera (or other objects) by simple holding a mouse button (you decide what button) and dragging the mouse around. Very useful for top down games. It will also allow the player to move the camera (or other objects) by pressing W, A, S, D keys. There is some configuration to help you adapting this logic to better fit in your project. If you want to drag the camera in a vertial way, to create a side scroller game, for example, you can easly change the "Up Axis" to allow this. You can attach this component into your camera or into other objects. 
+It's very simple to configure:
 
 .. figure:: /images/Python_Components/Fig-14.png
+   :align: left
 
    Camera Drag component
-
-It's very simple to configure:
 
 * **Show Mouse**: Enable if you want to show the mouse
 * **Mouse Movement**: Enable if you want to activate the mouse drag logic
@@ -36,12 +36,12 @@ Mouse Click Component
 ---------------------
 
 This component will allow you to teleport an object right into the point that the player clicks. You can limit the scope of the clicks by adding a property. This feature is very useful for top down/point and click games, because you need a pivot to point where the player wants the character to go. 
+It's very simple to configure:
 
 .. figure:: /images/Python_Components/Fig-15.png
+   :align: left
 
    Mouse Click component
-   
-It's very simple to configure:
 
 * **Activate**: Activate or deactivate the logic
 * **Mouse Button**: Which mouse button you want to use
@@ -52,12 +52,12 @@ Object Chaser Component
 -----------------------
 
 This component will make the object chase a target (another object) when they have certain distance. Note that is necessary to have a navmesh in your scene. You can also change the Target object in realtime by calling the function setTarget(). 
+It's very simple to configure:
 
 .. figure:: /images/Python_Components/Fig-16.png
+   :align: left
 
    Object Chaser component
-
-It's very simple to configure:
 
 * **Activate**: Activate or deactivate the logic.
 * **Navmesh Name**: The name of your navmesh.

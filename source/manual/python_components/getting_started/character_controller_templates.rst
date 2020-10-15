@@ -15,13 +15,12 @@ Character Controller Component
 ------------------------------
 
 This component will serve as a **Character Controller** for your game. With this, you can easly made an object move using W,A,S,D, run with LSHIFT and Jump with SPACE.
-You simply have to create a capsule for your character, set the physics type to "Character" and attach this Component to them.
+You simply have to create a capsule for your character, set the physics type to "Character" and attach this Component to them. It's very simple to configure:
 
 .. figure:: /images/Python_Components/Fig-09.png
+   :align: left
 
    Character Controller component
-
-It's very simple to configure:
 
 * **Activate**: If you want this component running.
 * **Walk Speed**: The character's walk speed.
@@ -33,7 +32,6 @@ It's very simple to configure:
 * **Smooth Character Movement**: You can make the movement gets more smooth by increasing this value (0.0 to 1.0).
 * **Make Object Invisible**: Makes the object invisible ingame (useful if you attach this component to a capsule object that have a armature inside).
 
-
 First Person Camera Component
 -----------------------------
 
@@ -41,18 +39,19 @@ This component was created to be attached to your camera and to give you a great
 
 To use, add a camera in your scene, parent it into your character capsule (you can use the Character controller Component on it), and attach this Component to the camera. Don't forgot to position the camera in a place near the "head" of your character.
 
+You can configure the mouse sensibility, invert X or Y axis and enable/disable the camera rotation limit. It's very simple to configure:
+
 .. figure:: /images/Python_Components/Fig-10.png
+   :align: left
 
    First Person Camera component
-   
-You can configure the mouse sensibility, invert X or Y axis and enable/disable the camera rotation limit. It's very simple to configure:
 
 * **Activate**: If you want this component running.
 * **Mouse Sensibility**: The mouse sensibility.
 * **Invert Mouse X Axis**: To invert the mouselook on the X axis.
 * **Invert Mouse Y Axis**: To invert the mouselook on the Y axis.
 * **Limit Camera Rotation**: Limits the camera rotation on the X local axis. Very useful for First Person games to avoid the camera from flip upside down.
-
+|
 
 Third Person Camera Component
 -----------------------------
@@ -61,11 +60,12 @@ This component was created to be attached to your camera to give you a great thi
 
 To use, add a camera in your scene, parent it into your character capsule (you can use the Character controller Component on it), and attach this Component to the camera. And you're done! The component will do the rest for you. :)
 
+You can configure the mouse sensibility, invert X or Y axis and enable/disable the camera rotation limit. It's very simple to configure:
+
 .. figure:: /images/Python_Components/Fig-11.png
+   :align: left
 
    Third Person Camera component
-   
-You can configure the mouse sensibility, invert X or Y axis and enable/disable the camera rotation limit. It's very simple to configure:
 
 * **Activate**: If you want this component running.
 * **Mouse Sensibility**: The mouse sensibility.
@@ -86,13 +86,12 @@ Simple Animator Component
 
 This component will automatically align the armature to the move direction of your character, runs the right animations accordding to the speed and if the character is on air or not.
 
-To use, attach this component to the armature of your character. It's important that the armature is parented with an capsule object with physics type equals to Character. 
+To use, attach this component to the armature of your character. It's important that the armature is parented with an capsule object with physics type equals to Character. It's very simple to configure:
 
 .. figure:: /images/Python_Components/Fig-12.png
+   :align: left
 
    Simple Animator component
-   
-It's very simple to configure:
 
 * **Activate**: If you want this component running.
 * **Max Walk Speed**: Define the max speed that you want while executing the walk animation. After this speed, the character will start interpolating the run animation. (Read the notes at the end).
@@ -105,6 +104,5 @@ It's very simple to configure:
 * **Run Animation**: Define the name of the Run animation, the frame start and frame end.
 * **Jump Up Animation**: Define the name of the Jump Up animation, the frame start and frame end.
 * **Jump Down Animation**: Define the name of the Jump Down animation, the frame start and frame end. The Jump animations should be divided in two: Jump Up and Jump Down. The first one will be executed when the character is going up. The second, whe the character is falling. Both should be loop animations.
-
 .. note::
    The anim interpolation/transition between idle-walk and walk-run according to the speed is not implemented yet.
