@@ -31,6 +31,7 @@ It's very simple to configure:
 * **Mouse Sensibility**: The mouse sensibility!
 * **Keyboard Speed**: If you enabled the Keyboard Movement, control the speed here!
 * **Limit Area**: You can limit the area that the object can stay by playing around with this values. If you don't want, just set to 0.
+|
 
 Mouse Point And Click Component
 -------------------------------
@@ -41,12 +42,13 @@ It's very simple to configure:
 .. figure:: /images/Python_Components/Fig-15.png
    :align: left
 
-   Mouse Click component
+   Mouse Point and Click component
 
 * **Activate**: Activate or deactivate the logic
 * **Mouse Button**: Which mouse button you want to use
 * **Align To Normal**: Enable if you want to align the object to the mouse over normal.
 * **Property**: The property that you want to interact with (leave this blank if you want to interact with everything).
+|
 
 Object Chaser Component
 -----------------------
