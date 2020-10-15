@@ -4,9 +4,15 @@
 Getting Started
 +++++++++++++++
 
-This subchapter aims to show the basic python component's templates included in UPBGE, from the character controller movements to 
+This subchapter aims to show the basic Python Component's templates included in UPBGE, from the character controller movements to
 the most common operations used in game development. This will give you important notions 
 on how to create new reusable components for all your game library.
+
+The Python Component's templates are included under the template option in the script editor.
+
+.. figure:: /images/Python_Components/Fig-07.png
+
+   Python Component template list
 
 .. toctree::
    :maxdepth: 2
