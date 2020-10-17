@@ -51,6 +51,7 @@ You can configure the mouse sensibility, invert X or Y axis and enable/disable t
 * **Invert Mouse X Axis**: To invert the mouselook on the X axis.
 * **Invert Mouse Y Axis**: To invert the mouselook on the Y axis.
 * **Limit Camera Rotation**: Limits the camera rotation on the X local axis. Very useful for First Person games to avoid the camera from flip upside down.
+
 |
 
 Third Person Camera Component
@@ -104,5 +105,6 @@ To use, attach this component to the armature of your character. It's important 
 * **Run Animation**: Define the name of the Run animation, the frame start and frame end.
 * **Jump Up Animation**: Define the name of the Jump Up animation, the frame start and frame end.
 * **Jump Down Animation**: Define the name of the Jump Down animation, the frame start and frame end. The Jump animations should be divided in two: Jump Up and Jump Down. The first one will be executed when the character is going up. The second, whe the character is falling. Both should be loop animations.
+
 .. note::
    The anim interpolation/transition between idle-walk and walk-run according to the speed is not implemented yet.
