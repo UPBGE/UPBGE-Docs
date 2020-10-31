@@ -38,7 +38,9 @@ Equal
 
 .. note::
 
-   The names of other properties can also be entered to compare properties.
+   The names of other properties can't be entered to compare properties. If you need to compare a property with another one you can use the expression controller:
+
+   .. image:: /images/Logic/property_sensor_note.png
 
 
 Example
