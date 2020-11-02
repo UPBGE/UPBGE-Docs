@@ -78,7 +78,8 @@ Button
 
    Joystick Button.
 
-Specifies the *button number* to use.
+Button
+   Buttons that are used: A/B/X/Y, Dpad Right/Left/Up/Down, Right/Left Shoulder, Right/Left Stick, Start/Guide.
 
 
 Example
