@@ -67,16 +67,15 @@ Shoulder Triggers
    Joystick Shoulder Triggers.
 
 Triggers
-   Specifies the axis (1 or 2).
+   Triggers that are used: Left/Right Shoulder Trigger.
 
 
-
-Button
-------
+Buttons
+-------
 
 .. figure:: /images/Logic/logic-sensors-types-joystick-button.png
 
-   Joystick Button.
+   Joystick Buttons.
 
 Button
    Buttons that are used: A/B/X/Y, Dpad Right/Left/Up/Down, Right/Left Shoulder, Right/Left Stick, Start/Guide.
