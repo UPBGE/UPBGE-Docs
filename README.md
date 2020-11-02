@@ -25,4 +25,5 @@ The documentation will be built in the directory **build**.
 - Jorge Bernal (lordloki)
 - mysticfall
 - Guilherme Teres Nunes (UnidayStudio)
+- Shaun Kulesa (ShaunKulesa)
 - You!
