@@ -12,7 +12,7 @@ It also detects events on a range of ancillary controls on the joystick device (
 More than one joystick may be used (see "Index").
 The exact layout of the joystick controls will depend on the make and model of joystick used.
 
-.. figure:: /images/logic-sensors-types-joystick-button.jpg
+.. figure:: /images/Logic/logic-sensors-types-joystick-button.png
 
    Joystick sensor.
 
@@ -30,64 +30,51 @@ All Events
    Sensor triggers for all events on this joystick's current type.
 
 
-Single Axis
------------
+Stick Directions
+----------------
 
-Detect movement in a single joystick Axis.
+Detect movement in a stick
 
-.. figure:: /images/logic-sensors-types-joystick-single_axis.png
+.. figure:: /images/Logic/logic-sensors-types-joystick-stick-directions.png
 
-   Joystick Single Axis.
+   Joystick Stick Directions.
 
-Axis Number
-   Axis to detect a change.
+Stick
+   Stick to detect a input: Left Stick/Right Stick.
 
-   - 1 = Horizontal axis (left/right)
-   - 2 = Vertical axis (forward/back)
-   - 3 = Paddle axis up/down
-   - 4 = Joystick axis twist left/right
-Axis Threshold
-   Threshold at which joystick fires.
+Stick Direction
+   Direction of the stick moving: Right/Left, Up/Down.
 
 
-Hat
----
+Stick Axis
+----------
 
-Detects movement of a specific hat control on the joystick.
+Detects the axis of the joystick.
 
-.. figure:: /images/logic-sensors-types-joystick-hat.png
+.. figure:: /images/Logic/logic-sensors-types-joystick-stick-axis.png
 
-   Joystick Hat.
+   Joystick Stick Axis.
 
-Hat number
-   Specifies which hat to use (max. 2).
-Hat Direction
-   Specifies the direction to use: up, down, left, right, up/right, up/left, down/right, down/left.
+Stick Axis
+   Which axis either of the sticks are moving on Left/Right Stick Horizontal, Left/Right Stick Vertical.
 
 
-Axis
-----
+Shoulder Triggers
+-----------------
 
-.. figure:: /images/logic-sensors-types-joystick-axis.jpg
+.. figure:: /images/Logic/logic-sensors-types-joystick-shoulder-triggers.png
 
-   Joystick Axis.
+   Joystick Shoulder Triggers.
 
-Axis Number
+Triggers
    Specifies the axis (1 or 2).
-Axis Threshold
-   Threshold at which joystick fires.
-Axis Direction
-   Specifies the direction to use:
 
-   - (Axis Number = 1) Joystick Left, Right, Up, Down
-   - (Axis Number = 2) Paddle upper (Left); paddle Lower (Right);
-   - Joystick twist left (Up) Joystick twist right (Down)
 
 
 Button
 ------
 
-.. figure:: /images/logic-sensors-types-joystick-button.jpg
+.. figure:: /images/Logic/logic-sensors-types-joystick-button.png
 
    Joystick Button.
 
