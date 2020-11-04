@@ -7,7 +7,7 @@ XOR Controller
    See the Python reference of this logic brick in :class:`SCA_XORController`.
 
 This controller gives a positive (``TRUE``) output when
-One (and only one) of its inputs are ``TRUE``, and
+One (and only one) of its inputs is ``TRUE``, and
 The object is in the designated State.
 For all other conditions the controller gives a negative (``FALSE``) output.
 
