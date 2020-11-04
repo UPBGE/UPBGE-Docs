@@ -109,4 +109,4 @@ Active Checkbox
    actuators.
    
 ``X`` Button
-   Deletes the sensor.
+   Deletes the controller.
