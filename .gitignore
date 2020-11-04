@@ -6,4 +6,6 @@ build
 *.includes
 *.creator
 *.user
+*.cflags
+*.cxxflags
 /source/__pycache__
