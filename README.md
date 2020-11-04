@@ -26,4 +26,5 @@ The documentation will be built in the directory **build**.
 - mysticfall
 - Guilherme Teres Nunes (UnidayStudio)
 - Shaun Kulesa (ShaunKulesa)
+- denicolas
 - You!
