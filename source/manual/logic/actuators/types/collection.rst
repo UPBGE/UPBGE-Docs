@@ -1,8 +1,8 @@
 .. _bpy.types.CollectionActuator:
 
-**************
+*******************
 Collection Actuator
-**************
+*******************
 
 .. seealso::
    See the Python reference of this logic brick in :class:`KX_CollectionActuator`.
@@ -29,7 +29,7 @@ Visibility
    Resume/suspend visibility of the selected collections objects.
 
 Suspend Collection
------------
+------------------
 
 Suspends the view of the collection.
 
@@ -38,7 +38,7 @@ Suspends the view of the collection.
    Collection Suspend Collection.
 
 Resume Collection
------------
+-----------------
 
 Resumes the view of the collection.
 
@@ -47,7 +47,7 @@ Resumes the view of the collection.
    Collection Resume Collection.
 
 Add Overlay Collection
------------
+----------------------
 
 Adds a new overlay collection.
 
@@ -56,7 +56,7 @@ Adds a new overlay collection.
    Collection Add Overlay Collection.
 
 Remove Overlay Collection
------------
+-------------------------
 
 Removes the overlay collection.
 
