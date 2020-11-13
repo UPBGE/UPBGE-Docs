@@ -35,8 +35,8 @@ Constraint Type
       Used to change the weight of a constraint by selecting a new weight with 
       the *Weight* field.
    Set Influence
-      Used to change the Influence of a constraint by selecting a new weight 
-      with the *Influence* field.
+      Used to change the influence of a constraint by selecting a new influence 
+      with the *Influence* field
 
 Constraint
    Several of the *Constraint Types* need you to select a constraint to use, 
