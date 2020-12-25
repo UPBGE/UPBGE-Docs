@@ -15,7 +15,7 @@ It can be set up to only send a pulse upon a message with a specific subject.
 
    See :doc:`Message Actuator </manual/logic/actuators/types/message>` for how to send messages.
 
-.. figure:: /images/logic-sensors-types-message-node.jpg
+.. figure:: /images/Logic/logic-sensors-types-message-message.png
 
    Message Sensor.
 
