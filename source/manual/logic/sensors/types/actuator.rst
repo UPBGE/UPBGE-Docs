@@ -11,7 +11,7 @@ The *Actuator Sensor* detects when a particular actuator receives an activation 
 It sends a ``TRUE`` pulse when the specified actuator is activated.
 The sensor also sends a ``FALSE`` pulse when the specified actuator is deactivated.
 
-.. figure:: /images/Logic/logic-sensors-types-actuator-actuator.png
+.. figure:: /images/Logic/Sensors/logic-sensors-types-actuator-actuator.png
 
    Actuator sensor.
 
