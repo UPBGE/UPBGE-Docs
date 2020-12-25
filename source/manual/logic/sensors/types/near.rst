@@ -21,7 +21,7 @@ like the :doc:`Collision sensor </manual/logic/sensors/types/collision>`.
    The *Near* sensor cannot detect soft bodies.
    This is a limitation in Bullet, the physics library used by the Game Engine.
 
-.. figure:: /images/logic-sensors-types-near-node.png
+.. figure:: /images/Logic/logic-sensors-types-near-near.png
 
    Near sensor.
 
