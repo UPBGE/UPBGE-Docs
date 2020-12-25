@@ -16,7 +16,7 @@ Leave blank for collision detection with any object.
    The *Collision* sensor cannot detect collisions with soft bodies.
    This is a limitation in Bullet, the physics library used by the Game Engine.
 
-.. figure:: /images/logic/logic-sensors-types-collision-collision.png
+.. figure:: /images/logic/Sensors/logic-sensors-types-collision-collision.png
 
    Collision sensor.
 
