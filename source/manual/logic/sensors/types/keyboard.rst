@@ -12,7 +12,7 @@ Keyboard Sensor
 The *Keyboard* sensor is for detecting keyboard input.
 It can also save keyboard input to a :ref:`String property <game-engine-property-types>`.
 
-.. figure:: /images/Logic/logic-sensors-types-actuator-actuator.png
+.. figure:: /images/Logic/logic-sensors-types-keyboard-keyboard.png
 
    Keyboard sensor.
 
