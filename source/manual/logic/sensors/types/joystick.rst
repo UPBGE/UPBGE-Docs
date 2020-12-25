@@ -12,7 +12,7 @@ It also detects events on a range of ancillary controls on the joystick device (
 More than one joystick may be used (see "Index").
 The exact layout of the joystick controls will depend on the make and model of joystick used.
 
-.. figure:: /images/Logic/logic-sensors-types-joystick-button.png
+.. figure:: /images/Logic/Sensors/logic-sensors-types-joystick-button.png
 
    Joystick sensor.
 
@@ -35,7 +35,7 @@ Stick Directions
 
 Detect movement in a stick
 
-.. figure:: /images/Logic/logic-sensors-types-joystick-stick-directions.png
+.. figure:: /images/Logic/Sensors/logic-sensors-types-joystick-stick-directions.png
 
    Joystick Stick Directions.
 
@@ -51,7 +51,7 @@ Stick Axis
 
 Detects the axis of the joystick.
 
-.. figure:: /images/Logic/logic-sensors-types-joystick-stick-axis.png
+.. figure:: /images/Logic/Sensors/logic-sensors-types-joystick-stick-axis.png
 
    Joystick Stick Axis.
 
@@ -62,7 +62,7 @@ Stick Axis
 Shoulder Triggers
 -----------------
 
-.. figure:: /images/Logic/logic-sensors-types-joystick-shoulder-triggers.png
+.. figure:: /images/Logic/Sensors/logic-sensors-types-joystick-shoulder-triggers.png
 
    Joystick Shoulder Triggers.
 
@@ -73,7 +73,7 @@ Triggers
 Buttons
 -------
 
-.. figure:: /images/Logic/logic-sensors-types-joystick-button.png
+.. figure:: /images/Logic/Sensors/logic-sensors-types-joystick-button.png
 
    Joystick Buttons.
 
