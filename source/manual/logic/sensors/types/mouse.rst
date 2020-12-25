@@ -38,6 +38,14 @@ Middle button
    Gives a ``TRUE`` pulse.
 Left button
    Gives a ``TRUE`` pulse.
+Button 4 
+   Gives a ``TRUE`` pulse.
+Button 5
+   Gives a ``TRUE`` pulse.
+Button 6
+   Gives a ``TRUE`` pulse.
+Button 7
+   Gives a ``TRUE`` pulse.
 
 .. note::
 
