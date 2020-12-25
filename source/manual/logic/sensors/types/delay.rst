@@ -10,7 +10,7 @@ Delay Sensor
 The *Delay Sensor* is designed for delaying reactions a number of logic ticks.
 This is useful if an other action has to be done first or to time events.
 
-.. figure:: /images/logic-sensors-types-delay-node.jpg
+.. figure:: /images/Logic/logic-sensors-types-delay-delay.png
 
    Delay sensor.
 
