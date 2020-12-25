@@ -9,7 +9,7 @@ Mouse Sensor
 
 The *Mouse Sensor* detects mouse events.
 
-.. figure:: /images/logic-sensors-types-mouse-node.jpg
+.. figure:: /images/Logic/logic-sensors-types-mouse-mouse.png
 
    Mouse sensor.
 
