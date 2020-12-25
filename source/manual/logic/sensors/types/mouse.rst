@@ -33,19 +33,19 @@ Wheel Down
 Wheel Up
    Causes a stream of ``TRUE`` pulses as the scroll wheel of the mouse moves up.
 Right button
-   Gives a TRUE pulse when right mouse button is pressed.
+   Gives a ``TRUE`` pulse when right mouse button is pressed.
 Middle button
-   Gives a TRUE pulse when middle mouse button is pressed.
+   Gives a ``TRUE`` pulse when middle mouse button is pressed.
 Left button
-   Gives a TRUE pulse when left mouse button is pressed.
+   Gives a ``TRUE`` pulse when left mouse button is pressed.
 Button 4 
-   Gives a TRUE pulse when 4th mouse button is pressed.
+   Gives a ``TRUE`` pulse when 4th mouse button is pressed.
 Button 5
-   Gives a TRUE pulse when 5th mouse button is pressed.
+   Gives a ``TRUE`` pulse when 5th mouse button is pressed.
 Button 6
-   Gives a TRUE pulse when 6th mouse button is pressed.
+   Gives a ``TRUE`` pulse when 6th mouse button is pressed.
 Button 7
-   Gives a TRUE pulse when 7th mouse button is pressed.
+   Gives a ``TRUE`` pulse when 7th mouse button is pressed.
 
 .. note::
 
