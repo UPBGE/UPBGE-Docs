@@ -22,7 +22,7 @@ This sensor is useful for giving bots sight only in front of them, for example.
    #. The Radar sensor can detect objects "through" other objects (walls, etc.).
    #. Objects must have "Actor" enabled to be detected.
 
-.. figure:: /images/Logic/logic-sensors-types-radar-radar.png
+.. figure:: /images/Logic/Sensors/logic-sensors-types-radar-radar.png
 
    Radar sensor.
 
