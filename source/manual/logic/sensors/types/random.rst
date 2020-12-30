@@ -9,7 +9,7 @@ Random Sensor
 
 The *Random Sensor* generates random pulses.
 
-.. figure:: /images/Logic/logic-sensors-types-random-random.png
+.. figure:: /images/Logic/Sensors/logic-sensors-types-random-random.png
    Random sensor.
 
 
