@@ -89,11 +89,11 @@ became indepent with the Blender Foundation's announcement of BGE's removal and 
 the UPBGE's developers (former BGE developers) have freedom to change and add features that could not be changed before (because the possibility of 
 an official Blender merge, now discarded).
 
-Basically, due to its periodic synchronization with Blender source code (almost diary), UPBGE, as its acronym suggests, has become a Blender from a parallel universe 
+Basically, due to its periodic synchronization with Blender source code (almost daily), UPBGE, as its acronym suggests, has become a Blender from a parallel universe 
 in which the game engine was never removed.
 
 In any case, UPBGE is kriptonian for "hope". Who knows if in the future that parallel universe merges with our universe and we may add another line entitled "Justice League" 
-to this beatiful story :-).
+to this beautiful story :-).
 
 Of course, software exists to serve the users - that's you. Every time a Blender and/or UPBGE user creates a piece of artwork, it justifies, even if just a little, 
 the enormous amount of time that went into creating the software. We hope that by picking up this manual, you are on your way to creating something 
