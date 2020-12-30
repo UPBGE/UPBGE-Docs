@@ -6,6 +6,8 @@ Welcome to the official repository of UPBGE's Manual and Python API. UPBGE's sou
 
 You can contribute by opening an issue asking for a topic to be included in the documentation, or by opening a pull request with the desired changes.
 
+Once commited a build is automatically generated and the new changes pushed to [https://upbge.org/manual](https://upbge.org/manual/) directly.
+
 ## Requirements
 To build this documentation, it's required:
 - [Python 3](https://www.python.org/)
@@ -23,7 +25,7 @@ The documentation will be built in the directory **build**.
 - Tristan Porteries (panzergame)
 - Youle31
 - Jorge Bernal (lordloki)
-- mysticfall
+- Xavier Cho (mysticfall)
 - Guilherme Teres Nunes (UnidayStudio)
 - Shaun Kulesa (ShaunKulesa)
 - denicolas
