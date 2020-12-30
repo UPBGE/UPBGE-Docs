@@ -10,7 +10,7 @@ Ray Sensor
 The *Ray Sensor* shoots a ray in the direction of an axis and sends a positive pulse once 
 it hits something. It can be filtered to only detect objects with a given material or property.
 
-.. figure:: /images/Logic/Sensorslogic-sensors-types-ray-ray.png
+.. figure:: /images/Logic/Sensors/logic-sensors-types-ray-ray.png
 
    Ray sensor.
 
