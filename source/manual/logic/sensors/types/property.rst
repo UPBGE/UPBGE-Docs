@@ -11,7 +11,7 @@ Property Sensor
 
 The *Property Sensor* detects changes in the properties of its owner object.
 
-.. figure:: /images/Logic/logic-sensors-types-property-property.png
+.. figure:: /images/Logic/Sensors/logic-sensors-types-property-property.png
 
    Property sensor.
 
