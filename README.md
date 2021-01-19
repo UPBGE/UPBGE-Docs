@@ -29,4 +29,5 @@ The documentation will be built in the directory **build**.
 - Guilherme Teres Nunes (UnidayStudio)
 - Shaun Kulesa (ShaunKulesa)
 - denicolas
+- marechal-p (wkk)
 - You!
