@@ -26,10 +26,10 @@ A Python controller is basically a logic brick that you can program using Python
 
 If you look at how a controller usually behaves, they do pretty simple things:
 
-AND Controller: When all connected sensors are positive, activate all connected actuators.
-OR Controller: When one of the connected sensors is positive, activate all connected actuators.
-NAND Controller: When no connected sensor is positive, activate all connected actuators.
-XOR Controller: When only one of the connected sensors is positive, activate all, etc.
+- AND Controller: When all connected sensors are positive, activate all connected actuators.
+- OR Controller: When one of the connected sensors is positive, activate all connected actuators.
+- NAND Controller: When no connected sensor is positive, activate all connected actuators.
+- XOR Controller: When only one of the connected sensors is positive, activate all, etc.
 These are all basic logic gates, but what if you want more control?
 
 Test if a sensor is positive, and actually check some values from it?
