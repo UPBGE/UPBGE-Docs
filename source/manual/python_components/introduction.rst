@@ -71,7 +71,7 @@ The following component example moves and rotates the object when pressing the k
          self.object.applyRotation((0, 0, rotate), True)
 
 
-The property types supported are float, integer, boolean, string, set (for enumeration) and Vector 2D, 3D and 4D. 
+The standard property types supported are float, integer, boolean, string, set (for enumeration) and Vector 2D, 3D and 4D. 
 The following example show all of these property types:
 
 .. code-block:: python
@@ -98,6 +98,41 @@ The following example show all of these property types:
    def update(self):
       pass
 
+Additionally, the following data (ID) property types are supported too:
+
+.. code-block:: python
+   
+   args = OrderedDict((
+        ("key", "alleycat"),
+        ("config", "//config.json"),
+        ("Action", bpy.types.Action),
+        ("Armature", bpy.types.Armature),
+        ("Camera", bpy.types.Camera),
+        ("Collection", bpy.types.Collection),
+        ("Curve", bpy.types.Curve),
+        ("Image", bpy.types.Image),
+        ("Key", bpy.types.Key),
+        ("Library", bpy.types.Library),
+        ("Light", bpy.types.Light),
+        ("Material", bpy.types.Material),
+        ("Mesh", bpy.types.Mesh),
+        ("Movie Clip", bpy.types.MovieClip),
+        ("Node Tree", bpy.types.NodeTree),
+        ("Object", bpy.types.Object),
+        ("Particle", bpy.types.ParticleSettings),
+        ("Sound", bpy.types.Sound),
+        ("Speaker", bpy.types.Speaker),
+        ("Text", bpy.types.Text),
+        ("Texture", bpy.types.Texture),
+        ("Vector Font", bpy.types.VectorFont),
+        ("Volume", bpy.types.Volume),
+        ("World", bpy.types.World),
+    ))
+
+.. figure:: /images/Python_Components/Fig-20.png
+
+   Data (ID) Property Types supported
+   
 The optional **dispose()** function is called when the component is destroyed. It is only necessary in very specific cases.
 
 Inside of UPBGE there are several python component templates that can help us with common tasks. We will analyze them in the next subchapters.
