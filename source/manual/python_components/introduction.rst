@@ -8,7 +8,7 @@ What Is A Python Component?
 ---------------------------
 
 The idea of a component is a simple one. They are modules that can be attached to game objects. You can attach as many as you want, 
-and each one serves a specific purpose such as third person character movement with WASD. After a component has been attached to an object, 
+and each one serves a specific purpose such as third person character movement with :kbd:`WASD` keys. After a component has been attached to an object,
 it can have various exposed settings that you can edit. In the case of a third person movement component, this could be things such as 
 movement speed and turn speed.
 
