@@ -30,6 +30,7 @@ It's very simple to configure:
 * **Min Distance**: If 3D Sound is enabled, the sound will have the max volume if the listener is at this distance or minor.
 * **Max Distance**: If 3D Sound is enabled, the sound will volume down until zero when the listener reach this distance.
 * **Delete Object After End**: If enabled, the object will be deleted at the end of the sound (if Loop Sound equals to false).
+
 |
 
 Minimap Component

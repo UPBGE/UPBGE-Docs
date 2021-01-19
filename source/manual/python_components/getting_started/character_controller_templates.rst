@@ -51,6 +51,7 @@ You can configure the mouse sensibility, invert X or Y axis and enable/disable t
 * **Invert Mouse X Axis**: To invert the mouselook on the X axis.
 * **Invert Mouse Y Axis**: To invert the mouselook on the Y axis.
 * **Limit Camera Rotation**: Limits the camera rotation on the X local axis. Very useful for First Person games to avoid the camera from flip upside down.
+
 |
 
 Third Person Camera Component
@@ -80,6 +81,7 @@ You can configure the mouse sensibility, invert X or Y axis and enable/disable t
 * **Align Player Smooth**: How smooth you want the player to look at the camera direction. Zero means no smooth and one (1) means maximum smooth possible.
 
 By using this Component, you can also call some functions using python (from other components) to help you: setCameraAlign(type), setCameraPos(x,y,z), alignPlayerToView(), getCameraView(). Take a look at the implementation to see how these functions works.
+
 |
 
 Simple Animator Component
