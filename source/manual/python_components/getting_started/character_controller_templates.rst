@@ -14,7 +14,7 @@ To use, just select it from template label at script editor and you're done! You
 Character Controller Component
 ------------------------------
 
-This component will serve as a **Character Controller** for your game. With this, you can easly made an object move using W,A,S,D, run with LSHIFT and Jump with SPACE.
+This component will serve as a **Character Controller** for your game. With this, you can easly made an object move using :kbd:`W`, :kbd:`A`, :kbd:`S`, :kbd:`D`, run with :kbd:`LSHIFT` and Jump with :kbd:`SPACE`.
 You simply have to create a capsule for your character, set the physics type to "Character" and attach this Component to them. It's very simple to configure:
 
 .. figure:: /images/Python_Components/Fig-09.png
@@ -25,11 +25,11 @@ You simply have to create a capsule for your character, set the physics type to 
 * **Activate**: If you want this component running.
 * **Walk Speed**: The character's walk speed.
 * **Run Speed**: The character's run speed.
-* **Max Jumps**: The character's max jumps. Set to zero (0) if you don't want the character to jump.
+* **Max Jumps**: The character's max jumps. Set to :kbd:`0` if you don't want the character to jump.
 * **Static Jump Direction**: If you want to make your character jump in a static direction, activate "Static Jump Direction". It means that, if the player wasn't moving when he pressed Space, the character will jump up and the player will not be able to change this during the jump. The same for when he was moving when pressed Space. The jump direction will be the character direction when the player press space.
 * **Static Jump Rotation**: Exactly like the Jump Direction, but for the character rotation.
 * **Avoid Sliding**: If your character object have Collision Bounds activated, I'd recommend to enable the "Avoid Sliding" option. If so, the component will avoid the character from sliding on ramps.
-* **Smooth Character Movement**: You can make the movement gets more smooth by increasing this value (0.0 to 1.0).
+* **Smooth Character Movement**: You can make the movement gets more smooth by increasing this value (:kbd:`0.0` to :kbd:`1.0`).
 * **Make Object Invisible**: Makes the object invisible ingame (useful if you attach this component to a capsule object that have a armature inside).
 
 First Person Camera Component
@@ -39,7 +39,7 @@ This component was created to be attached to your camera and to give you a great
 
 To use, add a camera in your scene, parent it into your character capsule (you can use the Character controller Component on it), and attach this Component to the camera. Don't forgot to position the camera in a place near the "head" of your character.
 
-You can configure the mouse sensibility, invert X or Y axis and enable/disable the camera rotation limit. It's very simple to configure:
+You can configure the mouse sensibility, invert :kbd:`X` or :kbd:`Y` axis and enable/disable the camera rotation limit. It's very simple to configure:
 
 .. figure:: /images/Python_Components/Fig-10.png
    :align: left
@@ -48,9 +48,9 @@ You can configure the mouse sensibility, invert X or Y axis and enable/disable t
 
 * **Activate**: If you want this component running.
 * **Mouse Sensibility**: The mouse sensibility.
-* **Invert Mouse X Axis**: To invert the mouselook on the X axis.
-* **Invert Mouse Y Axis**: To invert the mouselook on the Y axis.
-* **Limit Camera Rotation**: Limits the camera rotation on the X local axis. Very useful for First Person games to avoid the camera from flip upside down.
+* **Invert Mouse X Axis**: To invert the mouselook on the :kbd:`X` axis.
+* **Invert Mouse Y Axis**: To invert the mouselook on the :kbd:`Y` axis.
+* **Limit Camera Rotation**: Limits the camera rotation on the :kbd:`X` local axis. Very useful for First Person games to avoid the camera from flip upside down.
 
 |
 
@@ -61,7 +61,7 @@ This component was created to be attached to your camera to give you a great thi
 
 To use, add a camera in your scene, parent it into your character capsule (you can use the Character controller Component on it), and attach this Component to the camera. And you're done! The component will do the rest for you. :)
 
-You can configure the mouse sensibility, invert X or Y axis and enable/disable the camera rotation limit. It's very simple to configure:
+You can configure the mouse sensibility, invert :kbd:`X` or :kbd:`Y` axis and enable/disable the camera rotation limit. It's very simple to configure:
 
 .. figure:: /images/Python_Components/Fig-11.png
    :align: left
@@ -70,15 +70,15 @@ You can configure the mouse sensibility, invert X or Y axis and enable/disable t
 
 * **Activate**: If you want this component running.
 * **Mouse Sensibility**: The mouse sensibility.
-* **Invert Mouse X Axis**: To invert the mouselook on the X axis.
-* **Invert Mouse Y Axis**: To invert the mouselook on the Y axis.
+* **Invert Mouse X Axis**: To invert the mouselook on the :kbd:`X` axis.
+* **Invert Mouse Y Axis**: To invert the mouselook on the :kbd:`Y` axis.
 * **Camera Height**: The height that you want your camera to be (consider height zero = the center of your character).
 * **Camera Distance**: How far from the character that you want your camera to be.
 * **Camera Crab (Side)**: You can make the camera stay on the side of your character, if you want. Just adjust this variable.
 * **Camera Collision**: If you want your camera to have collision (to prevent the camera from traversing walls).
 * **Camera Collision Property**: The property that you want your camera to avoid (if you want the camera to avoid all the objects, leave this blank).
 * **Align Player to View**: You can define when you want the player (character) to look at the camera view direction: Never, just when the player moves or always.
-* **Align Player Smooth**: How smooth you want the player to look at the camera direction. Zero means no smooth and one (1) means maximum smooth possible.
+* **Align Player Smooth**: How smooth you want the player to look at the camera direction. :kbd:`0` means no smooth and :kbd:`1` means maximum smooth possible.
 
 By using this Component, you can also call some functions using python (from other components) to help you: setCameraAlign(type), setCameraPos(x,y,z), alignPlayerToView(), getCameraView(). Take a look at the implementation to see how these functions works.
 

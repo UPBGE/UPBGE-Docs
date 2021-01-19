@@ -45,8 +45,8 @@ To configure, take a look at the values:
    Minimap component
 
 * **Camera Type**: You can choose between Perspertive or Ortographic camera.
-* **Camera Height**: Define the height that you want your minimap camera to be. If you don't want the component to modify this, just set to zero (0).
-* **Minimap Position**: The position of the center of the minimap on the screen (values goes from 0 to 1).
-* **Minimap Size**: The size of the minimap (values goes from 0 to 1).
+* **Camera Height**: Define the height that you want your minimap camera to be. If you don't want the component to modify this, just set to :kbd:`0`.
+* **Minimap Position**: The position of the center of the minimap on the screen (values goes from :kbd:`0` to :kbd:`1`).
+* **Minimap Size**: The size of the minimap (values goes from :kbd:`0` to :kbd:`1`).
 * **Follow Object**: You can define an object for the minimap to follow (like the player). Leave it empty if you don't want.
-* **Rotate on Z axis**: If you defined a Follow Object, you can also makes the minimap rotates on the Z axis according to the follow object's rotation.
+* **Rotate on Z axis**: If you defined a Follow Object, you can also makes the minimap rotates on the :kbd:`Z` axis according to the follow object's rotation.

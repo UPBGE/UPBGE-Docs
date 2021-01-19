@@ -75,7 +75,7 @@ The standard property types supported are float, integer, boolean, string, set (
 The following example show all of these property types:
 
 .. code-block:: python
-   
+
    from bge import *
    from mathutils import *
    from collections import OrderedDict
