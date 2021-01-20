@@ -28,7 +28,8 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install -y python-sphinx python-sphinx-rtd-theme python3-sphinxcontrib.youtube
+          sudo apt install -y python-sphinx python-sphinx-rtd-theme
+          sudo python -m pip install ytsphinx
       - name: Build documentation
         run: make html
 
