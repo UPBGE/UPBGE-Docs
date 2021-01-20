@@ -78,22 +78,21 @@ language = 'en'
 exclude_patterns = ['_build']
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphynx'
+pygments_style = 'sphinx'
 highlight_language = 'python3'
 
 # -- Options for HTML output -------------------------------------------------
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = []
 
 html_logo = 'images/upbge_logo.png' 
 
-html_title = "UPBGE Manual"
+html_title = 'UPBGE Manual'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "sphinx_rtd_theme"
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options
 html_theme_options = {
