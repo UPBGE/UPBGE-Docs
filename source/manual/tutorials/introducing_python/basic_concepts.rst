@@ -76,7 +76,3 @@ But fear not: Programs are meant to be written using English words, a bit like a
    owner.applyRotation([0, 0, 0.1]) # [x, y, z]
 
 Lot of comments in this code, but if you read the code word by word, usually it is pretty easy to understand what is going to happen once the Python controller will execute it!
-
-..  youtube:: WPOuad5Q5To
-    :width: 640
-    :height: 480
