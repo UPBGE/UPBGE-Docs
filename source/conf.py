@@ -39,7 +39,7 @@ needs_sphinx = '1.5'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinxcontrib.youtube',
+    'ytsphinx',
     #'vimeo',
     #'sphinx.ext.mathjax',
     #'sphinx.ext.intersphinx',
