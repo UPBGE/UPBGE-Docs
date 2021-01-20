@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 # Configuration file for the Sphinx documentation builder.
@@ -47,7 +48,7 @@ import sphinx_rtd_theme
 extensions = [
     'youtube',
     'vimeo',
-    'sphinx_rtd_theme',
+    #'sphinx_rtd_theme',
     #'sphinx.ext.mathjax',
     #'sphinx.ext.intersphinx',
     #'sphinx.ext.todo',
@@ -102,6 +103,8 @@ html_theme_options = {
         "navigation_depth": -1,
         "canonical_url": "https://upbge.org/manual",
     }
+
+extensions.append('sphinx_rtd_theme')
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
