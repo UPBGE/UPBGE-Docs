@@ -27,7 +27,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt update
           sudo python3 -m pip install --upgrade pip
           sudo python3 -m pip install Sphinx
           sudo python3 -m pip install sphinx-rtd-theme
