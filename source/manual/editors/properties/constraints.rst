@@ -74,6 +74,11 @@ Pivot Type
          
          Linear and angular limits for a given axis (of the pivot) in Blender Units and 
          degrees respectively.
+         
+      .. note::
+         The 6DOF constraint has a limitation due to it uses euler angles instead of quaternions. Basically, the rotation of Y-axis can be +/-90 degrees only, 
+         if you exceed that maximum the constrain will go haywire. A good solution to avoid issues is to modify your model in a way that the free rotation doesn't match
+         with the Y local axis of your object.
 
 Child Object
    Normally, leave this blank. You can reset it to blank by right-clicking and selecting 
