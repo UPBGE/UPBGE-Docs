@@ -26,12 +26,11 @@ Action Playback Type
       Play F-Curve once from start to end when a ``TRUE`` pulse is received.
       When the end is reached play F-Curve once from end to start when a ``TRUE`` pulse is received.
    Flipper
-      Play F-Curve once from start to end when a ``TRUE`` pulse is received.
-      (Plays backwards when a ``FALSE`` pulse is received).
+      Play F-Curve once from start to end when a ``TRUE`` pulse is received. Plays backwards when a ``FALSE`` pulse is received.
    Loop End
-      Play F-Curve continuously from end to start when a ``TRUE`` pulse is received.
-   Loop Start
       Play F-Curve continuously from start to end when a ``TRUE`` pulse is received.
+   Loop Stop
+      Play F-Curve continuously from start to end when a ``TRUE`` pulse is received. Stop when a ``FALSE`` pulse is received.
    Property
       Uses a property to define what frame is displayed.
 
