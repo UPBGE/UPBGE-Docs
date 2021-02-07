@@ -104,7 +104,7 @@ Damping
 M/P
    Trigger on another Object will be either Material (M) or Property (P).
 Property
-   Property/Material that triggers the Force Field constraint (blank for **all** Properties/Materials).
+   Property/Material that triggers the Distance Constraint (blank for **all** Properties/Materials)
 Per
    Persistence button: When on, force field constraint always looks at Property/Material;
    when off, turns itself off if it cannot find the Property/Material.
