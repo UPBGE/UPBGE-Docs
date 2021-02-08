@@ -45,9 +45,7 @@ M/P
 Property
    Property/Material that triggers the Force Field constraint (blank for **all** Properties/Materials).
 Per
-   Persistence button
-   When on, force field constraint always looks at Property/Material;
-   when off, turns itself off if it cannot find the Property/Material.
+   Persistence button: When on, force field constraint always looks at Property/Material; when off, turns itself off if it cannot find the Property/Material.
 Time
    Number of frames for which constraint remains active.
 RotDamp
@@ -106,8 +104,7 @@ M/P
 Property
    Property/Material that triggers the Distance Constraint (blank for **all** Properties/Materials)
 Per
-   Persistence button: When on, force field constraint always looks at Property/Material;
-   when off, turns itself off if it cannot find the Property/Material.
+   Persistence button: When on, Distance Constraint always looks for Property/Material; when off, turns itself off if it cannot find the Property/Material.
 Time
    Number of frames for which constraint remains active.
 Rotation Damping
