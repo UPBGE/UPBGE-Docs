@@ -33,11 +33,15 @@ Set Mass
 Disable Rigid Body
    Disables the Rigid Body state of the object, it then behaves like a Dynamic object (no rotation).
 Enable Rigid Body
-   Disables the Rigid Body state of the object -- enables rotation.
+   Enables the Rigid Body state of the object (enables rotation).
 Suspend Dynamics
    Suspends the object dynamics (object velocity).
 Restore Dynamics
    Resumes the object dynamics (object velocity).
+Suspend Physics
+   Suspends the object physics (disables object velocity and collision).
+Restore Physics
+   Resumes the object physics (enables object velocity and collision).
 
 
 Track To
