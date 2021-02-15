@@ -31,9 +31,9 @@ Provides a menu of *Dynamic Operations* to set up dynamics options for object.
 Set Mass
    Enables the user to set the mass of the current object for Physics.
 Disable Rigid Body
-   Disables the Rigid Body state of the object -- disables collision.
+   Disables the Rigid Body state of the object, it then behaves like a Dynamic object (no rotation).
 Enable Rigid Body
-   Disables the Rigid Body state of the object -- enables collision.
+   Disables the Rigid Body state of the object -- enables rotation.
 Suspend Dynamics
    Suspends the object dynamics (object velocity).
 Restore Dynamics
