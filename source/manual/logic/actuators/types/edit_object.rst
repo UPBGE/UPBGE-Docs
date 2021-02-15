@@ -56,6 +56,10 @@ Time
    Number of frames it will take to turn towards the target object.
 3D Button (toggle).
    Enable 2D (X, Y) or 3D (X, Y, Z) tracking.
+Up Axis
+   Selects the axis that should point up.
+Track Axis
+   Selects the axis that should point to the target object.
 
 
 Replace Mesh
