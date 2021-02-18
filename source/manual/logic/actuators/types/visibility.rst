@@ -5,7 +5,7 @@ Visibility Actuator
 *******************
 
 .. seealso::
-   See the Python reference of this logic brick in :class:`KX_VisibilityActuator`.
+   See the Python reference of this logic brick in :class:`SCA_VisibilityActuator`.
 
 The *Visibility Actuator* allows the user to change the visibility of objects during run-time.
 
