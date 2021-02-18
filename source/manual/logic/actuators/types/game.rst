@@ -32,7 +32,7 @@ Game
       Save a screenshot to the specified file.
       
       File
-         Path to the screenshot to save (".png" is appended to the filename).
+         Path to the screenshot to save (``.png`` is appended to the filename).
    Start Game From File
       Once the actuator is activated, the blenderplayer starts the blend-file from the path specified.
 
