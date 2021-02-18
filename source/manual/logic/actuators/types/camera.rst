@@ -5,7 +5,7 @@ Camera Actuator
 ***************
 
 .. seealso::
-   See the Python reference of this logic brick in :class:`KX_CameraActuator`.
+   See the Python reference of this logic brick in :class:`SCA_CameraActuator`.
 
 The *Camera Actuator* makes the camera follow or track an object.
 

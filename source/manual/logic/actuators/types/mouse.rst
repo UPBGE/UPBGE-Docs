@@ -5,7 +5,7 @@ Mouse Actuator
 **************
 
 .. seealso::
-   See the Python reference of this logic brick in :class:`KX_MouseActuator`.
+   See the Python reference of this logic brick in :class:`SCA_MouseActuator`.
 
 The *Mouse Actuator* allows two modes of operation,
 to show/hide the mouse cursor or to control object rotation with the mouse.

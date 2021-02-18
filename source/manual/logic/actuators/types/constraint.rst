@@ -5,7 +5,7 @@ Constraints Actuator
 ********************
 
 .. seealso::
-   See the Python reference of this logic brick in :class:`KX_ConstraintActuator`.
+   See the Python reference of this logic brick in :class:`SCA_ConstraintActuator`.
 
 The *Constraints Actuator* adds a constraint to the location or orientation of an object.
 This is useful for controlling the physics of the object in-game.

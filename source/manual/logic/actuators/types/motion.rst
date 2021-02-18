@@ -7,7 +7,7 @@ Motion Actuator
 ***************
 
 .. seealso::
-   See the Python reference of this logic brick in :class:`KX_ObjectActuator`.
+   See the Python reference of this logic brick in :class:`SCA_ObjectActuator`.
 
 The *Motion Actuator* sets an object into motion. There are two modes of operation,
 Simple or Servo, in which the object can either teleport and rotate, or dynamically move.

@@ -5,7 +5,7 @@ Steering Actuator
 *****************
 
 .. seealso::
-   See the Python reference of this logic brick in :class:`KX_SteeringActuator`.
+   See the Python reference of this logic brick in :class:`SCA_SteeringActuator`.
 
 The *Steering Actuator* provides simple pathfinding for an object by moving it towards a target object,
 with options to seek, flee, or follow a path. This actuator will not actually try to avoid obstacles
