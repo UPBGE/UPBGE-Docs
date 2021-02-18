@@ -29,7 +29,7 @@ some are special and will be described in detail later.
 
 .. figure:: /images/logic-actuators-types-filter_2d-node.png
 
-   Edit Object actuator.
+   Filter 2D actuator.
 
 
 Properties
