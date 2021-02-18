@@ -5,7 +5,7 @@ Collection Actuator
 *******************
 
 .. seealso::
-   See the Python reference of this logic brick in :class:`KX_CollectionActuator`.
+   See the Python reference of this logic brick in :class:`SCA_CollectionActuator`.
 
 The *Collection Actuator* manages the what the user can see through their view. This can be a inventory, ammunition and other UI.
 
