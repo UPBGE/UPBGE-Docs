@@ -5,7 +5,7 @@ Game Actuator
 *************
 
 .. seealso::
-   See the Python reference of this logic brick in :class:`KX_GameActuator`.
+   See the Python reference of this logic brick in :class:`SCA_GameActuator`.
 
 The *Game Actuator* handles the entire game and this way allows the user to perform
 game-specific functions, such as restart, quit, and load.
@@ -28,6 +28,11 @@ Game
       Once the actuator is activated, the blenderplayer exits the runtime.
    Restart Game
       Once the actuator is activated, the blenderplayer restarts the game (reloads from file).
+   Screenshot
+      Save a screenshot to the specified file.
+      
+      File
+         Path to the screenshot to save (".png" is appended to the filename).
    Start Game From File
       Once the actuator is activated, the blenderplayer starts the blend-file from the path specified.
 
