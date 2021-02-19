@@ -40,35 +40,31 @@ Visibility
 Look
 ----
 
-Servo control is a powerful way to achieve motion in way which mimics the movement of objects in the physical world.
-It consists in a servo controller that adjusts the force on the object in order to achieve a given speed.
+Mouse actuator for Mouse Look
 
+.. figure:: /images/logic-actuators-types-mouse-look.png
+
+   Mouse Actuator: Look.
+   
 .. note::
 
    To make Mouse Look work in a smoother way, it is necessary that the width and
    height screen resolutions, in the render window, are set with even numbers (i.e. 1920x1080).
 
-.. figure:: /images/logic-actuators-types-mouse-look.png
-
-   Mouse Actuator: Look.
-
 Use X axis, Y axis
-   Specifies the object which the actuator owner uses as a reference for movement,
-   for moving platforms for example. If empty it will use world reference.
+    X axis or/and Y axis mouse movement causes the rotation of the object.
 Sensitivity
-   The target linear velocity, in each of the three axes, which the object will try and achieve.
+   The necessary amount of rotation caused by mouse movement along the X and Y axis.
 Threshold
-   Coordinates specified are Global (gray) or Local (white).
+   Amount of movement from the mouse required before rotation is triggered.
 Min
-   Sets maximum and minimum limits for the force applied to the object.
-   If disabled (i.e. X, Y or Z buttons are gray) the force applied is unlimited.
+   The minimum angle of rotation caused by mouse movement along the X axis and Y axis in degrees.
 Max
-   Set the Proportional Coefficient. This controls the reaction
-   to differences between the actual and target linear velocity.
+   The maximum angle of rotation caused by mouse movement along the X axis and Y axis in degrees.
 Object axis X, Y, Z
-   Set the Integral Coefficient. This controls the reaction to the sum of errors so far in this move.
+   The object's 3D axis to rotate with the mouse movement.
 Local
-   Apply locally the rotation around the object axis selected.
+   Rotation caused by mouse movement along the X axis and/or Y axis is local.
 Reset
    Reset the cursor's X/Y position to the center of the screen space after calculating.
 
