@@ -38,6 +38,8 @@ Sensor name
    it needs to be unique among the selected objects.
 Pin button
    Display the sensor even when it is not linked to a visible states controller.
+|true-button||false-button| buttons
+   Move the sensor up or down over other sensors within the column.
 Checkbox button
    Sets active state of the sensor.
 ``X`` button
