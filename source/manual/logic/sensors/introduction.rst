@@ -1,9 +1,8 @@
 .. |true-button| image:: /images/Logic/Sensors/logic-sensors-common-options-icons-true.png
-   :width: 1.1em
+
 .. |false-button| image:: /images/Logic/Sensors/logic-sensors-common-options-icons-false.png
-   :width: 1.1em
+
 .. |movement-button| image:: /images/Logic/Sensors/logic-sensors-common-options-icons-movement.png
-   :width: 1.1em
 
 ************
 Introduction
