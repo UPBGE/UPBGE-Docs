@@ -57,7 +57,7 @@ Detects the axis of the joystick.
    Joystick Stick Axis.
 
 Stick Axis
-   Which axis either of the sticks are moving on Left Stick Horizontal/Vertica, Right Stick Horizontal/Vertical.
+   Which axis either of the sticks are moving on Left Stick Horizontal/Vertical, Right Stick Horizontal/Vertical.
 
 
 Shoulder Triggers
