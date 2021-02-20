@@ -4,6 +4,10 @@
 
 .. |movement-button| image:: /images/Logic/Sensors/logic-sensors-common-options-icons-movement.png
 
+.. |pin-button| image:: /images/Logic/Sensors/logic-sensors-common-options-icons-pin.png
+
+.. |down-button| image:: /images/Logic/Sensors/logic-sensors-common-options-icons-down.png
+
 ************
 Introduction
 ************
@@ -30,14 +34,14 @@ Common Options
 
 All sensors have a set of common buttons, fields and menus. They are organized as follows:
 
-Triangle button
+Triangle button |down-button|
    Collapses the sensor information to a single line (toggle).
 Sensor type menu
    Specifies the type of the sensor.
 Sensor name
    The name of the sensor. This can be selected by the user. It is used to access sensors with Python;
    it needs to be unique among the selected objects.
-Pin button
+Pin button |pin-button|
    Display the sensor even when it is not linked to a visible states controller.
 Movement buttons |movement-button|
    Move the sensor up or down over other sensors within the column.
