@@ -1,6 +1,6 @@
-.. |true-button| image:: /images/logic-sensors-common_options-icons_true.png
+.. |true-button| image:: /images/Logic/Sensors/logic-sensors-common-options-icons-true.png
    :width: 1.1em
-.. |false-button| image:: /images/logic-sensors-common_options-icons_false.png
+.. |false-button| image:: /images/Logic/Sensors/logic-sensors-common-options-icons-false.png
    :width: 1.1em
 
 ************
@@ -23,7 +23,7 @@ in the :doc:`Sensor Editing </manual/logic/sensors/editing>` page.
 Common Options
 ==============
 
-.. figure:: /images/logic-sensors-common_options-column3.jpg
+.. figure:: /images/Logic/Sensors/logic-sensors-common-options.png
 
    Common Sensor options.
 
@@ -40,7 +40,7 @@ Pin button
    Display the sensor even when it is not linked to a visible states controller.
 Checkbox button
    Sets active state of the sensor.
-X button
+``X`` button
    Deletes the sensor.
 
 .. note:: Triggers
@@ -62,12 +62,12 @@ True level triggering
 False level triggering
    If this is set, the connected controllers will be triggered as long as the sensor's state is negative.
    The sensor will trigger with the delay (see parameter: frequency) of the sensor. |false-button|
-Freq
-   Despite its name "Frequency", this parameter sets the delay between repeated triggers,
-   measured in frames (also known as logic ticks). The default value is 0 and it means no delay.
+Skip
+   This parameter sets the number of logic ticks skipped between 2 active pulses or triggers.
+   The default value is 0 and it means no logic tick is skipped.
    It is only used if at least one of the level triggering parameters are enabled.
 
-   Raising the value of *freq* is a good way for saving performance costs by avoiding
+   Raising the value of *Skip* is a good way for saving performance costs by avoiding
    to execute controllers or activate actuators more often than necessary.
 
    Examples: (assuming the default frame rate with a frequency of 60 Hz (60 frames per second)).
@@ -77,7 +77,7 @@ Freq
    :class: valign
    :widths: 10 30 15 15 15 15
 
-   * - Freq
+   * - Skip
      - Meaning
      - Frames with trigger
      - Frames without trigger
@@ -90,19 +90,19 @@ Freq
      - 1
      - 60
    * - 1
-     - The sensor triggers at one frame and waits another one until it triggers again. It results in half speed.
+     - The sensor triggers at one frame and skips another one until it triggers again. It results in half speed.
      - 1
      - 1
      - 2
      - 30
    * - 29
-     - The sensor triggers at one frame and waits 29 frames until it triggers again.
+     - The sensor triggers at one frame and skips 29 frames until it triggers again.
      - 1
      - 29
      - 30
      - 2
    * - 59
-     - The sensor triggers at one frame and waits 59 frames until it triggers again.
+     - The sensor triggers at one frame and skips 59 frames until it triggers again.
      - 1
      - 59
      - 30
