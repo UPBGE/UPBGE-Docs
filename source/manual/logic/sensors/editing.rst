@@ -3,12 +3,12 @@
 Sensor Editing
 **************
 
-.. figure:: /images/logic-sensors-editing-column.jpg
+.. figure:: /images/Logic/Sensors/logic-sensors-editing-column.png
    :width: 292px
 
    Sensor Column with a typical sensor.
 
-Blender sensors can be set up and edited in the left-hand column of the Logic Panel.
+UPBGE sensors can be set up and edited in the left-hand column of the Logic Panel.
 This page describes the general column controls,
 and also those parameters which are common to all individual sensor types.
 
@@ -20,7 +20,7 @@ all the sensors in the current Game Logic are displayed.
 Column Heading
 ==============
 
-.. figure:: /images/logic-sensors-editing-column1.png
+.. figure:: /images/Logic/Sensors/logic-sensors-editing-column1.png
    :width: 292px
 
    Sensor Column heading.
@@ -57,7 +57,7 @@ State
 Object Heading
 ==============
 
-.. figure:: /images/logic-sensors-editing-column2.png
+.. figure:: /images/Logic/Sensors/logic-sensors-editing-column2.png
    :width: 292px
 
    Sensor Object Heading.
