@@ -5,12 +5,15 @@ Radar Sensor
 ************
 
 .. seealso::
-   See the Python reference of this logic brick in :class:`KX_RadarSensor`.
+   See the Python reference of this logic brick in :class:`SCA_RadarSensor`.
 
 The *Radar Sensor* works much like the :doc:`Near sensor </manual/logic/sensors/types/near>`,
 but only within an angle from an axis, forming an invisible cone with the top in the objects'
-center and base at a distance on an axis.
+center and base at a distance on an axis. It is possible to visualize the invisible cone turning on
+the :ref:`Physics Visualization <editors-properties-render-debug>`.
 This sensor is useful for giving bots sight only in front of them, for example.
+
+.. figure:: /images/Logic/Sensors/logic-sensors-types-radar-cone-angle.png
 
 .. note:: Soft Bodies
 
@@ -19,8 +22,8 @@ This sensor is useful for giving bots sight only in front of them, for example.
 
 .. note::
 
-   #. The Radar sensor can detect objects "through" other objects (walls, etc.).
-   #. Objects must have "Actor" enabled to be detected.
+   - The Radar sensor can detect objects "through" other objects (walls, etc.).
+   - Objects must have Physics "Actor" property enabled to be detected.
 
 .. figure:: /images/Logic/Sensors/logic-sensors-types-radar-radar.png
 

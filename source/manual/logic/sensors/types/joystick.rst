@@ -8,9 +8,10 @@ Joystick Sensor
    See the Python reference of this logic brick in :class:`SCA_JoystickSensor`.
 
 The *Joystick Sensor* triggers whenever the joystick moves.
-It also detects events on a range of ancillary controls on the joystick device (hat, buttons, etc.).
-More than one joystick may be used (see "Index").
-The exact layout of the joystick controls will depend on the make and model of joystick used.
+It also detects events on a range of ancillary controls on the joystick device (shoulder triggers, buttons, etc.).
+More than one joystick may be used (see "Joystick Index").
+UPBGE maps all the joysticks against the layout of Xbox 360 game controller. This way is easier to setup the
+different movements or actions because you have to do it for one type of controller only.
 
 .. figure:: /images/Logic/Sensors/logic-sensors-types-joystick-button.png
 
@@ -24,7 +25,7 @@ See :ref:`Sensor Common Options <game-engine-logic-sensors-common-options>` for 
 
 Event Type
    A menu to select which joystick event to use, each is described later.
-Index
+Joystick Index
    Specifies which joystick to use.
 All Events
    Sensor triggers for all events on this joystick's current type.
@@ -56,7 +57,7 @@ Detects the axis of the joystick.
    Joystick Stick Axis.
 
 Stick Axis
-   Which axis either of the sticks are moving on Left/Right Stick Horizontal, Left/Right Stick Vertical.
+   Which axis either of the sticks are moving on Left Stick Horizontal/Vertica, Right Stick Horizontal/Vertical.
 
 
 Shoulder Triggers
@@ -78,7 +79,8 @@ Buttons
    Joystick Buttons.
 
 Button
-   Buttons that are used: A/B/X/Y, Dpad Right/Left/Up/Down, Right/Left Shoulder, Right/Left Stick, Start/Guide.
+   Buttons that are used: ``A``, ``B``, ``X``, ``Y``, Dpad Right/Left/Up/Down,
+   Right/Left Shoulder, Right/Left Stick, Start and Guide.
 
 
 Example

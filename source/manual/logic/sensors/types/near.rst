@@ -5,7 +5,7 @@ Near Sensor
 ***********
 
 .. seealso::
-   See the Python reference of this logic brick in :class:`KX_NearSensor`.
+   See the Python reference of this logic brick in :class:`SCA_NearSensor`.
 
 A *Near Sensor* detects objects that move to within a specific distance of themselves.
 It can filter objects with properties,
@@ -13,8 +13,8 @@ like the :doc:`Collision sensor </manual/logic/sensors/types/collision>`.
 
 .. note::
 
-   #. The Near sensor can detect objects "through" other objects (walls, etc.).
-   #. Objects must have "Actor" enabled to be detected.
+   - The Near sensor can detect objects "through" other objects (walls, etc.).
+   - Objects must have Physics "Actor" property enabled to be detected.
 
 .. note::
 

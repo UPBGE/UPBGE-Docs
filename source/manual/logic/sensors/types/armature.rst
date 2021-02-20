@@ -5,7 +5,7 @@ Armature Sensor
 ***************
 
 .. seealso::
-   See the Python reference of this logic brick in :class:`KX_ArmatureSensor`.
+   See the Python reference of this logic brick in :class:`SCA_ArmatureSensor`.
 
 The *Armature Sensor* is used to detect changes in values of an IK solver.
 
@@ -15,7 +15,7 @@ The *Armature Sensor* is used to detect changes in values of an IK solver.
 
 .. note::
 
-   The *Armature Sensor* only is available for armature objects.
+   The *Armature Sensor* is available for armature objects only.
 
 
 Properties
@@ -32,11 +32,18 @@ Test
 
    State Changed
       Any changes will invoke the sensor.
-   Lin error below/above
-      TODO.
-   Rot error below/above
-      TODO.
-
+   Lin error below
+      Any value below of the amount of residual error in Blender space unit for
+      constraints that work on position will invoke the sensor.
+   Lin error above
+      Any value above of the amount of residual error in Blender space unit for
+      constraints that work on position will invoke the sensor.
+   Rot error below
+      Any value below of the amount of residual error in radians for constraints
+      that work on orientation will invoke the sensor.
+   Rot error above
+      Any value above of the amount of residual error in radians for constraints
+      that work on orientation will invoke the sensor.
    Value
       Some tests will take a value, this value is used in the comparison when detecting changes.
 

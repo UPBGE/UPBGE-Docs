@@ -5,7 +5,7 @@ Collision Sensor
 ****************
 
 .. seealso::
-   See the Python reference of this logic brick in :class:`KX_CollisionSensor`.
+   See the Python reference of this logic brick in :class:`SCA_CollisionSensor`.
 
 A *Collision Sensor* works like a "touch sensor" but can also filter by property or material.
 Only objects with the property/material with that name will generate a positive pulse upon collision.

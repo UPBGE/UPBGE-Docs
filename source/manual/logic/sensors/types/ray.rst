@@ -5,7 +5,7 @@ Ray Sensor
 **********
 
 .. seealso::
-   See the Python reference of this logic brick in :class:`KX_RaySensor`.
+   See the Python reference of this logic brick in :class:`SCA_RaySensor`.
 
 The *Ray Sensor* shoots a ray in the direction of an axis and sends a positive pulse once 
 it hits something. It can be filtered to only detect objects with a given material or property.
@@ -25,8 +25,8 @@ Property
 
 .. note::
 
-   #. Unless the Property field is set, the Ray sensor can detect objects "through" other objects (walls, etc.).
-   #. Objects must have "Actor" enabled to be detected.
+   - Unless the Property field is set, the Ray sensor can detect objects "through" other objects (walls, etc.).
+   - Objects must have Physics "Actor" property enabled to be detected.
 
 Axis
    This menu determines the direction of the ray.

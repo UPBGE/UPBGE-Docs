@@ -43,11 +43,13 @@ Button 4
 Button 5
    Gives a ``TRUE`` pulse when 5th mouse button is pressed.
 Button 6
-   Gives a ``TRUE`` pulse when 6th mouse button is pressed.
+   Gives a ``TRUE`` pulse when 6th mouse button is pressed. This button depends in mouse
+   configuration software. It is possible that doesn't work correctly.
 Button 7
-   Gives a ``TRUE`` pulse when 7th mouse button is pressed.
+   Gives a ``TRUE`` pulse when 7th mouse button is pressed. This button depends in mouse
+   configuration software. It is possible that doesn't work correctly.
 
 .. note::
 
-   There is no logic brick for specific mouse movement and
-   reactions (such as first person camera), these have to be coded in Python.
+   There is a logic brick for specific mouse movement and
+   reactions (such as first person camera), see :ref:`Mouse Actuator <bpy.types.MouseActuator>`.
