@@ -38,7 +38,7 @@ Sensor name
    it needs to be unique among the selected objects.
 Pin button
    Display the sensor even when it is not linked to a visible states controller.
-|true-button||false-button| buttons
+Movement buttons |true-button| |false-button|
    Move the sensor up or down over other sensors within the column.
 Checkbox button
    Sets active state of the sensor.
@@ -58,12 +58,12 @@ Checkbox button
 
 The following parameters specify how the sensor triggers connected controllers:
 
-True level triggering
+True level triggering |true-button|
    If this is set, the connected controllers will be triggered as long as the sensor's state is positive.
-   The sensor will trigger with the delay (see parameter: frequency) of the sensor. |true-button|
-False level triggering
+   The sensor will trigger skipping the logic ticks (See parameter: Skip) indicated in the sensor.
+False level triggering |false-button|
    If this is set, the connected controllers will be triggered as long as the sensor's state is negative.
-   The sensor will trigger with the delay (see parameter: frequency) of the sensor. |false-button|
+   The sensor will trigger skipping the logic ticks (See parameter: Skip) indicated in the sensor.
 Skip
    This parameter sets the number of logic ticks skipped between 2 active pulses or triggers.
    The default value is 0 and it means no logic tick is skipped.
