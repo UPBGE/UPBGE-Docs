@@ -2,6 +2,8 @@
    :width: 1.1em
 .. |false-button| image:: /images/Logic/Sensors/logic-sensors-common-options-icons-false.png
    :width: 1.1em
+.. |movement-button| image:: /images/Logic/Sensors/logic-sensors-common-options-icons-movement.png
+   :width: 1.1em
 
 ************
 Introduction
@@ -38,7 +40,7 @@ Sensor name
    it needs to be unique among the selected objects.
 Pin button
    Display the sensor even when it is not linked to a visible states controller.
-Movement buttons |true-button| |false-button|
+Movement buttons |movement-button|
    Move the sensor up or down over other sensors within the column.
 Checkbox button
    Sets active state of the sensor.
