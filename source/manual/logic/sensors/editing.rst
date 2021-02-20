@@ -4,7 +4,6 @@ Sensor Editing
 **************
 
 .. figure:: /images/Logic/Sensors/logic-sensors-editing-column.png
-   :width: 292px
 
    Sensor Column with a typical sensor.
 
@@ -21,7 +20,6 @@ Column Heading
 ==============
 
 .. figure:: /images/Logic/Sensors/logic-sensors-editing-column1.png
-   :width: 292px
 
    Sensor Column heading.
 
@@ -58,7 +56,6 @@ Object Heading
 ==============
 
 .. figure:: /images/Logic/Sensors/logic-sensors-editing-column2.png
-   :width: 292px
 
    Sensor Object Heading.
 
