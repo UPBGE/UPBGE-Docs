@@ -10,8 +10,11 @@ Joystick Sensor
 The *Joystick Sensor* triggers whenever the joystick moves.
 It also detects events on a range of ancillary controls on the joystick device (shoulder triggers, buttons, etc.).
 More than one joystick may be used (see "Joystick Index").
-UPBGE maps all the joysticks against the layout of Xbox 360 game controller. This way is easier to setup the
-different movements or actions because you have to do it for one type of controller only.
+
+.. note::
+
+   UPBGE maps all the joysticks against the layout of Xbox 360 game controller. This way is easier to setup the
+   different movements or actions because you have to do it for one type of controller only.
 
 .. figure:: /images/Logic/Sensors/logic-sensors-types-joystick-button.png
 
