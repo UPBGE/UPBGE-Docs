@@ -1,12 +1,12 @@
-.. |true-button| image:: /images/Logic/logic-sensors-common-options-icons-true.png
+.. |true-button| image:: /images/Logic/logic-common-options-icons-true.png
 
-.. |false-button| image:: /images/Logic/logic-sensors-common-options-icons-false.png
+.. |false-button| image:: /images/Logic/logic-common-options-icons-false.png
 
-.. |movement-button| image:: /images/Logic/logic-sensors-common-options-icons-movement.png
+.. |movement-button| image:: /images/Logic/logic-common-options-icons-movement.png
 
-.. |pin-button| image:: /images/Logic/logic-sensors-common-options-icons-pin.png
+.. |pin-button| image:: /images/Logic/logic-common-options-icons-pin.png
 
-.. |down-button| image:: /images/Logic/logic-sensors-common-options-icons-down.png
+.. |down-button| image:: /images/Logic/logic-common-options-icons-down.png
 
 ************
 Introduction
