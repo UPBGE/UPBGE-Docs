@@ -13,7 +13,7 @@ The actuators initiate their functions when they get a positive pulse from one (
 of their controllers.
 
 The logic blocks for all types of actuator may be constructed and changed using
-the Logic Bircks Editor; details of this process are given
+the Logic Bricks Editor; details of this process are given
 in the :doc:`Actuator Editing <./editing>` page.
 
 
