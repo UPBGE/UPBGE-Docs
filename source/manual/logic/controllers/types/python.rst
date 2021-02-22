@@ -9,7 +9,7 @@ Python Controller
 
 The Python controller runs a Python script when a sensor triggers the controller.
 This Python script can interact with the scene or logic bricks through
-:doc:`Blender's API </api/bge>`.
+`Blender/UPBGE's API <https://upbge.org/api/>`__.
 
 A Python script can either run as an entire file or a single module.
 A file must be added in the Text editor, and is identified simply by its name, not its path.
@@ -30,7 +30,7 @@ The entire file can be run by setting the type to *Script* and setting the name 
 Parts of the Python Controller
 ==============================
 
-.. figure:: /images/logic-controllers-types-python-node.jpg
+.. figure:: /images/Logic/Controllers/logic-controllers-types-python-python.png
 
    Python Controller.
 
@@ -38,12 +38,12 @@ Type
    Specifies whether it is a module or entire file.
 Name
    The name of the file to be loaded.
-D (Use Debug)
+``D`` (Use Debug)
    Continuously reloads the file.
 
 See :ref:`standard controller parts <standard-controller-parts>` for descriptions of the remaining options.
 
 .. seealso:: For more information on the Python API, see:
 
-   - `The API docs <https://www.blender.org/api/blender_python_api_current/>`__.
-   - :doc:`This chapter for more Game Engine related API </api/bge>`.
+   - `Blender/UPBGE's API <https://upbge.org/api/>`__.
+   - :ref:`Python Scripting chapter <python-index>`.

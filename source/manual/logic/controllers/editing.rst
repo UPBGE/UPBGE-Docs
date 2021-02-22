@@ -16,7 +16,7 @@ Controller Editing
 
    Controller Column with a typical sensor.
 
-UPBGE controllers can be set up and edited in the central column of the Logic Panel.
+UPBGE controllers can be set up and edited in the central column of the Logic Bricks Panel.
 This page describes the general column controls,
 those parameters which are common to all individual controller types,
 and how different states for the objects in the logic system can be set up and edited.

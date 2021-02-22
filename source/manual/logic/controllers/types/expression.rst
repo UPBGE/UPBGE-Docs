@@ -7,12 +7,13 @@ Expression Controller
 .. seealso::
    See the Python reference of this logic brick in :class:`SCA_IController`.
 
-This controller evaluates a user written expression, and gives a positive (``TRUE``) output when
-The result of the expression is ``TRUE``, and
-The object is in the designated State.
+This controller evaluates a user written expression, and gives a positive (``TRUE``) output when:
+- The result of the expression is ``TRUE``, and
+- The object is in the designated State.
+
 For all other conditions the controller gives a negative (``FALSE``) output.
 
-.. figure:: /images/logic-controllers-types-expression-node.png
+.. figure:: /images/Logic/Controllers/logic-controllers-types-expression-expression.png
 
    Expression Controller.
 
@@ -118,7 +119,7 @@ hence in this case the controller sends a positive pulse to the connected actuat
 Parts of the Expression Controller
 ==================================
 
-.. figure:: /images/logic-controllers-types-expression-part.png
+.. figure:: /images/Logic/Controllers/logic-controllers-types-expression-part.png
 
    The Expression to calculate.
 

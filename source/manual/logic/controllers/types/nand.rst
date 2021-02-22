@@ -7,13 +7,11 @@ NAND Controller
    See the Python reference of this logic brick in :class:`SCA_NANDController`.
 
 This controller *activates* all connected actuators if:
-
 - The game object is in the designated state.
 - At least one connected sensor triggers the controller.
 - At least one connected sensor evaluated False.
 
 This controller *deactivates* all connected actuators if:
-
 - The game object is in the designated state.
 - At least one connected sensor triggers the controller.
 - *All* connected sensor evaluated True.
@@ -22,8 +20,7 @@ This controller *deactivates* all connected actuators if:
 Options
 =======
 
-.. figure:: /images/logic-controllers-types-nand-node.png
-   :width: 292px
+.. figure:: /images/Logic/Controllers/logic-controllers-types-nand-nand.png
 
    NAND Controller.
 
