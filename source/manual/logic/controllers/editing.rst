@@ -1,12 +1,12 @@
-.. |true-button| image:: /images/Logic/logic-sensors-common-options-icons-true.png
+.. |true-button| image:: /images/Logic/logic-common-options-icons-true.png
 
-.. |false-button| image:: /images/Logic/logic-sensors-common-options-icons-false.png
+.. |false-button| image:: /images/Logic/logic-common-options-icons-false.png
 
-.. |movement-button| image:: /images/Logic/logic-sensors-common-options-icons-movement.png
+.. |movement-button| image:: /images/Logic/logic-common-options-icons-movement.png
 
-.. |down-button| image:: /images/Logic/logic-sensors-common-options-icons-down.png
+.. |down-button| image:: /images/Logic/logic-common-options-icons-down.png
 
-.. |preference-button| image:: /images/Logic/logic-sensors-common-options-icons-preference.png
+.. |preference-button| image:: /images/Logic/logic-common-options-icons-preference.png
 
 ******************
 Controller Editing
