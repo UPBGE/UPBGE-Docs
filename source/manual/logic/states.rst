@@ -1,5 +1,4 @@
-.. |info-button| image:: /images/logic-states-icon_info.png
-   :width: 1.1em
+.. |info-button| image:: /images/Logic/logic-common-options-icons-info.png
 
 .. _logic-states:
 
@@ -43,7 +42,7 @@ and some of these actuators may switch the actor's state under appropriate condi
 Editing States
 --------------
 
-.. figure:: /images/logic-states-panel.png
+.. figure:: /images/Logic/logic-states-panel.png
 
    State Panel button.
 
@@ -58,13 +57,13 @@ is carried out using the State Panel for the object,
 which is switched on and off using the button shown. The panel is divided into two halves,
 Visible and Initial.
 
-.. figure:: /images/logic-states-panel1.png
-
-   State Panel visible.
-
 --------------
 Visible States
 --------------
+
+.. figure:: /images/Logic/logic-states-panel1.png
+
+   State Panel visible.
 
 In the Visible area, each of the 30 available states is represented by a light-gray square.
 This panel shows what logic is visible for the logic brick displayed for the object.
@@ -79,18 +78,18 @@ and squares are dark gray if these controllers are shown in the Game Logic displ
 The display of their connected sensors and actuators can also be controlled
 if the State buttons at the head of their columns are ticked.
 
-.. figure:: /images/logic-states-panel2.png
-
-   State Panel initial.
-
 -------------
 Initial State
 -------------
+
+.. figure:: /images/Logic/logic-states-panel2.png
+
+   State Panel initial.
 
 In the Initial area, each of the 30 available states is again represented by a light-gray square.
 One of these states may be clicked as the state in which the object starts when the game is run.
 
 At the right is the |info-button| button; if clicked,
-and the :menuselection:`Game --> Show Debug Properties` is clicked,
+and the :menuselection:`Render properties --> Game Debug panel --> Debug Properties checkbox` is clicked,
 the current state of the object is shown in the top left-hand corner of the display
 while the game is running.
