@@ -1,14 +1,22 @@
+.. |true-button| image:: /images/Logic/logic-sensors-common-options-icons-true.png
+
+.. |false-button| image:: /images/Logic/logic-sensors-common-options-icons-false.png
+
+.. |movement-button| image:: /images/Logic/logic-sensors-common-options-icons-movement.png
+
+.. |down-button| image:: /images/Logic/logic-sensors-common-options-icons-down.png
+
+.. |preference-button| image:: /images/Logic/logic-sensors-common-options-icons-preference.png
 
 ******************
 Controller Editing
 ******************
 
-.. figure:: /images/logic-controllers-editing-column.jpg
-   :width: 292px
+.. figure:: /images/Logic/Controllers/logic-controllers-editing-column.png
 
    Controller Column with a typical sensor.
 
-Blender controllers can be set up and edited in the central column of the Logic Panel.
+UPBGE controllers can be set up and edited in the central column of the Logic Panel.
 This page describes the general column controls,
 those parameters which are common to all individual controller types,
 and how different states for the objects in the logic system can be set up and edited.
@@ -21,7 +29,7 @@ and buttons to control which of all the controllers in the current Game Logic ar
 Column Heading
 ==============
 
-.. figure:: /images/logic-controllers-editing-column1.png
+.. figure:: /images/Logic/Controllers/logic-controllers-editing-column1.png
 
    Controller Column headings.
 
@@ -61,15 +69,17 @@ Link
 Object Heading
 ==============
 
-.. figure:: /images/logic-controllers-editing-column2.png
+.. figure:: /images/Logic/Controllers/logic-controllers-editing-column2.png
 
-.. figure:: /images/logic-controllers-editing-column4.png
+.. figure:: /images/Logic/Controllers/logic-controllers-editing-column3.png
 
 In the column list, controllers are grouped by object. By default, controllers for every 
 selected object appear in the list, but this may be modified by the column heading filters.
 
 At the head of each displayed object controller list, three entries appear:
-   *Used States Button* Shows which states are in use for the object.
+
+Triangle button |down-button|
+   Shows which states are in use for the object (toggle).
    Detailed description of the marked panel is given in :doc:`States </manual/logic/states>`.
    
 Name
@@ -77,8 +87,7 @@ Name
    
 Add Controller
    When clicked, a menu appears with the available controller types. Selecting an entry 
-   adds a new controller to the object. See 
-   :doc:`Controllers </manual/logic/controllers/index>` 
+   adds a new controller to the object. See :doc:`Controllers </manual/logic/controllers/index>`
    for a list of available controller types.
 
 Standard Controller Parts
@@ -88,7 +97,10 @@ Standard Controller Parts
 
 The controller heading is standard to every controller.
 
-.. figure:: /images/logic-controllers-editing-controller_parts.png
+.. figure:: /images/Logic/Controllers/logic-controllers-editing-column4.png
+
+Triangle button |down-button|
+   Collapses the sensor information to a single line (toggle).
 
 Controller Type menu
    Specifies the type of the controller.
@@ -97,16 +109,19 @@ Controller Name
    The name of the controller. This can be selected by the user. It is used to access 
    controllers with Python; it needs to be unique among the selected objects.
    
-State Index
-   Sets the designated state for which this controller will operate.
-   
-Preference Button
+Preference Button |preference-button|
    If on, this controller will operate before all other non-preference controllers 
    (useful for start-up scripts).
-   
-Active Checkbox
+
+Movement buttons |movement-button|
+   Move the sensor up or down over other sensors within the column.
+
+Checkbox button
    When unchecked the controller is deactivated, no pulses will be sent to the connect 
-   actuators.
+   actuators. Very useful to check different logics without unlink or delete the sensor.
    
 ``X`` Button
    Deletes the controller.
+
+Visible State
+   Sets the designated state for which this controller will operate.
