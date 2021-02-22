@@ -9,8 +9,7 @@ Camera Actuator
 
 The *Camera Actuator* makes the camera follow or track an object.
 
-.. figure:: /images/logic-actuators-types-camera-node.png
-   :width: 271px
+.. figure:: /images/Logic/Actuators/logic-actuators-types-camera-camera.png
 
    Camera Actuator.
 
@@ -30,8 +29,8 @@ Max
    Maximum distance for the camera to follow the Game Object.
 Damping
    Strength of the constraint that drives the camera behind the target.
-   The higher the parameter,
-   the quicker the camera will adjust to be inside the constrained range (of min, max and height).
+   The higher the parameter, the quicker the camera will adjust to be inside
+   the constrained range (of min, max and height).
 
 
 Example

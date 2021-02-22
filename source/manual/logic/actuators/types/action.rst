@@ -9,9 +9,9 @@ Action Actuator
 .. seealso::
    See the Python reference of this logic brick in :class:`BL_ActionActuator`.
 
-The *Action Actuator* controls animation actions, and sets the playback method.
+The *Action Actuator* controls animation actions and sets the playback method.
 
-.. figure:: /images/logic-actuators-types-action-node.png
+.. figure:: /images/Logic/Actuators/logic-actuators-types-action-action.png
 
    Action Actuator.
 
@@ -21,16 +21,16 @@ Properties
 
 Action Playback Type
    Play
-      Play F-Curve once from start to end when a ``TRUE`` pulse is received.
+      Play an action once from start to end when a ``TRUE`` pulse is received.
    Ping Pong
-      Play F-Curve once from start to end when a ``TRUE`` pulse is received.
-      When the end is reached play F-Curve once from end to start when a ``TRUE`` pulse is received.
+      Play an action once from start to end when a ``TRUE`` pulse is received.
+      When the end is reached play the action once from end to start when a ``TRUE`` pulse is received.
    Flipper
-      Play F-Curve once from start to end when a ``TRUE`` pulse is received. Plays backwards when a ``FALSE`` pulse is received.
+      Play an action once from start to end when a ``TRUE`` pulse is received. Plays backwards when a ``FALSE`` pulse is received.
    Loop End
-      Play F-Curve continuously from start to end when a ``TRUE`` pulse is received.
+      Play an action continuously from start to end when a ``TRUE`` pulse is received.
    Loop Stop
-      Play F-Curve continuously from start to end when a ``TRUE`` pulse is received. Stop when a ``FALSE`` pulse is received.
+      Play an action continuously from start to end when a ``TRUE`` pulse is received. Stop when a ``FALSE`` pulse is received.
    Property
       Uses a property to define what frame is displayed.
 
@@ -52,7 +52,7 @@ Priority
 Frame Property
    Assign the action's current frame number to this property.
 Property
-   Use this property to define the Action position. Only for Property playback type.
+   Use this property to define the action position. Only for Property playback type.
 Layer
    The animation layer to play the action on.
 Layer Weight

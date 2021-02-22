@@ -29,7 +29,8 @@ so that the necessary ones are visible and easier to reach.
 Both these can be controlled individually.
 
 
-.. rubric:: Actuators
+Actuators
+=========
 
 Show Objects
    Expands all objects.

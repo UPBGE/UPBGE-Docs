@@ -9,7 +9,7 @@ Armature Actuator
 
 The *Armature Actuator* is used to modify bone constraints.
 
-.. figure:: /images/logic-actuators-types-armature-node.png
+.. figure:: /images/Logic/Actuators/logic-actuators-types-armature-armature.png
 
    Armature Actuator.
 
