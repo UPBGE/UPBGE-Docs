@@ -41,7 +41,7 @@ Equal
    The names of other properties can't be entered to compare properties.
    If you need to compare a property with another one you can use the expression controller:
 
-   .. image:: /images/Logic/logic-sensors-types-property-note.png
+   .. image:: /images/Logic/Sensors/logic-sensors-types-property-note.png
 
 
 Example
