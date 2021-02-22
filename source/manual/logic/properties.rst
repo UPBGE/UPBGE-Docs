@@ -23,6 +23,7 @@ There are five types of properties:
 Timer
    Starts at the property value and counts upwards as long as the object exists.
    It can for example be used if you want to know how long time it takes the player to complete a level.
+
    .. note::
 
       This timer uses the simulation time (or frame time) not the real time. When we have 60 fps
