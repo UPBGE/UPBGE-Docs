@@ -10,6 +10,10 @@ Constraints Actuator
 The *Constraints Actuator* adds a constraint to the location or orientation of an object.
 This is useful for controlling the physics of the object in-game.
 
+.. figure:: /images/Logic/Actuators/logic-actuators-types-constraint-constraint.png
+
+   Constraint Actuator.
+
 
 Properties
 ==========
@@ -23,8 +27,7 @@ Force Field Constraint
 
 Create a force field buffer zone along one axis of the object.
 
-.. figure:: /images/logic-actuators-types-constraint-forcefield.png
-   :width: 271px
+.. figure:: /images/Logic/Actuators/logic-actuators-types-constraint-forcefield.png
 
    Force Field Constraint.
 
@@ -45,7 +48,8 @@ M/P
 Property
    Property/Material that triggers the Force Field constraint (blank for **all** Properties/Materials).
 Per
-   Persistence button: When on, force field constraint always looks at Property/Material; when off, turns itself off if it cannot find the Property/Material.
+   Persistence button: When on, force field constraint always looks at Property/Material;
+   when off, turns itself off if it cannot find the Property/Material.
 Time
    Number of frames for which constraint remains active.
 RotDamp
@@ -57,8 +61,7 @@ Orientation Constraint
 
 Constrain the specified axis in the Game to a specified direction in the World axis.
 
-.. figure:: /images/logic-actuators-types-constraint-orientation.png
-   :width: 271px
+.. figure:: /images/Logic/Actuators/logic-actuators-types-constraint-orientation.png
 
    Orientation Constraint.
 
@@ -81,8 +84,7 @@ Distance Constraint
 
 Maintain the distance the Game Object has to be from a surface.
 
-.. figure:: /images/logic-actuators-types-constraint-distance.jpg
-   :width: 271px
+.. figure:: /images/Logic/Actuators/logic-actuators-types-constraint-distance.png
 
    Distance Constraint.
 
@@ -104,7 +106,8 @@ M/P
 Property
    Property/Material that triggers the Distance Constraint (blank for **all** Properties/Materials)
 Per
-   Persistence button: When on, Distance Constraint always looks for Property/Material; when off, turns itself off if it cannot find the Property/Material.
+   Persistence button: When on, Distance Constraint always looks for Property/Material;
+   when off, turns itself off if it cannot find the Property/Material.
 Time
    Number of frames for which constraint remains active.
 Rotation Damping
@@ -117,17 +120,16 @@ Location Constraint
 Limit the position of the Game Object within one World Axis direction.
 To limit movement within an area or volume, use two or three constraints.
 
-.. figure:: /images/logic-actuators-types-constraint-location.png
-   :width: 271px
+.. figure:: /images/Logic/Actuators/logic-actuators-types-constraint-location.png
 
    Location Constraint.
 
 Limit
    Axis in which to apply limits (LocX, LocY, LocZ or none).
 Min
-   Minimum limit in specified axis (Blender Units).
+   Minimum limit in specified axis (in Blender Units).
 Max
-   Maximum limit in specified axis (Blender Units).
+   Maximum limit in specified axis (in Blender Units).
 Damping
    Delay (frames) of the constraint.
 

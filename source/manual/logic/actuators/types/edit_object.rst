@@ -5,12 +5,16 @@ Edit Object Actuator
 ********************
 
 .. seealso::
-   See the Python reference of this logic brick in :class:`SCA_AddObjectActuator`, :class:`SCA_DynamicActuator`, :class:`SCA_EndObjectActuator` and :class:`SCA_ReplaceMeshActuator`.
+   See the Python reference of this logic brick in :class:`SCA_AddObjectActuator`,
+   :class:`SCA_DynamicActuator`, :class:`SCA_EndObjectActuator` and :class:`SCA_ReplaceMeshActuator`.
 
 The *Edit Object Actuator* allows the user to edit settings of objects in-game.
 In example edits the object's mesh, adds objects, or destroys them.
-It can also change the mesh of an object (and soon also recreate the collision mesh).
+It can also change the mesh of an object.
 
+.. figure:: /images/Logic/Actuators/logic-actuators-types-edit_object-edit_object.png
+
+   Edit Object Actuator.
 
 Properties
 ==========
@@ -24,7 +28,7 @@ Dynamics
 
 Provides a menu of *Dynamic Operations* to set up dynamics options for object.
 
-.. figure:: /images/logic-actuators-types-edit_object-dynamics.png
+.. figure:: /images/Logic/Actuators/logic-actuators-types-edit_object-dynamics.png
 
    Edit Object: Dynamics.
 
@@ -50,7 +54,7 @@ Track To
 Makes the object "look at" another object, in 2D or 3D.
 The Y axis is considered the front of the object.
 
-.. figure:: /images/logic-actuators-types-edit_object-track_to.jpg
+.. figure:: /images/Logic/Actuators/logic-actuators-types-edit_object-track_to.png
 
    Edit Object: Track To.
 
@@ -72,7 +76,7 @@ Replace Mesh
 Replace mesh with another. Both the mesh and/or its physics can be replaced,
 together or independently.
 
-.. figure:: /images/logic-actuators-types-edit_object-replace_mesh.jpg
+.. figure:: /images/Logic/Actuators/logic-actuators-types-edit_object-replace_mesh.png
 
    Edit Object: Replace Mesh.
 
@@ -89,7 +93,7 @@ End Object
 
 Destroy the current object (note, debug properties will display error Zombie Object in console).
 
-.. figure:: /images/logic-actuators-types-edit_object-end_object.png
+.. figure:: /images/Logic/Actuators/logic-actuators-types-edit_object-end_object.png
 
    Edit Object: End Object.
 
@@ -100,7 +104,7 @@ Add Object
 Adds an object at the center of the current object.
 The object that is added needs to be on another, hidden, layer.
 
-.. figure:: /images/logic-actuators-types-edit_object-add_object.png
+.. figure:: /images/Logic/Actuators/logic-actuators-types-edit_object-add_object.png
 
    Edit Object: Add Object.
 
