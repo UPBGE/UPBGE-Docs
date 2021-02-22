@@ -7,6 +7,7 @@ NOR Controller
    See the Python reference of this logic brick in :class:`SCA_NORController`.
 
 This controller gives a positive (``TRUE``) output when:
+
 - None of its inputs is ``TRUE``, and
 - The object is in the designated State.
 

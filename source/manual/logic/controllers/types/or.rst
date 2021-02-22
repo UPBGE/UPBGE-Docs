@@ -7,6 +7,7 @@ OR Controller
    See the Python reference of this logic brick in :class:`SCA_ORController`.
 
 This controller gives a positive (``TRUE``) output when:
+
 - Any one or more of its inputs is ``TRUE``, and
 - The object is in the designated State.
 
