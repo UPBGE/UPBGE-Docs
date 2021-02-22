@@ -1,5 +1,7 @@
 .. |info-button| image:: /images/Logic/logic-common-options-icons-info.png
 
+.. |movement-button| image:: /images/Logic/logic-common-options-icons-movement.png
+
 .. _logic-properties:
 
 ==========
@@ -77,3 +79,9 @@ Information |info-button|
    All properties with debugging activated will then be presented with their object name,
    property name and value during gameplay.
    This is useful if you suspect something with your properties is causing problems.
+
+Movement buttons |movement-button|
+   Move the property up or down over other properties within the column.
+
+``X`` button
+   Deletes the property.
