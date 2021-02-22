@@ -3,11 +3,11 @@
 Actuator Editing
 ****************
 
-.. figure:: /images/logic-actuators-editing-column.png
+.. figure:: /images/Logic/Actuators/logic-actuators-editing-column.png
 
    Actuator Column with a typical actuator.
 
-Blender actuators can be set up and edited in the right-hand column of the Logic Panel.
+UPBGE actuators can be set up and edited in the right-hand column of the Logic Panel.
 This page describes the general column controls,
 and also those parameters which are common to all individual actuator types.
 
@@ -19,7 +19,7 @@ all the actuators in the current Game Logic are displayed.
 Column Heading
 ==============
 
-.. figure:: /images/logic-actuators-editing-column1.png
+.. figure:: /images/Logic/Actuators/logic-actuators-editing-column1.png
 
    Actuator Column heading.
 
@@ -55,7 +55,7 @@ State
 Object Heading
 ==============
 
-.. figure:: /images/logic-actuators-editing-column2.png
+.. figure:: /images/Logic/Actuators/logic-actuators-editing-column2.png
 
    Actuator Object heading.
 

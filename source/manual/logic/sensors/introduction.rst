@@ -46,7 +46,7 @@ Pin button |pin-button|
 Movement buttons |movement-button|
    Move the sensor up or down over other sensors within the column.
 Checkbox button
-   When unchecked the sensor is deactivated, no pulses will be sent to the connect
+   When unchecked the sensor is deactivated, no pulses will be sent to the connected
    controllers. Very useful to check different logics without unlink or delete the sensor.
 ``X`` button
    Deletes the sensor.

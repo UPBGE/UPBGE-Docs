@@ -117,8 +117,8 @@ Movement buttons |movement-button|
    Move the sensor up or down over other sensors within the column.
 
 Checkbox button
-   When unchecked the controller is deactivated, no pulses will be sent to the connect 
-   actuators. Very useful to check different logics without unlink or delete the sensor.
+   When unchecked the controller is deactivated, no pulses will be sent to the connected
+   actuators. Very useful to check different logics without unlink or delete the controller.
    
 ``X`` Button
    Deletes the controller.
