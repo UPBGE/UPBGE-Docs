@@ -12,6 +12,9 @@ Motion Actuator
 The *Motion Actuator* sets an object into motion. There are two modes of operation,
 Simple or Servo, in which the object can either teleport and rotate, or dynamically move.
 
+.. figure:: /images/Logic/Actuators/logic-actuators-types-motion-motion.png
+
+   Motion Actuator
 
 Properties
 ==========
@@ -24,7 +27,12 @@ Motion Type
    Servo Control
       Sets a target speed, and also how quickly it reaches that speed.
    Character Motion
-      TODO.
+      Sets the speed and direction the character is traveling.
+      This should be used instead of *Simple Motion* to properly move a character.
+
+      .. note::
+
+         This actuator will only work if the object physics type is set to Character.
 
 
 Simple Motion
@@ -39,7 +47,7 @@ The `Servo Control`_ actuator does not suffer from this,
 since it produces physically correct velocities,
 and leaves updating the position to the physics simulation.
 
-.. figure:: /images/logic-actuators-types-motion-simple.png
+.. figure:: /images/Logic/Actuators/logic-actuators-types-motion-simple.png
 
    Motion actuator for Simple Motion.
 
@@ -50,8 +58,11 @@ Rot
    The object rotates by the specified amount,
    each time a pulse is received.
 L
-   Coordinates specified are Global (gray) or Local (white).
+   Coordinates specified are Global (deactivated) or Local (actived).
 
+.. figure:: /images/Logic/Actuators/logic-actuators-types-motion-simple1.png
+
+   Simple Motion for a dynamic object.
 
 Servo Control
 =============
@@ -60,8 +71,7 @@ The Servo Control actuator influences the velocity of a game object by applying 
 resulting in correct behavior when colliding with other objects controlled by the physics simulation.
 The amount of force necessary is determined by a `PID controller <https://en.wikipedia.org/wiki/PID_controller>`__,
 a type of controller that is often used in control systems.
-Only the positional velocity is influenced by this actuator;
-it does not control rotation at all, and it controls position only indirectly.
+This actuator controls position or rotation only indirectly.
 
 Controlling the position is not necessary in that respect; that is
 left to a player moving the object via direction-type controls
@@ -76,9 +86,9 @@ actuator setting a different target velocity.
    and to mark the object as "Actor" in the same panel.
    This actuator does not work with the Character physics type.
 
-.. figure:: /images/logic-actuators-types-motion-servo.png
+.. figure:: /images/Logic/Actuators/logic-actuators-types-motion-servo.png
 
-   Servo Control.
+   Motion actuator for Servo Control.
 
 Reference Object
    Specifies the object which the actuator uses as a reference for the velocity.
@@ -86,8 +96,11 @@ Reference Object
    instead of absolute (i.e. world-relative) velocity.
    Use this for a player object standing on a moving platform.
 
-Linear Velocity
-   The target linear velocity for the object.
+Servo Type
+   Linear Velocity
+      The target linear velocity for the object.
+   Angular Velocity
+      The target linear velocity for the object.
 L
    Determines whether the Linear Velocity specified are in Local
    (button depressed) or Global (button released) coordinates.
@@ -122,4 +135,20 @@ Derivative Coefficient
 Character Motion
 ================
 
-TODO.
+.. figure:: /images/Logic/Actuators/logic-actuators-types-motion-character.png
+
+   Motion actuator for Character Motion.
+
+Loc
+   The character moves the number of Blender units entered,
+   each time a pulse is received.
+Rot
+   The character rotates by the specified amount,
+   each time a pulse is received.
+L
+   Coordinates specified are Global (deactivated) or Local (actived).
+Add
+   The movement is incorporated to the movement performed by others character motion actuators
+   doing the movement more fluid.
+Jump
+   The character performs the jump previously configured.
