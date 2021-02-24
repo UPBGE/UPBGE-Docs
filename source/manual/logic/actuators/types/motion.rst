@@ -9,8 +9,8 @@ Motion Actuator
 .. seealso::
    See the Python reference of this logic brick in :class:`SCA_ObjectActuator`.
 
-The *Motion Actuator* sets an object into motion. There are two modes of operation,
-Simple or Servo, in which the object can either teleport and rotate, or dynamically move.
+The *Motion Actuator* sets an object into motion. There are three modes of operation, Simple, Servo and Character, 
+in which the object can either teleport and rotate, or dynamically move.
 
 .. figure:: /images/Logic/Actuators/logic-actuators-types-motion-motion.png
 
@@ -100,7 +100,7 @@ Servo Type
    Linear Velocity
       The target linear velocity for the object.
    Angular Velocity
-      The target linear velocity for the object.
+      The target angular velocity for the object.
 L
    Determines whether the Linear Velocity specified are in Local
    (button depressed) or Global (button released) coordinates.
@@ -151,4 +151,4 @@ Add
    The movement is incorporated to the movement performed by others character motion actuators
    doing the movement more fluid.
 Jump
-   The character performs the jump previously configured.
+   Make the character jump using the settings in the physics properties (Jump Force and Max Jumps).
