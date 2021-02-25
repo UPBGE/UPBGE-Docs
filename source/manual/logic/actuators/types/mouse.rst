@@ -12,6 +12,11 @@ to show/hide the mouse cursor or to control object rotation with the mouse.
 The mouse rotation is flexible enough to allow any type of mouse look
 as well as banking for flight controls.
 
+Mouse actuator for Mouse Look
+
+.. figure:: /images/Logic/Actuators/logic-actuators-types-mouse-mouse.png
+
+   Mouse Actuator
 
 Properties
 ==========
@@ -31,7 +36,9 @@ Visibility
 
 Mouse actuator for Visibility.
 
-.. figure:: /images/logic-actuators-types-mouse-visibility.png
+.. figure:: /images/Logic/Actuators/logic-actuators-types-mouse-visibility.png
+
+   Mouse Actuator: Visibility.
 
 Visibility
    Toggles the visibility of the mouse cursor.
@@ -42,7 +49,7 @@ Look
 
 Mouse actuator for Mouse Look
 
-.. figure:: /images/logic-actuators-types-mouse-look.png
+.. figure:: /images/Logic/Actuators/logic-actuators-types-mouse-look.png
 
    Mouse Actuator: Look.
    
@@ -51,7 +58,7 @@ Mouse actuator for Mouse Look
    To make Mouse Look work in a smoother way, it is necessary that the width and
    height screen resolutions, in the render window, are set with even numbers (i.e. 1920x1080).
 
-Use X axis, Y axis
+Use ``X`` axis, ``Y`` axis
     X axis or/and Y axis mouse movement causes the rotation of the object.
 Sensitivity
    The necessary amount of rotation caused by mouse movement along the X and Y axis.
@@ -61,7 +68,7 @@ Min
    The minimum angle of rotation caused by mouse movement along the X axis and Y axis in degrees.
 Max
    The maximum angle of rotation caused by mouse movement along the X axis and Y axis in degrees.
-Object axis X, Y, Z
+Object axis ``X``, ``Y``, ``Z``
    The object's 3D axis to rotate with the mouse movement.
 Local
    Rotation caused by mouse movement along the X axis and/or Y axis is local.
