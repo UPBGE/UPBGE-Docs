@@ -9,8 +9,7 @@ Parent Actuator
 
 The *Parent Actuator* enables the user to change the parent relationships of the current object.
 
-.. figure:: /images/logic-actuators-types-parent-node.jpg
-   :width: 271px
+.. figure:: /images/logic-actuators-types-parent-parent.png
 
    Parent Actuator.
 
@@ -24,6 +23,10 @@ Scene
    Set Parent
       Make this object to be current object's parent.
 
+      .. figure:: /images/logic-actuators-types-parent-remove.png
+
+         Parent Actuator: Set.
+
       Parent Object
          Name of parent object.
       Compound
@@ -33,6 +36,10 @@ Scene
 
    Remove Parent
       Remove all parents of current object.
+
+      .. figure:: /images/logic-actuators-types-parent-remove.png
+
+         Parent Actuator: Remove.
 
 
 Example
