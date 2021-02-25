@@ -12,8 +12,7 @@ Property Actuator
 The *Property Actuator* changes the value of a given property (like assigning, adding, or copying)
 once the actuator itself is activated.
 
-.. figure:: /images/logic-actuators-types-property-node.jpg
-   :width: 271px
+.. figure:: /images/Logic/Actuators/logic-actuators-types-property-property.png
 
    Property Actuator.
 
@@ -47,6 +46,10 @@ Example
 You have a character, it has a property named "hp" (hit/health points)
 to determine when he has taken enough damage to die. ``hp`` is an int with the start value of 100.
 
+.. figure:: /images/Logic/Actuators/logic-actuators-types-property-example.png
+
+   ``hp`` Property.
+
 You set up two *Collision* sensors, one for enemy bullets, and one for picking up more health.
 The first one is connected (through an *AND* controller) to an *Add Property* actuator with
 the property ``hp`` and the value -10. Every time the player is hit by an enemy bullet he loses 10 HP.
@@ -55,3 +58,7 @@ this one with the value 50. So every time the player collides with a health item
 Next you set up a *Property* sensor for an interval, greater than 100.
 This is connected (through an *AND* controller) to an *Assign Property* actuator which is set to 100.
 So if the players HP increases over 100 it is set to 100.
+
+.. figure:: /images/Logic/Actuators/logic-actuators-types-property-example1.png
+
+   Property logic.
