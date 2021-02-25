@@ -23,7 +23,7 @@ Scene
    Set Parent
       Make this object to be current object's parent.
 
-      .. figure:: /images/Logic/Actuators/logic-actuators-types-parent-remove.png
+      .. figure:: /images/Logic/Actuators/logic-actuators-types-parent-set.png
 
          Parent Actuator: Set.
 
