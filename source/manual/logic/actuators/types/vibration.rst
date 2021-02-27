@@ -13,23 +13,27 @@ The *Vibration Actuator* allows the user to control the joystick vibration durin
 
    Vibration Actuator.
 
+.. tip::
+
+   The vibration can be updated in every logic tick. This way different vibration effects
+   can be performed (sin, up/down, etc).
 
 Properties
 ==========
 
-Joy Index
-   XXX
+Joystick Index
+   Specifies in which joystick to control the vibration.
 Vibration Mode
    Play
-      XXX
+      Play the vibration for *Duration* time.
    Stop
-      XXX
+      Stop the vibration.
 Strength Low Freq
-   XXX
+   Vibration strength for the low frequency motor (usually at gamepad left).
 Strength High Freq
-   XXX
+   Vibration strength for the high frequency motor (usually at gamepad right).
 Duration
-   XXX
+   Duration (in milliseconds) of the vibration.
 
 
 Example

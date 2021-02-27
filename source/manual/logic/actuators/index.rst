@@ -36,4 +36,5 @@ Actuators Types
    types/sound.rst
    types/state.rst
    types/steering.rst
+   types/vibration.rst
    types/visibility.rst
