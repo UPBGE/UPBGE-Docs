@@ -17,8 +17,7 @@ and performing operations upon them.
    without the need for hundreds of properties. Use it well, and you benefit greatly,
    but often problems may be circumvented by Python.
 
-.. figure:: /images/logic-actuators-types-state-node.png
-   :width: 271px
+.. figure:: /images/Logic/Actuators/logic-actuators-types-state-state.png
 
    State actuator.
 

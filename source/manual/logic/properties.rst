@@ -75,7 +75,7 @@ Value field
 Information |info-button|
    Display property value in debug information. If debugging is turned on,
    the value of the property is given in the top left-hand corner of the screen while the game is running.
-   To turn debugging on, tick the *Show Debug Properties* checkbox in the *Game* menu.
+   To turn debugging on, tick the *Debug Properties* checkbox in the Game Debug panel of the Render Properties.
    All properties with debugging activated will then be presented with their object name,
    property name and value during gameplay.
    This is useful if you suspect something with your properties is causing problems.

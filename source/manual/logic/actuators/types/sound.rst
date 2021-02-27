@@ -9,9 +9,13 @@ Sound Actuator
 
 The *Sound Actuator* allows the user to play sound files in the game engine.
 
-.. figure:: /images/logic-actuators-types-sound-node.png
+.. figure:: /images/Logic/Actuators/logic-actuators-types-sound-sound.png
 
-   Sound Actuator.
+   Sound Actuator: File selection.
+
+.. figure:: /images/Logic/Actuators/logic-actuators-types-sound-sound1.png
+
+   Sound Actuator: Properties.
 
 
 Properties
@@ -45,14 +49,19 @@ Pitch
 3D Sound
 --------
 
-.. figure:: /images/logic-actuators-types-sound-cone.jpg
+.. figure:: /images/Logic/Actuators/logic-actuators-types-sound-cone.jpg
    :width: 200px
    :figwidth: 200px
 
    The cones point in the direction of the objects negative Z axis.
 
 If enabled, the sound is affected by distance, speed of the emitting object and various other things.
-The options below are only available if 3d Sound is enabled.
+The options below are only available if *3D Sound* checkbox is enabled.
+
+.. note::
+
+   The sound has to be *Mono* to can be used as a *3D Sound* in a 3D environment.
+   *Stereo* sounds have not 3D properties.
 
 .. note::
 
