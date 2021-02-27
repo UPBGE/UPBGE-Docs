@@ -33,7 +33,6 @@ Each distribution has one common property called: *Property*.
 This can be either a float, integer, or a boolean depending on the distribution type.
 
 Float Neg. Exp.
-
    .. figure:: /images/Logic/Actuators/logic-actuators-types-random-float_neg_exp.png
 
       Distribution: Float Neg. Exp.
@@ -44,7 +43,6 @@ Float Neg. Exp.
       Half-life time.
 
 Float Normal
-
    .. figure:: /images/Logic/Actuators/logic-actuators-types-random-float_normal.png
 
       Distribution: Float Normal.
@@ -57,7 +55,6 @@ Float Normal
       Standard deviation of normal distribution.
 
 Float Uniform
-
    .. figure:: /images/Logic/Actuators/logic-actuators-types-random-float_uniform.png
 
       Distribution: Float Uniform.
@@ -65,7 +62,6 @@ Float Uniform
    Random values selected uniformly between a minimum (*Min*) and maximum (*Max*) values.
 
 Float Constant
-
    .. figure:: /images/Logic/Actuators/logic-actuators-types-random-float_constant.png
 
       Distribution: Float Constant.
@@ -73,7 +69,6 @@ Float Constant
    Returns a constant value specified in the *Value* field.
 
 Int Poisson
-
    .. figure:: /images/Logic/Actuators/logic-actuators-types-random-int_poisson.png
 
       Distribution: Int Poisson.
@@ -82,7 +77,6 @@ Int Poisson
    The mean of the equation is defined by the *Mean* value.
 
 Int Uniform
-
    .. figure:: /images/Logic/Actuators/logic-actuators-types-random-int_uniform.png
 
       Distribution: Int Uniform.
@@ -90,7 +84,6 @@ Int Uniform
    Random values selected uniformly between a minimum (*Min*) and maximum (*Max*) values.
 
 Int Constant
-
    .. figure:: /images/Logic/Actuators/logic-actuators-types-random-int_constant.png
 
       Distribution: Int Constant.
@@ -98,7 +91,6 @@ Int Constant
    Returns a constant value specified by the *Value* field.
 
 Bool Bernoulli
-
    .. figure:: /images/Logic/Actuators/logic-actuators-types-random-bool_bernoulli.png
 
       Distribution: Bool Bernoulli.
@@ -108,7 +100,6 @@ Bool Bernoulli
    with specified ratio of ``TRUE`` pulses. This ratio is calculated by the *Chance* value.
 
 Bool Uniform
-
    .. figure:: /images/Logic/Actuators/logic-actuators-types-random-bool_uniform.png
 
       Distribution: Bool Uniform.
@@ -116,7 +107,6 @@ Bool Uniform
    A 50/50 chance of obtaining True/False.
 
 Bool Constant
-
    .. figure:: /images/Logic/Actuators/logic-actuators-types-random-bool_constant.png
 
       Distribution: Bool Constant.
