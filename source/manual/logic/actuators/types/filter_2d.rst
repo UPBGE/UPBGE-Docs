@@ -22,12 +22,12 @@ some are special and will be described in detail later.
 - Dilation
 - Sharpen
 - Blur
-- Motion Blur
+- Motion Blur (currently not working)
 - Remove Filter
 - Disable Filter
 - Enable Filter
 
-.. figure:: /images/logic-actuators-types-filter_2d-node.png
+.. figure:: /images/Logic/Actuators/logic-actuators-types-filter_2d-filter_2d.png
 
    Filter 2D actuator.
 
@@ -41,35 +41,13 @@ Filter 2D Type
    these are: Blur, Sharpen, Dilation, Erosion, Laplacian, Sobel, Prewitt, Gray Scale, Sepia, and Invert.
    There are however some filters that work differently from the ones above and are described separately.
 
+   .. figure:: /images/Logic/Actuators/logic-actuators-types-filter_2d-built_in_filters.png
+
+      Built-in Filters.
 Pass Number
    The pass number for the filter to use.
 
 Details of special filters are described below.
-
-
-Motion Blur
------------
-
-*Motion Blur* is a *2D Filter* that needs previous rendering information to produce motion effect on objects.
-Below you can see *Motion Blur* filter in Blender window, along with its logic bricks:
-
-.. figure:: /images/logic-actuators-types-filter_2d-motionblur_render_full.jpg
-
-   2D Filters: Motion Blur.
-
-You can enable Motion Blur filter using a *Python* controller::
-
-   from bge import render
-   render.enableMotionBlur(0.85)
-
-And disable it::
-
-   from bge import render
-   render.disableMotionBlur()
-
-.. note::
-
-   Your graphic hardware and OpenGL driver must support accumulation buffer (``glAccum`` function).
 
 
 Enable/Disable Filters
@@ -106,21 +84,19 @@ Its usage is the same as built-in filters,
 but you must select *Custom Filter* in *2D Filter* actuator,
 then write shader program into the Text Editor, and then place shader script name on actuator.
 
-.. figure:: /images/logic-actuators-types-filter_2d-custom_2d.jpg
+.. figure:: /images/Logic/Actuators/logic-actuators-types-filter_2d-custom_filter.png
 
    2D Filters: Custom Filter.
 
-Blue Sepia Example:
+FXAA Antialiasing Example:
 
-.. code-block:: glsl
+.. figure:: /images/Logic/Actuators/logic-actuators-types-filter_2d-custom_filter1.png
 
-   uniform sampler2D bgl_RenderedTexture;
-   void main(void)
-   {
-     vec4 texcolor = texture2D(bgl_RenderedTexture, gl_TexCoord[0].st);
-     float gray = dot(texcolor.rgb, vec3(0.299, 0.587, 0.114));
-     gl_FragColor = vec4(gray * vec3(0.8, 1.0, 1.2), texcolor.a);
-   }
+   Custom Filter: FXAA Antialiasing Filter.
+
+At *Text Editor* under Templates / OpenGL Shading Language there is a FXAA antialiasing filter
+that can be used as a *Custom Filter*. Once opened in the *Text Editor* can be used in
+the *2D Filter* actuator under *Custom Filter* option.
 
 
 Examples
@@ -131,10 +107,10 @@ Built-in Filters
 
 .. list-table::
 
-   * - .. figure:: /images/logic-actuators-types-filter_2d-sepia_render_full.jpg
+   * - .. figure:: /images/Logic/Actuators/logic-actuators-types-filter_2d-sepia_render_full.jpg
 
           Sepia Filter.
 
-     - .. figure:: /images/logic-actuators-types-filter_2d-sobel_render_full.jpg
+     - .. figure:: /images/Logic/Actuators/logic-actuators-types-filter_2d-sobel_render_full.jpg
 
           Sobel Filter.
