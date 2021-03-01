@@ -101,6 +101,7 @@ html_theme_options = {
         "display_version": False,
         "collapse_navigation": True,
         "navigation_depth": -1,
+        "body_max_width": "80%",
         "html_baseurl": "https://upbge.org/manual",
     }
 
