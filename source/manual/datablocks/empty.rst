@@ -1,6 +1,6 @@
 .. _datablock-empty:
 
-.. _datablock-group_instance:
+.. _datablock-collection_instance:
 
 =====
 Empty

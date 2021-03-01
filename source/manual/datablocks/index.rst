@@ -10,9 +10,9 @@ Datablocks
    
    armature.rst
    camera.rst
+   collection.rst
    empty.rst
-   group.rst
-   lamp.rst
+   light.rst
    mesh.rst
    object.rst
    text.rst

@@ -67,9 +67,10 @@ you a far more capable game-maker.
    :align: left
 
 The year 2012 marked the tenth anniversary of Blender going open source. During these 10 years of open source development, more than 150 people 
-have contributed something to the source code, totaling 50,000 contributions ("commits," in SVN techno-jargon), averaging nearly 30 commits 
-every day over the past year. Needless to say, the program has improved much over the years, and it shows no sign of slowing down. The image below 
-shows the Blender development statistics gathered from the official SVN repository including Blender trunk all its branches.
+have contributed something to the source code, totaling 50,000 contributions ("commits," in GIT techno-jargon), averaging nearly 30 commits
+every day over the past year. Needless to say, the program has improved much over the years, and it shows no sign of slowing down when it reaches almost
+to the twentyth anniversary. The image below shows the Blender development statistics gathered from the official GIT repository including Blender
+trunk all its branches.
 
 Blender vs UPBGE
 ^^^^^^^^^^^^^^^^
@@ -85,7 +86,7 @@ The **Uchronia Project Blender Game Engine** (UPBGE) is a `Blender <https://www.
 `Blender Game Engine <https://en.wikipedia.org/wiki/Blender_Game_Engine/>`__ for real-time projects, from architectural visualizations and simulations to games.
 
 Originally created by Tristan Porteries as a fork from the Blender Game Engine with the purpose to develop the Blender Game Engine in a faster way, 
-became indepent with the Blender Foundation's announcement of BGE's removal and replacement with a new Interactive Engine. With this independency, 
+became indepent with the Blender Foundation's announcement of BGE's removal when it reached to Blender 2.80. With this independency,
 the UPBGE's developers (former BGE developers) have freedom to change and add features that could not be changed before (because the possibility of 
 an official Blender merge, now discarded).
 
@@ -94,6 +95,9 @@ in which the game engine was never removed.
 
 In any case, UPBGE is kriptonian for "hope". Who knows if in the future that parallel universe merges with our universe and we may add another line entitled "Justice League" 
 to this beautiful story :-).
+
+Until that time comes, UPBGE has adopted the new physically based and state-of-the-art real-time render engine, Eevee. This way all you can do in Blender/UPBGE editor you
+can translate it to the Game Engine. A truly WYSIWYG (What You See Is What You Get) Game Engine, the strongest UPBGE feature.
 
 Of course, software exists to serve the users - that's you. Every time a Blender and/or UPBGE user creates a piece of artwork, it justifies, even if just a little, 
 the enormous amount of time that went into creating the software. We hope that by picking up this manual, you are on your way to creating something 
