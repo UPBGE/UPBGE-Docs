@@ -48,7 +48,7 @@ Adding Logic
 
 After the scene is set up, follow these steps:
 
-- Go to the :ref:`editor-logic-bricks`.
+- Go to the :ref:`bpy.types.SpaceLogicEditor`.
 - Add a :ref:`sensor-keyboard` through the dropdown menu named **Add Sensor**.
 - Add a :ref:`controller-and` through the dropdown menu named **Add Controller**.
 - Add a :ref:`actuator-motion` through the dropdown menu named **Add Actuator**.
@@ -59,7 +59,7 @@ Now we must fill some information on the bricks:
 - On the :ref:`sensor-keyboard`, click on the *Key* field and press a key to assign a key to it.
 - On the :ref:`actuator-motion`, insert the value ``-0.05`` in the field *Y* of *Loc*.
 
-The :ref:`editor-logic-bricks` should look like this:
+The :ref:`bpy.types.SpaceLogicEditor` should look like this:
 
 .. figure:: /images/tutorials-move_object-logic_editor_1.png
 
@@ -89,7 +89,7 @@ can do these conditions through the use of properties.
 To continue, perform the following steps:
 
 - In :ref:`editor-logic-properties`, add a property through **Add Game Property**, set its name to *fuel*, its type to *Integer* and its value to ``200``.
-- In :ref:`editor-logic-bricks`, add a :ref:`sensor-property`, set its evaluation type to **Greater Than**, the property to *fuel* and the value to ``0``.
+- In :ref:`bpy.types.SpaceLogicEditor`, add a :ref:`sensor-property`, set its evaluation type to **Greater Than**, the property to *fuel* and the value to ``0``.
 - Connect the :ref:`sensor-property` to the :ref:`controller-and`, along with the :ref:`sensor-keyboard`.
 
 .. figure:: /images/tutorials-move_object-logic_editor_2.png

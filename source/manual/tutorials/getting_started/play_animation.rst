@@ -37,7 +37,7 @@ have the expected result in the end.
 The Logic
 ---------
 
-Now, go to the :ref:`editor-logic-bricks` and do the following setup:
+Now, go to the :ref:`bpy.types.SpaceLogicEditor` and do the following setup:
 
 - Add two :ref:`sensor-keyboard` through the dropdown menu named **Add Sensor**.
 - Add two :ref:`controller-and` through the dropdown menu named **Add Controller**.
@@ -56,7 +56,7 @@ The setup should look somewhat like the figure below:
 
 .. figure:: /images/tutorials-play_animation-logic_editor_1.png
    
-   The :ref:`editor-logic-bricks` with the given logic set.
+   The :ref:`bpy.types.SpaceLogicEditor` with the given logic set.
 
 Now, play the game by pressing :kbd:`P` while focusing the *3D Viewport*. When you press 
 :kbd:`A` the cube should rotate, and when you press :kbd:`A` the cube should scale. When 
