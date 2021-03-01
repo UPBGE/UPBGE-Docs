@@ -27,21 +27,29 @@ Sample Games
 
 Here are some examples of games made with BGE/UPBGE.
 
-.. figure:: /images/introduction-deeper_look-screenshot_3.jpg
+.. youtube:: yRBDkQbGpdg
 
-   Screenshot from `"Engine Roar" <http://engineroargame.blogspot.com/>`__, produced with UPBGE.
+   Krum Arena by Haidme produced with BGE/UPBGE.
 
-.. figure:: /images/introduction-deeper_look-screenshot_4.jpg
+.. youtube:: ujLuhiCcwA8
 
-   Screenshot from `"Cave Miner" <https://blenderartists.org/t/bgmc22-cave-miner/679472>`__, produced with UPBGE.
+   Tomato Jones 2 by Haidme produced with BGE/UPBGE.
 
-.. figure:: /images/introduction-deeper_look-screenshot_2.jpg
+.. youtube:: SQz3O8VFdOo
 
-   Screenshot from `"Dead Cyborg" <http://www.deadcyborg.com/>`__, produced with Blender Game Engine.
+   Highlands Test by Atomic Skill produced with UPBGE 0.2.5.
 
-.. figure:: /images/introduction-deeper_look-screenshot_1.jpg
+.. youtube:: FJfmLktYi7o
 
-   Screenshot from `"Yo Frankie" <https://apricot.blender.org/>`__, produced with Blender Game Engine.
+   The Future's End by Mark Telles produced with UPBGE 0.2.5.
+
+.. youtube:: 3krdf9xRgw4
+
+   Spaceship Test by Atomic Skill produced with UPBGE 0.3 Alpha.
+
+.. youtube:: Ji9NO_gtvQU
+
+   GTA-like prototype by ThePajlok Studios produced with UPBGE 0.3 Alpha.
 
 Under The Hood
 ==============
@@ -66,9 +74,9 @@ a binary run-time to Linux, MacOS, and MS-Windows.
 There are a number of powerful libraries the UPBGE takes advantage of:
 
 - `Audaspace <https://audaspace.github.io/>`__: A sound library for control of audio. Uses OpenAL or SDL.
-- `Bullet <http://bulletphysics.org/wordpress/>`__: A physics engine featuring 3D collision detection, soft body dynamics and rigid body dynamics.
-- `Detour <http://masagroup.github.io/recastdetour/>`__: A pathfinding and spatial reasoning toolkit.
-- `Recast <http://masagroup.github.io/recastdetour/>`__: A state of the art navigation mesh construction tool set for games.
+- `Bullet <http://bulletphysics.org>`__: A physics engine featuring 3D collision detection, soft body dynamics and rigid body dynamics.
+- `Detour <https://github.com/recastnavigation/recastnavigation>`__: A pathfinding and spatial reasoning toolkit.
+- `Recast <https://github.com/recastnavigation/recastnavigation>`__: A state of the art navigation mesh construction tool set for games.
 
 Project Development Process
 ===========================
@@ -80,5 +88,5 @@ When creating a game or simulation in UPBGE, there are four essential steps:
    determine how it is invoked.
 #. Create one (or more) camera to give a frustum from which to render the scene, and 
    modify the parameters to support the environment in which the game will be displayed, 
-   such as Stereo rendering.
+   such as VR rendering.
 #. Launch the game, using the internal player or exporting a runtime to the appropriate platform.
