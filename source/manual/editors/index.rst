@@ -9,4 +9,5 @@ Editors
    
    properties/index
    logic/index
+   text/index
    
