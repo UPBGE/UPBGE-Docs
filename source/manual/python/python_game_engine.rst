@@ -97,9 +97,9 @@ We are not restricted to controlling only actuators, though. Lines 15 and 18 cha
 
 .. code-block:: python
 
-   text_obj.text = "CADABRA"
+   text_obj["Text"] = "CADABRA"
    
-   text_obj.text = "ABRA"
+   text_obj["Text"] = "ABRA"
 
 This file can be simple, but holds the essence of the game engine architecture design. Now is a good time to go over the three game engine template files that come with Blender. Go to Text Editor  Templates  GameLogic\* and spend some time studying those examples. You can also get them on the book files under \Book\Chapter7\3\_template\.
 
