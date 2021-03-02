@@ -270,9 +270,9 @@ Running Scripts
 ---------------
 
 The most notable keystroke is :kbd:`Alt-P` which makes the content of the buffer
-being parsed by the internal Python interpreter built into Blender.
-Before going on it is worth noticing that Blender comes with a fully functional Python interpreter built-in,
-and with a lots of Blender-specific modules.
+being parsed by the internal Python interpreter built into UPBGE.
+Before going on it is worth noticing that UPBGE comes with a fully functional Python interpreter built-in,
+and with a lots of Blender/UPBGE-specific modules.
 
 This execution has placed out of Game Engine only, and it is focused for development mainly.
 If you want to execute a Python script into the Game Engine checks the :doc:`Python Scripting <../../python/introduction>`.
