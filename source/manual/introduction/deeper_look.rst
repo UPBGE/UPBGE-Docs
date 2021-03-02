@@ -25,31 +25,31 @@ life with UPBGE, using its features and abilities to be extended.
 Sample Games
 ============
 
-Here are some examples of games made with BGE/UPBGE.
+Here are some examples of games made with BGE/UPBGE:
 
 .. youtube:: yRBDkQbGpdg
 
-Krum Arena by Haidme produced with BGE/UPBGE.
+``Game Name / Creator Name:`` Krum Arena by Haidme produced with BGE/UPBGE.
 
 .. youtube:: ujLuhiCcwA8
 
-Tomato Jones 2 by Haidme produced with BGE/UPBGE.
+``Game Name / Creator Name:`` Tomato Jones 2 by Haidme produced with BGE/UPBGE.
 
 .. youtube:: SQz3O8VFdOo
 
-Highlands Test by Atomic Skill produced with UPBGE 0.2.5.
+``Game Name / Creator Name:`` Highlands Test by Atomic Skill produced with UPBGE 0.2.5.
 
 .. youtube:: FJfmLktYi7o
 
-The Future's End by Mark Telles produced with UPBGE 0.2.5.
+``Game Name / Creator Name:`` The Future's End by Mark Telles produced with UPBGE 0.2.5.
 
 .. youtube:: 3krdf9xRgw4
 
-Spaceship Test by Atomic Skill produced with UPBGE 0.3 Alpha.
+``Game Name / Creator Name:`` Spaceship Test by Atomic Skill produced with UPBGE 0.3.
 
 .. youtube:: Ji9NO_gtvQU
 
-GTA-like prototype by ThePajlok Studios produced with UPBGE 0.3 Alpha.
+``Game Name / Creator Name:`` GTA-like prototype by ThePajlok Studios produced with UPBGE 0.3.
 
 Under The Hood
 ==============
