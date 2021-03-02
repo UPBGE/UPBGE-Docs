@@ -20,7 +20,7 @@ As we mentioned earlier, with a Python script you can control external devices, 
 
 In the first example, you will find a very simple case study of how to make your Python controller work. It will cover the basic behavior of receiving sensors' input in the script and triggering actuators from it.
 
-Open the file \Book\Chapter7\3\_template\abracadabra.blend.
+Open the file \Book\Chapter7\3_template\abracadabra.blend.
 
 .. figure:: /images/Chapter7/Fig07-05.png
 
@@ -39,15 +39,15 @@ Launch the game and keep the spacebar pressed. In Figure 7.5, you can see the re
    objects = scene.objects
    text_obj = objects["Text"]
    
-   sens = cont.sensors['my\_sensor']
-   act = cont.actuators['my\_actuator']
+   sens = cont.sensors['my_sensor']
+   act = cont.actuators['my_actuator']
    
    if sens.positive:
       cont.activate(act)
-      text_obj.text = "CADABRA"
+      text_obj["Text"] = "CADABRA"
    else:
       cont.deactivate(act)
-      text_obj.text = "ABRA"
+      text_obj["Text"] = "ABRA"
 
 This script is triggered from a keyboard sensor, runs from a controller in the camera object, activates an actuator in the camera itself, and changes a property in the text object. Figure 7.6 shows logic bricks for this one.
 
@@ -69,7 +69,7 @@ The first lines import the module bge and then the submodule logic. No big deal 
    cont = logic.getCurrentController()
    owner = cont.owner
 
-The following lines get more elements from the game to be used in the script: scene will give you direct access to the current scene; objects is the current list to be used later; text\_obj is one element of the objects list (accessed by its name in Blender).
+The following lines get more elements from the game to be used in the script: scene will give you direct access to the current scene; objects is the current list to be used later; text_obj is one element of the objects list (accessed by its name in Blender).
 
 .. code-block:: python
 
@@ -81,8 +81,8 @@ Remember when we said that the game engine is controller-centric? All the sensor
 
 .. code-block:: python
 
-   sens = cont.sensors['my\_sensor']
-   act = cont.actuators['my\_actuator']
+   sens = cont.sensors['my_sensor']
+   act = cont.actuators['my_actuator']
 
 In a way similar to how logic bricks work, we are going to activate the actuator if the sensor triggers positive and deactivate it otherwise. The deactivation happens in the frame after the sensor ceases to validate, for example, the key is unpressed or the mouse button is released.
 
@@ -204,7 +204,7 @@ The system will consist of one camera for the orbit mode, and one to be used for
 3D World Elements
 +++++++++++++++++
 
-Open up the file \Book\Chapter7\4\_navigation\_system\camera\_navigation.blend.
+Open up the file \Book\Chapter7\4_navigation_system\camera_navigation.blend.
 
 You will find two cameras and different empty objects in the first layer:
 
@@ -240,7 +240,7 @@ Global Initialization
 
 `camera_navigation.init_world()`
 
-There is one function that is loaded once at the beginning of the game; we call it "init world"[md]init\_world inside scripts.py. We are going to check the priority option in the Python controller to make sure this script runs on top of all the others. In this function, you will first find the global initialization. We are going to store in the global module logic all the elements we are going to reuse over the scripts. That way we don't need to get the object list every time we need a particular object. A common technique is to store the scene object as well. Therefore, for every scene, you can run a script at the beginning of the game that stores a reference to the current scene globally:
+There is one function that is loaded once at the beginning of the game; we call it *init_world* inside scripts.py. We are going to check the priority option in the Python controller to make sure this script runs on top of all the others. In this function, you will first find the global initialization. We are going to store in the global module logic all the elements we are going to reuse over the scripts. That way we don't need to get the object list every time we need a particular object. A common technique is to store the scene object as well. Therefore, for every scene, you can run a script at the beginning of the game that stores a reference to the current scene globally:
 
 .. code-block:: python
 
@@ -257,12 +257,12 @@ To store the camera information, we are first going to create a global dictionar
 
    43     G.cameras = {}
    44     # orbit camera
-   45     camera = objects["CAM\_Orbit"]
-   46     pivot = objects["ORB\_PIVOT"]
+   45     camera = objects["CAM_Orbit"]
+   46     pivot = objects["ORB_PIVOT"]
    47     G.cameras["ORB"] = [camera, {"orientation":pivot.worldOrientation}, pivot]
    48     # fly/walk camera
-   49     camera = objects["CAM\_Move"]
-   50     pivot = objects["MOVE\_PIVOT"]
+   49     camera = objects["CAM_Move"]
+   50     pivot = objects["MOVE_PIVOT"]
    52     G.cameras["MOVE"] = [camera, {"orientation":pivot.worldOrientation, "position":pivot.worldPosition}, pivot]
 
 Now that we have our objects instanced, we can set the initial values for our functions, such as the camera rotation restrictions. We don't want the cameras to look under the ground; thus, we need to manually set our limits. Although we could set those limits directly in the orbit and look functions, having all the parameters in the same part of code is easier to tweak (and slightly faster since they don't need to be reassigned every frame).
@@ -306,7 +306,7 @@ Event Management
 
 Apart from the Always sensor needed for the `camera_navigation.init_world()` function, there are two other sensors we need - a keyboard and a mouse sensor. All the interaction you will have with this navigation system will run through those functions.
 
-scripts.mouse\_move
+scripts.mouse_move
 ~~~~~~~~~~~~~~~~~~~
 
 Let's first take a look at the mouse sensor controlling system:
@@ -315,7 +315,7 @@ Let's first take a look at the mouse sensor controlling system:
 
    210 def mouse_move(cont):
    211     owner = cont.owner
-   212     sensor = cont.sensors["s\_movement"]
+   212     sensor = cont.sensors["s_movement"]
    213
    214     if sensor.positive:
    215         if G.cameras["CAM"] == "ORB":
@@ -339,7 +339,7 @@ The second event management function handles keyboard inputs. This function take
 
    110 def keyboard(cont):
    111     owner = cont.owner
-   112     sensor = cont.sensors["s\_keyboard"]
+   112     sensor = cont.sensors["s_keyboard"]
    113
    114     if sensor.positive:
    115         keylist = sensor.events
@@ -371,7 +371,7 @@ The second event management function handles keyboard inputs. This function take
 
 .. topic:: **For a World with Fewer Logic Bricks**
 
-   If you don't want to use a keyboard sensor, you can use an internal instance of the keyboard module. You can read about this in the "bge.logic API" section later in this chapter, or on the online API page: _http://www.blender.org/documentation/blender\_python\_api\_2\_66\_release/bge.logic.html#bge.logic.keyboard._
+   If you don't want to use a keyboard sensor, you can use an internal instance of the keyboard module. You can read about this in the "bge.logic API" section later in this chapter, or on the online API page: _http://www.blender.org/documentation/blender_python_api_2_66_release/bge.logic.html#bge.logic.keyboard._
 
 Internal Functions
 ******************
@@ -384,7 +384,7 @@ Internal Functions
 
 These three functions are called from the event management functions. In their lines, you can find the math responsible for the camera movement. We're calling them "internal functions" because they are the bridge between the sensors' inputs and the outputs in the game engine world.
 
-scripts.move\_camera
+scripts.move_camera
 ~~~~~~~~~~~~~~~~~~~~
 
 The function responsible for the camera movement is very simple. In the walk and fly mode, we are going to move the pivot in the desired direction (which is passed as argument). Therefore, we first need to create a vector to this course. If you are unfamiliar with vectorial math, think of vector as the direction between the origin [0, 0, 0] and the vector coordinates [X, Y, Z].
@@ -409,7 +409,7 @@ The function responsible for the camera movement is very simple. In the walk and
 
 Here the vector is the movement we need to apply to the pivot in order to get it moving. The size of the vector (MOVE) will act as intensity or speed of the movement.
 
-scripts.orbit\_camera
+scripts.orbit_camera
 ~~~~~~~~~~~~~~~~~~~~~
 
 We decided to use different methods for the walk/fly camera and the orbit one. In the orbit camera, every position on the screen corresponds to an orientation of the camera.
@@ -476,7 +476,7 @@ Now a simple operation to convert the normalized value into a value inside our h
 
 We run the same operation for the vertical coordinate of the mouse. Though you must be aware that the canvas height runs from the top (0) to the bottom (height), this is different from what we could expect (or from OpenGL coordinates, for example). In order to better understand the flipping operation (line 257), you can first comment/uncomment the code to see the difference.
 
-Next find in the .blend file the pivot empty (ORB\_PIVOT) and play with its rotation in the X axis. The rotation is demonstrated in Figure 7.11. Therefore, if we subtract our angle from 90º (__PI__/2 in radians), we get the proper angle to rotate the pivot vertically.
+Next find in the .blend file the pivot empty (ORB_PIVOT) and play with its rotation in the X axis. The rotation is demonstrated in Figure 7.11. Therefore, if we subtract our angle from 90º (__PI__/2 in radians), we get the proper angle to rotate the pivot vertically.
 
 .. code-block:: python
 
@@ -486,7 +486,7 @@ Next find in the .blend file the pivot empty (ORB\_PIVOT) and play with its rota
 
    Orbit pivot rotation
 
-scripts.look\_camera
+scripts.look_camera
 ~~~~~~~~~~~~~~~~~~~~
 
 The function to rotate the walk/fly camera is quite different from the orbit one. We don't have a direct relation between mouse coordinate and camera rotation anymore. Here we get the relative position of the cursor (from the center) and later force the mouse to be re-centered[md]to avoid continuous movement unless the mouse is moved again.
@@ -530,9 +530,9 @@ And the outcome of the functions:
    camera_navigation.look_camera
    camera_navigation.orbit_camera
 
-In the previous section, we saw how the angles and directions were calculated with Python. However, we deliberately skipped the most important part: applying it to the game engine elements. It includes activating actuators (as we do in the change\_view() function) or directly interfering in our game elements (cameras and pivots).
+In the previous section, we saw how the angles and directions were calculated with Python. However, we deliberately skipped the most important part: applying it to the game engine elements. It includes activating actuators (as we do in the change_view() function) or directly interfering in our game elements (cameras and pivots).
 
-Outcome of the functions: scripts.move\_camera, scripts.look\_camera, and scripts.orbit\_camera
+Outcome of the functions: scripts.move_camera, scripts.look_camera, and scripts.orbit_camera
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let's put the pieces together now. We already know the camera future orientation and position. Therefore, there is almost nothing left to be calculated here. Nevertheless, there are distinct ways to change the object position and orientation.
@@ -583,16 +583,16 @@ The orientation is a Python built-in variable that can be read and written direc
    262     pivot = G.cameras["ORB"][2]
    263     pivot.orientation = ori
 
-scripts.change\_view
+scripts.change_view
 ~~~~~~~~~~~~~~~~~~~~
 
-After the user presses a key (1, 2, or 3) to change the view, we call the change\_view() function to switch to the new camera (with a parameter specifying which camera to use). This function consists of two parts: first, we set the correct position and orientation for the camera and pivot; secondly, we change the current camera to the new one.
+After the user presses a key (1, 2, or 3) to change the view, we call the change_view() function to switch to the new camera (with a parameter specifying which camera to use). This function consists of two parts: first, we set the correct position and orientation for the camera and pivot; secondly, we change the current camera to the new one.
 
 .. topic:: **Decomposing the View Orientation**
 
    Keep in mind that the desired orientation (stored in the empty and accessed through the G.views dictionary) represents the new view orientation. In our system, this view orientation is the combination of the parent object (pivot) orientation with the child one (camera).
 
-Let's start simple and build up as we go. First the orbit camera: in the orbit mode the camera is stationary[md]its position never changes. All we need to do is reset the pivot orientation to its initial values. Its orientation was globally stored back in the init\_world() function. So now we can retrieve and apply it to the pivot:
+Let's start simple and build up as we go. First the orbit camera: in the orbit mode the camera is stationary[md]its position never changes. All we need to do is reset the pivot orientation to its initial values. Its orientation was globally stored back in the init_world() function. So now we can retrieve and apply it to the pivot:
 
 .. code-block:: python
 
@@ -647,21 +647,21 @@ More Python
 
 The script system shown so far handles all the interaction from the game engine sensors to the 3D world elements. Even though this covers most parts of a typical script architecture, I'd be lying if I said this is all you will be doing in your projects. Very often, you will need a script called once in a while that deals directly with the game engine data. In our case, we will have two "PySensors" to control the collision and to stick our camera to the ground while walking.
 
-We could have them both working attached to an Always sensor. However, this would not be too efficient. Since we only need them while walking and flying, they can be integrated with the Keyboard sensor pipeline. The stick\_to\_ground() function will be called after any key is pressed if the current mode is "walk":
+We could have them both working attached to an Always sensor. However, this would not be too efficient. Since we only need them while walking and flying, they can be integrated with the Keyboard sensor pipeline. The stick_to_ground() function will be called after any key is pressed if the current mode is "walk":
 
 .. code-block:: python
 
    142         if G.nav_mode == "walk" and G.walk_fly == "walk":
    143             stick_to_ground()
 
-The collision system can be used even more specifically. Inside the move\_camera() function, we will use the collision test to validate or discard our moving vector:
+The collision system can be used even more specifically. Inside the move_camera() function, we will use the collision test to validate or discard our moving vector:
 
 .. code-block:: python
 
    353         # if there is any obstacle reset the vector
    354         vector = collision_check(vector, direction)
 
-If the collision\_check() test finds any obstacle in front of the camera, it returns a null vector ([0, 0, 0]). Otherwise, it leaves the vector as it was set, which will then move the camera.
+If the collision_check() test finds any obstacle in front of the camera, it returns a null vector ([0, 0, 0]). Otherwise, it leaves the vector as it was set, which will then move the camera.
 
 The code of those functions is very particular to this project; therefore, we're not going into more detail here. (You are encouraged to take a look at the complete code in the book file, though). Nevertheless, the key point is to understand the role of those functions in the script architecture. Those scripts can complement the functionality of other functions, to rule your game in a global and direct way, or simply to tie things together.
 
@@ -899,7 +899,7 @@ The keys for both event dictionaries are the same you use with the Keyboard sens
    else: # bge.logic.KX_INPUT_NONE
       pass
     
-A sample file can be seen at \Book\Chapter7\5\_game\_keys\key\_detector\_python.blend . This shows the more Python-centric way of handling keyboard. For the classic method of using a Keyboard sensor, look further in this chapter into the "bge.events" section.
+A sample file can be seen at \Book\Chapter7\5_game_keys\key_detector_python.blend . This shows the more Python-centric way of handling keyboard. For the classic method of using a Keyboard sensor, look further in this chapter into the "bge.events" section.
 
 mouse
 *****
@@ -922,7 +922,7 @@ This is a list of all the joysticks your computer supports. That means the list 
       if joystick and joystick.connected:
          print(i, joystick.name, joystick.numAxis, joystick.activeButtons)
         
-For the complete list of all the parameters supported by the Joystick python object, visit the official API: _http://www.blender.org/documentation/blender\_python\_api\_2\_66\_release/bge.types.SCA\_JoystickSensor.html_
+For the complete list of all the parameters supported by the Joystick python object, visit the official API: _http://www.blender.org/documentation/blender_python_api_2_66_release/bge.types.SCA_JoystickSensor.html_
 
 A sample file can be found on \Book\Chapter7\joystick.blend.
 
@@ -940,7 +940,7 @@ Each one of the classes has the same anatomy. You can access instance methods an
 
 Some of the variables will only work inside the correct context. Therefore, you can't get the mouse position of a Mouse sensor if the sensor was not triggered yet. Be aware of the right context and the game type.
 
-Class KX\_GameObject
+Class KX_GameObject
 ********************
 
 If you run a print(dir (object)) inside your script, you will get a very confusing list. It includes Python internal methods, instance methods, and instance variables. Most of them are common to all objects, so we are going to talk about them first. However, lamps and cameras not only inherit all the game object methods but also extend them with specific ones.
@@ -1024,15 +1024,15 @@ We have different ways to set the visibility of an object. If your material is n
 
 All the logic bricks of an object can be accessed through those dictionaries. The name of the sensor/controller/actuator will be used as the dictionary key, for it's important to name them correctly.
 
-Sub-Class KX\_Camera
-~~~~~~~~~~~~~~~~~~~~
+Sub-Class KX_Camera
+~~~~~~~~~~~~~~~~~~~
 
 Not all the objects have access to the same methods and variables. For example, an empty object doesn't have mass, and a static object doesn't have torque.
 
 When the object is a camera, the difference is even more distinct. The camera object has its own class derived from KX_GameObject. It inherits all the instance variables and methods and expands it with its own. You will find some screen space functions (getScreenPosition(),getScreenVect(), getScreenRay()), some frustum methods (sphereInsideFrustum(), boxInsideFrustum(), pointInsideFrustum()), and some instance variables (lens, near, far, frustum_culling, world_to_camera, camera_to_world).
 
-Sub-Class KX\_Lamp
-~~~~~~~~~~~~~~~~~~
+Sub-Class KX_Lamp
+~~~~~~~~~~~~~~~~~
 
 Like cameras, lamps also have their own subclass. It inherits all the instance variables and methods, and only expands the available variables.
 
@@ -1093,7 +1093,7 @@ Get/set the material mode to use for OpenGL rendering. The available modes are:
 
 Get/set the state of a GLSL material setting. The available settings are:
 
-`"lights", "shaders", "shadows", "ramps", "nodes", "extra\_textures"`
+`"lights", "shaders", "shadows", "ramps", "nodes", "extra_textures"`
 
 Others
 ******
@@ -1119,7 +1119,7 @@ The Keyboard sensor allows you to set individual keys. As you can see in Figure 
 
 In this case, every key pressed into a Keyboard sensor, will be registered as a unique integer. Each number corresponds to a specific key, and finding them allows you to control your actions accordingly to the desired key map. In order to clarify this a bit more, try the file in /Book/Chapter7/5_game_keys\key_detector_logicbrick.blend.
 
-This file is similar to the key\_detector\_python.blend we used to demonstrate bge.logic.keyboard. However, this file is using the Keyboard sensor directly, instead of its wrapper.
+This file is similar to the key_detector_python.blend we used to demonstrate bge.logic.keyboard. However, this file is using the Keyboard sensor directly, instead of its wrapper.
 
 .. code-block:: python
 
@@ -1127,7 +1127,7 @@ This file is similar to the key\_detector\_python.blend we used to demonstrate b
    from bge import events
    cont = logic.getCurrentController()
    owner = cont.owner
-   sensor = cont.sensors["s\_keyboard"]
+   sensor = cont.sensors["s_keyboard"]
 
    if sensor.positive:
       # get the first pressed key
@@ -1181,7 +1181,7 @@ bge.texture
 
 The texture module was first discussed in the Chapter 5, "Graphics." With the texture module, you can change any texture from your game while the game is running. The texture can be replaced by a single image, a video, a game camera, and even a webcam stream.
 
-Let's look at a basic example. Please open the file: Book\Chapter7\6\_ texture\basic\_texture\_replacement.blend.
+Let's look at a basic example. Please open the file: Book\Chapter7\6_texture\basic_texture_replacement.blend.
 
 This file has a single plane with a texture we will replace with an external image. Press the spacebar to change the image and Enter to return to the original one. The script responsible for the texture switching is:
 
@@ -1291,7 +1291,7 @@ We are going to present the four available classes in this module: vector, matri
 Vector
 ******
 
-This class was already present in the KX\_GameObject class and in the script example. It behaves like a list object, with some advanced features (for example, swizzle and slicing) expanded with its instance methods. Some of those methods are: reflect, dot, cross, and normalize.
+This class was already present in the KX_GameObject class and in the script example. It behaves like a list object, with some advanced features (for example, swizzle and slicing) expanded with its instance methods. Some of those methods are: reflect, dot, cross, and normalize.
 
 A recurring problem that new Python programmers have is with list copying. If you forget to manually copy the list when assigning it to a new variable, you end up with two variables sharing the same list values forever (each of the variables becomes a pointer to the same data).
 
@@ -1299,7 +1299,7 @@ The same behavior happens with Vectors. Look at the differences:
 
 `new_vector = old_vector`
 
-if you change new\_vector you will automatically change old_vector (and vice-versa).
+if you change new_vector you will automatically change old_vector (and vice-versa).
 
 `new_vector = old_vector[:]`
 
@@ -1345,7 +1345,7 @@ Euler and quaternion are different rotation systems. The same rotation can be re
    Euler Rotations Explained: http://vimeo.com/2824431
    The Rotation Problem: http://vimeo.com/2649637
 
-   When you convert an orientation matrix to Euler (`Matrix.to_euler()`), you get a list with three angles. They represent the rotation in the x, y, z axis of the object. In the navigation system script example, we are using this exact method to determine the horizontal camera angle. You can find this usage in the function `fly_to_walk()` (lines 190 to 199 of navigation\_system.py or in the early pages of this chapter).
+   When you convert an orientation matrix to Euler (`Matrix.to_euler()`), you get a list with three angles. They represent the rotation in the x, y, z axis of the object. In the navigation system script example, we are using this exact method to determine the horizontal camera angle. You can find this usage in the function `fly_to_walk()` (lines 190 to 199 of navigation_system.py or in the early pages of this chapter).
 
    Conversion Between Different Rotation Forms
    You can convert an orientation matrix to Euler, an Euler to a quaternion, a quaternion to an orientation matrix, and on and on and on:
@@ -1371,26 +1371,26 @@ Example: Basic Audio Playback (TODO to be adapted to new API)
 .. code-block:: python
 
    import aud
-   device = aud.device()
+   device = aud.Device()
 
 ## load sound file (it can be a video file with audio)
 
 .. code-block:: python
 
-   factory = aud.Factory('music.ogg')
+   sound = aud.Sound('music.ogg')
 
 ## play the audio, this return a handle to control play/pause
 
 .. code-block:: python
 
-   handle = device.play(factory)
+   handle = device.play(sound)
 
 ## if the audio is not too big and will be used often you can buffer it
 
 .. code-block:: python
 
-   factory_buffered = aud.Factory.buffer(factory)
-   handle_buffered = device.play(buffered)
+   sound_buffered = aud.Sound.buffer(sound)
+   handle_buffered = device.play(sound_buffered)
 
 ## stop the sounds (otherwise they play until their ends)
 
@@ -1403,7 +1403,7 @@ We start by creating an audio device. This is simply a Python object you will us
 
 .. topic:: **When Will This Music Stop?**
 
-   After you initialize a sound, you can get its current position in seconds with the handle.position Python property. This is especially useful to keep videos and audio in sync. If you need to check whether or not the audio is ended, you shouldn't rely on the position, though. Instead, you can get the status of the sound by the property handle.status. If you are using the sound position to control a video playback, the sound status will also tell you if the video is over (handle.status = aud.AUD\_STATUS\_INVALID).
+   After you initialize a sound, you can get its current position in seconds with the handle.position Python property. This is especially useful to keep videos and audio in sync. If you need to check whether or not the audio is ended, you shouldn't rely on the position, though. Instead, you can get the status of the sound by the property handle.status. If you are using the sound position to control a video playback, the sound status will also tell you if the video is over (handle.status = aud.AUD_STATUS_INVALID).
    The possible statuses are:
 
 .. code-block:: python
