@@ -274,5 +274,5 @@ and with a lots of Blender/UPBGE-specific modules.
 
 .. warning::
 
-   This execution has placed out of Game Engine, and it is focused for development mainly.
-   If you want to execute a Python script into the Game Engine checks the :doc:`Python Scripting <../../python/introduction>`.
+   This script execution takes place outside Game Engine, and it is focused for development purpose only.
+   If you want to execute a Python script into the Game Engine checks the :doc:`Python Scripting <../../python/introduction>` chapter.
