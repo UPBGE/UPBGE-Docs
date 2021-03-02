@@ -106,8 +106,6 @@ Save As :kbd:`Shift-Ctrl-Alt-S`.
    to save the file along with giving the file a name / file extension.
 Register
    Registers the current text data-block as a module on loading (the text name must end with ``.py``).
-   Read more about the registration of Python modules in
-   `API documentation <https://upbge.org/api/current/info_overview.html#registration>`__.
 Live Edit
    Todo.
 Run Script :kbd:`Alt-P`
@@ -189,7 +187,7 @@ Convert Whitespace
 Template Menu
 -------------
 
-The *Text Editor* has some dedicated Python scripts, Python Components, GLSL shaders,
+The *Text Editor* has some dedicated templates for Python scripts, Python Components and GLSL shaders,
 which are useful for writing tools, like a class/function/variable browser, completion...
 
 .. figure:: /images/Editors/editors-text_editor-template_files.png
@@ -274,5 +272,7 @@ being parsed by the internal Python interpreter built into UPBGE.
 Before going on it is worth noticing that UPBGE comes with a fully functional Python interpreter built-in,
 and with a lots of Blender/UPBGE-specific modules.
 
-This execution has placed out of Game Engine only, and it is focused for development mainly.
-If you want to execute a Python script into the Game Engine checks the :doc:`Python Scripting <../../python/introduction>`.
+.. warning::
+
+   This execution has placed out of Game Engine, and it is focused for development mainly.
+   If you want to execute a Python script into the Game Engine checks the :doc:`Python Scripting <../../python/introduction>`.
