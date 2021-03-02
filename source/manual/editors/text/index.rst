@@ -49,7 +49,7 @@ Text
 Run Script (play icon)
    Executes the text as a Python script :kbd:`Alt-P`. This execution has placed out of Game Engine only,
    and it is focused for development mainly. If you want to execute a Python script into the Game Engine checks
-   the :doc:`Python Scripting <../../python/introduction>`.
+   the :doc:`Python Scripting <manual/python/introduction>` chapter.
 Show
    Toggle display options.
 
@@ -275,4 +275,4 @@ and with a lots of Blender/UPBGE-specific modules.
 .. warning::
 
    This script execution takes place outside Game Engine, and it is focused for development purpose only.
-   If you want to execute a Python script into the Game Engine checks the :doc:`Python Scripting <../../python/introduction>` chapter.
+   If you want to execute a Python script into the Game Engine checks the :doc:`Python Scripting <manual/python/introduction>` chapter.
