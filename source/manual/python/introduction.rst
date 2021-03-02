@@ -213,18 +213,16 @@ very flexible: they can be declared on the fly when you first use them; you can 
 
 .. code-block:: python
 
-   for i in range(10): exec("var\_%d = %d" % (i,i))
+   for i in range(10): 
+      exec("var_%d = %d" % (i,i))
 
 This snip of code is the equivalent to the following:
 
 .. code-block:: python
 
+   var_0 = 0
    var_1 = 1
-
-   var_2 = 3
-
-   var_3 = 3
-
+   var_2 = 2
    (...)
 
 As you can see, the variable names are created at runtime. Therefore, if you name your objects correctly in the Blender file, you can store them in 
@@ -236,7 +234,7 @@ variables named after them. The following code snip assigns the scene objects (r
 
    for object in scene.objects:
 
-      exec("%s = \"object\" " % (object.name))
+      exec("%s = object" % (object.name))
 
 Although we have flexible data types, we must respect variable types while manipulating and passing/returning them to functions. Here you can see a list 
 of the data types you will find in the Blender game engine API:
@@ -285,7 +283,7 @@ of the data types you will find in the Blender game engine API:
 
 .. code-block:: python
 
-   _3d_software = {"name ": "Blender", "version": 2.6}
+   _3d_software = {"name ": "UPBGE", "version": 0.3}
 
 - **Custom Types:** These are things such as vectors and matrixes. The game engine combines some of the basic data types to create more complex ones. They are mainly used for vectors and matrixes. That way you can interact mathematically with them in a way that basic types won't do.
 
