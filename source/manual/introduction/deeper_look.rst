@@ -29,7 +29,7 @@ Here are some examples of games made with BGE/UPBGE:
 
 .. youtube:: yRBDkQbGpdg
 
-``Game Name / Creator Name:`` Krum Arena by Haidme produced with BGE/UPBGE.
+``Game Name / Creator Name:`` Krum - Battle Arena by Haidme produced with BGE/UPBGE.
 
 .. youtube:: ujLuhiCcwA8
 
