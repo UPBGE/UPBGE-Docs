@@ -25,12 +25,12 @@ First, we must add objects to compose our scene. We need three basic objects:
 Camera
    A camera will allow us to see our scene from a point of view.
    
-Lamp
-   A lamp will illuminate the scene objects, allowing us to see them. In this example we'll
-   use a Hemi lamp, which is a directional lamp that illuminates all objects in the scene.
+Light
+   A light will illuminate the scene objects, allowing us to see them. In this example we'll
+   use a Sun light, which will illuminate all objects in the scene.
 
 Cube
-   A Cube object will be our visual feedback of our logic. As we can't see a camera or lamp,
+   A Cube object will be our visual feedback of our logic. As we can't see a camera or light,
    we'll move the Cube.
 
 Once all objects were added, place them somewhat like the picture below:

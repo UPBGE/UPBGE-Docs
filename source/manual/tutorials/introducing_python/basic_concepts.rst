@@ -2,22 +2,30 @@
 Basic Concepts
 ==============
 
-This tutorial will give you a quick introduction about how to use Python within the Game Engine. Basically, it will enable you to start with Python scripting avoiding typical errors and wrong paths.
+This tutorial will give you a quick introduction about how to use Python within the
+Game Engine. Basically, it will enable you to start with Python scripting avoiding
+typical errors and wrong paths.
 
-When writing Python code for the UPBGE we recommend to keep the UPBGE Python API open as reference. You can find it here: `UPBGE Python API <https://upbge.org/api/>`__
+When writing Python code for the UPBGE we recommend to keep the UPBGE Python API
+open as reference. You can find it here: `UPBGE Python API <https://upbge.org/api/>`__
 
 -------------------------------------------
 If you don't know enough Python to begin...
 -------------------------------------------
-This tutorial is not a tutorial to teach you Python. If you don't know enough Python to begin with maybe worth trying to play with Python on the side, at least to cover the basics.
+This tutorial is not a tutorial to teach you Python. If you don't know enough Python
+to begin with maybe worth trying to play with Python on the side, at least to cover the basics.
 
-This one essentially looks amazing (make sure to go through the different chapters!) `https://jakevdp.github.io/WhirlwindTourOfPython/02-basic-python-syntax.html <https://jakevdp.github.io/WhirlwindTourOfPython/02-basic-python-syntax.html>`__
+This one essentially looks amazing (make sure to go through the different chapters!)
+`https://jakevdp.github.io/WhirlwindTourOfPython/02-basic-python-syntax.html <https://jakevdp.github.io/WhirlwindTourOfPython/02-basic-python-syntax.html>`__
 
-Maybe a lot to read, but at least they explain a bunch of things, you don’t have to rush... `https://www.techbeamers.com/python-tutorial-step-by-step <https://www.techbeamers.com/python-tutorial-step-by-step/>`__
+Maybe a lot to read, but at least they explain a bunch of things, you don’t have
+to rush... `https://www.techbeamers.com/python-tutorial-step-by-step <https://www.techbeamers.com/python-tutorial-step-by-step/>`__
 
-And we mean, maybe Google explains better than us: `https://developers.google.com/edu/python/set-up <https://developers.google.com/edu/python/set-up/>`__
+And we mean, maybe Google explains better than us:
+`https://developers.google.com/edu/python/set-up <https://developers.google.com/edu/python/set-up/>`__
 
-Just pick your poison. Take your time to read, really :-). If you go through with it, you’ll be ready to try your new spells on the UPBGE!
+Just pick your poison. Take your time to read, really :-).
+If you go through with it, you’ll be ready to try your new spells on the UPBGE!
 
 ------------------------------
 Logic Brick: Python Controller
@@ -31,11 +39,12 @@ A Python controller is basically a logic brick that you can program using Python
 
 If you look at how a controller usually behaves, they do pretty simple things:
 
-- AND Controller: When all connected sensors are positive, activate all connected actuators.
-- OR Controller: When one of the connected sensors is positive, activate all connected actuators.
-- NAND Controller: When no connected sensor is positive, activate all connected actuators.
-- XOR Controller: When only one of the connected sensors is positive, activate all, etc.
-These are all basic logic gates, but what if you want more control? What if you want to test if a sensor is positive, and actually check some values from it?
+- ``AND`` Controller: When all connected sensors are positive, activate all connected actuators.
+- ``OR`` Controller: When one of the connected sensors is positive, activate all connected actuators.
+- ``NAND`` Controller: When no connected sensor is positive, activate all connected actuators.
+- ``XOR`` Controller: When only one of the connected sensors is positive, activate all, etc.
+These are all basic logic gates, but what if you want more control? What if you want to test
+if a sensor is positive, and actually check some values from it?
 
 That is when you use a Python controller:
 
@@ -51,7 +60,8 @@ That is when you use a Python controller:
 Now to write a script you just open Blender’s text editor, and you can start writing your first script.
 
 So, little bit of disclaimer: When people see programs they usually go “that’s so hacker, it is too complex”.
-But fear not: Programs are meant to be written using English words, a bit like a recipe! It is a simple list of instructions to get from a state A to a state B.
+But fear not: Programs are meant to be written using English words, a bit like a recipe! It is a simple
+list of instructions to get from a state A to a state B.
 
 .. code-block:: python
 
@@ -75,4 +85,5 @@ But fear not: Programs are meant to be written using English words, a bit like a
    # Let's make it turn too
    owner.applyRotation([0, 0, 0.1]) # [x, y, z]
 
-Lot of comments in this code, but if you read the code word by word, usually it is pretty easy to understand what is going to happen once the Python controller will execute it!
+Lot of comments in this code, but if you read the code word by word, usually it is pretty easy
+to understand what is going to happen once the Python controller will execute it!
