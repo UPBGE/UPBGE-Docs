@@ -9,3 +9,4 @@ build
 *.cflags
 *.cxxflags
 /source/__pycache__
+/ext/__pycache__
