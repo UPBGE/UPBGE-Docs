@@ -17,7 +17,3 @@ basic Blender navigation (like selection, shortcuts, etc) and panels will be exp
    3D_basic_concepts
    game_basic_concepts
    blender_basic
-   move_object
-   first_person_camera
-   play_animation
-   linked_libraries
