@@ -7,4 +7,4 @@ Introducing Logic Nodes
 .. toctree::
    :maxdepth: 2
 
-   basic_example
+   a_first_example
