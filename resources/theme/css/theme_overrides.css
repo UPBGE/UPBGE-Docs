@@ -69,6 +69,7 @@ input[type="number"], input[type="tel"], input[type="color"] {
 }
 
 /* Literal blocks that use too much padding, make them look like regular literals. */
+/*
 .rst-content pre.literal-block {
 	font-size: 75%;
 	margin:0;
@@ -77,7 +78,7 @@ input[type="number"], input[type="tel"], input[type="color"] {
 	background: #ffffff;
 	white-space: normal;
 	display: inline;
-}
+}*/
 
 /* Fix definisions with different ids. */
 .rst-content dl.simple {
