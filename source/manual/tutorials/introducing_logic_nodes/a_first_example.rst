@@ -45,7 +45,7 @@ should appear.
 Adding Nodes
 ------------
 
-Let's make something happen here. When you press :kbd:`Shift + A`, you'll notice that you
+Let's make something happen here. When you press :kbd:`Shift-A`, you'll notice that you
 can add new nodes now. Go ahead, take a look at what's at your disposal.
 
 .. figure:: /images/Tutorials/Introducing_Logic_Nodes/tutorials-introducing-logic-nodes-05.png
@@ -101,7 +101,7 @@ Quit the game, check the system console and there should be your message, printe
 
 .. figure:: /images/Tutorials/Introducing_Logic_Nodes/tutorials-introducing-logic-nodes-08.png
 
-   System Console Output
+   Console Output
 
 This console is also the place where your errors will be printed if you are working in Debug Mode.
 
