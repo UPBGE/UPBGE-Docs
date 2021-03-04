@@ -49,11 +49,12 @@ manuals as pointed above out.
 ## UPBGE Documentation Team:
 - Joel Gomes da Silva (joelgomes1994)
 - Tristan Porteries (panzergame)
-- Youle31
+- Ulysse Martin (youle31)
 - Jorge Bernal (lordloki)
 - Xavier Cho (mysticfall)
 - Guilherme Teres Nunes (UnidayStudio)
 - Shaun Kulesa (ShaunKulesa)
-- denicolas
+- Denis Nicolas (denicolas)
 - marechal-p (wkk)
+- Leopold A-C (IzaZed)
 - You!
