@@ -100,47 +100,53 @@ The following example show all of these property types:
 
 Additionally, the following data (ID) property types are supported too:
 
-+-------------------------------------------------+-----------------------------------------------------+
-|.. figure:: /images/Python_Components/Fig-20.png |.. code-block:: python                               |
-|   :align: left                                  |                                                     |
-|   :width: 45%                                   |   from bge import *                                 |
-|                                                 |   from mathutils import *                           |
-|   Data (ID) Property Types supported            |   from collections import OrderedDict               |
-|                                                 |                                                     |
-|                                                 |   class Bootstrap(KX_PythonComponent):              |
-|                                                 |      args = OrderedDict([                           |
-|                                                 |           ("key", "alleycat"),                      |
-|                                                 |           ("config", "//config.json"),              |
-|                                                 |           ("Action", bpy.types.Action),             |
-|                                                 |           ("Armature", bpy.types.Armature),         |
-|                                                 |           ("Camera", bpy.types.Camera),             |
-|                                                 |           ("Collection", bpy.types.Collection),     |
-|                                                 |           ("Curve", bpy.types.Curve),               |
-|                                                 |           ("Image", bpy.types.Image),               |
-|                                                 |           ("Key", bpy.types.Key),                   |
-|                                                 |           ("Library", bpy.types.Library),           |
-|                                                 |           ("Light", bpy.types.Light),               |
-|                                                 |           ("Material", bpy.types.Material),         |
-|                                                 |           ("Mesh", bpy.types.Mesh),                 |
-|                                                 |           ("Movie Clip", bpy.types.MovieClip),      |
-|                                                 |           ("Node Tree", bpy.types.NodeTree),        |
-|                                                 |           ("Object", bpy.types.Object),             |
-|                                                 |           ("Particle", bpy.types.ParticleSettings), |
-|                                                 |           ("Sound", bpy.types.Sound),               |
-|                                                 |           ("Speaker", bpy.types.Speaker),           |
-|                                                 |           ("Text", bpy.types.Text),                 |
-|                                                 |           ("Texture", bpy.types.Texture),           |
-|                                                 |           ("Vector Font", bpy.types.VectorFont),    |
-|                                                 |           ("Volume", bpy.types.Volume),             |
-|                                                 |           ("World", bpy.types.World),               |
-|                                                 |       ])                                            |
-|                                                 |                                                     |
-|                                                 |   def start(self, args):                            |
-|                                                 |      print(args)                                    |
-|                                                 |                                                     |
-|                                                 |   def update(self):                                 |
-|                                                 |      pass                                           |
-+-------------------------------------------------+-----------------------------------------------------+
+
+.. figure:: /images/Python_Components/Fig-20.png
+   :align: left
+   :width: 70%
+
+   Data (ID) Property Types supported
+
+.. code-block:: python
+
+   from bge import *
+   from mathutils import *
+   from collections import OrderedDict
+
+   class Bootstrap(KX_PythonComponent):
+      args = OrderedDict([
+           ("key", "alleycat"),
+           ("config", "//config.json"),
+           ("Action", bpy.types.Action),
+           ("Armature", bpy.types.Armature),
+           ("Camera", bpy.types.Camera),
+           ("Collection", bpy.types.Collection),
+           ("Curve", bpy.types.Curve),
+           ("Image", bpy.types.Image),
+           ("Key", bpy.types.Key),
+           ("Library", bpy.types.Library),
+           ("Light", bpy.types.Light),
+           ("Material", bpy.types.Material),
+           ("Mesh", bpy.types.Mesh),
+           ("Movie Clip", bpy.types.MovieClip),
+           ("Node Tree", bpy.types.NodeTree),
+           ("Object", bpy.types.Object),
+           ("Particle", bpy.types.ParticleSettings),
+           ("Sound", bpy.types.Sound),
+           ("Speaker", bpy.types.Speaker),
+           ("Text", bpy.types.Text),
+           ("Texture", bpy.types.Texture),
+           ("Vector Font", bpy.types.VectorFont),
+           ("Volume", bpy.types.Volume),
+           ("World", bpy.types.World),
+       ])
+
+   def start(self, args):
+      print(args)
+
+   def update(self):
+      pass
+
 
 The optional **dispose()** function is called when the component is destroyed. It is only necessary in very specific cases.
 
