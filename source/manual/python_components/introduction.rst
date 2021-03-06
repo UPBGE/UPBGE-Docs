@@ -103,9 +103,9 @@ Additionally, the following data (ID) property types are supported too:
 +-------------------------------------------------+-----------------------------------------------------+
 |.. figure:: /images/Python_Components/Fig-20.png |.. code-block:: python                               |
 |   :align: left                                  |                                                     |
-|                                                 |   from bge import *                                 |
-|   Data (ID) Property Types supported            |   from mathutils import *                           |
-|                                                 |   from collections import OrderedDict               |
+|   :width: 45%                                   |   from bge import *                                 |
+|                                                 |   from mathutils import *                           |
+|   Data (ID) Property Types supported            |   from collections import OrderedDict               |
 |                                                 |                                                     |
 |                                                 |   class Bootstrap(KX_PythonComponent):              |
 |                                                 |      args = OrderedDict([                           |
