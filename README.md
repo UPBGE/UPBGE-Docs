@@ -1,4 +1,4 @@
-# UPBGE Documentation
+# UPBGE Manual
 
 ## [View the latest build of this documentation](https://upbge.org/manual/)
 
