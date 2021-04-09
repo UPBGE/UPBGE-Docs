@@ -4,11 +4,11 @@
 
 Welcome to the official repository of UPBGE's Manual and Python API. UPBGE's source code repository can be found [here](https://github.com/UPBGE/blender).
 
-You can contribute by opening an issue asking for a topic to be included in the documentation, or by opening a pull request with the desired changes.
+You can contribute by opening an issue asking for a topic to be included in the documentation, by opening a pull request with the desired changes or if you want to contribute a lot things by asking for commit rights. 
 
-Once commited a build is automatically generated and the new changes pushed to [https://upbge.org/manual](https://upbge.org/manual/) directly.
+Once a change is committed a build is automatically generated and the new changes pushed to [https://upbge.org/manual](https://upbge.org/manual/) directly.
 
-## Requirements
+## Requirements to build the documentation locally
 To build this documentation, it's required:
 - [Python 3](https://www.python.org/)
 - [Sphinx](https://pypi.org/project/Sphinx/)
