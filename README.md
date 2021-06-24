@@ -53,7 +53,6 @@ manuals as pointed above out.
 - Jorge Bernal (lordloki)
 - Xavier Cho (mysticfall)
 - Guilherme Teres Nunes (UnidayStudio)
-- Shaun Kulesa (ShaunKulesa)
 - Denis Nicolas (denicolas)
 - marechal-p (wkk)
 - Leopold A-C (IzaZed)
