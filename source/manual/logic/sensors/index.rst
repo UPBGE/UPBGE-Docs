@@ -26,6 +26,7 @@ Sensor Types
    types/keyboard.rst
    types/message.rst
    types/mouse.rst
+   types/movement.rst
    types/near.rst
    types/property.rst
    types/radar.rst
