@@ -31,7 +31,12 @@ jobs:
           sudo python3 -m pip install Sphinx
           sudo python3 -m pip install sphinx-rtd-theme
       - name: Build documentation
-        run: make html
+        run: |
+          make html
+          cd build
+          zip -r UPBGE_Manual.zip html
+          mv UPBGE_Manual.zip html
+          cd ..
 
       - name: Publish documentation
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
