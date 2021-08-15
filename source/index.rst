@@ -14,6 +14,8 @@ with detailed information.
 
 `Visit the UPBGE's website <https://upbge.org/>`__ or `contribute to this manual <https://github.com/UPBGE/UPBGE-Docs>`__.
 
+Also if you want to read the whole manual offline `You can download this link <UPBGE_Manual.zip>`__.
+
 .. toctree::
    :maxdepth: 2
    :caption: Manual
