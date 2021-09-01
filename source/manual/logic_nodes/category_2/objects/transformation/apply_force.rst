@@ -21,19 +21,19 @@ This node applies force to the entire object. In contrast, the **Apply Impulse**
 Input
 =====
 
-**Global**
+Global
     The force will be applied in the direction of the global axes
 
-**Local**
+Local
     Force will be applied in the direction of the object's axes
 
-**Condition**
+Condition
     The condition for this node start
 
-**Object**
+Object
     Object that will be pushed away
 
-**Vector**
+Vector
     The value of the force that will be applied to the object by the direction of the axes in the Cartesian plane. It can be a value referring to the axes of the world (Global) or the axes of the object (Local)
 
 Output
