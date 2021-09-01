@@ -16,7 +16,7 @@ For this node to function properly, the object must have some physical property 
 `Soft Body <https://upbge.org/manual/manual/editors/properties/physics_soft_body.html>`_.
 
 
-This node applies force to the entire object. In contrast, the Apply Impulse node applies force at a specific point.
+This node applies force to the entire object. In contrast, the **Apply Impulse** node applies force at a specific point.
 
 Input
 =====
