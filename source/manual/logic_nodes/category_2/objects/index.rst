@@ -1,4 +1,4 @@
 .. toctree::
    :maxdepth: 3
 
-   transfomation/index
+   transfomation/align_axis_to_vector.rst
