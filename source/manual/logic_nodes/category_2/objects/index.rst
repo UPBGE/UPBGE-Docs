@@ -8,5 +8,5 @@ Objects
    transformation/index.srt
    properties/index.srt
    data/index.srt
-   
+   index.srt
    
