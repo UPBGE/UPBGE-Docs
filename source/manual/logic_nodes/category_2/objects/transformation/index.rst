@@ -13,6 +13,6 @@ Transformations
    apply_torque.rst
    follow_path.rst
    move_to.rst
-   move_to_with_Navmesh.rst
+   move_to_with_navmesh.rst
    rotate_to.rst
    translate.rst
