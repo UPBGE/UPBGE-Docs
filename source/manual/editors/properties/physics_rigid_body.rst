@@ -1,3 +1,4 @@
+.. _game-engine-physics-rigid-body:
 
 ******************
 Rigid Body Physics

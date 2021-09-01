@@ -1,3 +1,4 @@
+.. _game-engine-physics:
 
 ********
 Physics
@@ -6,6 +7,8 @@ Physics
 .. figure:: /images/editors-properties-physics-physics.png
 
    Physics tab.
+
+.. _game-engine-physics-type:
 
 Physics
 =======

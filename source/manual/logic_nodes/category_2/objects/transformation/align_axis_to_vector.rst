@@ -1,5 +1,3 @@
-Category: Objects > Transformation > Align Axis to Vector
-
 ********************
 Align Axis to Vector
 ********************

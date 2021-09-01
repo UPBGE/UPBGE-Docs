@@ -11,11 +11,11 @@ Applies a displacement force that has an origin(Point) and a direction(direction
 
 For this node to function properly, the object must have some physical property that enables displacement.
 
-`Game Physics <https://upbge.org/manual/manual/editors/properties/physics.html>`_ > 
-`Physics Type <https://upbge.org/manual/manual/editors/properties/physics.html#id1>`_: 
-`Dynamic <https://upbge.org/manual/manual/editors/properties/physics_dynamic.html>`_, 
-`Rigid Body <https://upbge.org/manual/manual/editors/properties/physics_rigid_body.html>`_, 
-`Soft Body <https://upbge.org/manual/manual/editors/properties/physics_soft_body.html>`_.
+:ref:`Game Physics <game-engine-physics>` >
+:ref:`Physics Type <game-engine-physics-type>`:
+:ref:`Dynamic <game-engine-physics-dynamic>`,
+:ref:`Rigid Body <game-engine-physics-rigid-body>`,
+:ref:`Soft Body <game-engine-physics-soft-body>`.
 
 
 This node applies force at a specific point. In contrast, the **Apply Force** node applies force in entire object.
