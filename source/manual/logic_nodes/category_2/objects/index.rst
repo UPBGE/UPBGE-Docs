@@ -5,20 +5,18 @@ Objects
 .. toctree::
    :maxdepth: 2
 
-   transformation/index.srt
-   properties/index.srt
-   data/index.srt
-   add_object.srt
-   get_child_by_index.srt
-   get_child_by_name.srt
-   get_object.srt
-   get_owner.srt
-   get_parent.srt
-   remove_object.srt
-   remove_parent.srt
-   send_message.srt
-   set_curve_points.srt
-   set_parent.srt
-   set_visibility.srt
-
-   
+   transformation/index.rst
+   properties/index.rst
+   data/index.rst
+   add_object.rst
+   get_child_by_index.rst
+   get_child_by_name.rst
+   get_object.rst
+   get_owner.rst
+   get_parent.rst
+   remove_object.rst
+   remove_parent.rst
+   send_message.rst
+   set_curve_points.rst
+   set_parent.rst
+   set_visibility.rst
