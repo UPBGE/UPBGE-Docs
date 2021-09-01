@@ -16,12 +16,12 @@ Input
 =====
 
 **Global**
-    The "Object" will align with the "Vector" no matter where any of them are.
+    The **Object** will align with the **Vector** no matter where any of them are.
 
 **Local**
-    The direction of the "Object" will be the same direction that the *Vector* has in relation to the *World Origin*.
+    The direction of the **Object** will be the same direction that the **Vector** has in relation to the **World Origin**.
     
-    If your *Vector* is in a certain position relative to *World Origin*, your object will receive the same angulation in this relation: *World Origin* to *Object*
+    If your **Vector** is in a certain position relative to **World Origin**, your object will receive the same angulation in this relation: **World Origin** to **Object**
 
 **Condition**
     The condition for this node start
