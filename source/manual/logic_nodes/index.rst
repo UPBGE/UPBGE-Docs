@@ -7,5 +7,5 @@ Logic Nodes
 .. toctree::
    :maxdepth: 2
 
-   category_2/index.rst
+   category_1/index.rst
    category_2/index.rst
