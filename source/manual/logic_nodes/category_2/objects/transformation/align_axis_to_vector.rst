@@ -19,8 +19,9 @@ Input
     The "Object" will align with the "Vector" no matter where any of them are.
 
 **Local**
-    The direction of the "Object" will be the same direction that the "Vector" has in relation to the center of the world.
-    If your "Vector" is on the +X, +X, +X coordinates in relation to "World Origin"; your "Object" will receive the same angulation as "Vector" and "World Origin"; regardless of where the "Oject" might be.
+    The direction of the "Object" will be the same direction that the *Vector* has in relation to the *World Origin*.
+    
+    If your *Vector* is in a certain position relative to *World Origin*, your object will receive the same angulation in this relation: *World Origin* to *Object*
 
 **Condition**
     The condition for this node start
