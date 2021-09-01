@@ -56,4 +56,5 @@ manuals as pointed above out.
 - Denis Nicolas (denicolas)
 - marechal-p (wkk)
 - Leopold A-C (IzaZed)
+- Antônio Froz (uayten)
 - You!
