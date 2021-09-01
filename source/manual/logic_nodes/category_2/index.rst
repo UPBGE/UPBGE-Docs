@@ -1,4 +1,4 @@
 .. toctree::
    :maxdepth: 2
 
-   Object/index
+   Object/index.rst
