@@ -15,32 +15,32 @@ Vector is a 3D vector is a line segment in three-dimensional space running from 
 Input
 =====
 
-**Global**
+Global
     The **Object** will align with the **Vector** no matter where any of them are.
-
-**Local**
+    
+Local
     The direction of the **Object** will be the same direction that the **Vector** has in relation to the **World Origin**.
     
     If your **Vector** is in a certain position relative to **World Origin**, your object will receive the same angulation in this relation: **World Origin** to **Object**
 
-**Condition**
+Condition
     The condition for this node start
 
-**Object**
+Object
     Object that will be aligned
 
-**Vector**
+Vector
     Location within three-dimensional space where the object will be aligned
 
-**Axis**
+Axis
     The axis that will be given as "front" of the object
 
-**Factor**
+Factor
     Each time this node is activated ("condition"), the "Object" will rotate to its destination by a certain amount.
     It can be completed in just one activation (Factor: 1.00) or up to 100 activations (Factor: 0.01). Any other value can be written between 0 and 1
 
 Output
 ======
 
-*Done* 
-    "True" if the node performed successfully.
+**Done** 
+    **True** if the node performed successfully.
