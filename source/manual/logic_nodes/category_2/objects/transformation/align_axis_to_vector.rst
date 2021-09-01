@@ -1,1 +1,40 @@
+> Category: Objects > _Transformation_ > _Align Axis to Vector_
 
+### Description
+Aligns any of the 3 axes of an object's Cartesian plane to its positive or negative values ​​(+X, +Y, +Z, -X, -Y, -Z) to some vector*
+
+*A 3D vector is a line segment in three-dimensional space running from point A (tail) to point B (head). Each vector has a magnitude (or length) and direction.
+
+
+---
+
+### Inputs
+
+> **Global/Local
+>- Global: The "Object" will align with the "Vector" no matter where any of them are.
+Local: The direction of the "Object" will be the same direction that the "Vector" has in relation to the center of the world.
+If your "Vector" is on the +X, +X, +X coordinates in relation to "World Origin"; your "Object" will receive the same angulation as "Vector" and "World Origin"; regardless of where the "Oject" might be.
+
+> **Condition**  
+>- The condition for this node start
+
+> **Object**  
+>- Object that will be aligned
+
+> **Vector**  
+>- Location within three-dimensional space where the object will be aligned
+
+> **Axis**  
+>- The axis that will be given as "front" of the object
+
+> **Factor**  
+>- Each time this node is activated ("condition"), the "Object" will rotate to its destination by a certain amount.
+It can be completed in just one activation (Factor: 1.00) or up to 100 activations (Factor: 0.01)*
+*Any other value can be written between 0 and 1
+
+---
+
+### Outputs
+
+> **Done**  
+>- `True` if the node performed successfully.
