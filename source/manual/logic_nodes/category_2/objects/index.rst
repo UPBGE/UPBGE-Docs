@@ -1,5 +1,5 @@
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    transformation/align_axis_to_vector.rst
    transformation/apply_force.rst
