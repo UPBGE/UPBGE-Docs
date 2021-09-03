@@ -9,6 +9,11 @@ Rotates an object a certain vector-defined angulation.
 
 Input
 =====
+Global
+    The rotation will be applied following the global axes of the scene
+
+Local
+    The rotation will be applied following the object's axes
 
 Condition
     The condition for this node start
