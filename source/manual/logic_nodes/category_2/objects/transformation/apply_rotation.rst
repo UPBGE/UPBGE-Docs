@@ -27,5 +27,5 @@ Vector
 Output
 ======
 
-**Done** 
+**Done**
     **True** if the node performed successfully.
