@@ -5,11 +5,11 @@ Apply Movement
 Description
 ===========
 
-Move o objeto em uma certa distância definida por vetor. Não aplica aceleração.
+Moves the object a certain distance defined by the vector. Does not apply acceleration.
 
-O objeto ainda está sujeito a outras forças enquanto o movimento está sendo aplicado, como por exemplo a aceleração da força da gravidade.
+The object is still subject to other forces while the motion is being applied, such as acceleration due to the force of gravity.
 
-O nó pode ser aplicado em alguns tipos de propriedades físicas, sendo: 
+The knot can be applied to some types of physical properties, as follows:
 
 `Game Physics <https://upbge.org/manual/manual/editors/properties/physics.html>`_ > 
 `Physics Type <https://upbge.org/manual/manual/editors/properties/physics.html#id1>`_: 
