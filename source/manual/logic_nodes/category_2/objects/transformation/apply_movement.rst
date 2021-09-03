@@ -5,7 +5,7 @@ Apply Movement
 Description
 ===========
 
-Moves the object a certain distance defined by the vector. Does not apply acceleration.
+Moves the object a certain vector-defined distance. Does not apply acceleration.
 
 The object is still subject to other forces while the motion is being applied, such as acceleration due to the force of gravity.
 
