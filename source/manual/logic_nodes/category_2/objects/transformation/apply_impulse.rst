@@ -7,7 +7,7 @@ Description
 
 It doesn't seem to be working properly - 01/09/2021
 
-Applies a displacement force that has an origin(Point) and a direction(direction).
+Applies a displacement force that has an origin(**Point**) and a **Direction**.
 
 For this node to function properly, the object must have some physical property that enables displacement.
 
