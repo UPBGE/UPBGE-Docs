@@ -3,7 +3,7 @@ Sound
 +++++
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   2d_sound.rst
   3d_sound.rst
