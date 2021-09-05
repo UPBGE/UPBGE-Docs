@@ -1,5 +1,3 @@
-.. _logic_nodes-objects-index:
-
 +++++++
 Objects
 +++++++
