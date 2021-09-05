@@ -1,3 +1,3 @@
 +++++++++++++++++++++++++++++++++++++
-Get Postition / Rotation / Scale etc.
+Get Positition / Rotation / Scale etc.
 +++++++++++++++++++++++++++++++++++++
