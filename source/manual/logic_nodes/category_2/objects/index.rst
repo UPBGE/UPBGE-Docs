@@ -9,7 +9,6 @@ Objects
    properties/index.rst
    data/index.rst
 
-.. toctree::
    :maxdepth: 1
    
    add_object.rst
