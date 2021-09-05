@@ -1,6 +1,6 @@
-+++++++++++++++
-Transformations
-+++++++++++++++
+++++++++++++++
+Transformation
+++++++++++++++
 
 .. toctree::
    :maxdepth: 1
