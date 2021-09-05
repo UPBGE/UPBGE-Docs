@@ -9,3 +9,5 @@ Logic Nodes
 
    category_1/index.rst
    category_2/index.rst
+   category_3/index.rst
+   category_4/index.rst
