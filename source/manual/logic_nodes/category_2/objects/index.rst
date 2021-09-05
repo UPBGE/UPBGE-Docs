@@ -4,7 +4,6 @@ Objects
 
 .. toctree::
    :maxdepth: 2
-   
    transformation/index.rst
    properties/index.rst
    data/index.rst
