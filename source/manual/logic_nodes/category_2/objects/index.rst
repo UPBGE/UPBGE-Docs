@@ -7,9 +7,6 @@ Objects
    transformation/index.rst
    properties/index.rst
    data/index.rst
-
-   :maxdepth: 1
-   
    add_object.rst
    get_child_by_index.rst
    get_child_by_name.rst
