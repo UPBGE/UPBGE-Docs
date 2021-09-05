@@ -5,7 +5,7 @@ Objects
 +++++++
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    
    transformation/index.rst
    properties/index.rst
