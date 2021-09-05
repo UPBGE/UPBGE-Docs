@@ -1,3 +1,6 @@
+**************
+Armature / Rig
+**************
 
 .. toctree::
   :maxdepth: 1
