@@ -56,5 +56,5 @@ manuals as pointed above out.
 - Denis Nicolas (denicolas)
 - marechal-p (wkk)
 - Leopold A-C (IzaZed)
-- Antônio Froz (uayten)
+- Antônio Froz (Discord: Fofuxo#1809 / GitHub: uayten)
 - You!
