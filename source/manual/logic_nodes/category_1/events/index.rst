@@ -2,6 +2,7 @@
 Events
 ++++++
 
+custom/index.rst
 on_init.rst
 on_next_tick.rst
 on_update.rst
