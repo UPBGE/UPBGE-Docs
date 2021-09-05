@@ -1,1 +1,7 @@
 
+
+get_axis_vector.rst
+get_postition_rotation_scale_etc.rst
+get_unique_name.rst
+replace_mesh.rst
+set_position_rotation_scale_etc.rst
