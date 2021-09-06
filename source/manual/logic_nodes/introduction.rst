@@ -4,7 +4,7 @@
 Introduction
 ============
 
-Logic Nodes is an addon present in the **Uchronia Project Blender Game Engine (UPBGE)** base files
+Logic Nodes is an `Add-on <https://docs.blender.org/manual/en/latest/advanced/scripting/addon_tutorial.html>`_ present in the **Uchronia Project Blender Game Engine (UPBGE)** base files
 
 Its functionality is the application of logic programming through pluggable blocks.
 
