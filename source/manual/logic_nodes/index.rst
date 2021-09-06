@@ -4,11 +4,10 @@
 Logic Nodes
 +++++++++++
 
-introduction.rst
-
 .. toctree::
    :maxdepth: 2
 
+   introduction.rst
    category_1/index.rst
    category_2/index.rst
    category_3/index.rst
