@@ -15,14 +15,23 @@ Object
 
 Options
      Position Global and Local
+     
      Rotation Global and Local
+     
      Velocity Global and Local
+     
      Torque Global and Local
+     
      Transform Global and Local
+     
      Scale
+     
      Name
+     
      Color
+     
      Visibility
+     
 
 Output
 ======
