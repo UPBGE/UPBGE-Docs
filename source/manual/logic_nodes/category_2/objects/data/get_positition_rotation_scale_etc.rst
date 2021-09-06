@@ -14,23 +14,23 @@ Object
     The condition for this node start
 
 Options
-     Position Global and Local
-     
-     Rotation Global and Local
-     
-     Velocity Global and Local
-     
-     Torque Global and Local
-     
-     Transform Global and Local
-     
-     Scale
-     
-     Name
+     Visibility
      
      Color
      
-     Visibility
+     Name
+     
+     Scale
+     
+     Transform Global and Local
+     
+     Torque Global and Local
+     
+     Velocity Global and Local
+     
+     Rotation Global and Local
+     
+     Position Global and Local
      
 
 Output
