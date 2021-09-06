@@ -4,6 +4,7 @@
 Logic Nodes
 +++++++++++
 
+introduction.rst
 
 .. toctree::
    :maxdepth: 2
