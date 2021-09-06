@@ -36,7 +36,7 @@ Move as Dynamic
     See `Dynamic <https://docs.blender.org/manual/en/2.79/game_engine/physics/types/dynamic.html>`_ to more
 
 Lin Speed
-    The linear speed of the object, basically just the travelling speed
+    The linear speed of the object, basically the travelling speed
 
 Reach Threshold
      The distance to the target it needs to count as "arrived"
