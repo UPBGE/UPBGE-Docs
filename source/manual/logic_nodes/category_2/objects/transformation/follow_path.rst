@@ -24,13 +24,13 @@ Rotating Object
     Object that will rotate when changing direction
 
 Path (Parent of a set of Empties)
-    A series of related Empty Objects.
+    A series of Empty Objects parented.
     
-    The *Parent Object* does not define the position of the object.
+    The **Parent Object** does not define the position of the object.
     
-    The *Child Objects* mark which positions the object will pass during displacement
+    The **Child Objects** mark which positions the object will pass during displacement
     
-    The order that the object will follow is according to the alphabetical and numerical order of the *Child Objects*.
+    The order that the object will follow is according to the alphabetical and numerical order of the **Child Objects**.
 
 Loop
     If selected: after arriving at the position of the last child, the object will return to the start of the displacement
