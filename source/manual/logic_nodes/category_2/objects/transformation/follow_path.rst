@@ -5,9 +5,10 @@ Follow Path
 Description
 ===========
 
-Define posições por onde seu objeto irá se locomover através de objetos vazios com parentesco.
+Define positions where your object will move through related empty objects.
 
-See also `Parenting Objects<https://docs.blender.org/manual/en/2.79/editors/3dview/object/properties/relations/parents.html>`_
+See also `Parenting Objects <https://docs.blender.org/manual/en/2.79/editors/3dview/object/properties/relations/parents.html>`_ and
+`Empties <https://docs.blender.org/manual/en/latest/modeling/empties.html>`_
 
 
 Input
@@ -17,30 +18,32 @@ Condition
     The condition for this node start
 
 Moving Object
-    Objeto que será movimentado
+    Object that will be moved
 
 Rotating Object
-    Se houver rotação: objeto que irá rotacionar na mudança de direção
+    If there is rotation: object that will rotate when changing direction
 
 Path (Parent of a set of Empties)
-    Uma série de Objetos Vazios com parentesco.
+    A series of related Empty Objects.
     
-    O pai não define a posição do objeto.
+    The *Parent Object* does not define the position of the object.
     
-    Os filhos marcam quais posições o objeto irá passar durante o deslocamento
+    The *Child Objects* mark which positions the object will pass during displacement
     
-    A ordem que o objeto seguirá é de acordo com a ordem alfabética e numérica dos filhos
+    The order that the object will follow is according to the alphabetical and numerical order of the *Child Objects*.
 
 Loop
-    Se selecionado: após a chegada na posição do último filho o objeto retornará para o início do deslocamento
+    If selected: after arriving at the position of the last child, the object will return to the start of the displacement
     
-    Não selecionado: o objeto irá finalizar o deslocamento no último objeto vazio da família.
+    Unselected: The object will end the displacement at the last empty object in the *Parent*.
 
 Optional Navmesh
-    Se houver uma delimitação na área onde o objeto percorre, selecionar a `Navigation Mesh<https://upbge.org/manual/manual/logic_nodes/category_2/objects/transformation/move_to_with_navmesh.html>`_
+    If there is a boundary in the area where the object travels, select the `Navigation Mesh <https://upbge.org/manual/manual/logic_nodes/category_2/objects/transformation/move_to_with_navmesh.html>`_
     
 Move as Dynamic
-    ??????
+    Dynamic objects give and receive collisions, so other objects can dynamically affect the trajectory of the "Moving Object".
+    
+    See `Dynamic <https://docs.blender.org/manual/en/2.79/game_engine/physics/types/dynamic.html>`_ to more
 
 Lin Speed
     The linear speed of the object, basically the travelling speed
