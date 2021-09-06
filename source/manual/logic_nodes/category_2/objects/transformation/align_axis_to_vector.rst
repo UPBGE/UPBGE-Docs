@@ -9,6 +9,9 @@ Aligns any of the 3 axes of an object's Cartesian plane to its positive or negat
 
 Vector is a 3D vector is a line segment in three-dimensional space running from point A (tail) to point B (head)
 
+.. figure:: /images/Logic_Nodes/logic-nodes-category-2-objects-transformation-align-axis-to-vector.png
+
+   Align Axis to Vector node.
 
 Input
 =====
