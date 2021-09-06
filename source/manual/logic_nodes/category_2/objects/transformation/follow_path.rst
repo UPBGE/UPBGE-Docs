@@ -21,7 +21,7 @@ Moving Object
     Object that will be moved
 
 Rotating Object
-    If there is rotation: object that will rotate when changing direction
+    Object that will rotate when changing direction
 
 Path (Parent of a set of Empties)
     A series of related Empty Objects.
