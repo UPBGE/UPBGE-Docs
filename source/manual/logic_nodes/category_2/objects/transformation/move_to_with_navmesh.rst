@@ -31,7 +31,6 @@ Destination
     Final destination of the object. It can be a value using coordinates or location of another object.
 
 Move as Dynamic
-
     Dynamic objects give and receive collisions, so other objects can dynamically affect the trajectory of the "Moving Object".
     
     See `Dynamic <https://docs.blender.org/manual/en/2.79/game_engine/physics/types/dynamic.html>`_ to more
