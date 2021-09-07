@@ -5,6 +5,8 @@ Follow Path
 Description
 ===========
 
+This node doesn't seem to be able to run fully in certain situations
+
 Select an object to move through the points of a Nurbs Curve
 
 This node only works in conjunction with "Get Curve Points"
