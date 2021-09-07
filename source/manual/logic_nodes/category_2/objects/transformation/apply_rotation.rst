@@ -5,7 +5,7 @@ Apply Rotation
 Description
 ===========
 
-Rotates an object a certain vector-defined angulation.
+Rotates an object a certain vector-defined angulation. Each time this node is activated, the defined rotation will happen.
 
 See also :doc:`Rotate To </manual/logic_nodes/category_2/objects/transformation/rotate_to>`
 
