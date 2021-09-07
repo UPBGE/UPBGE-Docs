@@ -47,3 +47,15 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: "./build/html/"
           server-dir: "./manual/"
+  
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: './build/html/'
+          destination-github-username: 'UPBGE'
+          destination-repository-name: 'UPBGE-Docs-build'
+          user-email: jbernalmartinez@gmail.com
+          target-branch: master
+
