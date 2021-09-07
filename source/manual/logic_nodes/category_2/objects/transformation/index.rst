@@ -8,7 +8,7 @@ Transformation
    align_axis_to_vector.rst
    apply_force.rst
    apply_impulse.rst
-   apply_movment.rst
+   apply_movement.rst
    apply_rotation.rst
    apply_torque.rst
    follow_path.rst
