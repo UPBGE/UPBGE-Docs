@@ -11,6 +11,8 @@ Select an object to move through the points of a Nurbs Curve
 
 This node only works in conjunction with "Get Curve Points"
 
+It's very useful to use on NPCs who need to walk around
+
 
 Input
 =====
