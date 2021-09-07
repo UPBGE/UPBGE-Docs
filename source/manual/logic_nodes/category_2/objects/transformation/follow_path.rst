@@ -32,9 +32,9 @@ Path Points
    The order that the object will follow is according to the alphabetical and numerical order of the **Child Objects**.
 
 Loop
-   If selected: after arriving at the position of the last child, the object will return to the start of the displacement
+   If selected: after arriving at the position of the last point, the object will return to the start of the displacement
     
-   Unselected: The object will end the displacement at the last empty object in the *Parent*.
+   Unselected: The object will end the displacement at the last Curve's point.
 
 Optional Navmesh
    If there is a boundary in the area where the object travels, select the `Navigation Mesh <https://upbge.org/manual/manual/logic_nodes/category_2/objects/transformation/move_to_with_navmesh.html>`_
