@@ -9,7 +9,7 @@ Moves the object a certain vector-defined distance. Does not apply acceleration.
 
 The object is still subject to other forces while the motion is being applied, such as acceleration due to the force of gravity.
 
-The knot can be applied to some types of physical properties, as follows:
+The node can be applied to some types of physical properties, as follows:
 
 `Game Physics <https://upbge.org/manual/manual/editors/properties/physics.html>`_ > 
 `Physics Type <https://upbge.org/manual/manual/editors/properties/physics.html#id1>`_: 
