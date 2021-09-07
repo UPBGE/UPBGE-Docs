@@ -7,6 +7,8 @@ Description
 
 Rotates an object a certain vector-defined angulation.
 
+See also `Rotate To <https://upbge.org/manual/manual/logic_nodes/category_2/objects/transformation/rotate_to.html>`_
+
 Input
 =====
 Global
