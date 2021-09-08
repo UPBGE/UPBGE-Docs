@@ -5,8 +5,6 @@ Translate
 Description
 ===========
 
-not edited
-
 Rotates a selected object to a specific angle instantly. 
 
 Applies rotation only on a single axis and fixed angulation in the world.
@@ -29,7 +27,7 @@ Vector
    The axis of the object that will be used to rotate it during node execution
 
 Speed
-   Which axis is the front of the object
+   
 
 
 Output
