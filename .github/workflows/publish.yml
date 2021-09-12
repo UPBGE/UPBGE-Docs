@@ -38,15 +38,16 @@ jobs:
           mv UPBGE_Manual.zip html
           cd ..
 
-      - name: Publish documentation
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: lx01.aspnix.com
-          protocol: ftps
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: "./build/html/"
-          server-dir: "./manual/"
+      # aspnix old server
+      # - name: Publish documentation
+      #  uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      #  with:
+      #    server: lx01.aspnix.com
+      #    protocol: ftps
+      #    username: ${{ secrets.FTP_USER }}
+      #    password: ${{ secrets.FTP_PASSWORD }}
+      #    local-dir: "./build/html/"
+      #    server-dir: "./manual/"
   
       # Test
       - name: Pushes to another repository
