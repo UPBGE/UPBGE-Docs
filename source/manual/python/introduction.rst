@@ -52,7 +52,7 @@ Sane Replacement for Large-Scale Logic-Bricked Objects
 It's always good to have an excuse to show an image in a programming chapter, and here it is. In the next pìcture you see the logic bricks for Frankie,
 the main character of the open game **Yo Frankie!**
 
-.. figure:: /images/Python_scripting/python-scripting-introduction-to-scripting-01.png
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-01.png
 
    Chapagetti
 
@@ -84,7 +84,7 @@ to work with (and with less spaghetti).
 If you thought that before picture was a mess, try to make sense of next picture. Here we have the logic bricks of **Frankie**, plus the objects that have logic bricks
 connected to it. As you recall, you can restrict the visible logics through the Show Panel option, but this illustrates how difficult it is to get a global view of your system.
 
-.. figure:: /images/Python_scripting/python-scripting-introduction-to-scripting-02.png
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-02.png
 
    Spaghetti
 
