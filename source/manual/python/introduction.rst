@@ -7,8 +7,9 @@ Introduction to Scripting
 Congratulations, you finally arrived at one of the most technical parts of the book. Keep that in mind in case you get lost.
 
 The Blender game engine was once famous for letting you create a full game without touching a single piece of code. Although this may sound attractive, 
-it also leads to a very limited game-making experience. Logic bricks, as presented in Chapter 3, are very handy for quick prototyping. However, once you need 
-to access advanced resources, external libraries and devices, or simply optimize your application, a programming language becomes your new best friend.
+it also leads to a very limited game-making experience. Logic bricks, as presented in :ref:`Logic Bricks chapter <logic-index>`,
+are very handy for quick prototyping. However, once you need to access advanced resources, external libraries and devices, or simply optimize your application,
+a programming language becomes your new best friend.
 
 Through the use of a scripting language called **Python**, the game engine (as Blender itself) is fully extensible. This programming language is easy to learn, 
 although extremely powerful. Be aware, though, that you will not find a complete guide to learning Python here. There are plenty of resources online and offline 
@@ -48,10 +49,10 @@ good Python book and start learning more about it:
 Sane Replacement for Large-Scale Logic-Bricked Objects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-It's always good to have an excuse to show an image in a programming chapter, and here it is. In Figure 7.1 you see the logic bricks for Frankie, 
+It's always good to have an excuse to show an image in a programming chapter, and here it is. In the next pìcture you see the logic bricks for Frankie,
 the main character of the open game **Yo Frankie!**
 
-.. figure:: /images/Chapter7/Fig07-01.png
+.. figure:: /images/Python_scripting/python-scripting-introduction-to-scripting-01.png
 
    Chapagetti
 
@@ -80,10 +81,10 @@ to update all the Property sensors, controllers, and actuators that may rely on 
 across them, as we saw, the game engine allows you to link logic bricks from different objects. However, self-contained objects/logic bricks are easier 
 to work with (and with less spaghetti).
 
-If you thought that Figure 7.1 was a mess, try to make sense of Figure 7.2. Here we have the logic bricks of **Frankie**, plus the objects that have logic bricks 
+If you thought that before picture was a mess, try to make sense of next picture. Here we have the logic bricks of **Frankie**, plus the objects that have logic bricks
 connected to it. As you recall, you can restrict the visible logics through the Show Panel option, but this illustrates how difficult it is to get a global view of your system.
 
-.. figure:: /images/Chapter7/Fig07-02.png
+.. figure:: /images/Python_scripting/python-scripting-introduction-to-scripting-02.png
 
    Spaghetti
 
