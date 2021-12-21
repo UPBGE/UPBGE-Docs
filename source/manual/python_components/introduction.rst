@@ -103,49 +103,52 @@ Additionally, the following data (ID) property types are supported too:
 
 .. figure:: /images/Python_Components/Fig-20.png
    :align: left
-   :width: 70%
+   :width: 90%
 
    Data (ID) Property Types supported
 
 .. code-block:: python
 
-   from bge import *
-   from mathutils import *
+   import bge, bpy
    from collections import OrderedDict
 
-   class Bootstrap(KX_PythonComponent):
-      args = OrderedDict([
-           ("key", "alleycat"),
-           ("config", "//config.json"),
-           ("Action", bpy.types.Action),
-           ("Armature", bpy.types.Armature),
-           ("Camera", bpy.types.Camera),
-           ("Collection", bpy.types.Collection),
-           ("Curve", bpy.types.Curve),
-           ("Image", bpy.types.Image),
-           ("Key", bpy.types.Key),
-           ("Library", bpy.types.Library),
-           ("Light", bpy.types.Light),
-           ("Material", bpy.types.Material),
-           ("Mesh", bpy.types.Mesh),
-           ("Movie Clip", bpy.types.MovieClip),
-           ("Node Tree", bpy.types.NodeTree),
-           ("Object", bpy.types.Object),
-           ("Particle", bpy.types.ParticleSettings),
-           ("Sound", bpy.types.Sound),
-           ("Speaker", bpy.types.Speaker),
-           ("Text", bpy.types.Text),
-           ("Texture", bpy.types.Texture),
-           ("Vector Font", bpy.types.VectorFont),
-           ("Volume", bpy.types.Volume),
-           ("World", bpy.types.World),
-       ])
+   class Bootstrap(bge.types.KX_PythonComponent):
+      args = OrderedDict((
+         ("myAction", bpy.types.Action),
+         ("myArmature", bpy.types.Armature),
+         ("myCamera", bpy.types.Camera),
+         ("myCollection", bpy.types.Collection),
+         ("myCurve", bpy.types.Curve),
+         ("myImage", bpy.types.Image),
+         ("myKey", bpy.types.Key),
+         ("myLibrary", bpy.types.Library),
+         ("myLight", bpy.types.Light),
+         ("myMaterial", bpy.types.Material),
+         ("myMesh", bpy.types.Mesh),
+         ("myMovieClip", bpy.types.MovieClip),
+         ("myNodeTree", bpy.types.NodeTree),
+         ("myObject", bpy.types.Object),
+         ("myParticle", bpy.types.ParticleSettings),
+         ("mySound", bpy.types.Sound),
+         ("mySpeaker", bpy.types.Speaker),
+         ("myText", bpy.types.Text),
+         ("myTexture", bpy.types.Texture),
+         ("myVectorFont", bpy.types.VectorFont),
+         ("myVolume", bpy.types.Volume),
+         ("myWorld", bpy.types.World),
+      ))
 
-   def start(self, args):
-      print(args)
+      def start(self, args: dict):
+         self.myObject = None
+         if "myObject" in args:
+            print("myObject = ", args["myObject"])
+            self.myObject = args["myObject"]
+         else:
+            print("myObject not found!")
 
-   def update(self):
-      pass
+      def update(self) -> None:
+         if self.myObject:
+            print(self.myObject.name)
 
 
 The optional **dispose()** function is called when the component is destroyed. It is only necessary in very specific cases.
@@ -156,42 +159,42 @@ Inside of UPBGE there are several python component templates that can help us wi
 Python Component Creation
 -------------------------
 
-The Python Component panel is placed in the Logic Brick editor.
+The Python Component panel, or also called Game Component panel, is placed in the Properties editor under the Game Object Properties tab.
 
 .. figure:: /images/Python_Components/Fig-02.png
 
-   Python Component panel
+   Game Component panel
    
-You will find there the 2 ways to create a Python Component in UPBGE, **Create Component** and **Register Component**. 
+You will find there the 2 ways to make a Python Component in UPBGE, **Add** and **Create**.
 
 .. figure:: /images/Python_Components/Fig-03.png
 
-   The 2 ways to create Python Component
+   The 2 ways to make a Python Component
    
 Create Component
 ++++++++++++++++
 
-When you push over the **Create Component** button a detachable panel will appear. In that panel you can introduce the component module name and the class name, both separate by a dot.
-After entering the name and clicking on the **Create Component** button, a new python script with the name of the component's module will be created in the script editor. 
+When you push over the **Create** button a detachable panel will appear. In that panel you can introduce the component module name and the class name, both separate by a dot.
+After entering the name and clicking on the **Create** button, a new python script with the name of the component's module will be created in the script editor.
 That python script will contain an empty class which name will be the one entered previously. 
 
 .. figure:: /images/Python_Components/Fig-04.png
 
    Create Component process
 
-As the component script is developed you can click on the component reload button to see the updated component.
+As the component script is developed you can click on the component reload option to see the updated component.
 
 .. figure:: /images/Python_Components/Fig-05.png
 
-   Python Component reload button
+   Python Component reload process
 
-Register Component
-++++++++++++++++++
+Add Component
++++++++++++++
 
 This process is the opposite of the previous one. First of all, we already have a python script previously formatted as a component that can be placed either in the script editor or at the same level as the .blend file.
 
-When we click on the **Register Component** button we will have to enter the name of the python script (without the .py) followed by a dot and the class name. After accept the Python Component will be created.
+When we click on the **Add** button we will have to enter the name of the python script (without the .py) followed by a dot and the class name. After accept the Python Component will be created.
 
 .. figure:: /images/Python_Components/Fig-06.png
 
-   Register Component process
+   Add Component process
