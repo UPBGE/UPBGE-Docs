@@ -449,7 +449,7 @@ Online Material
 
 Below are some websites where you can learn more about Python.
 
-`<http://www.python.org/>`_
+`<http://www.python.org/>`_ and `<https://docs.python.org/3/tutorial/index.html>`_
 
 Learn about new Python versions, API changes, and module documentation.
 
@@ -465,25 +465,16 @@ Blender Artists forum, you can find good script examples in the Python section (
 
 Dive Into Python 3 covers Python 3 and its differences from Python 2. A complete book available online.
 
+`<https://www.learnpython.org/>`_
+
+This interactive tutorial website offers a great introduction to Python for beginners.
+
+
 Offline Material
 ^^^^^^^^^^^^^^^^
 
-Here are some other resources to help you learn Python.
+Books, there are plenty of them in your nearby library.
 
-*Learning Python*, by Mark Lutz and David Ascher, published by O'Reilly Media
-
-You can learn Python in a week with this book. You can also find it as an e-book, which is useful for searching quickly. Try to get the newest edition of the book you can find. 
-Different Python series (2.x, 3.x) have certain particularities you don't want to have to deal with.
-
-.. topic:: **Before Buying a Book**
-
-   If you are going to buy a Python book, be aware of its target audience. Some books are written for people with absolutely no previous knowledge in programming languages, 
-   while others assume otherwise. And make sure the book covers the Python version that is included in Blender (at the time of writing, Python 3.8).
-
-*Yo Frankie! DVD* `<http://www.yofrankie.org>`_
-
-An open game made with the game engine by the Blender Foundation. You can download all the files of this project for free and go over their scripts. 
-Although this can be confusing for someone in the first phases of learning Python, it's good reference material for later on.
 
 Python Built-in Help
 ^^^^^^^^^^^^^^^^^^^^
