@@ -257,9 +257,9 @@ of the data types you will find in the Blender game engine API:
 
 .. code-block:: python
 
-   i_am_enjoying_the_book = True
+   i_am_enjoying_the_manual = True
 
-   i_am_understanding_the_book = i_am_enjoying_the_book - 1
+   i_am_understanding_the_manual = i_am_enjoying_the_manual - 1
 
 - **List:** A list contains a conjunct of elements ordered by ascending indexes. Although the size of a list can change on the fly, you can't access a list index that wasn't created yet (this will crash Python). List can have mixed elements such as integers, strings, and objects.
 
@@ -328,7 +328,9 @@ and finally calling the first function we declared (7).
 The output of such script will be:
 
 `I'm outside the function.`
+
 `I'm still outside the function.`
+
 `I'm inside the first function.`
 
 The first thing you may notice is that Python runs from top to bottom. Therefore, you must define your function before you call it. Secondly, you can see that the second 
@@ -336,7 +338,7 @@ function is never called. So how can the code interpreter determine which print 
 (lines 1–2, 2–3, 4–5, and 5–6), you determine the hierarchical relation between the elements. Therefore line 2 belongs to the function defined in line 1, line 5 to line 4, 
 and the other lines are all at the same level.
 
-Whether to use spaces or tabs in your scripts is a matter of personal preference. But be consistent, it makes it easier to copy and paste your code for reutilizing it.
+Python pep-8 standard recommends to use spaces for identation. In the manual we will use 4 spaces identation.
 
 .. topic:: **Pound Sign, I (Finally) Love You**
 
@@ -356,7 +358,7 @@ In the Python code, you can (and will) create your own classes, modules, and ele
 by your code. It will make it easy to get to all of them at once. Therefore, you can have a custom class that will store all the related objects you want to access 
 and preserve some properties as a group.
 
-Open the book file: \Book\Chapter7\2\_oop\oop.blend
+Download the example :download:`002_oop.zip </blends/Python_Scripting/002_oop/002_oop.zip>`, extract it and load the oop.blend file.
 
 The first script that runs in this file is the init\_world.py. Here we are creating two groups to store different kind of elements (cube and sphere). 
 In order to sort the objects between the groups, we go over the entire scene object list and check for objects with a property "cube" or "sphere" and append 
@@ -364,11 +366,9 @@ them to their respective lists.
 
 .. code-block:: python
 
-   # ############### #
-   
+   # ################ #
    #  init\_world.py  #
-   
-   # ############### #
+   # ################ #
    
    import bge
    from bge import logic as G
@@ -407,11 +407,9 @@ will toggle the value of the on/off property of the cube or sphere. The followin
 
 .. code-block:: python
 
-   ## ################## #
-   
+   # #################### #
    # visibility\_check.py #
-   
-   # ################### #
+   # #################### #
    
    from bge import logic
    
@@ -455,13 +453,13 @@ Below are some websites where you can learn more about Python.
 
 Learn about new Python versions, API changes, and module documentation.
 
-`<www.blender.org/documentation/blender_python_api_2_66_release/#game-engine-modules>`_
+`<https://upbge.org/docs/latest/api/>`_
 
-Official BGE API Documentation, all the built-in modules that can be used with the game engine.
+Official Blender + UPBGE API Documentation, all the built-in modules that can be used with the game engine.
 
 `<www.blenderartists.org/forum>`_
 
-Blender Artists forum, you can find good script examples in the Python section (general Blender Python) and in the Blender game engine section.
+Blender Artists forum, you can find good script examples in the Python section (general Blender Python) and in the game engine section.
 
 `<http://www.diveintopython3.net>`_
 
