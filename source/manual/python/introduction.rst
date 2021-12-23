@@ -171,7 +171,7 @@ precompiled and cached the first time they run (when you launch your game). This
 
 In next figure, we have the reload.reload\_me module that will be reloaded every frame. That way you can dynamically change the content of your scripts,
 variables, and functions without having to restart the game. Try it yourself: download the example :download:`001_reloadme.zip </blends/Python_Scripting/001_reloadme/001_reloadme.zip>`
-to your computer, extract it and launch debug\_python.blend. Play your game, and you will see a spinning cube. The speed of the cube is controlled by the 14th line of the file script.py,
+to your computer, extract it and launch debug\_python.blend. Play your game, and you will see a spinning cube. The speed of the cube is controlled by the 14th line of the file reload.py,
 found in the same folder.
 
 .. code-block:: python
