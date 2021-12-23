@@ -170,7 +170,7 @@ precompiled and cached the first time they run (when you launch your game). This
 (instead of those created inside UPBGE), you can use the debugging button to have them reloaded every time they are called.
 
 In next figure, we have the reload.reload\_me module that will be reloaded every frame. That way you can dynamically change the content of your scripts,
-variables, and functions without having to restart the game. Try it yourself: copy the content of the example :download:`001_reloadme.zip </blends/Python_Scripting/001_reloadme/001_reloadme.zip>`
+variables, and functions without having to restart the game. Try it yourself: download the example :download:`001_reloadme.zip </blends/Python_Scripting/001_reloadme/001_reloadme.zip>`
 to your computer, extract it and launch debug\_python.blend. Play your game, and you will see a spinning cube. The speed of the cube is controlled by the 14th line of the file script.py,
 found in the same folder.
 
@@ -184,7 +184,7 @@ found in the same folder.
 
 .. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-04.png
 
-   Python Module controllers
+   Debugging button at Python Module controller.
 
 Without closing UPBGE or even stopping your game, open the file script.py in a text editor, change this line to 0.05, for example, and save it.
 You will see the speed changing immediately. Your game is literally being updated at runtime, and you can change any module that's been called with the debug option on.
