@@ -6,17 +6,17 @@ Introduction to Scripting
 
 Congratulations, you finally arrived at one of the most technical parts of the book. Keep that in mind in case you get lost.
 
-The Blender game engine was once famous for letting you create a full game without touching a single piece of code. Although this may sound attractive, 
+The UPBGE game engine was once famous for letting you create a full game without touching a single piece of code. Although this may sound attractive,
 it also leads to a very limited game-making experience. Logic bricks, as presented in :ref:`Logic Bricks chapter <logic-index>`,
 are very handy for quick prototyping. However, once you need to access advanced resources, external libraries and devices, or simply optimize your application,
 a programming language becomes your new best friend.
 
-Through the use of a scripting language called **Python**, the game engine (as Blender itself) is fully extensible. This programming language is easy to learn, 
+Through the use of a scripting language called **Python**, the game engine (as UPBGE/Blender itself) is fully extensible. This programming language is easy to learn,
 although extremely powerful. Be aware, though, that you will not find a complete guide to learning Python here. There are plenty of resources online and offline 
 that will serve you better. However, even if you are not inclined to study Python deeply now, sooner or later you will find yourself struggling with script files. 
 So, it's important to know what you are dealing with.
 
-.. topic:: **Yes, You Can**
+.. note:: **Yes, You Can**
 
    For those experienced Python programmers (or for those catching up with the reference learning material), 
    always remember: if you can do something with Python, chances are, you can do it in the game engine.
@@ -36,8 +36,8 @@ good Python book and start learning more about it:
 
 * Sane replacement for large-scale logic-bricked objects.
 * Better handling of multiple objects.
-* Access to Blender's advanced features.
-* Use features that are not part of Blender.
+* Access to UPBGE/Blender's advanced features.
+* Use features that are not part of UPBGE.
 * Keep track of your changes with a version control system.
 * Debug your game while it runs.
 
@@ -90,8 +90,8 @@ connected to it. As you recall, you can restrict the visible logics through the 
 
 Once you start to work with scripts, you will see how easy it is to assume control over all your scene elements in a global way. It will give you lots of benefits in the long run.
 
-Access to Blender's Advanced Features
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Access to UPBGE/Blender's Advanced Features
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You will be happy to know that the game engine has a powerful set of features beyond those found in the logic brick's interface. Also, almost all 
 the functionality found in the logic bricks can be accomplished through an equivalent method of the game engine API (which will be covered in the 
@@ -102,27 +102,27 @@ playing videos and network connection.
 .. topic:: **We Never Forget the First Patch**
 
    The ability to directly end an object from Python was introduced in Blender 2.47. This is a good example of how convenient script methods can be. 
-   And here comes a bit of history . . . back in August 2008, the project we were working on, OceanViz (read more about it in the Case Studies in Chapter 10), 
+   And here comes a bit of history . . . back in August 2008, the project we were working on, OceanViz,
    required a huge amount of objects to dynamically pop up and die. The game engine simulation had critical performance issues, and optimization was not a luxury 
    there. At that point, we had reduced ending objects by having a simple Property sensor that would trigger an Edit Object **** EndObject actuator. So far, so good. 
    However, one extra sensor running every frame for every single object in the scene was costing us some performance we could use elsewhere. (We are talking about 
    hundreds of objects here.)
    When blaming our software didn't help (it may eventually), it was time to get our hands dirty. After some hard work and some online help, 
-   we had our first patched version of Blender game engine working right in front of us. We didn't need those multiple sensors anymore because a simple **myobjects.endObject()** 
+   we had our first patched version of the game engine working right in front of us. We didn't need those multiple sensors anymore because a simple **myobjects.endObject()**
    was doing the job now. (Where is the champagne?)
-   To be allowed to extend our own version of Blender in that way was cool. To submit the patch and have it implemented in the core of Blender was memorable.
+   To be allowed to extend our own version of UPBGE/Blender in that way was cool. To submit the patch and have it implemented in the core of UPBGE/Blender was memorable.
 
 There are a few reasons for not having all the methods accessible through logic bricks. First, a graphic interface is very limited for complex coding. 
 You may end up with a slow system that is far from optimized. Second, having methods independent from the interface allows it to be expanded more easily 
 and constantly (from a development point of view). Some advanced features, such as mirroring system, dynamic load of meshes, OpenGL calls, and custom constraints 
-would hardly fit in the current Blender game engine interface. They would probably end up not being implemented because of the amount of extra work required. Other 
+would hardly fit in the current game engine interface. They would probably end up not being implemented because of the amount of extra work required. Other
 things you will find in the game engine built-in methods are: make screenshots; change world settings (gravity, logic tic rates); access the returned data from sensors 
 (pressed keys, mouse position); change object properties (camera lens, light colors, object mass); and many others we will cover in the course of this chapter.
 
-Use Features That Are Not Part of Blender
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Use Features That Are Not Part of UPBGE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-No man is an island. No game is an island either (except **Monkey Island**). And the easiest way to integrate your Blender game with the exterior 
+No man is an island. No game is an island either (except **Monkey Island**). And the easiest way to integrate your UPBGE game with the exterior
 world is with Python. If you want to use external devices to control the game input or to tie external applications to your game, you may find Python suitable for that task.
 
 Here are some examples that showcase what can be done with Python external libraries:
@@ -154,25 +154,24 @@ to consider using external script files with a version control system such as Gi
    This works only for scripts maintained outside Blender. This is one of the strong reasons to prefer Python Module controllers as opposed to Python Script controllers.
 
 A version control system allows you to move between working versions of your project files. It makes it relatively safe to experiment with different 
-methods in a destructive way. In other words, it's a system to protect you from yourself. In Figure 7.3, you can see an application of this. Someone changed 
+methods in a destructive way. In other words, it's a system to protect you from yourself. In next image, you can see an application of this. Someone changed
 the script file online while we were working locally on it. Instead of manually tracking down the differences, we could use a tool to merge both changes into 
-a new file and commit it. We were using TortoiseSVN for Windows here, a graphic interface to use with a SVN system. For Linux systems, svn command-line plus 
-the software "meld" work just as well.
+a new file and commit it.
 
-.. figure:: /images/Chapter7/Fig07-03.png
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-03.png
 
-   TortoiseSVN merging
+   Git diff
 
 Debug Your Game While It Runs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Interpreted languages (also known as scripting languages) are slower than compiled code. Therefore, to speed up their performance they are 
 precompiled and cached the first time they run (when you launch your game). This is not mandatory, though, and if you are using external Python scripts 
-(instead of those created inside Blender), you can use the debugging button to have them reloaded every time they are called.
+(instead of those created inside UPBGE), you can use the debugging button to have them reloaded every time they are called.
 
-In Figure 7.4, we have the scripts.reload\_me module that will be reloaded every frame. That way you can dynamically change the content of your scripts, 
-variables, and functions without having to restart the game. Try it yourself: copy the content of the folder \Book\Chapter7\1\_reloadme to your computer 
-and launch debug\_python.blend. Play your game, and you will see a spinning cube. The speed of the cube is controlled by the 14th line of the file script.py, 
+In next figure, we have the reload.reload\_me module that will be reloaded every frame. That way you can dynamically change the content of your scripts,
+variables, and functions without having to restart the game. Try it yourself: copy the content of the example :download:`001_reloadme.zip </blends/Python_Scripting/001_reloadme/001_reloadme.zip>`
+to your computer, extract it and launch debug\_python.blend. Play your game, and you will see a spinning cube. The speed of the cube is controlled by the 14th line of the file script.py,
 found in the same folder.
 
 .. code-block:: python
@@ -183,11 +182,11 @@ found in the same folder.
 
    speed = 0.025
 
-.. figure:: /images/Chapter7/Fig07-04.png
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-04.png
 
    Python Module controllers
 
-Without closing Blender or even stopping your game, open the file script.py in a text editor, change this line to 0.05, for example, and save it. 
+Without closing UPBGE or even stopping your game, open the file script.py in a text editor, change this line to 0.05, for example, and save it.
 You will see the speed changing immediately. Your game is literally being updated at runtime, and you can change any module that's been called with the debug option on.
 
 .. topic:: **Turn It Off When You Leave**
