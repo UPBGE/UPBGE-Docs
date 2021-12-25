@@ -41,7 +41,7 @@ good Python book and start learning more about it:
 * Keep track of your changes with a version control system.
 * Debug your game while it runs.
 
-.. topic:: **Logic Brick, the Necessary Good**
+.. note:: **Logic Brick, the Necessary Good**
 
    You can't ever get away from logic bricks. Even when using Python exclusively for your game, you will need to invoke the scripts from a Python controller. 
    The ideal is to find the balance that fits your project.
@@ -99,7 +99,7 @@ section "Using the Game Engine API - Application Programming Interface"). The AP
 as to change a property in a sensor or to completely remove an object from the game, all the way to functionality not available otherwise, such as 
 playing videos and network connection.
 
-.. topic:: **We Never Forget the First Patch**
+.. note:: **We Never Forget the First Patch**
 
    The ability to directly end an object from Python was introduced in Blender 2.47. This is a good example of how convenient script methods can be. 
    And here comes a bit of history . . . back in August 2008, the project we were working on, OceanViz,
@@ -134,7 +134,7 @@ Here are some examples that showcase what can be done with Python external libra
 Those possibilities go with the previous statement that almost everything that you can do with Python, you can do in the game engine. And since Python can 
 be used with modules written in other languages (properly wrapped), you can virtually use any application as a basis for your system.
 
-.. topic:: **Cross-Platform, Yes; Cross-Version, Not**
+.. note:: **Cross-Platform, Yes; Cross-Version, Not**
 
    To use external libraries, you must know the Python version they were built against. The Python library you are using must be compatible with the 
    Python version that comes with your Blender. It's also valuable to check how often the library is updated and if it will be maintained in the future.
@@ -149,7 +149,7 @@ Scripts, on the other hand, are plain text files. You can open a script in any t
 differences are vital to going forward and backward with your experimentations during work. Actually, if you don't want to check for differences manually, you may want 
 to consider using external script files with a version control system such as Git, SVN, Mercury, or CVN.
 
-.. topic:: **And the Catch Is …**
+.. note:: **And the Catch Is …**
 
    This works only for scripts maintained outside Blender. This is one of the strong reasons to prefer Python Module controllers as opposed to Python Script controllers.
 
@@ -189,7 +189,7 @@ found in the same folder.
 Without closing UPBGE or even stopping your game, open the file script.py in a text editor, change this line to 0.05, for example, and save it.
 You will see the speed changing immediately. Your game is literally being updated at runtime, and you can change any module that's been called with the debug option on.
 
-.. topic:: **Turn It Off When You Leave**
+.. note:: **Turn It Off When You Leave**
 
    Remember to turn debugging off when you are done with this script. Reloading the script every frame can drastically reduce your performance.
 
@@ -340,7 +340,7 @@ and the other lines are all at the same level.
 
 Python pep-8 standard recommends to use spaces for identation. In the manual we will use 4 spaces identation.
 
-.. topic:: **Pound Sign, I (Finally) Love You**
+.. note:: **Pound Sign, I (Finally) Love You**
 
    If, like me, you never understood the reason for the number/pound sign key (#) on your phone, you will eventually find it very useful. 
    In Python, any text to the right of a pound sign is ignored by the interpreter. Therefore, the pound sign is used to add commentaries to your code 
