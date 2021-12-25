@@ -201,7 +201,7 @@ very flexible: they can be declared on the fly when you first use them; you can 
 .. code-block:: python
 
    for i in range(10): 
-      exec("var_%d = %d" % (i,i))
+     exec("var_%d = %d" % (i,i))
 
 This snip of code is the equivalent to the following:
 
@@ -221,7 +221,7 @@ variables named after them. The following code snip assigns the scene objects (r
 
    for object in scene.objects:
 
-      exec("%s = object" % (object.name))
+     exec("%s = object" % (object.name))
 
 Although we have flexible data types, we must respect variable types while manipulating and passing/returning them to functions. Here you can see a list 
 of the data types you will find in the UPBGE game engine API:
@@ -297,13 +297,13 @@ Take a look at this example:
 
    1 def here_i_am(): # definition of the first function
 
-   2     print("I'm inside the first function.")
+   2   print("I'm inside the first function.")
 
    3 print("I'm outside the function.")
     
    4 def but_I'm_not_here(): # definition of the second function
 
-   5     print("For you can't see me!")
+   5   print("For you can't see me!")
 
    6 print("I'm still outside the function.")
 
@@ -325,7 +325,7 @@ function is never called. So how can the code interpreter determine which print 
 (lines 1–2, 2–3, 4–5, and 5–6), you determine the hierarchical relation between the elements. Therefore line 2 belongs to the function defined in line 1, line 5 to line 4, 
 and the other lines are all at the same level.
 
-Python pep-8 standard recommends to use spaces for identation. In the manual we will use 4 spaces identation.
+Python pep-8 standard recommends to use spaces for identation. In the manual we will use 2 spaces identation.
 
 .. note:: **Pound Sign, I (Finally) Love You**
 
@@ -369,10 +369,10 @@ them to their respective lists.
    
    # define a class to store all group elements and the click object
    class Group():
-       def __init__(self, name):
-           self.name = name
-           self.click = None
-           self.objects = []
+     def __init__(self, name):
+       self.name = name
+       self.click = None
+       self.objects = []
    
    # create new element groups
    cube_group   = Group("cubes")
@@ -380,12 +380,12 @@ them to their respective lists.
    
    # add all objects with an "ui" property to the created element
    for obj in scene.objects:
-       if "cube" in obj:
-           cube_group.objects.append(obj)
-       elif "sphere" in obj:
-           sphere_group.objects.append(obj)
-       elif "click" in obj:
-           exec("%s\_group.click = obj" % (obj["click"]))
+     if "cube" in obj:
+       cube_group.objects.append(obj)
+     elif "sphere" in obj:
+       sphere_group.objects.append(obj)
+     elif "click" in obj:
+       exec("%s\_group.click = obj" % (obj["click"]))
    
    G.groups = {"cube":cube_group, "sphere":sphere_group}
 
@@ -402,8 +402,8 @@ will toggle the value of the on/off property of the cube or sphere. The followin
    
    # defines a function to hide/turn visible all the objects passed as argument
    def change_visibility(objects, on_off):
-       for obj in objects:
-           obj.visible = on_off
+     for obj in objects:
+       obj.visible = on_off
    
    # retrieve the stored groups to local variables
    cube_group   = logic.groups["cube"]
