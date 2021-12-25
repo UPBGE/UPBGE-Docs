@@ -9,3 +9,4 @@ Python Scripting
 
    introduction.rst
    python_game_engine.rst
+   understanding_inheritance_and_composition_in_game_scripting.rst
