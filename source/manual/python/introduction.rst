@@ -4,14 +4,14 @@
 Introduction to Scripting
 *************************
 
-Congratulations, you finally arrived at one of the most technical parts of the book. Keep that in mind in case you get lost.
+Congratulations, you finally arrived at one of the most technical parts of the manual. Keep that in mind in case you get lost.
 
 The UPBGE game engine was once famous for letting you create a full game without touching a single piece of code. Although this may sound attractive,
 it also leads to a very limited game-making experience. Logic bricks, as presented in :ref:`Logic Bricks chapter <logic-index>`,
 are very handy for quick prototyping. However, once you need to access advanced resources, external libraries and devices, or simply optimize your application,
 a programming language becomes your new best friend.
 
-Through the use of a scripting language called **Python**, the game engine (as UPBGE/Blender itself) is fully extensible. This programming language is easy to learn,
+Through the use of a scripting language called **Python**, the game engine (as UPBGE itself) is fully extensible. This programming language is easy to learn,
 although extremely powerful. Be aware, though, that you will not find a complete guide to learning Python here. There are plenty of resources online and offline 
 that will serve you better. However, even if you are not inclined to study Python deeply now, sooner or later you will find yourself struggling with script files. 
 So, it's important to know what you are dealing with.
@@ -36,7 +36,7 @@ good Python book and start learning more about it:
 
 * Sane replacement for large-scale logic-bricked objects.
 * Better handling of multiple objects.
-* Access to UPBGE/Blender's advanced features.
+* Access to UPBGE's advanced features.
 * Use features that are not part of UPBGE.
 * Keep track of your changes with a version control system.
 * Debug your game while it runs.
@@ -90,7 +90,7 @@ connected to it. As you recall, you can restrict the visible logics through the 
 
 Once you start to work with scripts, you will see how easy it is to assume control over all your scene elements in a global way. It will give you lots of benefits in the long run.
 
-Access to UPBGE/Blender's Advanced Features
+Access to UPBGE's Advanced Features
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You will be happy to know that the game engine has a powerful set of features beyond those found in the logic brick's interface. Also, almost all 
@@ -98,19 +98,6 @@ the functionality found in the logic bricks can be accomplished through an equiv
 section "Using the Game Engine API - Application Programming Interface"). The API ranges from tasks that could be performed with logic bricks, such 
 as to change a property in a sensor or to completely remove an object from the game, all the way to functionality not available otherwise, such as 
 playing videos and network connection.
-
-.. note:: **We Never Forget the First Patch**
-
-   The ability to directly end an object from Python was introduced in Blender 2.47. This is a good example of how convenient script methods can be. 
-   And here comes a bit of history . . . back in August 2008, the project we were working on, OceanViz,
-   required a huge amount of objects to dynamically pop up and die. The game engine simulation had critical performance issues, and optimization was not a luxury 
-   there. At that point, we had reduced ending objects by having a simple Property sensor that would trigger an Edit Object **** EndObject actuator. So far, so good. 
-   However, one extra sensor running every frame for every single object in the scene was costing us some performance we could use elsewhere. (We are talking about 
-   hundreds of objects here.)
-   When blaming our software didn't help (it may eventually), it was time to get our hands dirty. After some hard work and some online help, 
-   we had our first patched version of the game engine working right in front of us. We didn't need those multiple sensors anymore because a simple **myobjects.endObject()**
-   was doing the job now. (Where is the champagne?)
-   To be allowed to extend our own version of UPBGE/Blender in that way was cool. To submit the patch and have it implemented in the core of UPBGE/Blender was memorable.
 
 There are a few reasons for not having all the methods accessible through logic bricks. First, a graphic interface is very limited for complex coding. 
 You may end up with a slow system that is far from optimized. Second, having methods independent from the interface allows it to be expanded more easily 
@@ -137,12 +124,12 @@ be used with modules written in other languages (properly wrapped), you can virt
 .. note:: **Cross-Platform, Yes; Cross-Version, Not**
 
    To use external libraries, you must know the Python version they were built against. The Python library you are using must be compatible with the 
-   Python version that comes with your Blender. It's also valuable to check how often the library is updated and if it will be maintained in the future.
+   Python version that comes with your UPBGE. It's also valuable to check how often the library is updated and if it will be maintained in the future.
 
 Keep Track of Your Changes with a Version Control System
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you take a Blender file in two different moments of your production, you will have a hard time finding what has changed between them. This is because Blender's 
+If you take a Blender file in two different moments of your production, you will have a hard time finding what has changed between them. This is because UPBGE/Blender's
 native file format is a binary type. Binary files are written in a way that you can't get to them directly, they are designed to be accessed by programs and not by human beings.
 
 Scripts, on the other hand, are plain text files. You can open a script in any text editor and immediately see the differences between two similar files. Finding those 
@@ -151,7 +138,7 @@ to consider using external script files with a version control system such as Gi
 
 .. note:: **And the Catch Is …**
 
-   This works only for scripts maintained outside Blender. This is one of the strong reasons to prefer Python Module controllers as opposed to Python Script controllers.
+   This works only for scripts maintained outside UPBGE. This is one of the strong reasons to prefer Python Module controllers as opposed to Python Script controllers.
 
 A version control system allows you to move between working versions of your project files. It makes it relatively safe to experiment with different 
 methods in a destructive way. In other words, it's a system to protect you from yourself. In next image, you can see an application of this. Someone changed
@@ -237,7 +224,7 @@ variables named after them. The following code snip assigns the scene objects (r
       exec("%s = object" % (object.name))
 
 Although we have flexible data types, we must respect variable types while manipulating and passing/returning them to functions. Here you can see a list 
-of the data types you will find in the Blender game engine API:
+of the data types you will find in the UPBGE game engine API:
 
 - **Integer:** This is the most common of the numerical types. It can store any number that fits in your computer memory. You can perform any regular math operations on it, such as sum, subtraction, division, modulus, and potency.
 
@@ -437,7 +424,7 @@ Where to Learn Python
 ^^^^^^^^^^^^^^^^^^^^^
 
 If you have previous experience with another programming language, you will learn Python in no time. If you go over some basic Python tutorials, 
-look at some script examples, and check the Blender game engine API, that might be enough. But if learning Python is your first step into coding experience, 
+look at some script examples, and check the UPBGE game engine API, that might be enough. But if learning Python is your first step into coding experience,
 don't worry. Take the time to read through the basics of the language, start with the simplest tasks, and never give up.
 
 Usually, a good way to start is tweaking ready-to-use scripts, which doesn't require you to understand all the aspects of the language before your first 
