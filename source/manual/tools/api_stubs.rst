@@ -10,7 +10,7 @@ such quality-of-life features like auto-completion or type information for APIs,
 which all modern IDEs provide.
 
 The only reason you can't have them for UPBGE projects is that the
-relevant modules(namely, `bpy.*` and `bge.*`) are only available inside UPBGE.
+relevant modules (namely, `bpy.*` and `bge.*`) are only available inside UPBGE.
 
 There are two possible options to deal with this problem. Firstly, you can
 `build UPBGE/Blender as a Python module <https://wiki.blender.org/wiki/Building_Blender/Other/BlenderAsPyModule>`__,
@@ -31,7 +31,8 @@ process of UPBGE so that an IDE can provide autocompletion support and type hint
 like bpy or bge.
 
 There are already a number of tools created with a similar goal in mind, notably 
-`fake-bpy-module <https://github.com/nutti/fake-bpy-module>`__ which can be a good alternative to this project.
+`fake-bpy-module <https://github.com/nutti/fake-bpy-module>`__ and 
+`fake-bge-module <https://github.com/nutti/fake-bge-module>`__ which can be a good alternative to this project.
 
 However, bpystubgen has a few advantages over the others:
 
