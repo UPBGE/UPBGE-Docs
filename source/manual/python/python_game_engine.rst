@@ -157,12 +157,15 @@ and spend some time studying those examples.
 Writing Your Python Scripts
 ---------------------------
 
-If you haven't started your own scripts, now is a good time to do so. You will need a text editor, the API modules documented, and a good way to test your files.
+If you haven't started your own scripts, now is a good time to do so. You will need a text editor, the API modules documented,
+and a good way to test your files.
 
 Text Editors
 ++++++++++++
 
-It's important to find a script editor that you find pleasant to work with. The most important features you will be looking for are: syntax coloring and highlighting, auto indentation, and auto completion. You can find editors with even more features than these, so experiment with different alternatives and decide what's best for you.
+It's important to find a script editor that you find pleasant to work with. The most important features you will be looking
+for are: syntax coloring and highlighting, auto indentation, and auto completion. You can find editors with even more
+features than these, so experiment with different alternatives and decide what's best for you.
 
 .. topic:: **Notepad? Notepad++**
 
@@ -172,7 +175,10 @@ It's important to find a script editor that you find pleasant to work with. The 
 Blender Text Editor
 *******************
 
-As you probably know, Blender has its own internal text editor (see Figure 7.7). Although it may not be as powerful as software designed exclusively for this particular task, it can be very convenient. It's useful for quick tests, small scripts, or when you want to keep everything bundled inside the Blender file. Here are its main features:
+As you probably know, Blender has its own internal text editor (see next figure). Although it may
+not be as powerful as software designed exclusively for this particular task, it can be very convenient.
+It's useful for quick tests, small scripts, or when you want to keep everything bundled inside the Blender file.
+Here are its main features:
 
 * Syntax highlighting
 * Dynamic font sizes
@@ -188,46 +194,75 @@ As you probably know, Blender has its own internal text editor (see Figure 7.7).
 Reference Material and Documentation
 ++++++++++++++++++++++++++++++++++++
 
-Since the game engine Python API is available online, you have an official excuse to keep a Web browser open while you work. It's not a bad idea to keep an offline version of it, too. (You can find it on the book files.) Use it when you need to be more productive and the Internet is getting in your way (as in, always).
+Since the game engine Python API is available online, you have an official excuse to keep a Web browser
+open while you work.
+It's not a bad idea to keep an offline version of it, too. (You can find it on the book files.)
+Use it when you need to be more productive and the Internet is getting in your way (as in, always).
 
-It's good if you can start to gather example materials from the Internet and keep them organized. If you use the append feature in Blender to navigate to and import text files from your "collection," you will not even need to open another Blender application. Also, if you are consistent with your naming style, indentation rules, and file structures, you will find easy to reuse your own scripts.
+It's good if you can start to gather example materials from the Internet and keep them organized.
+If you use the append feature in Blender to navigate to and import text files from your "collection",
+you will not even need to open another Blender application. Also, if you are consistent with your naming
+style, indentation rules, and file structures, you will find easy to reuse your own scripts.
 
 Testing Your Scripts
 ++++++++++++++++++++
 
-It doesn't matter how easy Python is, you will spend evenings testing and retesting your scripts before you have them working properly. The more complete way to test your script is to play it inside the game engine. However, you may not want to load your game every time you need to be sure of some Python syntax, data types' built-in functions, or simply to check if the math of a result is correct.
+It doesn't matter how easy Python is, you will spend evenings testing and retesting your scripts before you
+have them working properly. The more complete way to test your script is to play it inside the game engine.
+However, you may not want to load your game every time you need to be sure of some Python syntax, data types'
+built-in functions, or simply to check if the math of a result is correct.
 
-In those cases, you can use an interactive interpreter to help you. If you have Python installed on your system, you have it already. If you are using Windows, this will be the python.exe application in your Python installation directory (C:\Python31\ by default, considering the installation of Python 3.1), as seen in Figure 7.8. In Linux or OSX, you have to type "python" in any console and you are good to go.
+In those cases, you can use an interactive interpreter to help you. If you have Python installed on
+your system, you have it already. If you are using Windows, this will be the python.exe application in your
+Python installation directory (C:\Python31\ by default, considering the installation of Python 3.1), as seen in
+Figure 7.8. In Linux or OSX, you have to type "python" in any console and you are good to go.
 
 .. figure:: /images/Chapter7/Fig07-08.png
 
    Python IDE
 
-You can also use the Blender Python console. Change one of your current windows into the console, and you should see the screen shown in Figure 7.9.
+You can also use the Blender Python console. Change one of your current windows into the console, and you should
+see the screen shown in Figure 7.9.
 
 .. figure:: /images/Chapter7/Fig07-09.png
 
    Blender Python console
 
-Now you can use it to type simple codes, or to run a help or a dir into any of the Python modules. Unfortunately, only Blender modules have the auto-complete working from there.
+Now you can use it to type simple codes, or to run a help or a dir into any of the Python modules.
+Unfortunately, only Blender modules have the auto-complete working from there.
 
-Another important strategy is to keep the development of new functionalities outside the main file. For example, if you need to develop a navigation system (as we will soon), you don't need to use your real big, high-textured scenario. Definitively not for the early tests. If you keep independent systems that work together, you will be able to identify errors faster and easier and even to port fixes over to other projects smoothly.
+Another important strategy is to keep the development of new functionalities outside the main file. For example,
+if you need to develop a navigation system (as we will soon), you don't need to use your real big, high-textured scenario.
+Definitively not for the early tests. If you keep independent systems that work together, you will be able to identify
+errors faster and easier and even to port fixes over to other projects smoothly.
 
 Designing Your Python Script - Study Example
 --------------------------------------------
 
-We are now going to dive into an example of writing and planning a Python script for the game engine from scratch. We will assume that you have already covered all the basics of Python scripting and the general understanding of game engine internals so we can move on to its real usage. More specifically, we are going over the writing process of a camera navigation system for an architectural visualization walkthrough. This study case is actually the system developed for a commercial project for an Italian book project. In general, we needed to implement a system to navigate and interact in a virtual model of an Italian Doric temple. Here, however, we are going to develop it under a sandbox and reapply it into another file, emulating what you could do with your own projects.
+We are now going to dive into an example of writing and planning a Python script for the game engine from scratch.
+We will assume that you have already covered all the basics of Python scripting and the general understanding of
+game engine internals so we can move on to its real usage. More specifically, we are going over the writing process
+of a camera navigation system for an architectural visualization walkthrough. This study case is actually the system
+developed for a commercial project for an Italian book project. In general, we needed to implement a system to navigate
+and interact in a virtual model of an Italian Doric temple. Here, however, we are going to develop it under a sandbox
+and reapply it into another file, emulating what you could do with your own projects.
 
-Unlike gaming cameras, a virtual walkthrough can use a very simple navigation system compound of (1) an orbit mode to look at the exterior of the building; (2) a walk mode to navigate inside the building with gravity simulation and collision; (3) and a fly mode to freely explore the virtual environment with collision only. The other requirement was to make the system as portable as possible, and with the least amount of logic bricks.
+Unlike gaming cameras, a virtual walkthrough can use a very simple navigation system compound of (1) an orbit mode to
+look at the exterior of the building; (2) a walk mode to navigate inside the building with gravity simulation and
+collision; (3) and a fly mode to freely explore the virtual environment with collision only. The other requirement
+was to make the system as portable as possible, and with the least amount of logic bricks.
 
-All of those aspects must be considered from the first phases of the coding process. With a well-defined design, you can plan the most efficient system in the short and long run.
+All of those aspects must be considered from the first phases of the coding process. With a well-defined design,
+you can plan the most efficient system in the short and long run.
 
-.. topic:: **Pencil and Paper, Valuable Coding Assets**
+.. note:: **Pencil and Paper, Valuable Coding Assets**
 
-   One of the most remarkable moments during my coding studies was at Blender Conference 2008. I was still in my first steps of learning C++ and OpenGL coding, and I got the chance to explain a game engine bug to Brecht van Lommel[md]a really experienced and acknowledged Blender coder and a very inspiring person. The bug itself was hard to explain through the Internet; it's the one behind the implementation of canvas coordinates for 2D filters presented in Chapter 5. I was pleased enough to have his input on this, but even more impressive was seeing him code a partial solution right in front of me.
-   At this point, I learned an important lesson. It doesn't matter how advanced and technical the coding is that you are working on; you can always have a great time sketching your ideas and plans with old-fashioned pencil and paper. This is how he solved the problem, clearly laying down the ideas and organizing them logically. I never forgot that[md]thanks, Brecht!
+   It doesn't matter how advanced and technical the coding is that you are working on; you can always have a great time
+   sketching your ideas and plans with old-fashioned pencil and paper. This is how the problems are solved,
+   clearly laying down the ideas and organizing them logically.
 
-The system will consist of one camera for the orbit mode, and one to be used for both the fly and walk mode. Each mode works as described in the following table:
+The system will consist of one camera for the orbit mode, and one to be used for both the fly and walk mode.
+Each mode works as described in the following table:
 
 .. table:: Comparison of Different Navigation Cameras
 
