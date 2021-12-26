@@ -4,7 +4,10 @@
 Python and the Game Engine
 ==========================
 
-This whole chapter is organized into three main parts: why, what, and how. Thus, if you have read from the beginning, you already have solid reasons to start using scripts for your project, and you understand what Python is. The final part of this chapter will cover how to use your Python knowledge inside the game engine. This part is divided into four submodules:
+This whole chapter is organized into three main parts: why, what, and how. Thus, if you have read from
+the beginning, you already have solid reasons to start using scripts for your project, and you understand
+what Python is. The final part of this chapter will cover how to use your Python knowledge
+inside the game engine. This part is divided into four submodules:
 
 * Integrating Python in the game engine.
 * Writing your Python scripts.
@@ -14,44 +17,63 @@ This whole chapter is organized into three main parts: why, what, and how. Thus,
 Integrating Python in the Game Engine
 -------------------------------------
 
-In the game engine, the script interface is controller-centric by design. Therefore, you can consider the Python script simply as a more complex controller to replace the Expression or the Boolean controllers. In those cases, the script will be responsible for controlling how the sensors are related with the actuators of a given object. In fact, the sensors, actuators, and even the object where you are calling the script from are all attributes of the controller.
+In the game engine, the script interface is controller-centric by design. Therefore, you can consider
+the Python script simply as a more complex controller to replace the Expression or the Boolean controllers.
+In those cases, the script will be responsible for controlling how the sensors are related with the actuators
+of a given object. In fact, the sensors, actuators, and even the object where you are calling the script
+from are all attributes of the controller.
 
-As we mentioned earlier, with a Python script you can control external devices, control multiple objects at once, and much more. However, you will never be free from using a logic brick framework. And from the combination of logic bricks, individual sensors, global sensors, and actuators, the elegance of your system will arise.
+As we mentioned earlier, with a Python script you can control external devices, control multiple objects at once,
+and much more. However, you will never be free from using a logic brick framework. And from the combination
+of logic bricks, individual sensors, global sensors, and actuators, the elegance of your system will arise.
 
-In the first example, you will find a very simple case study of how to make your Python controller work. It will cover the basic behavior of receiving sensors' input in the script and triggering actuators from it.
+In the first example, you will find a very simple case study of how to make your Python controller work.
+It will cover the basic behavior of receiving sensors' input in the script and triggering actuators from it.
 
-Open the file \Book\Chapter7\3_template\abracadabra.blend.
+Download the example :download:`003_template.zip </blends/Python_Scripting/003_template/003_template.zip>`, extract it
+and load the abracadabra.blend file.
 
-.. figure:: /images/Chapter7/Fig07-05.png
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-05.png
 
    Abracadabra
 
-Launch the game and keep the spacebar pressed. In Figure 7.5, you can see the result before and after you press the key. Can you read the spinning text? It may not be impressive, but it certainly is didactic. Here is the script behind this effect:
+Launch the game and keep the spacebar pressed. In above figure, you can see the result before and after you press the key.
+Can you read the spinning text? It may not be impressive, but it certainly is didactic. Here is the script behind this effect:
 
 .. code-block:: python
-   
+
    import bge
    from bge import logic
 
+   # Use bge module to get/set game property + transform
    cont = logic.getCurrentController()
    owner = cont.owner
    scene = logic.getCurrentScene()
    objects = scene.objects
-   text_obj = objects["Text"]
-   
+   font_object = objects["Text"]
+
+   # Use bpy.types.TextCurve attributes to set other text settings (size, body, etc)
+   font_object_data = font_object.blenderObject.data
+
    sens = cont.sensors['my_sensor']
    act = cont.actuators['my_actuator']
-   
+
    if sens.positive:
-      cont.activate(act)
-      text_obj["Text"] = "CADABRA"
+     cont.activate(act)
+     font_object_data.body = "CADABRA"
+     font_object_data.size = 2
+     font_object_data.resolution_u = 1
    else:
-      cont.deactivate(act)
-      text_obj["Text"] = "ABRA"
+     cont.deactivate(act)
+     font_object_data.body = "ABRA"
+     font_object_data.size = 1
+     font_object_data.resolution_u = 4
 
-This script is triggered from a keyboard sensor, runs from a controller in the camera object, activates an actuator in the camera itself, and changes a property in the text object. Figure 7.6 shows logic bricks for this one.
 
-.. figure:: /images/Chapter7/Fig07-06.png
+This script is triggered from a keyboard sensor, runs from a controller in the camera object,
+activates an actuator in the camera itself, and changes a property in the text object. Next figure shows logic bricks for this one.
+
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-06.png
 
    Simple logic bricks with a Python controller
 
@@ -62,14 +84,21 @@ Let's look at it from the beginning:
    import bge
    from bge import logic
 
-The first lines import the module bge and then the submodule logic. No big deal here. We actually don't need to explicitly import the bge module since we are importing a submodule directly. However, it doesn't hurt to do it. Lines 4 and 5 will store the current controller in a variable and create a pointer to the object where it was called from (known as _owner_). We are not using the owner variable here, but it's good to be familiar with it. You will be using it a lot.
+The first lines import the module bge and then the submodule logic. No big deal here.
+We actually don't need to explicitly import the bge module since we are importing a submodule directly.
+However, it doesn't hurt to do it. Lines 4 and 5 will store the current controller in a variable and
+create a pointer to the object where it was called from (known as _owner_). We are not using the owner
+variable here, but it's good to be familiar with it. You will be using it a lot.
 
 .. code-block:: python
    
+   # Use bge module to get/set game property + transform
    cont = logic.getCurrentController()
    owner = cont.owner
 
-The following lines get more elements from the game to be used in the script: scene will give you direct access to the current scene; objects is the current list to be used later; text_obj is one element of the objects list (accessed by its name in Blender).
+The following lines get more elements from the game to be used in the script: scene will give you
+direct access to the current scene; objects is the current list to be used later; text_obj is one
+element of the objects list (accessed by its name in Blender).
 
 .. code-block:: python
 
@@ -77,14 +106,29 @@ The following lines get more elements from the game to be used in the script: sc
    objects = scene.objects
    text_obj = objects["Text"]
 
-Remember when we said that the game engine is controller-centric? All the sensors and actuators are accessed from the controller, not from the object they belong to (its owner), as you might expect. Lines 11 and 12, respectively, read the built-in sensor and actuator list to get the ones we are looking for.
+In the above code we used the bge module to get the font game object but using the bge module only we are
+limiting us to get/set the game object plus to make transforms with this game object (position, rotate or scale).
+Whether we want to access to the inner parts of the Text object and modify them then we need to understand that
+the Text object is a bpy object (type TextCurve) and we need to adquire its bpy object data. Once adquired we can use
+all the properties of bpy.types.TextCurve class.
+
+.. code-block:: python
+
+   # Use bpy.types.TextCurve attributes to set other text settings (size, body, etc)
+   font_object_data = font_object.blenderObject.data
+
+Remember when we said that the game engine is controller-centric? All the sensors and actuators are
+accessed from the controller, not from the object they belong to (its owner), as you might expect.
+Lines 11 and 12, respectively, read the built-in sensor and actuator list to get the ones we are looking for.
 
 .. code-block:: python
 
    sens = cont.sensors['my_sensor']
    act = cont.actuators['my_actuator']
 
-In a way similar to how logic bricks work, we are going to activate the actuator if the sensor triggers positive and deactivate it otherwise. The deactivation happens in the frame after the sensor ceases to validate, for example, the key is unpressed or the mouse button is released.
+In a way similar to how logic bricks work, we are going to activate the actuator if the sensor triggers positive
+and deactivate it otherwise. The deactivation happens in the frame after the sensor ceases to validate,
+for example, the key is unpressed or the mouse button is released.
 
 .. code-block:: python
 
@@ -93,15 +137,22 @@ In a way similar to how logic bricks work, we are going to activate the actuator
    else:
       cont.deactivate(act)
 
-We are not restricted to controlling only actuators, though. Lines 15 and 18 change the text of the object when you press/release the spacebar:
+We are not restricted to controlling only actuators, though. Lines 19-21 and 24-26 change the text, the size and
+the resolution of the object when you press/release the spacebar:
 
 .. code-block:: python
 
-   text_obj["Text"] = "CADABRA"
-   
-   text_obj["Text"] = "ABRA"
+   font_object_data.body = "CADABRA"
+   font_object_data.size = 2
+   font_object_data.resolution_u = 1
 
-This file can be simple, but holds the essence of the game engine architecture design. Now is a good time to go over the three game engine template files that come with Blender. Go to Text Editor  Templates  GameLogic\* and spend some time studying those examples. You can also get them on the book files under \Book\Chapter7\3\_template\.
+   font_object_data.body = "ABRA"
+   font_object_data.size = 1
+   font_object_data.resolution_u = 4
+
+This file can be simple, but holds the essence of the game engine architecture design. Now is a good time to go over
+the other game engine template files that come with the example :download:`003_template.zip </blends/Python_Scripting/003_template/003_template.zip>`
+and spend some time studying those examples.
 
 Writing Your Python Scripts
 ---------------------------
