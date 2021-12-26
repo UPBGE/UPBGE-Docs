@@ -1,3 +1,5 @@
+.. _tools-api-stubs:
+
 *********
 API Stubs
 *********

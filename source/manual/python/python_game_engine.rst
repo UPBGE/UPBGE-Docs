@@ -167,15 +167,10 @@ It's important to find a script editor that you find pleasant to work with. The 
 for are: syntax coloring and highlighting, auto indentation, and auto completion. You can find editors with even more
 features than these, so experiment with different alternatives and decide what's best for you.
 
-.. topic:: **Notepad? Notepad++**
-
-   Most of the scripts presented in this chapter were coded using Notepad++. This Windows-based open source text editor is not Python specific, but handles Python syntax highlighting well. You can download Notepad++ from their website: http://notepad-plus.sourceforge.net
-   If you are using Linux or OSX, there are plenty of native alternatives that may serve you even better.
-
-Blender Text Editor
+UPBGE Text Editor
 *******************
 
-As you probably know, Blender has its own internal text editor (see next figure). Although it may
+As you probably know, UPBGE has its own internal text editor (see next figure). Although it may
 not be as powerful as software designed exclusively for this particular task, it can be very convenient.
 It's useful for quick tests, small scripts, or when you want to keep everything bundled inside the Blender file.
 Here are its main features:
@@ -186,10 +181,21 @@ Here are its main features:
 * Line counting and navigation
 * Search over multiple internal files
 * Sync with external files
+* Icon viewer (small but marvellouos feature to get what is the icon that you want to use)
 
-.. figure:: /images/Chapter7/Fig07-07.png
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-07.png
 
-   Blender internal text editor
+   UPBGE internal text editor
+
+Visual Studio Code or PyCharm
+*****************************
+
+External editors as Visual Studio Code or PyCharm have many more features than internal UPBGE Text editor. 
+The weakest point of using external editors is the auto-completion and the documentation visualization directly 
+from the code.
+
+Using a Python API stub generated from UPBGE .rst documentation can solve both issues. In the :ref:`tools-api-stubs` 
+chapter you can see how install the upbge-stubs package to improve the external editor experience.
 
 Reference Material and Documentation
 ++++++++++++++++++++++++++++++++++++
