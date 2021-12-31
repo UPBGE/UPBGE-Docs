@@ -28,3 +28,17 @@ for a discussion of the issues involved.
    If the game is to be exported to other computers,
    make a new empty directory for the game runtime and all its ancillary libraries, etc.
    Then make sure the **whole** directory is transferred to the target computer.
+
+Personalize The Game Icon
+-------------------------
+
+This is option is available for Windows only. You can personalize the icon using the option shown
+in the figure below.
+
+.. figure:: /images/Release/standalone_player-personalize01.png
+
+   Personalize game icon
+
+Here is a small video tutorial showing all the process, from .ico creation to its use in an example game:
+
+.. youtube:: 6r2749ldNC4
