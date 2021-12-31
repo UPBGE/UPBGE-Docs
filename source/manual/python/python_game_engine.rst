@@ -181,7 +181,7 @@ Here are its main features:
 * Line counting and navigation
 * Search over multiple internal files
 * Sync with external files
-* Icon viewer (small but marvellouos feature to get what is the icon that you want to use)
+* Icon viewer (small but marvellous feature to get what is the icon that you want to use)
 
 .. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-07.png
 
@@ -200,10 +200,10 @@ chapter you can see how install the upbge-stubs package to improve the external 
 Reference Material and Documentation
 ++++++++++++++++++++++++++++++++++++
 
-Since the game engine Python API is available online, you have an official excuse to keep a Web browser
-open while you work.
-It's not a bad idea to keep an offline version of it, too. (You can find it on the book files.)
-Use it when you need to be more productive and the Internet is getting in your way (as in, always).
+Since the `UPBGE game engine Python API <https://upbge.org/docs/latest/api/index.html>`__ is available online, you 
+have an official excuse to keep a Web browser open while you work.
+It's not a bad idea to keep an `offline version of it <https://upbge.org/docs/latest/api/upbge-api-reference.zip>`__, 
+too. Use it when you need to be more productive and the Internet is getting in your way (as in, always).
 
 It's good if you can start to gather example materials from the Internet and keep them organized.
 If you use the append feature in Blender to navigate to and import text files from your "collection",
@@ -220,22 +220,37 @@ built-in functions, or simply to check if the math of a result is correct.
 
 In those cases, you can use an interactive interpreter to help you. If you have Python installed on
 your system, you have it already. If you are using Windows, this will be the python.exe application in your
-Python installation directory (C:\Python31\ by default, considering the installation of Python 3.1), as seen in
+Python installation directory (C:\Python39\ by default, considering the installation of Python 3.9), as seen in
 Figure 7.8. In Linux or OSX, you have to type "python" in any console and you are good to go.
 
-.. figure:: /images/Chapter7/Fig07-08.png
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-08.png
 
    Python IDE
 
-You can also use the Blender Python console. Change one of your current windows into the console, and you should
-see the screen shown in Figure 7.9.
+You can also use the UPBGE Python console. Change one of your current windows into the console, and you should
+see the screen shown in the next figure.
 
-.. figure:: /images/Chapter7/Fig07-09.png
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-09.png
 
-   Blender Python console
+   UPBGE Python console
 
 Now you can use it to type simple codes, or to run a help or a dir into any of the Python modules.
 Unfortunately, only Blender modules have the auto-complete working from there.
+
+Additionally, you can also use the in-game python console for debugging the game from python. In the scene properties 
+tab you can activate it and set-up its short-cut.
+
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-10.png
+
+   Set-up In-game UPBGE Python console
+
+To activate it, once the game has started you have to press the short-cut. Then the game will be paused and in the 
+Windows console or linux terminal you will see the interactive python console, as you can see in the next figure. Whether 
+you want to continue the game you need simply ending the interpreter, for linux Ctrl + D and for windows Ctrl + Z + Enter.
+
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-11.png
+
+   In-game UPBGE Python console
 
 Another important strategy is to keep the development of new functionalities outside the main file. For example,
 if you need to develop a navigation system (as we will soon), you don't need to use your real big, high-textured scenario.
@@ -288,7 +303,7 @@ Each mode works as described in the following table:
 
 - **Empty:** is an empty object the camera is parented to.
 
-.. topic:: **Try It Out**
+.. note:: **Try It Out**
 
    In order to illustrate it better, you can see the working system demonstrated in the book file: \Book\Chapter7\4\_navigation\_system\camera\_navigation.blend.
    To switch modes press 1, 2, or 3. This will change the mode to orbit, walk, and fly, respectively. To navigate, you can use the mouse and the keys WASD.
@@ -339,7 +354,7 @@ There is one function that is loaded once at the beginning of the game; we call 
    33 G.scenes = {"main":G.getCurrentScene()}
    34 objects = G.scenes["main"].objects
 
-.. topic:: **Save and Load a game with GlobalDict**
+.. note:: **Save and Load a game with GlobalDict**
 
    Since the module logic is accessible from all the functions and all the scenes, it can be used to store "global" objects. If you need to preserve those objects and variables between game sessions (i.e., after you close your game), you can store them inside the dictionary logic.globalDict and use logic.saveGlobalDict() and logic.loadGlobalDict() to save and load it.
 
@@ -359,7 +374,7 @@ To store the camera information, we are first going to create a global dictionar
 
 Now that we have our objects instanced, we can set the initial values for our functions, such as the camera rotation restrictions. We don't want the cameras to look under the ground; thus, we need to manually set our limits. Although we could set those limits directly in the orbit and look functions, having all the parameters in the same part of code is easier to tweak (and slightly faster since they don't need to be reassigned every frame).
 
-.. topic:: **External Settings File**
+.. note:: **External Settings File**
 
    Another common workflow is to have a separate python file (for example, settings.py) with all the variables set. Then in your working script, you simply have to do: import settings.py and use e.g. settings.left.
 
@@ -461,7 +476,7 @@ The second event management function handles keyboard inputs. This function take
    140                change_view("top", "fly")
    (...)
 
-.. topic:: **For a World with Fewer Logic Bricks**
+.. note:: **For a World with Fewer Logic Bricks**
 
    If you don't want to use a keyboard sensor, you can use an internal instance of the keyboard module. You can read about this in the "bge.logic API" section later in this chapter, or on the online API page: _http://www.blender.org/documentation/blender_python_api_2_66_release/bge.logic.html#bge.logic.keyboard._
 
@@ -553,7 +568,7 @@ The first lines that deserve our attention here are the normalizing operation. T
 
    242     x = win_x / screen_width
 
-.. topic:: **Even Fewer Logic Bricks and Normalized Mouse Coordinates**
+.. note:: **Even Fewer Logic Bricks and Normalized Mouse Coordinates**
 
    It's important to always use normalized coordinates for your screen operations. Otherwise, different desktop resolutions will produce different results in a game. As a counter edge case, you may need the absolute coordinates for mouse events if you want to assure minimum clickable areas for your events.
    You don't always need to normalize the mouse coordinates manually. Like the keyboard sensor, you can replace the mouse sensor by an internal instance of the mouse module.
@@ -680,7 +695,7 @@ scripts.change_view
 
 After the user presses a key (1, 2, or 3) to change the view, we call the change_view() function to switch to the new camera (with a parameter specifying which camera to use). This function consists of two parts: first, we set the correct position and orientation for the camera and pivot; secondly, we change the current camera to the new one.
 
-.. topic:: **Decomposing the View Orientation**
+.. note:: **Decomposing the View Orientation**
 
    Keep in mind that the desired orientation (stored in the empty and accessed through the G.views dictionary) represents the new view orientation. In our system, this view orientation is the combination of the parent object (pivot) orientation with the child one (camera).
 
@@ -718,7 +733,7 @@ For that, we need to rotate it a few degrees to align with the horizon. The came
    198     pivot.applyRotation([-angle,0,0],1)
    199     camera.applyRotation([angle,0,0],1)
 
-.. topic:: **Reasoning Behind the Design**
+.. note:: **Reasoning Behind the Design**
 
    There is another reason for keeping this as a separate function. Originally, I was planning to switch modes (walk/fly) while keeping the same camera position and view. Although I dropped the idea, I decided to keep the system flexible in case of any turn of events (clients[md]who understands their minds?).
 
@@ -842,7 +857,7 @@ A snapshot with those changes can be found at:
    * - .. figure:: /images/Chapter7/Fig07-14a.png
      - .. figure:: /images/Chapter7/Fig07-14b.png
 
-.. topic:: **Make Sure That Collision Is Set Properly**
+.. note:: **Make Sure That Collision Is Set Properly**
 
    All the houses, the ground, and the other 3D objects already have collision enabled in this file. In other situations, however, you may need to change the collision objects, enabling or disabling their collisions accordingly. The Python raycast uses the internal Bullet Physics engine under the hood. In order to prevent the camera from going through the walls and the ground, set enough collision surfaces (but not too much, so that you don't compromise the performance of your game).
 
@@ -956,7 +971,7 @@ There are cases when you need to load the content of an external Blender file at
 
    bge.logic.LibLoad("//entities.blend", "Scene")
 
-.. topic:: **Beware of Lamps**
+.. note:: **Beware of Lamps**
 
    New Lamp objects can be dynamically loaded from external files. However, in GLSL mode, they will not work as a light source for the material shaders, since the shaders would need to be recompiled for that.
 
@@ -1037,7 +1052,7 @@ Class KX_GameObject
 
 If you run a print(dir (object)) inside your script, you will get a very confusing list. It includes Python internal methods, instance methods, and instance variables. Most of them are common to all objects, so we are going to talk about them first. However, lamps and cameras not only inherit all the game object methods but also extend them with specific ones.
 
-.. topic:: **The Truth Is Out There**
+.. note:: **The Truth Is Out There**
 
    In order to see all available methods, please refer to the documentation. We are only covering a few of them here.
 
@@ -1067,7 +1082,7 @@ This method is a more complete version of the rayCastTo(). It has so many applic
 
 Once you retrieve the list of property names, you can use it to see if the object has a specific property before using it. To get individual properties, you can use *if "prop" in object*: or *object.get("prop", default=None)*.
 
-.. topic:: **A Use for Properties**
+.. note:: **A Use for Properties**
 
    Properties have multiple uses in the game engine. One of those uses is to mark an object to be identified by the Python script. Why not use their names instead? While names work fine to retrieve individual objects, properties allow you to easily mark and access multiple objects at once. Frankly, it's easier to create an organized, named, and tagged MP3 collection than it is to find time to properly name all your Blender data blocks[ms]objects, meshes, materials, textures, images, and so on.
 
@@ -1257,7 +1272,7 @@ And, voilà, now we only need to visualize the pressed key:
 
       owner["Text"] = text
 
-.. topic:: **Key Status**
+.. note:: **Key Status**
 
    The status of a key is what informs you whether the key has just been pressed or if it was pressed already. The Keyboard sensor is always positive as long as any key is held, and you may need to trigger different functions when some keys are pressed and released. The status values are actually stored in bge.logic:
 
@@ -1431,7 +1446,7 @@ Euler and Quaternion
 
 Euler and quaternion are different rotation systems. The same rotation can be represented using Euler, quaternion, or an orientation matrix.
 
-.. topic:: **Guerrilla CG**
+.. note:: **Guerrilla CG**
 
    You can find two great video tutorials on the Guerrilla CG vimeo channel that explain and compare the two rotation system:
    Euler Rotations Explained: http://vimeo.com/2824431
@@ -1493,7 +1508,7 @@ Example: Basic Audio Playback (TODO to be adapted to new API)
 
 We start by creating an audio device. This is simply a Python object you will use to play your sounds. Next, we create a Factory object. A factory is a container for a sound file. When we pass the Factory object into the device play function, it will start playing the sound and return a handle. Handles are used to control pause/resume and to stop an audio.
 
-.. topic:: **When Will This Music Stop?**
+.. note:: **When Will This Music Stop?**
 
    After you initialize a sound, you can get its current position in seconds with the handle.position Python property. This is especially useful to keep videos and audio in sync. If you need to check whether or not the audio is ended, you shouldn't rely on the position, though. Instead, you can get the status of the sound by the property handle.status. If you are using the sound position to control a video playback, the sound status will also tell you if the video is over (handle.status = aud.AUD_STATUS_INVALID).
    The possible statuses are:
@@ -1511,7 +1526,7 @@ This module is a wrapping of OpenGL constants and functions. It allows you to ac
 
 Sometimes, you will need to run your OpenGL code specifically before or after the game engine drawing routine, so you can store your Python function as a list element either in the scene attributes pre_draw and/or in the post_draw. This will be demonstrated in our first example.
 
-.. topic:: **To Learn OpenGL**
+.. note:: **To Learn OpenGL**
 
    You can find good OpenGL learning material on the Internet or in a bookstore. *The Official Guide to Learning OpenGL* (also known as *The Red Book*) is highly recommended, and some older versions of it can be found online for download.
 
