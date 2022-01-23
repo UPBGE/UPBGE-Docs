@@ -30,7 +30,7 @@ which include the Gravity constant and some important engine performance tweaks.
 Object Physics
 ==============
 
-.. figure:: /images/game-engine_physics_introduction_tab-header.png
+.. figure:: /images/game_engine-physics-introduction-tab_header.png
 
 See :ref:`game-engine-physics-types` in this chapter.
 
@@ -73,7 +73,7 @@ Your options include:
 Visualizing Physics
 ===================
 
-.. figure:: /images/game-engine_physics_introduction_visualization.png
+.. figure:: /images/game_engine-physics-introduction-visualization.png
 
 Go to :menuselection:`Game --> Show Physics Visualization` to show lines representing various attributes
 of the Bullet representation of your objects.
@@ -111,7 +111,7 @@ For all debug modes, API docs for ``bge.constraints``.
 Show Framerate and Profile
 --------------------------
 
-.. figure:: /images/game-engine_physics_introduction_profile-stats.jpg
+.. figure:: /images/game_engine-physics-introduction-profile_stats.jpg
 
    A shot of `Manual-BGE-Physics-DancingSticks.blend
    <https://wiki.blender.org/index.php/Media:Manual-BGE-Physics-DancingSticks.blend>`__
@@ -225,7 +225,7 @@ This means that the result is completely deterministic
 new objects that are added to the physics simulation after it was recorded.
 This may, or not, be desired according to the situation.
 
-.. figure:: /images/game-engine_physics_introduction_record-animation.png
+.. figure:: /images/game_engine-physics-introduction-record_animation.png
 
    Menu to record Keyframes to the Dope Sheet.
 
@@ -241,7 +241,7 @@ Note that you can also use Game Logic Bricks and scripting. Everything will be r
 Keyframe Clean-up
 -----------------
 
-.. figure:: /images/game-engine_physics_introduction_dope-sheet-full.png
+.. figure:: /images/game_engine-physics-introduction_dope_sheet_full.png
 
    Resulting recorded animation.
 
@@ -249,7 +249,7 @@ Keyframe Clean-up
 Pressing :kbd:`O` while in the *Dope Sheet* will remove all superfluous keyframes.
 Unwanted channels can also be removed.
 
-.. figure:: /images/game-engine_physics_introduction_dope-sheet-cleaned.png
+.. figure:: /images/game_engine-physics-introduction-dope_sheet_cleaned.png
 
    Cleaned up recording.
 
