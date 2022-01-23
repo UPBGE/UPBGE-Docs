@@ -167,7 +167,7 @@ For all debug modes, API docs for ``bge.constraints``.
 Show Framerate and Profile
 --------------------------
 
-.. figure:: /images/game-engine_physics_introduction_profile-stats.jpg
+.. figure:: /images/game_engine-physics-introduction-profile_stats.jpg
 
    A shot of `Manual-BGE-Physics-DancingSticks.blend
    <https://wiki.blender.org/index.php/Media:Manual-BGE-Physics-DancingSticks.blend>`__
