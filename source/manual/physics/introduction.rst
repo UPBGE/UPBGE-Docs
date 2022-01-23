@@ -53,7 +53,7 @@ which include the Gravity strength constant and some important engine performanc
 it starts obeying the rules of the physics engine, transforming the object from a static object into something that falls, collides, tumbles, and deforms. 
 Figure 6.3 shows the Physics Properties Editor.
 
-.. figure:: /images/game-engine_physics_introduction_tab-header.png
+.. figure:: /images/game_engine-physics-introduction-tab_header.png
 
 .. figure:: /images/Chapter6/Fig06-03.png
    
@@ -126,7 +126,7 @@ settings in combination to achieve various effects.
 Visualizing Physics
 ===================
 
-.. figure:: /images/game-engine_physics_introduction_visualization.png
+.. figure:: /images/game_engine-physics-introduction-visualization.png
 
 Go to :menuselection:`Game --> Show Physics Visualization` to show lines representing various attributes
 of the Bullet representation of your objects.
@@ -280,7 +280,7 @@ This means that the result is completely deterministic
 new objects that are added to the physics simulation after it was recorded.
 This may, or not, be desired according to the situation.
 
-.. figure:: /images/game-engine_physics_introduction_record-animation.png
+.. figure:: /images/game_engine-physics-introduction-record_animation.png
 
    Menu to record Keyframes to the Dope Sheet.
 
@@ -302,7 +302,7 @@ Note that you can also use Game Logic Bricks and scripting. Everything will be r
 Keyframe Clean-up
 +++++++++++++++++
 
-.. figure:: /images/game-engine_physics_introduction_dope-sheet-full.png
+.. figure:: /images/game_engine-physics-introduction-dope_sheet_full.png
 
    Resulting recorded animation.
 
@@ -310,7 +310,7 @@ Keyframe Clean-up
 Pressing :kbd:`O` while in the *Dope Sheet* will remove all superfluous keyframes.
 Unwanted channels can also be removed.
 
-.. figure:: /images/game-engine_physics_introduction_dope-sheet-cleaned.png
+.. figure:: /images/game_engine-physics-introduction-dope_sheet_cleaned.png
 
    Cleaned up recording.
 
