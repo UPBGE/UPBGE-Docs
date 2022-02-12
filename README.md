@@ -14,7 +14,7 @@ To build this documentation, it's required:
 - [Sphinx](https://pypi.org/project/Sphinx/)
 - [Read The Docs Theme for Sphinx](https://pypi.org/project/sphinx_rtd_theme/)
 
-Once every dependency is instaled, simply open the console on the top level directory and run the command:
+Once every dependency is installed, simply open the console on the top level directory and run the command:
 
 `make html`
 
