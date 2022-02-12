@@ -326,6 +326,7 @@ You can snapshot the physics world at any time with the following code::
 .. code-block:: python
 
       import bge
+      
       bge.constraints.exportBulletFile("test.bullet")
 
 This will allow importing into other Bullet-based projects. See the
