@@ -46,7 +46,7 @@ If you want to use the UPBGE manual in other sites or other formats, please attr
 different authors and include hyperlinks (online) or URLs (in print) to the different 
 manuals that are pointed out above.
 
-## UPBGE Documentation Team:
+## UPBGE Documentation Team
 - Antônio Froz (uayten)
 - Denis Nicolas (denicolas)
 - Guilherme Teres Nunes (UnidayStudio)
