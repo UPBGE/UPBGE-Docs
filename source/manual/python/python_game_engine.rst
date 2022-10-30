@@ -97,14 +97,14 @@ variable here, but it's good to be familiar with it. You will be using it a lot.
    owner = cont.owner
 
 The following lines get more elements from the game to be used in the script: scene will give you
-direct access to the current scene; objects is the current list to be used later; text_obj is one
+direct access to the current scene; objects is the current list to be used later; font_obj is one
 element of the objects list (accessed by its name in Blender).
 
 .. code-block:: python
 
    scene = logic.getCurrentScene()
    objects = scene.objects
-   text_obj = objects["Text"]
+   font_obj = objects["Text"]
 
 In the above code we used the bge module to get the font game object but using the bge module only we are
 limiting us to get/set the game object plus to make transforms with this game object (position, rotate or scale).
