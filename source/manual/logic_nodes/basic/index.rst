@@ -1,9 +1,9 @@
 ++++++++++++
-Category 1
+General Nodes
 ++++++++++++
 
 .. toctree::
-  :maxdepth: 1
+  :maxdepth: 2
 
   events/index.rst
   game/index.rst

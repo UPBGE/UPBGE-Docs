@@ -1,5 +1,5 @@
 ++++++++++++
-Category 2
+Scene Manipulation Nodes
 ++++++++++++
 
 .. toctree::

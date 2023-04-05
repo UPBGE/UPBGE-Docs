@@ -8,7 +8,8 @@ Logic Nodes
    :maxdepth: 2
 
    introduction.rst
-   category_1/index.rst
-   category_2/index.rst
-   category_3/index.rst
-   category_4/index.rst
+   basic/index.rst
+   scene/index.rst
+   logic_math/index.rst
+   data/index.rst
+   utilities/index.rst
