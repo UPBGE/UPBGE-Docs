@@ -5,6 +5,7 @@ On Update
 
 .. figure:: /images/Logic_Nodes/on_update_node.png
    :align: right
+   :width: 215
    :alt: On Update Node.
 
 The *On Update* node activates each frame. It can be used to continuously

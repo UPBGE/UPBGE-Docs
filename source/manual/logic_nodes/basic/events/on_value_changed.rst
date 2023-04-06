@@ -4,6 +4,7 @@ On Value Changed
 
 .. figure:: /images/Logic_Nodes/on_value_changed_node.png
    :align: right
+   :width: 215
    :alt: On Value Changed Node.
 
 The *On Value Changed* node stores a value internally, and as soon as a value other than

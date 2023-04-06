@@ -4,6 +4,7 @@ Once
 
 .. figure:: /images/Logic_Nodes/once_node.png
    :align: right
+   :width: 215
    :alt: Once Node.
 
 The *Once* node restricts a continuous *True* condition to only the first frame.

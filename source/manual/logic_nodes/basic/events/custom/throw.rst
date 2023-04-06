@@ -4,9 +4,10 @@ Send
 
 .. figure:: /images/Logic_Nodes/send_node.png
    :align: right
+   :width: 215
    :alt: Send Node.
 
-The *Send* node creates an event that can be reacted to using the *Send* node or
+The *Send* node creates an event that can be reacted to using the :doc:`./catch` node or
 the *uplogic* module. An Event can store *Content* and a *Messenger* can be assigned.
 
 .. note::

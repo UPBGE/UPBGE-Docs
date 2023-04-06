@@ -5,6 +5,7 @@ On Next Tick
 
 .. figure:: /images/Logic_Nodes/on_next_tick_node.png
    :align: right
+   :width: 215
    :alt: On Next Tick Node.
 
 The *On Next Tick* node delays a condition by one tick/frame.

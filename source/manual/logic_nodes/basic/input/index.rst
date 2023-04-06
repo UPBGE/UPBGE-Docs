@@ -3,7 +3,7 @@ Input
 +++++
 
 .. toctree::
-  :maxdepth: 1
+  :maxdepth: 2
 
   mouse/index.rst
   gamepad/index.rst

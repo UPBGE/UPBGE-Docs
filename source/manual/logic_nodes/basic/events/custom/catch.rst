@@ -5,9 +5,10 @@ Receive
 
 .. figure:: /images/Logic_Nodes/receive_node.png
    :align: right
+   :width: 215
    :alt: Receive Node.
 
-The *Receive* node reacts to events thrown via the *Send* node or the *uplogic* module.
+The *Receive* node reacts to events thrown via the :doc:`./throw` node or the *uplogic* module.
 An Event can store some data, which can be extracted using this node.
 
 .. note::
