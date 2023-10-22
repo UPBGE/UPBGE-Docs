@@ -130,5 +130,5 @@ Development
 UPBGE is maintained by a group of developers in their spare time and its community. You 
 can contribute to UPBGE if you code in C++ or Python: just `open a pull request <https://github.com/UPBGE/upbge/pulls>`__, 
 submit your changes and wait for the reviewers. Also, even if you don't code, you can 
-contribute by submiting bug reports, feature requests and participating discussions 
+contribute by submitting bug reports, feature requests and participating discussions 
 `on issues <https://github.com/UPBGE/upbge/issues>`__.
