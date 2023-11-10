@@ -1,3 +1,4 @@
+.. _game-engine-physics-dynamic:
 
 ***************
 Dynamic Physics

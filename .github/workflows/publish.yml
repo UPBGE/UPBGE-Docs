@@ -38,12 +38,26 @@ jobs:
           mv UPBGE_Manual.zip html
           cd ..
 
-      - name: Publish documentation
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      # aspnix old server
+      # - name: Publish documentation
+      #  uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      #  with:
+      #    server: lx01.aspnix.com
+      #    protocol: ftps
+      #    username: ${{ secrets.FTP_USER }}
+      #    password: ${{ secrets.FTP_PASSWORD }}
+      #    local-dir: "./build/html/"
+      #    server-dir: "./manual/"
+  
+      # Test
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          server: lx01.aspnix.com
-          protocol: ftps
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: "./build/html/"
-          server-dir: "./manual/"
+          source-directory: './build/html/'
+          destination-github-username: 'UPBGE'
+          destination-repository-name: 'UPBGE-Docs-build'
+          user-email: jbernalmartinez@gmail.com
+          target-branch: master
+

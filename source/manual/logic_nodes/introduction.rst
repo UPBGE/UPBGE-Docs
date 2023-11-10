@@ -75,11 +75,3 @@ Python calls.
 .. warning::
 
    Due to the way Logic Nodes *currently* work, they are the most performance-heavy way to create logic.
-
-
-------------
-Future
-------------
-
-The code wrapped by the nodes will be cythonized (converted to C/C++ from python), hopefully speeding the
-nodetree evaluation up by at least 20%.

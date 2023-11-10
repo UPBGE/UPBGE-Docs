@@ -4,7 +4,10 @@
 Python and the Game Engine
 ==========================
 
-This whole chapter is organized into three main parts: why, what, and how. Thus, if you have read from the beginning, you already have solid reasons to start using scripts for your project, and you understand what Python is. The final part of this chapter will cover how to use your Python knowledge inside the game engine. This part is divided into four submodules:
+This whole chapter is organized into three main parts: why, what, and how. Thus, if you have read from
+the beginning, you already have solid reasons to start using scripts for your project, and you understand
+what Python is. The final part of this chapter will cover how to use your Python knowledge
+inside the game engine. This part is divided into four submodules:
 
 * Integrating Python in the game engine.
 * Writing your Python scripts.
@@ -14,44 +17,63 @@ This whole chapter is organized into three main parts: why, what, and how. Thus,
 Integrating Python in the Game Engine
 -------------------------------------
 
-In the game engine, the script interface is controller-centric by design. Therefore, you can consider the Python script simply as a more complex controller to replace the Expression or the Boolean controllers. In those cases, the script will be responsible for controlling how the sensors are related with the actuators of a given object. In fact, the sensors, actuators, and even the object where you are calling the script from are all attributes of the controller.
+In the game engine, the script interface is controller-centric by design. Therefore, you can consider
+the Python script simply as a more complex controller to replace the Expression or the Boolean controllers.
+In those cases, the script will be responsible for controlling how the sensors are related with the actuators
+of a given object. In fact, the sensors, actuators, and even the object where you are calling the script
+from are all attributes of the controller.
 
-As we mentioned earlier, with a Python script you can control external devices, control multiple objects at once, and much more. However, you will never be free from using a logic brick framework. And from the combination of logic bricks, individual sensors, global sensors, and actuators, the elegance of your system will arise.
+As we mentioned earlier, with a Python script you can control external devices, control multiple objects at once,
+and much more. However, you will never be free from using a logic brick framework. And from the combination
+of logic bricks, individual sensors, global sensors, and actuators, the elegance of your system will arise.
 
-In the first example, you will find a very simple case study of how to make your Python controller work. It will cover the basic behavior of receiving sensors' input in the script and triggering actuators from it.
+In the first example, you will find a very simple case study of how to make your Python controller work.
+It will cover the basic behavior of receiving sensors' input in the script and triggering actuators from it.
 
-Open the file \Book\Chapter7\3_template\abracadabra.blend.
+Download the example :download:`003_template.zip </blends/Python_Scripting/003_template/003_template.zip>`, extract it
+and load the abracadabra.blend file.
 
-.. figure:: /images/Chapter7/Fig07-05.png
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-05.png
 
    Abracadabra
 
-Launch the game and keep the spacebar pressed. In Figure 7.5, you can see the result before and after you press the key. Can you read the spinning text? It may not be impressive, but it certainly is didactic. Here is the script behind this effect:
+Launch the game and keep the spacebar pressed. In above figure, you can see the result before and after you press the key.
+Can you read the spinning text? It may not be impressive, but it certainly is didactic. Here is the script behind this effect:
 
 .. code-block:: python
-   
+
    import bge
    from bge import logic
 
+   # Use bge module to get/set game property + transform
    cont = logic.getCurrentController()
    owner = cont.owner
    scene = logic.getCurrentScene()
    objects = scene.objects
-   text_obj = objects["Text"]
-   
+   font_object = objects["Text"]
+
+   # Use bpy.types.TextCurve attributes to set other text settings (size, body, etc)
+   font_object_data = font_object.blenderObject.data
+
    sens = cont.sensors['my_sensor']
    act = cont.actuators['my_actuator']
-   
+
    if sens.positive:
-      cont.activate(act)
-      text_obj["Text"] = "CADABRA"
+     cont.activate(act)
+     font_object_data.body = "CADABRA"
+     font_object_data.size = 2
+     font_object_data.resolution_u = 1
    else:
-      cont.deactivate(act)
-      text_obj["Text"] = "ABRA"
+     cont.deactivate(act)
+     font_object_data.body = "ABRA"
+     font_object_data.size = 1
+     font_object_data.resolution_u = 4
 
-This script is triggered from a keyboard sensor, runs from a controller in the camera object, activates an actuator in the camera itself, and changes a property in the text object. Figure 7.6 shows logic bricks for this one.
 
-.. figure:: /images/Chapter7/Fig07-06.png
+This script is triggered from a keyboard sensor, runs from a controller in the camera object,
+activates an actuator in the camera itself, and changes a property in the text object. Next figure shows logic bricks for this one.
+
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-06.png
 
    Simple logic bricks with a Python controller
 
@@ -62,29 +84,51 @@ Let's look at it from the beginning:
    import bge
    from bge import logic
 
-The first lines import the module bge and then the submodule logic. No big deal here. We actually don't need to explicitly import the bge module since we are importing a submodule directly. However, it doesn't hurt to do it. Lines 4 and 5 will store the current controller in a variable and create a pointer to the object where it was called from (known as _owner_). We are not using the owner variable here, but it's good to be familiar with it. You will be using it a lot.
+The first lines import the module bge and then the submodule logic. No big deal here.
+We actually don't need to explicitly import the bge module since we are importing a submodule directly.
+However, it doesn't hurt to do it. Lines 4 and 5 will store the current controller in a variable and
+create a pointer to the object where it was called from (known as _owner_). We are not using the owner
+variable here, but it's good to be familiar with it. You will be using it a lot.
 
 .. code-block:: python
    
+   # Use bge module to get/set game property + transform
    cont = logic.getCurrentController()
    owner = cont.owner
 
-The following lines get more elements from the game to be used in the script: scene will give you direct access to the current scene; objects is the current list to be used later; text_obj is one element of the objects list (accessed by its name in Blender).
+The following lines get more elements from the game to be used in the script: scene will give you
+direct access to the current scene; objects is the current list to be used later; font_obj is one
+element of the objects list (accessed by its name in Blender).
 
 .. code-block:: python
 
    scene = logic.getCurrentScene()
    objects = scene.objects
-   text_obj = objects["Text"]
+   font_obj = objects["Text"]
 
-Remember when we said that the game engine is controller-centric? All the sensors and actuators are accessed from the controller, not from the object they belong to (its owner), as you might expect. Lines 11 and 12, respectively, read the built-in sensor and actuator list to get the ones we are looking for.
+In the above code we used the bge module to get the font game object but using the bge module only we are
+limiting us to get/set the game object plus to make transforms with this game object (position, rotate or scale).
+Whether we want to access to the inner parts of the Text object and modify them then we need to understand that
+the Text object is a bpy object (type TextCurve) and we need to adquire its bpy object data. Once adquired we can use
+all the properties of bpy.types.TextCurve class.
+
+.. code-block:: python
+
+   # Use bpy.types.TextCurve attributes to set other text settings (size, body, etc)
+   font_object_data = font_object.blenderObject.data
+
+Remember when we said that the game engine is controller-centric? All the sensors and actuators are
+accessed from the controller, not from the object they belong to (its owner), as you might expect.
+Lines 11 and 12, respectively, read the built-in sensor and actuator list to get the ones we are looking for.
 
 .. code-block:: python
 
    sens = cont.sensors['my_sensor']
    act = cont.actuators['my_actuator']
 
-In a way similar to how logic bricks work, we are going to activate the actuator if the sensor triggers positive and deactivate it otherwise. The deactivation happens in the frame after the sensor ceases to validate, for example, the key is unpressed or the mouse button is released.
+In a way similar to how logic bricks work, we are going to activate the actuator if the sensor triggers positive
+and deactivate it otherwise. The deactivation happens in the frame after the sensor ceases to validate,
+for example, the key is unpressed or the mouse button is released.
 
 .. code-block:: python
 
@@ -93,35 +137,43 @@ In a way similar to how logic bricks work, we are going to activate the actuator
    else:
       cont.deactivate(act)
 
-We are not restricted to controlling only actuators, though. Lines 15 and 18 change the text of the object when you press/release the spacebar:
+We are not restricted to controlling only actuators, though. Lines 19-21 and 24-26 change the text, the size and
+the resolution of the object when you press/release the spacebar:
 
 .. code-block:: python
 
-   text_obj["Text"] = "CADABRA"
-   
-   text_obj["Text"] = "ABRA"
+   font_object_data.body = "CADABRA"
+   font_object_data.size = 2
+   font_object_data.resolution_u = 1
 
-This file can be simple, but holds the essence of the game engine architecture design. Now is a good time to go over the three game engine template files that come with Blender. Go to Text Editor  Templates  GameLogic\* and spend some time studying those examples. You can also get them on the book files under \Book\Chapter7\3\_template\.
+   font_object_data.body = "ABRA"
+   font_object_data.size = 1
+   font_object_data.resolution_u = 4
+
+This file can be simple, but holds the essence of the game engine architecture design. Now is a good time to go over
+the other game engine template files that come with the example :download:`003_template.zip </blends/Python_Scripting/003_template/003_template.zip>`
+and spend some time studying those examples.
 
 Writing Your Python Scripts
 ---------------------------
 
-If you haven't started your own scripts, now is a good time to do so. You will need a text editor, the API modules documented, and a good way to test your files.
+If you haven't started your own scripts, now is a good time to do so. You will need a text editor, the API modules documented,
+and a good way to test your files.
 
 Text Editors
 ++++++++++++
 
-It's important to find a script editor that you find pleasant to work with. The most important features you will be looking for are: syntax coloring and highlighting, auto indentation, and auto completion. You can find editors with even more features than these, so experiment with different alternatives and decide what's best for you.
+It's important to find a script editor that you find pleasant to work with. The most important features you will be looking
+for are: syntax coloring and highlighting, auto indentation, and auto completion. You can find editors with even more
+features than these, so experiment with different alternatives and decide what's best for you.
 
-.. topic:: **Notepad? Notepad++**
-
-   Most of the scripts presented in this chapter were coded using Notepad++. This Windows-based open source text editor is not Python specific, but handles Python syntax highlighting well. You can download Notepad++ from their website: http://notepad-plus.sourceforge.net
-   If you are using Linux or OSX, there are plenty of native alternatives that may serve you even better.
-
-Blender Text Editor
+UPBGE Text Editor
 *******************
 
-As you probably know, Blender has its own internal text editor (see Figure 7.7). Although it may not be as powerful as software designed exclusively for this particular task, it can be very convenient. It's useful for quick tests, small scripts, or when you want to keep everything bundled inside the Blender file. Here are its main features:
+As you probably know, UPBGE has its own internal text editor (see next figure). Although it may
+not be as powerful as software designed exclusively for this particular task, it can be very convenient.
+It's useful for quick tests, small scripts, or when you want to keep everything bundled inside the Blender file.
+Here are its main features:
 
 * Syntax highlighting
 * Dynamic font sizes
@@ -129,54 +181,109 @@ As you probably know, Blender has its own internal text editor (see Figure 7.7).
 * Line counting and navigation
 * Search over multiple internal files
 * Sync with external files
+* Icon viewer (small but marvellous feature to get what is the icon that you want to use)
 
-.. figure:: /images/Chapter7/Fig07-07.png
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-07.png
 
-   Blender internal text editor
+   UPBGE internal text editor
+
+Visual Studio Code or PyCharm
+*****************************
+
+External editors as Visual Studio Code or PyCharm have many more features than internal UPBGE Text editor. 
+The weakest point of using external editors is the auto-completion and the documentation visualization directly 
+from the code.
+
+Using a Python API stub generated from UPBGE .rst documentation can solve both issues. In the :ref:`tools-api-stubs` 
+chapter you can see how install the upbge-stubs package to improve the external editor experience.
 
 Reference Material and Documentation
 ++++++++++++++++++++++++++++++++++++
 
-Since the game engine Python API is available online, you have an official excuse to keep a Web browser open while you work. It's not a bad idea to keep an offline version of it, too. (You can find it on the book files.) Use it when you need to be more productive and the Internet is getting in your way (as in, always).
+Since the `UPBGE game engine Python API <https://upbge.org/docs/latest/api/index.html>`__ is available online, you 
+have an official excuse to keep a Web browser open while you work.
+It's not a bad idea to keep an `offline version of it <https://upbge.org/docs/latest/api/upbge-api-reference.zip>`__, 
+too. Use it when you need to be more productive and the Internet is getting in your way (as in, always).
 
-It's good if you can start to gather example materials from the Internet and keep them organized. If you use the append feature in Blender to navigate to and import text files from your "collection," you will not even need to open another Blender application. Also, if you are consistent with your naming style, indentation rules, and file structures, you will find easy to reuse your own scripts.
+It's good if you can start to gather example materials from the Internet and keep them organized.
+If you use the append feature in Blender to navigate to and import text files from your "collection",
+you will not even need to open another Blender application. Also, if you are consistent with your naming
+style, indentation rules, and file structures, you will find easy to reuse your own scripts.
 
 Testing Your Scripts
 ++++++++++++++++++++
 
-It doesn't matter how easy Python is, you will spend evenings testing and retesting your scripts before you have them working properly. The more complete way to test your script is to play it inside the game engine. However, you may not want to load your game every time you need to be sure of some Python syntax, data types' built-in functions, or simply to check if the math of a result is correct.
+It doesn't matter how easy Python is, you will spend evenings testing and retesting your scripts before you
+have them working properly. The more complete way to test your script is to play it inside the game engine.
+However, you may not want to load your game every time you need to be sure of some Python syntax, data types'
+built-in functions, or simply to check if the math of a result is correct.
 
-In those cases, you can use an interactive interpreter to help you. If you have Python installed on your system, you have it already. If you are using Windows, this will be the python.exe application in your Python installation directory (C:\Python31\ by default, considering the installation of Python 3.1), as seen in Figure 7.8. In Linux or OSX, you have to type "python" in any console and you are good to go.
+In those cases, you can use an interactive interpreter to help you. If you have Python installed on
+your system, you have it already. If you are using Windows, this will be the python.exe application in your
+Python installation directory (C:\Python39\ by default, considering the installation of Python 3.9), as seen in
+Figure 7.8. In Linux or OSX, you have to type "python" in any console and you are good to go.
 
-.. figure:: /images/Chapter7/Fig07-08.png
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-08.png
 
    Python IDE
 
-You can also use the Blender Python console. Change one of your current windows into the console, and you should see the screen shown in Figure 7.9.
+You can also use the UPBGE Python console. Change one of your current windows into the console, and you should
+see the screen shown in the next figure.
 
-.. figure:: /images/Chapter7/Fig07-09.png
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-09.png
 
-   Blender Python console
+   UPBGE Python console
 
-Now you can use it to type simple codes, or to run a help or a dir into any of the Python modules. Unfortunately, only Blender modules have the auto-complete working from there.
+Now you can use it to type simple codes, or to run a help or a dir into any of the Python modules.
+Unfortunately, only Blender modules have the auto-complete working from there.
 
-Another important strategy is to keep the development of new functionalities outside the main file. For example, if you need to develop a navigation system (as we will soon), you don't need to use your real big, high-textured scenario. Definitively not for the early tests. If you keep independent systems that work together, you will be able to identify errors faster and easier and even to port fixes over to other projects smoothly.
+Additionally, you can also use the in-game python console for debugging the game from python. In the scene properties 
+tab you can activate it and set-up its short-cut.
+
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-10.png
+
+   Set-up In-game UPBGE Python console
+
+To activate it, once the game has started you have to press the short-cut. Then the game will be paused and in the 
+Windows console or linux terminal you will see the interactive python console, as you can see in the next figure. Whether 
+you want to continue the game you need simply ending the interpreter, for linux Ctrl + D and for windows Ctrl + Z + Enter.
+
+.. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-11.png
+
+   In-game UPBGE Python console
+
+Another important strategy is to keep the development of new functionalities outside the main file. For example,
+if you need to develop a navigation system (as we will soon), you don't need to use your real big, high-textured scenario.
+Definitively not for the early tests. If you keep independent systems that work together, you will be able to identify
+errors faster and easier and even to port fixes over to other projects smoothly.
 
 Designing Your Python Script - Study Example
 --------------------------------------------
 
-We are now going to dive into an example of writing and planning a Python script for the game engine from scratch. We will assume that you have already covered all the basics of Python scripting and the general understanding of game engine internals so we can move on to its real usage. More specifically, we are going over the writing process of a camera navigation system for an architectural visualization walkthrough. This study case is actually the system developed for a commercial project for an Italian book project. In general, we needed to implement a system to navigate and interact in a virtual model of an Italian Doric temple. Here, however, we are going to develop it under a sandbox and reapply it into another file, emulating what you could do with your own projects.
+We are now going to dive into an example of writing and planning a Python script for the game engine from scratch.
+We will assume that you have already covered all the basics of Python scripting and the general understanding of
+game engine internals so we can move on to its real usage. More specifically, we are going over the writing process
+of a camera navigation system for an architectural visualization walkthrough. This study case is actually the system
+developed for a commercial project for an Italian book project. In general, we needed to implement a system to navigate
+and interact in a virtual model of an Italian Doric temple. Here, however, we are going to develop it under a sandbox
+and reapply it into another file, emulating what you could do with your own projects.
 
-Unlike gaming cameras, a virtual walkthrough can use a very simple navigation system compound of (1) an orbit mode to look at the exterior of the building; (2) a walk mode to navigate inside the building with gravity simulation and collision; (3) and a fly mode to freely explore the virtual environment with collision only. The other requirement was to make the system as portable as possible, and with the least amount of logic bricks.
+Unlike gaming cameras, a virtual walkthrough can use a very simple navigation system compound of (1) an orbit mode to
+look at the exterior of the building; (2) a walk mode to navigate inside the building with gravity simulation and
+collision; (3) and a fly mode to freely explore the virtual environment with collision only. The other requirement
+was to make the system as portable as possible, and with the least amount of logic bricks.
 
-All of those aspects must be considered from the first phases of the coding process. With a well-defined design, you can plan the most efficient system in the short and long run.
+All of those aspects must be considered from the first phases of the coding process. With a well-defined design,
+you can plan the most efficient system in the short and long run.
 
-.. topic:: **Pencil and Paper, Valuable Coding Assets**
+.. note:: **Pencil and Paper, Valuable Coding Assets**
 
-   One of the most remarkable moments during my coding studies was at Blender Conference 2008. I was still in my first steps of learning C++ and OpenGL coding, and I got the chance to explain a game engine bug to Brecht van Lommel[md]a really experienced and acknowledged Blender coder and a very inspiring person. The bug itself was hard to explain through the Internet; it's the one behind the implementation of canvas coordinates for 2D filters presented in Chapter 5. I was pleased enough to have his input on this, but even more impressive was seeing him code a partial solution right in front of me.
-   At this point, I learned an important lesson. It doesn't matter how advanced and technical the coding is that you are working on; you can always have a great time sketching your ideas and plans with old-fashioned pencil and paper. This is how he solved the problem, clearly laying down the ideas and organizing them logically. I never forgot that[md]thanks, Brecht!
+   It doesn't matter how advanced and technical the coding is that you are working on; you can always have a great time
+   sketching your ideas and plans with old-fashioned pencil and paper. This is how the problems are solved,
+   clearly laying down the ideas and organizing them logically.
 
-The system will consist of one camera for the orbit mode, and one to be used for both the fly and walk mode. Each mode works as described in the following table:
+The system will consist of one camera for the orbit mode, and one to be used for both the fly and walk mode.
+Each mode works as described in the following table:
 
 .. table:: Comparison of Different Navigation Cameras
 
@@ -196,7 +303,7 @@ The system will consist of one camera for the orbit mode, and one to be used for
 
 - **Empty:** is an empty object the camera is parented to.
 
-.. topic:: **Try It Out**
+.. note:: **Try It Out**
 
    In order to illustrate it better, you can see the working system demonstrated in the book file: \Book\Chapter7\4\_navigation\_system\camera\_navigation.blend.
    To switch modes press 1, 2, or 3. This will change the mode to orbit, walk, and fly, respectively. To navigate, you can use the mouse and the keys WASD.
@@ -247,7 +354,7 @@ There is one function that is loaded once at the beginning of the game; we call 
    33 G.scenes = {"main":G.getCurrentScene()}
    34 objects = G.scenes["main"].objects
 
-.. topic:: **Save and Load a game with GlobalDict**
+.. note:: **Save and Load a game with GlobalDict**
 
    Since the module logic is accessible from all the functions and all the scenes, it can be used to store "global" objects. If you need to preserve those objects and variables between game sessions (i.e., after you close your game), you can store them inside the dictionary logic.globalDict and use logic.saveGlobalDict() and logic.loadGlobalDict() to save and load it.
 
@@ -267,7 +374,7 @@ To store the camera information, we are first going to create a global dictionar
 
 Now that we have our objects instanced, we can set the initial values for our functions, such as the camera rotation restrictions. We don't want the cameras to look under the ground; thus, we need to manually set our limits. Although we could set those limits directly in the orbit and look functions, having all the parameters in the same part of code is easier to tweak (and slightly faster since they don't need to be reassigned every frame).
 
-.. topic:: **External Settings File**
+.. note:: **External Settings File**
 
    Another common workflow is to have a separate python file (for example, settings.py) with all the variables set. Then in your working script, you simply have to do: import settings.py and use e.g. settings.left.
 
@@ -369,7 +476,7 @@ The second event management function handles keyboard inputs. This function take
    140                change_view("top", "fly")
    (...)
 
-.. topic:: **For a World with Fewer Logic Bricks**
+.. note:: **For a World with Fewer Logic Bricks**
 
    If you don't want to use a keyboard sensor, you can use an internal instance of the keyboard module. You can read about this in the "bge.logic API" section later in this chapter, or on the online API page: _http://www.blender.org/documentation/blender_python_api_2_66_release/bge.logic.html#bge.logic.keyboard._
 
@@ -461,7 +568,7 @@ The first lines that deserve our attention here are the normalizing operation. T
 
    242     x = win_x / screen_width
 
-.. topic:: **Even Fewer Logic Bricks and Normalized Mouse Coordinates**
+.. note:: **Even Fewer Logic Bricks and Normalized Mouse Coordinates**
 
    It's important to always use normalized coordinates for your screen operations. Otherwise, different desktop resolutions will produce different results in a game. As a counter edge case, you may need the absolute coordinates for mouse events if you want to assure minimum clickable areas for your events.
    You don't always need to normalize the mouse coordinates manually. Like the keyboard sensor, you can replace the mouse sensor by an internal instance of the mouse module.
@@ -588,7 +695,7 @@ scripts.change_view
 
 After the user presses a key (1, 2, or 3) to change the view, we call the change_view() function to switch to the new camera (with a parameter specifying which camera to use). This function consists of two parts: first, we set the correct position and orientation for the camera and pivot; secondly, we change the current camera to the new one.
 
-.. topic:: **Decomposing the View Orientation**
+.. note:: **Decomposing the View Orientation**
 
    Keep in mind that the desired orientation (stored in the empty and accessed through the G.views dictionary) represents the new view orientation. In our system, this view orientation is the combination of the parent object (pivot) orientation with the child one (camera).
 
@@ -626,7 +733,7 @@ For that, we need to rotate it a few degrees to align with the horizon. The came
    198     pivot.applyRotation([-angle,0,0],1)
    199     camera.applyRotation([angle,0,0],1)
 
-.. topic:: **Reasoning Behind the Design**
+.. note:: **Reasoning Behind the Design**
 
    There is another reason for keeping this as a separate function. Originally, I was planning to switch modes (walk/fly) while keeping the same camera position and view. Although I dropped the idea, I decided to keep the system flexible in case of any turn of events (clients[md]who understands their minds?).
 
@@ -750,7 +857,7 @@ A snapshot with those changes can be found at:
    * - .. figure:: /images/Chapter7/Fig07-14a.png
      - .. figure:: /images/Chapter7/Fig07-14b.png
 
-.. topic:: **Make Sure That Collision Is Set Properly**
+.. note:: **Make Sure That Collision Is Set Properly**
 
    All the houses, the ground, and the other 3D objects already have collision enabled in this file. In other situations, however, you may need to change the collision objects, enabling or disabling their collisions accordingly. The Python raycast uses the internal Bullet Physics engine under the hood. In order to prevent the camera from going through the walls and the ground, set enough collision surfaces (but not too much, so that you don't compromise the performance of your game).
 
@@ -864,7 +971,7 @@ There are cases when you need to load the content of an external Blender file at
 
    bge.logic.LibLoad("//entities.blend", "Scene")
 
-.. topic:: **Beware of Lamps**
+.. note:: **Beware of Lamps**
 
    New Lamp objects can be dynamically loaded from external files. However, in GLSL mode, they will not work as a light source for the material shaders, since the shaders would need to be recompiled for that.
 
@@ -945,7 +1052,7 @@ Class KX_GameObject
 
 If you run a print(dir (object)) inside your script, you will get a very confusing list. It includes Python internal methods, instance methods, and instance variables. Most of them are common to all objects, so we are going to talk about them first. However, lamps and cameras not only inherit all the game object methods but also extend them with specific ones.
 
-.. topic:: **The Truth Is Out There**
+.. note:: **The Truth Is Out There**
 
    In order to see all available methods, please refer to the documentation. We are only covering a few of them here.
 
@@ -975,7 +1082,7 @@ This method is a more complete version of the rayCastTo(). It has so many applic
 
 Once you retrieve the list of property names, you can use it to see if the object has a specific property before using it. To get individual properties, you can use *if "prop" in object*: or *object.get("prop", default=None)*.
 
-.. topic:: **A Use for Properties**
+.. note:: **A Use for Properties**
 
    Properties have multiple uses in the game engine. One of those uses is to mark an object to be identified by the Python script. Why not use their names instead? While names work fine to retrieve individual objects, properties allow you to easily mark and access multiple objects at once. Frankly, it's easier to create an organized, named, and tagged MP3 collection than it is to find time to properly name all your Blender data blocks[ms]objects, meshes, materials, textures, images, and so on.
 
@@ -1165,7 +1272,7 @@ And, voilà, now we only need to visualize the pressed key:
 
       owner["Text"] = text
 
-.. topic:: **Key Status**
+.. note:: **Key Status**
 
    The status of a key is what informs you whether the key has just been pressed or if it was pressed already. The Keyboard sensor is always positive as long as any key is held, and you may need to trigger different functions when some keys are pressed and released. The status values are actually stored in bge.logic:
 
@@ -1339,7 +1446,7 @@ Euler and Quaternion
 
 Euler and quaternion are different rotation systems. The same rotation can be represented using Euler, quaternion, or an orientation matrix.
 
-.. topic:: **Guerrilla CG**
+.. note:: **Guerrilla CG**
 
    You can find two great video tutorials on the Guerrilla CG vimeo channel that explain and compare the two rotation system:
    Euler Rotations Explained: http://vimeo.com/2824431
@@ -1401,7 +1508,7 @@ Example: Basic Audio Playback (TODO to be adapted to new API)
 
 We start by creating an audio device. This is simply a Python object you will use to play your sounds. Next, we create a Factory object. A factory is a container for a sound file. When we pass the Factory object into the device play function, it will start playing the sound and return a handle. Handles are used to control pause/resume and to stop an audio.
 
-.. topic:: **When Will This Music Stop?**
+.. note:: **When Will This Music Stop?**
 
    After you initialize a sound, you can get its current position in seconds with the handle.position Python property. This is especially useful to keep videos and audio in sync. If you need to check whether or not the audio is ended, you shouldn't rely on the position, though. Instead, you can get the status of the sound by the property handle.status. If you are using the sound position to control a video playback, the sound status will also tell you if the video is over (handle.status = aud.AUD_STATUS_INVALID).
    The possible statuses are:
@@ -1419,7 +1526,7 @@ This module is a wrapping of OpenGL constants and functions. It allows you to ac
 
 Sometimes, you will need to run your OpenGL code specifically before or after the game engine drawing routine, so you can store your Python function as a list element either in the scene attributes pre_draw and/or in the post_draw. This will be demonstrated in our first example.
 
-.. topic:: **To Learn OpenGL**
+.. note:: **To Learn OpenGL**
 
    You can find good OpenGL learning material on the Internet or in a bookstore. *The Official Guide to Learning OpenGL* (also known as *The Red Book*) is highly recommended, and some older versions of it can be found online for download.
 

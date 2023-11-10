@@ -1,9 +1,9 @@
 .. _sensors-index:
 .. _bpy.types.Sensor:
 
-###########
-  Sensors
-###########
+#######
+Sensors
+#######
 
 .. toctree::
 

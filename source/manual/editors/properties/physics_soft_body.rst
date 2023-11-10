@@ -1,3 +1,4 @@
+.. _game-engine-physics-soft-body:
 
 *****************
 Soft Body Physics

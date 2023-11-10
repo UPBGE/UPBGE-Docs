@@ -1,7 +1,8 @@
+.. _tools-api-stubs:
+
 *********
 API Stubs
 *********
-
 
 What Are They?
 ==============
@@ -10,57 +11,62 @@ Python is a dynamically-typed language, but that doesn't mean you can't have
 such quality-of-life features like auto-completion or type information for APIs,
 which all modern IDEs provide.
 
-The only reason you can't have them for Blender or UPBGE projects is that the
-relevant modules(namely, `bpy.*` and `bge.*`) are only available inside Blender.
+The only reason you can't have them for UPBGE projects is that the
+relevant modules (namely, `bpy.*` and `bge.*`) are only available inside UPBGE.
 
 There are two possible options to deal with this problem. Firstly, you can
-`build Blender as a Python module <https://wiki.blender.org/wiki/Building_Blender/Other/BlenderAsPyModule>`__,
+`build UPBGE/Blender as a Python module <https://wiki.blender.org/wiki/Building_Blender/Other/BlenderAsPyModule>`__,
 which would give your IDE the most accurate and up-to-date API information as possible.
 
-But it's not always easy to build Blender from source, especially if you are not
-familiar with the task. In this case, using API stubs, or a "fake module" could be
-a good alternative.
+But it's not always easy to build UPBGE from source, especially if you are not
+familiar with the task. In this case, using API stubs could be a good alternative.
 
-fake-bpy-module
-===============
+upbge-stubs
+===========
 
-There is an open-source project named `fake-bpy-module <https://github.com/nutti/fake-bpy-module>`__
-which provides a stub for Blender's Python API.
+An utility to generate Python API stubs from documentation files in reStructuredText format 
+called `BPY Stub Generator (bpystubgen) <https://github.com/mysticfall/bpystubgen>`__ can help us to get the 
+UPBGE python API stubs.
+
+The main usage of the program is to create Python API stubs from the documentation generated during the build 
+process of UPBGE so that an IDE can provide autocompletion support and type hints for relevant modules 
+like bpy or bge.
+
+There are already a number of tools created with a similar goal in mind, notably 
+`fake-bpy-module <https://github.com/nutti/fake-bpy-module>`__ and 
+`fake-bge-module <https://github.com/nutti/fake-bge-module>`__ which can be a good alternative to this project.
+
+However, bpystubgen has a few advantages over the others:
+
+* It's very fast - Some of those tools may take over an hour to generate the entire stubs for Blender. But bpystubgen can do it under a minute (1,593 source documents).
+* The generated stub modules preserve most of the source documentation, so you can use them as a manual as well.
+* It generates PEP-561 compliant stub modules, so it's safe to include them in your runtime module path.
+* Along with its fast execution speed, the project also provides well-organised API and test suites to make it easier to fix bugs or improve the output quality.
+
+Using upbge-stubs
++++++++++++++++++
+
+If you just want to use the API stubs, you can install them from PyPI without having to generate them yourself.
+As for UPBGE, stubs are available for the upcoming 0.3 release, which you can install as follows:
+
+.. code-block:: python
+   
+   $ pip install upbge-stubs==0.3.*
 
 Once you install it via pip (or any other package manager you may prefer), you can
-configure the IDE of your choice as described in the project page.
+configure the IDE of your choice as described in the project page 
+`BPY Stub Generator (bpystubgen) <https://github.com/mysticfall/bpystubgen>`__.
 
 After that, you can enjoy nice auto-completion and type information for most of the
-Blender's Python API.
+UPBGE's Python API.
 
-One thing to remember, by the way, is that you need to match the version of
-`fake-bpy-module` to that of Blender on which your UPBGE installation is based. For
-UPBGE 0.2.5, you need to install `fake-bpy-module-2.79`, for example.
+Examples
+++++++++
 
-At the time of the writing, there is no fake-bpy-module for Blender 2.90, which
-UPBGE 0.3.0 supports. Before the new version of the module is released, you may want
-to install `fake-bpy-module-2.83` instead, as it is the closest version to 2.90.
+.. figure:: /images/Tools/tools-examples-01.png
 
-fake-bge-module
-===============
+   Auto-completion at work in PyCharm
 
-There is also `fake-bge-module <https://github.com/nutti/fake-bge-module>`__, which
-supports UPBGE's Python API as its Blender counterpart does for Blender's core API.
+.. figure:: /images/Tools/tools-examples-02.png
 
-The usage instruction almost the same as the other module which you can read from
-the project's homepage. There is only a version for UPBGE 0.2.5 at the moment, but
-it should work for newer versions as well for the most part.
-
-Caveats
-=======
-
-There is one crucial caveat with providing type hints
-(`PEP-484 <https://www.python.org/dev/peps/pep-0484/>`__) for UPBGE API, however.
-
-Due to `an issue <https://github.com/UPBGE/upbge/issues/1240>`__ regarding how the
-module initializes itself, you cannot reference BGE types(e.g. `KX_Camera`) other
-than `KX_Component` in your game component.
-
-Auto-completion and type information should work regardless of the problem.
-Still, it certainly limits the benefits of such features provided by `fake-bge-module`,
-o better be resolved sooner than later.
+   Pop-up documentation support in VSCode
