@@ -15,6 +15,12 @@ from a previously saved ``.json`` file.
 .. note::
     No information is read about which scene is loaded, so this node can only be used per scene.
 
+Parameters
+==========
+
+Filepath
+   The path to where the save files are stored.
+
 Inputs
 =======
 
@@ -23,12 +29,6 @@ Condition
 
 Slot
    Index of this save file.
-
-Parameters
-==========
-
-Filepath
-   The path to where the save files are stored.
 
 Outputs
 =======

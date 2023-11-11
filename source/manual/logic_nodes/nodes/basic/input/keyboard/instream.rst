@@ -9,17 +9,17 @@ Logger
 
 The Keyboard -> *Logger* node records keyboard activity.
 
-Inputs
-=======
-
-Condition
-   Input condition.
-
 Parameters
 ==========
 
 Mode
    Toggle between *Key Tap* and *Key Down* modes.
+
+Inputs
+=======
+
+Condition
+   Input condition.
 
 Outputs
 =======

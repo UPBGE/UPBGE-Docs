@@ -4,7 +4,7 @@
 Introduction
 ============
 
-As an alternative to Python scripts and Logic Bricks, Logic Nodes try to provide an intuitive and versatile
+As an alternative to Python scripts and Logic Bricks, Logic Nodes provide an intuitive and versatile
 way to create game logic. They are designed to support rapid prototyping, enabling artists and game designers
 to quickly test and even fully implement features.
 

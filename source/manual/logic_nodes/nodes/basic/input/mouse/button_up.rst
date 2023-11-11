@@ -11,17 +11,17 @@ Button Up
 
 The Mouse -> *Button Up* node detects mouse button activity.
 
-Inputs
-=======
-
-Button ID
-   The button to monitor.
-
 Parameters
 ==========
 
 Mode
    Toggle between *Once* and *Each Frame* modes.
+
+Inputs
+=======
+
+Button ID
+   The button to monitor.
 
 Outputs
 =======

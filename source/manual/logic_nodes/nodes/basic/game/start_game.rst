@@ -1,14 +1,14 @@
 
 +++++++++++++++
-Load File
+Jump To File
 +++++++++++++++
 
 .. figure:: /images/Logic_Nodes/load_file_node.png
    :align: right
    :width: 215
-   :alt: Load File Node.
+   :alt: Jump To File Node.
 
-The *Load File* node is the ingame equivalent of *File->Open*. It loads directly into
+The *Jump To File* node is the ingame equivalent of *File->Open*. It loads directly into
 the runtime version of another .blend file.
 
 Inputs

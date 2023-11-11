@@ -14,6 +14,12 @@ The *Save Game* node stores information about the state of the scene in a ``.jso
 .. note::
     No information is saved about which scene is loaded, so this node can only be used per scene.
 
+Parameters
+==========
+
+Filepath
+   The path to where the save files are stored.
+
 Inputs
 =======
 
@@ -22,12 +28,6 @@ Condition
 
 Slot
    Index of this save file.
-
-Parameters
-==========
-
-Filepath
-   The path to where the save files are stored.
 
 Outputs
 =======

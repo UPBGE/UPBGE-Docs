@@ -6,5 +6,6 @@ Input
   :maxdepth: 2
 
   mouse/index.rst
-  gamepad/index.rst
   keyboard/index.rst
+  gamepad/index.rst
+  vr/index.rst

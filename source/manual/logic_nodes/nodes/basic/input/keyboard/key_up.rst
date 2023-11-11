@@ -9,17 +9,17 @@ Key Up
 
 The *Key Up* node detects if a specified key has been released.
 
-Inputs
-=======
-
-Key
-   The key to monitor.
-
 Parameters
 ==========
 
 Mode
    Toggle between *Once* and *Each Frame* modes.
+
+Inputs
+=======
+
+Key
+   The key to monitor.
 
 Outputs
 =======

@@ -1,17 +1,23 @@
 +++++++++++++++
-Mouse Look
+Gamepad Look
 +++++++++++++++
 
-.. figure:: /images/Logic_Nodes/mouse_look_node.png
+.. figure:: /images/Logic_Nodes/gamepad_look_node.png
    :align: right
    :width: 215
-   :alt: Mouse Look Node.
+   :alt: Gamepad Look Node.
 
-The *Mouse Look* node is a quick way to make objects follow the mouse movement.
+The *Gamepad Look* node is a quick way to make objects follow controller stick movement.
 It's possible to assign a *Body* and a *Head* object.
 
 If no *Head* object is assigned, the body will be used for both axis, but
 that is generally discouraged as it can lead to unwanted side effects.
+
+Parameters
+==========
+
+Axis
+   Which stick of the controller to use for the transformation.
 
 Inputs
 =======
@@ -25,11 +31,17 @@ Main Object
 Head (Optional)
    This is the head object. If set, both objects will be rotated along their corresponding local axis.
 
-Invert
+Invert XY
    Option to invert movement for each axis (Vec2).
+
+Index
+   The index of the controller to poll.
 
 Sensitivity
    Multiplier for translating mouse movement to object rotation.
+
+Exponent
+   Exponent for fine-tuning the stick behavior.
 
 Cap Left/Right
    Limit the body objects rotation on its local Z axis.
@@ -43,14 +55,8 @@ Cap Up/Down
 Y Limits
    The limits for the head object's local X/Y rotaion (Vec2).
 
-Smoothing
-   Use linear interpolation to slowly adapt the object transformation to mouse movement.
-
-Parameters
-==========
-
-Front
-   The look direction of the Head Object. If set to Y, the rotational axis will be X and vice versa.
+Threshold
+   Ignore stick values under this threshold.
 
 Outputs
 =======

@@ -11,6 +11,13 @@ The *Once* node restricts a continuous *True* condition to only the first frame.
 
 *Example*: An :doc:`./on_update` linked to a *Once* node would be equal to the :doc:`./on_init`.
 
+Parameters
+=======
+
+Timer
+   Reset this node after a time of tree inactivity. This is only needed when stopping
+   and starting logic trees.
+
 Inputs
 =======
 
@@ -22,13 +29,6 @@ Repeat
 
 Reset After
    Reset this node after X seconds. Only relevant if the *Timer* parameter is active.
-
-Parameters
-=======
-
-Timer
-   Reset this node after a time of tree inactivity. This is only needed when stopping
-   and starting logic trees.
 
 Outputs
 =======

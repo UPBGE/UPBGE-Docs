@@ -1,25 +1,25 @@
 +++++++++++++++
-Key Down
+Key
 +++++++++++++++
 
 .. figure:: /images/Logic_Nodes/key_down_node.png
    :align: right
    :width: 215
-   :alt: Key Down Node.
+   :alt: Key Node.
 
-The *Key Down* node detects if a specified key has been pressed.
+The *Key* node detects if a specified key has been pressed.
+
+Parameters
+==========
+
+Mode
+   Input detection mode.
 
 Inputs
 =======
 
 Key
    The key to monitor.
-
-Parameters
-==========
-
-Mode
-   Toggle between *Once* and *Each Frame* modes.
 
 Outputs
 =======

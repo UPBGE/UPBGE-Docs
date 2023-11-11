@@ -9,17 +9,17 @@ Button
 
 The Mouse -> *Button* node detects mouse button activity.
 
+Parameters
+==========
+
+Mode
+   Input detection mode.
+
 Inputs
 =======
 
 Button ID
    The button to monitor.
-
-Parameters
-==========
-
-Mode
-   Toggle between *Once* and *Each Frame* modes.
 
 Outputs
 =======
