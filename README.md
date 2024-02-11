@@ -60,4 +60,5 @@ manuals that are pointed out above.
 - Tristan Porteries (panzergame)
 - Ulysse Martin (youle31)
 - Xavier Cho (mysticfall)
+- (aum7)
 - You!
