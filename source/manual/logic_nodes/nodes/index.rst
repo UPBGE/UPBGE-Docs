@@ -1,14 +1,12 @@
-.. _nodes-index:
+.. _ln-nodes-index:
 
-+++++++++++
-Logic Nodes
-+++++++++++
+======================
+Nodes
+======================
 
 .. toctree::
-   :maxdepth: 2
-
-   basic/index.rst
-   scene/index.rst
-   logic_math/index.rst
-   data/index.rst
-   utilities/index.rst
+   :maxdepth: 1
+   
+   materials/index
+   geometry/index
+   groups/index

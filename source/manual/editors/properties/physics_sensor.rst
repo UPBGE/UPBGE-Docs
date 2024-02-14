@@ -67,10 +67,10 @@ Settings
 ========
 
 Invisible
-   See :doc:`Here <./physics_static>`.
+   See :doc:`here <./physics_static>`.
 
 
 Collision Bounds
 ================
 
-See :ref:`Here <game-engine-physics-object-collision-bounds>`.
+See :ref:`here <game-engine-physics-object-collision-bounds>`.

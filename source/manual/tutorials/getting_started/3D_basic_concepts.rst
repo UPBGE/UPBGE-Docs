@@ -6,12 +6,9 @@
 3D Basics
 ---------
 
-If you haven't used any 3D application before, the terms modeling, animation, and rendering might be foreign to you. So before you go off to create 
-the spectacular game that you always wanted to make, let's have a quick refresher on the basics of computer graphics. You don't have to endure the 
-boring section below if you are already know what RGB stands for and the difference between Cartesian and Gaussian.
+If you haven't used any 3D application before, the terms modeling, animation, and rendering might be foreign to you. So before you go off to create the spectacular game that you always wanted to make, let's have a quick refresher on the basics of computer graphics. You don't have to endure the boring section below if you are already know what RGB stands for and the difference between Cartesian and Gaussian.
 
-The knowledge in this section is universal and applies to all other 3D applications. So even if you are coming from a different application, the 
-same concepts drive all of them.
+The knowledge in this section is universal and applies to all other 3D applications. So even if you are coming from a different application, the same concepts drive all of them.
 
 -----------------
 Coordinate System
@@ -21,35 +18,23 @@ Coordinate System
    :width: 33 %
    :align: right
 
-We live in a three-dimensional world that has width, height, and depth. So to represent anything that resembles real life as a virtual world inside a 
-computer, we need to think and work in three dimensions. The most common system used is called the Cartesian coordinate system, where the three dimensions 
-are represented by X, Y, and Z, laid out as intersecting planes. Where the three axes meet is called the _origin_. You can think of the origin as 
-the center of your digital universe. A single position in space is represented by a set of numbers that corresponds to its position from the 
-origin: thus (2, -4, 8) is a point in space that is 2 units from the origin along the X axis, 4 units from the origin along the -Y axis, and 8 units up 
-in the Z direction.
+We live in a three-dimensional world that has width, height, and depth. So to represent anything that resembles real life as a virtual world inside a computer, we need to think and work in three dimensions. The most common system used is called the Cartesian coordinate system, where the three dimensions are represented by X, Y, and Z, laid out as intersecting planes. Where the three axes meet is called the *origin*. You can think of the origin as the center of your digital universe. A single position in space is represented by a set of numbers that corresponds to its position from the origin: thus (2, -4, 8) is a point in space that is 2 units from the origin along the X axis, 4 units from the origin along the -Y axis, and 8 units up in the Z direction.
 
 ------------------------------------
 Points, Edges, Triangles, and Meshes
 ------------------------------------
 
-Although we can define a position in space using the XYZ coordinates, a single point (or a "vertex," as it's more commonly known in computer graphics) 
-is not terribly useful; after all, you can't see a dot that is infinitesimally small. But you can join this vertex with another vertex to form a 
-line (also known as an "edge"). An edge by itself still wouldn't be very visible, so you create another vertex and join all three vertices together 
-with lines and fill in the middle. Suddenly, something far more interesting is created[md]a triangle (also known as a "face")! By linking multiple faces 
-together, you can create any shape, the result of which is called a "mesh" or "model." Figure below shows how a mesh can be broken down into faces, then edges, 
-and ultimately, as vertices.
+Although we can define a position in space using the XYZ coordinates, a single *point* (or a :term:`vertex`, as it's more commonly known in computer graphics) is not terribly useful; after all, you can't see a dot that is infinitesimally small. But you can join this vertex with another vertex to form a *line* (also known as an :term:`edge`). An *edge* by itself still wouldn't be very visible, so you create another vertex and join all three vertices together with lines and fill in the middle. Suddenly, something far more interesting is created - a triangle (also known as a :term:`face`)! By linking multiple faces together, you can create any shape, the result of which is called a :term:`mesh` or :term:`model`. Figure below shows how a *mesh* can be broken down into *faces*, then *edges*, and ultimately, into *vertices*.
 
 .. figure:: /images/Chapter1/Fig01-06.jpg
 
-   Teapot, cube, face, edge and vertex.
+   Teapot, cube, face, edge and vertex
 
-Why is the triangle so important? Turns out, modern computer graphics use the triangle as the basic building block for almost any shape. 
-A rectangular plane (also known as a _quadrangle_, or more commonly a _quad_) is simply two triangles arranged side by side. A cube is simply six 
-squares put together. Even a sphere is just made of tiny facelets arranged into a ball shape.
+Why is the :term:`triangle` so important? Turns out, modern computer graphics use the *triangle* as the basic building block for almost any shape.  A rectangular :term:`plane` (also known as a *quadrangle*, or more commonly a *quad*) is simply two triangles arranged side by side. A cube is simply six squares put together. Even a :term:`sphere` is just made of tiny facelets arranged into a ball shape.
 
 .. image:: /images/Chapter1/Fig01-07.jpg
    :width: 50 %
-   :alt: The same cylinder cap can be made up of triangles, quads, or an n-gon.
+   The cylinder cap can be made up of triangles, quads, or an n-gon
    :align: right
 
 In Blender, a mesh can be made from a combination of triangles, quads, or n-gons. The benefit of n-gons is their ability to retain a clean topology while modeling. 
@@ -63,7 +48,7 @@ the shape of the object, but the inside of the object is always "hollow."
 
 .. image:: /images/Chapter1/Fig01-08.jpg
    :width: 50 %
-   :alt: Surface normals are displayed as cyan lines protruding from the faces.
+   Surface normals are displayed as cyan lines protruding from the faces
    :align: right
 
 Another concept that a modeler will likely encounter is surface normals, or "normals" for short. Normal is a property of each face that indicates 

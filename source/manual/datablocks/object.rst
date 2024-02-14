@@ -62,4 +62,3 @@ attributes depends on specific object types, like Lamps or Cameras.
    empty
    camera
    lamp
-   

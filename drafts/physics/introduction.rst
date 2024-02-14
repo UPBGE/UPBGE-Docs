@@ -1,3 +1,4 @@
+.. _physics-introduction:
 
 ************
 Introduction
@@ -19,13 +20,10 @@ Rigid body physics does not have, as an effect or a cause, any mesh deformations
 For a discussion on how to partially overcome this, see:
 `Mesh Deformations`_.
 
-
 Global Options
 ==============
 
-The global Physics Engine settings can be found in the :doc:`World Properties </manual/physics/world>`,
-which include the Gravity constant and some important engine performance tweaks.
-
+The global Physics Engine settings can be found in the :doc:`World Properties </manual/physics/world>`, which include the Gravity constant and some important engine performance tweaks.
 
 Object Physics
 ==============

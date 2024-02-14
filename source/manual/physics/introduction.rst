@@ -9,49 +9,33 @@ What Is Physics?
 
 .. figure:: /images/Chapter6/Fig06-01.png
 
-In the real world, the laws of physics govern everything from the smallest subatomic particle to the largest galaxy far, far away. 
-Luckily for us, we don't have to understand quantum mechanics, Newtonian physics, or Euclidean space in order to make a fun game. 
-A physics engine handles game events such as collision detection between objects, moves objects in a physically realistic way, 
-and even deforms objects as if they are made up of a soft material.
+In the real world, the laws of physics govern everything from the smallest subatomic particle to the largest galaxy far, far away. Luckily for us, we don't have to understand quantum mechanics, Newtonian physics, or Euclidean space in order to make a fun game. A physics engine handles game events such as collision detection between objects, moves objects in a physically realistic way, and even deforms objects as if they are made up of a soft material.
 
-A physics engine moves things based on a set of predefined rules so that you, the artist, don't have to manually animate every object interaction.
-Compared to traditional keyframe animations, which are premade, the dynamic nature of the physics engine means that it is inherently non-deterministic 
-the motion of the object depends on the physical property of the object and its state in the physical world. 
-This unique property makes games that utilize real-time physics fun to play around with, if not unpredictable sometimes.
+A physics engine moves things based on a set of predefined rules so that you, the artist, don't have to manually animate every object interaction. Compared to traditional keyframe animations, which are premade, the dynamic nature of the physics engine means that it is inherently non-deterministic. The motion of the object depends on the physical property of the object and its state in the physical world. This unique property makes games that utilize real-time physics fun to play around with, if not unpredictable sometimes.
 
 As usual, this chapter comes with a collection of example files that showcase what the physics engine can do. You can find them in the folder /chapters6/demos.
 
 Bullet Physics Library
 ----------------------
 
-UPBGE includes advanced physics simulation in the form of the Bullet Physics Engine (`Bullet Physics <http://bulletphysics.org>`__).
-Most of your work will involve setting the right properties on the objects in your scene, then you can sit back and let the engine take over.
-The physics simulation can be used for games, but also for animation.
+UPBGE includes advanced physics simulation in the form of the Bullet Physics Engine (`Bullet Physics <http://bulletphysics.org>`__). Most of your work will involve setting the right properties on the objects in your scene, then you can sit back and let the engine take over. The physics simulation can be used for games, but also for animation.
 
-UPBGE is based on rigid body physics, which differs significantly from the complementary set of tools available in the form of soft body physics simulations. 
-Though the UPBGE does have a soft body type, it is not nearly as advanced as the non-BGE soft body.
-The inverse is even more true: it is difficult to get the non-BGE physics to resemble anything like a stiff shape.
-Rigid body physics does not have, as an effect or a cause, any mesh deformations.
-For a discussion on how to partially overcome this, see: `Mesh Deformations`_.
+UPBGE is based on rigid body physics, which differs significantly from the complementary set of tools available in the form of soft body physics simulations. Though the UPBGE does have a soft body type, it is not nearly as advanced as the non-BGE soft body. The inverse is even more true: it is difficult to get the non-BGE physics to resemble anything like a stiff shape. Rigid body physics does not have, as an effect or a cause, any mesh deformations. For a discussion on how to partially overcome this, see: `Mesh Deformations`_.
 
 Overview
 --------
 
-Because physics is such an integral part of the Blender game engine, physics-related settings are found in many different places. 
-However scattered they might look at first glance, there is a pattern in this chaos.
+Because physics is such an integral part of the Blender game engine, physics-related settings are found in many different places. However scattered they might look at first glance, there is a pattern in this chaos.
 
 The physics settings can be broken down into these sections:
 
-* **World settings:** The world or global Physics Engine settings can be found in the :doc:`World Properties </manual/physics/world>`,
-which include the Gravity strength constant and some important engine performance tweaks.
+* **World settings:** The world or global Physics Engine settings can be found in the :doc:`World Properties </manual/physics/world>`, which include the Gravity strength constant and some important engine performance tweaks.
 
 .. figure:: /images/Chapter6/Fig06-02.png
    
    World Properties Editor
 
-* **Object Physics settings:** Any game-engine object (mesh, lamp, camera, empty, and text) can be turned into a physical object. Once physics is enabled for an object, 
-it starts obeying the rules of the physics engine, transforming the object from a static object into something that falls, collides, tumbles, and deforms. 
-Figure 6.3 shows the Physics Properties Editor.
+* **Object Physics settings:** Any game-engine object (mesh, lamp, camera, empty, and text) can be turned into a physical object. Once physics is enabled for an object, it starts obeying the rules of the physics engine, transforming the object from a static object into something that falls, collides, tumbles, and deforms.  Figure 6.3 shows the Physics Properties Editor.
 
 .. figure:: /images/game_engine-physics-introduction-tab_header.png
 
@@ -61,44 +45,35 @@ Figure 6.3 shows the Physics Properties Editor.
 
 See :ref:`game-engine-physics-types` in this chapter.
 
-* **Material Physics settings:** The Material panel is not only a place where all the graphic magic happens; it also contains additional physics that control 
-how the surface of the object behaves. Settings such as surface friction can be found here. Because an object can have multiple materials, 
-material physics settings allow the artist to assign different surface materials for different parts of a single object. These seetings are meant to be used in 
-conjunction with the object physics settings, not replace it. Figure 6.4 shows the Material Properties Editor.
+* **Material Physics settings:** The Material panel is not only a place where all the graphic magic happens; it also contains additional physics that control how the surface of the object behaves. Settings such as surface friction can be found here. Because an object can have multiple materials, material physics settings allow the artist to assign different surface materials for different parts of a single object. These seetings are meant to be used in conjunction with the object physics settings, not replace it. Figure 6.4 shows the Material Properties Editor.
 
 .. figure:: /images/Chapter6/Fig06-04.png
    
    Material Properties Editor
 
-* **Constraints:** Physics constraints allow you to set up simple rules that the objects follow, rules such as tracking one object to another or limiting their range of motion. 
-With constraints, it's possible to realistically represent many of the structures that have a limited degree of motion, such as hinges, wheels, and chains.
+* **Constraints:** Physics constraints allow you to set up simple rules that the objects follow, rules such as tracking one object to another or limiting their range of motion.  With constraints, it's possible to realistically represent many of the structures that have a limited degree of motion, such as hinges, wheels, and chains.
 
-It is imperative to understand that the Blender constraints generally do not work inside the BGE.
-This means interesting effects such as *Copy Rotation* are unavailable directly.
+It is imperative to understand that the Blender constraints generally do not work inside the BGE. This means interesting effects such as *Copy Rotation* are unavailable directly.
 
 Your options include:
 
-- *Parenting* -- But not Vertex Parenting.
-- *Rigid Body Joint* --   This is the one constraint that you can set up through the UI that works in the BGE.
-  It has several options, and can be very powerful -- see ITS page for a detailed description and demo blend-file.
-  Do not forget that you can loop through objects using ``bpy`` instead of clicking thousands of
-  times to set up chains of these constraints.
-- *Rigid body joints on-the-fly* -- You can add/remove them after the BGE starts by using ``bge.constraints.createConstraint()``.
-  This can be good either to simply automate their setup, or to truly make them dynamic.
+- *Parenting* - but not Vertex Parenting.
+- *Rigid Body Joint* - this is the one constraint that you can set up through the UI that works in the BGE.
+  It has several options, and can be very powerful - see ITS page for a detailed description and demo blend-file.
+  Do not forget that you can loop through objects using ``bpy`` instead of clicking thousands of times to set up chains of these constraints.
+- *Rigid body joints on-the-fly* - you can add/remove them after the BGE starts by using ``bge.constraints.createConstraint()``. This can be good either to simply automate their setup, or to truly make them dynamic.
   A simple demo can be viewed in: TODO_FIXME
-- :doc:`Python Controllers </manual/logic/controllers/types/python>` -- As always, in the BGE,
-  you can get the most power when you drop into Python and start toying with the settings directly.
-  For instance, the *Copy Rotation* mentioned above is not hard --
-  All you have to do is something to the effect of:
+- :doc:`Python Controllers </manual/logic/controllers/types/python>` - as always, in the BGE, you can get the most power when you drop into Python and start toying with the settings directly.
+  For instance, the *Copy Rotation* mentioned above is not hard - all you have to do is something to the effect of:
 
-  .. code-block:: python
-  
-     own.worldOrientation = bge.logic.getCurrentScene().objects['TheTargetObject'].worldOrientation
+.. code-block:: python
+   
+   own.worldOrientation =
+   bge.logic.getCurrentScene().objects['TheTargetObject'].worldOrientation
 
 .. figure:: /images/Chapter6/Fig06-05.png
    
    Object Constraints Properties Editor
-
 
 * **Physics sensors and actuators:** Except for maybe the case of a Rube Goldberg machine, where everything happens in a predetermined manner, 
 most games would be pretty boring if there were no way to make an object move at a user's command or to trigger a reaction when two objects collide. 
@@ -148,8 +123,7 @@ Also note that you can see how the Bullet triangulation is working
 - *Yellow* -- Normals.
 - *Black* -- When in wireframe, this is your mesh's visual appearance.
 
-If you want finer-grained control over the display options,
-you can add this as a Python Controller and uncomment whichever pieces you want to see::
+If you want finer-grained control over the display options, you can add this as a Python Controller and uncomment whichever pieces you want to see:
 
 .. code-block:: python
 
@@ -161,8 +135,7 @@ you can add this as a Python Controller and uncomment whichever pieces you want 
    for d in debugs:
       bge.constraints.setDebugMode(d)
 
-For all debug modes, API docs for ``bge.constraints``.
-
+For all debug modes, see API docs for ``bge.constraints``.
 
 Show Framerate and Profile
 --------------------------
@@ -287,7 +260,7 @@ This may, or not, be desired according to the situation.
 All you have to do to achieve this effect is to execute the following script:
 
 .. code-block:: python
-
+   
    import bpy, bge
    
    bla bla bla
@@ -298,7 +271,6 @@ or :kbd:`Ctrl-F12` to render it out as an animation.
 
 Note that you can also use Game Logic Bricks and scripting. Everything will be recorded.
 
-
 Keyframe Clean-up
 +++++++++++++++++
 
@@ -306,7 +278,7 @@ Keyframe Clean-up
 
    Resulting recorded animation.
 
-*Record Animation* keys redundant data (data that was did not change relative to the last frame).
+*Record Animation* keys redundant data (data that did not change relative to the last frame).
 Pressing :kbd:`O` while in the *Dope Sheet* will remove all superfluous keyframes.
 Unwanted channels can also be removed.
 
@@ -314,21 +286,19 @@ Unwanted channels can also be removed.
 
    Cleaned up recording.
 
-
 Exporting
 ---------
 
 .bullet / Bullet Compatible Engines
 +++++++++++++++++++++++++++++++++++
 
-You can snapshot the physics world at any time with the following code::
+You can snapshot the physics world at any time with the following code:
 
 .. code-block:: python
 
-      import bge
+   import bge
       
-      bge.constraints.exportBulletFile("test.bullet")
+   bge.constraints.exportBulletFile("test.bullet")
 
 This will allow importing into other Bullet-based projects. See the
-`Bullet Wiki on Serialization <http://bulletphysics.org/mediawiki-1.5.8/index.php/Bullet_binary_serialization>`__
-for more.
+`Bullet Wiki on Serialization <http://bulletphysics.org/mediawiki-1.5.8/index.php/Bullet_binary_serialization>`__ for more.

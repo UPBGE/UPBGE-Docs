@@ -1,5 +1,0 @@
-++++++++++++
-Logic & Math Nodes
-++++++++++++
-
-.. toctree::

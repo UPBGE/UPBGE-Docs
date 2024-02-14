@@ -1,8 +1,8 @@
-.. _introducing_logic_nodes-index:
+.. _introducing_ln-index:
 
-+++++++++++++++++++++++
+=============================
 Introducing Logic Nodes
-+++++++++++++++++++++++
+=============================
 
 .. toctree::
    :maxdepth: 2

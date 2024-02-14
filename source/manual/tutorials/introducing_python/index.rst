@@ -11,4 +11,3 @@ Introducing Python
    move_object
    play_animation
    group_instances
-   python_component

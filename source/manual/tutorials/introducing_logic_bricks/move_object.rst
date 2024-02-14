@@ -2,19 +2,11 @@
 Moving A Cube
 =============
 
-In this short tutorial we will introduce two essential elements for logic in UPBGE: logic 
-triggering and game properties. These elements allows the interactivity with the set up 
-objects.
+In this short tutorial we will introduce two essential elements for logic in UPBGE: logic triggering and game properties. These elements allows the interactivity with the set up objects.
 
-A **game property** (also known as variable) is a value that is kept inside a object, 
-allowing multiple uses. A common use of game properties is the ammount life of the player, 
-the current song playing, or anything else that can be useful to track for later use.
+A **game property** (also known as variable) is a value that is kept inside a object, allowing multiple uses. A common use of game properties is the ammount life of the player, the current song playing, or anything else that can be useful to track for later use.
 
-The **logic triggering** is the act of triggering some kind of event in the game. There's 
-lots of ways to trigger events in UPBGE, from detecting if a key is pressed to detecting an 
-object colliding with another, or even triggering events continuously without detecting 
-anything. After the detection of an trigger, an event can be happen, like a object to 
-move, a property be changed, etc.
+The **logic triggering** is the act of triggering some kind of event in the game. There's lots of ways to trigger events in UPBGE, from detecting if a key is pressed to detecting an object colliding with another, or even triggering events continuously without detecting anything. After the detection of an trigger, an event can be happen, like a object to move, a property be changed, etc.
 
 -----------
 Setup Scene
@@ -96,10 +88,7 @@ To continue, perform the following steps:
    
    The property *fuel* added and the :ref:`sensor-property` properly filled.
 
-This makes our Cube move only if the value of *fuel* is greater than ``0``. You can set the 
-property *fuel* to ``0`` and play the game, and you will see that the Cube will not move. 
-However, it would be good if we decrease the value of *fuel* as our Cube moves, until it 
-reaches ``0``. To do that, do the following steps:
+This makes our Cube move only if the value of *fuel* is greater than ``0``. You can set the property *fuel* to ``0`` and play the game, and you will see that the Cube will not move. However, it would be good if we decrease the value of *fuel* as our Cube moves, until it reaches ``0``. To do that, do the following steps:
 
 - Add a :ref:`actuator-property` and connect it to the :ref:`controller-and`.
 - Set the mode of :ref:`actuator-property` to **Add**, its property to *fuel* and its value to ``-1``.

@@ -21,11 +21,10 @@ import sys
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.insert(0, os.path.abspath(os.path.join('..', 'exts')))
 
-
 # -- Project information -----------------------------------------------------
 
 project = 'UPBGE Manual'
-copyright = 'This page is licensed under a CC-BY-SA 4.0 Int. License.'
+copyright = ': This page is licensed under a CC-BY-SA 4.0 Int. License'
 author = 'UPBGE Community'
 
 # The short X.Y version
@@ -33,11 +32,9 @@ version = 'latest'
 # The full version, including alpha/beta/rc tags
 release = 'latest'
 
-
 # -- General configuration ---------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
-#
 needs_sphinx = '1.5'
 
 # Add any Sphinx extension module names here, as strings. They can be
@@ -47,10 +44,17 @@ needs_sphinx = '1.5'
 extensions = [
     'youtube',
     'vimeo',
+    'collapse',
+    #'myst-parser',
+    #'sphinx_togglebutton',
+    #'sphinx_toolbox.collapse',
     #'sphinx.ext.mathjax',
     #'sphinx.ext.intersphinx',
     #'sphinx.ext.todo',
 ]
+
+# Display todos
+todo_include_todos = False
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -81,40 +85,40 @@ pygments_style = 'sphinx'
 highlight_language = 'python3'
 
 # -- Options for HTML output -------------------------------------------------
-
 # Add any paths that contain custom themes here, relative to this directory.
-
 html_logo = 'images/upbge_logo.png' 
 
 html_title = 'UPBGE Manual'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#
 import sphinx_rtd_theme
 
 html_theme = 'sphinx_rtd_theme'
 
 # Theme options
 html_theme_options = {
-        # included in the title
-        "display_version": False,
-        "collapse_navigation": True,
-        "navigation_depth": -1,
-        "body_max_width": "80%",
-        "html_baseurl": "https://upbge.org/manual",
-    }
+    "navigation_with_keys": True,
+   # included in the title
+   "display_version": False,
+   "collapse_navigation": True, # slows build down; useful
+   #"navigation_depth": -1,
+   "navigation_depth": 3,
+   #"show_nav_level": 0, # slows down build ? 
+   #"body_max_width": "90%",
+   #"html_baseurl": "https://upbge.org/manual",
+}
 
 extensions.append('sphinx_rtd_theme')
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ["../resources/theme"]
+html_static_path = ["../resources/theme"] # _static
 
 if html_theme == "sphinx_rtd_theme":
     html_css_files = ["css/theme_overrides.css"]
-
+#    html_css_files = ["css/custom.css"]
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
 #
@@ -122,9 +126,11 @@ if html_theme == "sphinx_rtd_theme":
 # defined by theme itself.  Builtin themes are using these templates by
 # default: ``['localtoc.html', 'relations.html', 'sourcelink.html',
 # 'searchbox.html']``.
-#
-# html_sidebars = {}
-
+#html_sidebars = {
+#   "**": ["localtoc", "sourcelink"],
+#   "index": ["relations"],
+#   "search": ["searchbox"],
+#}
 
 # -- Options for HTMLHelp output ---------------------------------------------
 

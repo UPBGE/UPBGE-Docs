@@ -1,3 +1,4 @@
+.. _physics_navigation_mesh:
 
 ***********************
 Navigation Mesh Physics

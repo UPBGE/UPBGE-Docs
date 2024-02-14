@@ -48,8 +48,8 @@ Text
 
 Run Script (play icon)
    Executes the text as a Python script :kbd:`Alt-P`. This execution has placed out of Game Engine only,
-   and it is focused for development mainly. If you want to execute a Python script into the Game Engine checks
-   the :doc:`Python Scripting <manual/python/introduction>` chapter.
+   and it is focused for development mainly. If you want to execute a Python script inside the Game Engine check
+   the :doc:`Python Scripting </manual/python/introduction>` chapter.
 Show
    Toggle display options.
 
@@ -103,7 +103,7 @@ Save :kbd:`Alt-S`
    Saves an already open file.
 Save As :kbd:`Shift-Ctrl-Alt-S`.
    Saves text as a new text file, a File Browser is opened to select the directory
-   to save the file along with giving the file a name / file extension.
+   to save the file along with giving the file a name/file extension.
 Register
    Registers the current text data-block as a module on loading (the text name must end with ``.py``).
 Live Edit
@@ -203,11 +203,9 @@ Typing on the keyboard produces text in the text buffer.
 As usual, pressing, dragging and releasing :kbd:`LMB` selects text.
 Pressing :kbd:`RMB` opens the context menu.
 
-.. tip:: Usages for the Text editor
+.. tip::
 
-   The Text editor is handy also when you want to share your blend-files with others.
-   The Text editor can be used to write in a ``README`` text explaining the contents of your blend-file.
-   Be sure to keep it visible when saving!
+   Text editor is handy also when you want to share your blend-files with others. I.e write a ``README`` text explaining the contents of your blend-file. Be sure to keep it visible when saving!
 
 
 Sidebar
@@ -274,5 +272,5 @@ and with a lots of Blender/UPBGE-specific modules.
 
 .. warning::
 
-   This script execution takes place outside Game Engine, and it is focused for development purpose only.
-   If you want to execute a Python script into the Game Engine checks the :doc:`Python Scripting <manual/python/introduction>` chapter.
+   This script execution takes place outside Game Engine, and it is intended for development purpose only.
+   If you want to execute a Python script inside the Game Engine check the :doc:`Python Scripting </manual/python/introduction>` chapter.

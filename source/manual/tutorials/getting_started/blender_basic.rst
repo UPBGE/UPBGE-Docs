@@ -395,29 +395,18 @@ way of preventing the interface from getting too cluttered.
 The "context" usually refers to one or a combination of the following:
 
 - **Active rendering engine:** Blender Render, Blender Games, and Cycles Render are the default three.
-- **Active editor:** The active editor is defined as the window subdivision that the mouse
-cursor is hovering over. Shortcut keys often have different effects, depending on which
-editor the mouse is over.
+- **Active editor:** The active editor is defined as the window subdivision that the mouse cursor is hovering over. Shortcut keys often have different effects, depending on which editor the mouse is over.
 - **Active object:** The active object is defined as the object that is most recently selected.
-- **Selected object:** All the objects that have been selected (highlighted). Keep in mind
-that there can be more than one selected object, but only one active object.
-- **Editing mode:** Blender has six different modes of editing. Two of the most commonly
-used are the Edit mode and the Object mode. In Object mode, you can manipulate objects as
-a whole. In Edit mode, you can change the shape of a mesh. In each mode, there is a unique
-set of tools and options at your disposal. You will learn about the other four modes
-(Sculpt, Vertex Paint, Texture Paint, Weight Paint) in later chapters.
+- **Selected object:** All the objects that have been selected (highlighted). Keep in mind that there can be more than one selected object, but only one active object.
+- **Editing mode:** Blender has six different modes of editing. Two of the most commonly used are the Edit mode and the Object mode. In Object mode, you can manipulate objects as a whole. In Edit mode, you can change the shape of a mesh. In each mode, there is a unique set of tools and options at your disposal. You will learn about the other four modes (Sculpt, Vertex Paint, Texture Paint, Weight Paint) in later chapters.
 
 ----------
 Datablocks
 ----------
 
-Often, a single Blender file contains hundreds of objects, each with different colors,
-textures, and animations. How is all this organized?
+Often, a single Blender file contains hundreds of objects, each with different colors, textures, and animations. How is all this organized?
 
-Blender uses "data blocks" to represent content stored within a Blender file. Each
-data block represents a collection of data or settings. Some common datablock types
-you will encounter are Object datablock, Mesh datablock, Material datablock, Texture datablock,
-and Image datablock.
+Blender uses "data blocks" to represent content stored within a Blender file. Each data block represents a collection of data or settings. Some common datablock types you will encounter are Object datablock, Mesh datablock, Material datablock, Texture datablock, and Image datablock.
 
 .. figure:: /images/Chapter1/Fig01-32.png
    :figwidth: 30%
@@ -425,11 +414,7 @@ and Image datablock.
 
    Datablock hierarchy.
 
-In order to reduce the apparent complexity of the program, Blender further organizes
-data blocks into hierarchies. At the top level are scenes, which can have a number of
-worlds, each of which can have any number of objects (objects can be a mesh, a light, a camera,
-and so on). If the object is a mesh, then a Mesh datablock is attached to it. If the object is
-a light, then a Light datablock is attached to the object.
+In order to reduce the apparent complexity of the program, Blender further organizes data blocks into hierarchies. At the top level are scenes, which can have a number of worlds, each of which can have any number of objects (objects can be a mesh, a light, a camera, and so on). If the object is a mesh, then a Mesh datablock is attached to it. If the object is a light, then a Light datablock is attached to the object.
 
 An example of a datablock hierarchy chain is shown in Figure 1.32:
 Scene > Object > Mesh > Material > Texture > Image
@@ -452,15 +437,9 @@ that has been shared by three "users," as denoted by the number next to its name
 Parenting and Grouping
 ----------------------
 
-Grouping and parenting both allow you to introduce some form of order to the scene
-by setting up arbitrary relationships between different objects. But grouping and
-parenting work in different ways.
+Grouping and parenting both allow you to introduce some form of order to the scene by setting up arbitrary relationships between different objects. But grouping and parenting work in different ways.
 
-Parenting is used to establish links between multiple objects so that basic
-transformations like location, rotation, and scaling are propagated from the
-parent to its children. This way, any transformation applied to the parent is
-automatically applied to all the children. Parenting is a useful way to "glue"
-different objects together so they behave as one.
+Parenting is used to establish links between multiple objects so that basic transformations like location, rotation, and scaling are propagated from the parent to its children. This way, any transformation applied to the parent is automatically applied to all the children. Parenting is a useful way to "glue" different objects together so they behave as one.
 
 To parent one object to another, simply select the object you want to be the child first.
 If more than one object is to be a child, select all of them now. Lastly, select the

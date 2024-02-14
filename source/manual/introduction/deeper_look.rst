@@ -35,17 +35,21 @@ Here are some examples of games made with BGE/UPBGE:
 
 ``Game Name / Creator Name:`` Tomato Jones 2 by Haidme produced with BGE/UPBGE.
 
-.. youtube:: SQz3O8VFdOo
+..
+  .. youtube:: SQz3O8VFdOo
 
-``Game Name / Creator Name:`` Highlands Test by Atomic Skill produced with UPBGE 0.2.5.
+..
+  ``Game Name / Creator Name:`` Highlands Test by Atomic Skill produced with UPBGE 0.2.5.
 
 .. youtube:: FJfmLktYi7o
 
 ``Game Name / Creator Name:`` The Future's End by Mark Telles produced with UPBGE 0.2.5.
 
-.. youtube:: 3krdf9xRgw4
+..
+   .. youtube:: 3krdf9xRgw4
 
-``Game Name / Creator Name:`` Spaceship Test by Atomic Skill produced with UPBGE 0.3.
+..
+  ``Game Name / Creator Name:`` Spaceship Test by Atomic Skill produced with UPBGE 0.3.
 
 .. youtube:: Ji9NO_gtvQU
 

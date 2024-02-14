@@ -5,6 +5,32 @@
  * More info:
  *		https://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_css_file
  */
+/* aum added */
+.rst-content { text-align: justify }
+/*.rst-content .admonition {overflow: auto}*/
+
+/* below code not working 
+.rst-content .figure .caption {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   }*/
+/* want colored admonition icons */
+rst-content .admonition-title { background-color: #404040 }/*
+.rst-content .important .admonition-title {background-color: #ddca3b}
+.rst-content .important {background-color: #f6f3a5}
+ }*/
+
+/* refbox =, seealso ( > ), note ( i ), tip i , hint (+), warn / ! \ */
+.refbox .admonition-title::before {content:"\f00b"}
+.seealso .admonition-title::before{content:"\f138"}
+.note .admonition-title::before{content:"\f05a"}
+.tip .admonition-title::before{content:"\f129"; width: 0.75em; text-align: center}
+.hint .admonition-title::before{content:"\f055"}
+.warning .admonition-title::before{content:"\f071"}
+
+/* aum end */
 
 h5 {margin-bottom: 5px}
 
@@ -80,7 +106,7 @@ input[type="number"], input[type="tel"], input[type="color"] {
 	display: inline;
 }*/
 
-/* Fix definisions with different ids. */
+/* Fix definitions with different ids. */
 .rst-content dl.simple {
 	margin-bottom: 0px;
 }
@@ -121,7 +147,7 @@ table {caption-side: bottom}
 }
 
 /* Captions top padding. */
-.rst-content .figure .caption { margin-top: 4px; }
+.rst-content .figure .caption { margin: 4px;  }
 .rst-content table.docutils caption { padding: 0.5em; }
 
 /* Text word wrap. */

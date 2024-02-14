@@ -6,7 +6,8 @@ Utils Templates
 
 These templates were created to help UPBGE users to create games or any kind of interactive things. Easy to use, easy to attach to your project.
 
-.. figure:: /images/Python_Components/Fig-17.png
+..
+   figure:: /images/Python_Components/Fig-17.png
 
 
 To use, just select it from template label at script editor and you're done! You can use this template in your projects, even for commercial projects. You only need to give credits to Guilherme Teres Nunes (UnidayStudio) for this. It's very easy to use: Just load this script into your .blend file through template label (or paste it in the same folder that your .blend is), select the object that you want, and attach the script into the object's components using **Register Component** button.
