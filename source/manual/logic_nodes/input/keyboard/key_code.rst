@@ -1,9 +1,9 @@
-.. _ln-key_code:
-
 .. figure:: /images/logic_nodes/input/keyboard/ln-key_code.png
    :align: right
    :width: 215
    :alt: Key Code Node
+
+.. _ln-key_code:
 
 ========
 Key Code

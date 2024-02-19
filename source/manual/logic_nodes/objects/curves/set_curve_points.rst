@@ -1,9 +1,9 @@
-.. _ln-set_curve_points:
-
 .. figure:: /images/logic_nodes/objects/curves/ln-set_curve_points.png
    :align: right
    :width: 215
    :alt: Set Curve Points Node
+
+.. _ln-set_curve_points:
 
 ======================
 Set Curve Points

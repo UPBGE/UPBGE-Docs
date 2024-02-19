@@ -1,9 +1,9 @@
-.. _ln-slow_follow:
-
 .. figure:: /images/logic_nodes/objects/transformation/ln-slow_follow.png
    :align: right
    :width: 215
    :alt: Slow Follow Node
+
+.. _ln-slow_follow:
 
 ==============
 Slow Follow

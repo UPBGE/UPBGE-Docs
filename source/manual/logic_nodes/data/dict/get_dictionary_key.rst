@@ -1,9 +1,9 @@
-.. _ln-get_dictionary_key:
-
 .. figure:: /images/logic_nodes/data/dict/ln-get_dictionary_key.png
    :align: right
    :width: 215
    :alt: Get Dictionary Key Node
+
+.. _ln-get_dictionary_key:
 
 =====================
 Get Dictionary Key

@@ -1,9 +1,9 @@
-.. _ln-check_angle:
-
 .. figure:: /images/logic_nodes/math/vectors/ln-check_angle.png
    :align: right
    :width: 215
    :alt: Check Angle Node
+
+.. _ln-check_angle:
 
 ======================
 Check Angle

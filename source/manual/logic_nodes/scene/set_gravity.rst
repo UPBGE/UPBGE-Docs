@@ -1,9 +1,9 @@
-.. _ln-set_gravity:
-
 .. figure:: /images/logic_nodes/scene/ln-set_gravity.png
    :align: right
    :width: 215
    :alt: Set Gravity Node
+
+.. _ln-set_gravity:
 
 ===========
 Set Gravity

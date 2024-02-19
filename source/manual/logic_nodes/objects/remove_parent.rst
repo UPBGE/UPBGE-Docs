@@ -1,9 +1,9 @@
-.. _ln-remove_parent:
-
 .. figure:: /images/logic_nodes/objects/ln-remove_parent.png
    :align: right
    :width: 215
    :alt: Remove Parent Node
+
+.. _ln-remove_parent:
 
 ======================
 Remove Parent

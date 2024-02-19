@@ -1,9 +1,9 @@
-.. _ln-string:
-
 .. figure:: /images/logic_nodes/values/ln-string.png
    :align: right
    :width: 215
    :alt: String Node
+
+.. _ln-string:
 
 ========================
 String

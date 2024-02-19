@@ -1,9 +1,9 @@
-.. _ln-save_variable_dict:
-
 .. figure:: /images/logic_nodes/data/variables/ln-save_variable_dict.png
    :align: right
    :width: 215
    :alt: Save Variable Dict Node
+
+.. _ln-save_variable_dict:
 
 ==================
 Save Variable Dict

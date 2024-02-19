@@ -1,9 +1,9 @@
-.. _ln-get_world_transform:
-
-.. figure:: /images/logic_nodes/objects/get_attribute/ln-get_world_transform.png
+.. figure:: /images/logic_nodes/objects/get_attribute/ln-world_transform.png
    :align: right
    :width: 215
    :alt: Get World Transform Node
+
+.. _ln-get_world_transform:
 
 =============================
 Get World Transform
@@ -12,21 +12,17 @@ Get World Transform
 Parameters
 ++++++++++
 
-prop
-   value
+Get Attribute
+   World Transform todo.
 
 Inputs
 ++++++
 
-prop
-   value
+Object
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Value
+   World Transform

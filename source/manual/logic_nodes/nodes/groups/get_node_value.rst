@@ -1,9 +1,9 @@
-.. _ln-gro-get_node_value:
-
 .. figure:: /images/logic_nodes/nodes/groups/ln-get_node_value.png
    :align: right
    :width: 215
    :alt: Get Node Value Node
+
+.. _ln-gro-get_node_value:
 
 ================
 Get Node Value

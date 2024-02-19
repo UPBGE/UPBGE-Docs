@@ -1,9 +1,9 @@
-.. _ln-set_scene:
-
 .. figure:: /images/logic_nodes/scene/ln-set_scene.png
    :align: right
    :width: 215
    :alt: Set Scene Node
+
+.. _ln-set_scene:
 
 ==========
 Set Scene

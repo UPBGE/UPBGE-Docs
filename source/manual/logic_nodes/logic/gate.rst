@@ -1,9 +1,9 @@
-.. _ln-gate:
-
 .. figure:: /images/logic_nodes/logic/ln-gate.png
    :align: right
    :width: 215
    :alt: Gate Node
+
+.. _ln-gate:
 
 ======================
 Gate

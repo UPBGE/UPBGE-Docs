@@ -1,9 +1,9 @@
-.. _ln-gamepad_active:
-
 .. figure:: /images/logic_nodes/input/gamepad/ln-gamepad_active.png
    :align: right
    :width: 215
    :alt: Gamepad Active Node
+
+.. _ln-gamepad_active:
 
 ===============
 Gamepad Active

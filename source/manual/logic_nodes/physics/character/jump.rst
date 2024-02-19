@@ -1,9 +1,9 @@
-.. _ln-jump:
-
 .. figure:: /images/logic_nodes/physics/character/ln-jump.png
    :align: right
    :width: 215
    :alt: Jump Node
+
+.. _ln-jump:
 
 ====================
 Jump

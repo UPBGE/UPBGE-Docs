@@ -1,9 +1,9 @@
-.. _ln-set_camera:
-
 .. figure:: /images/logic_nodes/scene/camera/ln-set_camera.png
    :align: right
    :width: 215
    :alt: Set Camera Node
+
+.. _ln-set_camera:
 
 ==============
 Set Camera

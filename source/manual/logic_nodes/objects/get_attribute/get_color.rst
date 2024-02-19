@@ -1,9 +1,9 @@
-.. _ln-get_color:
-
-.. figure:: /images/logic_nodes/objects/get_attribute/ln-get_color.png
+.. figure:: /images/logic_nodes/objects/get_attribute/ln-color.png
    :align: right
    :width: 215
    :alt: Get Color Node
+
+.. _ln-get_color:
 
 =============================
 Get Color
@@ -12,21 +12,17 @@ Get Color
 Parameters
 ++++++++++
 
-prop
-   value
+Get Attribute
+   Color todo
 
 Inputs
 ++++++
 
-prop
-   value
+Object
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Color
+   todo

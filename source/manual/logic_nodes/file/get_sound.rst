@@ -1,9 +1,9 @@
-.. _ln-get_sound:
-
 .. figure:: /images/logic_nodes/file/ln-get_sound.png
    :align: right
    :width: 215
    :alt: Get Sound Node
+
+.. _ln-get_sound:
 
 =================
 Get Sound

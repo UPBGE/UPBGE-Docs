@@ -1,9 +1,9 @@
-.. _ln-set_visibility:
-
 .. figure:: /images/logic_nodes/objects/ln-set_visibility.png
    :align: right
    :width: 215
    :alt: Set Visibility Node
+
+.. _ln-set_visibility:
 
 ======================
 Set Visibility

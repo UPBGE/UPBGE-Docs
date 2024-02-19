@@ -1,9 +1,9 @@
-.. _ln-within_range:
-
 .. figure:: /images/logic_nodes/math/ln-within_range.png
    :align: right
    :width: 215
    :alt: Within Range Node
+
+.. _ln-within_range:
 
 ======================
 Within Range

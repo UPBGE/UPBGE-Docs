@@ -1,9 +1,9 @@
-.. _ln-gamepad_vibrate:
-
 .. figure:: /images/logic_nodes/input/gamepad/ln-gamepad_vibrate.png
    :align: right
    :width: 215
    :alt: Gamepad Vibrate Node
+
+.. _ln-gamepad_vibrate:
 
 ================
 Gamepad Vibrate

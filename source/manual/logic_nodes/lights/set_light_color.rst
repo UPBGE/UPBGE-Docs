@@ -1,9 +1,9 @@
-.. _ln-set_light_color:
-
 .. figure:: /images/logic_nodes/lights/ln-set_light_color.png
    :align: right
    :width: 215
    :alt: Set Light Color Node
+
+.. _ln-set_light_color:
 
 ===============
 Set Light Color

@@ -1,9 +1,9 @@
-.. _ln-apply_impulse:
-
 .. figure:: /images/logic_nodes/objects/transformation/ln-apply_impulse.png
    :align: right
    :width: 215
    :alt: Apply Impulse Node
+
+.. _ln-apply_impulse:
 
 ==============
 Apply Impulse

@@ -1,9 +1,9 @@
-.. _ln-move_to_with_navmesh:
-
 .. figure:: /images/logic_nodes/objects/transformation/ln-move_to_with_navmesh.png
    :align: right
    :width: 215
    :alt: Move To with Navmesh Node
+
+.. _ln-move_to_with_navmesh:
 
 ======================
 Move To with Navmesh

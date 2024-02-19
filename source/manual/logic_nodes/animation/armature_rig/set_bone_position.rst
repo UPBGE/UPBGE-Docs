@@ -1,9 +1,9 @@
-.. _ln-set_bone_position:
-
 .. figure:: /images/logic_nodes/animation/armature_rig/ln-set_bone_position.png
    :align: right
    :width: 215
    :alt: Set Bone Position Node
+
+.. _ln-set_bone_position:
 
 ==============================
 Set Bone Position

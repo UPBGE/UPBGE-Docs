@@ -1,9 +1,9 @@
-.. _ln-rebuild_data:
-
 .. figure:: /images/logic_nodes/network/ln-rebuild_data.png
    :align: right
    :width: 215
    :alt: Rebuild Data Node
+
+.. _ln-rebuild_data:
 
 =================
 Rebuild Data

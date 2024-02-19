@@ -1,9 +1,9 @@
-.. _ln-vector_rotate:
-
 .. figure:: /images/logic_nodes/math/vectors/ln-vector_rotate.png
    :align: right
    :width: 215
    :alt: Vector Rotate Node
+
+.. _ln-vector_rotate:
 
 ======================
 Vector Rotate

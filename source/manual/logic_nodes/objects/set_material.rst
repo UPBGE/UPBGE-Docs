@@ -1,9 +1,9 @@
-.. _ln-set_material:
-
 .. figure:: /images/logic_nodes/objects/ln-set_material.png
    :align: right
    :width: 215
    :alt: Set Material Node
+
+.. _ln-set_material:
 
 ======================
 Set Material

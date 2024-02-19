@@ -1,9 +1,9 @@
-.. _ln-get_light_power:
-
 .. figure:: /images/logic_nodes/lights/ln-get_light_power.png
    :align: right
    :width: 215
    :alt: Get Light Power Node
+
+.. _ln-get_light_power:
 
 ===============
 Get Light Power

@@ -1,9 +1,9 @@
-.. _ln-camera_ray:
-
 .. figure:: /images/logic_nodes/raycasts/ln-camera_ray.png
    :align: right
    :width: 215
    :alt: Camera Ray Node
+
+.. _ln-camera_ray:
 
 ===============
 Camera Ray

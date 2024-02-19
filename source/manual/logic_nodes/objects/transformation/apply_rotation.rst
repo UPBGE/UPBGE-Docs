@@ -1,9 +1,9 @@
-.. _ln-apply_rotation:
-
 .. figure:: /images/logic_nodes/objects/transformation/ln-apply_rotation.png
    :align: right
    :width: 215
    :alt: Apply Rotation Node
+
+.. _ln-apply_rotation:
 
 ==============
 Apply Rotation

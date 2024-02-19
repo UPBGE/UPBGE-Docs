@@ -1,9 +1,9 @@
-.. _ln-set-cursor_position:
-
 .. figure:: /images/logic_nodes/input/mouse/ln-set_cursor_position.png
    :align: right
    :width: 215
    :alt: Set Cursor Position Node
+
+.. _ln-set_cursor_position:
 
 ====================
 Set Cursor Position

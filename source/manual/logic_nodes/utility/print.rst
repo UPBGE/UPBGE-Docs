@@ -1,9 +1,9 @@
-.. _ln-print:
-
 .. figure:: /images/logic_nodes/utility/ln-print.png
    :align: right
    :width: 215
    :alt: Print Node
+
+.. _ln-print:
 
 =============================
 Print

@@ -1,9 +1,9 @@
-.. _ln-limit_range:
-
 .. figure:: /images/logic_nodes/math/ln-limit_range.png
    :align: right
    :width: 215
    :alt: Limit Range Node
+
+.. _ln-limit_range:
 
 ======================
 Limit Range

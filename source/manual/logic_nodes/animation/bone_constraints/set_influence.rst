@@ -1,9 +1,9 @@
-.. _logic_nodes-set_influence:
-
 .. figure:: /images/logic_nodes/animation/bone_constraints/ln-set_influence.png
    :align: right
    :width: 215
    :alt: Set Influence Node
+
+.. _ln-set_influence:
 
 ======================
 Set Influence

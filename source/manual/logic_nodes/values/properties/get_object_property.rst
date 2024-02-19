@@ -1,9 +1,9 @@
-.. _ln-get_object_property:
-
 .. figure:: /images/logic_nodes/values/properties/ln-get_object_property.png
    :align: right
    :width: 215
    :alt: Get Object Property Node
+
+.. _ln-get_object_property:
 
 ========================
 Get Object Property

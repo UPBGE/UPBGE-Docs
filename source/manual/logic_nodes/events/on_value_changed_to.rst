@@ -1,9 +1,9 @@
-.. _ln-on_value_changed_to:
-
 .. figure:: /images/logic_nodes/events/ln-on_value_changed_to.png
    :align: right
    :width: 215
    :alt: On Value Changed To Node
+
+.. _ln-on_value_changed_to:
 
 ===================
 On Value Changed To

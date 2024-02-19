@@ -1,9 +1,9 @@
-.. _ln-mouse_look:
-
 .. figure:: /images/logic_nodes/input/mouse/ln-mouse_look.png
    :align: right
    :width: 215
    :alt: Mouse Look Node
+
+.. _ln-mouse_look:
 
 ============
 Mouse Look

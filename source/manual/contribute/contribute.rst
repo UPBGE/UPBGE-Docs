@@ -66,7 +66,8 @@ If using `Homebrew <https://brew.sh/>`__, run the following commands in the term
 
 ``brew install git``
 
-.. TODO:: someone check if macOS instructions are complete
+..
+   someone check if macOS instructions are complete
 
 Windows
 +++++++
@@ -140,7 +141,8 @@ Troubleshooting
 #. If *rst* formatting is not displayed as expected, try adding::
    
    .. highlight:: rst
-   directive to the top of the ``.rst`` file.
+   
+directive to the top of the ``.rst`` file.
 
 ------------------
 Editing the Manual

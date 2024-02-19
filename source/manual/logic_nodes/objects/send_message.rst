@@ -1,9 +1,9 @@
-.. _ln-send_message:
-
 .. figure:: /images/logic_nodes/objects/ln-send_message.png
    :align: right
    :width: 215
    :alt: Send Message Node
+
+.. _ln-send_message:
 
 ======================
 Send Message

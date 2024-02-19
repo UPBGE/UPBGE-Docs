@@ -1,9 +1,9 @@
-.. _ln-copy_property_from_object:
-
 .. figure:: /images/logic_nodes/values/properties/ln-copy_property_from_object.png
    :align: right
    :width: 215
    :alt: Copy Property From Object Node
+
+.. _ln-copy_property_from_object:
 
 =============================
 Copy Property From Object

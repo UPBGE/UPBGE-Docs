@@ -1,9 +1,9 @@
-.. _ln-create_new_vehicle:
-
 .. figure:: /images/logic_nodes/physics/vehicle/ln-create_new_vehicle.png
    :align: right
    :width: 215
    :alt: Create New Vehicle Node
+
+.. _ln-create_new_vehicle:
 
 ====================
 Create New Vehicle

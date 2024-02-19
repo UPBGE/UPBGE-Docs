@@ -1,9 +1,9 @@
-.. _ln-create_button:
-
 .. figure:: /images/logic_nodes/ui/widgets/ln-create_button.png
    :align: right
    :width: 215
    :alt: Create Button Node
+
+.. _ln-create_button:
 
 ========================
 Create Button

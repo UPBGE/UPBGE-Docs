@@ -1,9 +1,9 @@
-.. _ln-create_label:
-
 .. figure:: /images/logic_nodes/ui/widgets/ln-create_label.png
    :align: right
    :width: 215
    :alt: Create Label Node
+
+.. _ln-create_label:
 
 ========================
 Create Label

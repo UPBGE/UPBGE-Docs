@@ -1,9 +1,9 @@
-.. _ln-rotate_to:
-
 .. figure:: /images/logic_nodes/objects/transformation/ln-rotate_to.png
    :align: right
    :width: 215
    :alt: Rotate To Node
+
+.. _ln-rotate_to:
 
 ==============
 Rotate To

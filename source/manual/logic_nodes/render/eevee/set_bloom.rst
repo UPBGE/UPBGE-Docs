@@ -1,9 +1,9 @@
-.. _ln-set-bloom:
-
 .. figure:: /images/logic_nodes/render/eevee/ln-set_bloom.png
    :align: right
    :width: 215
    :alt: Set Bloom Node
+
+.. _ln-set_bloom:
 
 =======================
 Set Bloom

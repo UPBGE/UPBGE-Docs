@@ -1,9 +1,9 @@
-.. _logic_nodes-set_target:
-
 .. figure:: /images/logic_nodes/animation/bone_constraints/ln-set_target.png
    :align: right
    :width: 215
    :alt: Set Target Node
+
+.. _ln-set_target:
 
 ==============================
 Set Target

@@ -1,9 +1,9 @@
-.. _ln-vr_headset:
-
 .. figure:: /images/logic_nodes/input/vr/ln-vr_headset.png
    :align: right
    :width: 215
    :alt: VR Headset Node
+
+.. _ln-vr_headset:
 
 ===========
 VR Headset

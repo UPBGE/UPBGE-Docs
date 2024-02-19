@@ -1,9 +1,9 @@
-.. _ln-load_blender_file:
-
 .. figure:: /images/logic_nodes/game/ln-load_blender_file.png
    :align: right
    :width: 215
    :alt: Load Blender File Node
+
+.. _ln-load_blender_file:
 
 =================
 Load Blender File

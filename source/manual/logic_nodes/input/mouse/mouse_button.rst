@@ -1,9 +1,9 @@
-.. _ln-mouse_button:
-
 .. figure:: /images/logic_nodes/input/mouse/ln-mouse_button.png
    :align: right
    :width: 215
    :alt: Mouse Button Node
+
+.. _ln-mouse_button:
 
 =============
 Mouse Button

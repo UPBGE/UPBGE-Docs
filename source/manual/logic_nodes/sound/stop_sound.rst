@@ -1,9 +1,9 @@
-.. _ln-stop_sound:
-
 .. figure:: /images/logic_nodes/sound/ln-stop_sound.png
    :align: right
    :width: 215
    :alt: Stop Sound Node
+
+.. _ln-stop_sound:
 
 ======================
 Stop Sound

@@ -1,9 +1,9 @@
-.. _ln-is_none:
-
 .. figure:: /images/logic_nodes/logic/ln-is_none.png
    :align: right
    :width: 130
    :alt: Is None Node
+
+.. _ln-is_none:
 
 ======================
 Is None

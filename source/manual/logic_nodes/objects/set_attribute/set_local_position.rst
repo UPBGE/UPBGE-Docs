@@ -1,9 +1,9 @@
-.. _ln-set_local_position:
-
-.. figure:: /images/logic_nodes/objects/set_attribute/ln-set_local_position.png
+.. figure:: /images/logic_nodes/objects/set_attribute/ln-local_position.png
    :align: right
    :width: 215
    :alt: Set Local Position Node
+
+.. _ln-set_local_position:
 
 =============================
 Set Local Position
@@ -12,21 +12,26 @@ Set Local Position
 Parameters
 ++++++++++
 
-prop
-   value
+Set Attribute
+   Local Position todo
 
 Inputs
 ++++++
 
-prop
-   value
+Condition
+   Condition to be fulfilled for node to activate.
+
+XYZ
+   todo
+
+Object
+   todo
+
+Value
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Done
+   *True* if node performed successfully, else *False*.

@@ -1,9 +1,9 @@
-.. _ln-receive_event:
-
 .. figure:: /images/logic_nodes/events/ln-receive_event.png
    :align: right
    :width: 215
    :alt: Receive Event Node
+
+.. _ln-receive_event:
 
 =============================
 Receive Event

@@ -1,9 +1,9 @@
-.. _ln-typecast_value:
-
 .. figure:: /images/logic_nodes/python/ln-typecast_value.png
    :align: right
    :width: 215
    :alt: Typecast Value Node
+
+.. _ln-typecast_value:
 
 =======================
 Typecast Value

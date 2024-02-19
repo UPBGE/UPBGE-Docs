@@ -1,9 +1,9 @@
-.. _ln-color_rgb:
-
 .. figure:: /images/logic_nodes/values/vector/ln-color_rgb.png
    :align: right
    :width: 215
    :alt: Color RGB Node
+
+.. _ln-color_rgb:
 
 ========================
 Color RGB

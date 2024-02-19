@@ -1,9 +1,9 @@
-.. _ln-get_global_property:
-
 .. figure:: /images/logic_nodes/values/properties/ln-get_global_property.png
    :align: right
    :width: 215
    :alt: Get Global Property Node
+
+.. _ln-get_global_property:
 
 ========================
 Get Global Property

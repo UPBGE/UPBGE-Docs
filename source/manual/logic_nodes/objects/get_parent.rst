@@ -1,9 +1,9 @@
-.. _ln-get_parent:
-
 .. figure:: /images/logic_nodes/objects/ln-get_parent.png
    :align: right
    :width: 215
    :alt: Get Parent Node
+
+.. _ln-get_parent:
 
 ======================
 Get Parent

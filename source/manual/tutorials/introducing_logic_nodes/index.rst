@@ -8,3 +8,4 @@ Introducing Logic Nodes
    :maxdepth: 2
 
    a_first_example
+   moving_cube

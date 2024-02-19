@@ -1,9 +1,9 @@
-.. _ln-set_object_attribute:
-
 .. figure:: /images/logic_nodes/python/ln-set_object_attribute.png
    :align: right
    :width: 215
    :alt: Set Object Attribute Node
+
+.. _ln-set_object_attribute:
 
 =======================
 Set Object Attribute

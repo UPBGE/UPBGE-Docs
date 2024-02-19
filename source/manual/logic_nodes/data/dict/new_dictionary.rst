@@ -1,9 +1,9 @@
-.. _ln-new_dictionary:
-
 .. figure:: /images/logic_nodes/data/dict/ln-new_dictionary.png
    :align: right
    :width: 215
    :alt: New Dictionary Node
+
+.. _ln-new_dictionary:
 
 =================
 New Dictionary

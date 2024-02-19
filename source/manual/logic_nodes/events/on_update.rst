@@ -1,9 +1,9 @@
-.. _ln-on_update:
-
 .. figure:: /images/logic_nodes/events/ln-on_update.png
    :align: right
    :width: 215
    :alt: On Update Node
+
+.. _ln-on_update:
 
 ===========
 On Update

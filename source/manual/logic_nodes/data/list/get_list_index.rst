@@ -1,9 +1,9 @@
-.. _ln-get_list_index:
-
 .. figure:: /images/logic_nodes/data/list/ln-get_list_index.png
    :align: right
    :width: 215
    :alt: Get List Index Node
+
+.. _ln-get_list_index:
 
 =================
 Get List Index

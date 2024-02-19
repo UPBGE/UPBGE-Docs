@@ -1,9 +1,9 @@
-.. _ln-list_saved_variables:
-
 .. figure:: /images/logic_nodes/data/variables/ln-list_saved_variables.png
    :align: right
    :width: 215
    :alt: List Saved Variables Node
+
+.. _ln-list_saved_variables:
 
 ====================
 List Saved Variables

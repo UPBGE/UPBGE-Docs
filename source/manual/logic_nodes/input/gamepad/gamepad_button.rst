@@ -1,9 +1,9 @@
-.. _ln-gamepad_button:
-
 .. figure:: /images/logic_nodes/input/gamepad/ln-gamepad_button.png
    :align: right
    :width: 215
    :alt: Gamepad Button Node
+
+.. _ln-gamepad_button:
 
 ==============
 Gamepad Button

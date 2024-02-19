@@ -1,9 +1,9 @@
-.. _ln-set_sensor_value:
-
 .. figure:: /images/logic_nodes/logic/bricks/ln-set_sensor_value.png
    :align: right
    :width: 215
    :alt: Set Sensor Value Node
+
+.. _ln-set_sensor_value:
 
 ======================
 Set Sensor Value

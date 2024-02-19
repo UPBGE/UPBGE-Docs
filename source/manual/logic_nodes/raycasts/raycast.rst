@@ -1,9 +1,9 @@
-.. _ln-raycast:
-
 .. figure:: /images/logic_nodes/raycasts/ln-raycast.png
    :align: right
    :width: 215
    :alt: Raycast Node
+
+.. _ln-raycast:
 
 ===============
 Raycast

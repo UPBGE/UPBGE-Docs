@@ -1,9 +1,9 @@
-.. _ln-once:
-
 .. figure:: /images/logic_nodes/events/ln-once.png
    :align: right
    :width: 215
    :alt: Once Node
+
+.. _ln-once:
 
 ==========
 Once
@@ -30,7 +30,6 @@ Example
 +++++++
 
 .. figure:: /images/logic_nodes/events/ln-once-example.png
-   :align: center
    :width: 500
    :alt: Once Node Example
  

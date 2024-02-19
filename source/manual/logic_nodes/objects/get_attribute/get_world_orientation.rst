@@ -1,9 +1,9 @@
-.. _ln-get_world_orientation:
-
-.. figure:: /images/logic_nodes/objects/get_attribute/ln-get_world_orientation.png
+.. figure:: /images/logic_nodes/objects/get_attribute/ln-world_orientation.png
    :align: right
    :width: 215
    :alt: Get World Orientation Node
+
+.. _ln-get_world_orientation:
 
 =======================
 Get World Orientation
@@ -12,21 +12,17 @@ Get World Orientation
 Parameters
 ++++++++++
 
-prop
-   value
+Get Attribute
+   World Orientation todo.
 
 Inputs
 ++++++
 
-prop
-   value
+Object
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Orientation
+   World Orientation todo

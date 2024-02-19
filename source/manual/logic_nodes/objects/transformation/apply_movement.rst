@@ -1,9 +1,9 @@
-.. _ln-apply_movement:
-
 .. figure:: /images/logic_nodes/objects/transformation/ln-apply_movement.png
    :align: right
    :width: 215
    :alt: Apply Movement Node
+
+.. _ln-apply_movement:
 
 ==============
 Apply Movement

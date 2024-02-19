@@ -1,9 +1,9 @@
-.. _ln-set_fov:
-
 .. figure:: /images/logic_nodes/scene/camera/ln-set_fov.png
    :align: right
    :width: 215
    :alt: Set FOV Node
+
+.. _ln-set_fov:
 
 ==============
 Set FOV

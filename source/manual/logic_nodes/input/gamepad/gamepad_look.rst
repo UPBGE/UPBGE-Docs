@@ -1,9 +1,9 @@
-.. _ln-gamepad_look:
-
 .. figure:: /images/logic_nodes/input/gamepad/ln-gamepad_look.png
    :align: right
    :width: 215
    :alt: Gamepad Look Node
+
+.. _ln-gamepad_look:
 
 ==============
 Gamepad Look

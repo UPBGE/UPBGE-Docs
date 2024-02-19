@@ -1,9 +1,9 @@
-.. _ln-set_vehicle_attribute:
-
 .. figure:: /images/logic_nodes/physics/vehicle/ln-set_vehicle_attribute.png
    :align: right
    :width: 285
    :alt: Set Vehicle Attribute Node
+
+.. _ln-set_vehicle_attribute:
 
 =====================
 Set Vehicle Attribute

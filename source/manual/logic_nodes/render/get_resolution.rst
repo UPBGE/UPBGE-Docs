@@ -1,9 +1,9 @@
-.. _ln-get_resolution:
-
 .. figure:: /images/logic_nodes/render/ln-get_resolution.png
    :align: right
    :width: 215
    :alt: Get Resolution Node
+
+.. _ln-get_resolution:
 
 =============================
 Get Resolution

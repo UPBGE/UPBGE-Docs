@@ -1,9 +1,9 @@
-.. _ln-remove_index:
-
 .. figure:: /images/logic_nodes/data/list/ln-remove_index.png
    :align: right
    :width: 215
    :alt: Remove Index Node
+
+.. _ln-remove_index:
 
 =================
 Remove Index

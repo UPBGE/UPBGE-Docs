@@ -1,9 +1,9 @@
-.. _ln-run_python_code:
-
 .. figure:: /images/logic_nodes/python/ln-run_python_code.png
    :align: right
    :width: 215
    :alt: Run Python Code Node
+
+.. _ln-run_python_code:
 
 ===============
 Run Python Code

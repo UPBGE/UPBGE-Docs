@@ -1,9 +1,9 @@
-.. _ln-get_name:
-
-.. figure:: /images/logic_nodes/objects/get_attribute/ln-get_name.png
+.. figure:: /images/logic_nodes/objects/get_attribute/ln-name.png
    :align: right
    :width: 215
    :alt: Get Name Node
+
+.. _ln-get_name:
 
 =============================
 Get Name
@@ -12,21 +12,17 @@ Get Name
 Parameters
 ++++++++++
 
-prop
-   value
+Get Attribute
+   Name todo
 
 Inputs
 ++++++
 
-prop
-   value
+Object
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Value
+   todo

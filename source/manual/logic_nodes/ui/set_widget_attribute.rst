@@ -1,9 +1,9 @@
-.. _ln-set_widget_attribute:
-
 .. figure:: /images/logic_nodes/ui/ln-set_widget_attribute.png
    :align: right
    :width: 215
    :alt: Set Widget Attribute Node
+
+.. _ln-set_widget_attribute:
 
 =============================
 Set Widget Attribute

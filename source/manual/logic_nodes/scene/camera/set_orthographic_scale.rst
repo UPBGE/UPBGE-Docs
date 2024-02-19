@@ -1,9 +1,9 @@
-.. _ln-set_orthographic_scale:
-
 .. figure:: /images/logic_nodes/scene/camera/ln-set_orthographic_scale.png
    :align: right
    :width: 215
    :alt: Set Orthographic Scale Node
+
+.. _ln-set_orthographic_scale:
 
 =======================
 Set Orthographic Scale

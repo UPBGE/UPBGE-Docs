@@ -1,9 +1,9 @@
-.. _ln-get_image:
-
 .. figure:: /images/logic_nodes/file/ln-get_image.png
    :align: right
    :width: 215
    :alt: Get Image Node
+
+.. _ln-get_image:
 
 =================
 Get Image

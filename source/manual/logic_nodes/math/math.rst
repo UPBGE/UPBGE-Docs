@@ -1,9 +1,9 @@
-.. _ln-math:
-
 .. figure:: /images/logic_nodes/math/ln-math.png
    :align: right
    :width: 215
    :alt: Math Node
+
+.. _ln-math:
 
 ======================
 Math

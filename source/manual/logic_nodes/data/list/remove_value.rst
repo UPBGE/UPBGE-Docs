@@ -1,9 +1,9 @@
-.. _ln-remove_value:
-
 .. figure:: /images/logic_nodes/data/list/ln-remove_value.png
    :align: right
    :width: 215
    :alt: Remove Value Node
+
+.. _ln-remove_value:
 
 =================
 Remove Value

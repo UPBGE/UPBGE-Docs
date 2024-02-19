@@ -1,9 +1,9 @@
-.. _ln-get_physics_info:
-
 .. figure:: /images/logic_nodes/physics/character/ln-get_physics_info.png
    :align: right
    :width: 215
    :alt: Get Physics Info Node
+
+.. _ln-get_physics_info:
 
 ====================
 Get Physics Info

@@ -1,9 +1,9 @@
-.. _ln-add_object:
-
 .. figure:: /images/logic_nodes/objects/ln-add_object.png
    :align: right
    :width: 215
    :alt: Add Object Node
+
+.. _ln-add_object:
 
 ======================
 Add Object

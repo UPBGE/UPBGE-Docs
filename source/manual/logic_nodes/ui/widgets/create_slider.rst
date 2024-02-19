@@ -1,9 +1,9 @@
-.. _ln-create_slider:
-
 .. figure:: /images/logic_nodes/ui/widgets/ln-create_slider.png
    :align: right
    :width: 215
    :alt: Create Slider Node
+
+.. _ln-create_slider:
 
 ========================
 Create Slider

@@ -1,9 +1,9 @@
-.. _ln-time_data:
-
 .. figure:: /images/logic_nodes/time/ln-time_data.png
    :align: right
    :width: 215
    :alt: Time Data Node
+
+.. _ln-time_data:
 
 ======================
 Time Data

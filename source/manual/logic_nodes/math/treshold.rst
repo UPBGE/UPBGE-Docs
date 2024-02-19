@@ -1,9 +1,9 @@
-.. _ln-treshold:
-
 .. figure:: /images/logic_nodes/math/ln-treshold.png
    :align: right
    :width: 215
    :alt: Treshold Node
+
+.. _ln-treshold:
 
 ======================
 Treshold

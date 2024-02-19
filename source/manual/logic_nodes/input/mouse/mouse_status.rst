@@ -1,9 +1,9 @@
-.. _ln-mouse_status:
-
 .. figure:: /images/logic_nodes/input/mouse/ln-mouse_status.png
    :align: right
    :width: 215
    :alt: Mouse Status Node
+
+.. _ln-mouse_status:
 
 ==============
 Mouse Status

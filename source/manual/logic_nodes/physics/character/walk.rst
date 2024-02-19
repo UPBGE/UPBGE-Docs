@@ -1,9 +1,9 @@
-.. _ln-walk:
-
 .. figure:: /images/logic_nodes/physics/character/ln-walk.png
    :align: right
    :width: 215
    :alt: Walk Node
+
+.. _ln-walk:
 
 ====================
 Walk

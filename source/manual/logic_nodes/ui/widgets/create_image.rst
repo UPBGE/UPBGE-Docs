@@ -1,9 +1,9 @@
-.. _ln-create_image:
-
 .. figure:: /images/logic_nodes/ui/widgets/ln-create_image.png
    :align: right
    :width: 215
    :alt: Create Image Node
+
+.. _ln-create_image:
 
 ========================
 Create Image

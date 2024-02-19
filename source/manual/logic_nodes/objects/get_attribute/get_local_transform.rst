@@ -1,9 +1,9 @@
-.. _ln-get_local_transform:
-
-.. figure:: /images/logic_nodes/objects/get_attribute/ln-get_local_transform.png
+.. figure:: /images/logic_nodes/objects/get_attribute/ln-local_transform.png
    :align: right
    :width: 215
    :alt: Get Local Transform Node
+
+.. _ln-get_local_transform:
 
 =============================
 Get Local Transform
@@ -12,21 +12,17 @@ Get Local Transform
 Parameters
 ++++++++++
 
-prop
-   value
+Get Attribute
+   Local Transform todo
 
 Inputs
 ++++++
 
-prop
-   value
+Object
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Value
+   todo

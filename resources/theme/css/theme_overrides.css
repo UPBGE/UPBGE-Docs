@@ -32,6 +32,13 @@ rst-content .admonition-title { background-color: #404040 }/*
 
 /* aum end */
 
+/* aum added */
+
+/* justify text */
+.rst-content { text-align: justify }
+
+/* aum end */
+
 h5 {margin-bottom: 5px}
 
 /* Sidebar menu links. */
@@ -60,6 +67,7 @@ input[type="number"], input[type="tel"], input[type="color"] {
 }
 
 /* Fixes overlay of "align-right" images on block. */
+/* aum : does not work as expected */
 .rst-content .admonition {overflow: auto}
 
 /* Boxed paragraphs. */

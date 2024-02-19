@@ -1,9 +1,9 @@
-.. _ln-set_local_orientation:
-
-.. figure:: /images/logic_nodes/objects/set_attribute/ln-set_local_orientation.png
+.. figure:: /images/logic_nodes/objects/set_attribute/ln-local_orientation.png
    :align: right
    :width: 215
    :alt: Set Local Orientation Node
+
+.. _ln-set_local_orientation:
 
 =============================
 Set Local Orientation
@@ -12,21 +12,26 @@ Set Local Orientation
 Parameters
 ++++++++++
 
-prop
-   value
+Set Attribute
+   Local Orientation todo
 
 Inputs
 ++++++
 
-prop
-   value
+Condition
+   Condition to be fulfilled for node to activate.
+
+XYZ
+   todo
+
+Object
+   todo
+
+Value
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Done
+   *True* if node performed successfully, else *False*.

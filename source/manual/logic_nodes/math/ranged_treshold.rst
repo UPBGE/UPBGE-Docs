@@ -1,9 +1,9 @@
-.. _ln-ranged_treshold:
-
 .. figure:: /images/logic_nodes/math/ln-ranged_treshold.png
    :align: right
    :width: 215
    :alt: Ranged Treshold Node
+
+.. _ln-ranged_treshold:
 
 ======================
 Ranged Treshold

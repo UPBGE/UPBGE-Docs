@@ -1,9 +1,9 @@
-.. _ln-remove_variable:
-
 .. figure:: /images/logic_nodes/data/variables/ln-remove_variable.png
    :align: right
    :width: 215
    :alt: Remove Variable Node
+
+.. _ln-remove_variable:
 
 =================
 Remove Variable

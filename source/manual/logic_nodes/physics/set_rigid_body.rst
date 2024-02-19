@@ -1,9 +1,9 @@
-.. _ln-set_rigid_body:
-
 .. figure:: /images/logic_nodes/physics/ln-set_rigid_body.png
    :align: right
    :width: 215
    :alt: Set Rigid Body Node
+
+.. _ln-set_rigid_body:
 
 ====================
 Set Rigid Body

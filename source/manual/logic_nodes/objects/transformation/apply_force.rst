@@ -1,9 +1,9 @@
-.. _ln-apply_force:
-
 .. figure:: /images/logic_nodes/objects/transformation/ln-apply_force.png
    :align: right
    :width: 215
    :alt: Apply Force Node
+
+.. _ln-apply_force:
 
 ==============
 Apply Force

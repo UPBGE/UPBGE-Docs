@@ -1,9 +1,9 @@
-.. _ln-add_constraint:
-
 .. figure:: /images/logic_nodes/physics/ln-add_constraint.png
    :align: right
    :width: 215
    :alt: Add Constraint Node
+
+.. _ln-add_constraint:
 
 ====================
 Add Constraint

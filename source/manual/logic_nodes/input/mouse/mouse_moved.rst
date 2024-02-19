@@ -1,9 +1,9 @@
-.. _ln-mouse_moved:
-
 .. figure:: /images/logic_nodes/input/mouse/ln-mouse_moved.png
    :align: right
    :width: 215
    :alt: Mouse Moved Node
+
+.. _ln-mouse_moved:
 
 ===========
 Mouse Moved

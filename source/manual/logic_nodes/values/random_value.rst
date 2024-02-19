@@ -1,9 +1,9 @@
-.. _ln-random_value:
-
 .. figure:: /images/logic_nodes/values/ln-random_value.png
    :align: right
    :width: 215
    :alt: Random Value Node
+
+.. _ln-random_value:
 
 ========================
 Random Value

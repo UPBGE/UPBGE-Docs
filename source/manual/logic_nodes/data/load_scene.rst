@@ -1,9 +1,9 @@
-.. _ln-load_scene:
-
 .. figure:: /images/logic_nodes/data/ln-load_scene.png
    :align: right
    :width: 215
    :alt: Load Scene Node
+
+.. _ln-load_scene:
 
 ==========
 Load Scene

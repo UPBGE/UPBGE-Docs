@@ -1,9 +1,9 @@
-.. _ln-set_gravity:
-
 .. figure:: /images/logic_nodes/physics/ln-set_gravity.png
    :align: right
    :width: 215
    :alt: Set Gravity Node
+
+.. _ln-physics_set_gravity:
 
 ====================
 Set Gravity

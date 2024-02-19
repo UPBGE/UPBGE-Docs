@@ -1,9 +1,9 @@
-.. _ln-set_overlay_collection:
-
 .. figure:: /images/logic_nodes/scene/collections/ln-set_overlay_collection.png
    :align: right
    :width: 215
    :alt: Set Overlay Collection Node
+
+.. _ln-set_overlay_collection:
 
 =======================
 Set Overlay Collection

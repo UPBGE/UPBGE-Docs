@@ -1,9 +1,9 @@
-.. _ln-instream:
-
 .. figure:: /images/logic_nodes/input/keyboard/ln-instream.png
    :align: right
    :width: 215
    :alt: Key Logger Node
+
+.. _ln-instream:
 
 ==========
 Key Logger

@@ -1,9 +1,9 @@
-.. _ln-send_data:
-
 .. figure:: /images/logic_nodes/network/ln-send_data.png
    :align: right
    :width: 215
    :alt: Send Data Node
+
+.. _ln-send_data:
 
 =================
 Send Data

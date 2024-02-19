@@ -1,9 +1,9 @@
-.. _ln-barrier:
-
 .. figure:: /images/logic_nodes/time/ln-barrier.png
    :align: right
    :width: 215
    :alt: Barrier Node
+
+.. _ln-barrier:
 
 ======================
 Barrier

@@ -1,9 +1,9 @@
-.. _ln-vr_controller:
-
 .. figure:: /images/logic_nodes/input/vr/ln-vr_controller.png
    :align: right
    :width: 215
    :alt: VR Controller Node
+
+.. _ln-vr_controller:
 
 ==============
 VR Controller

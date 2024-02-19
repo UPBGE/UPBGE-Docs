@@ -1,9 +1,9 @@
-.. _ln-get_widget_attribute:
-
 .. figure:: /images/logic_nodes/ui/ln-get_widget_attribute.png
    :align: right
    :width: 215
    :alt: Get Widget Attribute Node
+
+.. _ln-get_widget_attribute:
 
 =============================
 Get Widget Attribute

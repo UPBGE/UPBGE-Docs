@@ -1,9 +1,9 @@
-.. _ln-get_object_names:
-
 .. figure:: /images/logic_nodes/scene/collections/ln-get_object_names.png
    :align: right
    :width: 215
    :alt: Get Object Names Node
+
+.. _ln-get_object_names:
 
 =======================
 Get Object Names

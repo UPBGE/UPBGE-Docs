@@ -1,9 +1,9 @@
-.. _ln-delay:
-
 .. figure:: /images/logic_nodes/time/ln-delay.png
    :align: right
    :width: 215
    :alt: Delay Node
+
+.. _ln-delay:
 
 ======================
 Delay

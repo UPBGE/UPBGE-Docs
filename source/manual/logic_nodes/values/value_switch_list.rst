@@ -1,9 +1,9 @@
-.. _ln-value_switch_list:
-
 .. figure:: /images/logic_nodes/values/ln-value_switch_list.png
    :align: right
    :width: 215
    :alt: Value Switch List Node
+
+.. _ln-value_switch_list:
 
 ========================
 Value Switch List

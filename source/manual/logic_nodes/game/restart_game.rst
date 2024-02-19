@@ -1,9 +1,9 @@
-.. _ln-restart_game:
-
 .. figure:: /images/logic_nodes/game/ln-restart_game.png
    :align: right
    :width: 215
    :alt: Restart Game Node
+
+.. _ln-restart_game:
 
 =============
 Restart Game

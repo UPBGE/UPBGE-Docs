@@ -1,9 +1,9 @@
-.. _ln-projectile_ray:
-
 .. figure:: /images/logic_nodes/raycasts/ln-projectile_ray.png
    :align: right
    :width: 215
    :alt: Projectile Ray Node
+
+.. _ln-projectile_ray:
 
 ===============
 Projectile Ray

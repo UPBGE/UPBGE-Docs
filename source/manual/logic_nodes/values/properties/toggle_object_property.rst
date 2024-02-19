@@ -1,9 +1,9 @@
-.. _ln-toggle_object_property:
-
 .. figure:: /images/logic_nodes/values/properties/ln-toggle_object_property.png
    :align: right
    :width: 215
    :alt: Toggle Object Property Node
+
+.. _ln-toggle_object_property:
 
 ========================
 Toggle Object Property

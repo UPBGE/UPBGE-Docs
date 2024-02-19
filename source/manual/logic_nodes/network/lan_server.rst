@@ -1,9 +1,9 @@
-.. _ln-lan_server:
-
 .. figure:: /images/logic_nodes/network/ln-lan_server.png
    :align: right
    :width: 215
    :alt: LAN Server Node
+
+.. _ln-lan_server:
 
 =================
 LAN Server

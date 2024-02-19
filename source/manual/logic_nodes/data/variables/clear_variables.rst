@@ -1,9 +1,9 @@
-.. _ln-clear_variables:
-
 .. figure:: /images/logic_nodes/data/variables/ln-clear_variables.png
    :align: right
    :width: 215
    :alt: Clear Variables Node
+
+.. _ln-clear_variables:
 
 ==================
 Clear Variables

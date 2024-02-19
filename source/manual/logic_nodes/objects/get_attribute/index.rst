@@ -17,6 +17,8 @@ Get Attribute
    get_local_linear_velocity
    get_local_angular_velocity
    get_local_transform
+   get_world_scale
+   get_local_scale
    get_name
-   get_scale
    get_color
+   get_visibility

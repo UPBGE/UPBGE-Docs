@@ -1,9 +1,9 @@
-.. _logic_nodes-start_speaker:
-
 .. figure:: /images/logic_nodes/sound/ln-start_speaker.png
    :align: right
    :width: 215
    :alt: Start Speaker Node
+
+.. _ln-start_speaker:
 
 ======================
 Start Speaker

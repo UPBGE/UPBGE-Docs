@@ -1,9 +1,9 @@
-.. _ln-set-exposure:
-
 .. figure:: /images/logic_nodes/render/eevee/ln-set_exposure.png
    :align: right
    :width: 215
    :alt: Set Exposure Node
+
+.. _ln-set_exposure:
 
 =======================
 Set Exposure

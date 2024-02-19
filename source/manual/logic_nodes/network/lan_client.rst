@@ -1,9 +1,9 @@
-.. _ln-lan_client:
-
 .. figure:: /images/logic_nodes/network/ln-lan_client.png
    :align: right
    :width: 215
    :alt: LAN Client Node
+
+.. _ln-lan_client:
 
 =================
 LAN Client

@@ -1,9 +1,9 @@
-.. _ln-quit_game:
-
 .. figure:: /images/logic_nodes/game/ln-quit_game.png
    :align: right
    :width: 215
    :alt: Quit Game Node
+
+.. _ln-quit_game:
 
 ===========
 Quit Game

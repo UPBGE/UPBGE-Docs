@@ -1,9 +1,9 @@
-.. _ln-make_light_unique:
-
 .. figure:: /images/logic_nodes/lights/ln-make_light_unique.png
    :align: right
    :width: 215
    :alt: Make Light Unique Node
+
+.. _ln-make_light_unique:
 
 =================
 Make Light Unique

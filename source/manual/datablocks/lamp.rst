@@ -4,4 +4,4 @@
 Lamp
 ====
 
-.. todo:: TODO
+todo

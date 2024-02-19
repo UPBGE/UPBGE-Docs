@@ -1,9 +1,9 @@
-.. _ln-gamepad_sticks:
-
 .. figure:: /images/logic_nodes/input/gamepad/ln-gamepad_sticks.png
    :align: right
    :width: 215
    :alt: Gamepad Sticks Node
+
+.. _ln-gamepad_sticks:
 
 ==============
 Gamepad Sticks

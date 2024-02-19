@@ -1,9 +1,9 @@
-.. _ln-set_global_property:
-
 .. figure:: /images/logic_nodes/values/properties/ln-set_global_property.png
    :align: right
    :width: 215
    :alt: Set Global Property Node
+
+.. _ln-set_global_property:
 
 ========================
 Set Global Property

@@ -1,9 +1,9 @@
-.. _ln-show_framerate:
-
 .. figure:: /images/logic_nodes/render/ln-show_framerate.png
    :align: right
    :width: 215
    :alt: Show Framerate Node
+
+.. _ln-show_framerate:
 
 =============================
 Show Framerate

@@ -1,9 +1,9 @@
-.. _ln-set_custom_cursor:
-
 .. figure:: /images/logic_nodes/ui/ln-set_custom_cursor.png
    :align: right
    :width: 215
    :alt: Set Custom Cursor Node
+
+.. _ln-set_custom_cursor:
 
 =============================
 Set Custom Cursor

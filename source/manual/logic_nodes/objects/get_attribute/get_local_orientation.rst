@@ -1,9 +1,9 @@
-.. _ln-get_local_orientation:
-
-.. figure:: /images/logic_nodes/objects/get_attribute/ln-get_local_orientation.png
+.. figure:: /images/logic_nodes/objects/get_attribute/ln-local_orientation.png
    :align: right
    :width: 215
    :alt: Get Local Orientation Node
+
+.. _ln-get_local_orientation:
 
 =============================
 Get Local Orientation
@@ -12,21 +12,17 @@ Get Local Orientation
 Parameters
 ++++++++++
 
-prop
-   value
+Get Attribute
+   todo
 
 Inputs
 ++++++
 
-prop
-   value
+Object
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Orientation
+   todo

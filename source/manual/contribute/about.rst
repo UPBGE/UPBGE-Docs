@@ -1,16 +1,16 @@
 .. _contribute-about:
 
-++++++++++++++++++++++
+==============================
 About the UPBGE Manual
-++++++++++++++++++++++
+==============================
 
 The purpose is to provide a complete and concise *reference manual*, with:
 
-   - Insight into Blender/UPBGE's way of working, its internal (technical) design, in order to understand options and tools;
-   - Detailed functional description of all features, tools and options in UPBGE.
+- Insight into Blender/UPBGE's way of working, its internal (technical) design, in order to understand options and tools;
+- Detailed functional description of all features, tools and options in UPBGE.
 
 Conventions
-===========
+++++++++++++++++++++++++++++++
 
 .. note:: These conventions are for people reading the manual. We have a more detailed list of conventions for authors under the :doc:`Writing Style </manual/contribute/writing_style>` section.
 

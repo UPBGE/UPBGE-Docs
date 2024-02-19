@@ -1,9 +1,9 @@
-.. _ln-set_physics:
-
 .. figure:: /images/logic_nodes/physics/ln-set_physics.png
    :align: right
    :width: 215
    :alt: Set Physics Node
+
+.. _ln-set_physics:
 
 ====================
 Set Physics

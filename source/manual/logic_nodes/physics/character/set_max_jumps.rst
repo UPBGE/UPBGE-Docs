@@ -1,9 +1,9 @@
-.. _ln-set_max_jumps:
-
 .. figure:: /images/logic_nodes/physics/character/ln-set_max_jumps.png
    :align: right
    :width: 215
    :alt: Set Max Jumps Node
+
+.. _ln-set_max_jumps:
 
 ====================
 Set Max Jumps

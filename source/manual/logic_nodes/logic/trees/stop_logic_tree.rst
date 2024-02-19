@@ -1,9 +1,9 @@
-.. _ln-stop_logic_tree:
-
 .. figure:: /images/logic_nodes/logic/trees/ln-stop_logic_tree.png
    :align: right
    :width: 215
    :alt: Stop Logic Tree Node
+
+.. _ln-stop_logic_tree:
 
 ======================
 Stop Logic Tree

@@ -1,9 +1,9 @@
-.. _ln-accelerate:
-
 .. figure:: /images/logic_nodes/physics/vehicle/ln-accelerate.png
    :align: right
    :width: 215
    :alt: Accelerate Node
+
+.. _ln-accelerate:
 
 ====================
 Accelerate

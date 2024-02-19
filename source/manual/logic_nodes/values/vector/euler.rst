@@ -1,9 +1,9 @@
-.. _ln-euler:
-
 .. figure:: /images/logic_nodes/values/vector/ln-euler.png
    :align: right
    :width: 215
    :alt: Euler Node
+
+.. _ln-euler:
 
 ========================
 Euler

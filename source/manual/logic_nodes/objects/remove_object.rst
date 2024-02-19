@@ -1,9 +1,9 @@
-.. _ln-remove_object:
-
 .. figure:: /images/logic_nodes/objects/ln-remove_object.png
    :align: right
    :width: 215
    :alt: Remove Object Node
+
+.. _ln-remove_object:
 
 ======================
 Remove Object

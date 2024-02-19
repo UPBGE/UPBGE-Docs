@@ -1,9 +1,9 @@
-.. _ln-vector_math:
-
 .. figure:: /images/logic_nodes/math/ln-vector_math.png
    :align: right
    :width: 215
    :alt: Vector Math Node
+
+.. _ln-vector_math:
 
 ======================
 Vector Math

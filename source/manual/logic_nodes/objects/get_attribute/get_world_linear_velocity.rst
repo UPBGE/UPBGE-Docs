@@ -1,9 +1,9 @@
-.. _ln-get_world_linear_velocity:
-
-.. figure:: /images/logic_nodes/objects/get_attribute/ln-get_world_linear_velocity.png
+.. figure:: /images/logic_nodes/objects/get_attribute/ln-world_linear_velocity.png
    :align: right
    :width: 215
    :alt: Get World Linear Velocity Node
+
+.. _ln-get_world_linear_velocity:
 
 =============================
 Get World Linear Velocity
@@ -12,21 +12,17 @@ Get World Linear Velocity
 Parameters
 ++++++++++
 
-prop
-   value
+Get Attribute
+   World Linear Velocity todo.
 
 Inputs
 ++++++
 
-prop
-   value
+Object
+   Object todo.
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+World Linear Velocity
+   todo

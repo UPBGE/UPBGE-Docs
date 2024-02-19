@@ -1,9 +1,9 @@
-.. _ln-get_world_angular_velocity:
-
-.. figure:: /images/logic_nodes/objects/get_attribute/ln-get_world_angular_velocity.png
+.. figure:: /images/logic_nodes/objects/get_attribute/ln-world_angular_velocity.png
    :align: right
    :width: 215
    :alt: Get World Angular Velocity Node
+
+.. _ln-get_world_angular_velocity:
 
 =============================
 Get World Angular Velocity
@@ -12,21 +12,17 @@ Get World Angular Velocity
 Parameters
 ++++++++++
 
-prop
-   value
+Get Attribute
+   World Angular Velocity todo.
 
 Inputs
 ++++++
 
-prop
-   value
+Object
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+World Angular Velocity
+   todo

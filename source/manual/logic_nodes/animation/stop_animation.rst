@@ -1,9 +1,9 @@
-.. _ln-stop_animation:
-
 .. figure:: /images/logic_nodes/animation/ln-stop_animation.png
    :align: right
    :width: 215
    :alt: Stop Animation Node
+
+.. _ln-stop_animation:
 
 ======================
 Stop Animation

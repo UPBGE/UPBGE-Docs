@@ -1,9 +1,9 @@
-.. _ln-set_parent:
-
 .. figure:: /images/logic_nodes/objects/ln-set_parent.png
    :align: right
    :width: 215
    :alt: Set Parent Node
+
+.. _ln-set_parent:
 
 ======================
 Set Parent

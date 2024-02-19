@@ -1,9 +1,9 @@
-.. _ln-remove_constraint:
-
 .. figure:: /images/logic_nodes/physics/ln-remove_constraint.png
    :align: right
    :width: 215
    :alt: Remove Constraint Node
+
+.. _ln-remove_constraint:
 
 ====================
 Remove Constraint

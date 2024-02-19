@@ -1,9 +1,9 @@
-.. _ln-formula:
-
 .. figure:: /images/logic_nodes/math/ln-formula.png
    :align: right
    :width: 215
    :alt: Formula Node
+
+.. _ln-formula:
 
 ======================
 Formula

@@ -1,9 +1,9 @@
-.. _ln-clamp:
-
 .. figure:: /images/logic_nodes/math/ln-clamp.png
    :align: right
    :width: 215
    :alt: Clamp Node
+
+.. _ln-clamp:
 
 ======================
 Clamp

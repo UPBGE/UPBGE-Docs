@@ -1,9 +1,9 @@
-.. _ln-set_dynamics:
-
 .. figure:: /images/logic_nodes/physics/ln-set_dynamics.png
    :align: right
    :width: 215
    :alt: Set Dynamics Node
+
+.. _ln-set_dynamics:
 
 ====================
 Set Dynamics

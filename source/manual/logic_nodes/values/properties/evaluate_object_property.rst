@@ -1,9 +1,9 @@
-.. _ln-evaluate_object_property:
-
 .. figure:: /images/logic_nodes/values/properties/ln-evaluate_object_property.png
    :align: right
    :width: 215
    :alt: Evaluate Object Property Node
+
+.. _ln-evaluate_object_property:
 
 ========================
 Evaluate Object Property

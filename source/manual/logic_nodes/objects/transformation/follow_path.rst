@@ -1,9 +1,9 @@
-.. _ln-follow_path:
-
 .. figure:: /images/logic_nodes/objects/transformation/ln-follow_path.png
    :align: right
    :width: 215
    :alt: Follow Path Node
+
+.. _ln-follow_path:
 
 ==============
 Follow Path

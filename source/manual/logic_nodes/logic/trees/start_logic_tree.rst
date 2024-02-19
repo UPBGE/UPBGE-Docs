@@ -1,9 +1,9 @@
-.. _ln-start_logic_tree:
-
 .. figure:: /images/logic_nodes/logic/trees/ln-start_logic_tree.png
    :align: right
    :width: 215
    :alt: Start Logic Tree Node
+
+.. _ln-start_logic_tree:
 
 ======================
 Start Logic Tree

@@ -1,9 +1,9 @@
-.. _ln-add_filter:
-
 .. figure:: /images/logic_nodes/scene/post_fx/ln-add_filter.png
    :align: right
    :width: 215
    :alt: Add Filter Node
+
+.. _ln-add_filter:
 
 =======================
 Add Filter

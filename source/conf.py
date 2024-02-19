@@ -35,7 +35,8 @@ release = 'latest'
 # -- General configuration ---------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
-needs_sphinx = '1.5'
+# 1.8 needed for 'html_css_files' and 'html_js_files' - docs.readthedocs.io
+needs_sphinx = '1.8'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -44,10 +45,6 @@ needs_sphinx = '1.5'
 extensions = [
     'youtube',
     'vimeo',
-    'collapse',
-    #'myst-parser',
-    #'sphinx_togglebutton',
-    #'sphinx_toolbox.collapse',
     #'sphinx.ext.mathjax',
     #'sphinx.ext.intersphinx',
     #'sphinx.ext.todo',
@@ -98,7 +95,7 @@ html_theme = 'sphinx_rtd_theme'
 
 # Theme options
 html_theme_options = {
-    "navigation_with_keys": True,
+   "navigation_with_keys": True,
    # included in the title
    "display_version": False,
    "collapse_navigation": True, # slows build down; useful
@@ -117,8 +114,10 @@ extensions.append('sphinx_rtd_theme')
 html_static_path = ["../resources/theme"] # _static
 
 if html_theme == "sphinx_rtd_theme":
-    html_css_files = ["css/theme_overrides.css"]
-#    html_css_files = ["css/custom.css"]
+   html_css_files = ["css/theme_overrides.css"]
+# for production, switch to above theme_overrides.css
+   # html_css_files = ["css/rtd_dark.css"]
+
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
 #
@@ -168,7 +167,6 @@ latex_documents = [
      'UPBGE Community', 'manual'),
 ]
 
-
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
@@ -178,8 +176,7 @@ man_pages = [
      [author], 1)
 ]
 
-
-# -- Options for Texinfo output ----------------------------------------------
+# -- Options for Texinfo output ----------------------------------------------- 
 
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,

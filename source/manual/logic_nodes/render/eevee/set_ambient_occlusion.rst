@@ -1,9 +1,9 @@
-.. _ln-set_ambient_occlusion:
-
 .. figure:: /images/logic_nodes/render/eevee/ln-set_ambient_occlusion.png
    :align: right
    :width: 215
    :alt: Set Ambient Occlusion Node
+
+.. _ln-set_ambient_occlusion:
 
 =============================
 Set Ambient Occlusion

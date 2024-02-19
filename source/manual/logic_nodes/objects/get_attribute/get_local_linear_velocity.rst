@@ -1,9 +1,9 @@
-.. _ln-get_local_linear_velocity:
-
-.. figure:: /images/logic_nodes/objects/get_attribute/ln-get_local_linear_velocity.png
+.. figure:: /images/logic_nodes/objects/get_attribute/ln-local_linear_velocity.png
    :align: right
    :width: 215
    :alt: Get Local Linear Velocity Node
+
+.. _ln-get_local_linear_velocity:
 
 =============================
 Get Local Linear Velocity
@@ -12,21 +12,17 @@ Get Local Linear Velocity
 Parameters
 ++++++++++
 
-prop
-   value
+Get Attribute
+   Local Linear Velocity todo
 
 Inputs
 ++++++
 
-prop
-   value
+Object
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Local Linear Velocity
+   todo

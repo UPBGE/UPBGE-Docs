@@ -1,9 +1,9 @@
-.. _ln-file_path:
-
 .. figure:: /images/logic_nodes/values/ln-file_path.png
    :align: right
    :width: 215
    :alt: File Path Node
+
+.. _ln-file_path:
 
 ========================
 File Path

@@ -1,9 +1,9 @@
-.. _ln-compare:
-
 .. figure:: /images/logic_nodes/math/ln-compare.png
    :align: right
    :width: 215
    :alt: Compare Node
+
+.. _ln-compare:
 
 ======================
 Compare

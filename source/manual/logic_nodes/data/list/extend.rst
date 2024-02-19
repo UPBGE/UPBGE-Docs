@@ -1,9 +1,9 @@
-.. _ln-extend:
-
 .. figure:: /images/logic_nodes/data/list/ln-extend.png
    :align: right
    :width: 215
    :alt: Extend Node
+
+.. _ln-extend:
 
 =================
 Extend

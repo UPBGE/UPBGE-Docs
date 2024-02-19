@@ -1,9 +1,9 @@
-.. _ln-set_list_index:
-
 .. figure:: /images/logic_nodes/data/list/ln-set_list_index.png
    :align: right
    :width: 215
    :alt: Set List Index Node
+
+.. _ln-set_list_index:
 
 =================
 Set List Index

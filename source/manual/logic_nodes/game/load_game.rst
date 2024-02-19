@@ -1,9 +1,9 @@
-.. _ln-load_game:
-
 .. figure:: /images/logic_nodes/game/ln-load_game.png
    :align: right
    :width: 215
    :alt: Load Game Node
+
+.. _ln-load_game:
 
 ==========
 Load Game

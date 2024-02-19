@@ -1,9 +1,9 @@
-.. _ln-set_collision_mask:
-
 .. figure:: /images/logic_nodes/physics/ln-set_collision_mask.png
    :align: right
    :width: 215
    :alt: Set Collision Mask Node
+
+.. _ln-set_collision_mask:
 
 ====================
 Set Collision Mask

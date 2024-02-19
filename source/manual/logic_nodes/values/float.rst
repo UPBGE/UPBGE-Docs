@@ -1,9 +1,9 @@
-.. _ln-float:
-
 .. figure:: /images/logic_nodes/values/ln-float.png
    :align: right
    :width: 215
    :alt: Float Node
+
+.. _ln-float:
 
 ========================
 Float

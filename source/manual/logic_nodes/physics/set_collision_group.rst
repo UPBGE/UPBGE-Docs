@@ -1,9 +1,9 @@
-.. _ln-set_collision_group:
-
 .. figure:: /images/logic_nodes/physics/ln-set_collision_group.png
    :align: right
    :width: 215
    :alt: Set Collision Group Node
+
+.. _ln-set_collision_group:
 
 ====================
 Set Collision Group

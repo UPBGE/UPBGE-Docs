@@ -1,9 +1,9 @@
-.. _ln-interpolate:
-
 .. figure:: /images/logic_nodes/math/ln-interpolate.png
    :align: right
    :width: 215
    :alt: Interpolate Node
+
+.. _ln-interpolate:
 
 ======================
 Interpolate

@@ -1,9 +1,9 @@
-.. _ln-append:
-
 .. figure:: /images/logic_nodes/data/list/ln-append.png
    :align: right
    :width: 215
    :alt: Append Node
+
+.. _ln-append:
 
 =================
 Append

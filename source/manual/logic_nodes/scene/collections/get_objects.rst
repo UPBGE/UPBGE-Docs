@@ -1,9 +1,9 @@
-.. _ln-get_objects:
-
 .. figure:: /images/logic_nodes/scene/collections/ln-get_objects.png
    :align: right
    :width: 215
    :alt: Get Objects Node
+
+.. _ln-get_objects:
 
 =======================
 Get Objects

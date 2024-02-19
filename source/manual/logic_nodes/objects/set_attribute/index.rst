@@ -17,6 +17,5 @@ Set Attribute
    set_local_linear_velocity
    set_local_angular_velocity
    set_local_transform
-   set_name
-   set_scale
+   set_world_scale
    set_color

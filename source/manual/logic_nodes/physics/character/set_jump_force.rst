@@ -1,9 +1,9 @@
-.. _ln-set_jump_force:
-
 .. figure:: /images/logic_nodes/physics/character/ln-set_jump_force.png
    :align: right
    :width: 215
    :alt: Set Jump Force Node
+
+.. _ln-set_jump_force:
 
 ====================
 Set Jump Force

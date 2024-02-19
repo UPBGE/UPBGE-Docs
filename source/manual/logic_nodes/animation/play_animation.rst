@@ -1,9 +1,9 @@
-.. _ln-play_animation:
-
 .. figure:: /images/logic_nodes/animation/ln-play_animation.png
    :align: right
    :width: 215
    :alt: Play Animation Node
+
+.. _ln-play_animation:
 
 ======================
 Play Animation

@@ -1,9 +1,9 @@
-.. _ln-create_layout:
-
 .. figure:: /images/logic_nodes/ui/widgets/ln-create_layout.png
    :align: right
    :width: 215
    :alt: Create Layout Node
+
+.. _ln-create_layout:
 
 ========================
 Create Layout

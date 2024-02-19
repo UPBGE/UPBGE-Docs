@@ -1,9 +1,9 @@
-.. _logic_nodes-set_attribute:
-
 .. figure:: /images/logic_nodes/animation/bone_constraints/ln-set_attribute.png
    :align: right
    :width: 215
    :alt: Set Attribute Node
+
+.. _ln-set_attribute:
 
 ==============================
 Set Attribute

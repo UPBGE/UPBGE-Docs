@@ -1,9 +1,9 @@
-.. _ln-keyboard_key:
-
 .. figure:: /images/logic_nodes/input/keyboard/ln-keyboard_key.png
    :align: right
    :width: 215
    :alt: Keyboard Key Node
+
+.. _ln-keyboard_key:
 
 =============
 Keyboard Key

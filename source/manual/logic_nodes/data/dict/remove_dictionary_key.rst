@@ -1,9 +1,9 @@
-.. _ln-remove_dictionary_key:
-
 .. figure:: /images/logic_nodes/data/dict/ln-remove_dictionary_key.png
    :align: right
    :width: 215
    :alt: Remove Dictionary Key Node
+
+.. _ln-remove_dictionary_key:
 
 =====================
 Remove Dictionary Key

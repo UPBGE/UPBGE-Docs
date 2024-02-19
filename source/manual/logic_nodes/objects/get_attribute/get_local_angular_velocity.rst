@@ -1,9 +1,9 @@
-.. _ln-get_local_angular_velocity:
-
-.. figure:: /images/logic_nodes/objects/get_attribute/ln-get_local_angular_velocity.png
+.. figure:: /images/logic_nodes/objects/get_attribute/ln-local_angular_velocity.png
    :align: right
    :width: 215
    :alt: Get Local Angular Velocity Node
+
+.. _ln-get_local_angular_velocity:
 
 =============================
 Get Local Angular Velocity
@@ -12,21 +12,17 @@ Get Local Angular Velocity
 Parameters
 ++++++++++
 
-prop
-   value
+Get Attribute
+   Local Angular Velocity
 
 Inputs
 ++++++
 
-prop
-   value
+Object
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Local Angular Velocity
+   todo

@@ -1,9 +1,9 @@
-.. _ln-get_world_position:
-
-.. figure:: /images/logic_nodes/objects/get_attribute/ln-get_world_position.png
+.. figure:: /images/logic_nodes/objects/get_attribute/ln-world_position.png
    :align: right
    :width: 215
    :alt: Get World Position Node
+
+.. _ln-get_world_position:
 
 =======================
 Get World Position
@@ -12,21 +12,17 @@ Get World Position
 Parameters
 ++++++++++
 
-prop
-   value
+Get Attribute
+   World Position todo.
 
 Inputs
 ++++++
 
-prop
-   value
+Object
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+World Position
+   todo

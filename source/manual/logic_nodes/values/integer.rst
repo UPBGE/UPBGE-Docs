@@ -1,9 +1,9 @@
-.. _ln-integer:
-
 .. figure:: /images/logic_nodes/values/ln-integer.png
    :align: right
    :width: 215
    :alt: Integer Node
+
+.. _ln-integer:
 
 ========================
 Integer

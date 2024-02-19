@@ -1,9 +1,9 @@
-.. _ln-set-gamma:
-
 .. figure:: /images/logic_nodes/render/eevee/ln-set_gamma.png
    :align: right
    :width: 215
    :alt: Set Gamma Node
+
+.. _ln-set_gamma:
 
 =======================
 Set Gamma

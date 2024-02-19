@@ -1,9 +1,9 @@
-.. _ln-load_variable:
-
 .. figure:: /images/logic_nodes/data/variables/ln-load_variable.png
    :align: right
    :width: 215
    :alt: Load Variable Node
+
+.. _ln-load_variable:
 
 =================
 Load Variable

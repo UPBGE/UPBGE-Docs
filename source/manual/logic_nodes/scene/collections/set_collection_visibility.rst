@@ -1,9 +1,9 @@
-.. _ln-set_collection_visibility:
-
 .. figure:: /images/logic_nodes/scene/collections/ln-set_collection_visibility.png
    :align: right
    :width: 215
    :alt: Set Collection Visibility Node
+
+.. _ln-set_collection_visibility:
 
 =========================
 Set Collection Visibility

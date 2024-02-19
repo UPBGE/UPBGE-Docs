@@ -1,9 +1,9 @@
-.. _ln-boolean:
-
 .. figure:: /images/logic_nodes/values/ln-boolean.png
    :align: right
    :width: 215
    :alt: Boolean Node
+
+.. _ln-boolean:
 
 ========================
 Boolean

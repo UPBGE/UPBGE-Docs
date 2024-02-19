@@ -17,21 +17,13 @@ inside the game engine. This part is divided into four submodules:
 Integrating Python in the Game Engine
 -------------------------------------
 
-In the game engine, the script interface is controller-centric by design. Therefore, you can consider
-the Python script simply as a more complex controller to replace the Expression or the Boolean controllers.
-In those cases, the script will be responsible for controlling how the sensors are related with the actuators
-of a given object. In fact, the sensors, actuators, and even the object where you are calling the script
-from are all attributes of the controller.
+In the game engine, the script interface is controller-centric by design. Therefore, you can consider the Python script simply as a more complex controller to replace the Expression or the Boolean controllers. In those cases, the script will be responsible for controlling how the sensors are related with the actuators of a given object. In fact, the sensors, actuators, and even the object where you are calling the script from are all attributes of the controller.
 
-As we mentioned earlier, with a Python script you can control external devices, control multiple objects at once,
-and much more. However, you will never be free from using a logic brick framework. And from the combination
-of logic bricks, individual sensors, global sensors, and actuators, the elegance of your system will arise.
+As we mentioned earlier, with a Python script you can control external devices, control multiple objects at once, and much more. However, you will never be free from using a logic brick framework. And from the combination of logic bricks, individual sensors, global sensors, and actuators, the elegance of your system will arise.
 
-In the first example, you will find a very simple case study of how to make your Python controller work.
-It will cover the basic behavior of receiving sensors' input in the script and triggering actuators from it.
+In the first example, you will find a very simple case study of how to make your Python controller work. It will cover the basic behavior of receiving sensors' input in the script and triggering actuators from it.
 
-Download the example :download:`003_template.zip </blends/Python_Scripting/003_template/003_template.zip>`, extract it
-and load the abracadabra.blend file.
+Download the example :download:`003_template.zip </blends/Python_Scripting/003_template/003_template.zip>`, extract it and load the abracadabra.blend file.
 
 .. figure:: /images/Python_Scripting/python-scripting-introduction-to-scripting-05.png
 
@@ -1029,9 +1021,12 @@ This is a list of all the joysticks your computer supports. That means the list 
       if joystick and joystick.connected:
          print(i, joystick.name, joystick.numAxis, joystick.activeButtons)
         
-For the complete list of all the parameters supported by the Joystick python object, visit the official API: _http://www.blender.org/documentation/blender_python_api_2_66_release/bge.types.SCA_JoystickSensor.html_
+         
+..
+   For the complete list of all the parameters supported by the Joystick python object, visit the official API: _http://www.blender.org/documentation/blender_python_api_2_66_release/bge.types.SCA_JoystickSensor.html_
 
-A sample file can be found on \Book\Chapter7\joystick.blend.
+..
+   A sample file can be found on \Book\Chapter7\joystick.blend.
 
 Others
 ******

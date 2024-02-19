@@ -1,9 +1,9 @@
-.. _ln-pulsify:
-
 .. figure:: /images/logic_nodes/time/ln-pulsify.png
    :align: right
    :width: 215
    :alt: Pulsify Node
+
+.. _ln-pulsify:
 
 ======================
 Pulsify

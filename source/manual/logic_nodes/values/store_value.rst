@@ -1,9 +1,9 @@
-.. _ln-store_value:
-
 .. figure:: /images/logic_nodes/values/ln-store_value.png
    :align: right
    :width: 215
    :alt: Store Value Node
+
+.. _ln-store_value:
 
 ========================
 Store Value

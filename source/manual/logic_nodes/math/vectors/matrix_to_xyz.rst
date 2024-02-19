@@ -1,9 +1,9 @@
-.. _ln-matrix_to_xyz:
-
 .. figure:: /images/logic_nodes/math/vectors/ln-matrix_to_xyz.png
    :align: right
    :width: 290
    :alt: Matrix To XYZ Node
+
+.. _ln-matrix_to_xyz:
 
 ======================
 Matrix To XYZ

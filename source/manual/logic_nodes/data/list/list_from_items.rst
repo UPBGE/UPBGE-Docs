@@ -1,9 +1,9 @@
-.. _ln-list_from_items:
-
 .. figure:: /images/logic_nodes/data/list/ln-list_from_items.png
    :align: right
    :width: 215
    :alt: List From Items Node
+
+.. _ln-list_from_items:
 
 =================
 List From Items

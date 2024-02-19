@@ -1,9 +1,9 @@
-.. _ln-collision:
-
 .. figure:: /images/logic_nodes/physics/ln-collision.png
    :align: right
    :width: 215
    :alt: Collision Node
+
+.. _ln-collision:
 
 ===============
 Collision

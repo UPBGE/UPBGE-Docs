@@ -1,9 +1,9 @@
-.. _ln-load_file_content:
-
 .. figure:: /images/logic_nodes/data/ln-load_file_content.png
    :align: right
    :width: 215
    :alt: Load File Content Node
+
+.. _ln-load_file_content:
 
 =================
 Load File Content

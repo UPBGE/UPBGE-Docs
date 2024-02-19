@@ -1,9 +1,9 @@
-.. _ln-mat-play_sequence:
-
 .. figure:: /images/logic_nodes/nodes/materials/ln-play_sequence.png
    :align: right
    :width: 215
    :alt: Play Sequence Node
+
+.. _ln-mat-play_sequence:
 
 ===============
 Play Sequence

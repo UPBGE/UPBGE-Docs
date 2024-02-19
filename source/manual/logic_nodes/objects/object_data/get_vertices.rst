@@ -1,9 +1,9 @@
-.. _ln-get_vertices:
-
 .. figure:: /images/logic_nodes/objects/object_data/ln_get_vertices.png
    :align: right
    :width: 215
    :alt: Get Vertices Node
+
+.. _ln-get_vertices:
 
 ======================
 Get Vertices

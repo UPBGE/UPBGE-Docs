@@ -1,9 +1,9 @@
-.. _ln-screen_to_world:
-
 .. figure:: /images/logic_nodes/scene/camera/ln-screen_to_world.png
    :align: right
    :width: 215
    :alt: Screen To World Node
+
+.. _ln-screen_to_world:
 
 =======================
 Screen To World

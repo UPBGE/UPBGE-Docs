@@ -1,9 +1,9 @@
-.. _ln-set_velocity:
-
 .. figure:: /images/logic_nodes/physics/character/ln-set_velocity.png
    :align: right
    :width: 215
    :alt: Set Velocity Node
+
+.. _ln-set_velocity:
 
 ====================
 Set Velocity

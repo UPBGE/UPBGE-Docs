@@ -1,13 +1,13 @@
-.. _ln-set_resolution:
-
 .. figure:: /images/logic_nodes/render/ln-set_resolution.png
    :align: right
    :width: 215
    :alt: Set Resolution Node
 
-==========
+.. _ln-set_resolution:
+
+===============
 Set Resolution
-==========
+===============
 
 Inputs
 ++++++

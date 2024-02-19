@@ -1,9 +1,9 @@
-.. _ln-animation_status:
-
 .. figure:: /images/logic_nodes/animation/ln-animation_status.png
    :align: right
    :width: 215
    :alt: Animation Status Node
+
+.. _ln-animation_status:
 
 ======================
 Animation Status

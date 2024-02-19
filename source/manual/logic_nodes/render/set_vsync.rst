@@ -1,9 +1,9 @@
-.. _ln-set_vsync:
-
 .. figure:: /images/logic_nodes/render/ln-set_vsync.png
    :align: right
    :width: 215
    :alt: Set VSync Node
+
+.. _ln-set_vsync:
 
 ==========
 Set VSync

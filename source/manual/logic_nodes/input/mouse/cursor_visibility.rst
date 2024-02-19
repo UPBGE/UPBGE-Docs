@@ -1,9 +1,9 @@
-.. _ln-cursor_visibility:
-
 .. figure:: /images/logic_nodes/input/mouse/ln-cursor_visibility.png
    :align: right
    :width: 215
    :alt: Cursor Visibility Node
+
+.. _ln-cursor_visibility:
 
 =================
 Cursor Visibility

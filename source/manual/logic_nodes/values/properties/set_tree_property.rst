@@ -1,9 +1,9 @@
-.. _ln-set_tree_property:
-
 .. figure:: /images/logic_nodes/values/properties/ln-set_tree_property.png
    :align: right
    :width: 215
    :alt: Set Tree Property Node
+
+.. _ln-set_tree_property:
 
 ========================
 Set Tree Property

@@ -1,9 +1,9 @@
-.. _ln-geo-get_socket_value:
-
 .. figure:: /images/logic_nodes/nodes/geometry/ln-get_socket_value.png
    :align: right
    :width: 215
    :alt: Get Socket Value Node
+
+.. _ln-geo-get_socket_value:
 
 ================
 Get Socket Value

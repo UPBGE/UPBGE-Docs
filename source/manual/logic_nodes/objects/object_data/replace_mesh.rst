@@ -1,9 +1,9 @@
-.. _ln-replace_mesh:
-
 .. figure:: /images/logic_nodes/objects/object_data/ln-replace_mesh.png
    :align: right
    :width: 215
    :alt: Replace Mesh Node
+
+.. _ln-replace_mesh:
 
 ======================
 Replace Mesh

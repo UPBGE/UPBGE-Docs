@@ -1,13 +1,13 @@
-.. _ln-set_light_shadow:
-
 .. figure:: /images/logic_nodes/lights/ln-set_light_shadow.png
    :align: right
    :width: 215
    :alt: Set Light Shadow Node
 
-===============
+.. _ln-set_light_shadow:
+
+=================
 Set Light Shadow
-===============
+=================
 
 Inputs
 ++++++

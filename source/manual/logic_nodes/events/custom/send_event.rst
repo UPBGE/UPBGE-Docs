@@ -1,9 +1,9 @@
-.. _ln-send_event:
-
 .. figure:: /images/logic_nodes/events/ln-send_event.png
    :align: right
    :width: 215
    :alt: Send Event Node
+
+.. _ln-send_event:
 
 ===============
 Send Event

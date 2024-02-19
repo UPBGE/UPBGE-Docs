@@ -1,9 +1,9 @@
-.. _ln-start_sound:
-
 .. figure:: /images/logic_nodes/sound/ln-start_sound.png
    :align: right
    :width: 265
    :alt: Start Sound Node
+
+.. _ln-start_sound:
 
 ======================
 Start Sound

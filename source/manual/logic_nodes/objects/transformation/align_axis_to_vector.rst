@@ -1,9 +1,9 @@
-.. _ln-align_axis_to_vector:
-
 .. figure:: /images/logic_nodes/objects/transformation/ln-align_axis_to_vector.png
    :align: right
    :width: 215
    :alt: Align Axis to Vector Node
+
+.. _ln-align_axis_to_vector:
 
 ====================
 Align Axis to Vector

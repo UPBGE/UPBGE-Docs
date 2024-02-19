@@ -1,9 +1,9 @@
-.. _ln-set-ssr:
-
 .. figure:: /images/logic_nodes/render/eevee/ln-set_ssr.png
    :align: right
    :width: 215
    :alt: Set SSR Node
+
+.. _ln-set_ssr:
 
 =======================
 Set SSR

@@ -1,9 +1,9 @@
-.. _ln-save_variable:
-
 .. figure:: /images/logic_nodes/data/variables/ln-save_variable.png
    :align: right
    :width: 215
    :alt: Save Variable Node
+
+.. _ln-save_variable:
 
 =================
 Save Variable

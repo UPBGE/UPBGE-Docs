@@ -1,9 +1,9 @@
-.. _ln-get_local_position:
-
-.. figure:: /images/logic_nodes/objects/get_attribute/ln-get_local_position.png
+.. figure:: /images/logic_nodes/objects/get_attribute/ln-local_position.png
    :align: right
    :width: 215
    :alt: Get Local Position Node
+
+.. _ln-get_local_position:
 
 =============================
 Get Local Position
@@ -12,21 +12,17 @@ Get Local Position
 Parameters
 ++++++++++
 
-prop
-   value
+Get Attribute
+   Local Position todo
 
 Inputs
 ++++++
 
-prop
-   value
+Object
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Local Position
+   todo

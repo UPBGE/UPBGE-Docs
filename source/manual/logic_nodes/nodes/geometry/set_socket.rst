@@ -1,9 +1,9 @@
-.. _ln-geo-set_socket:
-
 .. figure:: /images/logic_nodes/nodes/geometry/ln-set_socket.png
    :align: right
    :width: 215
    :alt: Set Socket Node
+
+.. _ln-geo-set_socket:
 
 ================
 Set Socket

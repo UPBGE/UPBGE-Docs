@@ -1,9 +1,9 @@
-.. _ln-set_world_linear_velocity:
-
-.. figure:: /images/logic_nodes/objects/set_attribute/ln-set_world_linear_velocity.png
+.. figure:: /images/logic_nodes/objects/set_attribute/ln-world_linear_velocity.png
    :align: right
    :width: 215
    :alt: Set World Linear Velocity Node
+
+.. _ln-set_world_linear_velocity:
 
 =============================
 Set World Linear Velocity
@@ -12,21 +12,26 @@ Set World Linear Velocity
 Parameters
 ++++++++++
 
-prop
-   value
+Set Attribute
+   World Linear Velocity todo
 
 Inputs
 ++++++
 
-prop
-   value
+Condition
+   Condition to be fulfilled for node to activate.
+
+XYZ
+   todo
+
+Object
+   todo
+
+Value
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Done
+   *True* if node performed successfully, else *False*.

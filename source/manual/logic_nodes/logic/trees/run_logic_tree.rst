@@ -1,9 +1,9 @@
-.. _ln-run_logic_tree:
-
 .. figure:: /images/logic_nodes/logic/trees/ln-run_logic_tree.png
    :align: right
    :width: 215
    :alt: Run Logic Tree Node
+
+.. _ln-run_logic_tree:
 
 ======================
 Run Logic Tree

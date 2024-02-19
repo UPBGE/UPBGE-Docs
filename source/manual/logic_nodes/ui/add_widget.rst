@@ -1,9 +1,9 @@
-.. _ln-add_widget:
-
 .. figure:: /images/logic_nodes/ui/ln-add_widget.png
    :align: right
    :width: 215
    :alt: Add Widget Node
+
+.. _ln-add_widget:
 
 ==========
 Add Widget

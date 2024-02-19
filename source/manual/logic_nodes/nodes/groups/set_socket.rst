@@ -1,9 +1,9 @@
-.. _ln-gro-set_socket:
-
 .. figure:: /images/logic_nodes/nodes/groups/ln-set_socket.png
    :align: right
    :width: 215
    :alt: Set Socket Node
+
+.. _ln-gro-set_socket:
 
 ================
 Set Socket

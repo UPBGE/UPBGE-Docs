@@ -1,9 +1,9 @@
-.. _ln-load_variable_dict:
-
 .. figure:: /images/logic_nodes/data/variables/ln-load_variable_dict.png
    :align: right
    :width: 215
    :alt: Load Variable Dict Node
+
+.. _ln-load_variable_dict:
 
 ==================
 Load Variable Dict

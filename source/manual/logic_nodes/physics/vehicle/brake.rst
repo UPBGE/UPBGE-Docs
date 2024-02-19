@@ -1,9 +1,9 @@
-.. _ln-brake:
-
 .. figure:: /images/logic_nodes/physics/vehicle/ln-brake.png
    :align: right
    :width: 215
    :alt: Brake Node
+
+.. _ln-brake:
 
 ====================
 Brake

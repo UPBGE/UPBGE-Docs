@@ -1,9 +1,9 @@
-.. _ln-resume_sound:
-
 .. figure:: /images/logic_nodes/sound/ln-resume_sound.png
    :align: right
    :width: 215
    :alt: Resume Sound Node
+
+.. _ln-resume_sound:
 
 ======================
 Resume Sound

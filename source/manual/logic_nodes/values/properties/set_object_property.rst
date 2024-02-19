@@ -1,9 +1,9 @@
-.. _ln-set_object_property:
-
 .. figure:: /images/logic_nodes/values/properties/ln-set_object_property.png
    :align: right
    :width: 215
    :alt: Set Object Property Node
+
+.. _ln-set_object_property:
 
 ========================
 Set Object Property

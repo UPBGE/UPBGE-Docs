@@ -1,9 +1,9 @@
-.. _ln-move_to:
-
 .. figure:: /images/logic_nodes/objects/transformation/ln-move_to.png
    :align: right
    :width: 215
    :alt: Move To Node
+
+.. _ln-move_to:
 
 ==============
 Move To

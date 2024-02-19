@@ -1,9 +1,9 @@
-.. _ln-apply_torque:
-
 .. figure:: /images/logic_nodes/objects/transformation/ln-apply_torque.png
    :align: right
    :width: 215
    :alt: Apply Torque Node
+
+.. _ln-apply_torque:
 
 ==============
 Apply Torque

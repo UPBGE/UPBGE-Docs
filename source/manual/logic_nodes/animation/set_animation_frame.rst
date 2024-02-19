@@ -1,9 +1,9 @@
-.. _ln-set_animation_frame:
-
 .. figure:: /images/logic_nodes/animation/ln-set_animation_frame.png
    :align: right
    :width: 215
    :alt: Set Animation Frame Node
+
+.. _ln-set_animation_frame:
 
 ======================
 Set Animation Frame

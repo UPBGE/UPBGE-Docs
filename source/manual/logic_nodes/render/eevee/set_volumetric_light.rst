@@ -1,9 +1,9 @@
-.. _ln-set-volumetric-light:
-
 .. figure:: /images/logic_nodes/render/eevee/ln-set_volumetric_light.png
    :align: right
    :width: 215
    :alt: Set Volumetric Light Node
+
+.. _ln-set_volumetric_light:
 
 =======================
 Set Volumetric Light

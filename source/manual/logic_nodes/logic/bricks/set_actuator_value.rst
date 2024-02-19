@@ -1,9 +1,9 @@
-.. _ln-set_actuator_value:
-
 .. figure:: /images/logic_nodes/logic/bricks/ln-set_actuator_value.png
    :align: right
    :width: 215
    :alt: Set Actuator Value Node
+
+.. _ln-set_actuator_value:
 
 ======================
 Set Actuator Value

@@ -1,9 +1,9 @@
-.. _ln-map_range:
-
 .. figure:: /images/logic_nodes/math/ln-map_range.png
    :align: right
    :width: 215
    :alt: Map Range Node
+
+.. _ln-map_range:
 
 ======================
 Map Range

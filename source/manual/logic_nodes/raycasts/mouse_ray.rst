@@ -1,9 +1,9 @@
-.. _ln-mouse_ray:
-
 .. figure:: /images/logic_nodes/raycasts/ln-mouse_ray.png
    :align: right
    :width: 215
    :alt: Mouse Ray Node
+
+.. _ln-mouse_ray:
 
 ===============
 Mouse Ray

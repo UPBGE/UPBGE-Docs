@@ -1,9 +1,9 @@
-.. _ln-set_dictionary_key:
-
 .. figure:: /images/logic_nodes/data/dict/ln-set_dictionary_key.png
    :align: right
    :width: 215
    :alt: Set Dictionary Key Node
+
+.. _ln-set_dictionary_key:
 
 =====================
 Set Dictionary Key

@@ -1,9 +1,9 @@
-.. _ln-set_color:
-
-.. figure:: /images/logic_nodes/objects/set_attribute/ln-set_color.png
+.. figure:: /images/logic_nodes/objects/set_attribute/ln-color.png
    :align: right
    :width: 215
    :alt: Set Color Node
+
+.. _ln-set_color:
 
 =============================
 Set Color
@@ -12,21 +12,26 @@ Set Color
 Parameters
 ++++++++++
 
-prop
-   value
+Set Attribute
+   Color todo
 
 Inputs
 ++++++
 
-prop
-   value
+Condition
+   Condition to be fulfilled for node to activate.
+
+XYZ
+   todo
+
+Object
+   todo
+
+Color
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Done
+   *True* if node performed successfully, else *False*.

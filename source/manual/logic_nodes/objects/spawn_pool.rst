@@ -1,9 +1,9 @@
-.. _ln-spawn_pool:
-
 .. figure:: /images/logic_nodes/objects/ln-spawn_pool.png
    :align: right
    :width: 215
    :alt: Spawn Pool Node
+
+.. _ln-spawn_pool:
 
 ======================
 Spawn Pool

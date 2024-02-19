@@ -1,9 +1,9 @@
-.. _ln-draw:
-
 .. figure:: /images/logic_nodes/utility/ln-draw.png
    :align: right
    :width: 215
    :alt: Draw Node
+
+.. _ln-draw:
 
 =============================
 Draw

@@ -1,9 +1,9 @@
-.. _ln-combine_xyz:
-
 .. figure:: /images/logic_nodes/values/vector/ln-combine_xyz.png
    :align: right
    :width: 215
    :alt: Combine XYZ Node
+
+.. _ln-combine_xyz:
 
 ========================
 Combine XYZ

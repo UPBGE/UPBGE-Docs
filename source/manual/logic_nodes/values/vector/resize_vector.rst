@@ -1,9 +1,9 @@
-.. _ln-resize_vector:
-
 .. figure:: /images/logic_nodes/values/vector/ln-resize_vector.png
    :align: right
    :width: 215
    :alt: Resize Vector Node
+
+.. _ln-resize_vector:
 
 ========================
 Resize Vector

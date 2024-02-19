@@ -1,9 +1,9 @@
-.. _ln-steer:
-
 .. figure:: /images/logic_nodes/physics/vehicle/ln-steer.png
    :align: right
    :width: 215
    :alt: Steer Node
+
+.. _ln-steer:
 
 =====================
 Steer

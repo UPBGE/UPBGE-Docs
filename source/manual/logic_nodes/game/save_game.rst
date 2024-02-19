@@ -1,9 +1,9 @@
-.. _ln-save_game:
-
 .. figure:: /images/logic_nodes/game/ln-save_game.png
    :align: right
    :width: 215
    :alt: Save Game Node
+
+.. _ln-save_game:
 
 ==========
 Save Game

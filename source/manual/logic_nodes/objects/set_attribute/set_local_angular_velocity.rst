@@ -1,9 +1,9 @@
-.. _ln-set_local_angular_velocity:
-
-.. figure:: /images/logic_nodes/objects/get_attribute/ln-set_local_angular_velocity.png
+.. figure:: /images/logic_nodes/objects/set_attribute/ln-local_angular_velocity.png
    :align: right
    :width: 215
    :alt: Set Local Angular Velocity Node
+
+.. _ln-set_local_angular_velocity:
 
 =============================
 Set Local Angular Velocity
@@ -12,21 +12,26 @@ Set Local Angular Velocity
 Parameters
 ++++++++++
 
-prop
-   value
+Set Attribute
+   Local Angular Velocity todo
 
 Inputs
 ++++++
 
-prop
-   value
+Condition
+   Condition to be fulfilled for node to activate.
+
+XYZ
+   todo
+
+Object
+   todo
+
+Value
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Done
+   *True* if node performed successfully, else *False*.

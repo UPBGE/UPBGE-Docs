@@ -1,9 +1,9 @@
-.. _ln-controller_status:
-
 .. figure:: /images/logic_nodes/logic/bricks/ln-controller_status.png
    :align: right
    :width: 215
    :alt: Controller Status Node
+
+.. _ln-controller_status:
 
 ======================
 Controller Status

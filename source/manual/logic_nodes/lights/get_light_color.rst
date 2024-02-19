@@ -1,9 +1,9 @@
-.. _ln-get_light_color:
-
 .. figure:: /images/logic_nodes/lights/ln-get_light_color.png
    :align: right
    :width: 215
    :alt: Get Light Color Node
+
+.. _ln-get_light_color:
 
 ===============
 Get Light Color

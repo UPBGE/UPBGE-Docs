@@ -1,4 +1,9 @@
 build
+/exts/__pycache__
+/resources/templates
+/resources/theme/layout.html
+.nvimrc
+/drafts/images
 
 # QTCreator
 *.config
@@ -8,6 +13,3 @@ build
 *.user
 *.cflags
 *.cxxflags
-/source/__pycache__
-/ext/__pycache__
-TODO.md

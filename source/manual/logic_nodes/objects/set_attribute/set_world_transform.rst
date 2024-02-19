@@ -1,9 +1,9 @@
-.. _ln-set_world_transform:
-
-.. figure:: /images/logic_nodes/objects/set_attribute/ln-set_world_transform.png
+.. figure:: /images/logic_nodes/objects/set_attribute/ln-world_transform.png
    :align: right
    :width: 215
    :alt: Set World Transform Node
+
+.. _ln-set_world_transform:
 
 =============================
 Set World Transform
@@ -12,21 +12,26 @@ Set World Transform
 Parameters
 ++++++++++
 
-prop
-   value
+Set Attribute
+   World Transform todo
 
 Inputs
 ++++++
 
-prop
-   value
+Condition
+   Condition to be fulfilled for node to activate.
+
+XYZ
+   todo
+
+Object
+   todo
+
+Value
+   todo
 
 Outputs
 +++++++
 
-prop
-   value
-
-Example
-+++++++
-
+Done
+   *True* if node performed successfully, else *False*.

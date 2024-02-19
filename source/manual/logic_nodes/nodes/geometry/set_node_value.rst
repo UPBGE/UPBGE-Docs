@@ -1,9 +1,9 @@
-.. _ln-geo-set_node_value:
-
 .. figure:: /images/logic_nodes/nodes/geometry/ln-set_node_value.png
    :align: right
    :width: 215
    :alt: Set Node Value Node
+
+.. _ln-geo-set_node_value:
 
 ================
 Set Node Value
