@@ -1,8 +1,8 @@
 .. _introducing_logic_bricks-index:
 
-++++++++++++++++++++++++
+==============================
 Introducing Logic Bricks
-++++++++++++++++++++++++
+==============================
 
 .. toctree::
    :maxdepth: 2

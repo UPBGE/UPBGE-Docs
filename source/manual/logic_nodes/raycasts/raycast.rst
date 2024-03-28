@@ -5,15 +5,18 @@
 
 .. _ln-raycast:
 
-===============
+==============================
 Raycast
-===============
+==============================
 
-Inputs
-++++++
+Parameters
+++++++++++++++++++++++++++++++
 
 Face Data
    todo
+
+Inputs
+++++++++++++++++++++++++++++++
 
 Condition
    Which condition will be used for node to activate.
@@ -52,7 +55,7 @@ Visualize
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Has Result
    todo

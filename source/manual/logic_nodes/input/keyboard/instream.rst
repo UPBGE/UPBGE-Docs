@@ -5,20 +5,20 @@
 
 .. _ln-instream:
 
-==========
+==============================
 Key Logger
-==========
+==============================
 
 Records keyboard activity.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Only Characters
    Boolean value for condition. todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Pressed
    *True* if the node performed successfully, else *False*.

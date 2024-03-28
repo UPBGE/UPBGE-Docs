@@ -5,21 +5,23 @@
 
 .. _ln-formula:
 
-======================
+==============================
 Formula
-======================
+==============================
+
+Will perform mathemathical calculations, according to *Formula* input. There are numerous predefined mathemathical formulas to choose from dropdown menu. Enjoy. :)
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Predef.
-   Pre-defined mathematical formulas for calculations.
+   Predefined mathematical formulas for calculations. Includes *User Defined* option.
 
 Formula
-   String representation of math formula for calculation.
+   String representation of mathematical formula for calculation.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 a
    First operator value.
@@ -28,7 +30,7 @@ b
    Second operator value.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Result
    Resulting value of math operation.

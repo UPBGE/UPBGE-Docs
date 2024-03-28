@@ -5,12 +5,12 @@
 
 .. _ln-gro-get_node_value:
 
-================
+==============================
 Get Node Value
-================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Node Tree
    Group node to use.
@@ -19,7 +19,7 @@ Node Name
    Name of the node.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting node value.

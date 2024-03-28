@@ -9,7 +9,7 @@ Use Cases
 
 UPBGE allows you to create real-time interactive 3D applications or simulations. This allows you to create almost any type of interactive project, like architectural presentations, virtual prototypes for robotic projects, physics simulation projects, simple and complex games, and much more.
 
-Much can be achieved through UPBGE by default, as it provides a blank canvas full of features to be used, and even more can be acomplished by extending these features according to your needs. For example, if you're working with robotics and needs to send or receive commands through a USB port, you can install the `PySerial <https://pypi.org/project/pyserial/>`__ Python module for use with UPBGE. Or if you need a graphical feature that can't be acomplished through the default UPBGE's capabilities, you can write your own OpenGL shaders. The list goes on, and there's a big chance that the project you aim to can be brought to life with UPBGE, using its features and abilities to be extended.
+Much can be achieved through UPBGE by default, as it provides a blank canvas full of features to be used, and even more can be accomplished by extending these features according to your needs. For example, if you're working with robotics and needs to send or receive commands through a USB port, you can install the `PySerial <https://pypi.org/project/pyserial/>`__ Python module for use with UPBGE. Or if you need a graphical feature that can't be accomplished through the default UPBGE's capabilities, you can write your own OpenGL shaders. The list goes on, and there's a big chance that the project you aim to can be brought to life with UPBGE, using its features and abilities to be extended.
 
 Sample Games
 ++++++++++++++++++++++++++++++
@@ -35,7 +35,7 @@ Here are some examples of games made with BGE/UPBGE:
 ``Game Name / Creator Name:`` The Future's End by Mark Telles produced with UPBGE 0.2.5.
 
 ..
-   .. youtube:: 3krdf9xRgw4
+    .. youtube:: 3krdf9xRgw4
 ..
   ``Game Name / Creator Name:`` Spaceship Test by Atomic Skill produced with UPBGE 0.3.
 

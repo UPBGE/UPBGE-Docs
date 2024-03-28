@@ -5,12 +5,12 @@
 
 .. _ln-mat-get_node:
 
-===============
+==============================
 Get Node
-===============
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Material
    Which material to inspect.
@@ -19,7 +19,7 @@ Node Name
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Node
    Resulting node.

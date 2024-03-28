@@ -5,12 +5,12 @@
 
 .. _ln-get_timescale:
 
-=============
+==============================
 Get Timescale
-=============
+==============================
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Timescale
    Current timescale of the scene.

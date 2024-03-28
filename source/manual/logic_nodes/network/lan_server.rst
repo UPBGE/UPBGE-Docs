@@ -5,15 +5,18 @@
 
 .. _ln-lan_server:
 
-=================
+==============================
 LAN Server
-=================
+==============================
 
-Inputs
-+++++++
+Parameters
+++++++++++++++++++++++++++++++
 
 On Startup
    Connect to specified web address at game start.
+
+Inputs
+++++++++++++++++++++++++++++++
 
 Start
    Condition to be fulfilled for node to activate.
@@ -28,7 +31,7 @@ Stop
    If *Stop* condition is received, connection is cut.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 On Start
    Connection established signal is emitted. todo

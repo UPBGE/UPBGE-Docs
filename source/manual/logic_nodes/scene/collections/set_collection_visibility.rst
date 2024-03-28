@@ -5,12 +5,12 @@
 
 .. _ln-set_collection_visibility:
 
-=========================
+==============================
 Set Collection Visibility
-=========================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    The condition for this node to start.
@@ -25,7 +25,7 @@ Include Children
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done 
    *True* if the node performed successfully, else *False*.

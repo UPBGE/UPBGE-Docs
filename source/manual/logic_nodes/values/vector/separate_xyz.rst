@@ -5,24 +5,26 @@
 
 .. _ln-separate_xyz:
 
-========================
+==============================
 Separate XYZ
-========================
+==============================
+
+Accepts Vector3 input, separates it into X, Y and Z float values.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Vector
    Either fixed input values, or a result from connected node.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 X
-   Resulting X value.
+   Resulting X float value.
 
 Y
-   Resulting Y value.
+   Resulting Y float value.
 
 Z
-   Resulting Z value.
+   Resulting Z float value.

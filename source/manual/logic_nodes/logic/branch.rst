@@ -5,18 +5,18 @@
 
 .. _ln-branch:
 
-======================
+==============================
 Branch
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 True
    True output.

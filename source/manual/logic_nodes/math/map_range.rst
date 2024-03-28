@@ -5,21 +5,21 @@
 
 .. _ln-map_range:
 
-======================
+==============================
 Map Range
-======================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Mode
    Selected mode of operation.
 
-Inputs
-++++++
-
 Clamp
    Clamp values between 0 and 1. todo
+
+Inputs
+++++++++++++++++++++++++++++++
 
 Value
    *Map Range* value.
@@ -37,7 +37,7 @@ To Max
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Result
    Resulting value from ranging operation.

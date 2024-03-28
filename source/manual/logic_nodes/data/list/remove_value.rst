@@ -5,12 +5,12 @@
 
 .. _ln-remove_value:
 
-=================
+==============================
 Remove Value
-=================
+==============================
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Condition to be fulfilled for node to activate.
@@ -22,7 +22,7 @@ Type
    Which type and value to remove from list.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if value is removed, else *False*.

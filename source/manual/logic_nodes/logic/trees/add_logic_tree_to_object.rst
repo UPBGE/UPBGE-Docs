@@ -5,12 +5,12 @@
 
 .. _ln-add_logic_tree_to_object:
 
-=========================
+==============================
 Add Logic Tree To Object
-=========================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition from attached node must be fulfilled for node to activate.
@@ -25,7 +25,7 @@ Initialize
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

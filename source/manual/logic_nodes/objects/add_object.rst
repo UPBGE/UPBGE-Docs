@@ -5,12 +5,12 @@
 
 .. _ln-add_object:
 
-======================
+==============================
 Add Object
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Which condition will be used for node to activate.
@@ -28,7 +28,7 @@ Full Copy
    todo
    
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done 
     *True* if the node performed successfully, else *False*.

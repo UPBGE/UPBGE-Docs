@@ -5,12 +5,12 @@
 
 .. _ln-get_fullscreen:
 
-===============
+==============================
 Get Fullscreen
-===============
+==============================
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Fullscreen
    *True* if Fullscreen is enabled, else *False*. todo

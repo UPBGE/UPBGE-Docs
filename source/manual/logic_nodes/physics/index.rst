@@ -1,8 +1,8 @@
 .. _ln-physics-index:
 
-========
+==============================
 Physics
-========
+==============================
   
 .. toctree::
    :maxdepth: 1
@@ -15,6 +15,6 @@ Physics
    add_constraint
    remove_constraint
    set_physics
-   set_gravity
+   set_character_gravity
    set_dynamics
    set_rigid_body

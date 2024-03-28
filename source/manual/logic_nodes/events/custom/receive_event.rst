@@ -5,20 +5,20 @@
 
 .. _ln-receive_event:
 
-=============================
+==============================
 Receive Event
-=============================
+==============================
 
 Reacts to events sent via the :doc:`./send_event` node or the *Uplogic* module. An event can store some data, which can be extracted using this node.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Subject
    The ID of the event.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Received
    *True* if an event has been found, else *False*.
@@ -30,5 +30,4 @@ Messenger
    Messenger of this event, expected to be a ``KX_GameObject``.
 
 .. important::
-
    If multiple events have the same ID (subject), older events are overwritten.

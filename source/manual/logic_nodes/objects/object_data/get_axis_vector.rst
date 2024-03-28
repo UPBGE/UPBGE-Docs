@@ -5,24 +5,24 @@
 
 .. _ln-get_axis_vector:
 
-======================
+==============================
 Get Axis Vector
-======================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Axis
    Selected axis to get.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Object
    Which object to inspect for axis vector.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Vector
    Resulting vector.

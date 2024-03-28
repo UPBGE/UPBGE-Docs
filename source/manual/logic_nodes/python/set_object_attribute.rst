@@ -5,12 +5,12 @@
 
 .. _ln-set_object_attribute:
 
-=======================
+==============================
 Set Object Attribute
-=======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Which condition will be used for node to activate.
@@ -25,7 +25,7 @@ Type
    Type and value to set.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

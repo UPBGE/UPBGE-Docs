@@ -5,18 +5,18 @@
 
 .. _ln-limit_range:
 
-======================
+==============================
 Limit Range
-======================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Operator
    Selected operator for range limit.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Value
    A value to compare.
@@ -28,7 +28,7 @@ Max
    Maximum value to compare against.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting value within limited range.

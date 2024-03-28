@@ -5,18 +5,18 @@
 
 .. _ln-get_collection:
 
-=======================
+==============================
 Get Collection
-=======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Collection
    Collection to get.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Collection
    Resulting collection data.

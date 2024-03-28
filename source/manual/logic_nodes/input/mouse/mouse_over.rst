@@ -5,20 +5,20 @@
 
 .. _ln-mouse_over:
 
-===========
+==============================
 Mouse Over
-===========
+==============================
 
 Matches the mouse position to an object on screen.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Object
    Which object to monitor, if mouse cursor is over.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 On Enter
    *True* on the first frame the mouse position matches the object bounds, else *False*.
@@ -36,16 +36,18 @@ Normal
    Face normal of the targeted mesh face (Vector3).
 
 Example
-+++++++
+++++++++++++++++++++++++++++++
 
 .. figure:: /images/logic_nodes/input/mouse/ln-mouse_over-example_apply.png
    :align: center
    :width: 500
    :alt: Mouse Over Node Apply
 
-With Cube object selected, apply the Logic Tree (click :menuselection:`Apply To Selected` button).
+   Apply To Selected
 
-Run the UPBGE from terminal (Linux & mac), or open the console (Windows). See :doc:`System Console </manual/tutorials/introducing_logic_nodes/a_first_example>` if needed.
+With Cube object selected, apply the logic tree (click :menuselection:`Apply To Selected` button).
+
+Run the UPBGE from terminal (Linux & mac), or open the console (Windows). See :ref:`lne-system_console` if needed.
 
 Make sure that in :menuselection:`Render > Game Debug > Mouse Cursor` is selected.
 
@@ -54,11 +56,15 @@ Make sure that in :menuselection:`Render > Game Debug > Mouse Cursor` is selecte
    :width: 90%
    :alt: Mouse Over Node Terminal
 
-Run the example, and move mouse cursor over the Cube which has *Logic Tree* applied to it. In system terminal/console, see printed results.
+   Terminal output
+
+Run the example, and move mouse cursor over the Cube which has *logic tree* applied to it. In system terminal/console, see printed results.
 
 .. figure:: /images/logic_nodes/input/mouse/ln-mouse_over-example_once.png
    :align: center
    :width: 500
-   :alt: Mouse Over Node Terminal
+   :alt: Mouse Over Node Terminal Once
 
-Add `Once` node, run and observe different terminal output. Only once per *Mouse Over* is now system message printed. Uncheck ``Repeat`` and exactly once is message printed - on first *Mouse Over* event only.
+   Added Once node
+
+Add :ln:`Once` node, run and observe different terminal output. Only once per *Mouse Over* is now system message printed. Uncheck ``Repeat`` and exactly once is message printed - on first *Mouse Over* event only.

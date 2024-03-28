@@ -14,6 +14,8 @@ Conventions
 
 .. note:: These conventions are for people reading the manual. We have a more detailed list of conventions for authors under the :doc:`Writing Style </manual/contribute/writing_style>` section.
 
+.. _about-keyboard:
+
 Keyboard
 --------
 
@@ -29,6 +31,8 @@ Hotkey letters are shown in this manual like they appear on a keyboard; for exam
 
 Other keys are referred to by their names, such as :kbd:`Esc`, :kbd:`Tab`, :kbd:`F1` to 
 :kbd:`F12`. Of special note are the arrow keys, :kbd:`Left`, :kbd:`Right` and so on.
+
+.. _about-mouse:
 
 Mouse
 -----

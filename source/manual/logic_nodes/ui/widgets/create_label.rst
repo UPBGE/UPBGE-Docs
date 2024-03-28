@@ -5,12 +5,12 @@
 
 .. _ln-create_label:
 
-========================
+==============================
 Create Label
-========================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 X:
    Origin/start horizontal position.
@@ -19,7 +19,7 @@ Y:
    Origin/start vertical position.
    
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -55,7 +55,7 @@ Use Shadow
    If checked, text will drop a shadow on background.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

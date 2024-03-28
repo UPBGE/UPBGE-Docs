@@ -5,12 +5,12 @@
 
 .. _ln-run_logic_tree:
 
-======================
+==============================
 Run Logic Tree
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition from attached node must be fulfilled for node to activate. If checked, always *True*, else *False*.
@@ -22,7 +22,7 @@ Node Tree
    Which *Node Tree* to run.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

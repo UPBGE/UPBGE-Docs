@@ -5,18 +5,18 @@
 
 .. _ln-create_canvas:
 
-========================
+==============================
 Create Canvas
-========================
+==============================
 
-Inputs
-++++++
+Parameters
+++++++++++++++++++++++++++++++
 
 On Init
    If checked, canvas will be created on game initialization.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

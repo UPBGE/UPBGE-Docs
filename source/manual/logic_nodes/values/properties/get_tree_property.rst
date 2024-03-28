@@ -5,18 +5,18 @@
 
 .. _ln-get_tree_property:
 
-========================
+==============================
 Get Tree Property
-========================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Tree Name
    Name of the tree to use.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Property
    Resulting property.

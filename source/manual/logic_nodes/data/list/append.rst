@@ -5,12 +5,12 @@
 
 .. _ln-append:
 
-=================
+==============================
 Append
-=================
+==============================
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Condition to be fulfilled for node to activate.
@@ -22,7 +22,7 @@ Type
    Type and the value to append.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performs successfully, else *False*.

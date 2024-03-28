@@ -5,14 +5,14 @@
 
 .. _ln-keyboard_active:
 
-===============
+==============================
 Keyboard Active
-===============
+==============================
 
 Detects any activity on the keyboard.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Active
    *True* if keyboard state changed, else *False*.

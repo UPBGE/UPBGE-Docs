@@ -5,12 +5,12 @@
 
 .. _ln-set_exposure:
 
-=======================
+==============================
 Set Exposure
-=======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -19,7 +19,7 @@ Exposure
    Value of the Exposure to set.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

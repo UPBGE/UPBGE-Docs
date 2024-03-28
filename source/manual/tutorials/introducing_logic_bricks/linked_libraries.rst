@@ -19,7 +19,7 @@ lib_scenery.blend
 
 Both files should be set up somewhat like this:
 
-.. figure:: /images/Tutorials/introducing_logic_bricks/08-linked_libraries.png
+.. figure:: /images/tutorials/introducing_logic_bricks/08-linked_libraries.png
    :figwidth: 60%
    
    Split view of the two files
@@ -35,14 +35,14 @@ Now, we'll create a blend file named *game.blend* on the same directory as our p
 - Select corresponding collection and double click it/click :menuselection:`Link`.
 - Repeat linking the other collection.
 
-.. figure:: /images/Tutorials/introducing_logic_bricks/09-linked_libraries-linking.png
+.. figure:: /images/tutorials/introducing_logic_bricks/09-linked_libraries-linking.png
    :figwidth: 60%
    
    Linking procedure
    
-If everything went right, you should see in the *3D Viewport* the collection instances added. They are not editable as they are only :ref:`datablock-empty` objects referencing collections from the original files. The Outliner shows chain icons, signifying those collections are linked.
+If everything went right, you should see in the *3D Viewport* the collection instances added. They are not editable as they are only *Empty* objects referencing collections from the original files. The Outliner shows chain icons, signifying those collections are linked.
 
-.. figure:: /images/Tutorials/introducing_logic_bricks/10-linked_libraries-linked.png
+.. figure:: /images/tutorials/introducing_logic_bricks/10-linked_libraries-linked.png
    :figwidth: 80%
    
    Collections instanced in game.blend scene
@@ -52,18 +52,18 @@ With the instances added, all you have to do is place them with the desired tran
 Managing the Links
 ++++++++++++++++++++++++++++++
 
-If you rename or move any of your libraries to another folder, you will face a common problem: broken links. There are several ways to deal with this problem, and this section will present you the use of the *Outliner* to manage links (and :ref:`datablock-index`).
+If you rename or move any of your libraries to another folder, you will face a common problem: broken links. There are several ways to deal with this problem, and this section will present you the use of the *Outliner* to manage links.
 
-I have renamed the library files to `LibCharacter` and `LibScenery`, which are different names from the previous ones (with underlines and only lower case characters). When opening `game.blend`, the editor will complain about the non-existing libraries, and our instances will be shown only as :ref:`datablock-empty` objects.
+I have renamed the library files to `LibCharacter` and `LibScenery`, which are different names from the previous ones (with underlines and only lower case characters). When opening `game.blend`, the editor will complain about the non-existing libraries, and our instances will be shown only as *Empty* objects.
 
-.. figure:: /images/Tutorials/introducing_logic_bricks/11-linked_libraries-broken_links.png
+.. figure:: /images/tutorials/introducing_logic_bricks/11-linked_libraries-broken_links.png
    :figwidth: 100%
    
    Opening game.blend after libraries be renamed
 
-To fix this, we must go to the *Outliner* and select the *Blend File* mode. On this mode we'll see all :ref:`datablock-index` on our blend file.
+To fix this, we must go to the *Outliner* and select the *Blender File* mode. On this mode we'll see all *Data-blocks* in our .blend file.
 
-.. figure:: /images/Tutorials/introducing_logic_bricks/12-linked_libraries-outliner.png
+.. figure:: /images/tutorials/introducing_logic_bricks/12-linked_libraries-outliner.png
    :figwidth: 50%
    
    Blender File mode in Outliner
@@ -71,9 +71,11 @@ To fix this, we must go to the *Outliner* and select the *Blend File* mode. On t
 The important elements here are the references to our libraries at the bottom: they are being shown as cracked icons and their previous names. To fix this issue:
 
 Relocating the references
-   Right click the references, select :menuselection:`Relocate` and select the corresponding file.
+------------------------------
+
+Right click the references, select :menuselection:`Relocate` and select the corresponding file.
    
-.. figure:: /images/Tutorials/introducing_logic_bricks/13-linked_libraries-relocate_broken.png
+.. figure:: /images/tutorials/introducing_logic_bricks/13-linked_libraries-relocate_broken.png
    :figwidth: 60%
    
    Broken references fix modes in Outliner

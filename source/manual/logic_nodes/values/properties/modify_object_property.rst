@@ -5,12 +5,12 @@
 
 .. _ln-modify_object_property:
 
-========================
+==============================
 Modify Object Property
-========================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Mode
    Selected property mode.
@@ -18,11 +18,11 @@ Mode
 Operation
    Type of selected operation to perform.
 
-Inputs
-++++++
-
 Clamp
    Clamp the value to 0-1 range.
+
+Inputs
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -37,7 +37,7 @@ Value
    Value to use for modification.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

@@ -5,18 +5,18 @@
 
 .. _ln-get_font:
 
-=================
+==============================
 Get Font
-=================
+==============================
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Font
    Font to get. Load with *Folder* icon and select/set from selection menu.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Font
    Resulting font. todo

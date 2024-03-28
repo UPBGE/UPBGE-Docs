@@ -5,12 +5,12 @@
 
 .. _ln-set_max_jumps:
 
-====================
+==============================
 Set Max Jumps
-====================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -22,7 +22,7 @@ Max Jumps
    Max allowed number of jumps while character is in the air. todo
    
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

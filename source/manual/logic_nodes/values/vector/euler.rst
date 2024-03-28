@@ -5,18 +5,20 @@
 
 .. _ln-euler:
 
-========================
+==============================
 Euler
-========================
+==============================
+
+Accepts float inputs and combines them into Euler angle.
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Euler Order
    Selected order of vectors.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 X
    Fixed input X value, or result from connected node.
@@ -28,7 +30,7 @@ Z
    Fixed input Z value, or result from connected node.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Euler
-   Resulting Euler values.
+   Resulting Euler angle.

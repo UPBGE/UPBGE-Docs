@@ -5,12 +5,12 @@
 
 .. _ln-set_overlay_collection:
 
-=======================
+==============================
 Set Overlay Collection
-=======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    The condition for this node to start.
@@ -22,7 +22,7 @@ Collection
    Which collection to set overlay to.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done 
    *True* if the node performed successfully, else *False*.

@@ -5,18 +5,18 @@
 
 .. _ln-get_light_power:
 
-===============
+==============================
 Get Light Power
-===============
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Light Object
    Which light to use.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Power
    Resulting strength of the light.

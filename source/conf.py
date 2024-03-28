@@ -49,7 +49,7 @@ extensions = [
     #'sphinx.ext.intersphinx',
     #'sphinx.ext.todo',
 ]
-
+# autosectionlabel_maxdepth = 1
 # Display todos
 todo_include_todos = False
 
@@ -89,7 +89,7 @@ html_title = 'UPBGE Manual'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-import sphinx_rtd_theme
+# import sphinx_rtd_theme
 
 html_theme = 'sphinx_rtd_theme'
 
@@ -113,11 +113,18 @@ extensions.append('sphinx_rtd_theme')
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["../resources/theme"] # _static
 
+# for production, switch to theme_overrides.css
 if html_theme == "sphinx_rtd_theme":
    html_css_files = ["css/theme_overrides.css"]
-# for production, switch to above theme_overrides.css
+   # html_css_files = ["css/theme_overrides_blender.css"]
    # html_css_files = ["css/rtd_dark.css"]
-
+# --- aum : custom logic node 'role' ------------------
+rst_prolog = '''
+   .. role:: ln
+   .. role:: py
+   .. role:: socket
+   '''
+# --- aum : custom 'role' end --------------
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
 #

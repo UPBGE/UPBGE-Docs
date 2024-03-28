@@ -5,18 +5,18 @@
 
 .. _ln-color_rgba:
 
-========================
+==============================
 Color RGBA
-========================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Color
    Fixed selected color, or a result from connected socket.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Color
    Resulting color.

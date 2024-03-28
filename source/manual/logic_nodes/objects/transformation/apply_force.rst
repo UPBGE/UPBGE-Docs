@@ -5,9 +5,9 @@
 
 .. _ln-apply_force:
 
-==============
+==============================
 Apply Force
-==============
+==============================
 
 Applies an offset force to an object on any axis of the Cartesian plane. To function properly, the object must have a physical property that enables displacement.
 
@@ -19,11 +19,17 @@ Applies an offset force to an object on any axis of the Cartesian plane. To func
 
 The node applies force to the entire object. In contrast, the :ref:`Apply Impulse <ln-apply_impulse>` node applies force at a specific point.
 
-Input
-+++++
+Parameters
+++++++++++++++++++++++++++++++
+
+Mode
+   Selected mode of operation.
 
 Local
    If checked, force will be applied in the direction of the object's local axes, else of the object's global axes.
+
+Input
+++++++++++++++++++++++++++++++
 
 Condition
    The condition for this node to start.
@@ -35,7 +41,7 @@ Vector
    Value of the force that will be applied to the object, by the direction of the axes in the Cartesian plane. It can be a value referring to the axes of the world (global) or the axes of the object (local).
 
 Output
-++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if the node performed successfully, else *False*.

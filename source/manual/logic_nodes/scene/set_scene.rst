@@ -5,12 +5,12 @@
 
 .. _ln-set_scene:
 
-==========
+==============================
 Set Scene
-==========
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    The condition for this node to activate.
@@ -19,7 +19,7 @@ Scene
    Which scene to set. 
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done 
    *True* if the node performed successfully, else *False*.

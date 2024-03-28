@@ -5,12 +5,12 @@
 
 .. _ln-animation_status:
 
-======================
+==============================
 Animation Status
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Object
    Which object to use. Type in or picker-select.
@@ -19,7 +19,7 @@ Layer
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Is Playing
    *True* if animation is playing.

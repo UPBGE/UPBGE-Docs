@@ -5,18 +5,18 @@
 
 .. _ln-check_angle:
 
-======================
+==============================
 Check Angle
-======================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Operation
    Which operation to use at checking.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Vector 1
    First vector to use for operation.
@@ -28,7 +28,7 @@ Value
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 If True
    todo

@@ -5,12 +5,12 @@
 
 .. _ln-set_gamma:
 
-=======================
+==============================
 Set Gamma
-=======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -19,7 +19,7 @@ Gamma
    Value of the Gamma to set.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

@@ -5,12 +5,12 @@
 
 .. _ln-remove_index:
 
-=================
+==============================
 Remove Index
-=================
+==============================
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Condition to be fulfilled for node to be activated.
@@ -22,7 +22,7 @@ Index
    Which index to remove from above list.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if removal of index is successful, else *False*.

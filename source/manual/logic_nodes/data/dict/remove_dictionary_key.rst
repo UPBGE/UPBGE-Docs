@@ -5,12 +5,12 @@
 
 .. _ln-remove_dictionary_key:
 
-=====================
+==============================
 Remove Dictionary Key
-=====================
+==============================
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fullfiled for node to activate.
@@ -22,7 +22,7 @@ Key
    Which key will be removed from above dictionary.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performs successfully, else *False*.

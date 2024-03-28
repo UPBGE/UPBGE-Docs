@@ -5,18 +5,18 @@
 
 .. _ln-set_object_property:
 
-========================
+==============================
 Set Object Property
-========================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Mode
    Selected property mode.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -29,3 +29,9 @@ Property
 
 Type
    Type of selected property to set.
+
+Outputs
+++++++++++++++++++++++++++++++
+
+Done
+   *True* if node performed successfully, else *False*.

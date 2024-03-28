@@ -5,18 +5,18 @@
 
 .. _ln-absolute:
 
-======================
+==============================
 Absolute
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Value
    A value to perform absolute operation on.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting absolute value.

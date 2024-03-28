@@ -5,20 +5,20 @@
 
 .. _ln-save_game:
 
-==========
+==============================
 Save Game
-==========
+==============================
 
 Stores information about the state of the scene in a ``.json`` file.
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 File Path/Saves
    Path to where the save files are stored.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Input condition required for node to activate.
@@ -27,7 +27,7 @@ Slot
    Index of this save file.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if the node performed successfully, else *False*.

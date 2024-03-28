@@ -5,18 +5,18 @@
 
 .. _ln-within_range:
 
-======================
+==============================
 Within Range
-======================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Mode
    Selected mode of operation.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Value
    Value to compare.
@@ -28,7 +28,7 @@ Max
    Maximum value to compare against.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 If True
    If value is within range. todo

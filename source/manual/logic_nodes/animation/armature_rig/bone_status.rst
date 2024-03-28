@@ -10,7 +10,7 @@ Bone Status
 ==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Armature Object
    Which object to inspect.
@@ -19,7 +19,7 @@ Bone Name
    String representation of a desired bone.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Position
    todo

@@ -5,24 +5,24 @@
 
 .. _ln-get_widget_attribute:
 
-=============================
+==============================
 Get Widget Attribute
-=============================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 todo
    todo
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Widget
    Widget from which to get an attribute.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Output todo
    Resulting output value. todo

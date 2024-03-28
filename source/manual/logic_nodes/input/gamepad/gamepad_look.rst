@@ -5,22 +5,22 @@
 
 .. _ln-gamepad_look:
 
-==============
+==============================
 Gamepad Look
-==============
+==============================
 
 A quick way to make objects follow controller stick movement. It's possible to assign a *Body* and a *Head* object.
 
 If no *Head* object is assigned, the *Body* will be used for both axis, but that is generally discouraged as it can lead to unwanted side effects.
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Axis
    Which stick of the controller to use for the transformation.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Input condition for node activaton.
@@ -59,7 +59,7 @@ Threshold
    Ignore stick values under this threshold.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if the node performed successfully, else *False*.

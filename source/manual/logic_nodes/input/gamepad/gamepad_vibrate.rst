@@ -5,14 +5,14 @@
 
 .. _ln-gamepad_vibrate:
 
-================
+==============================
 Gamepad Vibrate
-================
+==============================
 
 Detects if the controller at given index has any activity.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Condition that need be fulfilled to activate the node.
@@ -30,7 +30,7 @@ Time
    Vibrate for this many seconds.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if the node performed successfully, else *False*.

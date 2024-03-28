@@ -5,24 +5,24 @@
 
 .. _ln-resize_vector:
 
-========================
+==============================
 Resize Vector
-========================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Resize To
    Selected dimension for resizing.
    
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Vector
    Either fixed input XYZ values, or result from connected node.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Vector
    Resulting vector.

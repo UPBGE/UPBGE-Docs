@@ -5,27 +5,23 @@
 
 .. _ln-cursor_visibility:
 
-=================
+==============================
 Cursor Visibility
-=================
+==============================
 
-*Cursor Visibility* node is used to set the visibility status of the system mouse cursor.
+Used to set the visibility status of the system mouse cursor.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
-   Input condition.
+   If connected, condition from connected node must be fulfilled for node to activate.
 
 Visible
    Target state for the system cursor.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if the node performed successfully, else *False*.
-
-Example
-+++++++
-

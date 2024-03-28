@@ -5,14 +5,17 @@
 
 .. _ln-new_dictionary:
 
-=================
+==============================
 New Dictionary
-=================
+==============================
 
 todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Dictionary
    Creates new empty dictionary.
+
+.. note::
+   *Diamond* socket indicates *dictionary*.

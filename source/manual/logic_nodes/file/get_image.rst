@@ -5,18 +5,18 @@
 
 .. _ln-get_image:
 
-=================
+==============================
 Get Image
-=================
+==============================
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Image
    Image to get. Load with *Folder* icon and select/set from selection menu.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Image
    Resulting image data.

@@ -10,7 +10,7 @@ Set Attribute
 ==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -31,7 +31,7 @@ Value
    Type and value to set.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performs successfully.

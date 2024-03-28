@@ -5,21 +5,23 @@
 
 .. _ln-separate_xy:
 
-========================
+==============================
 Separate XY
-========================
+==============================
+
+Accepts Vector2 input, separates it into X and Y float values.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Vector
    Either fixed input X and Y vector value, or a result from connected socket.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 X
-   Resulting X value.
+   Resulting X float value.
 
 Y
-   Resulting Y value.
+   Resulting Y float value.

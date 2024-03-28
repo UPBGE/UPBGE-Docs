@@ -5,12 +5,12 @@
 
 .. _ln-set_parent:
 
-======================
+==============================
 Set Parent
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Which condition is used for node to activate.
@@ -22,7 +22,7 @@ Parent Object
    An object that will become a parent. Congratulations!
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done 
     *True* if the node performed successfully, else *False*.

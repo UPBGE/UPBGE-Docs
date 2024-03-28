@@ -5,12 +5,12 @@
 
 .. _ln-set_jump_force:
 
-====================
+==============================
 Set Jump Force
-====================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -22,7 +22,7 @@ Force
    Force to apply to jump.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

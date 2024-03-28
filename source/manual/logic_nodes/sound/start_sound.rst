@@ -5,21 +5,15 @@
 
 .. _ln-start_sound:
 
-======================
+==============================
 Start Sound
-======================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Sound Type
    2D or 3D sound or sample; sample has additional 2 more inputs.
-
-Loop Count
-   Play once, loop or play sound n times.
-
-Inputs
-++++++
 
 Update Running
    todo
@@ -29,6 +23,9 @@ Show Advanced Options
 
 Use Speaker
    If selected, *Position* is changed to *Object* field; enter object name or pick from list.
+
+Inputs
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -67,7 +64,7 @@ Cone Outer Volume
    Volume of outer cone. Only visible if *Show Advanced Options* is selected.
    
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 On Start
    Start signal is emitted.

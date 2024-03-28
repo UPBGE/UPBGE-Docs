@@ -1,8 +1,8 @@
 .. _ln-math-index:
 
-======================
+==============================
 Math
-======================
+==============================
 
 .. toctree::
    :maxdepth: 1
@@ -11,6 +11,8 @@ Math
    vector_math
    vectors/index
    interpolate
+   curve_interpolation
+   tween_value
    absolute
    clamp
    compare

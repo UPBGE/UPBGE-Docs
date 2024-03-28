@@ -1,11 +1,11 @@
 .. _ln-events-index:
 
-======
+==============================
 Events
-======
+==============================
   
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 0
    
    on_init
    on_update
@@ -13,4 +13,8 @@ Events
    on_value_changed_to
    on_value_changed
    once
+
+.. toctree::
+   :maxdepth: 2
+
    custom/index

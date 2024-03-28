@@ -7,5 +7,6 @@ Introducing Logic Nodes
 .. toctree::
    :maxdepth: 2
 
-   a_first_example
    moving_cube
+   first_person_shooter
+   2d_side_scroller/index

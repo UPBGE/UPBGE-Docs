@@ -5,17 +5,20 @@
 
 .. _ln-align_axis_to_vector:
 
-====================
+==============================
 Align Axis to Vector
-====================
+==============================
 
-Input
-+++++
+Properties
+++++++++++++++++++++++++++++++
 
 Local
    Direction of the object will be the same direction that the vector has, in relation to the *World Origin*.
     
    If vector is in a certain position relative to *World Origin*, object will receive the same angulation in this relation: *World Origin* to *Object*.
+
+Input
+++++++++++++++++++++++++++++++
 
 Condition
    The condition for this node to start.
@@ -33,7 +36,7 @@ Factor
    Each time this node is activated (through *Condition*), the object will rotate to its destination by a certain amount. It can be completed in just one activation (Factor: 1.00) or up to 100 activations (Factor: 0.01). Any other value can be written between 0 and 1.
 
 Output
-++++++
+++++++++++++++++++++++++++++++
 
 Done 
     *True* if the node performed successfully, else *False*.

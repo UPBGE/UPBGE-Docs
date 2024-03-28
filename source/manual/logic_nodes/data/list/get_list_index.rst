@@ -5,14 +5,14 @@
 
 .. _ln-get_list_index:
 
-=================
+==============================
 Get List Index
-=================
+==============================
 
 Retrieve value at specifiend index of the list.
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 List
    List to be used.
@@ -21,7 +21,7 @@ Index
    Which index to get.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting value at index from list.

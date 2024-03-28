@@ -5,18 +5,18 @@
 
 .. _ln-set_vehicle_attribute:
 
-=====================
+==============================
 Set Vehicle Attribute
-=====================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Axis
    Selected vehicle wheels axis.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -40,7 +40,7 @@ Friction
    Vehicle wheels friction. todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

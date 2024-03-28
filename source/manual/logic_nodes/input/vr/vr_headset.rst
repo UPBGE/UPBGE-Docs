@@ -5,14 +5,14 @@
 
 .. _ln-vr_headset:
 
-===========
+==============================
 VR Headset
-===========
+==============================
 
 Retrieves the current position and orientation of the VR headset if there is a running VR session.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Position
    World position of the headset.

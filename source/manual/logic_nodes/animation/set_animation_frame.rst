@@ -5,12 +5,12 @@
 
 .. _ln-set_animation_frame:
 
-======================
+==============================
 Set Animation Frame
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Condition which is required for node to activate.
@@ -34,7 +34,7 @@ Layer Weight
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if animation finished successfully.

@@ -5,12 +5,12 @@
 
 .. _ln-add_widget:
 
-==========
+==============================
 Add Widget
-==========
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -22,7 +22,7 @@ Widget
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

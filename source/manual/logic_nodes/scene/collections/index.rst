@@ -1,8 +1,8 @@
 .. _ln-scene-collections-index:
 
-===========
+==============================
 Collections
-===========
+==============================
 
 .. toctree::
    :maxdepth: 1

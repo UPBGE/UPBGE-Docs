@@ -5,14 +5,14 @@
 
 .. _ln-set_cursor_position:
 
-====================
+==============================
 Set Cursor Position
-====================
+==============================
 
 Places the mouse cursor on corresponding coordinates between (0, 0) and (1, 1) on the screen.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Input condition.
@@ -24,7 +24,7 @@ Screen Y
    Vertical cursor position between 0 and 1.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if the node performed successfully, else *False*.

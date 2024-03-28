@@ -5,9 +5,9 @@
 
 .. _ln-move_to_with_navmesh:
 
-======================
+==============================
 Move To with Navmesh
-======================
+==============================
 
 Moves an object in a space delimited by :ref:`Navigation Mesh <physics_navigation_mesh>`.
 
@@ -16,7 +16,7 @@ Moves an object in a space delimited by :ref:`Navigation Mesh <physics_navigatio
 To define an object as a *Navigation Mesh*, go to the *Physics properties* area of the object and select in *Game Physics* the object as being *Navigation Mesh*.
 
 Input
-+++++
+++++++++++++++++++++++++++++++
 
 Condition
    The condition for this node to start.
@@ -58,7 +58,7 @@ Visualize
    View the displacement path with a red line during gameplay.
 
 Output
-++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if the node performed successfully, else *False*.

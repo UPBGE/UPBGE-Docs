@@ -5,20 +5,20 @@
 
 .. _ln-mouse_moved:
 
-===========
+==============================
 Mouse Moved
-===========
+==============================
 
 Detects mouse movement.
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
-Mode
+Each Frame
    Boolean value to select between *Once* (unchecked) and *Each Frame* (checked) modes.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 If Moved
    *True* if mouse movement is detected, else *False*.

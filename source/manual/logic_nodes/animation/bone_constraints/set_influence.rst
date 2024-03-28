@@ -5,12 +5,12 @@
 
 .. _ln-set_influence:
 
-======================
+==============================
 Set Influence
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate. 
@@ -28,7 +28,7 @@ Influence
    Influence of the bone, ranged 0-1.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performs successfully, else *False*.

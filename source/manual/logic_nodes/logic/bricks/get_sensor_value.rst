@@ -5,12 +5,12 @@
 
 .. _ln-get_sensor_value:
 
-======================
+==============================
 Get Sensor Value
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Object
    Which object to inspect.
@@ -22,7 +22,7 @@ Field
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting sensor value.

@@ -5,12 +5,12 @@
 
 .. _ln-start_logic_tree:
 
-======================
+==============================
 Start Logic Tree
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -22,7 +22,7 @@ Node Tree
    Which *Node Tree* to apply to the object.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

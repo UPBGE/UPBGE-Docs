@@ -5,18 +5,18 @@
 
 .. _ln-get_light_color:
 
-===============
+==============================
 Get Light Color
-===============
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Light Object
    Which light to use.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Color
    Color of the light.

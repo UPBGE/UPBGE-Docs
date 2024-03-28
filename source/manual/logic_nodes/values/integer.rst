@@ -5,24 +5,24 @@
 
 .. _ln-integer:
 
-========================
+==============================
 Integer
-========================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Data Type
    Selected data type - integer value.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Integer
    Fixed input integer value, or a result from connected node.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Integer
    Resulting output integer value.

@@ -1,11 +1,11 @@
 .. _ln-input-index:
 
-=====
+==============================
 Input
-=====
+==============================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    mouse/index
    keyboard/index

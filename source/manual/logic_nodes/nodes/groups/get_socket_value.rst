@@ -5,12 +5,12 @@
 
 .. _ln-gro-get_socket_value:
 
-================
+==============================
 Get Socket Value
-================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Node Tree
    Geometry node to use. todo
@@ -19,7 +19,7 @@ Node Name
    String representation of node name.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting socket value.

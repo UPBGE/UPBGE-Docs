@@ -5,12 +5,12 @@
 
 .. _ln-set_curve_points:
 
-======================
+==============================
 Set Curve Points
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Which condition will be used for node to activate.
@@ -22,7 +22,7 @@ Points
    A list of points to set.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done 
     *True* if the node performed successfully, else *False*.

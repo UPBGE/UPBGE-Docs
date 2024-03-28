@@ -5,27 +5,29 @@
 
 .. _ln-combine_xyzw:
 
-========================
+==============================
 Combine XYZW
-========================
+==============================
+
+Accepts float inputs and combines them into Quaternion.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 X
-   Fixed input X value, or result from connected node.
+   Fixed input X float value, or result from connected node.
 
 Y
-   Fixed input Y value, or result from connected node.
+   Fixed input Y float value, or result from connected node.
 
 Z
-   Fixed input Z value, or result from connected node.
+   Fixed input Z float value, or result from connected node.
 
 W
-   Fixed input W value, or result from connected node.
+   Fixed input W float value, or result from connected node.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Vector
-   Resulting XYZ (Vector3) vector.
+   Resulting XYZW Quaternion.

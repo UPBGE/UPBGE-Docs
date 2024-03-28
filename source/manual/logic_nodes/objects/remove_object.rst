@@ -5,12 +5,12 @@
 
 .. _ln-remove_object:
 
-======================
+==============================
 Remove Object
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Which condition is used for node to activate.
@@ -19,7 +19,7 @@ Object
    Which object to remove.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done 
     *True* if the node performed successfully, else *False*.

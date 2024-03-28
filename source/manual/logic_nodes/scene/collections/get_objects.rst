@@ -5,18 +5,18 @@
 
 .. _ln-get_objects:
 
-=======================
+==============================
 Get Objects
-=======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Collection
    Collection to get objects from.
    
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Objects
    A list of resulting objects.

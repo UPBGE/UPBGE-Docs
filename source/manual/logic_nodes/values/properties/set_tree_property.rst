@@ -5,12 +5,12 @@
 
 .. _ln-set_tree_property:
 
-========================
+==============================
 Set Tree Property
-========================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -19,7 +19,7 @@ Tree Name
    Name of the tree to use.
    
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

@@ -5,18 +5,18 @@
 
 .. _ln-invert:
 
-========================
+==============================
 Invert
-========================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Value
    Fixed value, or resulting connected value to invert.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting inverted value.

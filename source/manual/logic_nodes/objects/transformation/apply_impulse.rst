@@ -5,9 +5,9 @@
 
 .. _ln-apply_impulse:
 
-==============
+==============================
 Apply Impulse
-==============
+==============================
 
 Applies a displacement force that has an origin (*point*) and a *direction*. To function properly, the object must have a physical property that enables displacement.
 
@@ -20,16 +20,16 @@ Applies a displacement force that has an origin (*point*) and a *direction*. To 
 This node applies force at a specific point. In contrast, the :ref:`Apply Force <ln-apply_force>` node applies force in entire object.
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Mode
    Selected mode of operation to apply.
 
-Input
-+++++
-
 Local
    If checked, object's local axes will be used, else global axes are used.
+
+Input
+++++++++++++++++++++++++++++++
 
 Condition
    The condition for this node to start.
@@ -44,7 +44,7 @@ Direction
    The direction in which impulse will be applied. todo
 
 Output
-++++++
+++++++++++++++++++++++++++++++
 
 Done 
    *True* if the node performed successfully, else *False*.

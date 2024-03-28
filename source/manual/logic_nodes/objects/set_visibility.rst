@@ -5,12 +5,12 @@
 
 .. _ln-set_visibility:
 
-======================
+==============================
 Set Visibility
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Which condition is used for node to activate.
@@ -22,7 +22,7 @@ Visible
    If checked, set *Visible* state, else set not *Visible State*.
    
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done 
     *True* if the node performed successfully, else *False*.

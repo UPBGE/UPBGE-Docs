@@ -5,12 +5,12 @@
 
 .. _ln-evaluate_object_property:
 
-========================
+==============================
 Evaluate Object Property
-========================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Mode
    Selected property mode.
@@ -19,7 +19,7 @@ Operation
    Type of selected operation to perform.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Object
    Which object to use.
@@ -31,7 +31,7 @@ Type
    Selected type of evaluated property.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 If True
    todo

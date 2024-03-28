@@ -5,12 +5,12 @@
 
 .. _ln-mat-get_socket_value:
 
-================
+==============================
 Get Socket Value
-================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Material
    todo
@@ -19,7 +19,7 @@ Node Name
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting socket value.

@@ -4,18 +4,18 @@
 Playing An Animation
 ==============================
 
-In games, animations can be used in many places other than characters - a sliding menu, a opening door, coins rotating, etc. In UPBGE, an animation can be played through the use of an :ref:`datablock-action`. This tutorial will show you how to play an animation of an object and the concept of animation layering, allowing you to play and blend multiple animations at once in a single object.
+In games, animations can be used in many places other than characters - a sliding menu, a opening door, coins rotating, etc. In UPBGE, an animation can be played through the use of an Action. This tutorial will show you how to play an animation of an object and the concept of animation layering, allowing you to play and blend multiple animations at once in a single object.
 
 Before We Start
 ++++++++++++++++++++++++++++++
 
-Before we start using animations through logic, we need some animations. As we said before, UPBGE animations work through the use of :ref:`datablock-action`, so we need to set our default *Dope Sheet* editor from *Dope Sheet* mode to *Action Editor* mode. Now, assuming you already know how to make simple animations adding keyframes, we'll make two simple actions on a cube of a total 50 frames each, with the following settings:
+Before we start using animations through logic, we need some animations. As we said before, UPBGE animations work through the use of Action, so we need to set our default *Dope Sheet* editor from *Dope Sheet* mode to *Action Editor* mode. Now, assuming you already know how to make simple animations adding keyframes, we'll make two simple actions on a cube of a total 50 frames each, with the following settings:
 
 - Rotation action named *rotate*: No rotation at frame 1, 180° at ``Z`` axis on frame 25, more 180° at ``Z`` axis on frame 50 (that is, a full 360°).
 
 - Scaling action named *scale*: 0 scale at frame 1, double scale at frame 25 and 0 scale at frame 50 again.
 
-.. figure:: /images/Tutorials/introducing_logic_bricks/06-play_animation-rotate_scale.png
+.. figure:: /images/tutorials/introducing_logic_bricks/06-play_animation-rotate_scale.png
    :figwidth: 100%
    
    Action Editor showing both actions
@@ -41,7 +41,7 @@ Now we must fill some fields:
 
 The setup should look somewhat like the figure below:
 
-.. figure:: /images/Tutorials/introducing_logic_bricks/07-play_animation-editor_setup.png
+.. figure:: /images/tutorials/introducing_logic_bricks/07-play_animation-editor_setup.png
    :figwidth: 100%
    
    Logic Bricks Editor with the given logic set

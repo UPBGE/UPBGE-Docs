@@ -5,21 +5,23 @@
 
 .. _ln-combine_xy:
 
-========================
+==============================
 Combine XY
-========================
+==============================
+
+Accepts float inputs and combines them into Vector2.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 X
-   Either fixed input value, or result from connected node.
+   Either fixed input float value, or result from connected node.
 
 Y
-   Either fixed input value, or result from connected node.
+   Either fixed input float value, or result from connected node.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Vector
-   Resulting XY vector.
+   Resulting XY Vector2.

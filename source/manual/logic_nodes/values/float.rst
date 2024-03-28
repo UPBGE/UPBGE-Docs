@@ -5,24 +5,24 @@
 
 .. _ln-float:
 
-========================
+==============================
 Float
-========================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Data Type
    Selected data type -floating number value.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Float
    Either fixed float value or result from socket, if connected.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Float
    Float result.

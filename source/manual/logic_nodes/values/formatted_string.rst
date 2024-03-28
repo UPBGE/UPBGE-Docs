@@ -5,12 +5,12 @@
 
 .. _ln-formatted_string:
 
-========================
+==============================
 Formatted String
-========================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Format String
    Fixed string format, or result from connected socket.
@@ -22,22 +22,24 @@ B
    String parameter B.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 String
-   Resulting string formated from A and B strings.
+   Resulting string formated from all input strings.
 
 Example
-+++++++
+++++++++++++++++++++++++++++++
 
 .. figure:: /images/logic_nodes/values/ln-formatted_string_nodes.png
-   :width: 500
+   :align: center
+   :figwidth: 80%
    :alt: Formatted String Node Example
 
-Above setup will pull text values from two String nodes, format them through Formatted String, and print the resulting string into console, on ``LMB`` click.
+Above setup will pull text values from two String nodes, format them through Formatted String, and print the resulting string into console, on ``LMB`` click. Additional inputs can be added with ``{}`` string - inputs will be added automatically.
 
 .. figure:: /images/logic_nodes/values/ln-formatted_string_output.png
-   :width: 400
+   :align: center
+   :figwidth: 60%
    :alt: Formatted String Node Output 
 
-Printed result in System Console.
+   Printed resulting string in System Console

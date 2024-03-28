@@ -5,24 +5,24 @@
 
 .. _ln-typecast_value:
 
-=======================
+==============================
 Typecast Value
-=======================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 To Type
    Typecast Python value to which type.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Type
    Type and value to cast.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Integer
    Resulting output value of selected type.

@@ -5,12 +5,12 @@
 
 .. _ln-send_message:
 
-======================
+==============================
 Send Message
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Which condition is used for node to activate.
@@ -28,7 +28,7 @@ Body
    Message text to send.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done 
     *True* if the node performed successfully, else *False*.

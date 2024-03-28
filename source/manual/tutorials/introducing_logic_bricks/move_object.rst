@@ -26,7 +26,7 @@ Cube
 
 Once all objects were added, place them somewhat like the picture below:
 
-.. figure:: /images/Tutorials/introducing_logic_bricks/01-move_object-initial_scene.png
+.. figure:: /images/tutorials/introducing_logic_bricks/01-move_object-initial_scene.png
    :figwidth: 90%
 
    Cube at the center of the scene
@@ -53,7 +53,7 @@ Now we must fill some information on the bricks:
 
 The :ref:`bpy.types.SpaceLogicEditor` should look like this:
 
-.. figure:: /images/Tutorials/introducing_logic_bricks/02-move_object-logic_editor.png
+.. figure:: /images/tutorials/introducing_logic_bricks/02-move_object-logic_editor.png
    :figwidth: 100%
 
    :ref:`sensor-keyboard` > :ref:`controller-and` > :ref:`actuator-motion`
@@ -79,7 +79,7 @@ To continue, perform the following steps:
 - Next add a :ref:`sensor-property`, set its evaluation type to *Greater Than*, the Property to *fuel* and the value to ``0``.
 - Connect the :ref:`sensor-property` to the :ref:`controller-and`, along with the :ref:`sensor-keyboard`.
 
-.. figure:: /images/Tutorials/introducing_logic_bricks/03-move_object-property_2x.png
+.. figure:: /images/tutorials/introducing_logic_bricks/03-move_object-property_2x.png
    :figwidth: 100%
    
    Property Sensor (left side) properly filled and Fuel property added (right side)
@@ -90,7 +90,7 @@ This makes our Cube move only if the value of *fuel* is greater than ``0``. You 
 - Set the mode of :ref:`actuator-property` to **Add**, its property to *fuel* and its value to ``-1``.
 - Enable the pulse mode on :ref:`sensor-keyboard`.
 
-.. figure:: /images/Tutorials/introducing_logic_bricks/04-move_object-fuel_consumption.png
+.. figure:: /images/tutorials/introducing_logic_bricks/04-move_object-fuel_consumption.png
    :figwidth: 100%
    
    Fuel consumption logic: Sensors > And Controller > Property Actuator
@@ -99,7 +99,7 @@ There's a new factor involved here: the pulse mode on :ref:`sensor-keyboard` (bl
 
 Go ahead and play the game. The Cube will move and, after some time, it stops. It happens because the :ref:`actuator-property` has decreased ``1`` unit of *fuel* each frame, according to the :ref:`sensor-keyboard` pulse mode, and when *fuel* reaches ``0``, the logic of the :ref:`actuator-motion` doesn't respond anymore. It would be good, however, to see the value of *fuel* be decreased over time. You can do this by enabling the debug flag on the *fuel* property (:menuselection:`Properties Editor > Game > Game Properties`), or :menuselection:`Logic Bricks Editor > N-panel > Properties`, as shown in the figure below.
 
-.. figure:: /images/Tutorials/introducing_logic_bricks/05-move_object-debug.png
+.. figure:: /images/tutorials/introducing_logic_bricks/05-move_object-debug.png
    :figwidth: 100%
 
    Debug settings and display on screen

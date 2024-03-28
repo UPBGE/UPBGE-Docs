@@ -5,18 +5,21 @@
 
 .. _ln-collision:
 
-===============
+==============================
 Collision
-===============
+==============================
 
-Inputs
-++++++
+Parameters
+++++++++++++++++++++++++++++++
 
 Continuous
    Monitor for continuous collision, not just initial one.
 
+Inputs
+++++++++++++++++++++++++++++++
+
 Object
-   Which object to use for follision.
+   Which object to use for collision.
 
 Use Material
    Which material to use.
@@ -25,7 +28,7 @@ Property
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 On Collision
    What to trigger when collision happens. todo

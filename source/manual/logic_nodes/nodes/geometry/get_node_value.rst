@@ -5,12 +5,12 @@
 
 .. _ln-geo-get_node_value:
 
-================
+==============================
 Get Node Value
-================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Node Tree
    Geometry node to inspect.
@@ -19,7 +19,7 @@ Node Name
    String representation of node name.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting node value. 

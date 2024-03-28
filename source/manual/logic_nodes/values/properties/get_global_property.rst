@@ -5,12 +5,12 @@
 
 .. _ln-get_global_property:
 
-========================
+==============================
 Get Global Property
-========================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Collection todo
    todo
@@ -22,7 +22,7 @@ Default Value
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting retrieved value.

@@ -5,14 +5,14 @@
 
 .. _ln-follow_path:
 
-==============
+==============================
 Follow Path
-==============
+==============================
 
 Select an object to move through the points of a Nurbs Curve. Only works in conjunction with :ref:`Get Curve Points <ln-get_curve_points>`. Use on `NPCs <https://en.wikipedia.org/wiki/Non-player_character>`_ that need to walk around.
 
 Input
-+++++
+++++++++++++++++++++++++++++++
 
 Condition
    The condition for this node to start.
@@ -65,7 +65,7 @@ Front
    Which axis is the front of the object.
 
 Output
-++++++
+++++++++++++++++++++++++++++++
 
 Done 
    *True* if the node performed successfully, else *False*.

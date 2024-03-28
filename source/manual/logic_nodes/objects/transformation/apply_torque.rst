@@ -5,9 +5,9 @@
 
 .. _ln-apply_torque:
 
-==============
+==============================
 Apply Torque
-==============
+==============================
 
 Rotates an object using torque mechanics and tries to follow real-world physical rules. It uses the Newton-meter as a unit of measure (torque = force x length of the lever).
 
@@ -21,16 +21,16 @@ If the object has some kind of :doc:`Collision Bounds </manual/editors/propertie
    In order to limit pivoting of the torque, assign a rotation limit to a certain origin with either an `Armature Bone <https://docs.blender.org/manual/en/latest/animation/armatures/index.html>`_ or a `Rigid Body Joint Constraint <https://docs.blender.org/manual/en/2.79/rigging/constraints/relationship/rigid_body_joint.html>`_.
 
 Properties
-++++++++++
+++++++++++++++++++++++++++++++
 
 Mode
    Selected mode of operation to apply.
 
-Input
-+++++
-
 Local
    If checked, *Torque* will be applied following the object's local axes, else global axes.
+
+Input
+++++++++++++++++++++++++++++++
 
 Condition
    The condition for this node to start.
@@ -42,7 +42,7 @@ Vector
    The value that will be applied to the rotation in Newton-meters.
 
 Output
-++++++
+++++++++++++++++++++++++++++++
 
 Done 
    *True* if the node performed successfully, else *False*.

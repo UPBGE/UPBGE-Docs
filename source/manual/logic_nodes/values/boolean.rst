@@ -5,24 +5,24 @@
 
 .. _ln-boolean:
 
-========================
+==============================
 Boolean
-========================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Data Type
    Selected data type to be used - boolean.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Boolean
    *True* if checked, else *False*, or result of socket input.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Boolean
    *True* or *False*.

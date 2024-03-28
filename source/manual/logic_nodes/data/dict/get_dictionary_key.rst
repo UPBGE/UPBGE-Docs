@@ -5,12 +5,12 @@
 
 .. _ln-get_dictionary_key:
 
-=====================
+==============================
 Get Dictionary Key
-=====================
+==============================
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Dictionary
    Which dictionary to use.
@@ -22,7 +22,7 @@ Default Value
    If default value is to be used. todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Property Value
    Resulting value matching the input conditions.

@@ -5,12 +5,12 @@
 
 .. _ln-remove_constraint:
 
-====================
+==============================
 Remove Constraint
-====================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -22,7 +22,7 @@ Name
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

@@ -5,12 +5,12 @@
 
 .. _ln-camera_ray:
 
-===============
+==============================
 Camera Ray
-===============
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Which condition will be used for node to activate.
@@ -31,7 +31,7 @@ Mask
    Mask layers to use. todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Has Result
    todo

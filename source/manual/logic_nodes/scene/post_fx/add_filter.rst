@@ -5,18 +5,18 @@
 
 .. _ln-add_filter:
 
-=======================
+==============================
 Add Filter
-=======================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Filter
    Filter type to add.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -40,7 +40,7 @@ Density
    Density of the mist. For *Mist* filter only.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done 
    *True* if the node performed successfully, else *False*.

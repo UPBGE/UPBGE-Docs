@@ -5,12 +5,12 @@
 
 .. _ln-set_global_property:
 
-========================
+==============================
 Set Global Property
-========================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -22,13 +22,13 @@ Property
    Name of property to set.
 
 Type
-   Selected type of property to set.
+   Selected type and value of property to set.
 
 Persistent
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

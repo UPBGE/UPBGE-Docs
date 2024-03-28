@@ -10,7 +10,7 @@ Set Target
 ==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Which condition will be used for node to activate.
@@ -28,7 +28,7 @@ Target
    Which object to use as target.
    
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

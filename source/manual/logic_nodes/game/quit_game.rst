@@ -5,14 +5,14 @@
 
 .. _ln-quit_game:
 
-===========
+==============================
 Quit Game
-===========
+==============================
 
 Exits the current runtime. In standalone mode it closes the runtime window entirely.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Input condition which must be fulfilled for node to activate.

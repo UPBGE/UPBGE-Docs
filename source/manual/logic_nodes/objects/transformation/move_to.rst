@@ -5,14 +5,14 @@
 
 .. _ln-move_to:
 
-==============
+==============================
 Move To
-==============
+==============================
 
 Moves a selected object to a specific location in the scene.
 
 Input
-+++++
+++++++++++++++++++++++++++++++
 
 Condition
    The condition for this node to start.
@@ -33,7 +33,7 @@ Stop At Distance
   A distance that the object needs to be close to the *Target Location*, to complete the move.
 
 Output
-++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if the node performed successfully, else *False*.

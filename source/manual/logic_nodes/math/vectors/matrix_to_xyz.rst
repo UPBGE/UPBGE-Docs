@@ -5,24 +5,24 @@
 
 .. _ln-matrix_to_xyz:
 
-======================
+==============================
 Matrix To XYZ
-======================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 XYZ Type
    Selected type for operation.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Dimensions
    Selected matrix dimension for operation.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Vector
    Resulting XYZ vector.

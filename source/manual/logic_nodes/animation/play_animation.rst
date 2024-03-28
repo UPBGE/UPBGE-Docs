@@ -5,12 +5,12 @@
 
 .. _ln-play_animation:
 
-======================
+==============================
 Play Animation
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, required condition must be present for node to act.
@@ -46,7 +46,7 @@ Blend Mode
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Started
    *True* if animation started.

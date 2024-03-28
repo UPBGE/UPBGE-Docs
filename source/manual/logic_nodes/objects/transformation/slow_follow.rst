@@ -5,9 +5,9 @@
 
 .. _ln-slow_follow:
 
-==============
+==============================
 Slow Follow
-==============
+==============================
 
 todo - check description
 Rotates a selected object to a specific angle instantly. Applies rotation only on a single axis and fixed angulation in the world.
@@ -15,13 +15,13 @@ Rotates a selected object to a specific angle instantly. Applies rotation only o
 See also :ref:`Apply Rotation <ln-apply_rotation>`.
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Atrribute
    Selected attribute.
 
 Input
-+++++
+++++++++++++++++++++++++++++++
 
 Condition
    Condition for this node to start.
@@ -36,7 +36,7 @@ Factor
    todo
 
 Output
-++++++
+++++++++++++++++++++++++++++++
 
 Done 
     *True* if the node performed successfully, else *False*.

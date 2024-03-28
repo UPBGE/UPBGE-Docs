@@ -5,12 +5,12 @@
 
 .. _ln-send_data:
 
-=================
+==============================
 Send Data
-=================
+==============================
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -25,7 +25,7 @@ Subject
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

@@ -5,12 +5,12 @@
 
 .. _ln-sensor_positive:
 
-======================
+==============================
 Sensor Positive
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Object
    Which object to inspect.
@@ -19,7 +19,7 @@ Sensor
    Which sensor to inspect.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Positive
    todo

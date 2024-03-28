@@ -5,20 +5,20 @@
 
 .. _ln-gamepad_sticks:
 
-==============
+==============================
 Gamepad Sticks
-==============
+==============================
 
 Detects stick values of the controller at given index.
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Axis
    Which stick values to read.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Invert XY
    Checked axis will be inverted.
@@ -33,7 +33,7 @@ Threshold
    Dead-zone for the stick.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Vector
    Stick values as vector `(X, Y, 0)`.

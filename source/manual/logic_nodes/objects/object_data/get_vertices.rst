@@ -5,18 +5,18 @@
 
 .. _ln-get_vertices:
 
-======================
+==============================
 Get Vertices
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Object
    Which object to get vertices from.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Vertices
    A list of resulting vertices.

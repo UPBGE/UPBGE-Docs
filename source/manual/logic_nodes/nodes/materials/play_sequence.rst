@@ -5,12 +5,12 @@
 
 .. _ln-mat-play_sequence:
 
-===============
+==============================
 Play Sequence
-===============
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -22,7 +22,7 @@ Node Name
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 On Start
    Emits *True* signal that sequence started playing.

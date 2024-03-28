@@ -5,12 +5,12 @@
 
 .. _ln-timer:
 
-======================
+==============================
 Timer
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Set Timer
    Condition required for timer to be set.
@@ -19,7 +19,7 @@ Seconds
    Seconds needed to pass until timer activates.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 When Elapsed
    Condition/node to execute when timer has elapsed.

@@ -5,12 +5,12 @@
 
 .. _ln-geo-set_socket:
 
-================
+==============================
 Set Socket
-================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -22,7 +22,7 @@ Node Name
    String representation of node name.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

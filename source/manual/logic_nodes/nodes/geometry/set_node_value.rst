@@ -5,12 +5,12 @@
 
 .. _ln-geo-set_node_value:
 
-================
+==============================
 Set Node Value
-================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Which condition will be used for node to activate.
@@ -22,7 +22,7 @@ Node Name
    String representation of node name.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

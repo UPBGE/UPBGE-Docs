@@ -5,12 +5,12 @@
 
 .. _ln-stop_animation:
 
-======================
+==============================
 Stop Animation
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, certain condition is required for node to activate.
@@ -22,7 +22,7 @@ Animation Layer
    Which layer is used.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if animation is stopped successfully.

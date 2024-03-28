@@ -5,12 +5,12 @@
 
 .. _ln-set_rigid_body:
 
-====================
+==============================
 Set Rigid Body
-====================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -22,7 +22,7 @@ Enabled
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

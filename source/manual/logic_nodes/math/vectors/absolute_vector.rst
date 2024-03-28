@@ -5,18 +5,18 @@
 
 .. _ln-absolute_vector:
 
-======================
+==============================
 Absolute Vector
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Vector
    Input vector values.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Vector
    Resulting absolute vector values.

@@ -5,18 +5,18 @@
 
 .. _ln-draw:
 
-=============================
+==============================
 Draw
-=============================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Shape
    Which shape to draw.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If checked/connected, condition must be fulfilled for node to activate.
@@ -31,7 +31,7 @@ Target
    End point of the shape. todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

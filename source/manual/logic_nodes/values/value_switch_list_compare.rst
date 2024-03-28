@@ -5,18 +5,18 @@
 
 .. _ln-value_switch_list_compare:
 
-==========================
+==============================
 Value Switch List Compare
-==========================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Operator
    Boolean operator for comparison evaluation.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Switch
    todo
@@ -28,7 +28,7 @@ Case N
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Result
    Resulting value of comparison.

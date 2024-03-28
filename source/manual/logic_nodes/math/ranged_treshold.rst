@@ -5,18 +5,18 @@
 
 .. _ln-ranged_treshold:
 
-======================
+==============================
 Ranged Treshold
-======================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Mode
    Selected mode for operation.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Value
    Value to compare.
@@ -28,7 +28,7 @@ Max
    Maximum value to compare against.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting value.

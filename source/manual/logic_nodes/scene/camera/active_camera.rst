@@ -5,12 +5,12 @@
 
 .. _ln-active_camera:
 
-==============
+==============================
 Active Camera
-==============
+==============================
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Camera
    Current active camera in the scene.

@@ -5,12 +5,12 @@
 
 .. _ln-create_layout:
 
-========================
+==============================
 Create Layout
-========================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Layout Type
    Selected layout type.
@@ -22,7 +22,7 @@ Y:
    Origin/start vertical position.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -55,7 +55,7 @@ Border Color
    Color of border line.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

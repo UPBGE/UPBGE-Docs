@@ -5,12 +5,12 @@
 
 .. _ln-create_image:
 
-========================
+==============================
 Create Image
-========================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 X:
    Origin/start horizontal position.
@@ -19,7 +19,7 @@ Y:
    Origin/start vertical position.
    
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -46,7 +46,7 @@ Image
    Path to the image to use.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

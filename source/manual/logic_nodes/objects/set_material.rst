@@ -5,12 +5,12 @@
 
 .. _ln-set_material:
 
-======================
+==============================
 Set Material
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Which condition is used for node to activate.
@@ -25,7 +25,7 @@ Material
    Which material to set.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done 
     *True* if the node performed successfully, else *False*.

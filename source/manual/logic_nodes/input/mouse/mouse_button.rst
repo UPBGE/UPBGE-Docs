@@ -5,26 +5,26 @@
 
 .. _ln-mouse_button:
 
-=============
+==============================
 Mouse Button
-=============
+==============================
 
 Detects mouse button activity.
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Input Type
    Input detection mode for mouse button.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Button
    Which button to monitor.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 If Pressed
    *True* if the corresponding button is pressed, else *False*.

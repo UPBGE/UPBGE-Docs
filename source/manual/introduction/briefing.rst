@@ -32,7 +32,7 @@ Blender Rises
 
 Located in beautiful Amsterdam, the Blender Foundation now oversees the development, distribution, and marketing of Blender. But because of the open source nature of the software, its development has been driven largely by volunteer contributors from across the world.
 
-The Blender Foundation also created the Blender Institute, an animation and game studio that focuses on movie and game development using Blender. The Institute produced the movies **Elephants Dream**, **Big Buck Bunny**, **Sintel**, **Tears of Steel**, **Cosmos Laundromat** and the game **Yo, Frankie!**. These projects serve two main goals: The production process is an opportunity to improve Blender in a real studio environment, and the end result also serves as an advertisement for the software itself.
+The Blender Foundation also created the Blender Institute, an animation and game studio that focuses on movie and game development using Blender. The Institute produced the movies ``Elephants Dream``, ``Big Buck Bunny``, ``Sintel``, ``Tears of Steel``, ``Cosmos Laundromat`` and the game ``Yo, Frankie!``. These projects serve two main goals: The production process is an opportunity to improve Blender in a real studio environment, and the end result also serves as an advertisement for the software itself.
 
 .. figure:: /images/introduction/02-blender_reel.jpg
 
@@ -56,13 +56,13 @@ You already know that Blender is an open source 3D software that is capable of m
 
 The **Uchronia Project Blender Game Engine** (UPBGE) is a `Blender <https://www.blender.org/>`__'s builtin tool derived from Blender Foundation's `Blender Game Engine <https://en.wikipedia.org/wiki/Blender_Game_Engine/>`__ for real-time projects, from architectural visualizations and simulations to games.
 
-Originally created by Tristan Porteries as a fork from the Blender Game Engine with the purpose to develop the Blender Game Engine in a faster way, became indepent with the Blender Foundation's announcement of BGE's removal when it reached to Blender 2.80. With this independency, the UPBGE's developers (former BGE developers) have freedom to change and add features that could not be changed before (because the possibility of an official Blender merge, now discarded).
+Originally created by Tristan Porteries as a fork from the Blender Game Engine with the purpose to develop the Blender Game Engine in a faster way, became independent with the Blender Foundation's announcement of BGE's removal when it reached to Blender 2.80. With this independency, the UPBGE's developers (former BGE developers) have freedom to change and add features that could not be changed before (because the possibility of an official Blender merge, now discarded).
 
 Basically, due to its periodic synchronization with Blender source code (almost daily), UPBGE, as its acronym suggests, has become a Blender from a parallel universe in which the game engine was never removed.
 
 In any case, UPBGE is kriptonian for "hope". Who knows if in the future that parallel universe merges with our universe and we may add another line entitled "Justice League" to this beautiful story :-).
 
-Until that time comes, UPBGE has adopted the new physically based and state-of-the-art real-time render engine, Eevee. This way all you can do in Blender/UPBGE editor you can translate it to the Game Engine. A truly WYSIWYG (What You See Is What You Get) Game Engine, the strongest UPBGE feature.
+Until that time comes, UPBGE has adopted the new physically based and state-of-the-art real-time render engine, EEVEE. This way all you can do in Blender/UPBGE editor you can translate it to the Game Engine. A truly WYSIWYG (What You See Is What You Get) Game Engine, the strongest UPBGE feature.
 
 Of course, software exists to serve the users - that's you. Every time a Blender and/or UPBGE user creates a piece of artwork, it justifies, even if just a little, the enormous amount of time that went into creating the software. We hope that by picking up this manual, you are on your way to creating something amazing to share with the world.
 
@@ -81,11 +81,11 @@ UPBGE have lots of `new features <https://github.com/UPBGE/upbge/wiki/Release-no
 
 - Powerful `Python <https://www.python.org/>`__ language bindings, allowing support to even more libraries through the use of `PyPI <https://pypi.org/>`__.
 
-- Development process entirely inside Blender, without needing to import/export assets, although most used formats are supported through import/export addons (FBX, Collada, glTF, obj, stl, etc).
+- Development process entirely inside Blender, without needing to import/export assets, although most used formats are supported through import/export add-ons (FBX, Collada, glTF, obj, stl, etc).
 
 - Execution of game in Blender's viewport (for fast previewing) or on an standalone executable.
 
-- Rendering powered by state of art Blender's EEVEE engine including PBR shading, SSR reflections, GTAO ambient occlusion, Bloom, Soft and contact shadows, Light probes for global ilumination, Volumetrics, etc.
+- Rendering powered by state of art Blender's EEVEE engine including PBR shading, SSR reflections, GTAO ambient occlusion, Bloom, Soft and contact shadows, Light probes for global illumination, Volumetrics, etc.
 
 - Blender's `Linked Libraries <https://docs.blender.org/manual/en/dev/data_system/linked_libraries.html>`__ feature, allowing to organize projects in multiple blend files.
 

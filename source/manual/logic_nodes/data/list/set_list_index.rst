@@ -5,12 +5,12 @@
 
 .. _ln-set_list_index:
 
-=================
+==============================
 Set List Index
-=================
+==============================
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Conditon
    If connected, a condition must be fulfilled for note to activate.
@@ -25,7 +25,7 @@ Type
    Which type and value to set for above list.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node sets an index successfully, else *False*.

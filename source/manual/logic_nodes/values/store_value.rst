@@ -5,15 +5,18 @@
 
 .. _ln-store_value:
 
-========================
+==============================
 Store Value
-========================
+==============================
 
-Inputs
-++++++
+Parameters
+++++++++++++++++++++++++++++++
 
 Initialize
-   If checked, value will be initialized.
+   If checked . todo
+
+Inputs
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -22,7 +25,7 @@ Type
    Data type of value to be stored.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Stored Value
    Resulting stored value.

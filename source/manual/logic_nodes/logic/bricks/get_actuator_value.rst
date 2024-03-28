@@ -5,12 +5,12 @@
 
 .. _ln-get_actuator_value:
 
-======================
+==============================
 Get Actuator Value
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Object
    Which object to inspect.
@@ -22,7 +22,7 @@ Field
    Which field to inspect.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting actuator value.

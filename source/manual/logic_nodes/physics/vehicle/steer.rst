@@ -5,18 +5,18 @@
 
 .. _ln-steer:
 
-=====================
+==============================
 Steer
-=====================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Axis
    Selected vehicle wheels axis.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -31,7 +31,7 @@ Steel
    Steering value.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

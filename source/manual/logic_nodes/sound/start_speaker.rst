@@ -5,12 +5,12 @@
 
 .. _ln-start_speaker:
 
-======================
+==============================
 Start Speaker
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -28,7 +28,7 @@ Ignore Timescale
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 On Start
    Start signal is emitted.

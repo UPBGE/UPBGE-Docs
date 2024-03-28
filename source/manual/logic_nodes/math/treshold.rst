@@ -5,18 +5,18 @@
 
 .. _ln-treshold:
 
-======================
+==============================
 Treshold
-======================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Operation
    Selected treshold operation.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Else 0
    todo
@@ -28,7 +28,7 @@ Treshold
    Value to compare against.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting value of treshold operation.

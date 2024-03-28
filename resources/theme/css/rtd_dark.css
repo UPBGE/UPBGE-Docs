@@ -10,16 +10,29 @@
  * Modified by Erik Kalkoken: 20220615
  */
 
+/* aum added */
 @media (prefers-color-scheme: dark) {
-   /* aum added */
+   
+   .caption-text {
+      color: rgb(200, 200, 200);
+   }
+   
+   a.reference.internal {
+      color: rgb(240, 240, 240) !important;
+      background-color: rgb(30, 30, 30) !important;
+   }
+
+   a.reference.internal.current {
+      color: rgb(200, 200, 200) !important;
+      background-color: rgb(50, 50, 50) !important;
+   }
 
 	.admonition {
-	/* .admonition, .note { */
 		background-color: #2d2d2d !important;
 	}
 
    .admonition-title {
-      color: rgba(40, 40, 40, 1.0) !important;
+      color: rgb(40, 40, 40) !important;
    }
    
    .important .admonition-title {
@@ -31,7 +44,7 @@
    }
 
    .seealso .admonition-title  { 
-      background-color: rgba(100, 100, 100, 1.0) !important;
+      background-color: rgb(100, 100, 100) !important;
    }
 
    .nt, .nf {
@@ -43,139 +56,135 @@
    .menuselection, .kbd.docutils.literal {
    	font-size: 90%;
    	font-weight: normal;
-   	background-color: rgba(50, 50, 50, 0.65) !important;
-      color: white !important;
-   	border: solid #E1E4E5 1px;
-   	white-space: nowrap;
-   	padding: 2px 5px;
-   }
+         background-color: rgba(50, 50, 50, 0.65) !important;
+         color: white !important;
+         border: solid #E1E4E5 1px;
+         white-space: nowrap;
+         padding: 2px 5px;
+      }
 
-/* 'kbd' role. */
+   /* 'kbd' role. */
    .kbd.docutils.literal {
-   	font-family: "Lato", "proxima-nova", 
+      font-family: "Lato", "proxima-nova", 
          "Helvetica Neue", Arial, sans-serif;
-   	font-size: 85%;
-   	font-weight: normal;
-   	color: white !important;
+      font-size: 85%;
+      font-weight: normal;
+      color: white !important;
    }
-   
+      
    figcaption {
-      margin-top: 15px;
+      margin-top: 10px !important;
    }   
 
-	body {
-		text-align: justify;
-      background-color: rgba(40, 40, 40, 1.0) !important;
+   figure {
+      margin-bottom: 5px !important;
+   }
+   
+   .wy-body-for-nav {
+      text-align: justify;
+      background-color: rgb(40, 40, 40) !important;
    }
    
    h3 {
       margin-top: 5px !important;
    }
 
-   figure {
-      margin-bottom: 10px !important;
-   }
-   
    /* aum added end*/
 
-	a:visited {
-		color: #bf84d8;
-	}
+   /* .wy-menu-vertical li code {  */
+   /*    color: rgba(200, 200, 200, 1.0) !important;   */
+   /*  }  */
+
+   /* .wy-menu-vertical .xref { */
+   /* 	color: #2980B9 !important; */
+   /* } */
+
+   a:visited {
+      color: #bf84d8;
+   }
 
    .rst-content .refbox .admonition-title{
-      background-color: rgba(255, 90, 00, 1.0) !important;
+      background-color: rgb(255, 90, 00) !important;
       color: yellow;
    }
 
-	pre, .gh, .docutils.literal.notranslate {
-		background-color: rgba(40, 40, 40, 1.0) !important;
+   pre, .gh, .docutils.literal.notranslate {
+      background-color: rgb(40, 40, 40) !important;
       color: white !important;
-	}
+   }
 
-	.wy-nav-content {
-		background: rgba(30, 30, 30, 1.0) !important;
-		color: aliceblue;
-	}
+   .wy-nav-content {
+      background-color: rgb(30, 30, 30) !important;
+      color: rgb(240, 240, 240) !important;
+   }
 
-	.method dt, .class dt, .data dt, .attribute dt, .function dt,
-	.descclassname, .descname {
-		background-color: #525252 !important;
-		color: white !important;
-      /*border: 0, 0, 0, 0;*/
-	}
+   .method dt, .class dt, .data dt, .attribute dt, .function dt,
+   .descclassname, .descname {
+      background-color: #525252 !important;
+      color: white !important;
+   }
 
-	.toc-backref {
-		color: grey !important;
-	}
+   /* .toc-backref { */
+   /* 	background-color: blue !important; */
+   /* 	/* color: grey !important; */
+   /* } */
 
-	code.literal {
-		background-color: #2d2d2d !important;
-		border: 1px solid #6d6d6d !important;
-	}
+   code.literal {
+      background-color: #2d2d2d !important;
+      border: 1px solid #6d6d6d !important;
+   }
 
-	.wy-nav-content-wrap {
-		background-color: rgba(0, 0, 0, 0.6) !important;
-	}
+   /* .wy-nav-content-wrap { */
+   /* 	background-color: rgba(0, 0, 0, 1.0) !important; */
+   /* } */
 
-	.sidebar {
-		background-color: #191919 !important;
-	}
+   /* .sidebar { */
+   /* 	background-color: #191919 !important; */
+   /* } */
 
-	.sidebar-title {
-		background-color: #2b2b2b !important;
-	}
+   /* .sidebar-title { */
+   /* 	background-color: #2b2b2b !important; */
+   /* } */
 
-	.xref, .py-meth {
-		color: #7ec3e6 !important;
-	}
+   .xref, .py-meth {
+      color: #7ec3e6 !important;
+   }
 
-	.wy-side-nav-search {
-		background-color: inherit;
-		border-bottom: 1px solid #fcfcfc;
-	}
+   /* .wy-side-nav-search { */
+   /* 	background-color: rgb(80, 80, 80) !important; */
+   /* 	/* background-color: inherit; */
+   /* 	/* border-bottom: 1px solid #fcfcfc; */
+   /* } */
 
-	.wy-table thead, .rst-content table.docutils thead, .rst-content table.field-list thead {
-		background-color: #b9b9b9;
-	}
+   .wy-table thead, .rst-content table.docutils thead, .rst-content table.field-list thead {
+      background-color: #b9b9b9;
+   }
 
-	.wy-table thead th, .rst-content table.docutils thead th, .rst-content table.field-list thead th {
-		border: solid 2px #e1e4e5;
-	}
+   .wy-table thead th, .rst-content table.docutils thead th, .rst-content table.field-list thead th {
+      color: rgb(200, 200, 200);
+      border: solid 2px #e1e4e5;
+   }
 
-	.wy-table thead p, .rst-content table.docutils thead p, .rst-content table.field-list thead p {
-		margin: 0;
-	}
+   .wy-table thead p, .rst-content table.docutils thead p, .rst-content table.field-list thead p {
+      margin: 0;
+   }
 
-	.wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td, .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
-		background-color: #343131;
-	}
+   .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td, .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
+      background-color: #343131;
+   }
 
-	.highlight .m {
-		color: inherit
-	}
+   .highlight .m {
+      color: inherit
+   }
 
-	/* Literal.Number */
-	.highlight .nv {
-		color: #3a7ca8
-	}
+   /* Literal.Number */
+   .highlight .nv {
+      color: #3a7ca8
+   }
 
-	/* Name.Variable */
+   /* Name.Variable */
+   .rst-content .section .admonition ul {
+      margin-bottom: 0;
+   }
 
-	.rst-content .section .admonition ul {
-		margin-bottom: 0;
-	}
-
-	li.toctree-l1 {
-		margin-top: 5px;
-		margin-bottom: 5px;
-	}
-
-	.wy-menu-vertical li code {
-		color: rgba(200, 200, 200, 1.0) !important;
-		/*color: #E74C3C;*/
-	}
-
-	.wy-menu-vertical .xref {
-		color: #2980B9 !important;
-	}
 }

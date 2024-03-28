@@ -5,12 +5,12 @@
 
 .. _ln-set_light_shadow:
 
-=================
+==============================
 Set Light Shadow
-=================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -22,7 +22,7 @@ Use Shadow
    If checked, light will produce shadows. Accepts Boolean result from connected node.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

@@ -5,18 +5,18 @@
 
 .. _ln-new_list:
 
-=================
+==============================
 New List
-=================
+==============================
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Length
    List length - how many items will it have.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 List
    Resulting empty list of specified length.

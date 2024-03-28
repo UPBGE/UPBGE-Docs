@@ -5,18 +5,18 @@
 
 .. _ln-load_file_content:
 
-=================
+==============================
 Load File Content
-=================
+==============================
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Loaded
    *True* if node executed properly, else *False*. todo

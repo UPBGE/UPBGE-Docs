@@ -5,12 +5,12 @@
 
 .. _ln-mat-get_node_value:
 
-================
+==============================
 Get Node Value
-================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Material
    todo
@@ -19,7 +19,7 @@ Node Name
    String representation of node name.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting node value.

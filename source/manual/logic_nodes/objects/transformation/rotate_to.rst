@@ -5,16 +5,16 @@
 
 .. _ln-rotate_to:
 
-==============
+==============================
 Rotate To
-==============
+==============================
 
 Rotates selected object to a specific angle, instantaneous or with speed. Applies rotation only on a single axis and fixed angulation in the world.
 
 See also :ref:`Apply Rotation <ln-apply_rotation>`.
 
 Input
-+++++
+++++++++++++++++++++++++++++++
 
 Condition
    Condition for this node to start.
@@ -35,7 +35,7 @@ Front
    Which axis is the front of the object.
 
 Output
-++++++
+++++++++++++++++++++++++++++++
 
 Done 
    *True* if the node performed successfully, else *False*.

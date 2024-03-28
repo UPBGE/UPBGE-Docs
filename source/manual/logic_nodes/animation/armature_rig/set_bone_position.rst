@@ -10,7 +10,7 @@ Set Bone Position
 ==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -25,7 +25,7 @@ Set Pos
    Vector representation of position to set.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if the node performed successfuly.

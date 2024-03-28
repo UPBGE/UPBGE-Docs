@@ -5,21 +5,24 @@
 
 .. _ln-get_physics_info:
 
-====================
+==============================
 Get Physics Info
-====================
+==============================
 
-Inputs
-++++++
+Parameters
+++++++++++++++++++++++++++++++
 
 Local
    todo
+
+Inputs
+++++++++++++++++++++++++++++++
 
 Object
    Which character object to use.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Max Jumps
    Max allowed jumps while character is in the air. todo

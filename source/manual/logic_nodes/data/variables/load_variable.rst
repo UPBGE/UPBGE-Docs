@@ -5,18 +5,18 @@
 
 .. _ln-load_variable:
 
-=================
+==============================
 Load Variable
-=================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 File Path/Data
    Path to file/data to load.
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Filename
    File name to load from.
@@ -28,7 +28,7 @@ Default Value
    If connected, that value will be used as default. todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting value that was loaded.

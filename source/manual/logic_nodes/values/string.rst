@@ -5,24 +5,24 @@
 
 .. _ln-string:
 
-========================
+==============================
 String
-========================
+==============================
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Data Type
    Selected data type - string data type.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 String
    Fixed input string value, or a result from connected node.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 String
    Output string result.

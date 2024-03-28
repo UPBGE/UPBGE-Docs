@@ -5,12 +5,12 @@
 
 .. _ln-set_dictionary_key:
 
-=====================
+==============================
 Set Dictionary Key
-=====================
+==============================
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -25,7 +25,7 @@ Type
    Which type and value to set.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performs successfully, else *False*.

@@ -5,12 +5,12 @@
 
 .. _ln-dictionary_from_items:
 
-=====================
+==============================
 Dictionary From Items
-=====================
+==============================
 
 Inputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Key
    Name for dictionary key.
@@ -19,7 +19,7 @@ String
    Type and value to be paired with matching key.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Dictionary
    Dictionary will be created and its data passed out. todo

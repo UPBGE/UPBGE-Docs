@@ -5,20 +5,20 @@
 
 .. _ln-load_game:
 
-==========
+==============================
 Load Game
-==========
+==============================
 
 Reads information about the state of the current scene from a previously saved ``.json`` file.
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 File Path/Saves
    Path to where the save files are stored.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    Input condition.
@@ -27,7 +27,7 @@ Slot
    Index of this save file.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if the node performed successfully, else *False*.

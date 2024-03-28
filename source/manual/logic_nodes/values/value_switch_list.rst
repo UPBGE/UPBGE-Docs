@@ -5,12 +5,12 @@
 
 .. _ln-value_switch_list:
 
-========================
+==============================
 Value Switch List
-========================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 todo
    todo
@@ -19,7 +19,7 @@ Value
    Fixed value of selected type, or resulting value from connected node.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Result
    Resulting value.

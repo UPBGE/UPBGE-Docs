@@ -5,12 +5,12 @@
 
 .. _ln-set_actuator_value:
 
-======================
+==============================
 Set Actuator Value
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -28,7 +28,7 @@ Type
    Selected type and value to set.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

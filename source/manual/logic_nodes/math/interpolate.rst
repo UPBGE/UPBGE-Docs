@@ -5,12 +5,12 @@
 
 .. _ln-interpolate:
 
-======================
+==============================
 Interpolate
-======================
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 From
    Interpolate from which value.
@@ -22,7 +22,7 @@ Factor
    Interpolation factor. todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Value
    Resulting interpolated value.

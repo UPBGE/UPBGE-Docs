@@ -5,15 +5,18 @@
 
 .. _ln-set_velocity:
 
-====================
+==============================
 Set Velocity
-====================
+==============================
 
-Inputs
-++++++
+Parameters
+++++++++++++++++++++++++++++++
 
 Local
-   Use character's local axisg.
+   Use character's local axis.
+
+Inputs
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -28,7 +31,7 @@ Time
    todo
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

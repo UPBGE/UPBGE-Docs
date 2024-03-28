@@ -5,12 +5,12 @@
 
 .. _ln-set_light_color:
 
-===============
+==============================
 Set Light Color
-===============
+==============================
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Condition
    If connected, condition must be fulfilled for node to activate.
@@ -22,7 +22,7 @@ Color
    Which color to assign to light.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 Done
    *True* if node performed successfully, else *False*.

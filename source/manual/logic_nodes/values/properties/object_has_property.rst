@@ -5,18 +5,20 @@
 
 .. _ln-object_has_property:
 
-========================
+==============================
 Object Has Property
-========================
+==============================
+
+Will check if selected object has required property.
 
 Parameters
-++++++++++
+++++++++++++++++++++++++++++++
 
 Mode
    Selected property mode.
 
 Inputs
-++++++
+++++++++++++++++++++++++++++++
 
 Object
    Which object to inspect.
@@ -25,7 +27,7 @@ Name
    Name of the property to inspect.
 
 Outputs
-+++++++
+++++++++++++++++++++++++++++++
 
 If True
    todo
