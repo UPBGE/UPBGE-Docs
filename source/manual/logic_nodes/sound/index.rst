@@ -13,3 +13,5 @@ Sound
    resume_sound
    stop_sound
    stop_all_sounds
+
+   fmod/index

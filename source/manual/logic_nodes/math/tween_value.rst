@@ -31,25 +31,25 @@ Type
    A value type to process.
 
 On Demand
-   todo
+   Automatically move right on the curve if the "Result" socket is being accessed.
 
 Inputs
 ++++++++++++++++++++++++++++++
 
 Forward
-   todo
+   Move right on the curve.
 
 Back
-   todo
+   Move left on the curve.
 
 From
-   Starting tween value. todo
+   Starting tween value.
 
 To
-   Ending tween value. todo
+   Ending tween value.
 
 Duration
-   Duration of tween. todo
+   Duration of Tweening.
 
 Outputs
 ++++++++++++++++++++++++++++++
@@ -57,8 +57,11 @@ Outputs
 Done
    *True* if node performed successfully, else *False*.
 
+Reached
+   *True* if the factor is either 0 or 1, else *False*.
+
 Result
-   Resulting tween value. todo
+   Resulting tween value.
 
 Factor
-   todo
+   Current X-Axis position.

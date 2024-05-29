@@ -37,3 +37,6 @@ Output
 
 Done
    *True* if the node performed successfully, else *False*.
+
+Reached
+   *True* if the object is within stopping distance, else *False*.

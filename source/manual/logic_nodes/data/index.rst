@@ -12,3 +12,4 @@ Data
    variables/index
    load_scene
    load_file_content
+   path/index
