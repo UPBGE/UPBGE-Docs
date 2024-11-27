@@ -13,7 +13,7 @@ Parameters
 ++++++++++++++++++++++++++++++
 
 On Startup
-   If selected, pool will be spawn on game start.c
+   If selected, pool will be spawn on game start.
 
 Spawn Behavior
    Selected behavior of spawn pool.
