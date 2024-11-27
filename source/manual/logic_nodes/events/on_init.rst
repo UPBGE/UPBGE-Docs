@@ -15,4 +15,4 @@ Outputs
 ++++++++++++++++++++++++++++++
 
 Out
-   *True* if node performed successfully, else *False*.
+   *True* on the first frame, when the scene is initialized
