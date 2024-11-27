@@ -39,4 +39,4 @@ Architecture
 Under the hood, Logic Nodes are actually generating *Python scripts* to be executed by the game engine. The generated component will have options for executing the tree *only at startup* and for executing the tree *only when a certain property is set*. Using this method will prevent you from accessing Logic Bricks directly, but you can still access them via *custom Python calls*.
 
 .. warning::
-   Due to the way Logic Nodes *currently* work, they are the most performance-heavy way to create logic.
+   Due to the way Logic Nodes work, they are the most performance-heavy way to create logic.

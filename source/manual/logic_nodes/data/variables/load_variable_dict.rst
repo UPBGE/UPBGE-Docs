@@ -9,20 +9,19 @@
 Load Variable Dict
 ==============================
 
-Parameters
-++++++++++++++++++++++++++++++
-
-File Path/Data
-   Path to file/data to be used.
+Load a file with previously saved values as dictionary.
 
 Inputs
 ++++++++++++++++++++++++++++++
 
-Filename
-   File name of loaded . todo
+Path
+   Path to the directory containing the requested file.
+
+File
+   Name of the file itself, ending can be omitted.
 
 Outputs
 ++++++++++++++++++++++++++++++
 
 Variables
-   Resulting loaded variables dictionary.
+   Dictionary containing all saved variables in this file.

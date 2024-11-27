@@ -9,11 +9,7 @@
 Save Variable
 ==============================
 
-Parameters
-++++++++++++++++++++++++++++++
-
-File Path/Data
-   Path to file to be used.
+Save a value into an external `.json` file.
 
 Inputs
 ++++++++++++++++++++++++++++++
@@ -21,11 +17,14 @@ Inputs
 Condition
    Which condition will be used for node to activate.
 
-Filename
-   File name to save to.
+Path
+   Path to the directory containing the requested file.
 
-Variable
-   Which variable to save.
+File
+   Name of the file itself, ending can be omitted.
+
+Name
+   Lookup key.
 
 Type
    Which type and value to save.

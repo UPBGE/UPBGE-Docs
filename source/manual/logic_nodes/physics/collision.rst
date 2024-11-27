@@ -9,6 +9,8 @@
 Collision
 ==============================
 
+Detect and react to collisions involving a given object.
+
 Parameters
 ++++++++++++++++++++++++++++++
 
@@ -19,28 +21,31 @@ Inputs
 ++++++++++++++++++++++++++++++
 
 Object
-   Which object to use for collision.
+   The monitored object.
 
 Use Material
-   Which material to use.
+   If enabled, changes the "Property" socket to a "Material" one.
 
 Property
-   todo
+   If set, only detect collisions with objects that have this property.
+
+Material
+   If set, only detect collisions with objects that have this material applied.
 
 Outputs
 ++++++++++++++++++++++++++++++
 
 On Collision
-   What to trigger when collision happens. todo
+   `True` if a collision has occured according to the "Continuous" property, else `False`.
    
 Colliding Object
-   Which other object has collided with used object. todo
+   The object with which the monitored object is colliding with.
 
 Colliding Objects
-   A list of colliding objects. todo
+   A list of objects with which the monitored object is colliding with.
 
 Point
-   todo
+   The point in world space where the collision has occured.
 
 Normal
-   todo
+   The normal of the face on which the collision has occured.

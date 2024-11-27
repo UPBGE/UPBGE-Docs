@@ -9,6 +9,8 @@
 Tween Value
 ==============================
 
+Move a value along a given curve over a set duration. This node can be used to map a linear value of 0-1 to a curve.
+
 Add Point
    :kbd:`LMB` on curve.
 
@@ -49,7 +51,7 @@ To
    Ending tween value.
 
 Duration
-   Duration of Tweening.
+   Duration of Tweening in seconds.
 
 Outputs
 ++++++++++++++++++++++++++++++

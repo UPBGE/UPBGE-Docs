@@ -9,11 +9,7 @@
 Remove Variable
 ==============================
 
-Parameters
-++++++++++++++++++++++++++++++
-
-File Path/Data
-   Path to file to be used.
+Remove a previously saved variable.
 
 Inputs
 ++++++++++++++++++++++++++++++
@@ -21,11 +17,14 @@ Inputs
 Condition
    If connected, condition must be fulfilled for node to activate.
 
-Filename
-   File name to be used.
+Path
+   Path to the directory containing the requested file.
+
+File
+   Name of the file itself, ending can be omitted.
 
 Name
-   Variable name to be removed.
+   Lookup key.
 
 Outputs
 ++++++++++++++++++++++++++++++

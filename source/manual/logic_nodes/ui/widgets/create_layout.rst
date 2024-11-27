@@ -16,10 +16,10 @@ Layout Type
    Selected layout type.
 
 X:
-   Origin/start horizontal position.
+   Widget horizontal alignment
 
 Y:
-   Origin/start vertical position.
+   Widget vertical alignment
 
 Inputs
 ++++++++++++++++++++++++++++++
@@ -28,25 +28,25 @@ Condition
    If connected, condition must be fulfilled for node to activate.
 
 Parent
-   todo
+   If connected, the created widget will be added as a child to this parent.
 
 Relative Position
-   todo
+   If enabled, position will use a factor value (0-1) instead of pixels.
 
-Vector
-   X and Y vector of . todo
+Position
+   X and Y position of this Widget.
 
 Relative Size
-   todo
+   If enabled, Size will use a factor value (0-1) instead of pixels.
 
-Vector
-   todo
+Size
+   Width and Height of this Widget.
 
 Angle
-   Angle in radians. todo
+   Widget tilt Angle.
 
 Color
-   todo
+   Background color of this widget.
 
 Border Width
    Width of border line, in pixels.
@@ -61,4 +61,4 @@ Done
    *True* if node performed successfully, else *False*.
 
 Layout
-   Resulting layout data. todo
+   Created widget.

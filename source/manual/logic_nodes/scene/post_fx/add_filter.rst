@@ -9,6 +9,20 @@
 Add Filter
 ==============================
 
+This node will add a new GL filter, modifying the render output.
+
+Available filters are:
+- FXAA
+- HBAO
+- SSAO
+- Vignette
+- Brightness
+- Chromatic Abberation
+- Grayscale
+- Levels
+- Mist
+- Blur
+
 Parameters
 ++++++++++++++++++++++++++++++
 
@@ -22,19 +36,19 @@ Condition
    If connected, condition must be fulfilled for node to activate.
 
 Pass Index
-   todo
+   Higher indices will affect the rendered image by lower indices.
 
 Power
-   todo
+   Strength of the effect.
 
 Color
-   Color of the added filter.
+   Color of the added filter (if applicable).
 
 Brightness
-   Brightness of the selected filter.
+   Brightness of the selected filter (if applicable).
 
 Start
-   todo. For *Mist* filter only.
+   Starting distance of the mist. For *Mist* filter only.
 
 Density
    Density of the mist. For *Mist* filter only.

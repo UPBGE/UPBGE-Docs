@@ -19,10 +19,10 @@ Orientation
    Selected slider orientation.
 
 X:
-   Origin/start horizontal position.
+   Widget horizontal alignment
 
 Y:
-   Origin/start vertical position.
+   Widget vertical alignment
    
 Inputs
 ++++++++++++++++++++++++++++++
@@ -31,22 +31,22 @@ Condition
    If connected, condition must be fulfilled for node to activate.
 
 Parent
-   todo
+   If connected, the created widget will be added as a child to this parent.
 
 Relative Position
-   todo
+   If enabled, position will use a factor value (0-1) instead of pixels.
 
-Vector
-   X and Y vector of . todo
+Position
+   X and Y position of this Widget.
 
 Relative Size
-   todo
+   If enabled, Size will use a factor value (0-1) instead of pixels.
 
-Vector
-   todo
+Size
+   Width and Height of this Widget.
 
 Angle
-   Angle in radians. todo
+   Widget tilt Angle.
 
 Bar Width
    Width of the slider bar.
@@ -61,7 +61,7 @@ Bar Hover Color
    Slider color when in mouse-over state.
 
 Knob Size
-   todo
+   Size of the control knob (only on some slider types).
 
 Knob Color
    Color of the knob.
@@ -70,10 +70,10 @@ Knob Hover Color
    Color of the knob when in mouse-over state.
 
 Steps
-   If step functionality is required, i.e. slider moves by value of 10-20-30 etc. 0 (zero) will enable smooth value changing. todo
+   If step functionality is required, i.e. slider moves by value of 10-20-30 etc. 0 (zero) will enable smooth value changing.
 
 Bar Control
-   If checked, . todo
+   If checked, clicking on the bar has the same effect as clicking on the knob.
    
 Outputs
 ++++++++++++++++++++++++++++++
@@ -82,10 +82,10 @@ Done
    *True* if node performed successfully, else *False*.
 
 Slider
-   Resulting slider data . todo
+   Created widget.
 
 Slider Value
-   Initial slider value. todo
+   Current slider value.
 
 Knob Position
-   Knob rotation relative to slider value. todo
+   Knob position in pixel screen coordinates.

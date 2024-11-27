@@ -9,6 +9,8 @@
 Camera Ray
 ==============================
 
+Cast a ray from the camera in the direction of coordinates on the screen.
+
 Inputs
 ++++++++++++++++++++++++++++++
 
@@ -16,31 +18,31 @@ Condition
    Which condition will be used for node to activate.
 
 Aim
-   todo
+   Screen coordinates at which to cast the ray.
 
 Property
    Which property to use.
 
 X-Ray
-   todo
+   Ignore objects that don't have the given property.
 
 Distance
-   todo.
+   Maximum reach of the ray.
    
 Mask
-   Mask layers to use. todo
+   Bitmask to use.
 
 Outputs
 ++++++++++++++++++++++++++++++
 
 Has Result
-   todo
+   `True` if the ray has hit a target, else `False`
 
 Picked Object
-   todo
+   The object the ray has hit, or `None`
 
 Picked Point
-   todo
+   The world point the ray has hit, or `None`
 
 Picked Normal
-   todo
+   The normal of the face the ray has hit, or `None`

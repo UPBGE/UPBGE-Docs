@@ -9,23 +9,22 @@
 Load Variable
 ==============================
 
-Parameters
-++++++++++++++++++++++++++++++
-
-File Path/Data
-   Path to file/data to load.
+Load a previously saved value from an external file.
 
 Inputs
 ++++++++++++++++++++++++++++++
 
-Filename
-   File name to load from.
+Path
+   Path to the directory containing the requested file.
+
+File
+   Name of the file itself, ending can be omitted.
 
 Name
-   Which variable to load.
+   Lookup key.
 
 Default Value
-   If connected, that value will be used as default. todo
+   If enabled, this value will be used as default if Name is not found.
 
 Outputs
 ++++++++++++++++++++++++++++++

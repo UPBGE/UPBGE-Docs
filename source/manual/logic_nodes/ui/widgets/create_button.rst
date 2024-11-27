@@ -9,14 +9,22 @@
 Create Button
 ==============================
 
+Create an interactive button.
+
 Parameters
 ++++++++++++++++++++++++++++++
 
 X:
-   Origin/start horizontal position.
+   Widget horizontal alignment
 
 Y:
-   Origin/start vertical position.
+   Widget vertical alignment
+
+Text X:
+   Text horizontal alignment.
+
+Text Y:
+   Text vertical alignment.
    
 Inputs
 ++++++++++++++++++++++++++++++
@@ -25,22 +33,22 @@ Condition
    If connected, condition must be fulfilled for node to activate.
 
 Parent
-   todo
+   If connected, the created widget will be added as a child to this parent.
 
 Relative Position
-   todo
+   If enabled, position will use a factor value (0-1) instead of pixels.
 
-Vector
-   X and Y vector of . todo
+Position
+   X and Y position of this Widget.
 
 Relative Size
-   todo
+   If enabled, Size will use a factor value (0-1) instead of pixels.
 
-Vector
-   todo
+Size
+   Width and Height of this Widget.
 
 Angle
-   Angle in radians. todo
+   Widget tilt Angle.
 
 Color
    Button color in normal state.
@@ -55,7 +63,22 @@ Border Color
    Color of border line.
 
 Text
-   Button text string.
+   Text displayed on top of the button.
+
+Text Position
+   Text position in local button coordinates.
+
+Font
+   Graphical font to use for the button text.
+
+Font Size
+   Display size for the text.
+
+Line Height
+   Line spacing in factor (1.5 = 1.5 x Font Size).
+
+Font Color
+   Color of the button text.
 
 Outputs
 ++++++++++++++++++++++++++++++
@@ -64,13 +87,13 @@ Done
    *True* if node performed successfully, else *False*.
 
 Button
-   Resulting button data . todo
+   Created Widget.
 
 On Click
-   Which action to perform on button click.
+   True when Button is clicked.
 
 On Hover
-   Which action to perform on button mouse-over.
+   True when cursor is hovering over this widget.
 
 On Release
-   Which action to perform on button release.
+   True when Button was clicked and is released again.

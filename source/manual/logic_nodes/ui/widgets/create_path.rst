@@ -1,22 +1,19 @@
-.. figure:: /images/logic_nodes/ui/widgets/ln-create_image.png
+.. figure:: /images/logic_nodes/ui/widgets/ln-create_path.png
    :align: right
    :width: 215
-   :alt: Create Image Node
+   :alt: Create Path Node
 
-.. _ln-create_image:
+.. _ln-create_path:
 
 ==============================
-Create Image
+Create Path
 ==============================
 
 Parameters
 ++++++++++++++++++++++++++++++
 
-X:
-   Widget horizontal alignment
-
-Y:
-   Widget vertical alignment
+World:
+   Draw the path in screen or world coordinates.
    
 Inputs
 ++++++++++++++++++++++++++++++
@@ -28,22 +25,25 @@ Parent
    If connected, the created widget will be added as a child to this parent.
 
 Relative Position
-   todo
+   If enabled, position will use a factor value (0-1) instead of pixels.
 
 Position
    X and Y position of this Widget.
 
-Relative Size
-   If enabled, Size will use a factor value (0-1) instead of pixels.
+Relative Points
+   If enabled, each point in Points will use a factor value for its position (0-1) instead of pixels.
 
-Size
-   Width and Height of this Widget.
+Points
+   List of points.
+
+Line Color
+   Color to draw the line with.
+
+Line Width
+   Width of Path line, in pixels.
 
 Angle
    Widget tilt Angle.
-
-Image
-   Path to the image to use.
 
 Outputs
 ++++++++++++++++++++++++++++++
@@ -51,5 +51,5 @@ Outputs
 Done
    *True* if node performed successfully, else *False*.
 
-Image
-   Created Widget.
+Button
+   Created widget.

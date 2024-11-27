@@ -9,6 +9,8 @@
 Add Constraint
 ==============================
 
+This node will create a new physics constraint on the selected object.
+
 Parameters
 ++++++++++++++++++++++++++++++
 
@@ -22,22 +24,22 @@ Condition
    If connected, condition must be fulfilled for node to activate.
 
 Object
-   Which object to use todo.
+   Which object to apply the constraint to.
 
 Target
-   Which object to use as target.
+   Which object to use as target for the constraint (may not be the same as Object socket).
 
 Name
-   todo
+   Unique name for this constraint for later access.
 
 Use World Space 
-   todo
+   Calculate the pivot in world space instead of local.
 
 Pivot
-   todo
+   Pivot for physics calculations.
 
 Linked Collision
-   todo
+   If enabled, object will collide with target.
 
 Outputs
 ++++++++++++++++++++++++++++++

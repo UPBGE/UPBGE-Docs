@@ -9,11 +9,7 @@
 Clear Variables
 ==============================
 
-Parameters
-++++++++++++++++++++++++++++++
-
-File Path/Data
-   Path to file/data. todo
+Remove all stored variables from the selected file.
 
 Inputs
 ++++++++++++++++++++++++++++++
@@ -21,8 +17,11 @@ Inputs
 Conditon
    Which condition must be fulfilled for node to activate.
 
-Filename
-   Which file to use for clearing. todo
+Path
+   Path to the directory containing the requested file.
+
+File
+   Name of the file itself, ending can be omitted.
 
 Outputs
 ++++++++++++++++++++++++++++++

@@ -9,6 +9,11 @@
 Bone Status
 ==============================
 
+.. warning::
+   This node is deprecated.
+
+Get information about a specific armature bone.
+
 Inputs
 ++++++++++++++++++++++++++++++
 
@@ -22,10 +27,10 @@ Outputs
 ++++++++++++++++++++++++++++++
 
 Position
-   todo
+   Position of the Bone in pose matrix transform.
 
 Rotation
-   todo
+   Rotation of the Bone in pose matrix transform.
 
 Scale
-   todo
+   Scale of the Bone in pose matrix transform.

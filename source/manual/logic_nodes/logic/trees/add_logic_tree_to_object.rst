@@ -9,6 +9,8 @@
 Add Logic Tree To Object
 ==============================
 
+Add a new logic tree to an object to be executed.
+
 Inputs
 ++++++++++++++++++++++++++++++
 
@@ -22,7 +24,7 @@ Node Tree
    Which *Node Tree* to add.
 
 Initialize
-   todo
+   Set this tree to *active* when added.
 
 Outputs
 ++++++++++++++++++++++++++++++

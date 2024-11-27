@@ -9,11 +9,7 @@
 Save Variable Dict
 ==============================
 
-Parameters
-++++++++++++++++++++++++++++++
-
-File Path/Data
-   Path to file to be saved. todo
+Save a dictionary as external `json`.
 
 Inputs
 ++++++++++++++++++++++++++++++
@@ -21,11 +17,14 @@ Inputs
 Condition
    If connected, condition must be fulfilled for node to activate.
 
-Filename
-   File name to read from. todo
+Path
+   Path to the directory containing the requested file.
 
-Variables
-   Dictionary of variables to save.
+File
+   Name of the file itself, ending can be omitted.
+
+Name
+   Lookup key.
 
 Outputs
 ++++++++++++++++++++++++++++++

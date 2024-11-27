@@ -9,23 +9,25 @@
 Animation Status
 ==============================
 
+Retrieve information about an action currently playing on an object.
+
 Inputs
 ++++++++++++++++++++++++++++++
 
 Object
-   Which object to use. Type in or picker-select.
+   Get an action currently playing on this object.
 
 Layer
-   todo
+   Select the layer from which to pick the action.
 
 Outputs
 ++++++++++++++++++++++++++++++
 
 Is Playing
-   *True* if animation is playing.
+   *True* if an animation is playing on the selected layer.
 
 Action Name
-   Resulting name of the animation.
+   Name of the action currently playing on the selected layer.
 
 Action Frame
-   todo
+   Current frame of the action currently playing on the selected layer.

@@ -1,4 +1,4 @@
-.. figure:: /images/logic_nodes/ui/widgets/ln-create_canvas.png
+.. figure:: /images/logic_nodes/ui/ln-create_canvas.png
    :align: right
    :width: 215
    :alt: Create Canvas Node

@@ -38,10 +38,10 @@ Object
    Object that will be pushed away.
 
 Vector
-   The value that will be applied to the impulse. todo
+   The point on which to apply the impulse.
 
-Direction
-   The direction in which impulse will be applied. todo
+Impulse
+   The impulse to be applied to the object.
 
 Output
 ++++++++++++++++++++++++++++++

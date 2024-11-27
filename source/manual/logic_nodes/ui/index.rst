@@ -8,6 +8,7 @@ UI
    :maxdepth: 1
    
    widgets/index
+   create_canvas
    add_widget
    get_widget_attribute
    set_widget_attribute

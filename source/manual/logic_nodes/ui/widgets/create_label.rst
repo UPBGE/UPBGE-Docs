@@ -13,10 +13,10 @@ Parameters
 ++++++++++++++++++++++++++++++
 
 X:
-   Origin/start horizontal position.
+   Text horizontal alignment
 
 Y:
-   Origin/start vertical position.
+   Text vertical alignment
    
 Inputs
 ++++++++++++++++++++++++++++++
@@ -25,34 +25,40 @@ Condition
    If connected, condition must be fulfilled for node to activate.
 
 Parent
-   todo
+   If connected, the created widget will be added as a child to this parent.
 
 Relative Position
-   todo
+   If enabled, position will use a factor value (0-1) instead of pixels.
 
-Vector
-   X and Y vector of . todo
+Position
+   X and Y position of this Widget.
 
 Angle
-   Angle in radians. todo
+   Widget tilt Angle.
 
 Text
-   Label text to show.
+   Text content as string.
 
 Font
-   Label text font to use.
+   Graphical font to use for the text.
 
 Font Size
-   Font size to set.
+   Display size for the text.
 
 Line Height
-   todo
+   Line spacing in factor (1.5 = 1.5 x Font Size).
 
 Font Color
    Color to use for font.
 
 Use Shadow
    If checked, text will drop a shadow on background.
+
+Shadow Offset
+   Offset of the drop shadow in pixels.
+
+Shadow Color
+   Color of the shadow drawn behind the text.
 
 Outputs
 ++++++++++++++++++++++++++++++
@@ -61,4 +67,4 @@ Done
    *True* if node performed successfully, else *False*.
 
 Label
-   Resulting label data . todo
+   Created widget.

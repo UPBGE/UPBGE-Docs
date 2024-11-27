@@ -9,23 +9,25 @@
 List Saved Variables
 ==============================
 
-Parameters
-++++++++++++++++++++++++++++++
-
-File Path/Data
-   Path to file to be used.
+Quickly summarize saved variables from a given file.
 
 Inputs
 ++++++++++++++++++++++++++++++
 
 Condition
-   Which condition will be used for node to activate. If checked, always *True*. todo
+   Which condition will be used for node to activate. If checked, always *True*.
 
-Filename
-   File name to read from.
+Path
+   Path to the directory containing the requested file.
+
+File
+   Name of the file itself, ending can be omitted.
+
+Name
+   Lookup key.
 
 Print
-   If checked, list will be printed. todo
+   If checked, list will be printed.
 
 Outputs
 ++++++++++++++++++++++++++++++

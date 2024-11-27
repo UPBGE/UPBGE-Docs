@@ -9,6 +9,8 @@
 Check Angle
 ==============================
 
+Compare the angle between two vectors against a given value.
+
 Parameters
 ++++++++++++++++++++++++++++++
 
@@ -25,13 +27,13 @@ Vector 2
    Second vector to use for operation.
 
 Value
-   todo
+   Compare the angle between the two vectors agains this value.
 
 Outputs
 ++++++++++++++++++++++++++++++
 
-If True
-   todo
+Result
+   The selected operation outcome.
 
 Angle
    todo

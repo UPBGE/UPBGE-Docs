@@ -9,6 +9,8 @@
 Add Object
 ==============================
 
+Add a copy of an object into the current scene.
+
 Inputs
 ++++++++++++++++++++++++++++++
 
@@ -16,16 +18,16 @@ Condition
    Which condition will be used for node to activate.
 
 Object to Add
-   Which object to add.
+   Object Data Block to add into the scene.
 
 Copy Data From
-   Copy data from which object.
+   Copy the transform data from this object (optional).
 
 Life
-   todo
+   Total amount of frames after which the object is removed.
 
 Full Copy
-   todo
+   Duplicate the data used by the spawned object. This will duplicate any material, action etc. used by this Data Block.
    
 Outputs
 ++++++++++++++++++++++++++++++
@@ -34,4 +36,4 @@ Done
     *True* if the node performed successfully, else *False*.
 
 Added Object
-   todo
+   Spawned instance of the object.
