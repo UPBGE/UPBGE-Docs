@@ -61,4 +61,5 @@ manuals that are pointed out above.
 - Ulysse Martin (youle31)
 - Xavier Cho (mysticfall)
 - (aum7)
+- Zazoucoco0 (xavco63)
 - You!
