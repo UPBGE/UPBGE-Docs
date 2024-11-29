@@ -9,13 +9,13 @@
 Set Cursor Position
 ==============================
 
-Places the mouse cursor on corresponding coordinates between (0, 0) and (1, 1) on the screen.
+Places the mouse cursor on corresponding coordinates between (0, 0) and (1, 1) on the game window from the top left corner.
 
 Inputs
 ++++++++++++++++++++++++++++++
 
 Condition
-   Input condition.
+   Input condition needed for node to activate.
 
 Screen X
    Horizontal cursor position between 0 and 1.
