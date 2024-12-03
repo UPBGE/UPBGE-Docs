@@ -15,4 +15,4 @@ Inputs
 ++++++++++++++++++++++++++++++
 
 Condition
-   Input condition which must be fulfilled for node to activate.
+   The condition for this node to activate.

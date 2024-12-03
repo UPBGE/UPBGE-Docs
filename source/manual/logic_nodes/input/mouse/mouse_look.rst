@@ -20,7 +20,7 @@ Front
    Look direction of the *Head* Object. If set to Y, the rotational axis will be X and vice versa.
 
 Center Mouse
-   todo
+   If checked, the mouse cursor will be centered in the game window.
 
 Inputs
 ++++++++++++++++++++++++++++++
@@ -44,13 +44,13 @@ Cap Left/Right
    Limit the body objects rotation on its local Z axis.
 
 X Limits
-   The limits for the body objects local Z rotation (Vector2). Only shown if Cap Left/Right is selected.
+   The limits for the body object's local Z rotation (Vector2). Only shown if Cap Left/Right is selected.
 
 Cap Up/Down
    Limit the head object's rotation on its local X/Y axis.
 
 Y Limits
-   The limits for the head object's local X/Y rotaion (Vectpr2). Only shown if Cap Up/Down is selected.
+   The limits for the head object's local X/Y rotation (Vector2). Only shown if Cap Up/Down is selected.
 
 Smoothing
    Use linear interpolation to slowly adapt the object transformation to mouse movement.

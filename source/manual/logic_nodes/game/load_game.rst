@@ -21,7 +21,7 @@ Inputs
 ++++++++++++++++++++++++++++++
 
 Condition
-   Input condition.
+   The condition for this node to activate.
 
 Slot
    Index of this save file.

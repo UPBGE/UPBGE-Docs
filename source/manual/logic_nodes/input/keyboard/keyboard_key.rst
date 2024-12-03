@@ -15,7 +15,8 @@ Parameters
 ++++++++++++++++++++++++++++++
 
 Input Type
-   Input detection mode.
+   Input detection mode. ``Tap`` is activated the first frame that the key is pressed, ``Down`` 
+   is activated while the key is pressed (even the first frame) and ``Up`` is activated once the last frame the key is pressed.
 
 Inputs
 ++++++++++++++++++++++++++++++

@@ -15,7 +15,7 @@ Parameters
 ++++++++++++++++++++++++++++++
 
 Initialize
-   todo
+   If checked, the node will ignore the change from *None* to the first value pulled from the input socket
 
 Inputs
 ++++++++++++++++++++++++++++++

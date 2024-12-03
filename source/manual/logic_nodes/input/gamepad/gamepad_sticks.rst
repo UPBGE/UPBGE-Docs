@@ -30,10 +30,10 @@ Sensitivity
    Multiplier for the axis values.
 
 Threshold
-   Dead-zone for the stick.
+   Dead-zone for the stick. Used to avoid stick drift.
 
 Outputs
 ++++++++++++++++++++++++++++++
 
 Vector
-   Stick values as vector `(X, Y, 0)`.
+   Stick values as vector `(X, Y, 0)` (Vector3).

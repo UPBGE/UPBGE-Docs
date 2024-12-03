@@ -27,7 +27,7 @@ Right
    Force with which to rotate the weight in the right handle.
 
 Time
-   Vibrate for this many seconds.
+   How many seconds the vibration has to play.
 
 Outputs
 ++++++++++++++++++++++++++++++

@@ -21,10 +21,10 @@ Inputs
 ++++++++++++++++++++++++++++++
 
 Condition
-   Input condition required for node to activate.
+   The condition for this node to activate.
 
 Slot
-   Index of this save file.
+   Index of this save file. If a save file already exists at this index, it will be overwritten.
 
 Outputs
 ++++++++++++++++++++++++++++++

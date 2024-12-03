@@ -9,26 +9,28 @@
 Mouse Status
 ==============================
 
+Gives informations about the mouse cursor and wheel scroll.
+
 Outputs
 ++++++++++++++++++++++++++++++
 
 Position
-   todo
+   The XY position of the cursor from the top left corner of the game window (Vector2).
 
 Movement
-  todo
+  The XY movement of the cursor on the game window comparing to previous frame position (Vector2).
 
 X Position
-  todo
+  The X position of the cursor from the top left corner of the game window.
 
 Y Position
-   todo
+   The Y position of the cursor from the top left corner of the game window.
 
 X Movement
-   todo
+   The X movement of the cursor on the game window compared to previous frame position.
 
 Y Movement
-   todo
+   The Y movement of the cursor on the game window compared to previous frame position.
 
 Wheel Difference
-   todo
+   *1* if the wheel is scrolled up and *-1* if the wheel is scrolled down, else *0*.

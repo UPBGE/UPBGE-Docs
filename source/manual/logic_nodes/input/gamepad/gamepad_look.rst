@@ -38,7 +38,7 @@ Index
    The index of the controller to poll.
 
 Sensitivity
-   Multiplier for translating mouse movement to object rotation.
+   Multiplier for translating controller stick movement to object rotation.
 
 Exponent
    Exponent for fine-tuning the stick behavior.
@@ -53,10 +53,10 @@ Cap Up/Down
    Limit the head object rotation on its local X/Y axis.
 
 Y Limits
-   Limits for the head object's local X/Y rotaion (Vec2). Visible if Cap Up/Down is selected.
+   Limits for the head object local X/Y rotation (Vec2). Visible if Cap Up/Down is selected.
 
 Threshold
-   Ignore stick values under this threshold.
+   Ignore stick values under this threshold. Used to avoid stick drift.
 
 Outputs
 ++++++++++++++++++++++++++++++
