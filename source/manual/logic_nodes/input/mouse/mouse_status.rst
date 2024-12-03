@@ -27,10 +27,10 @@ Y Position
    The Y position of the cursor from the top left corner of the game window.
 
 X Movement
-   The X movement of the cursor on the game window comparing to previous frame position.
+   The X movement of the cursor on the game window compared to previous frame position.
 
 Y Movement
-   The Y movement of the cursor on the game window comparing to previous frame position.
+   The Y movement of the cursor on the game window compared to previous frame position.
 
 Wheel Difference
-   *1* if the wheel scroll up and *-1* if the wheel scroll down, *0* else.
+   *1* if the wheel is scrolled up and *-1* if the wheel is scrolled down, else *0*.
