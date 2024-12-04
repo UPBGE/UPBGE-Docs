@@ -9,6 +9,8 @@
 Pulsify
 ==============================
 
+Returns *True* periodically (pulses) from a continuous input, according to a defined duration and frequency.
+
 Inputs
 ++++++++++++++++++++++++++++++
 
@@ -22,4 +24,4 @@ Outputs
 ++++++++++++++++++++++++++++++
 
 Out
-   Resulting . todo
+   *True* when pulses occur, else *False*.
