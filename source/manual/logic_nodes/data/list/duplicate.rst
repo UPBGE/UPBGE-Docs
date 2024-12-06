@@ -9,7 +9,7 @@
 Duplicate
 ==============================
 
-todo
+Duplicate a list in order to do changes on it without altering the original list.
 
 Inputs
 ++++++++++++++++++++++++++++++
