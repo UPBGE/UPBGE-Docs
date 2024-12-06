@@ -31,7 +31,7 @@ When Elapsed
 
 .. important::
    *Timer* will only handle one input at a time and will not stack them, unlike the *Delay* node.
-   For example, if you connect a *Keyboard key* node to *Timer* and set the *Timer* to 5 seconds
+   For example, if you connect a *Keyboard key* node to a *Timer* set to 5 seconds
    and press the key a first time and then 2 seconds later you press the key again, *Timer* will only
    output *True* 5 seconds after the first key press and not another one time *True* at 7 seconds,
    unlike *Delay*.

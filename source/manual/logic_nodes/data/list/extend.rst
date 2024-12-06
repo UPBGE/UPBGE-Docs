@@ -9,7 +9,7 @@
 Extend
 ==============================
 
-Will extend one list with another. todo
+Extend (concatenate) one list with another.
 
 Inputs
 ++++++++++++++++++++++++++++++
@@ -25,3 +25,6 @@ Outputs
 
 List
    Resulting combined list from *List 1* and *List 2*.
+
+.. note::
+   TODO example

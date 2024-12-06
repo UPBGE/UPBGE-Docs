@@ -28,7 +28,7 @@ Out
 
 .. important::
    *Delay* will handle muliple inputs at the same time and will stack them, unlike the *Timer* node.
-   For example, if you connect a *Keyboard key* node to *Delay* and set the *Delay* to 5 seconds
+   For example, if you connect a *Keyboard key* node to a *Delay* set to 5 seconds
    and press the key a first time and then 2 seconds later you press the key again, *Delay* will
    output *True* 5 seconds after the first key press and another one time *True* at 7 seconds,
    unlike *Timer*.
