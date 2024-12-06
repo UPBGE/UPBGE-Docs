@@ -9,7 +9,7 @@
 Get List Index
 ==============================
 
-Retrieve value at specifiend index of the list.
+Retrieve value at specified index of the list.
 
 Inputs
 ++++++++++++++++++++++++++++++
@@ -25,3 +25,7 @@ Outputs
 
 Value
    Resulting value at index from list.
+
+.. note::
+   The list index start at 0, so for example, in the list [4, 2, 5, 8, 9], if you retrieve the value
+   at index 4, the node output will be 9.

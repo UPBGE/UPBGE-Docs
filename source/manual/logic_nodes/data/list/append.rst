@@ -30,11 +30,10 @@ Done
    *True* if node performs successfully, else *False*.
 
 List
-   Resulting list.
+   The given list with the new value attached at the end.
 
 .. note::
    Square socket indicates a list.
 
 .. note::
-   If you give the list [1, 2, 3, 4] and in *Type* Integer 5, the output will be the list [1, 2, 3, 4, 5]
-   TODO: Add an image to show the node setup of the example 
+   If you give the list [1, 2, 3, 4] and the Integer 5, the output will be the list [1, 2, 3, 4, 5]

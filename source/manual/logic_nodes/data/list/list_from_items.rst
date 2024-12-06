@@ -29,3 +29,7 @@ Outputs
 
 List
    New list with the added items.
+
+.. note::
+   Leaving a *Item* input blank will result in a Null item in your list.
+   TODO: Add an example with mutiple blank item inputs.
