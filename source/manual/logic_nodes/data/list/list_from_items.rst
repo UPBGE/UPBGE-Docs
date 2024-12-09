@@ -9,23 +9,27 @@
 List From Items
 ==============================
 
+Create a new list with the given items.
+
 Parameters
 ++++++++++++++++++++++++++++++
 
 Add Socket
-   Will add another socket for additional items.
+   Add another socket for additional items inputs.
 
 Inputs
 ++++++++++++++++++++++++++++++
 
 Item
-   First item to add to list.
-
-Item
-   Second item to add.
+   Item to add to list. Each press of *Add Socket* will add another *Item* input.
+   Items will be add to the list from top (index 0) to bottom (index list length-1).
 
 Outputs
 ++++++++++++++++++++++++++++++
 
 List
-   Resulting populated list with added items.
+   New list with the added items.
+
+.. note::
+   Leaving an *Item* input blank will result in a Null item in your list.
+   TODO: Add an example with mutiple blank item inputs.

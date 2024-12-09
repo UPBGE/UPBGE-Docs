@@ -26,4 +26,4 @@ Outputs
 ++++++++++++++++++++++++++++++
 
 Out
-   `True` if input condition has been `True` for "Time" seconds, else `False`.
+   `True` if input condition has been `True` for *Time* seconds, else `False`.

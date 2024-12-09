@@ -9,6 +9,8 @@
 Get Random List Item
 ==============================
 
+Randomly pick an item from a given list.
+
 Inputs
 ++++++++++++++++++++++++++++++
 
