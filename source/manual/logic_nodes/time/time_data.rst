@@ -9,7 +9,7 @@
 Time Data
 ==============================
 
-Return usefull datas about the time within your game.
+Return useful data about the time within your game.
 
 Outputs
 ++++++++++++++++++++++++++++++
@@ -19,7 +19,7 @@ Time
 
    .. note::
       The value returned here is independent of a scene change (time will continue to be counted without resetting the count),
-      but it will be reset after loading a .blend file because it relaunch the game engine.
+      but it will be reset after loading a .blend file because it relaunches the game engine.
 
 Delta (Frametime)
    The number of seconds elapsed between the last two frames (Float). Used for calculations requiring absolute temporal precision,

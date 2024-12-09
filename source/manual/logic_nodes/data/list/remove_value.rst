@@ -9,7 +9,7 @@
 Remove Value
 ==============================
 
-Remove the first itteration of a given value in a list.
+Remove the first iteration of a given value in a list.
 
 Inputs
 ++++++++++++++++++++++++++++++
@@ -33,6 +33,6 @@ List
    Resulting list after value removal.
 
 .. note::
-   This node will only remove the first itteration in the list,
+   This node will only remove the first iteration in the list,
    for example if you give the list [1, 4, 104, 1] and the value integer 1,
    the output list will be [4, 104, 1] and not [4, 104] like we can think at first.
