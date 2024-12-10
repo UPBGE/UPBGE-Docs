@@ -9,6 +9,8 @@
 Set List Index
 ==============================
 
+Set a value for a given index on a list.
+
 Inputs
 ++++++++++++++++++++++++++++++
 
@@ -32,3 +34,7 @@ Done
 
 List
    Resulting list after setting the index.
+
+.. note::
+   This node cannot be used to add a new value at the end of a list, it will result in
+   an out of range error. Instead use the *Append* node to do this.

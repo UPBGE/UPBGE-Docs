@@ -24,7 +24,7 @@ Pressed
    *True* if the node performed successfully, else *False*.
 
 Character
-   Integer code of the recorded key.
+   Character represented by the key pressed (String). For example ``'a'`` will be returned for key A.
 
 Keycode
-   Letter representation of the recorded key.
+   Integer code of the recorded key (Integer).

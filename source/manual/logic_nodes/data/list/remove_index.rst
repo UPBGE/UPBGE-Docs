@@ -9,6 +9,8 @@
 Remove Index
 ==============================
 
+Remove the value at a given index on a list.
+
 Inputs
 ++++++++++++++++++++++++++++++
 
@@ -29,3 +31,6 @@ Done
 
 List
    Resulting list after removal.
+
+.. note::
+   The list index start at 0, so for example, in the list [4, 2, 5, 8, 9], the value at index 2 will be 5.

@@ -9,6 +9,8 @@
 Append
 ==============================
 
+Append a value in the end of a given list.
+
 Inputs
 ++++++++++++++++++++++++++++++
 
@@ -28,7 +30,10 @@ Done
    *True* if node performs successfully, else *False*.
 
 List
-   Resulting list.
+   The given list with the new value attached at the end.
 
 .. note::
    Square socket indicates a list.
+
+.. note::
+   If you give the list [1, 2, 3, 4] and the Integer 5, the output will be the list [1, 2, 3, 4, 5]
