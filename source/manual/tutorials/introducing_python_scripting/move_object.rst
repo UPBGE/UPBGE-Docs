@@ -1,43 +1,54 @@
-==============================
-Moving A Cube
-==============================
+==============================  
+Moving A Cube  
+==============================  
 
-In this tutorial, we'll learn how to move an object using a Python controller in UPBGE. This builds upon the basic concepts introduced earlier.
+In this tutorial, we’ll move a cube in 3D space using Python, with full WASD controls and rotation.  
 
-Setting Up the Scene
-+++++++++++++++++++
+#### Setup:  
+1. Add a **Cube** to the scene.  
+2. Add an **Always** sensor linked to a **Python Controller** (no other setup needed).  
 
-1. Create a cube in your scene.
-2. Add a **Keyboard** sensor and connect it to a **Python** controller.
-3. Assign a new script to the controller.
+#### Full Python Script:  
 
-Writing the Movement Script
-++++++++++++++++++++++++++
+.. code-block:: python  
 
-Here's a simple script to move the cube when a key is pressed:
+    import bge  
+    from math import radians  
 
-.. code-block:: python
+    def update_movement(owner, speed=0.1, rot_speed=1.0):  
+        keyboard = bge.logic.keyboard  
+        events = keyboard.events  
 
-   import bge
+        # Movement (WASD)  
+        move_vec = [0.0, 0.0, 0.0]  
+        if events[bge.events.WKEY] == bge.logic.KX_INPUT_ACTIVE:  
+            move_vec[1] += speed  # Forward (Y-axis)  
+        if events[bge.events.SKEY] == bge.logic.KX_INPUT_ACTIVE:  
+            move_vec[1] -= speed  # Backward  
+        if events[bge.events.AKEY] == bge.logic.KX_INPUT_ACTIVE:  
+            move_vec[0] -= speed  # Left (X-axis)  
+        if events[bge.events.DKEY] == bge.logic.KX_INPUT_ACTIVE:  
+            move_vec[0] += speed  # Right  
 
-   # Get the current controller and its owner (the cube)
-   controller = bge.logic.getCurrentController()
-   owner = controller.owner
+        # Apply movement relative to the cube’s rotation  
+        owner.applyMovement(move_vec, local=True)  
 
-   # Get the keyboard input
-   keyboard = bge.logic.keyboard
+        # Rotation (Q/E for yaw)  
+        if events[bge.events.QKEY] == bge.logic.KX_INPUT_ACTIVE:  
+            owner.applyRotation([0, 0, radians(rot_speed)], local=True)  
+        if events[bge.events.EKEY] == bge.logic.KX_INPUT_ACTIVE:  
+            owner.applyRotation([0, 0, radians(-rot_speed)], local=True)  
 
-   # Check if the "W" key is pressed
-   if bge.logic.KX_INPUT_ACTIVE == keyboard.events[bge.events.WKEY]:
-       owner.worldPosition.x += 0.1  # Move right
-   elif bge.logic.KX_INPUT_ACTIVE == keyboard.events[bge.events.SKEY]:
-       owner.worldPosition.x -= 0.1  # Move left
+    # Main  
+    controller = bge.logic.getCurrentController()  
+    owner = controller.owner  
+    update_movement(owner)  
 
-   # Add similar checks for other keys (A, D, etc.) as needed
+#### Explanation:  
+- **`applyMovement`**: Moves the cube relative to its local rotation (so "W" always moves forward).  
+- **`applyRotation`**: Rotates around the Z-axis (yaw) with `Q`/`E`.  
+- **No Logic Bricks setup**: All input is handled via Python.  
 
-Explanation:
-- The script checks for keyboard input and updates the cube's position accordingly.
-- You can extend this to include movement along the Y or Z axes.
-
-.. note::
-   Make sure to enable the keyboard sensor in the Logic Bricks editor and set it to detect the desired keys.
+#### Extensions:  
+- Add gravity with `owner.worldPosition.z -= 0.05`.  
+- Use `bge.render.showMouse(True)` for mouse look.  
