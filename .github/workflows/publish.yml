@@ -4,12 +4,9 @@ name: CI
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+  schedule:
+    - cron: "0 1 * * 0" # Execute Sundays at 1 AM UTC
+  
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -27,9 +24,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo python3 -m pip install --upgrade pip
+          #sudo python3 -m pip install --upgrade pip
           sudo python3 -m pip install Sphinx
           sudo python3 -m pip install sphinx-rtd-theme
+
       - name: Build documentation
         run: |
           make html
