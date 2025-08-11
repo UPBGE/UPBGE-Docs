@@ -4,11 +4,14 @@ Moving A Cube
 
 In this tutorial, we’ll move a cube in 3D space using Python, with full WASD controls and rotation.  
 
-#### Setup:  
+Setup:
+++++++
+
 1. Add a **Cube** to the scene.  
 2. Add an **Always** sensor linked to a **Python Controller** (no other setup needed).  
 
-#### Full Python Script:  
+Full Python Script:
++++++++++++++++++++
 
 .. code-block:: python  
 
@@ -44,11 +47,15 @@ In this tutorial, we’ll move a cube in 3D space using Python, with full WASD c
     owner = controller.owner  
     update_movement(owner)  
 
-#### Explanation:  
+Explanation:
+++++++++++++
+
 - **`applyMovement`**: Moves the cube relative to its local rotation (so "W" always moves forward).  
 - **`applyRotation`**: Rotates around the Z-axis (yaw) with `Q`/`E`.  
 - **No Logic Bricks setup**: All input is handled via Python.  
 
-#### Extensions:  
+Extensions:
++++++++++++
+
 - Add gravity with `owner.worldPosition.z -= 0.05`.  
 - Use `bge.render.showMouse(True)` for mouse look.  
