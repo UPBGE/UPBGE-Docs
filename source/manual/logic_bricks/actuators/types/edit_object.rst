@@ -91,7 +91,7 @@ Destroy the current object (note, debug properties will display error Zombie Obj
 Add Object
 ------------------------------
 
-Adds an object at the center of the current object. The object that is added needs to be on another, hidden, layer.
+Adds an object at the center of the current object. This object has to be hidden.
 
 .. figure:: /images/logic_bricks/actuators/logic-actuators-types-edit_object-add_object.png
 
